@@ -27,16 +27,20 @@ an audit, not justifications.
 4. at least two adversarial review records;
 5. all critical and major review findings resolved and cross-referenced;
 6. one final statement-to-conclusion audit independent of the discovery narrative;
-7. reproducible verification for any computation essential to the proof.
-8. a standalone reviewed LaTeX source named by `latex_file` in `problem.json`.
+7. reproducible verification for any computation essential to the proof;
+8. a standalone reviewed LaTeX source named by `latex_file` in `problem.json`;
+9. a PDF compiled from it by Tectonic, named by `pdf_file`, with the compiler
+   version recorded in `latex_engine`.
 
 The two reviews should be meaningfully distinct—for example, a line-by-line logic
 audit and a hypothesis/counterexample audit.
 
 The LaTeX source is a publication-quality restatement of the exact reviewed
 argument, not a replacement for canonical Markdown records. It must identify the
-statement version and the review records. Compile it when a local LaTeX toolchain
-is available; retain the source even when one is not.
+statement version and the review records. Run `proofctl.py typeset <slug>` to
+compile it with Tectonic, retain the source and PDF, and record the compiler
+version. A missing compiler blocks promotion; agents repair the toolchain rather
+than silently omitting the PDF.
 
 ## Disproof promotion gate
 

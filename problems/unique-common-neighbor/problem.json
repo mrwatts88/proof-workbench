@@ -17,5 +17,7 @@
   "dependencies": [],
   "prior_proof_status": "reported",
   "latex_file": "papers/unique-common-neighbor.tex",
+  "pdf_file": "papers/build/unique-common-neighbor.pdf",
+  "latex_engine": "Tectonic 0.16.9",
   "next_action": "No required action; any reference comparison needs separate authorization."
 }

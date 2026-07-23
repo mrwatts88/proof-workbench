@@ -12,6 +12,7 @@ import datetime as dt
 import json
 import re
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -203,7 +204,13 @@ def render_dashboard(problems: list[tuple[Path, dict[str, Any]]]) -> str:
         title = markdown_cell(item.get("title", directory.name))
         proof_link = f"[details](problems/{directory.name}/STATE.md)"
         latex_file = item.get("latex_file")
-        latex = f"[source]({markdown_cell(latex_file)})" if latex_file else "—"
+        pdf_file = item.get("pdf_file")
+        artifacts: list[str] = []
+        if pdf_file:
+            artifacts.append(f"[PDF]({markdown_cell(pdf_file)})")
+        if latex_file:
+            artifacts.append(f"[TeX]({markdown_cell(latex_file)})")
+        latex = " · ".join(artifacts) if artifacts else "—"
         lines.append(
             "| {id} | {title} ({proof_link}) | `{work}` | `{claim}` | {prior} | {latex} |".format(
                 id=markdown_cell(item.get("id", "?")),
@@ -388,6 +395,8 @@ def validate_repository(root: Path) -> list[str]:
             "next_action",
             "prior_proof_status",
             "latex_file",
+            "pdf_file",
+            "latex_engine",
         }
         missing = sorted(required_fields - item.keys())
         if missing:
@@ -469,10 +478,27 @@ def validate_repository(root: Path) -> list[str]:
             errors.append(
                 f"{manifest_path.relative_to(root)}: latex_file must be null or a .tex path"
             )
+        pdf_file = item.get("pdf_file")
+        if pdf_file is not None and (
+            not isinstance(pdf_file, str) or not pdf_file.endswith(".pdf")
+        ):
+            errors.append(
+                f"{manifest_path.relative_to(root)}: pdf_file must be null or a .pdf path"
+            )
+        if item.get("latex_engine") is not None and not isinstance(
+            item.get("latex_engine"), str
+        ):
+            errors.append(
+                f"{manifest_path.relative_to(root)}: latex_engine must be null or a string"
+            )
         if item.get("claim_status") == "proved":
             if not isinstance(latex_file, str) or not (root / latex_file).is_file():
                 errors.append(
                     f"{manifest_path.relative_to(root)}: proved status requires an existing latex_file"
+                )
+            if not isinstance(pdf_file, str) or not (root / pdf_file).is_file():
+                errors.append(
+                    f"{manifest_path.relative_to(root)}: proved status requires an existing pdf_file"
                 )
         if not isinstance(item.get("next_action"), str) or not item.get(
             "next_action", ""
@@ -740,6 +766,50 @@ def command_review(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_typeset(args: argparse.Namespace) -> int:
+    """Compile a dossier's standalone LaTeX source into a PDF with Tectonic."""
+    root: Path = args.root
+    problem_directory, manifest = resolve_problem(root, args.slug)
+    latex_file = manifest.get("latex_file")
+    if not isinstance(latex_file, str) or not latex_file.endswith(".tex"):
+        raise ProofctlError("This problem has no LaTeX source declared in latex_file")
+    source = root / latex_file
+    if not source.is_file():
+        raise ProofctlError(f"LaTeX source does not exist: {latex_file}")
+    tectonic = shutil.which("tectonic")
+    if tectonic is None:
+        raise ProofctlError(
+            "Tectonic is required to produce a PDF. Install it, then rerun this command."
+        )
+
+    output_directory = source.parent / "build"
+    output_directory.mkdir(parents=True, exist_ok=True)
+    result = subprocess.run(
+        [tectonic, "--outdir", str(output_directory), "--keep-logs", str(source)],
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        detail = (result.stderr or result.stdout).strip()
+        raise ProofctlError(f"Tectonic failed:\n{detail}")
+    pdf_path = output_directory / f"{source.stem}.pdf"
+    if not pdf_path.is_file():
+        raise ProofctlError("Tectonic finished without creating the expected PDF")
+    version = subprocess.run(
+        [tectonic, "--version"], text=True, capture_output=True, check=False
+    ).stdout.strip()
+    manifest["pdf_file"] = pdf_path.relative_to(root).as_posix()
+    manifest["latex_engine"] = version or "tectonic"
+    manifest["updated"] = today()
+    write_json(problem_directory / "problem.json", manifest)
+    write_index(root)
+    print(f"Wrote {pdf_path.relative_to(root)}")
+    if result.stdout.strip():
+        print(result.stdout.strip())
+    return 0
+
+
 def command_set_status(args: argparse.Namespace) -> int:
     root: Path = args.root
     directory, manifest = resolve_problem(root, args.slug)
@@ -849,6 +919,12 @@ def build_parser() -> argparse.ArgumentParser:
         "--type", dest="review_type", choices=sorted(REVIEW_TYPES), required=True
     )
     review_parser.set_defaults(func=command_review)
+
+    typeset_parser = subparsers.add_parser(
+        "typeset", help="Compile a dossier's LaTeX source to PDF with Tectonic."
+    )
+    typeset_parser.add_argument("slug")
+    typeset_parser.set_defaults(func=command_typeset)
 
     set_parser = subparsers.add_parser(
         "set-status", help="Update workflow state and rebuild the index."

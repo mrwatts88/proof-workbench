@@ -97,9 +97,11 @@ When a claim is ready for `complete` + `proved`, the agent must create or update
 standalone LaTeX source in the root-level `papers/` directory. It must state the
 exact statement version, give the reviewed proof (not merely a link or outline),
 and name the supporting review records. Set `latex_file` in `problem.json` to its
-repository-relative path before promotion. If a LaTeX compiler is available, run
-it and record any material build result; its absence does not excuse omitting the
-source.
+repository-relative path before promotion. Run `python3 scripts/proofctl.py
+typeset <slug>` to compile with Tectonic, record `pdf_file` and `latex_engine` in
+the manifest, and include the generated PDF in the session commit. A proof cannot
+be promoted to `proved` without both source and PDF. If Tectonic is absent, the
+agent must install or repair the approved toolchain before attempting promotion.
 
 At intake, record `prior_proof_status` as `unknown`, `reported`, or `verified`.
 This tracks provenance only: “reported” does not license use of an external proof.

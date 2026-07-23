@@ -7,7 +7,10 @@ __pycache__/
 .venv/
 venv/
 
+# Tectonic's build log is reproducible diagnostic output; the corresponding PDF
+# is a committed publication artifact.
+papers/build/*.log
+
 # Generated experiment output should be ignored locally unless it is deliberately
 # promoted as compact, reproducible evidence.
 problems/*/experiments/*/generated/
-

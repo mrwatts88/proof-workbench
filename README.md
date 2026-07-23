@@ -26,6 +26,7 @@ python3 scripts/proofctl.py new compactness-example --title "A compactness examp
 python3 scripts/proofctl.py add compactness-example session "Initial normalization"
 python3 scripts/proofctl.py add compactness-example attempt "Minimal counterexample"
 python3 scripts/proofctl.py add compactness-example review "Quantifier audit"
+python3 scripts/proofctl.py typeset unique-common-neighbor
 python3 scripts/proofctl.py set-status compactness-example active --claim open \
   --next "Resolve G001 or record why it is blocked"
 ```
@@ -89,6 +90,6 @@ rebuilds the index.
 
 | ID | Problem | Work | Claim | Previously proven? | LaTeX |
 |---|---|---|---|---|---|
-| P-001 | Unique Common Neighbor ([details](problems/unique-common-neighbor/STATE.md)) | `complete` | `proved` | Reported (not inspected) | [source](papers/unique-common-neighbor.tex) |
+| P-001 | Unique Common Neighbor ([details](problems/unique-common-neighbor/STATE.md)) | `complete` | `proved` | Reported (not inspected) | [PDF](papers/build/unique-common-neighbor.pdf) · [TeX](papers/unique-common-neighbor.tex) |
 
 <!-- END GENERATED PROBLEM DASHBOARD -->

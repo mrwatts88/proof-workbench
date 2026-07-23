@@ -13,5 +13,7 @@
   "dependencies": [],
   "prior_proof_status": "unknown",
   "latex_file": null,
+  "pdf_file": null,
+  "latex_engine": null,
   "next_action": "Normalize the statement and complete the intake checklist."
 }

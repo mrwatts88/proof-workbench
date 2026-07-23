@@ -29,6 +29,8 @@ required adversarial review gates.
   appears; humans do not schedule the review lifecycle.
 - Every internally proved result has a standalone LaTeX source, and the generated
   README dashboard displays both current status and prior-proof provenance.
+- A proved result also has a committed PDF compiled by Tectonic, with the source,
+  PDF, and compiler version recorded in its dossier.
 - Session continuity comes from concise handoffs plus detailed append-oriented
   records, not retained chat history.
 - Closing a substantive session includes a mandatory canonical-record checkpoint;

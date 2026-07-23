@@ -1,4 +1,4 @@
-.PHONY: help validate status index test
+.PHONY: help validate status index test typeset
 
 PYTHON ?= python3
 
@@ -17,3 +17,5 @@ index:
 test:
 	@$(PYTHON) -m unittest discover -s tests -v
 
+typeset:
+	@$(PYTHON) scripts/proofctl.py typeset unique-common-neighbor

@@ -46,3 +46,10 @@ attempt, experiment, or review record.
 - Added provenance-aware dashboard fields and generated the live README table.
 - Made LaTeX source mandatory for `proved` dossiers; no local LaTeX compiler was
   available, so no PDF build is represented.
+
+## 2026-07-23 — S005 compiled and enforced PDF publication
+
+- Located Tectonic 0.16.9, compiled the standalone source, and committed the
+  resulting PDF publication artifact.
+- Added `proofctl.py typeset` and made source, PDF, and compiler version required
+  for a proved dossier.

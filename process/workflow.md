@@ -104,9 +104,11 @@ At the end of a substantive session:
 7. rebuild the index and validate.
 
 For a `complete` + `proved` result, also create the standalone LaTeX source in
-`papers/`, set `latex_file` in `problem.json`, and compile it if the local
-toolchain is available. `proofctl.py index` updates both `problems/INDEX.md` and
-the live dashboard table in `README.md` after every status or dossier change.
+`papers/`, set `latex_file` in `problem.json`, and run `proofctl.py typeset
+<slug>` to produce a committed PDF using Tectonic. The resulting `pdf_file` and
+`latex_engine` are required promotion evidence. `proofctl.py index` updates both
+`problems/INDEX.md` and the live dashboard table in `README.md` after every status
+or dossier change.
 
 The next action should be falsifiable and small, such as “prove L004 without
 compactness” or “search orders 8–12 for a counterexample to C007,” not “continue
