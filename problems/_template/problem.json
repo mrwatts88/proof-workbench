@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "{{PROBLEM_ID}}",
+  "slug": "{{SLUG}}",
+  "title": {{TITLE_JSON}},
+  "statement_file": "STATEMENT.md",
+  "statement_version": "0.1",
+  "work_status": "intake",
+  "claim_status": "open",
+  "created": "{{DATE}}",
+  "updated": "{{DATE}}",
+  "tags": [],
+  "dependencies": [],
+  "next_action": "Normalize the statement and complete the intake checklist."
+}
+
