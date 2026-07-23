@@ -10,14 +10,12 @@
   "created": "2026-07-23",
   "updated": "2026-07-23",
   "tags": [
-    "benchmark",
-    "graph-theory",
-    "solution-embargo"
+    "graph-theory"
   ],
   "dependencies": [],
   "prior_proof_status": "reported",
   "latex_file": "papers/unique-common-neighbor.tex",
   "pdf_file": "papers/build/unique-common-neighbor.pdf",
   "latex_engine": "Tectonic 0.16.9",
-  "next_action": "No required action; any reference comparison needs separate authorization."
+  "next_action": "No required action; reference comparison is optional and freely permitted."
 }

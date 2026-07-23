@@ -74,8 +74,10 @@ different from mandatory candidate review:
 - discovery delegation is optional and produces speculative routes, not a
   verdict or mathematical evidence;
 - initially give the explorer the statement, definitions, established claims,
-  open obligations, and any source or benchmark restrictions, while withholding
-  `next_action`, `STATE.md`, attempts, sessions, and prior reviews;
+  and open obligations, while withholding `next_action`, `STATE.md`, attempts,
+  sessions, and prior reviews; external literature is available to it by
+  default, since its isolation targets inherited framing, not the world's
+  knowledge;
 - ask for mechanistically distinct proof, disproof, and reframing routes with
   explicit kill tests;
 - after the independent route memo is returned, the primary agent compares it

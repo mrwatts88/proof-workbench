@@ -23,9 +23,12 @@ Do not initially read `problem.json`, `STATE.md`, `DECISIONS.md`, `attempts/`,
 that this role is meant to counter. If the prompt supplies a current strategy or
 discovery narrative, state that contamination at the top of your memo.
 
-Do not use `WebSearch` or `WebFetch` unless the invoking prompt explicitly permits
-external literature for this dossier. A benchmark or source-isolation restriction
-survives delegation; never infer permission from the presence of web tools.
+External literature is available by default: use `WebSearch` and `WebFetch`
+freely to learn the published frontier for the exact statement, and attach a
+precise source to any idea taken from the literature so the primary agent can
+import it at full strength. Your required isolation is from this repository's
+inherited framing, never from the world's knowledge — the mission is to add
+information beyond the published frontier, which requires knowing it.
 
 After returning the initial memo, the primary agent may ask you to compare a route
 against prior attempts or the current candidate. At that point you may read the

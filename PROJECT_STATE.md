@@ -4,20 +4,26 @@ Last reviewed: 2026-07-23
 
 ## Mission
 
-Build a reliable, resumable environment for proving or disproving mathematical
-conjectures. The repository should make uncertainty visible and make every status
-promotion auditable.
+Find genuinely open conjectures and settle them — by proof, disproof, or
+precisely delimited new partial results. Lean on all existing verified
+knowledge to stand at the published frontier immediately; the work that counts
+is what passes the frontier and produces information the mathematical
+community does not already have. Re-deriving known results for internal
+provenance is explicitly not a goal. The repository makes uncertainty visible
+and every status promotion auditable.
 
 ## Current phase
 
-The first benchmark conjecture has an internally proved result that passed its
-required adversarial review gates. A new active research dossier now targets the
-Erdős–Gyárfás conjecture.
+The first problem, worked before the mission was clarified, has an internally
+proved result that passed its adversarial review gates. The active research
+dossier targets the Erdős–Gyárfás conjecture, which is open in the literature.
 
 ## Active problems
 
-- `P-001` — Unique Common Neighbor: proved internally for statement version 0.2;
-  no known solution was consulted.
+- `P-001` — Unique Common Neighbor: proved internally for statement version
+  0.2. It was historically run under a since-retired internal-only rule, so no
+  reference comparison has yet been made; that comparison is now freely
+  permitted and simply optional.
 - `P-002` — Erdős–Gyárfás Conjecture: active and open at statement version 0.1;
   internal structural reductions, the saturation reduction and its
   single-witness delimitation, and a computer-assisted order-\(14\) lower
@@ -47,6 +53,12 @@ Erdős–Gyárfás conjecture.
 - A recorded next action is the previous session's best proposal, not a command.
   Each nontrivial exploration session audits it against a fast falsification move
   and a mechanistically distinct alternative or reframing before committing.
+- External knowledge is leaned on, never avoided: published theorems, bounds,
+  computations, and examples are imported at their verified strength so work
+  starts at the frontier. There is no internal-first or no-consultation rule;
+  the retired benchmark-era rule on `P-001` must not be reintroduced. Novelty
+  relative to the literature is checked deliberately, because producing new
+  information is the point.
 - `STATE.md` and session records preserve a compact strategy portfolio: primary
   route, live alternative, and pivot trigger. Fresh discovery agents may reduce
   anchoring where the harness supports them, but their suggestions remain
@@ -60,13 +72,15 @@ Erdős–Gyárfás conjecture.
 
 ## Next action
 
-For `P-002`, extend the exhaustive \(\{C_4,C_8\}\)-free search to order
-\(14\) with parallel decomposition and re-validated anchors. Orders
-\(11\)–\(13\) are already exhausted and empty, so every counterexample has
-at least fourteen vertices; order \(14\) either lifts the bound to fifteen
-or produces the first survivors, which would be counterexample candidates
-requiring independent verification. No required action remains for `P-001`;
-its reference comparison remains optional and separately authorized.
+For `P-002`, stop extending the exhaustive small-order search — reported
+prior computations already exceed it — and instead reach the published
+frontier by import: pin down from primary sources the strongest verified
+finite bounds and the reported \(24\)-vertex \(\{C_4,C_8\}\)-free cubic
+graphs, verify those graphs internally, and determine from the same source
+sweep whether the edge-maximal saturation reduction `L008` is already known.
+If saturation is new, it becomes the frontier-passing target. No required
+action remains for `P-001`; its reference comparison is optional and freely
+permitted.
 
 ## Known process risks
 
@@ -76,5 +90,8 @@ its reference comparison remains optional and separately authorized.
 - Handoffs become misleading if agents omit the end-of-session checkpoint.
 - Strategy audits can become empty ceremony if agents list cosmetic variants
   instead of comparing distinct mechanisms and acting on negative evidence.
-- Benchmark investigations can be contaminated if known solutions are consulted
-  before the internal candidate and review phases are complete.
+- Imported results are only as good as their statement correspondence: a
+  miscopied hypothesis or an overread bound silently corrupts everything built
+  on it. Precise statements, matched hypotheses, and sources are mandatory.
+- Effort can silently drift into re-deriving known results; route selection
+  must ask what the work adds beyond the published frontier.

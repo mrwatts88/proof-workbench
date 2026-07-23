@@ -30,21 +30,22 @@ neighbor has a vertex adjacent to every other vertex.
 ## Resolved review and optional follow-up
 
 - `G003`: resolved by `R001` and `R002`.
-- `G004`: optional reference comparison remains deliberately unperformed and is
-  not needed to establish the internal result.
+- `G004`: reference comparison remains unperformed; it is freely permitted and
+  simply optional, and is not needed to establish the internal result.
 
 ## Residual risks
 
 - No proof obligation is open. The remaining risk is the ordinary possibility of
   an error missed by two finite human/agent reviews, rather than an identified
   gap.
-- No known solution or external source was consulted, preserving the benchmark's
-  independent-development condition.
+- As a historical fact, no known solution or external source was consulted
+  during development; the internal-only rule behind that has since been retired
+  repository-wide (`O008`), and consultation is now freely permitted.
 
 ## Best next action
 
-No action is required for the settled internal statement. A future, separately
-authorized provenance task may compare the proof with a reference solution.
+No action is required for the settled internal statement. An optional
+provenance task may compare the proof with a reference solution at any time.
 
 ## Human-level state
 

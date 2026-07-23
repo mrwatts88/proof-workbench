@@ -2,10 +2,12 @@
 
 - Date opened: 2026-07-23
 - Problem: `P-002`
-- Status: active
+- Status: completed
 - Portfolio role: primary route after the S005 pivot; exhaust the smallest
   unexcluded orders using the small-order collapse of the power-cycle and
-  witness conditions
+  witness conditions. Closed after clearing orders \(11\)–\(13\): the
+  mission clarification in `O008` retired further re-derivation of reported
+  computations.
 
 ## Intended mechanism
 
@@ -157,11 +159,12 @@ consequences for the conjecture at orders up to \(15\).
 
 ## Exit state
 
-- Status: active; continue the frontier upward while tractable.
+- Status: completed. Orders \(11\)–\(13\) are exhausted and yielded `L017`;
+  extension to \(14\)–\(15\) is retired by the mission clarification in
+  `O008`, since reported prior computations already exceed those orders and
+  re-deriving them adds no new information.
 - Promoted records: `L017`, `C011` in `CLAIMS.md`.
-- Next action: extend the exhaustive search to order \(14\), adding
-  intra-sequence parallel decomposition (and re-running the validation
-  anchors after any change), since order \(13\) already cost
-  \(44{,}397{,}061\) nodes in a single process; then order \(15\), the end
-  of the collapse range. At the first order with survivors, verify them
-  independently and classify them by the saturation condition.
+- Next action: none within this route. The frontier effort moves to the
+  source-frontier import (`G004`) and the saturation novelty check
+  (`G011`); the validated `E004` tooling remains available for verifying
+  imported extremal graphs internally.

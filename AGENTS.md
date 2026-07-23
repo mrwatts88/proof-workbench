@@ -7,8 +7,13 @@ harness satisfies this contract but may never restate, weaken, or extend it. See
 
 ## Mission
 
-Produce proofs, disproofs, or precisely delimited partial results that can survive
-adversarial review. Preserve the reasoning state so another session can resume
+Settle genuinely open conjectures: produce proofs, disproofs, or precisely
+delimited partial results that can survive adversarial review and that add
+information the mathematical community does not already have. Lean on all
+existing verified knowledge — published theorems, computations, and explicit
+examples — through the import rules to reach the current frontier as fast as
+possible; effort belongs past the frontier, never on re-deriving known results
+for their own sake. Preserve the reasoning state so another session can resume
 efficiently and can distinguish established facts from guesses, experiments, and
 open gaps.
 
@@ -119,9 +124,10 @@ supported strength.
 
 When the harness supports delegation, a fresh discovery agent may be used to
 counter anchoring or generate independent mechanisms. Give it the exact statement,
-definitions, established claims, open obligations, and any source or benchmark
-restrictions, but initially withhold the inherited next action, attempts, and
-session narrative. This is optional discovery, not an adversarial review and not
+definitions, established claims, and open obligations, but initially withhold the
+inherited next action, attempts, and session narrative. External literature is
+available to it by default; its isolation targets this repository's inherited
+framing, not the world's knowledge. This is optional discovery, not an adversarial review and not
 evidence by itself. The primary agent must compare, stress-test, and synthesize
 its suggestions. See `process/harness.md`.
 
@@ -191,7 +197,11 @@ be promoted to `proved` without both source and PDF. If Tectonic is absent, the
 agent must install or repair the approved toolchain before attempting promotion.
 
 At intake, record `prior_proof_status` as `unknown`, `reported`, or `verified`.
-This tracks provenance only: “reported” does not license use of an external proof.
+Its purpose is target selection: the mission is to settle open problems, so a
+statement with a verified external proof is not a research target, and a merely
+reported proof should be verified or refuted, not re-derived blind. External
+results of any strength are usable through the import rules; internal claim
+promotions still pass this repository's review gates.
 After every dossier creation, status update, or completion, run `proofctl.py
 index`; it regenerates the live table in `README.md`. The agent owns these updates
 and must not ask the human to maintain them.

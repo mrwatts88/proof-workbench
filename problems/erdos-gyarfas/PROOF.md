@@ -62,9 +62,9 @@ lemmas remain in `A001` and `CLAIMS.md`.
   arbitrary connected cubic graphs of large girth and make it decisive; by
   `L015`–`L016` the decisive use of saturation must couple unboundedly many
   witnesses or generate an interval of even cycle lengths.
-- `G010`: extend the exhaustive \(\{C_4,C_8\}\)-free search through orders
-  \(14\)–\(15\), where the small-order collapse still applies; record and
-  classify any survivors.
+- `G011`: settle whether the saturation reduction is new to the literature;
+  if so, strengthen it into a publishable partial result past the published
+  frontier, and if not, import and rebase on the strongest published form.
 
 ## Computational dependencies
 

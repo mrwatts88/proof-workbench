@@ -62,11 +62,11 @@ unique-common-neighbor hypothesis such that
 ## Provenance
 
 The user supplied the statement on 2026-07-23 and reported that it is externally
-known to be solved. No source or known solution was searched for, inspected, or
-cited during intake. By benchmark design, the statement remains internally open.
-Investigation must avoid intentionally reproducing known solutions; comparison
-with a reference solution is deferred to a separately recorded later phase after
-an internal candidate and its review.
+known to be solved. As a historical fact, no source or known solution was
+searched for, inspected, or cited during intake or development; the dossier was
+worked under a since-retired internal-only rule. That rule was scrapped
+repository-wide in `O008`: external sources are freely usable through the
+import rules, and comparison with a reference solution is simply optional.
 
 ## Revision history
 

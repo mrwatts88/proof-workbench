@@ -3,5 +3,5 @@
 
 | ID | Problem | Work | Claim | Updated | Next action |
 |---|---|---|---|---|---|
-| P-001 | [Unique Common Neighbor](unique-common-neighbor/STATE.md) | `complete` | `proved` | 2026-07-23 | No required action; any reference comparison needs separate authorization. |
-| P-002 | [Erdős–Gyárfás Conjecture](erdos-gyarfas/STATE.md) | `active` | `open` | 2026-07-23 | Extend the exhaustive C4/C8-free search to order 14 with parallel decomposition and re-validated anchors; either prove the class empty, lifting every counterexample's order to at least 15, or record and independently verify the first survivors. |
+| P-001 | [Unique Common Neighbor](unique-common-neighbor/STATE.md) | `complete` | `proved` | 2026-07-23 | No required action; reference comparison is optional and freely permitted. |
+| P-002 | [Erdős–Gyárfás Conjecture](erdos-gyarfas/STATE.md) | `active` | `open` | 2026-07-23 | Run the frontier sweep from primary sources: import the strongest verified finite bounds with exact statements, obtain and internally verify the reported 24-vertex C4/C8-free cubic graphs, and search the literature deliberately for edge-maximal power-cycle saturation (L008); if it is absent, strengthening the saturation line becomes the frontier-passing target, and if present, import its strongest published form. |

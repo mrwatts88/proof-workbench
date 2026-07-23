@@ -33,8 +33,8 @@ generation to the `proof-explorer` subagent in
 falsified, when several sessions have inherited the same architecture, or when
 the recorded next action appears to be anchoring the work.
 
-Give the explorer only the problem slug, the applicable external-source or
-benchmark restriction, and the instruction to follow its isolation rules. Do not
+Give the explorer only the problem slug and the instruction to follow its
+isolation rules; external literature is available to it by default. Do not
 paste the current next action or discovery narrative. Its route memo is
 speculative input: compare it with the canonical record, stress-test it, and keep
 responsibility for the selected strategy in the primary session. Never count an

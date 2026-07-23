@@ -140,7 +140,7 @@ The contradiction proves the required conclusion.
 
 - `G003`: the candidate requires the mandated adversarial review passes before
   any promotion to `proved`.
-- `G004`: reference comparison remains deliberately deferred and was not used.
+- `G004`: reference comparison was not used and remains optional.
 
 ## Computational dependencies
 
