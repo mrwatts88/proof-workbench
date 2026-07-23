@@ -110,11 +110,15 @@ session` or `closed session`) means:
 4. set a small, falsifiable next action;
 5. rebuild `problems/INDEX.md` and run `proofctl.py validate`;
 6. repair any inconsistency found by validation;
-7. report what is established, what remains open, and where the next session
+7. inspect the working tree, commit all and only the session-related records and
+   supporting work with a descriptive message, and push that commit to the
+   current branch's configured upstream; do not commit unrelated pre-existing
+   changes;
+8. report what is established, what remains open, and where the next session
    should resume;
-8. end with a plain-language explanation of what was accomplished and why it
+9. end with a plain-language explanation of what was accomplished and why it
    matters;
-9. give a single subjective percentage for the chance that continued work will
+10. give a single subjective percentage for the chance that continued work will
    eventually settle the exact current statement.
 
 Do not ask the user which records to update. The current dossier and the required
@@ -126,3 +130,6 @@ evidence about the conjecture's truth. Support it with the concrete routes and
 obstacles visible at closure, and record any change from the preceding estimate.
 Persist both the plain-language recap and the estimate in the session record and
 `STATE.md` so a later session can understand and revise them.
+
+A session is not closed if its required commit or push fails. The closing report
+must name the failure and preserve the reconciled working state for recovery.

@@ -96,6 +96,12 @@ For every substantive session:
 - update `problem.json` using `set-status` when status or next action changed;
 - rebuild the index and run validation;
 - update `PROJECT_STATE.md` if repository-wide priorities changed.
+- inspect the working tree; commit all and only the session-related canonical
+  records, attempts, experiments, and supporting process changes with a
+  descriptive commit message; then push the current branch to its configured
+  upstream. Do not include unrelated pre-existing changes. If a commit or push
+  cannot be completed, say so plainly and do not represent the session as
+  closed.
 
 End the closing response with:
 
@@ -120,8 +126,9 @@ outputs, or code only when they are evidence needed to reproduce a result.
 
 A session is not closed merely because a summary was written. It is closed only
 after the canonical records agree, the next action is explicit, the index is
-current, and validation passes. If validation fails, repair the records before
-reporting the session as closed.
+current, validation passes, the session-scoped changes are committed, and that
+commit has been pushed to the configured upstream. If validation, commit, or
+push fails, repair the issue before reporting the session as closed.
 
 ## Epistemic rules
 
@@ -169,3 +176,5 @@ responsible for the substance.
 - Keep `STATE.md` short enough to read at session start; move history to records.
 - Run tests and validation after changing repository process or tooling.
 - Do not commit, push, publish, or contact third parties unless the user asks.
+  The required end-of-session checkpoint is the standing exception for the
+  session-scoped commit and push described above.

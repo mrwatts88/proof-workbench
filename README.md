@@ -54,6 +54,11 @@ action; rebuilds the index; and validates the repository. The human does not nee
 to list those bookkeeping steps. Agents also perform the checkpoint automatically
 before ending any substantive mathematical session.
 
+Before reporting closure, the agent also commits all and only the session-related
+changes with a descriptive message and pushes that commit to the current branch's
+configured upstream. Unrelated pre-existing working-tree changes must be left
+out. A failed commit or push means the session remains open until it is repaired.
+
 The closing response ends with a plain-language account of what was accomplished
 and a subjective percentage estimate for the chance that continued work will
 eventually settle the conjecture. A valid proof, counterexample or other

@@ -43,6 +43,8 @@ What was done to question the session's own findings?
 - [ ] `DECISIONS.md`
 - [ ] `LOG.md`
 - [ ] `problem.json` and index
+- [ ] Session-scoped changes committed
+- [ ] Commit pushed to configured upstream
 
 ## Ending checkpoint
 
