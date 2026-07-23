@@ -26,6 +26,18 @@ conflict before advancing the status.
 
 Never let a summary silently upgrade a claim beyond its supporting record.
 
+## Conversational default
+
+Treat ordinary questions, reactions, feedback, brainstorming, confirmations, and
+requests to explain or discuss as conversation only. Do not run commands, inspect
+the repository, create records, update status, test, commit, push, or start a
+workflow merely because the topic concerns this repository or its process.
+
+Act only when the user clearly asks to inspect, change, build, record, test,
+commit, deploy, or otherwise perform work. If the wording is genuinely ambiguous,
+answer the question first and ask before taking action. A conversational request
+such as “can we do this?” is not by itself authorization to do it.
+
 ## Classify work before choosing a protocol
 
 First decide whether the request is mathematical research or a repository

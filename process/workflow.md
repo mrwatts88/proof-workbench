@@ -2,7 +2,10 @@
 
 ## 0. Classify the request
 
-Before opening a dossier, decide whether the work bears on a mathematical result.
+Conversational questions and feedback are not work requests: answer them without
+opening records or running repository commands. Only after a clear request to act
+should the agent classify the requested work. Before opening a dossier, decide
+whether that work bears on a mathematical result.
 Research about a statement, proof, counterexample, evidence, obligation, or review
 uses this workflow and a dossier session. Repository process, tooling, dashboard,
 LaTeX build, documentation, or template work that does not change mathematical
