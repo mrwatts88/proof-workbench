@@ -175,6 +175,13 @@ class ProofctlIntegrationTests(unittest.TestCase):
         result = self.run_cli("validate", expected_returncode=1)
         self.assertIn("README.md problem dashboard is stale", result.stderr)
 
+    def test_operation_record_does_not_touch_problem_dashboard(self) -> None:
+        index_before = (self.root / "problems" / "INDEX.md").read_text()
+        self.run_cli("operation", "Refresh tooling")
+        self.run_cli("validate")
+        self.assertEqual(index_before, (self.root / "problems" / "INDEX.md").read_text())
+        self.assertTrue(list((self.root / "operations").glob("O[0-9][0-9][0-9]-*.md")))
+
 
 if __name__ == "__main__":
     unittest.main()

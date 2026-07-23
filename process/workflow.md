@@ -1,5 +1,17 @@
 # Research workflow
 
+## 0. Classify the request
+
+Before opening a dossier, decide whether the work bears on a mathematical result.
+Research about a statement, proof, counterexample, evidence, obligation, or review
+uses this workflow and a dossier session. Repository process, tooling, dashboard,
+LaTeX build, documentation, or template work that does not change mathematical
+support is operational work: create an `O###` record with `proofctl.py operation`,
+run relevant checks, and do not update a problem session or resolution outlook.
+
+If a task has both kinds of work, split its records. A process change must not be
+recorded as progress on a theorem merely because it was performed near that work.
+
 ## 1. Intake and normalization
 
 Create a dossier, then rewrite the conjecture into a statement whose truth value is
@@ -154,6 +166,13 @@ evidence about the conjecture's truth. Support it with the concrete routes and
 obstacles visible at closure, and record any change from the preceding estimate.
 Persist both the plain-language recap and the estimate in the session record and
 `STATE.md` so a later session can understand and revise them.
+
+## 9. Closing an operation
+
+Operational work closes through `operations/O###`, not a dossier session. Record
+the non-mathematical scope, implementation, verification, and exact dossier
+impact; do not give a proof-resolution estimate. Validate, commit, and push the
+operation and report its outcome separately from the research workflow.
 
 A session is not closed if its required commit or push fails. The closing report
 must name the failure and preserve the reconciled working state for recovery.

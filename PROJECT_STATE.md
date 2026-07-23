@@ -31,6 +31,8 @@ required adversarial review gates.
   README dashboard displays both current status and prior-proof provenance.
 - A proved result also has a committed PDF compiled by Tectonic, with the source,
   PDF, and compiler version recorded in its dossier.
+- Repository process and tooling work is recorded separately under `operations/`;
+  it does not count as progress on a mathematical dossier.
 - Session continuity comes from concise handoffs plus detailed append-oriented
   records, not retained chat history.
 - Closing a substantive session includes a mandatory canonical-record checkpoint;

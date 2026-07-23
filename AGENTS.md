@@ -26,6 +26,25 @@ conflict before advancing the status.
 
 Never let a summary silently upgrade a claim beyond its supporting record.
 
+## Classify work before choosing a protocol
+
+First decide whether the request is mathematical research or a repository
+operation. Do not use a problem dossier merely because one happens to exist.
+
+- **Mathematical research** changes or evaluates a particular statement, proof,
+  counterexample, claim, obligation, experiment, review, or problem status. Use
+  the full dossier resume protocol, create an `S###` session, and close it with
+  the research checkpoint and resolution outlook.
+- **Repository operation** changes process, tooling, commands, templates,
+  dashboards, build/publication infrastructure, documentation, or other support
+  systems without advancing a mathematical result. Do not select a problem,
+  create an `S###` record, update problem canonical records, change a claim/status,
+  or report a chance of mathematical resolution. Create an `O###` record with
+  `python3 scripts/proofctl.py operation "<focus>"` when the work is material.
+- **Mixed work** must be split. Record the mathematical portion in the affected
+  dossier and the supporting/tooling portion in an operation record. Do not use a
+  research session as a diary for process work.
+
 ## Resume protocol
 
 Before substantive work:
@@ -126,7 +145,7 @@ the current research state, complete the entire checkpoint, run validation, and
 only then report the concise handoff. The user does not need to enumerate the
 records to update.
 
-For every substantive session:
+For every substantive mathematical session:
 
 - complete the session record with results, failures, evidence, next moves, a
   plain-language recap, and the current success estimate;
@@ -172,6 +191,17 @@ after the canonical records agree, the next action is explicit, the index is
 current, validation passes, the session-scoped changes are committed, and that
 commit has been pushed to the configured upstream. If validation, commit, or
 push fails, repair the issue before reporting the session as closed.
+
+## Operational-work checkpoint
+
+For a material repository operation, create and complete an `operations/O###`
+record; state scope, verification, and dossier impact. Run relevant tests and
+`proofctl.py validate`, update `PROJECT_STATE.md` only if repository-wide
+priorities changed, then commit and push only the operational changes. Do not
+rewrite a problem's `STATE.md`, `CLAIMS.md`, `OBLIGATIONS.md`, `PROOF.md`,
+`DECISIONS.md`, `LOG.md`, or `sessions/` unless the task separately has a genuine
+mathematical component. The final report describes the operational outcome and
+verification only; it has no required research recap or resolution percentage.
 
 ## Epistemic rules
 

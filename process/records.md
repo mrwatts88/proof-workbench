@@ -17,6 +17,7 @@
 | `experiments/` | Reproducible computation | Preserve code and compact evidence |
 | `sessions/` | Detailed resumable checkpoints | Complete, then preserve |
 | `references/` | Local citations and source notes | Add with provenance |
+| `operations/` | Repository-only process and tooling records | Complete without dossier changes |
 
 ## ID namespaces
 
@@ -30,6 +31,7 @@
 - `E###`: experiment.
 - `R###`: review.
 - `S###`: session.
+- `O###`: repository operation.
 - `K-###`: cross-problem knowledge note.
 
 IDs are never reused after deletion or abandonment. Prefix local IDs with the
@@ -63,3 +65,8 @@ A session record is a distilled research artifact, not a transcript. Preserve:
 - changes to canonical records;
 - a concrete next action.
 
+## Operation retention
+
+An operation record is not research evidence. Preserve its scope, implementation,
+verification, and whether it changed any dossier. Do not include a proof outlook
+or represent operational work as mathematical progress.

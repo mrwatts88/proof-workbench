@@ -67,10 +67,12 @@ ROOT_FILES = (
     "process/toolkit.md",
     "problems/INDEX.md",
     "problems/_template/problem.json",
+    "operations/README.md",
     "templates/attempt.md",
     "templates/review.md",
     "templates/session.md",
     "templates/experiment.md",
+    "templates/operation.md",
 )
 PROBLEM_FILES = (
     "problem.json",
@@ -526,6 +528,12 @@ def validate_repository(root: Path) -> list[str]:
     if readme_path.is_file() and expected_dashboard not in readme_path.read_text(encoding="utf-8"):
         errors.append("README.md problem dashboard is stale; run proofctl.py index")
 
+    operations_directory = root / "operations"
+    if operations_directory.is_dir():
+        for path in operations_directory.glob("O[0-9][0-9][0-9]-*.md"):
+            if re.search(r"\{\{[A-Z_]+\}\}", path.read_text(encoding="utf-8")):
+                errors.append(f"{path.relative_to(root)}: unresolved template token")
+
     ids: dict[str, Path] = {}
     known_ids = {
         item.get("id")
@@ -718,6 +726,26 @@ def command_add(args: argparse.Namespace) -> int:
     write_index(root)
     print(f"Created {output_path.relative_to(root)}")
     print("Remember to reconcile STATE.md, LOG.md, claims, and obligations.")
+    return 0
+
+
+def command_operation(args: argparse.Namespace) -> int:
+    """Create a repository-operation record without touching a problem dossier."""
+    root: Path = args.root
+    records_directory = root / "operations"
+    number = next_record_number(records_directory, "O")
+    record_id = f"O{number:03d}"
+    output_path = records_directory / f"{record_id}-{today()}-{safe_record_slug(args.title)}.md"
+    template_path = root / "templates" / "operation.md"
+    if not template_path.is_file():
+        raise ProofctlError(f"Missing operation template: {template_path}")
+    content = replace_tokens(
+        template_path.read_text(encoding="utf-8"),
+        {"RECORD_ID": record_id, "TITLE": args.title, "DATE": today()},
+    )
+    output_path.write_text(content, encoding="utf-8")
+    print(f"Created {output_path.relative_to(root)}")
+    print("Operational work: do not create a problem session or update proof status.")
     return 0
 
 
@@ -919,6 +947,12 @@ def build_parser() -> argparse.ArgumentParser:
         "--type", dest="review_type", choices=sorted(REVIEW_TYPES), required=True
     )
     review_parser.set_defaults(func=command_review)
+
+    operation_parser = subparsers.add_parser(
+        "operation", help="Create a repository-operation record outside a problem dossier."
+    )
+    operation_parser.add_argument("title")
+    operation_parser.set_defaults(func=command_operation)
 
     typeset_parser = subparsers.add_parser(
         "typeset", help="Compile a dossier's LaTeX source to PDF with Tectonic."

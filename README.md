@@ -24,6 +24,7 @@ python3 scripts/proofctl.py validate
 python3 scripts/proofctl.py status
 python3 scripts/proofctl.py new compactness-example --title "A compactness example"
 python3 scripts/proofctl.py add compactness-example session "Initial normalization"
+python3 scripts/proofctl.py operation "Refresh process tooling"
 python3 scripts/proofctl.py add compactness-example attempt "Minimal counterexample"
 python3 scripts/proofctl.py add compactness-example review "Quantifier audit"
 python3 scripts/proofctl.py typeset unique-common-neighbor
@@ -75,6 +76,7 @@ PROJECT_STATE.md       concise repository-wide handoff
 process/                workflow, proof standards, review, and tool guidance
 problems/INDEX.md       generated problem dashboard
 problems/<slug>/        one self-contained research dossier
+operations/              repository-only process and tooling records
 knowledge/              reusable results and methods across problems
 templates/              records created during research
 scripts/proofctl.py     create, index, update, and validate dossiers
