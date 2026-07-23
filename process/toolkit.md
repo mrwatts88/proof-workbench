@@ -3,6 +3,36 @@
 Choose tactics because they expose a falsifiable mechanism, not because they are
 on a checklist.
 
+## Strategy generation and recalibration
+
+Separate the generative and critical phases:
+
+1. **Generate mechanisms.** Seek explanations that would make the statement true
+   or false: a conserved quantity, obstruction, extremal object, transformation,
+   dual formulation, or source of counterexamples. Prefer mechanistic diversity
+   over several cosmetic variants of one proof.
+2. **Make them concrete.** For each serious route, name the first new claim it
+   needs and the cheapest test that could distinguish it from wishful thinking.
+3. **Compare research value.** Favor routes with high information gain and
+   leverage on the main claim, not merely the shortest task or the easiest record
+   to complete.
+4. **Recalibrate.** Continue while the mechanism survives its tests; pivot when a
+   hidden premise fails, the route reduces to the original claim, or a distinct
+   route becomes clearly more informative.
+
+Useful route roles are:
+
+- **primary:** the best current route to a proof or disproof;
+- **falsification:** a direct attack on the primary route's weakest premise;
+- **alternative:** a different mechanism pursuing the same target;
+- **reframing:** a change of representation that may expose a new invariant or
+  obstruction.
+
+Do not confuse novelty with randomness. A mature route that continues to gain
+support may deserve exploitation; a fashionable new representation with no
+decisive test does not. Conversely, do not keep an inherited route alive merely
+because it is already documented.
+
 ## Normalize and negate
 
 - Write the logical form with explicit quantifiers.
@@ -73,4 +103,3 @@ When stuck, prefer a precise change of representation:
 - translate the problem into an equivalent algebraic, combinatorial, geometric, or
   computational form;
 - record a conditional theorem if a single difficult lemma is the true frontier.
-

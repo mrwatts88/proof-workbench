@@ -9,8 +9,21 @@
 - Work / claim status:
 - Strongest established facts:
 - Open obligations in scope:
+- Inherited next action:
 - Session goal:
 - Falsifiable next move:
+
+## Strategy audit
+
+- Why the inherited route might work:
+- Fastest way to falsify it:
+- Mechanistically distinct alternative or reframing:
+- Selected route and reason:
+- Pivot criterion:
+
+Keep this comparison compact. Do not invent cosmetic alternatives to fill the
+template; record the real strategic choice or explain why the session is exempt
+(for example, required review or mechanical closure).
 
 ## Work performed
 
@@ -50,6 +63,9 @@ What was done to question the session's own findings?
 
 - Current frontier:
 - Remaining blockers:
+- Recalibration decision: continued / pivoted / retired, with reason
+- Best live alternative or reframing:
+- Pivot trigger:
 - Best next action:
 - Files a new session should read:
 

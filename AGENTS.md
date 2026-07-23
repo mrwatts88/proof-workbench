@@ -79,23 +79,72 @@ Before substantive work:
 
 Do not begin from a remembered version of a conjecture.
 
+## Strategic autonomy
+
+The `next_action` in `problem.json` and `STATE.md` is the best proposal from the
+previous checkpoint, not an instruction whose premises must be accepted. Its
+purpose is to make work resumable, not to turn the next agent into an implementer
+of a stale plan.
+
+Before committing a substantive exploration session to the inherited route, the
+agent must perform a brief strategy audit:
+
+1. state why the inherited route might work and the fastest evidence that would
+   kill it;
+2. compare it with a failure-first move and at least one mechanistically distinct
+   alternative or reframing;
+3. allow a short generative phase before rejecting ideas, then select the route
+   with the best expected research value—information gain, leverage on the main
+   claim, falsifiability, and dependence on unproved assumptions;
+4. name the pivot condition that will trigger reevaluation.
+
+This is a reasoning discipline, not a quota or brainstorming performance. A
+sentence per route is enough when the comparison is simple. Do not manufacture
+cosmetic variants merely to fill a template, and do not interrupt intake,
+candidate review, required reproduction, or mechanical closure work with an
+irrelevant strategy exercise.
+
+The agent is authorized to replace, postpone, or retire the inherited next action
+without asking the human when mathematical evidence supports the change. When a
+route is falsified or loses its comparative advantage, pivot rather than finishing
+it for compliance. Record the decisive reason in the session and attempt, update
+`DECISIONS.md` when the proof architecture materially changes, preserve a compact
+strategy portfolio in `STATE.md`, and make the selected next move the new
+`next_action`.
+
+Protect creativity without weakening epistemic standards. Speculative mechanisms,
+analogies, and reframings belong in the strategy audit or an attempt record and
+must be labeled as such. They enter `CLAIMS.md` or `PROOF.md` only at their
+supported strength.
+
+When the harness supports delegation, a fresh discovery agent may be used to
+counter anchoring or generate independent mechanisms. Give it the exact statement,
+definitions, established claims, open obligations, and any source or benchmark
+restrictions, but initially withhold the inherited next action, attempts, and
+session narrative. This is optional discovery, not an adversarial review and not
+evidence by itself. The primary agent must compare, stress-test, and synthesize
+its suggestions. See `process/harness.md`.
+
 ## Research loop
 
 For each meaningful line of attack:
 
-1. Normalize the claim. Expand definitions, expose quantifiers, test boundary and
+1. Audit the current strategy—beginning with the inherited next action at session
+   start—and choose the route under the strategic autonomy rules above.
+2. Normalize the claim. Expand definitions, expose quantifiers, test boundary and
    degenerate cases, and list hidden assumptions.
-2. Search for failure first. Try small cases, extremal constructions, symmetry,
+3. Search for failure first. Try small cases, extremal constructions, symmetry,
    dimension/counting obstructions, and known theorem hypotheses.
-3. Decompose the target into atomic claims and explicit proof obligations.
-4. Work in an attempt record. Label intuition, computations, imported theorems,
+4. Decompose the target into atomic claims and explicit proof obligations.
+5. Work in an attempt record. Label intuition, computations, imported theorems,
    and proved deductions distinctly.
-5. Stress-test the result from an adversarial role. Check quantifier order,
+6. Stress-test the result from an adversarial role. Check quantifier order,
    domain restrictions, circular dependencies, equality cases, and illicit
    limit/interchange steps.
-6. Integrate only supported claims into `PROOF.md`; keep failed approaches with a
+7. Integrate only supported claims into `PROOF.md`; keep failed approaches with a
    useful postmortem.
-7. Update the persistent handoff before ending the session.
+8. Recalibrate the route portfolio and persistent handoff before ending the
+   session.
 
 A review pass may occur in a delegated fresh agent or a later clean-context
 session. Do not claim reviewer independence merely because the same reasoning was
@@ -173,7 +222,8 @@ For every substantive mathematical session:
 - update `PROOF.md` only if the integrated argument changed;
 - update `DECISIONS.md` if the statement, assumptions, or strategy changed;
 - rewrite `STATE.md` as a concise current handoff, including the human-level state
-  and current success estimate;
+  and current success estimate, plus the primary route, a live alternative or
+  reframing, and the condition that would trigger a pivot;
 - update `problem.json` using `set-status` when status or next action changed;
 - rebuild the index and run validation;
 - update `PROJECT_STATE.md` if repository-wide priorities changed.
@@ -203,7 +253,8 @@ End the closing response with:
    `STATE.md`; if they disagree, repair the records rather than the message. It
    must be small and falsifiable — "search orders 12–14 for a counterexample to
    C007," not "continue working." If the dossier is complete, say that no further
-   step is required and name any optional follow-up.
+   step is required and name any optional follow-up. This selection is the next
+   session's inherited proposal, not a command that bypasses its strategy audit.
 
 The estimate is research judgment, not mathematical evidence. It must not upgrade
 `claim_status`, resolve an obligation, or be presented as a calibrated fact. Avoid

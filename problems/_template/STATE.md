@@ -23,6 +23,17 @@ The statement is still in intake. See `STATEMENT.md` version 0.1.
 
 - The initial wording may hide domain or nondegeneracy assumptions.
 
+## Strategy portfolio
+
+- Primary route: normalize the statement, then test its smallest and most
+  pathological cases.
+- Fastest falsification: expose a boundary case or missing hypothesis before
+  attempting a proof.
+- Live alternative or reframing: rewrite the exact negation and search directly
+  for its weakest witness.
+- Pivot trigger: if normalization changes the substantive target, stop and record
+  a new statement version before continuing.
+
 ## Best next action
 
 Complete `STATEMENT.md`, then try to falsify the normalized claim on boundary and

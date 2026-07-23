@@ -42,7 +42,9 @@ Before investing in a proof:
 - identify invariances, normal forms, monotone quantities, and likely obstructions;
 - classify computational tests as exploratory, exhaustive, or certificate-based.
 
-Deliverable: an intake session and an initial `STATE.md` naming the best next move.
+Deliverable: an intake session and an initial `STATE.md` naming the best next
+move, the fastest way to falsify it, and at least one live alternative or
+reframing.
 
 ## 3. Decomposition
 
@@ -62,11 +64,41 @@ records what remains to be shown and what it blocks.
 
 ## 4. Exploration
 
+### Strategy audit before committing to a route
+
+The inherited `next_action` is a resumability device, not a command. At the start
+of a nontrivial exploration session, briefly compare:
+
+- **exploitation:** the strongest current route and why it might work;
+- **falsification:** the cheapest decisive test of that route or its hidden
+  premise;
+- **alternative or reframing:** a mechanistically different proof architecture,
+  representation, or counterexample route.
+
+Generate before pruning: give plausible mechanisms enough room to become
+specific, then evaluate them for information gain, leverage, falsifiability, and
+unsupported dependencies. Select one primary move and one pivot trigger. This
+comparison should be compact and substantive, not a quota of superficial ideas.
+
+The agent may retire or replace the inherited move without human approval when
+the audit or later evidence warrants it. A material change of proof architecture
+goes in `DECISIONS.md`; the session and `STATE.md` retain the primary route, the
+best live alternative, and the reason other routes were deferred or retired.
+
+Where discovery delegation is available, a fresh agent can be asked for
+independent mechanisms before it sees the inherited route or discovery narrative.
+Its output is exploratory material, not a review verdict or mathematical support;
+the primary agent remains responsible for comparison and verification.
+
+### Working an attempt
+
 Create one attempt record per coherent approach. An attempt should state:
 
+- its role in the strategy portfolio: primary, falsification, alternative, or
+  reframing;
 - the mechanism that might make the approach work;
 - required intermediate claims;
-- decisive tests;
+- decisive tests and a kill or pivot criterion;
 - actual deductions;
 - failures and salvageable results.
 
@@ -119,8 +151,10 @@ At the end of a substantive session:
 3. update the integrated proof if warranted;
 4. make decisions and statement versions explicit;
 5. rewrite `STATE.md` around the current frontier;
-6. set one concrete next action;
-7. rebuild the index and validate.
+6. recalibrate the compact strategy portfolio: primary route, live alternative
+   or reframing, and pivot trigger;
+7. set one concrete next action selected from that portfolio;
+8. rebuild the index and validate.
 
 For a `complete` + `proved` result, also create the standalone LaTeX source in
 `papers/`, set `latex_file` in `problem.json`, and run `proofctl.py typeset
@@ -131,7 +165,8 @@ or dossier change.
 
 The next action should be falsifiable and small, such as “prove L004 without
 compactness” or “search orders 8–12 for a counterexample to C007,” not “continue
-working.”
+working.” It records the current selection, not an instruction exempting the next
+session from strategic reevaluation.
 
 ## 8. Closing a session
 
@@ -150,7 +185,7 @@ session` or `closed session`) means:
 1. stop opening new lines of investigation;
 2. finish the active session and attempt records with exact results and failures;
 3. reconcile all canonical records listed in `AGENTS.md`;
-4. set a small, falsifiable next action;
+4. recalibrate the route portfolio and set a small, falsifiable next action;
 5. rebuild `problems/INDEX.md` and run `proofctl.py validate`;
 6. repair any inconsistency found by validation;
 7. inspect the working tree, commit all and only the session-related records and
@@ -164,8 +199,9 @@ session` or `closed session`) means:
 10. give a single subjective percentage for the chance that continued work will
    eventually settle the exact current statement;
 11. state the proposed next step in plain language: the concrete move, what it
-   would establish or rule out, and any alternative deferred. It must match the
-   next action stored in `problem.json` and `STATE.md`.
+    would establish or rule out, and any alternative deferred. It must match the
+    next action stored in `problem.json` and `STATE.md`, while remaining a
+    proposal for the next session to audit rather than obey blindly.
 
 Do not ask the user which records to update. The current dossier and the required
 checkpoint determine that.

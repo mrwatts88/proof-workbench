@@ -182,6 +182,33 @@ class ProofctlIntegrationTests(unittest.TestCase):
         result = self.run_cli("validate", expected_returncode=1)
         self.assertIn("CLAUDE.md must import the contract", result.stderr)
 
+    def test_strategy_audit_is_scaffolded_and_guarded(self) -> None:
+        self.run_cli("new", "strategy-test", "--title", "Strategy test")
+        self.run_cli("add", "strategy-test", "session", "Route selection")
+        self.run_cli("add", "strategy-test", "attempt", "Alternative mechanism")
+
+        session = next(
+            (self.root / "problems" / "strategy-test" / "sessions").glob(
+                "S001-*.md"
+            )
+        ).read_text()
+        attempt = next(
+            (self.root / "problems" / "strategy-test" / "attempts").glob(
+                "A001-*.md"
+            )
+        ).read_text()
+        state = (self.root / "problems" / "strategy-test" / "STATE.md").read_text()
+        self.assertIn("## Strategy audit", session)
+        self.assertIn("- Portfolio role:", attempt)
+        self.assertIn("## Strategy portfolio", state)
+
+        template_path = self.root / "templates" / "session.md"
+        template_path.write_text(
+            template_path.read_text().replace("## Strategy audit", "## Route notes")
+        )
+        result = self.run_cli("validate", expected_returncode=1)
+        self.assertIn("missing required process marker", result.stderr)
+
     def test_review_records_how_independence_was_obtained(self) -> None:
         self.run_cli("new", "independence-test", "--title", "Independence test")
         self.run_cli(

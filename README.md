@@ -50,7 +50,18 @@ Continue compactness-example.
 ```
 
 The agent follows the resume protocol in `AGENTS.md` and reads the dossier's
-current handoff. To end the current research session, the human can simply say:
+current handoff. The stored next action is treated as the previous session's best
+proposal, not an order: before nontrivial exploration the agent compares it with
+the quickest way to falsify it and with a genuinely different route or reframing.
+The selected route, live alternative, and pivot trigger are preserved in the
+session and handoff.
+
+Where a harness supports fresh discovery agents, one may generate independent
+routes before seeing the inherited plan. Those suggestions are speculative inputs,
+not reviews or proof evidence; the primary agent remains responsible for checking
+and selecting them.
+
+To end the current research session, the human can simply say:
 
 ```text
 Close session.

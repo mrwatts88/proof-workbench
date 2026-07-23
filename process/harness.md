@@ -29,21 +29,27 @@ before any work begins.
 
 ## Fresh-context review
 
-This is the only place where harness capability changes what an agent may do. The
-contract requires adversarial audits to be performed by a reviewer that has not
-seen the discovery reasoning, and permits a same-context audit only when fresh
-delegation is genuinely unavailable.
+Review independence is the one place where harness capability changes the
+promotion path. The contract requires adversarial audits to be performed by a
+reviewer that has not seen the discovery reasoning, and permits a same-context
+audit only when fresh delegation is genuinely unavailable.
 
 | Harness | Delegation | Required mode |
 |---|---|---|
 | Claude Code | Subagents via the Task tool | `delegated-subagent`; the unavailability exemption does not apply |
-| Codex | No in-session subagent delegation | `clean-session` in a later session, with the limitation recorded |
+| Codex | Collaboration subagents when exposed by the session; otherwise unavailable | `delegated-subagent` when exposed; `clean-session` later only when genuinely unavailable |
 
 Claude Code defines the reviewer in `.claude/agents/proof-reviewer.md`. That file
 enforces the isolation rule mechanically: the reviewer starts from `STATEMENT.md`
 and `PROOF.md` and may not read `attempts/`, `sessions/`, or prior `reviews/`
 before its first verdict. Prefer it over an ad hoc prompt, and do not paste
 discovery reasoning into it.
+
+In Codex, capability is detected per session. If collaboration/subagent tools are
+present, the unavailability exemption does not apply: start a subagent without
+forking the discovery conversation and give it the same isolated reviewer brief.
+If those tools are absent, record `clean-session` and perform the audit in a
+genuinely later context.
 
 Record how independence was actually obtained with
 `proofctl.py review ... --independence <mode>`. The available modes are:
@@ -59,6 +65,28 @@ Harnesses that summarize a long conversation to continue it, including Claude
 Code, carry the discovery reasoning forward in distilled form. A pass performed
 after compaction is `same-context-limited`, not `clean-session`. Summarization
 removes detail, not influence.
+
+## Fresh-context discovery
+
+Strategic exploration may also use a fresh agent to reduce anchoring, but this is
+different from mandatory candidate review:
+
+- discovery delegation is optional and produces speculative routes, not a
+  verdict or mathematical evidence;
+- initially give the explorer the statement, definitions, established claims,
+  open obligations, and any source or benchmark restrictions, while withholding
+  `next_action`, `STATE.md`, attempts, sessions, and prior reviews;
+- ask for mechanistically distinct proof, disproof, and reframing routes with
+  explicit kill tests;
+- after the independent route memo is returned, the primary agent compares it
+  with the inherited portfolio, checks it against known failures, and records
+  only distilled useful reasoning.
+
+Claude Code provides `.claude/agents/proof-explorer.md` for this role. A harness
+Codex may use a no-history collaboration subagent with the same isolation brief
+when that capability is exposed. A harness without discovery delegation performs
+the same strategy audit in the primary context; that does not weaken any
+review-independence requirement.
 
 ## Permissions and sandboxing
 

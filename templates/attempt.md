@@ -3,10 +3,13 @@
 - Date opened: {{DATE}}
 - Problem: `{{PROBLEM_ID}}`
 - Status: active
+- Portfolio role: primary / falsification / alternative / reframing
 
 ## Intended mechanism
 
-What structural idea would make this approach work?
+What structural idea would make this approach work? State what is distinctive or,
+if this is the primary inherited route, why exploiting it is preferable to the
+live alternatives.
 
 ## Entry assumptions
 
@@ -18,7 +21,8 @@ List only assumptions from the current statement or explicitly conditional claim
 
 ## Plan and decisive tests
 
-1. State a quick test that could falsify the approach.
+1. State the cheapest test that could falsify the approach.
+2. State the evidence or condition that should trigger a pivot.
 
 ## Deductions
 

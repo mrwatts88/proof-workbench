@@ -43,6 +43,13 @@ Erdős–Gyárfás conjecture.
   it does not count as progress on a mathematical dossier.
 - Session continuity comes from concise handoffs plus detailed append-oriented
   records, not retained chat history.
+- A recorded next action is the previous session's best proposal, not a command.
+  Each nontrivial exploration session audits it against a fast falsification move
+  and a mechanistically distinct alternative or reframing before committing.
+- `STATE.md` and session records preserve a compact strategy portfolio: primary
+  route, live alternative, and pivot trigger. Fresh discovery agents may reduce
+  anchoring where the harness supports them, but their suggestions remain
+  speculative until checked by the primary agent.
 - Closing a substantive session includes a mandatory canonical-record checkpoint;
   the human shorthand `close session` invokes the whole checkpoint.
 - Each closure preserves a plain-language recap, a subjective percentage estimate
@@ -64,5 +71,7 @@ new power-of-two cycle-forcing argument. No required action remains for
 - Independent review is a reasoning discipline, not something filenames can
   guarantee.
 - Handoffs become misleading if agents omit the end-of-session checkpoint.
+- Strategy audits can become empty ceremony if agents list cosmetic variants
+  instead of comparing distinct mechanisms and acting on negative evidence.
 - Benchmark investigations can be contaminated if known solutions are consulted
   before the internal candidate and review phases are complete.

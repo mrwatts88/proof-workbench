@@ -59,6 +59,7 @@ ROOT_FILES = (
     "README.md",
     "AGENTS.md",
     "CLAUDE.md",
+    ".claude/agents/proof-explorer.md",
     "PROJECT_STATE.md",
     "process/harness.md",
     "process/workflow.md",
@@ -69,6 +70,7 @@ ROOT_FILES = (
     "process/toolkit.md",
     "problems/INDEX.md",
     "problems/_template/problem.json",
+    "problems/_template/STATE.md",
     "operations/README.md",
     "templates/attempt.md",
     "templates/review.md",
@@ -109,6 +111,17 @@ INDEPENDENCE_MODES = {
 # `CLAUDE.md` is the Claude Code entry point. It must stay a thin pointer to the
 # harness-neutral contract rather than a second copy of it.
 CLAUDE_IMPORT_LINE = "@AGENTS.md"
+REQUIRED_PROCESS_MARKERS = {
+    "AGENTS.md": ("## Strategic autonomy",),
+    "CLAUDE.md": ("## Fresh discovery is available here",),
+    ".claude/agents/proof-explorer.md": ("name: proof-explorer",),
+    "process/harness.md": ("## Fresh-context discovery",),
+    "process/toolkit.md": ("## Strategy generation and recalibration",),
+    "process/workflow.md": ("### Strategy audit before committing to a route",),
+    "templates/session.md": ("## Strategy audit",),
+    "templates/attempt.md": ("- Portfolio role:",),
+    "problems/_template/STATE.md": ("## Strategy portfolio",),
+}
 
 
 class ProofctlError(Exception):
@@ -375,6 +388,16 @@ def validate_repository(root: Path) -> list[str]:
     for relative in ROOT_FILES:
         if not (root / relative).is_file():
             errors.append(f"missing required repository file: {relative}")
+    for relative, markers in REQUIRED_PROCESS_MARKERS.items():
+        path = root / relative
+        if not path.is_file():
+            continue
+        content = path.read_text(encoding="utf-8")
+        for marker in markers:
+            if marker not in content:
+                errors.append(
+                    f"{relative}: missing required process marker {marker!r}"
+                )
 
     directories = problem_dirs(root)
     loaded: list[tuple[Path, dict[str, Any]]] = []

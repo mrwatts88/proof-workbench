@@ -25,6 +25,21 @@ subagent exists to provide.
 
 Record the resulting independence mode as `delegated-subagent`.
 
+## Fresh discovery is available here
+
+For a nontrivial strategy audit, the primary agent may delegate independent route
+generation to the `proof-explorer` subagent in
+`.claude/agents/proof-explorer.md`. This is especially useful after a route is
+falsified, when several sessions have inherited the same architecture, or when
+the recorded next action appears to be anchoring the work.
+
+Give the explorer only the problem slug, the applicable external-source or
+benchmark restriction, and the instruction to follow its isolation rules. Do not
+paste the current next action or discovery narrative. Its route memo is
+speculative input: compare it with the canonical record, stress-test it, and keep
+responsibility for the selected strategy in the primary session. Never count an
+explorer memo as an adversarial review or as support for a claim.
+
 ## Compaction does not create a fresh context
 
 Claude Code summarizes the conversation when it grows long. A compacted session

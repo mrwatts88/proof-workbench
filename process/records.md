@@ -6,7 +6,7 @@
 |---|---|---|
 | `problem.json` | Machine state, dates, tags, dependencies, next action | Rewrite through CLI when possible |
 | `STATEMENT.md` | Exact versioned target | Rewrite with decision entry |
-| `STATE.md` | Current handoff | Rewrite each substantive session |
+| `STATE.md` | Current handoff and compact strategy portfolio | Rewrite each substantive session |
 | `CLAIMS.md` | Atomic assertion ledger | Maintain in place |
 | `OBLIGATIONS.md` | Live gaps and blockers | Maintain in place |
 | `PROOF.md` | Integrated candidate | Rewrite carefully |
@@ -59,11 +59,19 @@ obligation resolved without linking the exact resolution.
 A session record is a distilled research artifact, not a transcript. Preserve:
 
 - goal and starting state;
+- the inherited next action and the strategy audit that selected, revised, or
+  replaced it;
+- the primary route, fastest falsification, live alternative or reframing, and
+  pivot criterion;
 - deductions and their dependencies;
 - counterexamples and failed routes;
 - commands/results needed for reproducibility;
 - changes to canonical records;
 - a concrete next action.
+
+An attempt record also names its role in the route portfolio and its kill or
+pivot criterion. Preserve decisive reasons for retiring a route so a later agent
+does not blindly recreate it.
 
 ## Operation retention
 
