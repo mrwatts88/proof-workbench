@@ -11,6 +11,7 @@ Read in this order:
 4. [review-playbook.md](review-playbook.md) — adversarial checking.
 5. [records.md](records.md) — persistent files and stable IDs.
 6. [toolkit.md](toolkit.md) — mathematical and computational tactics.
+7. [harness.md](harness.md) — how each agent harness satisfies the contract.
 
 Changes to these rules are process decisions. Record significant changes in
 `PROJECT_STATE.md` and cover enforceable behavior with tests.

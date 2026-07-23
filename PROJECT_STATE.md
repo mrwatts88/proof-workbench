@@ -30,7 +30,11 @@ Erdős–Gyárfás conjecture.
 - Atomic claims and unresolved obligations are first-class records.
 - A proof is not complete until adversarial reviews and promotion gates pass.
 - Agents initiate and delegate those reviews automatically when a candidate
-  appears; humans do not schedule the review lifecycle.
+  appears; humans do not schedule the review lifecycle. Delegation to a fresh
+  reviewer is mandatory wherever the harness supports it, and how independence was
+  obtained is recorded on the review.
+- The operating contract is harness-neutral and works in either Codex or Claude
+  Code; harness-specific files configure a harness but never hold process rules.
 - Every internally proved result has a standalone LaTeX source, and the generated
   README dashboard displays both current status and prior-proof provenance.
 - A proved result also has a committed PDF compiled by Tectonic, with the source,
@@ -41,8 +45,9 @@ Erdős–Gyárfás conjecture.
   records, not retained chat history.
 - Closing a substantive session includes a mandatory canonical-record checkpoint;
   the human shorthand `close session` invokes the whole checkpoint.
-- Each closure preserves a plain-language recap and a subjective percentage
-  estimate of the chance of eventually settling the exact current statement.
+- Each closure preserves a plain-language recap, a subjective percentage estimate
+  of the chance of eventually settling the exact current statement, and a
+  plain-language statement of the proposed next step.
 - Computational work must be reproducible and its logical scope must be stated.
 
 ## Next action

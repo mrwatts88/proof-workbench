@@ -58,6 +58,13 @@ What was done to question the session's own findings?
 Explain what was accomplished, why it matters, and what remains without relying
 on internal record IDs or unexplained specialist terminology.
 
+## Proposed next step
+
+State in plain language what the next session should do, what that move would
+establish or rule out, and any alternative considered and deferred. This must be
+the same next action recorded in `problem.json` and `STATE.md`, and it must be
+small and falsifiable.
+
 ## Resolution outlook
 
 - Estimated chance of eventually settling the exact current statement: __%

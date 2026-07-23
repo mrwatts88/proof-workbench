@@ -89,7 +89,8 @@ the task as ordinary exploration. The agent must set the dossier to `candidate`
 with claim status `proof_candidate`, then immediately start review itself:
 
 1. run `python3 scripts/proofctl.py review <slug> "<audit title>" --type <type>`;
-2. assign that audit to a fresh agent or clean context when one is available;
+2. assign that audit to a fresh agent, delegating whenever the harness allows it
+   and falling back to a later clean context only when it does not;
 3. give the reviewer `STATEMENT.md` and the candidate, but not discovery attempts,
    sessions, or prior reviews before its first verdict;
 4. record critical and major findings as obligations and repair or reject the
@@ -102,9 +103,12 @@ is. A useful review attempts to break the candidate, not summarize it.
 For a proof or undecidability result, the agent must obtain two meaningfully
 distinct fresh-context audits (normally logic plus hypotheses/counterexample). For
 a disproof, it must obtain one fresh-context reproduction audit from the statement.
-If fresh delegation is unavailable, the agent must record that limitation and use
-a later clean-context pass; it must never label a same-context paraphrase as
-independent.
+Delegation is mandatory in a harness that supports it; `process/harness.md` states
+what each one provides and which independence mode to record. Only where fresh
+delegation is genuinely unavailable may the agent record that limitation and use a
+later clean-context pass. It must never label a same-context paraphrase as
+independent, and a context that was summarized or compacted to continue the same
+session does not become fresh by that summarization.
 
 ## 7. Consolidation and handoff
 
@@ -158,7 +162,10 @@ session` or `closed session`) means:
 9. end with a plain-language explanation of what was accomplished and why it
    matters;
 10. give a single subjective percentage for the chance that continued work will
-   eventually settle the exact current statement.
+   eventually settle the exact current statement;
+11. state the proposed next step in plain language: the concrete move, what it
+   would establish or rule out, and any alternative deferred. It must match the
+   next action stored in `problem.json` and `STATE.md`.
 
 Do not ask the user which records to update. The current dossier and the required
 checkpoint determine that.

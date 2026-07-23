@@ -175,6 +175,33 @@ class ProofctlIntegrationTests(unittest.TestCase):
         result = self.run_cli("validate", expected_returncode=1)
         self.assertIn("README.md problem dashboard is stale", result.stderr)
 
+    def test_claude_entry_point_must_import_the_contract(self) -> None:
+        claude_path = self.root / "CLAUDE.md"
+        self.assertIn("@AGENTS.md", claude_path.read_text())
+        claude_path.write_text("# Claude Code\n\nA forked copy of the contract.\n")
+        result = self.run_cli("validate", expected_returncode=1)
+        self.assertIn("CLAUDE.md must import the contract", result.stderr)
+
+    def test_review_records_how_independence_was_obtained(self) -> None:
+        self.run_cli("new", "independence-test", "--title", "Independence test")
+        self.run_cli(
+            "set-status", "independence-test", "candidate", "--claim", "proof_candidate"
+        )
+        result = self.run_cli(
+            "review",
+            "independence-test",
+            "Logic audit",
+            "--type",
+            "logic",
+            "--independence",
+            "same-context-limited",
+        )
+        self.assertIn("WARNING", result.stdout)
+        review = next(
+            (self.root / "problems" / "independence-test" / "reviews").glob("R001-*.md")
+        )
+        self.assertIn("Independence mode: same-context-limited", review.read_text())
+
     def test_operation_record_does_not_touch_problem_dashboard(self) -> None:
         index_before = (self.root / "problems" / "INDEX.md").read_text()
         self.run_cli("operation", "Refresh tooling")

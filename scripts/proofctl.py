@@ -58,7 +58,9 @@ README_DASHBOARD_END = "<!-- END GENERATED PROBLEM DASHBOARD -->"
 ROOT_FILES = (
     "README.md",
     "AGENTS.md",
+    "CLAUDE.md",
     "PROJECT_STATE.md",
+    "process/harness.md",
     "process/workflow.md",
     "process/statuses.md",
     "process/proof-standard.md",
@@ -96,6 +98,17 @@ RECORD_CONFIG = {
     "experiment": ("E", "experiments", "experiment.md", True),
 }
 REVIEW_TYPES = {"logic", "hypotheses", "counterexample", "computation", "exposition"}
+INDEPENDENCE_MODES = {
+    "delegated-subagent": "delegated fresh agent with no discovery context",
+    "clean-session": "later clean-context session started from the records alone",
+    "same-context-limited": (
+        "NOT INDEPENDENT: same or compacted context; recorded as a limitation and "
+        "not usable as promotion evidence"
+    ),
+}
+# `CLAUDE.md` is the Claude Code entry point. It must stay a thin pointer to the
+# harness-neutral contract rather than a second copy of it.
+CLAUDE_IMPORT_LINE = "@AGENTS.md"
 
 
 class ProofctlError(Exception):
@@ -528,6 +541,15 @@ def validate_repository(root: Path) -> list[str]:
     if readme_path.is_file() and expected_dashboard not in readme_path.read_text(encoding="utf-8"):
         errors.append("README.md problem dashboard is stale; run proofctl.py index")
 
+    claude_path = root / "CLAUDE.md"
+    if claude_path.is_file():
+        claude_text = claude_path.read_text(encoding="utf-8")
+        if CLAUDE_IMPORT_LINE not in claude_text:
+            errors.append(
+                f"CLAUDE.md must import the contract with '{CLAUDE_IMPORT_LINE}'; "
+                "it is the Claude Code entry point, not a second contract"
+            )
+
     operations_directory = root / "operations"
     if operations_directory.is_dir():
         for path in operations_directory.glob("O[0-9][0-9][0-9]-*.md"):
@@ -776,7 +798,9 @@ def command_review(args: argparse.Namespace) -> int:
             "DATE": today(),
             "PROBLEM_ID": str(manifest["id"]),
             "REVIEW_TYPE": args.review_type,
-            "INDEPENDENCE_MODE": "fresh-context independent review",
+            "INDEPENDENCE_MODE": (
+                f"{args.independence} — {INDEPENDENCE_MODES[args.independence]}"
+            ),
         },
     )
     output_path.write_text(content, encoding="utf-8")
@@ -790,7 +814,17 @@ def command_review(args: argparse.Namespace) -> int:
     write_json(problem_directory / "problem.json", manifest)
     write_index(root)
     print(f"Started {output_path.relative_to(root)}")
-    print("Status changed to review. Assign this to a fresh reviewer context.")
+    if args.independence == "same-context-limited":
+        print(
+            "Status changed to review. WARNING: this audit is recorded as not "
+            "independent and cannot support promotion. Delegate to a fresh "
+            "reviewer where the harness allows it; see process/harness.md."
+        )
+    else:
+        print(
+            "Status changed to review. Assign this to a fresh reviewer that has "
+            f"not seen the discovery reasoning ({args.independence})."
+        )
     return 0
 
 
@@ -945,6 +979,15 @@ def build_parser() -> argparse.ArgumentParser:
     review_parser.add_argument("title")
     review_parser.add_argument(
         "--type", dest="review_type", choices=sorted(REVIEW_TYPES), required=True
+    )
+    review_parser.add_argument(
+        "--independence",
+        choices=sorted(INDEPENDENCE_MODES),
+        default="delegated-subagent",
+        help=(
+            "How reviewer independence is obtained. Use 'same-context-limited' "
+            "only to record a limitation; it never supports promotion."
+        ),
     )
     review_parser.set_defaults(func=command_review)
 

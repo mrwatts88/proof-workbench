@@ -46,7 +46,8 @@ proof obligation resolution.
 ## Independence note
 
 State what prior reasoning the reviewer had seen. Do not call the review
-independent if it merely rephrases the discovery pass.
+independent if it merely rephrases the discovery pass, and do not treat a context
+that was summarized or compacted to continue the discovery session as fresh.
 
 For a fresh-context review, begin from `STATEMENT.md` and the identified candidate
 in `PROOF.md`. Do not read attempts, sessions, or earlier reviews until the first

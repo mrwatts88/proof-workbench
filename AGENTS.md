@@ -1,6 +1,9 @@
 # Agent Operating Contract
 
-These instructions apply to the entire repository.
+These instructions apply to the entire repository and to every agent harness. They
+are the single source of truth; harness-specific configuration may explain how a
+harness satisfies this contract but may never restate, weaken, or extend it. See
+`process/harness.md`.
 
 ## Mission
 
@@ -94,8 +97,9 @@ For each meaningful line of attack:
    useful postmortem.
 7. Update the persistent handoff before ending the session.
 
-A review pass may occur in a later clean-context session. Do not claim reviewer
-independence merely because the same reasoning was paraphrased.
+A review pass may occur in a delegated fresh agent or a later clean-context
+session. Do not claim reviewer independence merely because the same reasoning was
+paraphrased, or because a long context was compacted before the audit.
 
 ## Mandatory candidate-to-review transition
 
@@ -107,9 +111,12 @@ This is a workflow transition, not an optional suggestion:
    and set `work_status` to `candidate` with `claim_status` `proof_candidate`;
 2. immediately run `python3 scripts/proofctl.py review <slug> "<audit title>"
    --type <logic|hypotheses|counterexample|computation|exposition>`;
-3. when agent delegation is available, assign the review to a fresh agent that has
-   not participated in discovery; otherwise perform it in a later clean context
-   and explicitly record the limitation;
+3. assign the review to a fresh agent that has not participated in discovery. When
+   the harness supports delegation, that is mandatory, not preferred; see
+   `process/harness.md` for what each harness provides. Only when delegation is
+   genuinely unavailable may the audit wait for a later clean context, and that
+   limitation must be recorded. A context that was summarized or compacted to
+   continue the same session is not a fresh context;
 4. give the reviewer the exact statement and candidate first. Do not provide
    attempts, session narratives, or prior reviews until its initial verdict;
 5. announce to the human that review has begun, report its verdict, turn every
@@ -189,6 +196,14 @@ End the closing response with:
    counterexample, or a valid independence/undecidability result. Give a short
    basis tied to concrete progress, obstacles, and plausible routes. If a prior
    estimate exists, state the change and why.
+3. **Proposed next step:** state what the next session should actually do, in the
+   same plain language as the recap. Give the concrete move, say what it would
+   establish or rule out, and name any alternative that was considered and
+   deferred. This must be the same next action recorded in `problem.json` and
+   `STATE.md`; if they disagree, repair the records rather than the message. It
+   must be small and falsifiable — "search orders 12–14 for a counterexample to
+   C007," not "continue working." If the dossier is complete, say that no further
+   step is required and name any optional follow-up.
 
 The estimate is research judgment, not mathematical evidence. It must not upgrade
 `claim_status`, resolve an obligation, or be presented as a calibrated fact. Avoid

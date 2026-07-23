@@ -17,6 +17,12 @@ they become proof only when their logical role is made explicit.
 4. Read the most recent relevant session, attempt, and review records.
 5. Follow [AGENTS.md](AGENTS.md) and the process documents in `process/`.
 
+[AGENTS.md](AGENTS.md) is the operating contract for every agent harness. Codex
+loads it directly; Claude Code loads [CLAUDE.md](CLAUDE.md), which imports it and
+adds only harness-specific notes. [process/harness.md](process/harness.md)
+describes how each harness satisfies the contract, most importantly for delegated
+adversarial review.
+
 ## Common commands
 
 ```sh
@@ -61,17 +67,24 @@ changes with a descriptive message and pushes that commit to the current branch'
 configured upstream. Unrelated pre-existing working-tree changes must be left
 out. A failed commit or push means the session remains open until it is repaired.
 
-The closing response ends with a plain-language account of what was accomplished
-and a subjective percentage estimate for the chance that continued work will
-eventually settle the conjecture. A valid proof, counterexample or other
-disproof, or independence/undecidability result counts as success. The percentage
-is an outlook judgment and never substitutes for proof or changes the formal
-claim status.
+The closing response ends with three things: a plain-language account of what was
+accomplished, a subjective percentage estimate for the chance that continued work
+will eventually settle the conjecture, and the proposed next step. A valid proof,
+counterexample or other disproof, or independence/undecidability result counts as
+success. The percentage is an outlook judgment and never substitutes for proof or
+changes the formal claim status.
+
+The proposed next step says in plain language what the following session should
+do and what that move would establish or rule out, so the direction of the work is
+visible without opening the dossier. It always matches the next action stored in
+`problem.json` and `STATE.md`.
 
 ## Repository map
 
 ```text
-AGENTS.md              operating contract for agents
+AGENTS.md              operating contract for agents, harness-neutral
+CLAUDE.md              Claude Code entry point; imports AGENTS.md
+.claude/               Claude Code subagents and permissions
 PROJECT_STATE.md       concise repository-wide handoff
 process/                workflow, proof standards, review, and tool guidance
 problems/INDEX.md       generated problem dashboard
