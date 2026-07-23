@@ -1,8 +1,8 @@
 # Source audit — 2026-07-23
 
-This note records only sources actually inspected during `S002`. Search-result
-snippets and secondary problem pages were used to locate sources but are not
-treated as mathematical support.
+This note records only sources actually inspected during `S002` or `S003`.
+Search-result snippets and secondary problem pages were used to locate sources
+but are not treated as mathematical support.
 
 ## Exact statement and original attribution
 
@@ -35,8 +35,8 @@ treated as mathematical support.
   4. at least \(4/7\) of all vertices have degree exactly \(3\).
 - Item 3 was independently proved in `A001/L002` before this source was
   inspected. Carr attributes that observation to Markström. Items 1, 2, and 4
-  are imported as `C004` and `C005`; their hypotheses exactly match an
-  order-then-size minimal counterexample to `C001`.
+  are imported as `C004`, `C005`, and `C006`; their hypotheses exactly match
+  an order-then-size minimal counterexample to `C001`.
 
 ## Induced-path frontier
 
@@ -49,7 +49,7 @@ treated as mathematical support.
 - Theorem 0.2 is computer-assisted: every \(P_{13}\)-free graph of minimum
   degree at least \(3\) contains a \(4\)- or \(8\)-cycle. Thus any
   counterexample to `C001` contains an induced \(P_{13}\). This is imported as
-  `C006`; the present repository did not reproduce their C++ computation.
+  `C007`; the present repository did not reproduce their C++ computation.
 - The paper reports earlier exact-search bounds, including at least \(30\)
   vertices for a cubic counterexample, and exhibits four cubic graphs on
   \(24\) vertices with no \(4\)- or \(8\)-cycle but with a \(16\)-cycle.
@@ -69,8 +69,22 @@ treated as mathematical support.
   (2023), 1191–1234, <https://arxiv.org/abs/2010.15802>.
 - Scope inspected: abstract and the proof overview relevant to even path
   lengths. The authors prove that some absolute average-degree threshold
-  forces a power-of-two cycle. This is imported as `C007`; the threshold is not
+  forces a power-of-two cycle. This is imported as `C008`; the threshold is not
   specialized to minimum degree \(3\).
+
+## Cubic graphs of large girth
+
+- N. Biggs, “Constructions for cubic graphs with large girth,” *Electronic
+  Journal of Combinatorics* 5 (1998), #A1,
+  <https://doi.org/10.37236/1386>.
+- Scope inspected during `S003`: abstract, Sections 1–3, and especially
+  Theorem 3.2 and its proof.
+- Theorem 3.2 starts from a disjoint union of cycles of total order \(2^g\)
+  and girth at least \(g\), and adds a matching to produce a cubic graph of
+  girth at least \(g\). Taking the initial 2-factor to be one cycle produces a
+  finite Hamiltonian cubic graph of girth at least \(g\).
+- This existence theorem is imported as `C009`. Applied with \(g=17\), it is
+  the external input to the internally proved separation result `A004/L007`.
 
 ## Consequences for this dossier
 
@@ -79,7 +93,9 @@ treated as mathematical support.
 - `L005` and `L006` are valid internal small-order results but are weaker than
   reported prior computational bounds. They must not be described as new or
   state of the art.
-- Continuing one order at a time is not the best main strategy. A scalable
-  route should combine the long induced path forced by `C006`, the cubic
-  domination and density facts `C004`–`C005`, and variable-length
-  path/ear constructions suggested by the Liu–Montgomery method.
+- Continuing one order at a time is not the best main strategy. `A004/L007`
+  shows that the induced path forced by `C007` plus the cubic conclusions
+  `C004`–`C006` cannot, even with the absence of \(C_4,C_8\), force
+  \(C_{16}\). A scalable route needs an additional genuinely global
+  restriction, potentially involving variable-length path/ear constructions
+  suggested by the Liu–Montgomery method.

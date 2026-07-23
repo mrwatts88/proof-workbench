@@ -21,8 +21,10 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   \(3,7,15,\ldots\).
 - `L005` and `L006`: exact degree/codegree arguments and a complete structural
   classification prove that every counterexample has at least eleven vertices.
-- These internal finite bounds are weaker than previously reported
-  computational bounds and are not claimed as novel.
+- `L007`: the current induced-\(P_{13}\)/cubic-domination bundle cannot force a
+  \(16\)-cycle, even after assuming no \(4\)- or \(8\)-cycle.
+- The finite bounds `L003`, `L005`, and `L006` are weaker than previously
+  reported computational bounds and are not claimed as novel.
 
 ## Evidence, not proof
 
@@ -33,6 +35,9 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   orders \(9\) and \(10\); it found no order-\(9\) \(C_4\)-free completion and
   found that every order-\(10\) completion has an \(8\)-cycle. `L005` and `L006`
   have independent hand proofs.
+- `E003` exhaustively ruled out the smallest 18-vertex completion made from an
+  induced \(P_{13}\) and five independent cubic hubs. This narrow computation
+  is not the proof of `L007`.
 
 ## Imported frontier
 
@@ -43,6 +48,8 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   induced \(P_{13}\).
 - `C008` (Liu–Montgomery, 2023): a sufficiently large absolute
   average-degree threshold forces a power-of-two cycle.
+- `C009` (Biggs, 1998): finite Hamiltonian cubic graphs exist with arbitrarily
+  large prescribed girth.
 - The inspected May 2026 primary preprint reports that the general conjecture
   remains open. See `references/source-audit-2026-07-23.md`.
 
@@ -53,7 +60,8 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   restrictions.
 - `G004`: inspect the original 1997 article body and original sources for
   reported computational bounds.
-- `G006`: make the induced-\(P_{13}\)/cubic-domination route decisive.
+- `G007`: find a global restriction on a minimal counterexample that is not
+  shared by arbitrary connected cubic graphs of girth at least \(17\).
 
 ## Active risks
 
@@ -67,40 +75,41 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   was inspected but not reproduced here.
 - Imported high-average-degree methods do not directly apply at minimum degree
   \(3\).
+- Cubic domination, cubic density, and proper-subgraph minimality place no
+  extra restriction on connected cubic graphs; large-girth cubic graphs show
+  that these facts plus an induced \(P_{13}\) do not force \(C_{16}\).
 
 ## Best next action
 
-Fix an induced path \(P=v_1\ldots v_{13}\) in a minimal counterexample, encode
-the attachment of the cubic dominating set to \(P\), and test the precise
-claim that every attachment pattern consistent with no \(C_4\) and no \(C_8\)
-already forces a \(C_{16}\). A surviving finite pattern would falsify this
-route before attempting a general proof.
+Derive a genuinely global consequence of counterexample minimality or of the
+absence of all power-of-two cycles, beyond `C004`–`C007`, and test it first on
+the Hamiltonian cubic girth-\(17\) family from `L007`. Only a restriction that
+excludes that family without assuming the desired conclusion should be used
+in a new cycle-length forcing argument.
 
 ## Human-level state
 
-The project now has a fully checked proof that a counterexample needs at least
-eleven vertices, but the literature already reaches farther computationally.
-The more important gain is a better global target: any minimal counterexample
-is mostly cubic, every vertex touches a cubic vertex, and it must contain a long
-induced path. The next attack will test whether those two facts together force
-a \(16\)-cycle.
+The proposed next attack has been decisively stress-tested and rejected. Being
+mostly cubic and containing a long shortcut-free path sounded restrictive, but
+ordinary cubic graphs with no short cycles already have all of those features
+and can avoid cycles of lengths \(4\), \(8\), and \(16\). The project must now
+find a truly global property of a hypothetical counterexample rather than
+classify attachments around one path.
 
 ## Resolution outlook
 
-- Estimated chance of eventually settling the exact current statement: 2%
-- Basis: the session added two correct finite exclusions and identified a
-  scalable induced-path route, but the literature audit shows that stronger
-  finite computation and substantial special-class results already exist
-  without resolving the general problem. No new global mechanism is yet in
-  hand.
+- Estimated chance of eventually settling the exact current statement: 1%
+- Basis: the session eliminated the best concrete local route by a rigorous
+  large-girth obstruction. This prevents wasted work and clarifies the need for
+  a global mechanism, but no replacement mechanism is yet in hand and the
+  cubic case remains essentially untouched.
 
 ## Resume reading
 
 1. `STATEMENT.md`
 2. `CLAIMS.md`
 3. `OBLIGATIONS.md`
-4. `attempts/A002-order-nine-exclusion-via-degree-and-codegree-budgets.md`
-5. `attempts/A003-order-ten-structural-classification.md`
-6. `experiments/E002-c4-free-degree-sequence-frontier/README.md`
-7. `references/source-audit-2026-07-23.md`
-8. `sessions/S002-2026-07-23-exact-c4-free-frontier-and-survivor-analysis.md`
+4. `attempts/A004-limits-of-induced-p13-and-cubic-domination.md`
+5. `experiments/E003-cubic-survivor-for-the-local-p13-route/README.md`
+6. `references/source-audit-2026-07-23.md`
+7. `sessions/S003-2026-07-23-falsify-the-induced-p13-and-cubic-domination-forcing-route.md`

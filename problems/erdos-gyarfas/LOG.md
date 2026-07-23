@@ -35,3 +35,15 @@ attempt, experiment, or review record.
   no novelty is claimed.
 - Shifted the next attack from order-by-order enumeration to attachment
   patterns on the induced \(P_{13}\) forced in every counterexample.
+
+## 2026-07-23 — S003 induced-path route falsified
+
+- Imported `C009`, Biggs's construction of finite Hamiltonian cubic graphs
+  with arbitrarily large girth.
+- Proved `L007`: cubic domination, cubic density, proper-subgraph minimality,
+  an induced \(P_{13}\), and absence of \(C_4,C_8\) do not force \(C_{16}\).
+- Ran `E003`, an exhaustive check of the smallest 18-vertex independent-hub
+  cubic completion; every branch already creates \(C_4\) or \(C_8\).
+- Resolved `G006` by refuting the proposed local route and opened `G007` for a
+  genuinely global replacement mechanism.
+- No proof or disproof candidate for the main conjecture exists.

@@ -47,11 +47,11 @@ Erdős–Gyárfás conjecture.
 
 ## Next action
 
-For `P-002`, combine the imported induced-\(P_{13}\) theorem with cubic
-domination in a minimal counterexample, and test whether every admissible
-attachment pattern forces a \(4\)-, \(8\)-, or \(16\)-cycle. No required action
-remains for `P-001`; its reference comparison remains optional and separately
-authorized.
+For `P-002`, replace the falsified local induced-\(P_{13}\) attachment route
+with a genuinely global restriction on a minimal counterexample, and stress-test
+it against connected cubic graphs of girth at least \(17\) before attempting a
+new power-of-two cycle-forcing argument. No required action remains for
+`P-001`; its reference comparison remains optional and separately authorized.
 
 ## Known process risks
 

@@ -19,6 +19,9 @@ has one independently checkable assertion.
 | C006 | density theorem | At least \(4/7\) of the vertices of an order-then-size minimal counterexample have degree exactly \(3\). | imported | Carr (2026), Theorem 0.1; `references/source-audit-2026-07-23.md` | `L002` |
 | C007 | induced-path theorem | Every \(P_{13}\)-free graph of minimum degree at least \(3\) has a \(4\)- or \(8\)-cycle; consequently every counterexample contains an induced \(P_{13}\). | imported | Hegde–Sandeep–Shashank (2025), Theorem 0.2; `references/source-audit-2026-07-23.md` | `D001`–`D004` |
 | C008 | high-average-degree theorem | There exists an absolute constant \(d\) such that every graph of average degree at least \(d\) contains a power-of-two cycle. | imported | Liu–Montgomery (2023); `references/source-audit-2026-07-23.md` | Their finite simple graph hypotheses |
+| C009 | large-girth existence theorem | For every integer \(g\ge3\), there is a finite Hamiltonian cubic graph of girth at least \(g\). | imported | Biggs (1998), Theorem 3.2, taking the prescribed 2-factor to be one cycle; `references/source-audit-2026-07-23.md` | Finite simple graph conventions |
+| L007 | separation lemma | The minimal-counterexample conclusions `L002` and `C004`–`C006`, together with the induced-\(P_{13}\) conclusion drawn from `C007` and the absence of \(C_4,C_8\), do not force a \(C_{16}\). | proved | `A004/L007` | `C009` |
+| C010 | computational observation | No cubic graph on \(18\) vertices contains an induced \(P_{13}\) while avoiding both \(C_4\) and \(C_8\). | tested | `E003` | Exact reduction and family definition in `E003/README.md` |
 
 ## Dependency notes
 
@@ -34,3 +37,8 @@ has one independently checkable assertion.
 - `C004`–`C008` are imported at exactly the strength stated. They do not imply
   `C001`, and the external computations behind `C007` were not reproduced in
   this repository.
+- `C009` is used only for finite cubic large-girth existence. `L007` derives
+  the induced \(P_{13}\) and the recorded structural conclusions directly; it
+  does not assert that the large-girth graph avoids \(C_{32},C_{64},\ldots\).
+- `L007` refutes only the proposed local \(C_{16}\)-forcing route, not `C001`.
+  `C010` concerns a much smaller exact family and is not support for `L007`.
