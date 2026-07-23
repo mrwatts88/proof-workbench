@@ -39,3 +39,10 @@ attempt, experiment, or review record.
 - `R002` passed the independent hypotheses and counterexample audit.
 - Resolved `G003`; the deferred reference comparison is optional and was not
   performed. The internal result is ready for `complete` / `proved` promotion.
+
+## 2026-07-23 — S004 added LaTeX publication and live status tracking
+
+- Added the standalone reviewed source `papers/unique-common-neighbor.tex`.
+- Added provenance-aware dashboard fields and generated the live README table.
+- Made LaTeX source mandatory for `proved` dossiers; no local LaTeX compiler was
+  available, so no PDF build is represented.

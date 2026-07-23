@@ -28,9 +28,15 @@ an audit, not justifications.
 5. all critical and major review findings resolved and cross-referenced;
 6. one final statement-to-conclusion audit independent of the discovery narrative;
 7. reproducible verification for any computation essential to the proof.
+8. a standalone reviewed LaTeX source named by `latex_file` in `problem.json`.
 
 The two reviews should be meaningfully distinct—for example, a line-by-line logic
 audit and a hypothesis/counterexample audit.
+
+The LaTeX source is a publication-quality restatement of the exact reviewed
+argument, not a replacement for canonical Markdown records. It must identify the
+statement version and the review records. Compile it when a local LaTeX toolchain
+is available; retain the source even when one is not.
 
 ## Disproof promotion gate
 
@@ -52,4 +58,3 @@ Reusable results may also be distilled into `knowledge/`.
 A checked formal proof is strong evidence only for the encoded theorem under the
 encoded axioms and trusted kernel. Record the theorem statement, toolchain version,
 axioms, and build command, and still audit correspondence with `STATEMENT.md`.
-

@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+
+\newtheorem{theorem}{Theorem}
+
+\title{Unique Common Neighbors Force a Universal Vertex}
+\author{Proof Workbench}
+\date{Statement version 0.2; reviewed in R001 and R002}
+
+\begin{document}
+\maketitle
+
+\begin{theorem}
+Let $G$ be a finite, nonempty, simple undirected graph such that every two
+distinct vertices have exactly one common neighbor. Then $G$ has a vertex
+adjacent to every other vertex.
+\end{theorem}
+
+\begin{proof}
+If $G$ has one vertex, the conclusion is vacuous. Suppose henceforth, for a
+contradiction, that $G$ has no universal vertex.
+
+For a vertex $v$, every $u\in N(v)$ has exactly one neighbor in the induced
+graph $G[N(v)]$: its unique common neighbor with $v$. Thus $G[N(v)]$ is
+1-regular, so every degree of $G$ is even. If $u,v$ are nonadjacent, let $w$ be
+their unique common neighbor. For each $x\in N(u)\setminus\{w\}$, map $x$ to
+the unique common neighbor of $x$ and $v$. This lies in $N(v)$ and is not $u$.
+The map is injective, for a common image of distinct $x_1,x_2$ would give the
+two distinct vertices $u$ and that image as common neighbors of $x_1,x_2$.
+Hence $d(u)-1\leq d(v)$; symmetrically $d(v)-1\leq d(u)$. Since both degrees
+are even, $d(u)=d(v)$.
+
+The complement $\overline G$ is connected. Otherwise, let $X$ be one component
+and let $Y=V(G)\setminus X$. Every vertex of $X$ is adjacent in $G$ to every
+vertex of $Y$. Neither $X$ nor $Y$ has size one, since $\overline G$ has no
+isolated vertex. For $x\in X$ and $y\in Y$, the unique-common-neighbor
+condition gives
+\[
+  d_{G[X]}(x)+d_{G[Y]}(y)=1.
+\]
+Thus these internal degrees are constants $a,b$ with $a+b=1$. If $a=0$, two
+vertices of $X$ have all at least two vertices of $Y$ as common neighbors; the
+case $b=0$ is symmetric. Both contradict uniqueness. Along every edge of
+$\overline G$, the endpoints have equal degree in $G$, so complement
+connectivity makes $G$ $k$-regular.
+
+Let $n=|V(G)|$, and let $A,J,I$ be respectively the adjacency, all-ones, and
+identity matrices of order $n$. Counting common neighbors gives
+\[
+  A^2=J+(k-1)I.
+\]
+Since $A\mathbf 1=k\mathbf 1$, applying this identity to $\mathbf 1$ yields
+\[
+  k^2=n+k-1. \tag{1}
+\]
+Every vertex has a neighbor, and $k$ is even, so $k\geq2$. Put
+$s=\sqrt{k-1}$ and let $W=\{z\in\mathbb R^n:\mathbf1^{\mathsf T}z=0\}$.
+Because $G$ is undirected, $A$ is symmetric, and $W$ is $A$-invariant. On $W$,
+$A^2=s^2I$. Hence each $z\in W$ is the sum of
+\[
+ z_+=\tfrac12(z+Az/s),\qquad z_-=\tfrac12(z-Az/s),
+\]
+which are respectively $s$- and $-s$-eigenvectors. If the corresponding
+eigenspace dimensions are $p,q$, then the zero diagonal of $A$ gives
+\[
+  0=\operatorname{tr}(A)=k+(p-q)s. \tag{2}
+\]
+Here $p\ne q$, so $s$ is rational. Since $s^2=k-1$ is an integer, $s$ is a
+positive integer. Equation (2) gives $s\mid k$, while $k=s^2+1$, so $s\mid1$.
+Therefore $s=1$, $k=2$, and (1) gives $n=3$. The only simple 2-regular graph on
+three vertices is $K_3$, whose vertices are universal, contradicting the choice
+of $G$.
+\end{proof}
+
+\paragraph{Review record.}
+This source restates the proof recorded in \texttt{PROOF.md}. Fresh-context
+statement/logic review R001 and hypotheses/counterexample review R002 both
+passed; R001 prompted the explicit symmetry sentence used above.
+
+\end{document}

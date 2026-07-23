@@ -83,3 +83,12 @@ tests/                  structural regression tests
 The `problems/_template/` directory is a browsable specimen. New dossiers should
 normally be created with `proofctl.py new`, which assigns a stable problem ID and
 rebuilds the index.
+
+<!-- BEGIN GENERATED PROBLEM DASHBOARD -->
+## Live research status
+
+| ID | Problem | Work | Claim | Previously proven? | LaTeX |
+|---|---|---|---|---|---|
+| P-001 | Unique Common Neighbor ([details](problems/unique-common-neighbor/STATE.md)) | `complete` | `proved` | Reported (not inspected) | [source](papers/unique-common-neighbor.tex) |
+
+<!-- END GENERATED PROBLEM DASHBOARD -->

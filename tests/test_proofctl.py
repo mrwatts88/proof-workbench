@@ -30,6 +30,12 @@ class ProofctlIntegrationTests(unittest.TestCase):
             "# Problem index\n\nNo problem dossiers have been created.\n"
         )
         self.script = self.root / "scripts" / "proofctl.py"
+        subprocess.run(
+            [sys.executable, str(self.script), "--root", str(self.root), "index"],
+            text=True,
+            capture_output=True,
+            check=True,
+        )
 
     def tearDown(self) -> None:
         self.temporary.cleanup()
@@ -96,6 +102,9 @@ class ProofctlIntegrationTests(unittest.TestCase):
         )
         index = (self.root / "problems" / "INDEX.md").read_text()
         self.assertIn("Test \\| Problem", index)
+        dashboard = (self.root / "README.md").read_text()
+        self.assertIn("Previously proven?", dashboard)
+        self.assertIn("Unknown", dashboard)
 
     def test_completion_gate_rejects_unreviewed_candidate(self) -> None:
         self.run_cli("new", "gate-test", "--title", "Gate test")
@@ -156,6 +165,15 @@ class ProofctlIntegrationTests(unittest.TestCase):
         index_path.write_text(index_path.read_text() + "stale\n")
         result = self.run_cli("validate", expected_returncode=1)
         self.assertIn("INDEX.md is stale", result.stderr)
+
+    def test_stale_readme_dashboard_is_detected(self) -> None:
+        self.run_cli("new", "dashboard-test", "--title", "Dashboard test")
+        readme_path = self.root / "README.md"
+        readme_path.write_text(
+            readme_path.read_text().replace("<!-- END GENERATED", "<!-- STALE GENERATED")
+        )
+        result = self.run_cli("validate", expected_returncode=1)
+        self.assertIn("README.md problem dashboard is stale", result.stderr)
 
 
 if __name__ == "__main__":

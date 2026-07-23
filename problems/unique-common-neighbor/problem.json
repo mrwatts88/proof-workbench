@@ -15,5 +15,7 @@
     "solution-embargo"
   ],
   "dependencies": [],
+  "prior_proof_status": "reported",
+  "latex_file": "papers/unique-common-neighbor.tex",
   "next_action": "No required action; any reference comparison needs separate authorization."
 }

@@ -91,6 +91,22 @@ a counterexample, initiate a fresh reproduction audit from the statement. The
 agent chooses and performs these steps; never ask the human to remember commands
 or decide whether review is due.
 
+## LaTeX and live dashboard at completion
+
+When a claim is ready for `complete` + `proved`, the agent must create or update a
+standalone LaTeX source in the root-level `papers/` directory. It must state the
+exact statement version, give the reviewed proof (not merely a link or outline),
+and name the supporting review records. Set `latex_file` in `problem.json` to its
+repository-relative path before promotion. If a LaTeX compiler is available, run
+it and record any material build result; its absence does not excuse omitting the
+source.
+
+At intake, record `prior_proof_status` as `unknown`, `reported`, or `verified`.
+This tracks provenance only: “reported” does not license use of an external proof.
+After every dossier creation, status update, or completion, run `proofctl.py
+index`; it regenerates the live table in `README.md`. The agent owns these updates
+and must not ask the human to maintain them.
+
 ## Required end-of-session checkpoint
 
 A substantive session is any investigation that produces or changes a deduction,

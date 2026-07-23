@@ -27,6 +27,8 @@ required adversarial review gates.
 - A proof is not complete until adversarial reviews and promotion gates pass.
 - Agents initiate and delegate those reviews automatically when a candidate
   appears; humans do not schedule the review lifecycle.
+- Every internally proved result has a standalone LaTeX source, and the generated
+  README dashboard displays both current status and prior-proof provenance.
 - Session continuity comes from concise handoffs plus detailed append-oriented
   records, not retained chat history.
 - Closing a substantive session includes a mandatory canonical-record checkpoint;

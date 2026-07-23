@@ -21,6 +21,8 @@ neighbor has a vertex adjacent to every other vertex.
   calculation.
 - The integrated proof in `PROOF.md` passed two distinct fresh-context audits:
   `R001` (statement/logic) and `R002` (hypotheses/counterexamples).
+- `papers/unique-common-neighbor.tex` is the standalone LaTeX rendition of the
+  reviewed proof.
 
 ## Evidence, not proof
 
@@ -74,3 +76,4 @@ gap.
 5. `PROOF.md`
 6. `reviews/R001-statement-correspondence-and-logic-audit.md`
 7. `reviews/R002-hypotheses-and-counterexample-audit.md`
+8. `../../papers/unique-common-neighbor.tex`

@@ -11,6 +11,8 @@ well-defined.
 - Give the statement a version. Any material change creates a new version and a
   decision record.
 - Record provenance without treating the source's wording as authoritative.
+- Set `prior_proof_status` in `problem.json`: `unknown`, `reported`, or
+  `verified`. This status is for the live dashboard and never imports a proof.
 
 Deliverable: `STATEMENT.md` version 0.1 or later, with initial claims and
 obligations.
@@ -100,6 +102,11 @@ At the end of a substantive session:
 5. rewrite `STATE.md` around the current frontier;
 6. set one concrete next action;
 7. rebuild the index and validate.
+
+For a `complete` + `proved` result, also create the standalone LaTeX source in
+`papers/`, set `latex_file` in `problem.json`, and compile it if the local
+toolchain is available. `proofctl.py index` updates both `problems/INDEX.md` and
+the live dashboard table in `README.md` after every status or dossier change.
 
 The next action should be falsifiable and small, such as “prove L004 without
 compactness” or “search orders 8–12 for a counterexample to C007,” not “continue

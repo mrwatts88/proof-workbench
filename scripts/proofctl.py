@@ -50,6 +50,9 @@ CLAIM_STATES = {
     "imported",
     "obsolete",
 }
+PRIOR_PROOF_STATUSES = {"unknown", "reported", "verified"}
+README_DASHBOARD_BEGIN = "<!-- BEGIN GENERATED PROBLEM DASHBOARD -->"
+README_DASHBOARD_END = "<!-- END GENERATED PROBLEM DASHBOARD -->"
 
 ROOT_FILES = (
     "README.md",
@@ -175,9 +178,67 @@ def render_index(problems: list[tuple[Path, dict[str, Any]]]) -> str:
     return "\n".join(lines)
 
 
+def prior_proof_label(item: dict[str, Any]) -> str:
+    labels = {
+        "unknown": "Unknown",
+        "reported": "Reported (not inspected)",
+        "verified": "Verified",
+    }
+    return labels.get(str(item.get("prior_proof_status")), "Unknown")
+
+
+def render_dashboard(problems: list[tuple[Path, dict[str, Any]]]) -> str:
+    lines = [README_DASHBOARD_BEGIN, "## Live research status", ""]
+    if not problems:
+        lines.extend(["No problem dossiers have been created.", README_DASHBOARD_END])
+        return "\n".join(lines)
+
+    lines.extend(
+        [
+            "| ID | Problem | Work | Claim | Previously proven? | LaTeX |",
+            "|---|---|---|---|---|---|",
+        ]
+    )
+    for directory, item in sorted(problems, key=lambda pair: pair[1].get("id", "")):
+        title = markdown_cell(item.get("title", directory.name))
+        proof_link = f"[details](problems/{directory.name}/STATE.md)"
+        latex_file = item.get("latex_file")
+        latex = f"[source]({markdown_cell(latex_file)})" if latex_file else "—"
+        lines.append(
+            "| {id} | {title} ({proof_link}) | `{work}` | `{claim}` | {prior} | {latex} |".format(
+                id=markdown_cell(item.get("id", "?")),
+                title=title,
+                proof_link=proof_link,
+                work=markdown_cell(item.get("work_status", "?")),
+                claim=markdown_cell(item.get("claim_status", "?")),
+                prior=prior_proof_label(item),
+                latex=latex,
+            )
+        )
+    lines.extend(["", README_DASHBOARD_END])
+    return "\n".join(lines)
+
+
+def write_dashboard(root: Path, problems: list[tuple[Path, dict[str, Any]]]) -> None:
+    readme_path = root / "README.md"
+    content = readme_path.read_text(encoding="utf-8")
+    dashboard = render_dashboard(problems)
+    pattern = re.compile(
+        rf"{re.escape(README_DASHBOARD_BEGIN)}.*?{re.escape(README_DASHBOARD_END)}",
+        flags=re.DOTALL,
+    )
+    if pattern.search(content):
+        content = pattern.sub(dashboard, content)
+    else:
+        content = content.rstrip() + "\n\n" + dashboard + "\n"
+    readme_path.write_text(content, encoding="utf-8")
+
+
 def write_index(root: Path) -> None:
     destination = root / "problems" / "INDEX.md"
-    destination.write_text(render_index(load_problems(root)), encoding="utf-8")
+    problems = load_problems(root)
+    destination.write_text(render_index(problems), encoding="utf-8")
+    write_dashboard(root, problems)
 
 
 def parse_obligations(path: Path) -> tuple[list[tuple[str, str]], list[str]]:
@@ -325,6 +386,8 @@ def validate_repository(root: Path) -> list[str]:
             "tags",
             "dependencies",
             "next_action",
+            "prior_proof_status",
+            "latex_file",
         }
         missing = sorted(required_fields - item.keys())
         if missing:
@@ -394,6 +457,23 @@ def validate_repository(root: Path) -> list[str]:
             errors.append(
                 f"{manifest_path.relative_to(root)}: dependencies must be a list"
             )
+        if item.get("prior_proof_status") not in PRIOR_PROOF_STATUSES:
+            errors.append(
+                f"{manifest_path.relative_to(root)}: invalid prior_proof_status "
+                f"{item.get('prior_proof_status')!r}"
+            )
+        latex_file = item.get("latex_file")
+        if latex_file is not None and (
+            not isinstance(latex_file, str) or not latex_file.endswith(".tex")
+        ):
+            errors.append(
+                f"{manifest_path.relative_to(root)}: latex_file must be null or a .tex path"
+            )
+        if item.get("claim_status") == "proved":
+            if not isinstance(latex_file, str) or not (root / latex_file).is_file():
+                errors.append(
+                    f"{manifest_path.relative_to(root)}: proved status requires an existing latex_file"
+                )
         if not isinstance(item.get("next_action"), str) or not item.get(
             "next_action", ""
         ).strip():
@@ -414,6 +494,11 @@ def validate_repository(root: Path) -> list[str]:
                     )
         for message in combination_errors(directory, item):
             errors.append(f"{manifest_path.relative_to(root)}: {message}")
+
+    expected_dashboard = render_dashboard(loaded)
+    readme_path = root / "README.md"
+    if readme_path.is_file() and expected_dashboard not in readme_path.read_text(encoding="utf-8"):
+        errors.append("README.md problem dashboard is stale; run proofctl.py index")
 
     ids: dict[str, Path] = {}
     known_ids = {
