@@ -13,7 +13,16 @@ Established preliminary reductions, none sufficient for the main claim:
   degree-\(2\) vertex;
 - `L002`: edge-minimal counterexamples have independent high-degree vertices;
 - `L003`: a counterexample has order at least \(9\);
-- `L004`: longest-path endpoint chords avoid Mersenne indices.
+- `L004`: longest-path endpoint chords avoid Mersenne indices;
+- `L005`–`L006`: a counterexample has order at least \(11\).
+
+Imported frontier facts, not a candidate:
+
+- `C004`–`C006`: an order-then-size minimal counterexample is
+  subgraph-minimal for minimum degree \(3\), its cubic vertices dominate, and
+  at least \(4/7\) of its vertices are cubic;
+- `C007`: a counterexample contains an induced \(P_{13}\);
+- `C008`: sufficiently large average degree forces a power-of-two cycle.
 
 ## Argument
 
@@ -24,8 +33,9 @@ lemmas remain in `A001` and `CLAIMS.md`.
 
 - `G002`: make the near-2-connected reduction force a power-of-two cycle.
 - `G003`: obtain a global \(8,16,\ldots\)-cycle forcing mechanism.
+- `G006`: make the induced-\(P_{13}\)/cubic-domination route decisive.
 
 ## Computational dependencies
 
-`E001` gives exact small-order evidence only and is not part of a proof
-candidate.
+`E001` and `E002` give exact finite evidence only and are not part of a proof
+candidate. `L005` and `L006` have separate hand proofs.

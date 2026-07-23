@@ -19,8 +19,8 @@ Erdős–Gyárfás conjecture.
 - `P-001` — Unique Common Neighbor: proved internally for statement version 0.2;
   no known solution was consulted.
 - `P-002` — Erdős–Gyárfás Conjecture: active and open at statement version 0.1;
-  initial structural reductions are proved, with no external source yet
-  inspected.
+  internal structural reductions and the order-\(11\) lower bound are proved;
+  the primary-literature frontier has been audited.
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -47,8 +47,9 @@ Erdős–Gyárfás conjecture.
 
 ## Next action
 
-For `P-002`, extend exact \(C_4\)-free enumeration from order \(9\) and use the
-survivors to formulate a stronger global cycle-forcing lemma. No required action
+For `P-002`, combine the imported induced-\(P_{13}\) theorem with cubic
+domination in a minimal counterexample, and test whether every admissible
+attachment pattern forces a \(4\)-, \(8\)-, or \(16\)-cycle. No required action
 remains for `P-001`; its reference comparison remains optional and separately
 authorized.
 

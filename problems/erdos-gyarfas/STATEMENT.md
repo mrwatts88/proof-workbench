@@ -69,11 +69,17 @@ length \(2^k\). Because \(G\) is finite, only the values with
 ## Provenance
 
 The user supplied the name “Erdős–Gyárfás conjecture.” The formulation above is
-the conventional graph-theoretic formulation selected for this dossier. No
-original paper, later survey, claimed proof, or current-status source was
-inspected during intake. Accordingly, `prior_proof_status` remains `unknown`;
-source correspondence is a separate open provenance task and supplies no premise
-for the present deductions.
+the conventional graph-theoretic formulation selected for this dossier.
+During `S002`, primary research papers from 2021–2026 were inspected and found
+to state the same target. The conjecture is attributed to work of Erdős and
+Gyárfás from 1994 and to P. Erdős, “Some old and new problems in various
+branches of combinatorics,” *Discrete Mathematics* 165/166 (1997), 227–231.
+The original article was identified by DOI but its body was not accessible, so
+original-source correspondence is not marked fully verified. The exact audit
+and imported partial results are in
+`references/source-audit-2026-07-23.md`. A May 2026 primary preprint explicitly
+reports that the general conjecture remains open; no claimed general proof is
+used here, and `prior_proof_status` remains `unknown`.
 
 ## Revision history
 
