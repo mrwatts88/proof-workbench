@@ -31,6 +31,8 @@ has one independently checkable assertion.
 | L014 | separation lemma | A shortest odd cycle plus one arbitrary external ear does not force a power-of-two cycle: theta path lengths \(2,2r+1,4\) for \(r\ge2\) give only cycle lengths \(2r+3,2r+5,6\). | proved | `A005/L014` | Finite simple graph conventions |
 | L015 | separation lemma | A full one-excursion `L012` witness — total length \(2^k-1\), both cycle arcs, both gaps, induced shortest odd cycle, non-Mersenne arc choice — admits infinitely many power-free realizations in every attachment configuration (aligned or crossed, each arc trivial or not, \(d\in\{2,4\}\)), so one-excursion witness data forces no power-of-two cycle. | proved | `A005/L015` | `A005/L012` for the setting; finite simple graph conventions |
 | L016 | separation lemma | Full two-excursion witness data also forces no power-of-two cycle: for every \(k\ge4\), the double-theta graph on \(C_7\) with disjoint ears of length \(2^{k-1}-1\) attached at \(\{c_0,c_4\}\) and \(\{c_5,c_2\}\) realizes a witness of length \(2^k-1\) for the distance-\(2\) pair \(c_0,c_2\), and its seven cycle lengths \(7,2^{k-1}+3,2^{k-1}+3,2^{k-1}+2,2^{k-1}+2,2^k+1,2^k+2\) contain no power of two. | proved | `A005/L016` | Finite simple graph conventions |
+| C011 | computational observation | The exhaustive labelled search found no graph of order \(11\), \(12\), or \(13\) with minimum degree at least \(3\) avoiding both \(C_4\) and \(C_8\); five validation anchors reproduced the independent `E001`/`E002` counts, an exact symmetry quotient, and a nonzero \(C_8\)-free positive control. | tested | `E004` | Coverage layers proved in `A006/L017` |
+| L017 | finite exclusion | Every counterexample has at least fourteen vertices. | proved | `A006/L017`, computer-assisted via the exhaustive search `E004` | `L006`, `E004` |
 
 ## Dependency notes
 
@@ -68,3 +70,10 @@ has one independently checkable assertion.
   single-witness forcing pattern and fire the recorded pivot condition for
   the saturation-only route. They say nothing against saturation as a
   reduction, and `L008`–`L013` remain available as constraints.
+- `L017` is computer-assisted, unlike the hand-proved `L005`–`L006`: its
+  proof combines the proved small-order collapse and coverage arguments in
+  `A006` with the exhaustive search `C011`/`E004`. At orders \(11\)–\(13\)
+  the full \(\{C_4,C_8\}\)-free class was empty, so `L017` does not depend
+  on `L008`. The cleared orders are below reported prior computational
+  bounds in the literature; no novelty is claimed, and those prior
+  computations were not reproduced or relied on here.

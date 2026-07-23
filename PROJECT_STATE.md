@@ -19,8 +19,9 @@ Erdős–Gyárfás conjecture.
 - `P-001` — Unique Common Neighbor: proved internally for statement version 0.2;
   no known solution was consulted.
 - `P-002` — Erdős–Gyárfás Conjecture: active and open at statement version 0.1;
-  internal structural reductions and the order-\(11\) lower bound are proved;
-  the primary-literature frontier has been audited.
+  internal structural reductions, the saturation reduction and its
+  single-witness delimitation, and a computer-assisted order-\(14\) lower
+  bound are proved; the primary-literature frontier has been audited.
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -59,13 +60,13 @@ Erdős–Gyárfás conjecture.
 
 ## Next action
 
-For `P-002`, run the exhaustive order-\(11\) search for saturated
-counterexamples: minimum degree at least \(3\), no \(C_4\) or \(C_8\), and a
-simple path of length \(3\) or \(7\) across every nonedge. A negative result
-lifts the counterexample lower bound to twelve vertices by a proved
-reduction; survivors would be revealing near-miss structures. Single-witness
-saturation forcing is retired. No required action remains for `P-001`; its
-reference comparison remains optional and separately authorized.
+For `P-002`, extend the exhaustive \(\{C_4,C_8\}\)-free search to order
+\(14\) with parallel decomposition and re-validated anchors. Orders
+\(11\)–\(13\) are already exhausted and empty, so every counterexample has
+at least fourteen vertices; order \(14\) either lifts the bound to fifteen
+or produces the first survivors, which would be counterexample candidates
+requiring independent verification. No required action remains for `P-001`;
+its reference comparison remains optional and separately authorized.
 
 ## Known process risks
 

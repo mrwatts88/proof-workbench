@@ -35,6 +35,9 @@ Established preliminary reductions, none sufficient for the main claim:
   realizations in every attachment configuration.
 - `L016`: a full two-excursion witness pattern likewise admits infinite
   power-free realizations; bounded single-witness data cannot force.
+- `L017`: every counterexample has at least fourteen vertices
+  (computer-assisted via the exhaustive search `E004`; at orders \(11\)–\(13\)
+  no minimum-degree-\(3\) graph avoids both \(C_4\) and \(C_8\)).
 
 Imported frontier facts, not a candidate:
 
@@ -59,9 +62,9 @@ lemmas remain in `A001` and `CLAIMS.md`.
   arbitrary connected cubic graphs of large girth and make it decisive; by
   `L015`–`L016` the decisive use of saturation must couple unboundedly many
   witnesses or generate an interval of even cycle lengths.
-- `G009`: settle by exhaustive search whether an order-\(11\) saturated
-  counterexample exists; a negative answer lifts every counterexample's order
-  to at least \(12\).
+- `G010`: extend the exhaustive \(\{C_4,C_8\}\)-free search through orders
+  \(14\)–\(15\), where the small-order collapse still applies; record and
+  classify any survivors.
 
 ## Computational dependencies
 
@@ -70,3 +73,8 @@ candidate. `L005` and `L006` have separate hand proofs.
 
 `E003` rules out one 18-vertex attachment family but is not part of `L007`,
 which instead uses the imported large-girth existence theorem `C009`.
+
+`E004` is an exception to the evidence-only pattern: `L017` is proved
+computer-assisted, with the collapse and coverage arguments in `A006` and the
+exhaustive, anchor-validated search `E004` as its computational leg. `L005`
+and `L006` retain independent hand proofs; `L017` does not have one.

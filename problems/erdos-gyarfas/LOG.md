@@ -83,3 +83,23 @@ attempt, experiment, or review record.
 - Opened `G009` and made that exhaustive order-\(11\) search the next action;
   the variable-length reframing stays the live alternative. No proof or
   disproof candidate for the main conjecture exists.
+
+## 2026-07-23 — S006 orders 11 through 13 excluded by exhaustive search
+
+- Built and validated `E004`, an exhaustive generator for
+  \(\{C_4,C_8\}\)-free graphs of minimum degree \(3\), anchored to the
+  independent `E001`/`E002` counts, an exact symmetry quotient, and a
+  nonzero \(C_8\)-free positive control at order \(8\).
+- The search found no such graph of order \(11\) (231,646 nodes, 12 degree
+  sequences), order \(12\) (6,535,800 nodes, 29 sequences), or order
+  \(13\) (44,397,061 nodes, 59 sequences); all sequence counts were
+  re-derived by hand.
+- Proved `L017`, computer-assisted: every counterexample has at least
+  fourteen vertices. At these orders the searched class equals the
+  counterexample class outright, so `L008` was not needed; `G009` resolved
+  in this stronger form, and the saturation-as-accelerator premise was
+  recorded as wrong in its generative form.
+- Recorded the computation as `C011`; opened `G010` to push orders
+  \(14\)–\(15\), the remaining range of the small-order collapse, with
+  parallel decomposition and re-validated anchors. No proof or disproof
+  candidate for the main conjecture exists.

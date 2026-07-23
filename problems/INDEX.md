@@ -4,4 +4,4 @@
 | ID | Problem | Work | Claim | Updated | Next action |
 |---|---|---|---|---|---|
 | P-001 | [Unique Common Neighbor](unique-common-neighbor/STATE.md) | `complete` | `proved` | 2026-07-23 | No required action; any reference comparison needs separate authorization. |
-| P-002 | [Erdős–Gyárfás Conjecture](erdos-gyarfas/STATE.md) | `active` | `open` | 2026-07-23 | Run an exhaustive order-11 search for saturated counterexamples: graphs with minimum degree at least 3, no C4 or C8, and a simple path of length 3 or 7 across every nonedge; either prove none exists, lifting the counterexample lower bound to twelve vertices, or record the survivors. |
+| P-002 | [Erdős–Gyárfás Conjecture](erdos-gyarfas/STATE.md) | `active` | `open` | 2026-07-23 | Extend the exhaustive C4/C8-free search to order 14 with parallel decomposition and re-validated anchors; either prove the class empty, lifting every counterexample's order to at least 15, or record and independently verify the first survivors. |
