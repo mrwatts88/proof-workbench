@@ -2,8 +2,9 @@
 
 - Date opened: 2026-07-23
 - Problem: `P-002`
-- Status: active
-- Portfolio role: primary global reframing
+- Status: completed
+- Portfolio role: primary global reframing, now delimited; its reductions
+  remain live assets while single-witness forcing is retired
 
 ## Intended mechanism
 
@@ -266,6 +267,164 @@ lengths. Any successful use of `L012` must retain the stronger fact that the
 ear occurs inside a full Mersenne-length saturation witness, including the
 witness's other intersections with \(C\).
 
+### `L015` — One-excursion witnesses admit power-free families in every configuration
+
+Let \(B\), the possible exceptional vertex \(x\), the shortest odd cycle \(C\)
+of length \(q\ge7\), and the `L012` pair \(u,w\in V(C)-\{x\}\) at cyclic
+distance \(d\in\{2,4\}\) with \(q-d\) not of the form \(2^j-1\), \(j\ge2\), be
+as before, and let \(P\) be a saturation witness for \(u,w\): a simple
+\(u,w\)-path of length \(2^k-1\), \(k\ge2\). Assume the vertices of \(P\)
+outside \(C\) span exactly one component of \(P-V(C)\).
+
+**Decomposition.** Then \(P=A_1\cdot Q\cdot A_2\), where \(A_1\) is a possibly
+trivial arc of \(C\) from \(u\) to a vertex \(a\); \(Q\) is an \(a,b\)-path of
+length \(\ell\ge2\) whose internal vertices avoid \(C\); \(A_2\) is a possibly
+trivial arc of \(C\) from \(b\) to \(w\); and \(A_1,A_2\) are vertex-disjoint.
+
+*Proof.* \(C\) is induced, as shown in `L012`, so any subpath of \(P\) all of
+whose vertices lie on \(C\) uses only edges of \(C\) and follows an arc of
+\(C\). Deleting \(V(C)\) from the path \(P\) leaves exactly the interiors of
+the maximal off-cycle stretches of \(P\); by hypothesis there is one such
+stretch \(Q\). Its two boundary vertices \(a,b\) lie on \(C\) because the ends
+\(u,w\) of \(P\) do. The portions of \(P\) before \(a\) and after \(b\) lie
+wholly on \(C\) and are arcs \(A_1\ni u\), \(A_2\ni w\); they are disjoint
+because \(P\) is simple, and \(\ell\ge2\) because \(Q\) has an internal
+vertex. \(\square\)
+
+**Cycle inventory.** \(C\cup P=C\cup Q\) is a theta graph: the two arcs of
+\(C\) between \(a\) and \(b\), of lengths \(s\) and \(q-s\), and \(Q\) are
+three internally disjoint \(a,b\)-paths, and only \(a,b\) have degree \(3\).
+A cycle avoiding both branch vertices would lie in the acyclic interior of one
+path; a cycle containing an edge of one of the three segments contains that
+whole segment, and at a branch vertex it uses exactly two of the three
+segments. Hence \(C\cup Q\) has exactly three cycles, of lengths
+\[
+  q,\qquad \ell+s,\qquad \ell+q-s .
+\]
+Since \((\ell+s)+(\ell+q-s)=2\ell+q\) is odd, exactly one of the two new
+lengths is even.
+
+**Exact one-witness constraint system.** Writing \(\alpha=|A_1|\ge0\) and
+\(\beta=|A_2|\ge0\), the full data of a one-excursion witness satisfies
+precisely:
+
+1. \(\alpha+\ell+\beta=2^k-1\) with \(\ell\ge2\);
+2. the even member of \(\{\ell+s,\ \ell+q-s\}\) is not a power of two, and the
+   odd member is at least \(q\), because \(C\) is a shortest odd cycle in the
+   power-cycle-free graph \(B\);
+3. the placement relations on \(C\): \(A_1\) and \(A_2\) are disjoint arcs
+   containing \(u\) and \(w\) at cyclic distance \(d\), and \(s\) is an
+   \(a,b\)-arc length. Up to reversing \(P\) and reflecting \(C\), the
+   placements fall into the types: **T1**, both arcs trivial
+   (\(a=u\), \(b=w\)); **T2**, exactly one arc trivial, with \(a\) on the far
+   side of \(u\) from \(w\) (*aligned*) or between \(u\) and \(w\)
+   (*crossed*); **T3**, both arcs nontrivial, aligned or crossed by the same
+   dichotomy.
+
+**Families.** In every type the system has infinitely many solutions, realized
+by the standalone theta graphs \(C\cup Q\), which contain every vertex, edge,
+and cycle that the one-witness constraints mention. Vertices of \(C\) are
+numbered \(c_0,\ldots,c_{q-1}\) with \(u=c_0\), \(w=c_d\).
+
+| Type | \(q\) | \(d\) | placement | \(\ell\) | cycle lengths | valid for |
+|---|---|---|---|---|---|---|
+| T1 | \(7\) | \(2\) | \(a=c_0\), \(b=c_2\), \(s=2\) | \(2^k-1\) | \(7,\ 2^k+1,\ 2^k+4\) | \(k\ge3\) |
+| T1, \(d=4\) | \(9\) | \(4\) | \(a=c_0\), \(b=c_4\), \(s=4\) | \(2^k-1\) | \(9,\ 2^k+3,\ 2^k+4\) | \(k\ge3\) |
+| T2 aligned | \(11\) | \(2\) | \(A_1=c_0c_{10}c_9c_8\), \(b=c_2\), \(s=5\) | \(2^k-4\) | \(11,\ 2^k+1,\ 2^k+2\) | \(k\ge4\) |
+| T2 crossed | \(11\) | \(2\) | \(A_1=c_0c_1\), \(b=c_2\), \(s=1\) | \(2^k-2\) | \(11,\ 2^k-1,\ 2^k+8\) | \(k\ge4\) |
+| T3 aligned | \(11\) | \(2\) | \(A_1=c_0c_{10}\), \(A_2=c_3c_2\), \(s=7\) | \(2^k-3\) | \(11,\ 2^k+1,\ 2^k+4\) | \(k\ge4\) |
+| T3 crossed | \(11\) | \(2\) | \(A_1=c_0c_1\), \(A_2=c_5c_4c_3c_2\), \(s=4\) | \(2^k-5\) | \(11,\ 2^k-1,\ 2^k+2\) | \(k\ge4\) |
+
+*Verification.* In each row \(q-d\in\{5,9\}\) is not of the form \(2^j-1\);
+at \(q=9\) the arc \(q-2=7\) is Mersenne, so \(d=4\) is exactly the choice
+`L012` makes there. The totals \(\alpha+\ell+\beta\) equal
+\(2^k-1\): row by row,
+\(0+(2^k-1)+0\), \(0+(2^k-1)+0\), \(3+(2^k-4)+0\), \(1+(2^k-2)+0\),
+\(1+(2^k-3)+1\), \(1+(2^k-5)+3\). The listed \(s\) values are the
+\(a,b\)-arc lengths on \(C\), and the two theta lengths are
+\(\ell+s\) and \(\ell+q-s\). In every row the odd new length
+(\(2^k+1\), \(2^k+3\), or \(2^k-1\)) is at least \(q\) in the stated range of
+\(k\), and the even new length lies strictly between consecutive powers of
+two: \(2^k<2^k+2,\,2^k+4<2^{k+1}\) for \(k\ge3\), and
+\(2^k<2^k+8<2^{k+1}\) for \(k\ge4\). Each theta graph is simple
+(\(\ell\ge2\)), its cycle \(C\) is induced and is a shortest odd cycle, and
+\(u,w\) are nonadjacent. \(\square\)
+
+Two delimiting remarks. First, the constraints are not vacuous: in the T2
+crossed row the instance \(k=3\) would force the even cycle length
+\(2^3+8=16\), so that sporadic parameter choice genuinely cannot occur in a
+counterexample. The classification eliminates isolated tuples but never a
+whole family. Second, as in `L014`, every family member has internal vertices
+of degree \(2\), so none satisfies `L011`; the graphs refute the proposed
+forcing implication and are not counterexamples to `C001`.
+
+**Conclusion.** Retaining the entire one-excursion witness — its total
+Mersenne length, both cycle arcs, both gaps, the shortest-odd-cycle bound, and
+the non-Mersenne arc choice from `L012` — still admits infinitely many
+power-free length patterns in every configuration type. One-excursion witness
+data cannot force a power-of-two cycle.
+
+### `L016` — A two-excursion witness pattern also admits infinite power-free families
+
+For every \(k\ge4\), let \(G_k\) be the graph obtained from a \(7\)-cycle
+\(C=c_0c_1\cdots c_6\) by adding two vertex-disjoint paths \(Q_1\) from
+\(c_0\) to \(c_4\) and \(Q_2\) from \(c_5\) to \(c_2\), each of length
+\(2^{k-1}-1\), internally disjoint from \(C\) and from each other. Then:
+
+1. \(P=Q_1\cdot c_4c_5\cdot Q_2\) is a simple \(c_0,c_2\)-path of length
+   \((2^{k-1}-1)+1+(2^{k-1}-1)=2^k-1\) whose vertices outside \(C\) form
+   exactly two components, the interiors of \(Q_1\) and \(Q_2\); the ends
+   \(c_0,c_2\) are nonadjacent at cyclic distance \(2\), and \(q-2=5\) is not
+   Mersenne;
+2. \(G_k\) has exactly seven cycles, of lengths
+   \(7\); \(2^{k-1}+3\) twice; \(2^{k-1}+2\) twice; \(2^k+1\); \(2^k+2\);
+3. \(G_k\) contains no power-of-two cycle, and \(C\) is a shortest odd cycle.
+
+**Proof.** Suppressing degree-\(2\) vertices, \(G_k\) contracts to the
+multigraph on the four branch vertices \(c_0,c_2,c_4,c_5\) whose six edges
+are the four arcs of \(C\) they determine — \(c_0c_2\) through \(c_1\)
+(length \(2\)), \(c_2c_4\) through \(c_3\) (length \(2\)), \(c_4c_5\)
+(length \(1\)), \(c_5c_0\) through \(c_6\) (length \(2\)) — together with
+\(Q_1=c_0c_4\) and \(Q_2=c_2c_5\) of length \(2^{k-1}-1\) each. This is
+\(K_4\). A cycle of \(G_k\) containing an edge of a segment contains the whole
+segment, so cycles of \(G_k\) correspond exactly to cycles of \(K_4\): four
+triangles and three quadrilaterals. Their lengths are:
+
+- \(\{c_0,c_2,c_4\}\): \(2+2+(2^{k-1}-1)=2^{k-1}+3\);
+- \(\{c_0,c_2,c_5\}\): \(2+(2^{k-1}-1)+2=2^{k-1}+3\);
+- \(\{c_0,c_4,c_5\}\): \((2^{k-1}-1)+1+2=2^{k-1}+2\);
+- \(\{c_2,c_4,c_5\}\): \(2+1+(2^{k-1}-1)=2^{k-1}+2\);
+- arcs only: \(2+2+1+2=7\), the cycle \(C\);
+- \(Q_2\) and \(Q_1\) with arcs \(c_0c_2\), \(c_4c_5\):
+  \(2+(2^{k-1}-1)+1+(2^{k-1}-1)=2^k+1\);
+- \(Q_1\) and \(Q_2\) with arcs \(c_2c_4\), \(c_5c_0\):
+  \((2^{k-1}-1)+2+(2^{k-1}-1)+2=2^k+2\).
+
+For \(k\ge4\) the odd lengths \(7\), \(2^{k-1}+3\), \(2^k+1\) are all at least
+\(7\) with the minimum attained only by \(C\), and the even lengths
+\(2^{k-1}+2\) and \(2^k+2\) lie strictly between consecutive powers of two.
+Hence no cycle length is a power of two and \(C\) is a shortest odd cycle. At
+\(k=4\) the seven lengths are \(7,11,11,10,10,17,18\). \(\square\)
+
+The same scope limitation applies: \(c_1,c_3,c_6\) and the path interiors
+have degree \(2\), so \(G_k\) does not satisfy `L011`. The lemma refutes
+forcing from full two-excursion witness data; it is not a counterexample to
+`C001`.
+
+### Sparsity remark on finite witness patterns
+
+*Heuristic, not a claim.* In `L014`–`L016` every even cycle length is an
+affine expression \(c+\ell\) with unit coefficient in a free segment length,
+the offset \(c\) being fixed by the configuration. Because the gap between
+consecutive powers of two grows without bound, each such family contains
+infinitely many power-free choices, and any witness diagram with a bounded
+number of segments has this shape. Heuristically, no fixed finite pattern of
+witnesses can force a power-of-two cycle; a decisive mechanism must either
+couple an unbounded number of witnesses — the saturated graph constrains all
+of its nonedges simultaneously — or generate an interval of even cycle
+lengths. This intuition guides route selection only; it resolves nothing and
+must not be cited in a proof.
+
 ## Failure analysis
 
 - `C008` supplies an upper bound on the average degree of \(H\), not the lower
@@ -276,9 +435,15 @@ witness's other intersections with \(C\).
 - `L014` shows that the three cycle lengths of a shortest odd cycle plus one
   arbitrary ear admit infinite power-free families. Ear existence and parity
   alone are therefore insufficient.
-- The saturation reduction is global, but its useful content will depend on
-  controlling intersections among many witness paths. No such control has yet
-  been proved.
+- `L015` closes the proposed refinement of `L014`: even the *full*
+  one-excursion witness — total Mersenne length, both arcs, both gaps, the
+  shortest-odd-cycle bound — admits infinite power-free families in every
+  configuration type. `L016` does the same for a two-excursion pattern. The
+  recorded pivot condition for single-witness forcing is therefore met.
+- The saturation reduction is global, but by the sparsity remark its decisive
+  use cannot come from any bounded witness diagram. The surviving mechanisms
+  are coupling unboundedly many witnesses at once, or generating an interval
+  of even cycle lengths.
 
 ## Salvageable results
 
@@ -294,14 +459,29 @@ witness's other intersections with \(C\).
 - `L013` supplies an external ear in the triangle and \(5\)-cycle cases from
   2-connectivity, but without a Mersenne-witness certificate.
 - `L014` rules out one-ear theta length equations as a sufficient mechanism.
+- `L015`–`L016` complete that separation for full one- and two-excursion
+  witness data, so future work need not revisit any bounded single-witness
+  pattern.
 - The two-edge-path dichotomy identifies witness overlap, rather than path
   existence, as the immediate obstruction.
+- At orders \(n\le15\) the saturation witnesses collapse to lengths
+  \(3\) and \(7\), because a path of length \(15\) needs \(16\) vertices, and
+  the only excludable power cycles are \(C_4\) and \(C_8\). Combined with the
+  minimum-order addendum of `L008` and the order bound `L006`, this makes
+  "no saturated counterexample of order \(11\)" a finitely checkable
+  statement whose truth would lift every counterexample's order to \(12\).
+  This is the strongest concrete use of saturation now visible.
 
 ## Exit state
 
-- Status: active
-- Promoted records: `L008`–`L014` in `CLAIMS.md`
-- Next action: classify the `L012` Mersenne witness when its vertices outside
-  the shortest odd cycle form exactly one component, retaining the total
-  length and every cycle intersection; either force a power-of-two cycle or
-  exhibit an infinite surviving length family.
+- Status: completed
+- Promoted records: `L008`–`L016` in `CLAIMS.md`
+- Outcome: saturation is established as a genuine global reduction
+  (`L008`–`L013`) and definitively delimited as a forcing mechanism at the
+  single-witness level (`L014`–`L016`). `G008` is resolved on its obstruction
+  horn; the forcing gap `G007` remains open.
+- Next action: run an exhaustive order-\(11\) search for saturated
+  counterexamples — minimum degree \(3\), no \(C_4\) or \(C_8\), and a simple
+  path of length \(3\) or \(7\) across every nonedge; either prove none
+  exists, lifting the counterexample lower bound to twelve vertices, or
+  record the survivors.

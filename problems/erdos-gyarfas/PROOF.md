@@ -31,6 +31,10 @@ Established preliminary reductions, none sufficient for the main claim:
   the triangle and \(5\)-cycle cases.
 - `L014`: one-ear theta length equations alone do not force a power-of-two
   cycle.
+- `L015`: a full one-excursion saturation witness admits infinite power-free
+  realizations in every attachment configuration.
+- `L016`: a full two-excursion witness pattern likewise admits infinite
+  power-free realizations; bounded single-witness data cannot force.
 
 Imported frontier facts, not a candidate:
 
@@ -52,9 +56,12 @@ lemmas remain in `A001` and `CLAIMS.md`.
 - `G002`: make the near-2-connected reduction force a power-of-two cycle.
 - `G003`: obtain a global \(8,16,\ldots\)-cycle forcing mechanism.
 - `G007`: find a global minimal-counterexample restriction not shared by
-  arbitrary connected cubic graphs of large girth and make it decisive.
-- `G008`: convert the saturation witnesses and external ear into adjustable
-  even cycle lengths by retaining the full witness intersection pattern.
+  arbitrary connected cubic graphs of large girth and make it decisive; by
+  `L015`–`L016` the decisive use of saturation must couple unboundedly many
+  witnesses or generate an interval of even cycle lengths.
+- `G009`: settle by exhaustive search whether an order-\(11\) saturated
+  counterexample exists; a negative answer lifts every counterexample's order
+  to at least \(12\).
 
 ## Computational dependencies
 

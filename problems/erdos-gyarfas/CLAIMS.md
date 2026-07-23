@@ -29,6 +29,8 @@ has one independently checkable assertion.
 | L012 | ear lemma | In the block from `L011`, a shortest odd cycle of length at least \(7\) has an external ear contained in the union with a saturation witness between two nonexceptional cycle vertices. | proved | `A005/L012` | `L011` |
 | L013 | ear lemma | Every shortest odd cycle in the block from `L011`, including a triangle or \(5\)-cycle, has an external ear. | proved | `A005/L013` | `L011` |
 | L014 | separation lemma | A shortest odd cycle plus one arbitrary external ear does not force a power-of-two cycle: theta path lengths \(2,2r+1,4\) for \(r\ge2\) give only cycle lengths \(2r+3,2r+5,6\). | proved | `A005/L014` | Finite simple graph conventions |
+| L015 | separation lemma | A full one-excursion `L012` witness — total length \(2^k-1\), both cycle arcs, both gaps, induced shortest odd cycle, non-Mersenne arc choice — admits infinitely many power-free realizations in every attachment configuration (aligned or crossed, each arc trivial or not, \(d\in\{2,4\}\)), so one-excursion witness data forces no power-of-two cycle. | proved | `A005/L015` | `A005/L012` for the setting; finite simple graph conventions |
+| L016 | separation lemma | Full two-excursion witness data also forces no power-of-two cycle: for every \(k\ge4\), the double-theta graph on \(C_7\) with disjoint ears of length \(2^{k-1}-1\) attached at \(\{c_0,c_4\}\) and \(\{c_5,c_2\}\) realizes a witness of length \(2^k-1\) for the distance-\(2\) pair \(c_0,c_2\), and its seven cycle lengths \(7,2^{k-1}+3,2^{k-1}+3,2^{k-1}+2,2^{k-1}+2,2^k+1,2^k+2\) contain no power of two. | proved | `A005/L016` | Finite simple graph conventions |
 
 ## Dependency notes
 
@@ -59,3 +61,10 @@ has one independently checkable assertion.
   2-connectivity and the near-minimum-degree block directly. `L014` is only a
   separation example for one-ear length equations; its internal path vertices
   have degree \(2\), so it is not a counterexample to `C001` or to `L011`.
+- `L015` and `L016` delimit the single-witness information content of `L012`:
+  their theta and double-theta families satisfy every constraint visible to
+  one witness, yet they contain internal degree-\(2\) vertices, so none is a
+  counterexample to `C001` or to `L011`. Together they retire every bounded
+  single-witness forcing pattern and fire the recorded pivot condition for
+  the saturation-only route. They say nothing against saturation as a
+  reduction, and `L008`–`L013` remain available as constraints.

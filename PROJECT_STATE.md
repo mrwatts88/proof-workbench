@@ -59,11 +59,13 @@ Erdős–Gyárfás conjecture.
 
 ## Next action
 
-For `P-002`, replace the falsified local induced-\(P_{13}\) attachment route
-with a genuinely global restriction on a minimal counterexample, and stress-test
-it against connected cubic graphs of girth at least \(17\) before attempting a
-new power-of-two cycle-forcing argument. No required action remains for
-`P-001`; its reference comparison remains optional and separately authorized.
+For `P-002`, run the exhaustive order-\(11\) search for saturated
+counterexamples: minimum degree at least \(3\), no \(C_4\) or \(C_8\), and a
+simple path of length \(3\) or \(7\) across every nonedge. A negative result
+lifts the counterexample lower bound to twelve vertices by a proved
+reduction; survivors would be revealing near-miss structures. Single-witness
+saturation forcing is retired. No required action remains for `P-001`; its
+reference comparison remains optional and separately authorized.
 
 ## Known process risks
 

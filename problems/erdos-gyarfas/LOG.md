@@ -65,3 +65,21 @@ attempt, experiment, or review record.
   are not decisive.
 - Opened `G008` for the unresolved witness-overlap and theta-length step. No
   proof or disproof candidate for the main conjecture exists.
+
+## 2026-07-23 — S005 single-witness forcing retired; pivot to the saturated finite frontier
+
+- Proved `L015`: a full one-excursion `L012` witness — total Mersenne length,
+  both arcs, both gaps, induced shortest odd cycle — admits infinitely many
+  power-free theta realizations in every attachment configuration.
+- Proved `L016`: a full two-excursion pattern admits infinite power-free
+  double-theta realizations on \(C_7\); the recorded pivot trigger fired.
+- Resolved `G008` on its obstruction horn; recorded the sparsity heuristic:
+  bounded witness diagrams cannot force, so a decisive mechanism must couple
+  unboundedly many witnesses or generate an interval of even cycle lengths.
+- Observed that at orders \(\le15\) saturation collapses to "every nonedge
+  has a path of length \(3\) or \(7\)"; with `L006` and `L008` this makes the
+  nonexistence of an order-\(11\) saturated counterexample finitely checkable
+  and sufficient to lift the counterexample lower bound to twelve vertices.
+- Opened `G009` and made that exhaustive order-\(11\) search the next action;
+  the variable-length reframing stays the live alternative. No proof or
+  disproof candidate for the main conjecture exists.

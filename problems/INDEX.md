@@ -4,4 +4,4 @@
 | ID | Problem | Work | Claim | Updated | Next action |
 |---|---|---|---|---|---|
 | P-001 | [Unique Common Neighbor](unique-common-neighbor/STATE.md) | `complete` | `proved` | 2026-07-23 | No required action; any reference comparison needs separate authorization. |
-| P-002 | [Erdős–Gyárfás Conjecture](erdos-gyarfas/STATE.md) | `active` | `open` | 2026-07-23 | Classify the L012 Mersenne witness when its vertices outside the shortest odd cycle form exactly one component, retaining the total length and every cycle intersection; either force a power-of-two cycle or exhibit an infinite surviving length family. |
+| P-002 | [Erdős–Gyárfás Conjecture](erdos-gyarfas/STATE.md) | `active` | `open` | 2026-07-23 | Run an exhaustive order-11 search for saturated counterexamples: graphs with minimum degree at least 3, no C4 or C8, and a simple path of length 3 or 7 across every nonedge; either prove none exists, lifting the counterexample lower bound to twelve vertices, or record the survivors. |
