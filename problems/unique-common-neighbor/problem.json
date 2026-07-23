@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "P-001",
+  "slug": "unique-common-neighbor",
+  "title": "Unique Common Neighbor",
+  "statement_file": "STATEMENT.md",
+  "statement_version": "0.2",
+  "work_status": "complete",
+  "claim_status": "proved",
+  "created": "2026-07-23",
+  "updated": "2026-07-23",
+  "tags": [
+    "benchmark",
+    "graph-theory",
+    "solution-embargo"
+  ],
+  "dependencies": [],
+  "next_action": "No required action; any reference comparison needs separate authorization."
+}

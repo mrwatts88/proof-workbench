@@ -89,6 +89,7 @@ RECORD_CONFIG = {
     "session": ("S", "sessions", "session.md", False),
     "experiment": ("E", "experiments", "experiment.md", True),
 }
+REVIEW_TYPES = {"logic", "hypotheses", "counterexample", "computation", "exposition"}
 
 
 class ProofctlError(Exception):
@@ -251,6 +252,9 @@ def combination_errors(directory: Path, item: dict[str, Any]) -> list[str]:
         errors.append("'complete' work requires a terminal claim_status")
     if claim in TERMINAL_CLAIM_STATUSES and work not in {"complete", "archived"}:
         errors.append(f"terminal claim_status {claim!r} requires complete or archived work")
+
+    if work == "review" and review_count(directory) == 0:
+        errors.append("'review' work requires at least one review record")
 
     if work != "complete":
         return errors
@@ -586,6 +590,8 @@ def command_add(args: argparse.Namespace) -> int:
             "TITLE": args.title,
             "DATE": today(),
             "PROBLEM_ID": str(manifest["id"]),
+            "REVIEW_TYPE": "TODO",
+            "INDEPENDENCE_MODE": "not declared",
         },
     )
     if is_directory:
@@ -601,6 +607,51 @@ def command_add(args: argparse.Namespace) -> int:
     write_index(root)
     print(f"Created {output_path.relative_to(root)}")
     print("Remember to reconcile STATE.md, LOG.md, claims, and obligations.")
+    return 0
+
+
+def command_review(args: argparse.Namespace) -> int:
+    """Open a required adversarial review and move a candidate into review."""
+    root: Path = args.root
+    problem_directory, manifest = resolve_problem(root, args.slug)
+    if manifest.get("claim_status") != "proof_candidate":
+        raise ProofctlError(
+            "A review can start only after claim_status is 'proof_candidate'. "
+            "First integrate the candidate and use set-status ... candidate "
+            "--claim proof_candidate."
+        )
+    if manifest.get("work_status") in {"complete", "archived"}:
+        raise ProofctlError("Cannot open a review for a complete or archived problem")
+
+    records_directory = problem_directory / "reviews"
+    record_id = f"R{next_record_number(records_directory, 'R'):03d}"
+    output_path = records_directory / f"{record_id}-{safe_record_slug(args.title)}.md"
+    template_path = root / "templates" / "review.md"
+    if not template_path.is_file():
+        raise ProofctlError(f"Missing record template: {template_path}")
+    content = replace_tokens(
+        template_path.read_text(encoding="utf-8"),
+        {
+            "RECORD_ID": record_id,
+            "TITLE": args.title,
+            "DATE": today(),
+            "PROBLEM_ID": str(manifest["id"]),
+            "REVIEW_TYPE": args.review_type,
+            "INDEPENDENCE_MODE": "fresh-context independent review",
+        },
+    )
+    output_path.write_text(content, encoding="utf-8")
+
+    manifest["work_status"] = "review"
+    manifest["updated"] = today()
+    manifest["next_action"] = (
+        f"Complete {record_id} as a fresh-context {args.review_type} audit; "
+        "turn every critical or major finding into an obligation."
+    )
+    write_json(problem_directory / "problem.json", manifest)
+    write_index(root)
+    print(f"Started {output_path.relative_to(root)}")
+    print("Status changed to review. Assign this to a fresh reviewer context.")
     return 0
 
 
@@ -703,6 +754,16 @@ def build_parser() -> argparse.ArgumentParser:
     add_parser.add_argument("kind", choices=sorted(RECORD_CONFIG))
     add_parser.add_argument("title")
     add_parser.set_defaults(func=command_add)
+
+    review_parser = subparsers.add_parser(
+        "review", help="Start a fresh-context adversarial review of a candidate."
+    )
+    review_parser.add_argument("slug")
+    review_parser.add_argument("title")
+    review_parser.add_argument(
+        "--type", dest="review_type", choices=sorted(REVIEW_TYPES), required=True
+    )
+    review_parser.set_defaults(func=command_review)
 
     set_parser = subparsers.add_parser(
         "set-status", help="Update workflow state and rebuild the index."

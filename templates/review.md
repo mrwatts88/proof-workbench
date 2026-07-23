@@ -4,7 +4,8 @@
 - Problem: `{{PROBLEM_ID}}`
 - Reviewed statement version: TODO
 - Reviewed proof revision: TODO
-- Review type: TODO — logic / hypotheses / counterexample / computation / exposition
+- Review type: {{REVIEW_TYPE}} — logic / hypotheses / counterexample / computation / exposition
+- Independence mode: {{INDEPENDENCE_MODE}}
 
 ## Verdict
 
@@ -46,3 +47,7 @@ proof obligation resolution.
 
 State what prior reasoning the reviewer had seen. Do not call the review
 independent if it merely rephrases the discovery pass.
+
+For a fresh-context review, begin from `STATEMENT.md` and the identified candidate
+in `PROOF.md`. Do not read attempts, sessions, or earlier reviews until the first
+audit is complete; record any exception here.

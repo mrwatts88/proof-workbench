@@ -66,6 +66,31 @@ For each meaningful line of attack:
 A review pass may occur in a later clean-context session. Do not claim reviewer
 independence merely because the same reasoning was paraphrased.
 
+## Mandatory candidate-to-review transition
+
+When an integrated argument appears to prove or disprove the current statement,
+the agent must initiate adversarial review without waiting for the human to ask.
+This is a workflow transition, not an optional suggestion:
+
+1. integrate the exact candidate in `PROOF.md`, keep every unresolved gap visible,
+   and set `work_status` to `candidate` with `claim_status` `proof_candidate`;
+2. immediately run `python3 scripts/proofctl.py review <slug> "<audit title>"
+   --type <logic|hypotheses|counterexample|computation|exposition>`;
+3. when agent delegation is available, assign the review to a fresh agent that has
+   not participated in discovery; otherwise perform it in a later clean context
+   and explicitly record the limitation;
+4. give the reviewer the exact statement and candidate first. Do not provide
+   attempts, session narratives, or prior reviews until its initial verdict;
+5. announce to the human that review has begun, report its verdict, turn every
+   critical or major finding into an obligation, and either repair the candidate or
+   return the dossier to active work.
+
+For a proof or undecidability candidate, initiate two distinct audits before
+promotion: one logic/dependency audit and one hypotheses/counterexample audit. For
+a counterexample, initiate a fresh reproduction audit from the statement. The
+agent chooses and performs these steps; never ask the human to remember commands
+or decide whether review is due.
+
 ## Required end-of-session checkpoint
 
 A substantive session is any investigation that produces or changes a deduction,

@@ -10,11 +10,14 @@ promotion auditable.
 
 ## Current phase
 
-Scaffolding is initialized. No mathematical problem has been admitted yet.
+The first benchmark conjecture has an internally proved result that passed its
+required adversarial review gates.
 
 ## Active problems
 
-None. See the generated [problem index](problems/INDEX.md).
+- `P-001` — Unique Common Neighbor: proved internally for statement version 0.2;
+  no known solution was consulted.
+- See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
 
@@ -22,6 +25,8 @@ None. See the generated [problem index](problems/INDEX.md).
 - Workflow maturity and mathematical outcome are tracked separately.
 - Atomic claims and unresolved obligations are first-class records.
 - A proof is not complete until adversarial reviews and promotion gates pass.
+- Agents initiate and delegate those reviews automatically when a candidate
+  appears; humans do not schedule the review lifecycle.
 - Session continuity comes from concise handoffs plus detailed append-oriented
   records, not retained chat history.
 - Closing a substantive session includes a mandatory canonical-record checkpoint;
@@ -32,8 +37,8 @@ None. See the generated [problem index](problems/INDEX.md).
 
 ## Next action
 
-Admit the first conjecture with `python3 scripts/proofctl.py new`, normalize its
-statement, and complete an intake session before choosing a proof strategy.
+No required action remains for `P-001`. Reference comparison is optional and
+requires separate authorization.
 
 ## Known process risks
 
@@ -41,3 +46,5 @@ statement, and complete an intake session before choosing a proof strategy.
 - Independent review is a reasoning discipline, not something filenames can
   guarantee.
 - Handoffs become misleading if agents omit the end-of-session checkpoint.
+- Benchmark investigations can be contaminated if known solutions are consulted
+  before the internal candidate and review phases are complete.

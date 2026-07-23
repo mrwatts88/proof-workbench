@@ -67,12 +67,27 @@ strongest coherent candidate and openly label unresolved gaps.
 
 ## 6. Challenge
 
-Create a review record using `review-playbook.md`. A useful review attempts to
-break the proof, not summarize it. Critical findings become obligations and move
-the work status backward when necessary.
+The moment an integrated proof or counterexample candidate exists, stop treating
+the task as ordinary exploration. The agent must set the dossier to `candidate`
+with claim status `proof_candidate`, then immediately start review itself:
 
-For final promotion, conduct clean-context review passes from the statement and
-proof, revealing prior heuristics only after the first audit when feasible.
+1. run `python3 scripts/proofctl.py review <slug> "<audit title>" --type <type>`;
+2. assign that audit to a fresh agent or clean context when one is available;
+3. give the reviewer `STATEMENT.md` and the candidate, but not discovery attempts,
+   sessions, or prior reviews before its first verdict;
+4. record critical and major findings as obligations and repair or reject the
+   candidate before seeking promotion.
+
+The human does not need to request, schedule, or choose these reviews. The agent
+owns the transition and must tell the human when review starts and what its verdict
+is. A useful review attempts to break the candidate, not summarize it.
+
+For a proof or undecidability result, the agent must obtain two meaningfully
+distinct fresh-context audits (normally logic plus hypotheses/counterexample). For
+a disproof, it must obtain one fresh-context reproduction audit from the statement.
+If fresh delegation is unavailable, the agent must record that limitation and use
+a later clean-context pass; it must never label a same-context paraphrase as
+independent.
 
 ## 7. Consolidation and handoff
 
