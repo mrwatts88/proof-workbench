@@ -22,6 +22,13 @@ has one independently checkable assertion.
 | C009 | large-girth existence theorem | For every integer \(g\ge3\), there is a finite Hamiltonian cubic graph of girth at least \(g\). | imported | Biggs (1998), Theorem 3.2, taking the prescribed 2-factor to be one cycle; `references/source-audit-2026-07-23.md` | Finite simple graph conventions |
 | L007 | separation lemma | The minimal-counterexample conclusions `L002` and `C004`–`C006`, together with the induced-\(P_{13}\) conclusion drawn from `C007` and the absence of \(C_4,C_8\), do not force a \(C_{16}\). | proved | `A004/L007` | `C009` |
 | C010 | computational observation | No cubic graph on \(18\) vertices contains an induced \(P_{13}\) while avoiding both \(C_4\) and \(C_8\). | tested | `E003` | Exact reduction and family definition in `E003/README.md` |
+| L008 | saturation reduction | If a counterexample exists, one exists which is edge-maximal on its vertex set while remaining power-cycle-free; every nonedge is then joined by a simple path of length \(2^k-1\), and the graph is connected, non-bipartite, and below the average-degree threshold in `C008`. | proved | `A005/L008` | `D001`–`D004`, `C008` |
+| L009 | separation lemma | A finite connected bipartite cubic graph of girth at least \(17\) satisfies the prior connected-cubic and induced-\(P_{13}\) bundle while avoiding \(C_4,C_8,C_{16}\), but it fails the Mersenne-path saturation conclusion of `L008`. | proved | `A005/L009` | `C009`, `A004/L007` |
+| L010 | structural lemma | In a saturated counterexample supplied by `L008`, the edges which belong to no odd cycle form a matching. | proved | `A005/L010` | `L008` |
+| L011 | reduction | If a counterexample exists, there is a non-bipartite 2-connected power-cycle-free block with at most one degree-\(2\) vertex such that every nonedge whose endpoints are not exceptional has an internal simple path of length \(2^k-1\). | proved | `A005/L011` | `L001`, `L008`, `L010` |
+| L012 | ear lemma | In the block from `L011`, a shortest odd cycle of length at least \(7\) has an external ear contained in the union with a saturation witness between two nonexceptional cycle vertices. | proved | `A005/L012` | `L011` |
+| L013 | ear lemma | Every shortest odd cycle in the block from `L011`, including a triangle or \(5\)-cycle, has an external ear. | proved | `A005/L013` | `L011` |
+| L014 | separation lemma | A shortest odd cycle plus one arbitrary external ear does not force a power-of-two cycle: theta path lengths \(2,2r+1,4\) for \(r\ge2\) give only cycle lengths \(2r+3,2r+5,6\). | proved | `A005/L014` | Finite simple graph conventions |
 
 ## Dependency notes
 
@@ -42,3 +49,13 @@ has one independently checkable assertion.
   does not assert that the large-girth graph avoids \(C_{32},C_{64},\ldots\).
 - `L007` refutes only the proposed local \(C_{16}\)-forcing route, not `C001`.
   `C010` concerns a much smaller exact family and is not support for `L007`.
+- `L008` uses edge-maximality under safe edge addition, not the edge-minimality
+  in `L002`. Its minimum-order addendum controls subgraphs which omit vertices;
+  it does not import the spanning-subgraph part of `C004`.
+- `L009` uses a canonical bipartite double cover when the graph from `C009` is
+  non-bipartite. It is a stress test for `L008`, not a counterexample to
+  `C001`.
+- `L010`–`L012` are consequences of the saturation witnesses. `L013` uses
+  2-connectivity and the near-minimum-degree block directly. `L014` is only a
+  separation example for one-ear length equations; its internal path vertices
+  have degree \(2\), so it is not a counterexample to `C001` or to `L011`.

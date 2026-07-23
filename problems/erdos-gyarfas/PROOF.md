@@ -17,6 +17,20 @@ Established preliminary reductions, none sufficient for the main claim:
 - `L005`–`L006`: a counterexample has order at least \(11\).
 - `L007`: the imported induced-\(P_{13}\) and cubic-minimality conclusions,
   even with no \(C_4,C_8\), do not force \(C_{16}\).
+- `L008`: a counterexample may be made edge-maximal while power-cycle-free,
+  forcing a \(2^k-1\)-edge path across every nonedge.
+- `L009`: that saturation property excludes a connected bipartite cubic
+  large-girth realization of the prior local bundle.
+- `L010`: edges outside all odd cycles form a matching in a saturated
+  counterexample.
+- `L011`: the saturation witnesses persist inside a non-bipartite
+  2-connected leaf block, except at its possible cut vertex.
+- `L012`: a shortest odd cycle of length at least \(7\) in that block has an
+  external ear.
+- `L013`: every shortest odd cycle in the block has an external ear, including
+  the triangle and \(5\)-cycle cases.
+- `L014`: one-ear theta length equations alone do not force a power-of-two
+  cycle.
 
 Imported frontier facts, not a candidate:
 
@@ -38,7 +52,9 @@ lemmas remain in `A001` and `CLAIMS.md`.
 - `G002`: make the near-2-connected reduction force a power-of-two cycle.
 - `G003`: obtain a global \(8,16,\ldots\)-cycle forcing mechanism.
 - `G007`: find a global minimal-counterexample restriction not shared by
-  arbitrary connected cubic graphs of large girth.
+  arbitrary connected cubic graphs of large girth and make it decisive.
+- `G008`: convert the saturation witnesses and external ear into adjustable
+  even cycle lengths by retaining the full witness intersection pattern.
 
 ## Computational dependencies
 

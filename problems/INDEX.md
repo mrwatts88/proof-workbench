@@ -4,4 +4,4 @@
 | ID | Problem | Work | Claim | Updated | Next action |
 |---|---|---|---|---|---|
 | P-001 | [Unique Common Neighbor](unique-common-neighbor/STATE.md) | `complete` | `proved` | 2026-07-23 | No required action; any reference comparison needs separate authorization. |
-| P-002 | [Erdős–Gyárfás Conjecture](erdos-gyarfas/STATE.md) | `active` | `open` | 2026-07-23 | Derive a global minimal-counterexample restriction not shared by connected cubic graphs of girth at least 17, stress-test it against L007, then seek a noncircular variable-length cycle-forcing argument. |
+| P-002 | [Erdős–Gyárfás Conjecture](erdos-gyarfas/STATE.md) | `active` | `open` | 2026-07-23 | Classify the L012 Mersenne witness when its vertices outside the shortest odd cycle form exactly one component, retaining the total length and every cycle intersection; either force a power-of-two cycle or exhibit an infinite surviving length family. |

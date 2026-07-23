@@ -71,6 +71,12 @@ but are not treated as mathematical support.
   lengths. The authors prove that some absolute average-degree threshold
   forces a power-of-two cycle. This is imported as `C008`; the threshold is not
   specialized to minimum degree \(3\).
+- During `S004`, Theorem 1.1, Corollary 1.3, and the proof outline were
+  re-inspected. Theorem 1.1 produces an interval of consecutive even cycle
+  lengths \([\log^8\ell,\ell]\) once the average degree exceeds an absolute
+  threshold, and Corollary 1.3 specializes the method to powers of two. This
+  confirms the exact strength of `C008` but supplies no low-degree conclusion
+  applicable directly at minimum degree \(3\).
 
 ## Cubic graphs of large girth
 

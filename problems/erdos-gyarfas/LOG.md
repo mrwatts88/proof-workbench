@@ -47,3 +47,21 @@ attempt, experiment, or review record.
 - Resolved `G006` by refuting the proposed local route and opened `G007` for a
   genuinely global replacement mechanism.
 - No proof or disproof candidate for the main conjecture exists.
+
+## 2026-07-23 — S004 global saturation route opened
+
+- Proved `L008`: any counterexample has an edge-maximal power-cycle-free
+  supergraph in which every nonedge has a \(2^k-1\)-edge witness path.
+- Proved `L009`: the new condition excludes a connected bipartite cubic
+  large-girth realization of the structural bundle that defeated the prior
+  local route.
+- Proved `L010` and `L011`: edges outside all odd cycles form a matching, and
+  the Mersenne-path certificates persist inside a non-bipartite 2-connected
+  leaf block away from its possible cut vertex.
+- Proved `L012`: a shortest odd cycle of length at least \(7\) forces an
+  external ear; triangles and \(5\)-cycles remain separate cases.
+- Proved `L013` and `L014`: 2-connectivity supplies an ear in the short cases,
+  but one-ear theta length equations admit an infinite power-free family and
+  are not decisive.
+- Opened `G008` for the unresolved witness-overlap and theta-length step. No
+  proof or disproof candidate for the main conjecture exists.

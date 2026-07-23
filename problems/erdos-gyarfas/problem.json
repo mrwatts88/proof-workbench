@@ -15,5 +15,5 @@
   "latex_file": null,
   "pdf_file": null,
   "latex_engine": null,
-  "next_action": "Derive a global minimal-counterexample restriction not shared by connected cubic graphs of girth at least 17, stress-test it against L007, then seek a noncircular variable-length cycle-forcing argument."
+  "next_action": "Classify the L012 Mersenne witness when its vertices outside the shortest odd cycle form exactly one component, retaining the total length and every cycle intersection; either force a power-of-two cycle or exhibit an infinite surviving length family."
 }

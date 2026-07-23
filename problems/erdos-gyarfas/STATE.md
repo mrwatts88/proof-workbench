@@ -10,106 +10,126 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
 
 ## Established
 
-- `L001`: any counterexample contains a 2-connected power-cycle-free block with
-  at most one vertex of internal degree \(2\), all others having internal degree
-  at least \(3\).
-- `L002`: in an edge-minimal counterexample, every edge has a degree-\(3\)
-  endpoint; high-degree vertices are independent.
-- `L003`: exact counting and an order-eight case analysis prove that every
-  counterexample has at least nine vertices.
-- `L004`: chords from an endpoint of a longest path avoid positions
-  \(3,7,15,\ldots\).
-- `L005` and `L006`: exact degree/codegree arguments and a complete structural
-  classification prove that every counterexample has at least eleven vertices.
-- `L007`: the current induced-\(P_{13}\)/cubic-domination bundle cannot force a
-  \(16\)-cycle, even after assuming no \(4\)- or \(8\)-cycle.
-- The finite bounds `L003`, `L005`, and `L006` are weaker than previously
-  reported computational bounds and are not claimed as novel.
+- `L001`–`L006`: block and edge-minimal reductions, a longest-path chord
+  restriction, and independent proofs that every counterexample has at least
+  eleven vertices.
+- `L007`: cubic domination, cubic density, proper-subgraph minimality, an
+  induced \(P_{13}\), and absence of \(C_4,C_8\) do not force \(C_{16}\).
+- `L008`: a hypothetical counterexample can be enlarged on its fixed vertex set
+  until every nonedge has a simple witness path of length \(2^k-1\). The
+  resulting counterexample is connected, non-bipartite, and uniformly sparse.
+- `L009`: this saturation condition fails on a connected bipartite cubic graph
+  of girth at least \(17\), so it is not another property automatic in the
+  large-girth obstruction family.
+- `L010`: in a saturated counterexample, edges which lie on no odd cycle form a
+  matching. Thus every vertex lies on an odd cycle, all bridges form a
+  matching, and every nontrivial block is non-bipartite.
+- `L011`: the saturation witnesses survive inside a 2-connected
+  power-cycle-free leaf block, except for nonedges incident with its possible
+  cut vertex.
+- `L012`: if a shortest odd cycle in that block has length at least \(7\), a
+  saturation witness forces an external ear.
+- `L013`: 2-connectivity supplies an external ear for every shortest odd
+  cycle, including triangles and \(5\)-cycles, but without a saturation-witness
+  certificate in those short cases.
+- `L014`: one arbitrary ear is not enough by length alone. Theta path lengths
+  \(2,2r+1,4\) give cycle lengths \(2r+3,2r+5,6\), none powers of two.
 
 ## Evidence, not proof
 
-- `E001` exhaustively found no counterexample among all labelled eligible graphs
-  through order \(7\), or among labelled cubic graphs through order \(8\). This
-  is consistent with, but logically unnecessary for, `L003`.
-- `E002` exhaustively generated the necessary edge-minimal degree patterns at
-  orders \(9\) and \(10\); it found no order-\(9\) \(C_4\)-free completion and
-  found that every order-\(10\) completion has an \(8\)-cycle. `L005` and `L006`
-  have independent hand proofs.
-- `E003` exhaustively ruled out the smallest 18-vertex completion made from an
-  induced \(P_{13}\) and five independent cubic hubs. This narrow computation
-  is not the proof of `L007`.
+- `E001`–`E003` provide exact finite checks only. The order-\(11\) lower bound
+  has separate hand proofs, and the 18-vertex attachment search is not support
+  for the universal claim.
 
 ## Imported frontier
 
-- `C004`–`C006` (Carr, 2026): in an order-then-size minimal counterexample,
-  every proper subgraph has a vertex of degree at most \(2\), every vertex has
-  a cubic neighbor, and at least \(4/7\) of all vertices are cubic.
+- `C004`–`C006` (Carr, 2026): proper-subgraph minimality, cubic domination, and
+  at least \(4/7\) cubic vertices in an order-then-size minimal counterexample.
 - `C007` (Hegde–Sandeep–Shashank, 2025): every counterexample contains an
   induced \(P_{13}\).
-- `C008` (Liu–Montgomery, 2023): a sufficiently large absolute
-  average-degree threshold forces a power-of-two cycle.
+- `C008` (Liu–Montgomery, 2023): sufficiently large absolute average degree
+  forces an interval of even cycle lengths and hence a power-of-two cycle.
 - `C009` (Biggs, 1998): finite Hamiltonian cubic graphs exist with arbitrarily
   large prescribed girth.
-- The inspected May 2026 primary preprint reports that the general conjecture
-  remains open. See `references/source-audit-2026-07-23.md`.
+- The May 2026 primary preprint inspected in `S002` reports that the general
+  conjecture remains open.
 
 ## Open obligations
 
-- `G002`: make the 2-connected near-minimum-degree reduction decisive.
-- `G003`: force an \(8\)-, \(16\)-, or longer power-of-two cycle from the local
-  restrictions.
+- `G002` and `G003`: make the 2-connected reduction and a global cycle-length
+  mechanism decisive.
 - `G004`: inspect the original 1997 article body and original sources for
   reported computational bounds.
-- `G007`: find a global restriction on a minimal counterexample that is not
-  shared by arbitrary connected cubic graphs of girth at least \(17\).
+- `G007`: turn the new saturation restriction into a power-of-two cycle; its
+  separation from the large-girth cubic bundle is now proved.
+- `G008`: control the ordered intersections of a full Mersenne-length witness
+  with the shortest odd cycle; arbitrary one-ear equations are now ruled
+  insufficient.
 
 ## Active risks
 
-- No current lemma controls cycle lengths globally; all progress is local or
-  small-order.
-- Edge minimality does not imply cubicity, and the leaf-block reduction may
-  introduce one degree-\(2\) vertex.
-- The internal order-\(11\) bound is below reported prior computational
-  frontiers, so continuing by order alone is not competitive.
-- The \(P_{13}\)-free result is computer-assisted and its external computation
-  was inspected but not reproduced here.
-- Imported high-average-degree methods do not directly apply at minimum degree
-  \(3\).
-- Cubic domination, cubic density, and proper-subgraph minimality place no
-  extra restriction on connected cubic graphs; large-girth cubic graphs show
-  that these facts plus an induced \(P_{13}\) do not force \(C_{16}\).
+- Edge-maximal saturation is different from edge minimality; `L008` cannot
+  silently reuse `L002` or the spanning-subgraph part of `C004`.
+- A Mersenne-length witness for an induced two-edge path can pass through its
+  middle vertex, and an external witness initially creates an odd cycle of
+  length \(2^k+1\), not a forbidden power.
+- `L012` supplies only one ear and says nothing yet about its length or its
+  intersections with other witnesses.
+- `L014` shows that shortest-cycle minimality plus one ear has infinite
+  power-free length patterns.
+- For a triangle or \(5\)-cycle, an ear exists but has not been placed inside a
+  Mersenne-length witness.
+- The Liu–Montgomery theorem operates above a large average-degree threshold,
+  while any counterexample is below that threshold.
+
+## Strategy portfolio
+
+- Primary route: `A005`, edge-maximal saturation inside the leaf block from
+  `L011`; retain the full `L012` witness and classify its ordered intersections
+  with a shortest odd cycle.
+- Live alternative: adapt the variable-length path/adjuster mechanism behind
+  `C008` directly to the near-minimum-degree 2-connected graph from `L001`.
+- Pivot trigger: if the one-component and two-component witness patterns both
+  admit unconstrained infinite power-free length families, saturation has lost
+  comparative advantage and the variable-path reframing should become primary.
 
 ## Best next action
 
-Derive a genuinely global consequence of counterexample minimality or of the
-absence of all power-of-two cycles, beyond `C004`–`C007`, and test it first on
-the Hamiltonian cubic girth-\(17\) family from `L007`. Only a restriction that
-excludes that family without assuming the desired conclusion should be used
-in a new cycle-length forcing argument.
+Classify the `L012` Mersenne witness when its vertices outside the shortest odd
+cycle form exactly one component, retaining the total length and every cycle
+intersection; either force a power-of-two cycle or exhibit an infinite
+surviving length family.
 
 ## Human-level state
 
-The proposed next attack has been decisively stress-tested and rejected. Being
-mostly cubic and containing a long shortcut-free path sounded restrictive, but
-ordinary cubic graphs with no short cycles already have all of those features
-and can avoid cycles of lengths \(4\), \(8\), and \(16\). The project must now
-find a truly global property of a hypothetical counterexample rather than
-classify attachments around one path.
+The project now has a genuinely global condition that the previously used
+large-girth degree-three examples do not automatically satisfy. In a maximally
+filled hypothetical counterexample, every missing edge is certified by a path
+whose length is one less than a power of two. Those certificates force odd
+cycles throughout the graph and remain available inside the key 2-connected
+piece. A shortest odd cycle always has an extra path leaving and returning to
+it, and for cycles of length at least seven such a path occurs inside one of
+the special certificates. However, the three cycle lengths formed by one
+arbitrary extra path can all miss powers of two in infinitely many ways. The
+next test must therefore keep the entire certificate, including every place it
+meets the shortest odd cycle, rather than treating one extracted subpath in
+isolation.
 
 ## Resolution outlook
 
 - Estimated chance of eventually settling the exact current statement: 1%
-- Basis: the session eliminated the best concrete local route by a rigorous
-  large-girth obstruction. This prevents wasted work and clarifies the need for
-  a global mechanism, but no replacement mechanism is yet in hand and the
-  cubic case remains essentially untouched.
+- Previous estimate: 1%
+- Reason for no change: the session found a real global reduction and advanced
+  it to a controlled witness-intersection question, but also proved that the
+  first one-ear simplification is insufficient. No adjustable even length or
+  contradiction has yet been obtained.
 
 ## Resume reading
 
 1. `STATEMENT.md`
 2. `CLAIMS.md`
 3. `OBLIGATIONS.md`
-4. `attempts/A004-limits-of-induced-p13-and-cubic-domination.md`
-5. `experiments/E003-cubic-survivor-for-the-local-p13-route/README.md`
+4. `attempts/A005-edge-maximal-power-cycle-saturation.md`
+5. `attempts/A004-limits-of-induced-p13-and-cubic-domination.md`
 6. `references/source-audit-2026-07-23.md`
-7. `sessions/S003-2026-07-23-falsify-the-induced-p13-and-cubic-domination-forcing-route.md`
+7. `sessions/S004-2026-07-23-audit-and-develop-a-global-saturation-route.md`
