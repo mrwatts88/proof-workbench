@@ -1,4 +1,4 @@
-# Research Harness
+# Proof Workbench
 
 This repository is a durable workspace for investigating mathematical hypotheses,
 constructing proofs or counterexamples, and preserving enough context for a later
