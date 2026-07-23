@@ -93,5 +93,6 @@ rebuilds the index.
 | ID | Problem | Work | Claim | Previously proven? | LaTeX |
 |---|---|---|---|---|---|
 | P-001 | Unique Common Neighbor ([details](problems/unique-common-neighbor/STATE.md)) | `complete` | `proved` | Reported (not inspected) | [PDF](papers/build/unique-common-neighbor.pdf) · [TeX](papers/unique-common-neighbor.tex) |
+| P-002 | Erdős–Gyárfás Conjecture ([details](problems/erdos-gyarfas/STATE.md)) | `active` | `open` | Unknown | — |
 
 <!-- END GENERATED PROBLEM DASHBOARD -->

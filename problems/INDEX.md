@@ -4,3 +4,4 @@
 | ID | Problem | Work | Claim | Updated | Next action |
 |---|---|---|---|---|---|
 | P-001 | [Unique Common Neighbor](unique-common-neighbor/STATE.md) | `complete` | `proved` | 2026-07-23 | No required action; any reference comparison needs separate authorization. |
+| P-002 | [Erdős–Gyárfás Conjecture](erdos-gyarfas/STATE.md) | `active` | `open` | 2026-07-23 | Extend exact C4-free enumeration from order 9 and use the survivors to formulate a stronger global cycle-forcing lemma. |

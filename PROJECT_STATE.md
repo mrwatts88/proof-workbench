@@ -11,12 +11,16 @@ promotion auditable.
 ## Current phase
 
 The first benchmark conjecture has an internally proved result that passed its
-required adversarial review gates.
+required adversarial review gates. A new active research dossier now targets the
+Erdős–Gyárfás conjecture.
 
 ## Active problems
 
 - `P-001` — Unique Common Neighbor: proved internally for statement version 0.2;
   no known solution was consulted.
+- `P-002` — Erdős–Gyárfás Conjecture: active and open at statement version 0.1;
+  initial structural reductions are proved, with no external source yet
+  inspected.
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -43,8 +47,10 @@ required adversarial review gates.
 
 ## Next action
 
-No required action remains for `P-001`. Reference comparison is optional and
-requires separate authorization.
+For `P-002`, extend exact \(C_4\)-free enumeration from order \(9\) and use the
+survivors to formulate a stronger global cycle-forcing lemma. No required action
+remains for `P-001`; its reference comparison remains optional and separately
+authorized.
 
 ## Known process risks
 
