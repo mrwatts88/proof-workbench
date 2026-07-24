@@ -122,6 +122,15 @@ analogies, and reframings belong in the strategy audit or an attempt record and
 must be labeled as such. They enter `CLAIMS.md` or `PROOF.md` only at their
 supported strength.
 
+Missing tools are research targets, not exogenous events. When the recorded
+obstacle is that no known technique applies, the strategy audit must weigh at
+least one internal tool-building attempt — a new mechanism, construction, or
+lemma with a falsifiable first move and an explicit kill condition — against
+importing or awaiting external progress. Capability-based deference is never a
+selection reason: routes are chosen on expected research value, not on
+assumptions about who is entitled to build the missing piece. Ambition does not
+license inflation; estimates and claim strengths stay calibrated to evidence.
+
 When the harness supports delegation, a fresh discovery agent may be used to
 counter anchoring or generate independent mechanisms. Give it the exact statement,
 definitions, established claims, and open obligations, but initially withhold the

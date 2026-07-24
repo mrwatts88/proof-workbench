@@ -70,6 +70,10 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   route, live alternative, and pivot trigger. Fresh discovery agents may reduce
   anchoring where the harness supports them, but their suggestions remain
   speculative until checked by the primary agent.
+- Missing tools are internal research targets: when the obstacle is "no known
+  technique applies," strategy audits weigh a tool-building attempt with a
+  falsifiable first move and kill condition; capability-based deference is not
+  a valid route-selection reason, and estimates stay calibrated regardless.
 - Closing a substantive session includes a mandatory canonical-record checkpoint;
   the human shorthand `close session` invokes the whole checkpoint.
 - Each closure preserves a plain-language recap, a subjective percentage estimate

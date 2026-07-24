@@ -80,6 +80,12 @@ specific, then evaluate them for information gain, leverage, falsifiability, and
 unsupported dependencies. Select one primary move and one pivot trigger. This
 comparison should be compact and substantive, not a quota of superficial ideas.
 
+When the recorded obstacle is that no known technique applies, weigh at least
+one internal tool-building attempt — a new mechanism, construction, or lemma
+with a falsifiable first move and an explicit kill condition — rather than
+treating the missing tool as something only external progress can supply.
+Capability-based deference is not a valid reason to reject a route.
+
 The agent may retire or replace the inherited move without human approval when
 the audit or later evidence warrants it. A material change of proof architecture
 goes in `DECISIONS.md`; the session and `STATE.md` retain the primary route, the
