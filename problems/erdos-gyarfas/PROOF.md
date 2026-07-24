@@ -138,7 +138,10 @@ Established preliminary reductions, none sufficient for the main claim:
   \(d(x,y)=4\), \(s_{\max}\le8\) has a pencilled 4-path system — which
   would close band 4 of the block question in the strengthened form
   "a \(C_8\) through both terminals". Exhaustively empty through order
-  15 (`C032`); \(C_4\)-freeness is essential to both band-4 rungs
+  16 (`C032`; `C035`: the order-16 harvest adds three equality blocks
+  F16/G16/H16 — catalogue now eight, all at exact equality — with all
+  band-4 cores disjoint-type, no strict pair at 16, and the
+  interference census still perfect); \(C_4\)-freeness is essential to both band-4 rungs
   (`C033`: strict blocks and \(C_8\)-free equality cores exist with
   \(C_4\)s at orders 6–9).
 - `L034`: the generalized ring criterion (audit of an external memo,
@@ -177,9 +180,10 @@ Established preliminary reductions, none sufficient for the main claim:
   M3's "instance, not equivalence" reading. It does **not** extend to
   the odd-prime-gcd channel: \(\Theta(3,3,3)\) is vertex-taut,
   non-bipartite, with \(S=\{3\}\). Finite status (`C034`, `E015`): the
-  bipartite class is empty of power-free members through order 22
-  (23 with a pendant), every member carrying a \(C_8\) and never fewer
-  than 13 of them; the same run verifies internally that no bipartite
+  bipartite class is empty of power-free members through order 21
+  (22 with a pendant; the order-22 run was launched and left
+  unfinished, deliberately excluded from `C034`), every member
+  carrying a \(C_8\) and never fewer than 13 of them; the same run verifies internally that no bipartite
   counterexample and no bipartite 1-atom exists in that range.
 
 Imported frontier facts, not a candidate:
@@ -234,7 +238,7 @@ lemmas remain in `A001` and `CLAIMS.md`.
   pinched channel: a power-free vertex-taut 2-connected core with
   \(s_{\max}\le2s_{\min}\) — equivalent to taut 2-atoms as defined.
   Open pinched rungs: strict blocks at \(s_{\min}\ge4\) (empty through
-  order 15) and equality-block power-forcing; after `L033` the band-4
+  order 16, `C035`) and equality-block power-forcing; after `L033` the band-4
   case is exactly the **pencil endgame** (fan and unique-path
   impossibility), with the band-2 closed rung
   (\(S\subseteq\{2,3,4\}\), \(4\in S\)) the last \(C_4\)-only gap

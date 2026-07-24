@@ -41,11 +41,15 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   \(C_4\)-freeness the pencil is terminal-adjacent with a rigid fan —
   so band 4 of the block question is exactly the **pencil endgame**:
   no vertex-taut 2-connected \(C_4\)-free core with \(d(x,y)=4\),
-  \(s_{\max}\le8\) can be pencil-type. Catalogue through order 15
-  (`C032`): block world stable at five equality blocks (P10 =
-  Petersen\(-e\) the only band-4 core, disjoint-type), no strict block,
-  the strict-15 scan = exactly D14's predicted pendant lift, closed
-  bands 4–7 only. Hypothesis necessity (`C033`): with \(C_4\)s allowed,
+  \(s_{\max}\le8\) can be pencil-type. Catalogue through order **16**
+  (`C032`; `C035`, the S017 harvest of the billion-graph order-16
+  scan): **eight equality blocks** — the five known plus F16 (band 4,
+  terminal degrees (3,3), on a sub-cubic-free graph), G16 (band 4,
+  (2,4)) and H16 (band 6, first block with \(C_{16}\) in spectrum) —
+  every one at exact equality; no strict taut pinched pair at 16 at
+  all; all band-4 cores disjoint-type, so the pencil endgame's empty
+  base and the 100% interference census extend through 16; the
+  strict-15 scan = exactly D14's predicted pendant lift. Hypothesis necessity (`C033`): with \(C_4\)s allowed,
   strict blocks exist from order 6 and \(C_8\)-free band-4 equality
   cores from order 9 — \(C_4\)-freeness is essential to both rungs.
   Three hand constructions against the endgame died to the cascade
@@ -79,9 +83,9 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   pencil endgame + band-2 rung (pinched channel); the bipartite hunt
   at order 22+ and the new gcd-channel theory question; the cubic
   census at order 30; census mining; bipartite EGC and Carr 4/7 → 1
-  (proof side); 3-connectivity leverage; 1-atom theory; order-16
-  pinched catalogue (a separate agent's in-flight scan from S015,
-  untouched by S016).
+  (proof side); 3-connectivity leverage; 1-atom theory; order-17+
+  pinched catalogue legs (the order-16 scan from S015 was harvested
+  concurrently in S017, commit 31db367).
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions

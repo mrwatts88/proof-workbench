@@ -59,16 +59,20 @@ direct proof-side yield — the ceiling). New datum: no *bipartite*
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
 2-connected \(C_4\)-free core with \(d(x,y)=4\), \(s_{\max}\le8\) has a
-pencilled 4-path system. Catalogue through order 15 (`C032`): five
-equality blocks (P10 = Petersen\(-e\) at band 4, A11/B11/C12 band 5,
-D14 band 6), no strict block, closed bands 4–7 only. The order-16
-closed scan launched in S015 completed and was being harvested
-concurrently by a separate agent (session `S017`) while S016 ran; its
-results are that session's to record and are deliberately not folded in
-here — read `S017` and the `E013` README for the order-16 catalogue
-before treating "through order 15" as current. Hypothesis necessity
-(`C033`): \(C_4\)-freeness is essential to both band-4 rungs. Three
-hand constructions died to the cascade obstruction (`A015`).
+pencilled 4-path system. Catalogue now through order **16**
+(`C030`–`C032`, `C035`/S017): **eight equality blocks** — P10 =
+Petersen\(-e\) (band 4), A11/B11/C12 (band 5), D14 (band 6), and from
+the order-16 harvest F16 (band 4, terminal degrees (3,3), on a graph
+with no sub-cubic vertex), G16 (band 4, (2,4)), H16 (band 6, (2,2),
+first block with \(C_{16}\) in spectrum) — every one at exact equality
+\(s_{\max}=2\,s_{\min}\); **no strict taut pinched pair exists at
+order 16 at all** (strict catalogue complete at seven witnesses
+through 16), no power-free closed taut pair at 16, and all three
+band-4 core gadgets are disjoint-type, so the pencil endgame's
+exhaustive empty base and the 100% two-through-path interference
+census both extend through order 16. Hypothesis necessity (`C033`):
+\(C_4\)-freeness is essential to both band-4 rungs. Three hand
+constructions died to the cascade obstruction (`A015`).
 
 (c) The **congruence channels**, now **split by `L035`**. Channels (i)
 (all-odd \(S\)) and (iii) (\(S\subseteq2+4\mathbb Z\)) *are* the

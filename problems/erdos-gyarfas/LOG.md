@@ -474,3 +474,30 @@ attempt, experiment, or review record.
   destroying the structure. Both corrections strengthen the audited
   external memo. `G014` item (2) de-gated for this thread. No proved row
   changed; `C001` stays `open`.
+
+## 2026-07-24 — S017 (order-16 harvest; concurrent with S016)
+
+- The E013 order-16 closed scan launched in S015 completed (PyPy,
+  5,986s): stream 1,006,553,591 (new datum), 55,213,924 eligible,
+  420,006,891 pairs, twelve taut closed hits (bands 4:3, 6:3, 7:6),
+  all at boundary s_max = 2d, all containing a C8.
+- Consequences: no strict taut pinched pair at order 16 (the strict
+  catalogue stands complete at seven witnesses through 16); no
+  power-free closed taut pair at 16; three new equality blocks on
+  three new graphs — F16 (band 4, terminal degrees (3,3), two
+  gadget-isomorphic realizations, on a graph with no sub-cubic
+  vertex), G16 (band 4, (2,4)), H16 (band 6, (2,2), first block with
+  C16 in spectrum) — extending the block catalogue to eight, every
+  one at exact equality; no strict block through 16.
+- Pencil endgame (L033): all three band-4 core gadgets are
+  disjoint-type — the endgame's exhaustive empty base extends to
+  order 16. Interference census stays perfect: every C8 of every new
+  core pair is a two-through-path symmetric difference (6/6, 6/6,
+  6/6, 10/10).
+- Shared-tree protocol: the concurrent S016 session held CLAIMS,
+  OBLIGATIONS, PROOF, STATE, DECISIONS, PROJECT_STATE (and this LOG)
+  mid-edit, so S017 committed only harvest-scoped paths (E013 README
+  addendum + data + its session record) and recorded a punch list in
+  sessions/S017 for the deferred ledger row and frontier-phrase
+  updates ("through order 15" → "16"). This LOG entry itself was
+  appended unstaged to ride with the S016 close commit.

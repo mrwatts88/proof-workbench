@@ -58,12 +58,25 @@
   pencil endgame survives, and the equality phenomenon now covers
   eight blocks across orders 10–16).
 
-## Deferred canonical updates (shared-tree constraint)
+## Deferred canonical updates (shared-tree constraint) — APPLIED
 
-The concurrent S016 session holds uncommitted edits to `CLAIMS.md`,
-`OBLIGATIONS.md`, `PROOF.md`, `STATE.md`, `DECISIONS.md`, and
-`LOG.md`; editing or staging those files here would risk clobbering or
-sweeping its work. Therefore:
+While the scan was being classified, the concurrent S016 session held
+uncommitted edits to `CLAIMS.md`, `OBLIGATIONS.md`, `PROOF.md`,
+`STATE.md`, `DECISIONS.md`, and `LOG.md`, so the first S017 commit
+(31db367) carried only harvest-scoped paths plus this punch list.
+S016 then closed and pushed (0ed984d) before this session ended, so
+the punch list below was applied in-session in a second S017 commit:
+the ledger row became `C035`; the frontier phrases in
+`OBLIGATIONS.md` (G013), `PROOF.md` (L033 bullet and the G013 gap),
+`STATE.md` (program status (b′)) and `PROJECT_STATE.md` now read
+"through order 16" with the eight-block catalogue; and one
+cross-record conflict in the S016 close was repaired conservatively:
+`PROOF.md`'s L035 bullet said the bipartite class was empty "through
+order 22 (23 with a pendant)" while its supporting record `C034` and
+`STATE.md` say through 21 (22 with a pendant; the order-22 run
+explicitly unfinished and excluded) — the summary was aligned to the
+supporting record. The original punch list, as recorded at the first
+commit:
 
 - The **claim-ledger row** for this harvest is deferred. Proposed row
   (to be added by the next session that holds `CLAIMS.md` cleanly,
@@ -110,14 +123,14 @@ sweeping its work. Therefore:
 ## Canonical records changed
 
 - [x] `E013/README.md` (S017 addendum) and
-  `E013/data/catalogue_closed_n16.json` (committed)
-- [x] `LOG.md` (appended, unstaged — rides with the S016 close)
-- [ ] `CLAIMS.md` / `OBLIGATIONS.md` / `PROOF.md` / `STATE.md` /
-  `DECISIONS.md` / `PROJECT_STATE.md` — all mid-edit by the concurrent
-  S016 session; deferred to the next clean-tree session (punch list
-  above); statement unchanged
-- [x] Session-scoped changes committed and pushed (harvest-scoped
-  paths only)
+  `E013/data/catalogue_closed_n16.json` (committed, 31db367)
+- [x] `LOG.md` (S017 entry appended; committed in the second commit)
+- [x] `CLAIMS.md` (`C035` + dependency note), `OBLIGATIONS.md` (G013
+  frontier), `PROOF.md` (L033/gap frontier + the L035 off-by-one
+  repair), `STATE.md` ((b′) rewritten to the order-16 catalogue),
+  `PROJECT_STATE.md` — applied post-S016-close in the second commit;
+  `DECISIONS.md` untouched (no decision changed); statement unchanged
+- [x] Session-scoped changes committed and pushed (both commits)
 
 ## Plain-language recap
 
