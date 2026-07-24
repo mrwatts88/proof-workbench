@@ -1,0 +1,19 @@
+# commands (in order), all under PyPy 7.3.23 (Python 3.11.15), macOS 26.5.1 arm64:
+#   pypy3 nasieve.py probe g21 k4
+#   pypy3 nasieve.py probe heis3 k4
+#   pypy3 nasieve.py probe g27b k4
+# note: the identical first_hit tables for the two order-27 groups are a
+# real coincidence of their equality/relation statistics at these short
+# lengths, not a code artifact: the anchor suite separately verifies the
+# two tables are non-isomorphic group structures (exponent 3 vs an
+# element of order 9). K4 has no loops or parallel edges, so every
+# assignment yields a simple lift (nonsimple=0).
+group=Z7:Z3 (order 21)  base=k4: n=4 edges=[(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)] mu=3 tree=[0, 1, 2] degrees=[3, 3, 3, 3]
+lift order=84  certificate lengths=[4, 8, 16, 32, 64]
+assignments=9261 nonsimple=0 first_hit={4: 1261, 8: 2744, 16: 5256} survivors=0
+group=Heis3 (order 27)  base=k4: n=4 edges=[(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)] mu=3 tree=[0, 1, 2] degrees=[3, 3, 3, 3]
+lift order=108  certificate lengths=[4, 8, 16, 32, 64]
+assignments=19683 nonsimple=0 first_hit={4: 2107, 8: 5144, 16: 12432} survivors=0
+group=Z9:Z3 (order 27)  base=k4: n=4 edges=[(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)] mu=3 tree=[0, 1, 2] degrees=[3, 3, 3, 3]
+lift order=108  certificate lengths=[4, 8, 16, 32, 64]
+assignments=19683 nonsimple=0 first_hit={4: 2107, 8: 5144, 16: 12432} survivors=0

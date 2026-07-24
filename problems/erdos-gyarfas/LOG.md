@@ -153,3 +153,46 @@ attempt, experiment, or review record.
   changed; the resolution estimate is deliberately unchanged (posture is
   not evidence). No proof or disproof candidate for the main conjecture
   exists.
+
+## 2026-07-23/24 — S009 voltage-lift program built, run, and closed for all groups; bound raised to 19
+
+- Opened the tool-building attempt `A008` under the `O009` rule: voltage
+  lifts as the falsification-side construction machine. Proved `L019`
+  (projection/certificate lemma), `L020` (tree gauge; assignments in
+  \((\mathbb{Z}_m)^\mu\); net voltage as cycle-space pairing), and —
+  after the first sieve run exposed integer zero vectors — `L021` (the
+  abelian commutator obstruction), with hand proofs in `A008` and
+  DP-extracted witnesses in `E007`.
+- Built and anchored `E007` (walk-class DP, hyperplane sieve, lift
+  builder, truth census, calibration; anchors A1–A8 under CPython and
+  PyPy). Calibration `C019`: the four order-24 extremal graphs carry
+  315/330/207/228 sixteen-cycles, every edge on at least 70, none on
+  all — local surgery at the extremal boundary is hopeless.
+- Cyclic verdict `C020`: for the complete cycle-rank-2 base list
+  (bouquet, theta, dumbbell) plus \(K_4\), \(K_{3,3}\), prism, and
+  every \(m\ge2\), no cyclic assignment is walk-certifiable power-free.
+  Truth census `C021`: at lift orders 12–30, all assignments, every
+  simple lift contains \(C_4\), \(C_8\), or \(C_{16}\). `A008` closed
+  by its pre-named kill condition (a).
+- Continued in-session at the user's direction (`A009`, `E008`):
+  re-audited the successor route — Feit–Thompson makes odd-order groups
+  solvable and the solvable cascade kills them predictably, so the
+  perfect group \(A_5\) became the decisive test. Built the
+  per-assignment group-table engine, anchored bidirectionally against
+  `E007` (hit-for-hit agreement on cyclic groups). Verdict `C022`:
+  orders 21, 27, 27, and \(A_5\) — every assignment on every tested
+  base certificate-dead by length 16, zero survivors; solvable
+  predictions confirmed as pre-registered; \(A_5\)'s death matches the
+  collision-wall prediction \(2\log_2\lvert\Gamma\rvert\). The
+  obstruction is group size, not structure; the certificate program is
+  retired for all finite groups; `G012` refined to the collision-wall
+  lemma (`A009` closed by kill trigger 5).
+- Capped support completed: the `E006` order-18 census extension
+  (anchors re-passed under PyPy; 48 geng parts, 8 workers, ~2h50m)
+  found the connected \(C_4\)-free minimum-degree-3 class at order 18
+  has 834,711,846 members, all containing \(C_8\) (`C023`); with the
+  `A007` lemmas this proves `L022`: every counterexample has at least
+  nineteen vertices, and the extremal \(\{C_4,C_8\}\)-free window
+  narrows to \([19,24]\).
+- No proof or disproof candidate for the main conjecture exists; the
+  estimate stays at 2%. Next: attempt the collision-wall lemma.

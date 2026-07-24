@@ -1,6 +1,6 @@
 # Project state
 
-Last reviewed: 2026-07-23
+Last reviewed: 2026-07-24
 
 ## Mission
 
@@ -26,15 +26,20 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   permitted and simply optional.
 - `P-002` — Erdős–Gyárfás Conjecture: active and open at statement version 0.1.
   The S007 frontier sweep imported the true primary-source bounds (exposing
-  the circulating "17 vertices" as an overread), confirmed by recorded sweep
-  that the edge-maximal saturation reduction is absent from the literature,
-  verified the extremal 24-vertex graphs, and proved the computer-assisted
-  bound `L018`: every counterexample has at least eighteen vertices — past
-  the strongest published general bound (sixteen, 2002). The portfolio now
-  has three named routes: saturation strengthening (proof side),
-  interval/spectrum-density mechanisms (proof side), and a Bensmail-style
-  spectrum-gap program in 2-connected blocks (disproof side); the exact
-  census layer is explicitly capped.
+  the circulating "17 vertices" as an overread), confirmed the saturation
+  reduction as absent from the literature, and verified the extremal
+  24-vertex graphs. S009 then built and closed the voltage-lift
+  construction program in one session: lift machinery proved
+  (`L019`–`L021`), the certificate route killed for every finite voltage
+  group — abelian by the commutator obstruction, solvable by the confirmed
+  cascade, and even the perfect group \(A_5\) by the group-size collision
+  wall (`C020`–`C022`) — leaving the collision-wall lemma as the refined
+  open target (`G012`). The census support layer completed at its cap:
+  order 18 is empty (834,711,846 graphs, `C023`), so every counterexample
+  has at least **nineteen** vertices (`L022`) and the extremal
+  \(\{C_4,C_8\}\)-free window is \([19,24]\). Portfolio: collision-wall
+  lemma (primary), proof-side interval forcing (alternative), census
+  capped and complete.
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -83,13 +88,16 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, analyze all four verified order-24 extremal graphs as test
-material for the two deep routes: full even-cycle spectra and witness
-structure, checked against the consecutive-even-lengths and
-cycle-pair-forcing mechanisms, ending in the first concrete lemma target
-for either the saturation-strengthening or the spectrum-gap route. The
-deferred alternative is extending the exact census to order 18 with a
-compiled filter. No required action remains for `P-001`; its reference
+For `P-002`, attempt the collision-wall lemma: for every finite voltage
+group and every connected minimum-degree-3 base, every assignment admits
+an identity-voltage tailless non-backtracking closed walk of length
+\(2^k\) for every \(2^k\gtrsim\log_2\lvert\Gamma\rvert\) — the
+composition construction is explicit and only the first/last-arc
+diversity bookkeeping is open (`A009`). Success closes `G012` as the
+lift program's closing theorem and feeds the proof-side interval route;
+a structured counterexample family would reopen construction with a new
+lever. Deferred alternative: the proof-side consecutive-even-lengths
+lemma directly. No required action remains for `P-001`; its reference
 comparison is optional and freely permitted.
 
 ## Known process risks

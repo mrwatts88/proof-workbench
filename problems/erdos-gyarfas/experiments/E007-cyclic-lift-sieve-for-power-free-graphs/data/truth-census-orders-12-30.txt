@@ -1,0 +1,70 @@
+# commands (in order), all under PyPy 7.3.23 (Python 3.11.15), macOS 26.5.1 arm64:
+#   pypy3 lifts.py truth theta3 6 15
+#   pypy3 lifts.py truth dumbbell 6 15
+#   pypy3 lifts.py truth k4 3 7
+#   pypy3 lifts.py truth prism 2 5
+#   pypy3 lifts.py truth k33 2 5
+#   pypy3 lifts.py truth bouquet2 12 30
+# semantics: ALL assignments (both parities of m), simple lifts only,
+# actual C4/C8/C16 presence by the validated E004 detectors. At orders
+# <= 30 the powers of two <= order are exactly {4,8,16} (with 16 tested
+# only when order >= 16), so power_free=0 means: no counterexample to
+# C001 exists anywhere in the Z_m-lift family of that base at that order.
+theta3: n=2 edges=[(0, 1), (0, 1), (0, 1)] mu=2 tree=[0] degrees=[3, 3]
+m=6 order=12 assignments=36 simple=20 killed_by={4: 20, 8: 0} power_free=0
+m=7 order=14 assignments=49 simple=30 killed_by={4: 18, 8: 12} power_free=0
+m=8 order=16 assignments=64 simple=42 killed_by={4: 30, 8: 12, 16: 0} power_free=0
+m=9 order=18 assignments=81 simple=56 killed_by={4: 20, 8: 36, 16: 0} power_free=0
+m=10 order=20 assignments=100 simple=72 killed_by={4: 48, 8: 24, 16: 0} power_free=0
+m=11 order=22 assignments=121 simple=90 killed_by={4: 30, 8: 60, 16: 0} power_free=0
+m=12 order=24 assignments=144 simple=110 killed_by={4: 50, 8: 60, 16: 0} power_free=0
+m=13 order=26 assignments=169 simple=132 killed_by={4: 36, 8: 96, 16: 0} power_free=0
+m=14 order=28 assignments=196 simple=156 killed_by={4: 72, 8: 84, 16: 0} power_free=0
+m=15 order=30 assignments=225 simple=182 killed_by={4: 38, 8: 144, 16: 0} power_free=0
+dumbbell: n=2 edges=[(0, 1), (0, 0), (1, 1)] mu=2 tree=[0] degrees=[3, 3]
+m=6 order=12 assignments=36 simple=16 killed_by={4: 8, 8: 8} power_free=0
+m=7 order=14 assignments=49 simple=36 killed_by={4: 12, 8: 24} power_free=0
+m=8 order=16 assignments=64 simple=36 killed_by={4: 28, 8: 8, 16: 0} power_free=0
+m=9 order=18 assignments=81 simple=64 killed_by={4: 16, 8: 48, 16: 0} power_free=0
+m=10 order=20 assignments=100 simple=64 killed_by={4: 16, 8: 48, 16: 0} power_free=0
+m=11 order=22 assignments=121 simple=100 killed_by={4: 20, 8: 80, 16: 0} power_free=0
+m=12 order=24 assignments=144 simple=100 killed_by={4: 52, 8: 48, 16: 0} power_free=0
+m=13 order=26 assignments=169 simple=144 killed_by={4: 24, 8: 120, 16: 0} power_free=0
+m=14 order=28 assignments=196 simple=144 killed_by={4: 24, 8: 120, 16: 0} power_free=0
+m=15 order=30 assignments=225 simple=196 killed_by={4: 28, 8: 168, 16: 0} power_free=0
+k4: n=4 edges=[(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)] mu=3 tree=[0, 1, 2] degrees=[3, 3, 3, 3]
+m=3 order=12 assignments=27 simple=27 killed_by={4: 19, 8: 8} power_free=0
+m=4 order=16 assignments=64 simple=64 killed_by={4: 38, 8: 26, 16: 0} power_free=0
+m=5 order=20 assignments=125 simple=125 killed_by={4: 61, 8: 64, 16: 0} power_free=0
+m=6 order=24 assignments=216 simple=216 killed_by={4: 92, 8: 124, 16: 0} power_free=0
+m=7 order=28 assignments=343 simple=343 killed_by={4: 127, 8: 168, 16: 48} power_free=0
+prism: n=6 edges=[(0, 1), (1, 2), (2, 0), (3, 4), (4, 5), (5, 3), (0, 3), (1, 4), (2, 5)] mu=4 tree=[0, 2, 6, 7, 8] degrees=[3, 3, 3, 3, 3, 3]
+m=2 order=12 assignments=16 simple=16 killed_by={4: 14, 8: 2} power_free=0
+m=3 order=18 assignments=81 simple=81 killed_by={4: 57, 8: 24, 16: 0} power_free=0
+m=4 order=24 assignments=256 simple=256 killed_by={4: 148, 8: 108, 16: 0} power_free=0
+m=5 order=30 assignments=625 simple=625 killed_by={4: 305, 8: 320, 16: 0} power_free=0
+k33: n=6 edges=[(0, 3), (0, 4), (0, 5), (1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5)] mu=4 tree=[0, 1, 2, 3, 6] degrees=[3, 3, 3, 3, 3, 3]
+m=2 order=12 assignments=16 simple=16 killed_by={4: 16, 8: 0} power_free=0
+m=3 order=18 assignments=81 simple=81 killed_by={4: 79, 8: 2, 16: 0} power_free=0
+m=4 order=24 assignments=256 simple=256 killed_by={4: 244, 8: 12, 16: 0} power_free=0
+m=5 order=30 assignments=625 simple=625 killed_by={4: 565, 8: 60, 16: 0} power_free=0
+bouquet2: n=1 edges=[(0, 0), (0, 0)] mu=2 tree=[] degrees=[4]
+m=12 order=12 assignments=144 simple=80 killed_by={4: 80, 8: 0} power_free=0
+m=13 order=13 assignments=169 simple=120 killed_by={4: 120, 8: 0} power_free=0
+m=14 order=14 assignments=196 simple=120 killed_by={4: 120, 8: 0} power_free=0
+m=15 order=15 assignments=225 simple=168 killed_by={4: 168, 8: 0} power_free=0
+m=16 order=16 assignments=256 simple=168 killed_by={4: 168, 8: 0, 16: 0} power_free=0
+m=17 order=17 assignments=289 simple=224 killed_by={4: 224, 8: 0, 16: 0} power_free=0
+m=18 order=18 assignments=324 simple=224 killed_by={4: 224, 8: 0, 16: 0} power_free=0
+m=19 order=19 assignments=361 simple=288 killed_by={4: 288, 8: 0, 16: 0} power_free=0
+m=20 order=20 assignments=400 simple=288 killed_by={4: 288, 8: 0, 16: 0} power_free=0
+m=21 order=21 assignments=441 simple=360 killed_by={4: 360, 8: 0, 16: 0} power_free=0
+m=22 order=22 assignments=484 simple=360 killed_by={4: 360, 8: 0, 16: 0} power_free=0
+m=23 order=23 assignments=529 simple=440 killed_by={4: 440, 8: 0, 16: 0} power_free=0
+m=24 order=24 assignments=576 simple=440 killed_by={4: 440, 8: 0, 16: 0} power_free=0
+m=25 order=25 assignments=625 simple=528 killed_by={4: 528, 8: 0, 16: 0} power_free=0
+m=26 order=26 assignments=676 simple=528 killed_by={4: 528, 8: 0, 16: 0} power_free=0
+m=27 order=27 assignments=729 simple=624 killed_by={4: 624, 8: 0, 16: 0} power_free=0
+m=28 order=28 assignments=784 simple=624 killed_by={4: 624, 8: 0, 16: 0} power_free=0
+m=29 order=29 assignments=841 simple=728 killed_by={4: 728, 8: 0, 16: 0} power_free=0
+m=30 order=30 assignments=900 simple=728 killed_by={4: 728, 8: 0, 16: 0} power_free=0

@@ -1,0 +1,58 @@
+# commands (in order), all under PyPy 7.3.23 (Python 3.11.15), macOS 26.5.1 arm64:
+#   pypy3 nasieve.py probe g21 theta3
+#   pypy3 nasieve.py probe g21 dumbbell
+#   pypy3 nasieve.py probe g21 bouquet2
+#   pypy3 nasieve.py probe heis3 theta3
+#   pypy3 nasieve.py probe heis3 dumbbell
+#   pypy3 nasieve.py probe heis3 bouquet2
+#   pypy3 nasieve.py probe g27b theta3
+#   pypy3 nasieve.py probe g27b dumbbell
+#   pypy3 nasieve.py probe g27b bouquet2
+#   pypy3 nasieve.py probe a5 theta3
+#   pypy3 nasieve.py probe a5 dumbbell
+#   pypy3 nasieve.py probe a5 bouquet2
+# semantics: first_hit maps power length L -> number of simple assignments
+# whose L019 certificate first fails at L; survivors would be assignments
+# with no identity-voltage tailless nb closed walk at ANY power length up
+# to the stated certificate lengths.
+# pre-registered predictions (A009): g21 (metabelian) dead <= 32;
+# heis3 (exponent 3) dead <= 16 on these bases; g27b dead <= 32.
+# observed: every simple assignment on every base over every group dies
+# by 16; A5 (perfect, immune to cascade and exponent laws) also dies by
+# 16, matching the collision-wall prediction 2*log2(60) ~ 12-16.
+group=Z7:Z3 (order 21)  base=theta3: n=2 edges=[(0, 1), (0, 1), (0, 1)] mu=2 tree=[0] degrees=[3, 3]
+lift order=42  certificate lengths=[4, 8, 16, 32]
+assignments=441 nonsimple=61 first_hit={4: 32, 8: 264, 16: 84} survivors=0
+group=Z7:Z3 (order 21)  base=dumbbell: n=2 edges=[(0, 1), (0, 0), (1, 1)] mu=2 tree=[0] degrees=[3, 3]
+lift order=42  certificate lengths=[4, 8, 16, 32]
+assignments=441 nonsimple=41 first_hit={4: 40, 8: 192, 16: 168} survivors=0
+group=Z7:Z3 (order 21)  base=bouquet2: n=1 edges=[(0, 0), (0, 0)] mu=2 tree=[] degrees=[4]
+lift order=21  certificate lengths=[4, 8, 16]
+assignments=441 nonsimple=81 first_hit={4: 24, 8: 336} survivors=0
+group=Heis3 (order 27)  base=theta3: n=2 edges=[(0, 1), (0, 1), (0, 1)] mu=2 tree=[0] degrees=[3, 3]
+lift order=54  certificate lengths=[4, 8, 16, 32]
+assignments=729 nonsimple=79 first_hit={4: 26, 8: 192, 16: 432} survivors=0
+group=Heis3 (order 27)  base=dumbbell: n=2 edges=[(0, 1), (0, 0), (1, 1)] mu=2 tree=[0] degrees=[3, 3]
+lift order=54  certificate lengths=[4, 8, 16, 32]
+assignments=729 nonsimple=53 first_hit={4: 52, 8: 624} survivors=0
+group=Heis3 (order 27)  base=bouquet2: n=1 edges=[(0, 0), (0, 0)] mu=2 tree=[] degrees=[4]
+lift order=27  certificate lengths=[4, 8, 16]
+assignments=729 nonsimple=105 first_hit={4: 192, 8: 432} survivors=0
+group=Z9:Z3 (order 27)  base=theta3: n=2 edges=[(0, 1), (0, 1), (0, 1)] mu=2 tree=[0] degrees=[3, 3]
+lift order=54  certificate lengths=[4, 8, 16, 32]
+assignments=729 nonsimple=79 first_hit={4: 62, 8: 588} survivors=0
+group=Z9:Z3 (order 27)  base=dumbbell: n=2 edges=[(0, 1), (0, 0), (1, 1)] mu=2 tree=[0] degrees=[3, 3]
+lift order=54  certificate lengths=[4, 8, 16, 32]
+assignments=729 nonsimple=53 first_hit={4: 52, 8: 408, 16: 216} survivors=0
+group=Z9:Z3 (order 27)  base=bouquet2: n=1 edges=[(0, 0), (0, 0)] mu=2 tree=[] degrees=[4]
+lift order=27  certificate lengths=[4, 8, 16]
+assignments=729 nonsimple=105 first_hit={4: 192, 8: 432} survivors=0
+group=A5 (order 60)  base=theta3: n=2 edges=[(0, 1), (0, 1), (0, 1)] mu=2 tree=[0] degrees=[3, 3]
+lift order=120  certificate lengths=[4, 8, 16, 32, 64]
+assignments=3600 nonsimple=178 first_hit={4: 2102, 8: 840, 16: 480} survivors=0
+group=A5 (order 60)  base=dumbbell: n=2 edges=[(0, 1), (0, 0), (1, 1)] mu=2 tree=[0] degrees=[3, 3]
+lift order=120  certificate lengths=[4, 8, 16, 32, 64]
+assignments=3600 nonsimple=1664 first_hit={4: 88, 8: 1128, 16: 720} survivors=0
+group=A5 (order 60)  base=bouquet2: n=1 edges=[(0, 0), (0, 0)] mu=2 tree=[] degrees=[4]
+lift order=60  certificate lengths=[4, 8, 16, 32]
+assignments=3600 nonsimple=1752 first_hit={4: 1008, 8: 840} survivors=0

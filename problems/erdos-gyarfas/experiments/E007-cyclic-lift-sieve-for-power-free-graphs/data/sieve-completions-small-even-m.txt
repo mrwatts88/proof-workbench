@@ -1,0 +1,61 @@
+# commands (in order), all under PyPy 7.3.23 (Python 3.11.15), macOS 26.5.1 arm64:
+#   pypy3 lifts.py sieve theta3 2 7 --all-m --lmax 8
+#   pypy3 lifts.py sieve dumbbell 2 3 --all-m --lmax 4
+#   pypy3 lifts.py sieve k4 2 3 --all-m --lmax 8
+#   pypy3 lifts.py sieve prism 2 2 --all-m --lmax 8
+#   pypy3 lifts.py sieve k33 2 5 --all-m --lmax 16
+#   pypy3 lifts.py sieve bouquet2 2 3 --all-m --lmax 4
+# purpose: close the finitely many m below each base's zero-vector
+# threshold, both parities, so the certificate verdict covers every m >= 2.
+theta3: n=2 edges=[(0, 1), (0, 1), (0, 1)] mu=2 tree=[0] degrees=[3, 3]
+enumerating walk classes at lengths [1, 2, 4, 8] ...
+  |V_1| = 0
+  |V_2| = 6
+  |V_4| = 12
+  |V_8| = 54
+m=2 order=4 [FULL] survivors=0 connected=0 classes=0 [zero vector mod m at one of the sieved lengths]
+m=3 order=6 [FULL] survivors=0 connected=0 classes=0
+m=4 order=8 [FULL] survivors=0 connected=0 classes=0 [zero vector mod m at one of the sieved lengths]
+m=5 order=10 [FULL] survivors=0 connected=0 classes=0
+m=6 order=12 [FULL] survivors=0 connected=0 classes=0
+m=7 order=14 [FULL] survivors=0 connected=0 classes=0
+dumbbell: n=2 edges=[(0, 1), (0, 0), (1, 1)] mu=2 tree=[0] degrees=[3, 3]
+enumerating walk classes at lengths [1, 2, 4] ...
+  |V_1| = 4
+  |V_2| = 4
+  |V_4| = 8
+m=2 order=4 [FULL] survivors=0 connected=0 classes=0 [zero vector mod m at one of the sieved lengths]
+m=3 order=6 [FULL] survivors=0 connected=0 classes=0
+k4: n=4 edges=[(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)] mu=3 tree=[0, 1, 2] degrees=[3, 3, 3, 3]
+enumerating walk classes at lengths [1, 2, 4, 8] ...
+  |V_1| = 0
+  |V_2| = 0
+  |V_4| = 6
+  |V_8| = 24
+m=2 order=8 [FULL] survivors=0 connected=0 classes=0 [zero vector mod m at one of the sieved lengths]
+m=3 order=12 [FULL] survivors=0 connected=0 classes=0
+prism: n=6 edges=[(0, 1), (1, 2), (2, 0), (3, 4), (4, 5), (5, 3), (0, 3), (1, 4), (2, 5)] mu=4 tree=[0, 2, 6, 7, 8] degrees=[3, 3, 3, 3, 3, 3]
+enumerating walk classes at lengths [1, 2, 4, 8] ...
+  |V_1| = 0
+  |V_2| = 0
+  |V_4| = 6
+  |V_8| = 40
+m=2 order=12 [FULL] survivors=0 connected=0 classes=0 [zero vector mod m at one of the sieved lengths]
+k33: n=6 edges=[(0, 3), (0, 4), (0, 5), (1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5)] mu=4 tree=[0, 1, 2, 3, 6] degrees=[3, 3, 3, 3, 3, 3]
+enumerating walk classes at lengths [1, 2, 4, 8, 16] ...
+  |V_1| = 0
+  |V_2| = 0
+  |V_4| = 18
+  |V_8| = 90
+  |V_16| = 1242
+m=2 order=12 [FULL] survivors=0 connected=0 classes=0 [zero vector mod m at one of the sieved lengths]
+m=3 order=18 [FULL] survivors=0 connected=0 classes=0 [zero vector mod m at one of the sieved lengths]
+m=4 order=24 [FULL] survivors=0 connected=0 classes=0 [zero vector mod m at one of the sieved lengths]
+m=5 order=30 [FULL] survivors=0 connected=0 classes=0
+bouquet2: n=1 edges=[(0, 0), (0, 0)] mu=2 tree=[] degrees=[4]
+enumerating walk classes at lengths [1, 2, 4] ...
+  |V_1| = 4
+  |V_2| = 8
+  |V_4| = 21  (contains ZERO vector)
+m=2 order=2 [FULL] survivors=0 connected=0 classes=0 [zero vector mod m at one of the sieved lengths]
+m=3 order=3 [FULL] survivors=0 connected=0 classes=0

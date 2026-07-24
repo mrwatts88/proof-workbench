@@ -42,8 +42,17 @@ Established preliminary reductions, none sufficient for the main claim:
   (computer-assisted via the anchored census `E006`: at orders
   \(14\)–\(17\) no minimum-degree-\(3\) graph avoids both \(C_4\) and
   \(C_8\) at all). This passes the strongest inspectable published
-  general bound (`C012`, sixteen); the smallest \(\{C_4,C_8\}\)-free
-  minimum-degree-\(3\) graph has between \(18\) and \(24\) vertices.
+  general bound (`C012`, sixteen).
+- `L022`: every counterexample has at least nineteen vertices (the
+  order-18 census extension `C023`: all \(834{,}711{,}846\) connected
+  \(C_4\)-free minimum-degree-\(3\) graphs on \(18\) vertices contain a
+  \(C_8\)); the smallest \(\{C_4,C_8\}\)-free minimum-degree-\(3\)
+  graph has between \(19\) and \(24\) vertices.
+- `L019`–`L021`: the voltage-lift machinery (projection certificate,
+  tree gauge, abelian commutator obstruction) — unconditional tool
+  lemmas from the falsification program, not reductions of `C001`; with
+  `C020`–`C022` they close the lift-certificate route for all finite
+  voltage groups on the tested bases.
 
 Imported frontier facts, not a candidate:
 

@@ -1,15 +1,16 @@
-# E006 — General {C4,C8}-free frontier at orders 14–17
+# E006 — General {C4,C8}-free frontier at orders 14–17, extended to 18
 
-- Date: 2026-07-23
+- Date: 2026-07-23 (orders 14–17, session S007); order 18 added
+  2026-07-24 (session S009, same pipeline, run under PyPy)
 - Problem: `P-002`
 - Evidence class: exhaustive per stated order (generation delegated to
   nauty's geng, anchored; all downstream tests independent and exact)
 
 ## Question
 
-Does any connected graph on \(14\), \(15\), \(16\), or \(17\) vertices
-have minimum degree at least \(3\) while avoiding both \(C_4\) and
-\(C_8\)? At orders \(\le 15\) such a graph would be exactly a connected
+Does any connected graph on \(14\), \(15\), \(16\), \(17\), or \(18\)
+vertices have minimum degree at least \(3\) while avoiding both
+\(C_4\) and \(C_8\)? At orders \(\le 15\) such a graph would be exactly a connected
 counterexample to `C001`; at orders \(16\)–\(31\) a connected
 counterexample is exactly such a graph that also avoids \(C_{16}\), so
 survivors (if any) are additionally tested for \(C_{16}\). A minimum-order
@@ -39,6 +40,8 @@ beyond the stated orders.
 
 - CPython 3.14.2, standard library only; nauty 2.9.3 (Homebrew bottle)
   supplying `geng`, `labelg`, `planarg`; macOS 26.5.1 arm64
+- Order 18 leg: PyPy 7.3.23 (Python 3.11.15), same nauty binaries; the
+  anchor suite was re-run and passed under PyPy before the order-18 run
 - Exact arithmetic; no floating point; no randomness (process scheduling
   affects output order only; survivor lists are sorted)
 - Detectors imported from the validated `E004` module via `E005`'s loader;
@@ -63,6 +66,8 @@ python3 frontier.py anchors
 python3 frontier.py run 14 15
 python3 frontier.py run 16 --parts 12 --workers 5
 python3 frontier.py run 17 --parts 24 --workers 8
+pypy3   frontier.py anchors
+pypy3   frontier.py run 18 --parts 48 --workers 8   # ~2h50m wall
 ```
 
 ## Results
@@ -88,24 +93,31 @@ A5 geng -f n=8 squarefree graphs = 351 (A006786 351)
 Census:
 
 ```text
-n=14: c4_free_min_deg3_connected=6059     c4c8_free=0   counterexamples=0
-n=15: c4_free_min_deg3_connected=91433    c4c8_free=0   counterexamples=0
-n=16: c4_free_min_deg3_connected=1655659  c4c8_free=0   counterexamples=0
-n=17: c4_free_min_deg3_connected=34758006 c4c8_free=0   counterexamples=0
+n=14: c4_free_min_deg3_connected=6059      c4c8_free=0   counterexamples=0
+n=15: c4_free_min_deg3_connected=91433     c4c8_free=0   counterexamples=0
+n=16: c4_free_min_deg3_connected=1655659   c4c8_free=0   counterexamples=0
+n=17: c4_free_min_deg3_connected=34758006  c4c8_free=0   counterexamples=0
+n=18: c4_free_min_deg3_connected=834711846 c4c8_free=0   counterexamples=0
 ```
+
+(The order-18 line is the S009 extension: 48 `res/mod` parts, 8 PyPy
+workers, roughly 2h50m wall; `data/survivors_n18.g6` and
+`data/survivors_n18.json` are empty like their smaller-order
+counterparts.)
 
 ## Interpretation
 
-No graph on \(14\), \(15\), \(16\), or \(17\) vertices with minimum
-degree at least \(3\) avoids both \(C_4\) and \(C_8\); the \(C_{16}\)
-test at orders \(16\)–\(17\) never activated because the
-\(\{C_4,C_8\}\)-free class was already empty. With the connectivity
-reduction and `L017` this proves `A007/L018`: every counterexample has at
-least \(18\) vertices. It also shows the smallest \(\{C_4,C_8\}\)-free
-graph of minimum degree \(3\) has at least \(18\) vertices, while `E005`
-holds such graphs at order \(24\); the extremal threshold for this class
-now lies in \([18,24]\). Recorded as `C016` (census) supporting `L018`
-(the proved bound).
+No graph on \(14\)–\(18\) vertices with minimum degree at least \(3\)
+avoids both \(C_4\) and \(C_8\); the \(C_{16}\) test at orders
+\(16\)–\(18\) never activated because the \(\{C_4,C_8\}\)-free class was
+already empty. With the connectivity reduction and `L017` this proves
+`A007/L018` (every counterexample has at least \(18\) vertices), and the
+order-18 extension proves `A007/L022`: every counterexample has at
+least \(19\) vertices. The smallest \(\{C_4,C_8\}\)-free graph of
+minimum degree \(3\) has at least \(19\) vertices, while `E005` holds
+such graphs at order \(24\); the extremal threshold for this class now
+lies in \([19,24]\). Recorded as `C016` (orders 14–17) and `C023`
+(order 18) supporting `L018` and `L022` (the proved bounds).
 
 ## Independent checks
 

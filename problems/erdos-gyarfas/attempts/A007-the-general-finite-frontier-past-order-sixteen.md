@@ -136,3 +136,36 @@ generation itself becomes the dominant cost).
   existing pure-Python detectors, or a compiled filter) if the saturation
   program wants the exact threshold, or leave the window \([18,24]\) and
   work the saturation structure directly
+
+## Addendum (2026-07-24, session S009): order-18 extension and L022
+
+The next action above was executed in S009 as the capped support leg:
+the unmodified `E006` pipeline, anchors re-passed under PyPy 7.3.23, ran
+order \(18\) in 48 `res/mod` parts with 8 workers (~2h50m wall).
+
+**Computation (`E006` extension, recorded as `C023`).** Every connected
+graph on \(18\) vertices with minimum degree at least \(3\) and no
+\(C_4\) was generated (\(834{,}711{,}846\) graphs; geng `-c -f -d3`,
+with degree and \(C_4\)-freeness re-verified independently on every
+graph) and tested for \(C_8\): none is \(C_8\)-free. The \(C_{16}\)
+detector never activated.
+
+**L022 (finite exclusion; computer-assisted).** Every counterexample has
+at least nineteen vertices. *Proof.* Suppose a counterexample of order
+\(n\le18\) exists; take one of minimum order \(m\le n\). By `L018`,
+\(m\ge18\), so \(m=18\). By Lemma A it is connected. By Lemma B (case
+\(16\le m\le31\)) it is a connected graph of minimum degree at least
+\(3\) on \(18\) vertices with no \(C_4\) and no \(C_8\) (and no
+\(C_{16}\), which is not needed). The order-18 census found no such
+graph. ∎
+
+Support type: identical to `L018` — computer-assisted with the
+generation layer delegated to anchored geng; all caveats recorded for
+`L018` apply verbatim. Consequently the smallest \(\{C_4,C_8\}\)-free
+graph of minimum degree at least \(3\) has between \(19\) and \(24\)
+vertices (upper end by `E005`/`C018`).
+
+The census growth rate (\(\times24\) from order 17) makes order 19
+roughly \(2\times10^{10}\) graphs — beyond this pipeline's practical
+range without a compiled filter; the cap recorded in `DECISIONS.md`
+stands.
