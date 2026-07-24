@@ -1,6 +1,8 @@
 # E013 — Full taut-pinched catalogue over all terminal pairs at orders 6–14, closed-ratio core catalogue, and the block dissection
 
-- Date: 2026-07-24
+- Date: 2026-07-24 (orders 6–14, S014; order-15 extension in S015; an
+  order-16 closed scan was launched in S015 and its harvest is recorded
+  in the follow-up session's addendum below when present)
 - Problem: `P-002`
 - Evidence class: exhaustive finite catalogue (strict and closed ratio) plus
   instance verification of the `A014` reduction theory and the \(C_8\)
@@ -175,3 +177,58 @@ were anchored in `E011`/`E012` against the independent `E010` pipeline; the
 DFS/BFS minimum-length assert ran on every completed pair; the
 bridge-composite anchor A9 checks the reduction theory's sharpness example
 end to end.
+
+## S015 extension — order 15 (ledger row `C032`)
+
+Environment: PyPy 7.3.23 (Python 3.11.15); the 88 anchors re-passed under
+PyPy before the runs (and re-passed under both PyPy and CPython 3.14.2
+after the script change noted below). Same geng invocation as above.
+
+```sh
+pypy3 catalogue.py run 15        # 315.4s
+pypy3 catalogue.py runclosed 15  # 302.5s
+pypy3 catalogue.py cores
+pypy3 catalogue.py dissect
+```
+
+Results (`data/catalogue_n15.json`, `data/catalogue_closed_n15.json`,
+regenerated `data/cores.json` / `data/dissect.json`):
+
+- Stream total 61,813,970 (asserted against `C027`); 3,384,284 eligible
+  graphs; 22,022,137 admissible pairs per mode.
+- **Strict:** exactly one taut pinched pair at order 15 — band 7,
+  \(S=\{7,\dots,13\}\), terminal degrees (1,2), graph6
+  `N??CA?oID@P_@cPOHO?`, pair (3,7). Its pendant reduction is a
+  (2,2)-core of order 14 verified **terminal-respecting-isomorphic to
+  D14** two ways: by the `cores` lift machinery (seventh witness joins
+  the bijection; five distinct cores; D14 swap-symmetric with a single
+  lift) and by a direct `isomorphic_two_terminal` check against the
+  recorded closed-14 hit (`M?AA@AOqAcB_HOIG?`, terminals (6,7)). This
+  confirms `C031`'s prediction of exactly one strict band-7 witness at
+  order 15. Zero non-taut completions; every hit contains a \(C_8\).
+- **Closed:** 20 taut hits — 19 at band 7 (18 at boundary
+  \(s_{\max}=14\), plus the strict lift) and one at band 4
+  (\(S=\{4,\dots,8\}\), terminal degrees (1,4), boundary). **All 20 are
+  pendant-type** (a degree-1 terminal): no new (2,2)-core, so the block
+  catalogue is unchanged through order 15 — five equality blocks, no
+  strict block. Closed hits at orders \(\le15\) occupy bands 4–7 only;
+  no closed hit at any band \(\le3\) exists.
+- Boundary pendant hits reduce to excess-\(+1\) cores
+  (\(e(H)=e(\mathrm{core})-1\)), so they are not block-question
+  objects; the band-4 closed world through 15 is exactly three objects
+  (pendant pairs at orders 9 and 15, and Petersen\(-e\), the only
+  core, disjoint-type).
+- Interference census extends: every \(C_8\) in every witness and every
+  core remains a two-through-path symmetric difference.
+
+Script change for the extension: the `cores` command's two hardcoded
+expectations were updated from the S014 values (six witnesses,
+`set(range(6))`) to seven; nothing else changed, and all 88 anchors
+re-pass under both interpreters after the edit.
+
+An order-16 closed scan (`runclosed 16`; no `C027` reference total
+exists at 16, so the stream total will itself be new data) was launched
+in S015 and left running at session close; its harvest — including the
+strict/closed derivation via the boundary flag and any block/dissection
+updates — is deliberately excluded from `C032` and will be recorded by
+a short dedicated follow-up session.

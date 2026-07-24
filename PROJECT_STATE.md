@@ -30,30 +30,42 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   census capped at order 18). The voltage-lift falsification program is
   closed as a theorem (`L023`/`L024` collision-wall, reviewed `R001`);
   the walk-to-cycle interface is the **atom question** (`L025`, `G013`),
-  taut-relativized by S012 (`L026`–`L029`) and closed \(C_4\)-only
-  through \(s_{\min}=3\) by S013 (`L030`). **S014 collapsed the taut
-  half onto blocks (`L031`/`L032`):** stripping a degree-1 terminal is a
-  reversible through-path bijection onto a **core** at closed ratio
-  \(s_{\max}\le2s_{\min}\), chains decompose at cut vertices, and
-  bridge counting extracts — taut 2-atoms exist **iff** a power-free
-  vertex-taut 2-connected core with \(s_{\max}\le2\,s_{\min}\) exists
-  (the block question). The exact catalogue through order 14 (`E013`,
-  `C030`/`C031`): six strict taut pinched gadgets (the five `C028`
-  witnesses plus a new band-5 one at order 11), all pendant lifts of
-  four 2-connected blocks; five blocks total including D14 (order 14,
-  band 6); **every block at exact equality \(s_{\max}=2s_{\min}\)**, the
-  band-4 block being Petersen minus an edge; no strict block through
-  14; each block barred from power-freeness only by \(C_8\), and every
-  \(C_8\) in the catalogue is a two-through-path symmetric difference.
-  Sharpness: two Petersen\(-e\) blocks + a bridge form a strict taut
-  core of order 20, so blocks (not cores) are the right level. Record
-  repair: the "\(s_{\min}\in\{4,5\}\) empty through 14" summary now
-  rests on `C030` (`C029` covered \(S\subseteq\{3,4,5\}\) only).
-  Portfolio: the band-4 block rungs (primary — strict impossibility
-  \(S\subseteq\{4..7\}\), equality \(C_8\)-forcing
-  \(S\subseteq\{4..8\}\Rightarrow C_8\), via the disjoint-4-path
-  interference mechanism), the order-15 closed catalogue as search leg,
-  1-atom structure theory, order-16 census (deferred).
+  taut-relativized (`L026`–`L029`), closed \(C_4\)-only through
+  \(s_{\min}=3\) (`L030`), and collapsed onto **blocks** by S014
+  (`L031`/`L032`: taut 2-atoms exist iff a power-free vertex-taut
+  2-connected core with \(s_{\max}\le2\,s_{\min}\) exists). **S015
+  proved the band-4 pencil dichotomy (`L033`)** — in any graph with
+  \(d(x,y)=4\), either two internally disjoint 4-paths exist
+  (equivalently a \(C_8\) **through both terminals**) or all 4-paths
+  share one internal vertex; no \(C_4\)-freeness needed, and under
+  \(C_4\)-freeness the pencil is terminal-adjacent with a rigid fan —
+  so band 4 of the block question is exactly the **pencil endgame**:
+  no vertex-taut 2-connected \(C_4\)-free core with \(d(x,y)=4\),
+  \(s_{\max}\le8\) can be pencil-type. Catalogue through order 15
+  (`C032`): block world stable at five equality blocks (P10 =
+  Petersen\(-e\) the only band-4 core, disjoint-type), no strict block,
+  the strict-15 scan = exactly D14's predicted pendant lift, closed
+  bands 4–7 only. Hypothesis necessity (`C033`): with \(C_4\)s allowed,
+  strict blocks exist from order 6 and \(C_8\)-free band-4 equality
+  cores from order 9 — \(C_4\)-freeness is essential to both rungs.
+  Three hand constructions against the endgame died to the cascade
+  obstruction (`A015`). **Mid-session a user-supplied external memo was
+  audited (`A016`) and its core confirmed as `L034`:** the ring
+  criterion is any-\(L\)-sumset avoidance, not just the pinch — parity
+  (all-odd \(S\); bipartite instance), odd-prime gcd, and mod-4
+  channels join the pinched one (fatal invisible shapes:
+  \(S=\{3,7\}\), \(\{2,6\}\)); all channels are empty through order 15
+  because `C027` is profile-agnostic; the "pinch = the criterion"
+  glosses are retracted (no proved row false); the program ceiling is
+  explicit (assembly closure + 1-atoms = cubic reduction, not 0.1);
+  `G014` opened for the memo's unverified literature/census leads.
+  Portfolio (all threads carried, per standing user instruction): the
+  pencil endgame + band-2 rung (pinched channel); the parity
+  calibration and bipartite gadget hunt; the cubic census at order 30;
+  census mining; bipartite EGC and Carr 4/7 → 1 (proof side);
+  3-connectivity leverage; 1-atom theory; order-16 catalogue (scan
+  launched in S015, still running at close; harvest reserved for a
+  short dedicated follow-up session).
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -102,21 +114,22 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, attack the band-4 block rungs in the `L032` frame:
-(i) prove no vertex-taut \(C_4\)-free 2-connected core (non-terminal
-degrees \(\ge3\), terminal degrees \(\ge2\)) has
-\(S\subseteq\{4,5,6,7\}\) (strict; empty through order 14 by `C031`);
-(ii) prove every such core with \(S\subseteq\{4,\dots,8\}\) contains a
-\(C_8\) (the first genuinely power-specific rung; Petersen\(-e\) is the
-guide, and the candidate mechanism is two-path interference: an
-internally disjoint pair of 4-paths closes into a \(C_8\) outright).
-Search leg: extend the closed catalogue to order 15 under PyPy — a
-strict block kills (i); a \(C_8\)-free equality block kills (ii) and
-enters the disproof protocol (\(C_{16}\) check, pendant lift, ring);
-it also tests D14's predicted unique order-15 strict witness.
-Alternatives: 1-atom structure theory; the band-5 equality analogue;
-order-16 census (deferred). No required action remains for `P-001`;
-its reference comparison is optional and freely permitted.
+For `P-002`, strategy-audit the expanded (post-`L034`) portfolio; the
+proposed first moves are the two cheap decisive ones: (i) the
+**odd-\(S\) calibration scan** — all-band all-terminal-pair taut scan
+at orders \(\le15\) with "every through-path odd" in place of the
+ratio ceiling (abort on the first even through-path), which either
+exhibits all-odd taut cores (the parity analogue of the five equality
+blocks — reshapes the program) or shows the parity channel is
+shape-empty like the pinched one; and (ii) the **`G014` source
+audits** (Chen–Saito; the bipartite \(\ge32\) bound gating the
+Mersenne-window logic; Heckman–Krakovski; Shauger/Daniel–Shauger;
+census provenance), which gate the bipartite gadget hunt, census
+mining, and cubic-census legs. The **pencil endgame** (fan case first,
+`A015` pressure points) remains co-primary on the pinched channel, and
+every other thread in `STATE.md`'s portfolio stays live per the
+standing instruction. No required action remains for `P-001`; its
+reference comparison is optional and freely permitted.
 
 ## Known process risks
 

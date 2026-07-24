@@ -358,3 +358,69 @@ attempt, experiment, or review record.
   `C001`; the main claim stays `open`. Next: the band-4 block rungs —
   strict impossibility (S ⊆ {4,...,7}) and equality C8-forcing
   (S ⊆ {4,...,8} ⇒ C8) — with the order-15 closed catalogue as search leg.
+
+## 2026-07-24 — S015
+
+- Strategy audit accepted the inherited band-4 block rungs; within them
+  the mechanism half (the disjoint/intersecting dichotomy) was attacked
+  first, and the order-15 catalogue extension ran as the search leg.
+- `L033` proved (A015): the band-4 pencil dichotomy. In ANY graph with
+  d(x,y)=4: the (2,2)-vertices are exactly the 4-path middles (product
+  structure per middle); either two internally disjoint 4-paths exist —
+  equivalently a C8 through both terminals — or ALL 4-paths share one
+  internal vertex. No C4-freeness needed for the dichotomy (the planned
+  "triangle" anchor was machine-refuted and the hypothesis fell away).
+  C4-free refinements: pairwise single overlap; the pencil vertex is
+  unique and terminal-adjacent (middle pencils force a unique 4-path);
+  fan rigidity (strands biject with middles, no cross chords, hexagons);
+  far-neighbor separation of both terminal neighborhoods.
+- Consequence: the band-4 case of the block question is exactly the
+  **pencil endgame** — prove no vertex-taut 2-connected C4-free core
+  with d(x,y)=4, s_max ≤ 8 has a pencilled 4-path system; success closes
+  band 4 in the strengthened form "C8 through both terminals" (no C16
+  caveat). Three hand construction attempts against the endgame died to
+  a C8, a 9-path, and C4s respectively (cascade obstruction recorded in
+  A015); the (3,3)–(4,4) deep territory remains the untested escape.
+- `E013` extended to order 15 under PyPy (61,813,970 stream graphs,
+  22,022,137 pairs per mode, ~5 min per mode): strict = exactly one hit,
+  machine-identified as D14's pendant lift (C031's swap-symmetry
+  prediction confirmed); closed = 20 hits, all pendant-type — the block
+  catalogue is unchanged through 15 (no strict block; five equality
+  blocks); no closed hit at any band ≤ 3 exists through 15; the closed
+  band-4 world is three objects, only Petersen−e a core (`C032`).
+  Order-16 closed scan launched (first order where a hit could be
+  C8-free).
+- `E014` built: exhaustive verification of `L033` (116,187 C4-free
+  distance-4 pairs, orders 5–11; 43,419 general pairs, orders 5–9; zero
+  failures; sharpness anchors) and the C4-allowed block probe: strict
+  blocks exist with C4s from order 6 (K33−e), strict band-4 blocks with
+  S={4,5,6,7} at order 8, and band-4 equality cores with S={4,...,8}
+  and NO C8 at order 9 — C4-freeness is essential to both band-4 rungs
+  (`C033`).
+- `G013` (b') refined to the pencil endgame at band 4; the band-2
+  closed rung (S ⊆ {2,3,4} with 4 ∈ S) recorded as the remaining
+  C4-only gap below band 4. No change to `C001`; the main claim stays
+  `open`.
+- **S015 addendum (external memo integration).** Mid-session the user
+  supplied a strategy memo from another AI agent; it was audited claim
+  by claim in `A016` (memo preserved verbatim in `references/`). Core
+  finding verified and recorded as `L034`: A011 R1's ring spectrum
+  formula supports the full sumset criterion — a power-free (D)-gadget
+  disproves 0.1 whenever some L-fold sumset of S avoids the powers of
+  two — so the pinch (2-atom) condition is one channel among several
+  (all-odd S with odd L; odd-prime gcd; S ⊆ 2+4Z). Fatal shapes the
+  pinched frame cannot see: S = {3,7}, S = {2,6}. Corrected necessary
+  conditions recorded; the "sharp/entire-channel" glosses retracted
+  (framing error, no proved row false); the program ceiling made
+  explicit (assembly closure + 1-atoms = cubic reduction, not 0.1).
+  Mitigations verified against the memo: C027 is profile-agnostic, so
+  every channel is empty through order 15; all-odd ladders live at odd
+  bands only, disjoint from the band-4 pencil work; L031/L032 are
+  pinch-specific (pendant shift flips parity) so the parity channel
+  needs its own reduction theory. G014 opened for the memo's
+  literature/census leads (Chen–Saito, bipartite >=32, bipartite EGC
+  to 31, Heckman–Krakovski, Shauger, Daniel–Shauger, vertex-transitive
+  and girth-9 censuses, Markström's generator method) — all unverified
+  until source-audited. The six memo paths entered the portfolio
+  alongside every pre-existing thread (user's standing instruction:
+  carry all threads; no execution this session per user instruction).

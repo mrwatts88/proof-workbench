@@ -1,0 +1,83 @@
+{
+  "n": 15,
+  "mode": "strict",
+  "geng_command": "geng -q -c -f -d1 15 21:0",
+  "stream_total": 61813970,
+  "stream_matches_c027": true,
+  "eligible_graphs_le2_subcubic": 3384284,
+  "pair_counts": {
+    "pairs": 22022137,
+    "reject-eccentric": 17964214,
+    "reject-long": 4057922,
+    "nontaut": 0,
+    "TAUT": 1
+  },
+  "by_band": {
+    "1": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "2": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "3": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "4": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "5": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "6": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "7": {
+      "nontaut": 0,
+      "TAUT": 1
+    }
+  },
+  "taut_hits": [
+    {
+      "graph6": "N??CA?oID@P_@cPOHO?",
+      "terminals": [
+        3,
+        7
+      ],
+      "band": 7,
+      "S": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "ratio": 1.8571428571428572,
+      "boundary": false,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    }
+  ],
+  "seconds": 315.4,
+  "python": "3.11.15",
+  "implementation": "PyPy"
+}

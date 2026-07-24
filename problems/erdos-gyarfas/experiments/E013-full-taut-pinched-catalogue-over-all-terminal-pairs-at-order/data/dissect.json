@@ -1,5 +1,5 @@
 {
-  "witness_count": 6,
+  "witness_count": 7,
   "witnesses": [
     {
       "graph6": "K?AA@aKw@KIW",
@@ -1364,10 +1364,265 @@
         "8+8-2*4": 28,
         "5+5-2*1": 2
       }
+    },
+    {
+      "graph6": "N??CA?oID@P_@cPOHO?",
+      "source": "E013 n=15",
+      "n": 15,
+      "terminals": [
+        3,
+        7
+      ],
+      "terminal_degrees": [
+        1,
+        2
+      ],
+      "degree_sequence": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "edge_count": 21,
+      "band": 7,
+      "S": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "cycle_counts": {
+        "3": 2,
+        "5": 4,
+        "6": 6,
+        "7": 8,
+        "8": 5,
+        "9": 4,
+        "10": 10,
+        "11": 12,
+        "12": 10,
+        "13": 4
+      },
+      "path_count_by_length": {
+        "7": 4,
+        "8": 12,
+        "9": 12,
+        "10": 12,
+        "11": 28,
+        "12": 32,
+        "13": 12
+      },
+      "layer_sizes_from_a": [
+        1,
+        1,
+        2,
+        2,
+        4,
+        2,
+        2,
+        1
+      ],
+      "cut_vertices": [
+        8
+      ],
+      "two_connected": false,
+      "inessential_edges": [],
+      "c8_count": 5,
+      "c8_reports": [
+        {
+          "vertices": [
+            0,
+            2,
+            5,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "uses_terminal_a": false,
+          "uses_terminal_b": false,
+          "dist_a_multiset": [
+            1,
+            2,
+            2,
+            3,
+            3,
+            4,
+            4,
+            5
+          ],
+          "span_a": [
+            1,
+            5
+          ],
+          "edges_all_essential": true
+        },
+        {
+          "vertices": [
+            0,
+            4,
+            5,
+            6,
+            9,
+            11,
+            12,
+            14
+          ],
+          "uses_terminal_a": false,
+          "uses_terminal_b": false,
+          "dist_a_multiset": [
+            3,
+            3,
+            4,
+            4,
+            4,
+            4,
+            5,
+            5
+          ],
+          "span_a": [
+            3,
+            5
+          ],
+          "edges_all_essential": true
+        },
+        {
+          "vertices": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            9,
+            10,
+            14
+          ],
+          "uses_terminal_a": false,
+          "uses_terminal_b": false,
+          "dist_a_multiset": [
+            1,
+            2,
+            2,
+            3,
+            3,
+            4,
+            4,
+            5
+          ],
+          "span_a": [
+            1,
+            5
+          ],
+          "edges_all_essential": true
+        },
+        {
+          "vertices": [
+            0,
+            1,
+            5,
+            6,
+            7,
+            11,
+            13,
+            14
+          ],
+          "uses_terminal_a": false,
+          "uses_terminal_b": true,
+          "dist_a_multiset": [
+            3,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7
+          ],
+          "span_a": [
+            3,
+            7
+          ],
+          "edges_all_essential": true
+        },
+        {
+          "vertices": [
+            1,
+            4,
+            5,
+            7,
+            9,
+            12,
+            13,
+            14
+          ],
+          "uses_terminal_a": false,
+          "uses_terminal_b": true,
+          "dist_a_multiset": [
+            3,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7
+          ],
+          "span_a": [
+            3,
+            7
+          ],
+          "edges_all_essential": true
+        }
+      ],
+      "c8_vertices_common_to_all": [],
+      "c8_edges_common_to_all": [],
+      "c8_realized_as_path_symdiff": 5,
+      "c8_symdiff_length_combos": {
+        "12+12-2*8": 52,
+        "13+13-2*9": 24,
+        "10+12-2*7": 16,
+        "9+11-2*6": 32,
+        "11+11-2*7": 32,
+        "8+12-2*6": 24,
+        "8+8-2*4": 8,
+        "9+13-2*7": 12,
+        "9+9-2*5": 4,
+        "7+11-2*5": 12,
+        "7+7-2*3": 4,
+        "10+10-2*6": 4,
+        "8+10-2*5": 16
+      }
     }
   ],
   "isomorphic_pairs": [],
   "single_deletion_relations": [],
-  "python": "3.14.2",
-  "implementation": "CPython"
+  "python": "3.11.15",
+  "implementation": "PyPy"
 }

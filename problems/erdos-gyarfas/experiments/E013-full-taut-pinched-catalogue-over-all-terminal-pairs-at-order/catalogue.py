@@ -897,7 +897,9 @@ def add_pendant(adjacency: list[int], attach: int) -> list[int]:
 def cores() -> None:
     DATA.mkdir(exist_ok=True)
     witnesses = gather_witnesses()
-    assert len(witnesses) == 6, f"expected six witnesses, saw {len(witnesses)}"
+    # Six strict witnesses at orders <= 14 (S014) plus the single order-15
+    # strict witness found by the S015 extension run.
+    assert len(witnesses) == 7, f"expected seven witnesses, saw {len(witnesses)}"
     core_entries = []
     for entry in witnesses:
         adj = g6_decode(entry["graph6"])
@@ -995,7 +997,7 @@ def cores() -> None:
             assert len(item["witnesses"]) == 1, "symmetric core, two witnesses?"
         else:
             assert len(item["witnesses"]) == 2, "asymmetric core, one witness?"
-    assert matched_witnesses == set(range(6)), "some witness not a lift"
+    assert matched_witnesses == set(range(7)), "some witness not a lift"
 
     # Single-deletion relations among distinct cores.
     relations = []

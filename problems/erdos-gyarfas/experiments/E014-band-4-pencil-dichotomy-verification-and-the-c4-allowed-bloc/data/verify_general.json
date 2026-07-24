@@ -1,0 +1,21 @@
+{
+  "mode": "general",
+  "orders": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "graphs": 273183,
+  "pairs": 43419,
+  "outcomes": {
+    "disjoint": 2409,
+    "pencil-terminal": 28161,
+    "pencil-middle": 946,
+    "unique": 11903
+  },
+  "fan_sizes": {},
+  "python": "3.11.15",
+  "implementation": "PyPy"
+}

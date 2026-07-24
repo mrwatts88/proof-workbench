@@ -71,8 +71,10 @@ Established preliminary reductions, none sufficient for the main claim:
   pinched below ratio 2, would yield counterexamples by doubling or by
   rings placed in a dyadic gap. Contrapositively the main claim requires
   **spread-doubling** (\(s_{\max}\ge2\,s_{\min}\) for power-free
-  two-terminal gadgets) — the sharp conditional form of walk-to-cycle
-  transfer, since `C024`'s ring shows the unconditional form is false.
+  two-terminal gadgets) — a necessary condition and one conditional form
+  of walk-to-cycle transfer (`C024`'s ring shows the unconditional form
+  is false); by `L034` it is **not** the full ring criterion, and the
+  earlier "sharp conditional form" gloss is retracted.
   `C027`: no atom exists through order 15 (exhaustive, anchored).
 - `L026`–`L029`: the corrected rung program. `L026` (rung completeness):
   pinched gadgets at \(s_{\min}\in\{1,2\}\) can hide two counterexample
@@ -120,6 +122,42 @@ Established preliminary reductions, none sufficient for the main claim:
   edge), 5, 5, 5, and 6 — each blocked from power-freeness only by
   \(C_8\), and every \(C_8\) in the catalogue is the symmetric
   difference of two through-paths.
+- `L033`: the band-4 pencil dichotomy. In any graph with two vertices at
+  distance 4, the vertices at distance 2 from both are exactly the
+  middles of the length-4 paths, the paths through a fixed middle form a
+  product family, and either two internally disjoint 4-paths exist —
+  equivalently an 8-cycle through both endpoints — or **all** 4-paths
+  share one internal vertex (no \(C_4\)-freeness needed). Under
+  \(C_4\)-freeness the pencil vertex is unique and adjacent to a
+  terminal, middle pencils force a unique 4-path, and the fan is rigid:
+  strand middles/exits are distinct and unmatched across strands, and
+  both terminal neighborhoods split into the pencil-side vertices and
+  far vertices (distance \(\ge4\) from the opposite terminal).
+  Consequently the band-4 equality power rung reduces to the **pencil
+  endgame**: no vertex-taut 2-connected \(C_4\)-free core with
+  \(d(x,y)=4\), \(s_{\max}\le8\) has a pencilled 4-path system — which
+  would close band 4 of the block question in the strengthened form
+  "a \(C_8\) through both terminals". Exhaustively empty through order
+  15 (`C032`); \(C_4\)-freeness is essential to both band-4 rungs
+  (`C033`: strict blocks and \(C_8\)-free equality cores exist with
+  \(C_4\)s at orders 6–9).
+- `L034`: the generalized ring criterion (audit of an external memo,
+  `A016`; direct corollary of `L025`'s ring structure lemma). A
+  power-free (D)-gadget disproves the main claim as soon as **some**
+  \(L\)-fold sumset of its through-set avoids all powers of two — the
+  pinch (2-atom) condition is one channel; all-odd through-sets with
+  odd \(L\), odd-prime gcd, and \(S\subseteq2+4\mathbb{Z}\) are others
+  the pinched frame cannot see (e.g. \(S=\{3,7\}\), \(S=\{2,6\}\)).
+  Contrapositively 0.1 requires, from every power-free (D)-gadget, a
+  power of two in every \(L\)-fold sumset — in particular an even
+  through-path, gcd a power of 2, and \(S\not\subseteq2+4\mathbb{Z}\).
+  All channels are empty through order 15 (`C027` is profile-agnostic);
+  the all-odd ladder lives at odd bands only; the pendant/block
+  machinery does not transfer (parity flips under pendant shifts), so
+  the congruence channels currently have search interfaces but no
+  reduction theory. Program ceiling made explicit (A016 M6): closing
+  every assembly channel plus the 1-atom question yields the cubic
+  reduction, not the main claim itself.
 
 Imported frontier facts, not a candidate:
 
@@ -164,17 +202,25 @@ lemmas remain in `A001` and `CLAIMS.md`.
   witnesses or generate an interval of even cycle lengths. (`G011` is
   resolved: the saturation reduction appears nowhere in the swept
   literature, so it is the project's frontier-passing asset.)
-- `G013`: settle the atom question — find an atom (disproof by `L025`
-  assembly) or prove the spread-doubling lemma (closing the ring channel
-  and giving the first conditional walk-to-cycle forcing result). After
-  `L026`–`L032` its live sub-questions are the 1-atom question (which
-  also gates the cubic reduction) and the **block question**: a
-  power-free vertex-taut 2-connected core with \(s_{\max}\le2s_{\min}\)
-  — equivalent to the existence of taut 2-atoms. The open block rungs
-  are strict blocks at \(s_{\min}\ge4\) (empty through order 14) and
-  equality-block power-forcing, where \(C_4\)-only methods provably
-  stop (five equality blocks exist from band 4 up, each carrying its
-  \(C_8\) by two-path interference).
+- `G013`: settle the atom question — find an assembly witness (disproof
+  by `L025`/`L034` rings) or close the assembly channels by proving
+  their necessary conditions. After `L026`–`L034` its live
+  sub-questions are: (a) the 1-atom question (which also gates the
+  cubic reduction, and is the only sub-question with direct proof-side
+  yield — the program ceiling); (b′) the **block question** for the
+  pinched channel: a power-free vertex-taut 2-connected core with
+  \(s_{\max}\le2s_{\min}\) — equivalent to taut 2-atoms as defined.
+  Open pinched rungs: strict blocks at \(s_{\min}\ge4\) (empty through
+  order 15) and equality-block power-forcing; after `L033` the band-4
+  case is exactly the **pencil endgame** (fan and unique-path
+  impossibility), with the band-2 closed rung
+  (\(S\subseteq\{2,3,4\}\), \(4\in S\)) the last \(C_4\)-only gap
+  below it. (c) the **congruence channels** (`L034`): power-free
+  (D)-gadgets with all-odd \(S\) (bipartite instance: terminals in
+  opposite parts), odd-prime gcd, or \(S\subseteq2+4\mathbb{Z}\) —
+  empty through order 15 but never shape-scanned, with no reduction
+  theory yet; the bipartite instance doubles as a proof-side target
+  ("bipartite EGC").
 
 ## Computational dependencies
 

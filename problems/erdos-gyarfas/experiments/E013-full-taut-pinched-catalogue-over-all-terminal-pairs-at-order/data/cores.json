@@ -1,5 +1,5 @@
 {
-  "distinct_core_count": 4,
+  "distinct_core_count": 5,
   "cores": [
     {
       "index": 0,
@@ -164,6 +164,54 @@
         56,
         21
       ]
+    },
+    {
+      "index": 4,
+      "order": 14,
+      "terminals": [
+        7,
+        6
+      ],
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "witnesses": [
+        "N??CA?oID@P_@cPOHO?"
+      ],
+      "adjacency_rows": [
+        1568,
+        12352,
+        896,
+        9472,
+        7168,
+        10241,
+        4098,
+        516,
+        2060,
+        133,
+        25,
+        304,
+        82,
+        42
+      ]
     }
   ],
   "petersen_minus_e_core_indices": [
@@ -323,6 +371,49 @@
         }
       ],
       "witness_count": 1
+    },
+    {
+      "core_index": 4,
+      "order": 14,
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "terminal_swap_automorphism": true,
+      "lifts": [
+        {
+          "attach_terminal": "x",
+          "band": 7,
+          "matches_witnesses": [
+            6
+          ]
+        },
+        {
+          "attach_terminal": "y",
+          "band": 7,
+          "matches_witnesses": [
+            6
+          ]
+        }
+      ],
+      "witness_count": 1
     }
   ],
   "single_deletion_relations": [],
@@ -396,8 +487,30 @@
       },
       "shortest_path_count": 4,
       "disjoint_shortest_pairs": 2
+    },
+    {
+      "core_index": 4,
+      "c8_count": 5,
+      "c8_as_path_symdiff": 5,
+      "symdiff_combos": {
+        "11+11-2*7": 52,
+        "12+12-2*8": 24,
+        "9+11-2*6": 16,
+        "8+10-2*5": 32,
+        "7+7-2*3": 8,
+        "8+8-2*4": 4,
+        "8+12-2*6": 12,
+        "7+11-2*5": 24,
+        "6+6-2*2": 4,
+        "6+10-2*4": 12,
+        "7+9-2*4": 16,
+        "10+10-2*6": 32,
+        "9+9-2*5": 4
+      },
+      "shortest_path_count": 4,
+      "disjoint_shortest_pairs": 2
     }
   ],
-  "python": "3.14.2",
-  "implementation": "CPython"
+  "python": "3.11.15",
+  "implementation": "PyPy"
 }
