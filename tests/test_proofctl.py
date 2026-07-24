@@ -229,6 +229,54 @@ class ProofctlIntegrationTests(unittest.TestCase):
         )
         self.assertIn("Independence mode: same-context-limited", review.read_text())
 
+    def test_explicit_record_id_allocation_for_parallel_sessions(self) -> None:
+        """`--id` pre-allocates record numbers so concurrent sessions cannot collide.
+
+        Two sessions working the same dossier in separate worktrees each scan
+        their own tree for the next free number and would both get the same one;
+        `process/concurrency.md` requires the IDs to be handed out in advance.
+        """
+        self.run_cli("new", "parallel-target", "--title", "Parallel Target")
+
+        # Explicit allocation skips ahead of the next free number.
+        self.run_cli("add", "parallel-target", "attempt", "Route one", "--id", "A007")
+        attempts = self.root / "problems" / "parallel-target" / "attempts"
+        self.assertTrue(list(attempts.glob("A007-*.md")))
+
+        # The prefixed spelling is accepted too, and a second session's
+        # independently allocated ID does not disturb the first.
+        self.run_cli("add", "parallel-target", "attempt", "Route two", "--id", "008")
+        self.assertTrue(list(attempts.glob("A008-*.md")))
+
+        # A used ID is refused rather than silently overwritten.
+        refused = self.run_cli(
+            "add",
+            "parallel-target",
+            "attempt",
+            "Collision",
+            "--id",
+            "A007",
+            expected_returncode=2,
+        )
+        self.assertIn("already used", refused.stderr + refused.stdout)
+
+        # Malformed IDs are refused.
+        malformed = self.run_cli(
+            "add",
+            "parallel-target",
+            "attempt",
+            "Bad id",
+            "--id",
+            "A7",
+            expected_returncode=2,
+        )
+        self.assertIn("three digits", malformed.stderr + malformed.stdout)
+
+        # Automatic allocation still works and continues past the explicit ones.
+        self.run_cli("add", "parallel-target", "attempt", "Route three")
+        self.assertTrue(list(attempts.glob("A009-*.md")))
+        self.run_cli("validate")
+
     def test_operation_record_does_not_touch_problem_dashboard(self) -> None:
         index_before = (self.root / "problems" / "INDEX.md").read_text()
         self.run_cli("operation", "Refresh tooling")

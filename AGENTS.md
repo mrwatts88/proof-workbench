@@ -215,6 +215,36 @@ After every dossier creation, status update, or completion, run `proofctl.py
 index`; it regenerates the live table in `README.md`. The agent owns these updates
 and must not ask the human to maintain them.
 
+## Parallel sessions
+
+Two agents may work the same problem concurrently, but only under a partition
+that the records can survive. The dossier separates **owned records**
+(`attempts/`, `experiments/`, `sessions/`, `reviews/`), which belong to exactly
+one session, from **shared ledgers** (`STATEMENT.md`, `problem.json`,
+`STATE.md`, `CLAIMS.md`, `OBLIGATIONS.md`, `PROOF.md`, `DECISIONS.md`,
+`LOG.md`, `PROJECT_STATE.md`, and the generated index and dashboard). Owned
+records parallelize; ledgers do not.
+
+- Parallel work requires disjoint owned records and no dependency on the
+  sibling's uncommitted results. A sibling's in-progress reasoning is not
+  citable.
+- Record IDs must be allocated in advance by the launching session and passed
+  explicitly (`proofctl.py add ... --id A019`); each agent otherwise scans its
+  own tree and picks the same number.
+- Ledger writes are serialized: one session at a time performs the canonical
+  checkpoint. A session finishing second re-reads every ledger it changes, because
+  its starting state is stale by construction.
+- A session that must close while the ledgers are held records its pending
+  ledger edits as a punch list in its own session record and reports the dossier
+  as not yet reconciled. It is closed only once that punch list is applied.
+- A sibling session is never a fresh reviewer and never corroborating evidence;
+  review independence is unchanged.
+- An unfinished background job's results may not be claimed. Exclude the leg
+  from every ledger row and name the harvest as follow-up.
+
+See `process/concurrency.md` for isolation (worktrees), conflict handling,
+cross-session declarations, and the machine-resource rules.
+
 ## Required end-of-session checkpoint
 
 A substantive session is any investigation that produces or changes a deduction,

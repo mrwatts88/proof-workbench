@@ -145,6 +145,10 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 - Each closure preserves a plain-language recap, a subjective percentage estimate
   of the chance of eventually settling the exact current statement, and a
   plain-language statement of the proposed next step.
+- Two agents may work one dossier concurrently only under the record
+  partition of `AGENTS.md` (Parallel sessions): owned records parallelize,
+  shared ledgers are written one session at a time, record IDs are allocated
+  in advance, and a sibling session is never a reviewer.
 - Computational work must be reproducible and its logical scope must be stated.
 
 ## Next action

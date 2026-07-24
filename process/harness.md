@@ -90,6 +90,23 @@ when that capability is exposed. A harness without discovery delegation performs
 the same strategy audit in the primary context; that does not weaken any
 review-independence requirement.
 
+## Parallel sessions
+
+`AGENTS.md` (Parallel sessions) and `process/concurrency.md` define the
+partition; what differs per harness is only how isolation is obtained.
+
+| Harness | Isolation mechanism |
+|---|---|
+| Claude Code | A git worktree per agent (`git worktree add`), or subagents launched with worktree isolation; both give each agent its own checkout and a real merge boundary |
+| Codex | A git worktree per session, created outside the repository's tooling |
+
+A single shared working tree is permissible only with strictly sequenced ledger
+writes and a declared holder, because there is then no version-control boundary
+between the agents: the second writer simply overwrites the first.
+
+Neither harness's parallelism affects review independence. Two concurrent
+sessions are siblings, not reviewers, however the isolation was obtained.
+
 ## Permissions and sandboxing
 
 The end-of-session checkpoint requires running validation and tests, sometimes

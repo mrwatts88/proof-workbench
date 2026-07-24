@@ -732,12 +732,43 @@ def next_record_number(directory: Path, prefix: str) -> int:
     return number
 
 
+def requested_record_number(directory: Path, prefix: str, requested: str) -> int:
+    """Validate an explicitly requested record ID (parallel-session allocation).
+
+    Concurrent sessions cannot both call `next_record_number`: each scans its own
+    working tree and both receive the same free number. `process/concurrency.md`
+    requires the launching session to hand out IDs in advance, and this is where
+    that allocation is checked — the ID must be well-formed and still unused in
+    this tree.
+    """
+    text = requested.strip().upper()
+    if text.startswith(prefix):
+        text = text[len(prefix):]
+    if not (text.isdigit() and len(text) == 3):
+        raise ProofctlError(
+            f"--id must be {prefix}### or ###, three digits (got {requested!r})"
+        )
+    number = int(text)
+    if number < 1:
+        raise ProofctlError("--id must be at least 001")
+    pattern = re.compile(rf"^{prefix}{number:03d}-")
+    taken = [path.name for path in directory.iterdir() if pattern.match(path.name)]
+    if taken:
+        raise ProofctlError(
+            f"Record ID {prefix}{number:03d} is already used by {taken[0]}"
+        )
+    return number
+
+
 def command_add(args: argparse.Namespace) -> int:
     root: Path = args.root
     problem_directory, manifest = resolve_problem(root, args.slug)
     prefix, subdirectory, template_name, is_directory = RECORD_CONFIG[args.kind]
     records_directory = problem_directory / subdirectory
-    number = next_record_number(records_directory, prefix)
+    if getattr(args, "record_id", None):
+        number = requested_record_number(records_directory, prefix, args.record_id)
+    else:
+        number = next_record_number(records_directory, prefix)
     record_id = f"{prefix}{number:03d}"
     record_slug = safe_record_slug(args.title)
     filename = f"{record_id}-{record_slug}"
@@ -993,6 +1024,15 @@ def build_parser() -> argparse.ArgumentParser:
     add_parser.add_argument("slug")
     add_parser.add_argument("kind", choices=sorted(RECORD_CONFIG))
     add_parser.add_argument("title")
+    add_parser.add_argument(
+        "--id",
+        dest="record_id",
+        help=(
+            "Use this exact record ID instead of the next free one, e.g. A019. "
+            "Required when parallel sessions share a dossier: each scans its own "
+            "tree and would otherwise pick the same number (process/concurrency.md)."
+        ),
+    )
     add_parser.set_defaults(func=command_add)
 
     review_parser = subparsers.add_parser(
