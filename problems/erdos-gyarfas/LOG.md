@@ -608,3 +608,37 @@ attempt, experiment, or review record.
   pivot trigger moved to order 24+.
 - No power-free member, so no ledger claim changes beyond `C034`'s
   range; `C001` stays `open`.
+
+## 2026-07-24 — S020: the decisive order is empty; the congruence route is dead
+
+- `E018` built, anchored (26 checks under CPython 3.14.2 and PyPy
+  7.3.23; class counts equal to `E016` A6 at orders 8–13; orders 14–15
+  new: 130,461 and 1,826,839 members, all C8-blocked), and run at order
+  16: stream 346,573,602 (24-part split; sum reproduced exactly by an
+  independent unsplit `geng -u`), profile class 29,713,305, **every
+  member contains a C8** (C16 never decisive), **zero power-free** —
+  the class \(\mathcal G\) of `L039` has no order-16 member (`C036`).
+  With `L041`: **every tight 1-atom has order \(\ge18\)**. Minimum C8
+  count over the class: **1** (orders 14/15: 1/2) — the closest any
+  scanned class has come to a witness; recorded as the case for the
+  `G014` item-6 generator before order 17.
+- The mod-4 congruence hunt (`A021`, instrument `E018/mod4.py`) died on
+  its pre-registered kill condition (`C037`): the residual object's
+  forced membership triple is realized by vertex-taut C4-free profile
+  cores from order 10 — one order-10 witness is **Petersen minus an
+  edge** (labelg-verified) — with both admissible mod-4 residue
+  patterns and no invariant; and the chain-calculus identity
+  \(\ell(P)+\ell(Q)=2|E(P)\cap E(Q)|+\sum\ell(C_i)\) caps
+  cycle-structure congruence information at parity (`A021` T1). No
+  congruence-type theorem at any modulus can exclude case (5b) from
+  the forced hypotheses alone; Petersen\(-e\) becomes the standing
+  calibration object for future exclusion attempts.
+- Ledger updates: `C036`/`C037` added; `L041`'s bound quoted at
+  \(\ge18\) in `PROOF.md`; the `L042` "needs congruence-type tools"
+  reading corrected (survivors: chain cancellation and
+  power-freeness-active mechanisms); `G015`/`G013`(a) live moves
+  rewritten; pivot triggers moved to order 17+.
+- Next action: the chain-cancellation tension as the proof-side
+  primary; the `G014` item-6 \(\{C_4,C_8\}\)-free generator as the
+  search-side build before any order-17 leg.
+- No proved row was falsified. `C001` stays `open`.

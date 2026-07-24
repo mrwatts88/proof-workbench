@@ -1,0 +1,12 @@
+{
+ "order": 16,
+ "parts": 24,
+ "geng": "geng -q -c -f -d2 16 23:120 r/24",
+ "stream": 346573602,
+ "profile": 29713305,
+ "c8_blocked": 29713305,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_seen": 31,
+ "cpu_seconds_sum": 2893.5
+}

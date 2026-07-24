@@ -1,0 +1,3337 @@
+{
+ "summary": {
+  "order": 11,
+  "class": 125,
+  "taut": 124,
+  "taut_triple": 0,
+  "triple_residue_hist": {},
+  "triple_bipartite": 0,
+  "triple_ab_adjacent": 0,
+  "triple_with_cuts": 0,
+  "taut_invisible_S": 0,
+  "seconds": 0.1
+ },
+ "rows": [
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?ABE`Ki@k?"
+  },
+  {
+   "S": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?ABE`KMDK?"
+  },
+  {
+   "S": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?ABE`Kh@s?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?ABE`Ki`h?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?ABE`Kh`q?"
+  },
+  {
+   "S": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?ABArCk@[?"
+  },
+  {
+   "S": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?ABEIoJaq?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?ABEIoJap?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?BDA_oZCu?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?BDA_gWsx?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?BDA_gKsx?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?BDA_gQsx?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?BDAaQNAU?"
+  },
+  {
+   "S": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?BD?pSYCe?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?BD?pSY@e?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?BD?pSYcY?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?BD?osYcY?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2
+   ],
+   "meets_P": true,
+   "meets_P1": false,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EagX?{?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EagLA[?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EagFBK?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EagFbE?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EagFbH?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    8,
+    9
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2
+   ],
+   "meets_P": true,
+   "meets_P1": false,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@E`gh?{?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@E`gFDK?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@E`gg_{?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@E`ga`k?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@E`gEdK?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@E`gb`e?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@E`gFdE?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@E_whaX?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@E_wbbE?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EaKY@k?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EaKY@l?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EaKMBK?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EaKX@s?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EaKLBS?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@EaaX?{?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@Cr_T@[?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@Cr_LA[?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@Cr_JAk?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@Cr_JAm?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@Cr_R`e?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@CrC[@[?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@CrCY@k?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@CrCY@m?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@CrCY`i?"
+  },
+  {
+   "S": [
+    3,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DA`gd@e?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DA`gLCq?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DA_wdbH?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DA_wcrH?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DAaQLBQ?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DAaQNEQ?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DAaQWPw?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DAaQMUW?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DE`gLCW_"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bOFBK?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bOFBQ?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bOFBI?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bOXcY?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bODbW?"
+  },
+  {
+   "S": [
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bODaY?"
+  },
+  {
+   "S": [
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bOBRK?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bGT@Y?"
+  },
+  {
+   "S": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": true,
+   "cuts": 0,
+   "g6": "J?`D@bGFBK?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bGFBI?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bGXci?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bGDbI?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bGD`Y?"
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bGDRK?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`gFEc?"
+  },
+  {
+   "S": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": true,
+   "cuts": 0,
+   "g6": "J?`D@`gFEK?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`gFEa?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@_WsbY?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@aWTBQ?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`WdRD?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bCU@Y?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bCS`Y?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bCS_y?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`cUCk?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`cUCi?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`cScw?"
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`cScq?"
+  },
+  {
+   "S": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": true,
+   "cuts": 0,
+   "g6": "J?`D@`cS_y?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`cQSw?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`SYSp?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`SYSd?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAU@Y?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAT@Y?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAJAq?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAJAi?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAZCq?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAZCi?"
+  },
+  {
+   "S": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAFBQ?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAFBI?"
+  },
+  {
+   "S": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAYSw?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAERW?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAHQw?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bAXSw?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@bADRW?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`aeAi?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`aeAY?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`aUCi?"
+  },
+  {
+   "S": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@`aFEa?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@aQYAi?"
+  },
+  {
+   "S": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": true,
+   "cuts": 0,
+   "g6": "J?`D@aQY?y?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@aQXAq?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@aQWQw?"
+  },
+  {
+   "S": [
+    1,
+    2
+   ],
+   "taut": false,
+   "residues": [
+    1,
+    2
+   ],
+   "meets_P": false,
+   "meets_P1": false,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": true,
+   "cuts": 1,
+   "g6": "J?`D@aQIQw?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DEPQMBG_"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@RG[_y?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`D@RGDba?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DEHaLCo_"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DEDoJCp?"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DEDoF@K_"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DEDgLCo_"
+  },
+  {
+   "S": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DEDcF@c_"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DEDSJCp?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`DCdoJEP?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@eQcTBE?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@dFOR?s_"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@dFGFAd?"
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@dDgb?k_"
+  },
+  {
+   "S": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`@cV_FAM?"
+  },
+  {
+   "S": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?`CPbCY?m?"
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "taut": true,
+   "residues": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "meets_P": true,
+   "meets_P1": true,
+   "avoids_P2": false,
+   "invisible": false,
+   "bipartite": false,
+   "ab_adjacent": false,
+   "cuts": 0,
+   "g6": "J?bB@`SIdI?"
+  }
+ ]
+}

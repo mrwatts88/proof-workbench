@@ -1,0 +1,14 @@
+{
+ "order": 16,
+ "part": "10/24",
+ "geng": "geng -q -c -f -d2 16 23:120 10/24",
+ "stream": 4737043,
+ "profile": 317046,
+ "c8_blocked": 317046,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_seen": 31,
+ "min_c8_in_class": 4,
+ "seconds": 38.9,
+ "interpreter": "3.11.15/PyPy"
+}

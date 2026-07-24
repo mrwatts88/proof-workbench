@@ -118,9 +118,30 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   `L042`), and arithmetically squeezed. The routes meet on the link
   graph. R1 is reframed to its conditional form (all `G015` needs);
   the unconditional form is retired as a target.
+  **S020 spent both Tier 1 legs decisively.** The order-16
+  \(\mathcal G\)-profile scan (`E018`, anchored against `E016` A6 and
+  `C027` before production) came back **empty** — 346,573,602 stream
+  graphs (split-sum reproduced by an independent unsplit `geng -u`),
+  29,713,305 in the profile class, **every one blocked by a \(C_8\)**
+  (\(C_{16}\) never decisive), zero power-free (`C036`) — so the class
+  \(\mathcal G\) has no order-16 member and **every tight 1-atom has
+  order \(\ge18\)**; the minimum \(C_8\) count over the class is **1**
+  (the closest any scanned class has come to a witness — the case for
+  the `G014` item-6 generator). And the mod-4 congruence hunt died on
+  its pre-registered kill condition (`C037`/`A021`): the residual
+  object's forced membership triple is realized by vertex-taut
+  \(C_4\)-free cores from order 10 — one witness is **Petersen minus
+  an edge** — with no residue structure, and the chain-calculus
+  identity caps congruence information at parity, so **no
+  congruence-type theorem at any modulus can exclude case (5b)** from
+  the forced hypotheses alone. Petersen\(-e\) is the standing
+  calibration object: any future exclusion argument must fail on it
+  unless it invokes power-freeness or minimality. Case (5b)'s
+  surviving levers: the chain-cancellation tension (proof side) and
+  the generator-powered order-17 rung (search side).
   Portfolio (all threads carried, per standing user instruction): the
-  case-(5b) endgame (order-16 \(\mathcal G\) scan + mod-4 congruence
-  hunt, now Tier 1); the pencil endgame + band-2 rung (pinched
+  case-(5b) endgame (chain cancellation + the Tier 4 generator, still
+  Tier 1); the pencil endgame + band-2 rung (pinched
   channel); the bipartite hunt at order 24+ (order 23 harvested
   empty in the S019 follow-up — 928,562 in class, all with a
   \(C_8\)) and the gcd-channel theory question; the cubic census at order 30; census mining; bipartite EGC
@@ -182,18 +203,22 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, work **Tier 1: exclude case (5b)** — the one configuration
-to which S019 reduced the cubic reduction (`L041`). Primary move,
-decisive at one order: the **order-16 \(\mathcal G\)-profile scan**
-(connected, \(C_4\)-free, exactly two degree-2 vertices, others
-\(\ge3\), power-free, through-set avoiding \(\{2,6,14\}\)) — empty
-lifts the tight-1-atom bound to 18; a hit satisfying the
-\(S\)-condition **disproves statement 0.1 outright** (disproof
-protocol). Proof-side companion: the mod-4 congruence hunt against the
-`L042` residual object, modelled on the parity proof. Do **not** grind
-the density constant (closed by `L038`'s delimitation). The `E015`
-order-23 leg completed empty and its harvest is applied; the next Tier 3
-leg there is order 24 (or the Tier 4 generator).
+For `P-002`, keep working **Tier 1: exclude case (5b)** (`L041`), whose
+S019-recorded moves S020 has now spent: the order-16 scan is **empty**
+(`C036` — tight 1-atoms have order \(\ge18\)) and the congruence hunt
+is **dead at every modulus** (`C037`/`A021` — Petersen\(-e\) realizes
+the forced hypotheses; do not reopen congruence obstructions). Primary
+(proof side): the **chain-cancellation tension** (`L042`/W1-T14) —
+quantify the forced cancellation of forbidden lengths across the block
+chain of \(H\); first falsifiable target: bound the chain length or
+prove \(H\) 2-connected; sanity-check every candidate argument on
+Petersen\(-e\). Search side (build first, then scan): the `G014`
+item-6 dedicated \(\{C_4,C_8\}\)-free generator — the \(C_8\) filter
+is 100% decisive in this profile at every scanned order and min
+\(C_8\) count at 16 is 1, and it unlocks the order-17 \(\mathcal G\)
+rung, cubic order 30, and bipartite order 24+ at once. Do **not**
+grind the density constant (closed by `L038`). Tier 3 stays
+harvest-only (bipartite 24, gcd scan, pinched 17+).
 No required action remains for `P-001`; its reference comparison is
 optional and freely permitted.
 

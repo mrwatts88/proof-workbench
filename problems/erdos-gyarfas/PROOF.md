@@ -221,7 +221,10 @@ Established preliminary reductions, none sufficient for the main claim:
   five-case analysis at the defect vertex then kills every case but one:
   **the conditional cubic reduction holds modulo excluding case (5b)**
   (defect vertex non-cut, both neighbours cubic, residue vertex-taut),
-  and every tight 1-atom has order \(\ge17\) unconditionally.
+  and every tight 1-atom has order \(\ge17\) unconditionally — improved
+  to **\(\ge18\)** by the S020 order-16 scan (`C036`, `E018`: the
+  \(\mathcal G\) profile at order 16 is 29,713,305 graphs, every one
+  \(C_8\)-blocked, none power-free).
 - `L042`: the residual object (case (5b)) is 2-connected, has
   independent degree-\(\ge4\) vertices, is **non-bipartite** (a hand
   proof, at every order, of what `C034` verified through 22), carries
@@ -229,9 +232,16 @@ Established preliminary reductions, none sufficient for the main claim:
   chain-cancellation constraints at every cut vertex, and at band 4
   inherits the `L033` pencil dichotomy verbatim. The taut ladder's
   collapse machinery (`L030`) does **not** transfer to it — the
-  closure channel has no through-set window — so closing case (5b)
-  needs congruence-type tools (the parity proof is the model), not
-  confinement-type ones.
+  closure channel has no through-set window. The S019 reading, "closing
+  case (5b) needs congruence-type tools," was tested and **corrected in
+  S020**: the congruence route is dead at every modulus (`C037`/`A021`
+  — the forced-membership profile is realized by vertex-taut
+  \(C_4\)-free cores from order 10, Petersen\(-e\) among them, and the
+  chain calculus caps congruence information at parity, `A021` T1).
+  What survives on the proof side is the chain-cancellation tension
+  (Minkowski-additive, not residue-based) and mechanisms that make
+  power-freeness itself fight (the band-4 pencil `L033` is the model:
+  it is exactly the constraint Petersen\(-e\) violates).
 
 Imported frontier facts, not a candidate:
 

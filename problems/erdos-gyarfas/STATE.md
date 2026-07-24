@@ -1,8 +1,8 @@
 # Current state
 
-- Last updated: 2026-07-24 (S019 — the first orchestrated parallel
-  session: both `G015` routes run concurrently in audited worker
-  subagents)
+- Last updated: 2026-07-24 (S020 — the order-16 \(\mathcal G\)-profile
+  scan ran to completion and came back empty; the mod-4 congruence
+  hunt died on its own pre-registered kill test)
 - Problem: `P-002` — Erdős–Gyárfás Conjecture
 
 ## Exact target
@@ -52,6 +52,29 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   "cubic reduction modulo 1-atoms" is vacuous as originally stated and
   is restated with **tight** 1-atoms (exceptional degree exactly 2),
   and `A012` Remark T4.1 is withdrawn as unproved.
+- **New (S020): `C036`/`C037` — `L041`'s decisive order is empty and
+  the congruence route is closed.** The order-16 \(\mathcal G\)-profile
+  scan (`E018`): 346,573,602 stream graphs (24-part split, sum
+  reproduced by an independent unsplit `geng -u`), 29,713,305 in the
+  profile class, **every one blocked by a \(C_8\)** (\(C_{16}\) never
+  decisive), zero power-free — so \(\mathcal G\) has no order-16
+  member and **every tight 1-atom has order \(\ge18\)** (`C036` with
+  `L041`). Proximity datum: the minimum \(C_8\) count over the class
+  is **1** (the bipartite class never went below 13). The mod-4
+  companion (`A021`, instrument `E018/mod4.py`): the residual object's
+  forced-membership profile is *realized* by vertex-taut \(C_4\)-free
+  cores from order 10 — one order-10 witness **is Petersen\(-e\)**
+  (labelg-verified) — with both admissible residue patterns and no
+  invariant (`C037`), and the chain-calculus identity caps
+  congruence information at parity (`A021` T1: the
+  \(2|E(P)\cap E(Q)|\) leak). **No congruence-type theorem at any
+  modulus can exclude case (5b) from the forced hypotheses alone**;
+  the surviving proof-side levers are the chain-cancellation tension
+  (Minkowski-additive) and mechanisms that make power-freeness itself
+  fight (the band-4 pencil is the model — it is exactly the constraint
+  Petersen\(-e\) violates). Petersen\(-e\) is the standing calibration
+  object: any proposed case-(5b) exclusion must fail on it unless it
+  invokes power-freeness or minimality.
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -99,9 +122,15 @@ residue, now heavily constrained (`L042`: 2-connected, non-bipartite,
 degree-\(\ge4\)-independent, forced through-set arithmetic, chain
 cancellation, band-4 pencil). For `G015` the conditional form suffices
 and only case (5b) remains. Empty through order 15 stream-level
-(`C027`); the \(\mathcal G\) profile at order 16 is the open decisive
-order; no bipartite tight 1-atom through order 23 (`C034`, S019
-follow-up harvest).
+(`C027`) **and through order 16 for the exact \(\mathcal G\) profile
+(`C036`, S020)** — every tight 1-atom has order \(\ge18\), every
+\(\mathcal G\)-member \(\ge17\); no bipartite tight 1-atom through
+order 23 (`C034`). The congruence-obstruction leg against the residual
+object is retired (`C037`/`A021`); its proof side now rests on the
+chain-cancellation tension and on power-freeness-active mechanisms,
+its search side on order 17, where the `G014` item-6 generator is the
+right instrument (the \(C_8\) filter has been 100% decisive at every
+order ever scanned in this profile).
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -143,8 +172,10 @@ internally.
   is the 2-path closure of a vertex-taut \(\mathcal G\)-member — and
   the cubic reduction follows (`L040`/`L041` supply every other case).
   The constant-density route is closed (`L038` delimitation); the
-  order-16 \(\mathcal G\) scan and the mod-4 congruence hunt are the
-  live moves.
+  order-16 scan is done and empty (`C036`) and the congruence hunt is
+  dead (`C037`/`A021`). Live moves: the chain-cancellation tension
+  (`L042` W1-T14), the disjoint long-link descent (`A020` W2-T8(c)),
+  and the order-17 search rung via the `G014` item-6 generator.
 - `G013` (core): tight 1-atoms; the block question (band 4 = pencil
   endgame, bands \(\ge5\) open); the odd-prime-gcd channel and the
   missing parity block-extraction.
@@ -199,12 +230,26 @@ configuration:**
   unconditional "no tight 1-atom exists" is retired as an R1 target
   (unreachable by minimality: its reducts are counterexamples, not
   atoms). By `L041` the conditional form is proved **except in case
-  (5b)**; excluding that case closes `G015`. Live moves against it, in
-  order: (i) the **order-16 \(\mathcal G\)-profile scan** — decisive at
-  one order (a hit with the \(S\)-condition disproves 0.1 outright;
-  empty lifts the atom bound to 18); (ii) a **congruence-type
-  obstruction** against the `L042` residual object — mod-4 first, on
-  the model of the parity proof; (iii) the chain-cancellation tension.
+  (5b)**; excluding that case closes `G015`. S020 spent the first two
+  recorded moves: the order-16 scan is **empty** (atom bound now
+  \(\ge18\), `C036`) and the congruence obstruction is **dead at every
+  modulus** (`C037`/`A021` — the forced hypotheses are realized from
+  order 10, so they admit no refutation; parity is the ceiling of
+  chain-calculus congruence information). Live moves against case
+  (5b), in order: (i) the **chain-cancellation tension** (`L042`
+  W1-T14): \(S=S_1+S_2\) across any cut of \(H\), each side forced to
+  carry a forbidden length while the Minkowski sum avoids
+  \(\mathbb P-2\) — quantify the cancellation; first falsifiable
+  target: bound the block-chain length or force 2-connectivity of
+  \(H\); sanity-check every candidate argument against Petersen\(-e\);
+  (ii) the **order-17 \(\mathcal G\) rung** — decisive the same way 16
+  was, but the stream is \(\sim\!17\times\) larger
+  (\(\sim\!6\times10^9\)), so build the `G014` item-6
+  \(\{C_4,C_8\}\)-free generator first (the \(C_8\) filter is 100%
+  decisive in this profile at every order ever scanned; min \(C_8\)
+  count at 16 is 1, so incremental \(C_8\) rejection prunes nearly
+  everything); (iii) the disjoint long-link descent (below), where the
+  routes meet.
 - **R2, constant route closed** — `C004`–`C006` verified and the bound
   improved to \(3|V_3|\ge2n+3\) (`L037`/`L038`), but S15 certifies
   \(2/3\) as the exact ceiling of the non-power hypotheses and no
@@ -271,16 +316,17 @@ Harvest-only. None of these may be a session's primary work.
 
 ### Pivot triggers
 
-A hit in the order-16 \(\mathcal G\)-profile scan satisfying the
-\(S\)-condition (**immediate disproof** — a tight 1-atom); a
-pencil-type band-4 taut core at order 17+; a strict block or
-\(C_8\)-free equality block (disproof protocol); **any** power-free
-member of the `E015` class at order 24+ (immediate disproof, `L035`
-T3); a `G014` audit overturning an assumed bound; the mod-4 congruence
-hunt's kill condition firing (a vertex-taut \(C_4\)-free core realizing
-all three forced memberships with no mod-4 structure — then case (5b)
-reduces to search alone); exclusion of case (5b) (then `G015` is proved
-and Thread C becomes the whole game).
+A hit in a \(\mathcal G\)-profile scan at order 17+ satisfying the
+\(S\)-condition (**immediate disproof** — a tight 1-atom; the order-16
+trigger was consumed empty in S020, and the mod-4 kill condition fired
+there too, so case (5b)'s proof side now rests on chain cancellation
+and power-freeness-active mechanisms); a pencil-type band-4 taut core
+at order 17+; a strict block or \(C_8\)-free equality block (disproof
+protocol); **any** power-free member of the `E015` class at order 24+
+(immediate disproof, `L035` T3); a `G014` audit overturning an assumed
+bound; a chain-cancellation theorem bounding the block chain (would
+concentrate case (5b) on 2-connected \(H\)); exclusion of case (5b)
+(then `G015` is proved and Thread C becomes the whole game).
 
 ### Process correction (S018)
 
@@ -326,39 +372,67 @@ some anchor-to-anchor path. That single surviving configuration now
 carries the whole theorem, and it is already known to be at least
 17 vertices, two-connected, never two-colourable, and arithmetically
 squeezed (its path lengths must hit some exact powers of two and miss
-others). Excluding it — by a parity-style argument modulo 4, or by a
-one-order exhaustive search at size 16 that would *either* disprove the
-whole conjecture or push the bound up — is the next move.
+others).
+
+S020 played both of the moves that analysis recommended, and both came
+back with definitive answers. The exhaustive size-16 search ran to
+completion — thirty million graphs with the right degree pattern, out
+of a stream of 346 million — and every single one contains a cycle of
+length 8. So the dangerous object cannot exist on 16 + 1 = 17 vertices,
+and the "single defect" graph is now known to need at least 18. The
+striking detail: some of those thirty million graphs contain exactly
+*one* cycle of length 8 — the class comes within a single cycle of
+disproving the conjecture, which is precisely why this channel deserves
+its dedicated search machinery (a generator that never builds the
+8-cycles in the first place) before the next, seventeen-times-larger
+order is attempted. The other move — hunting a "remainder modulo 4"
+argument to kill the dangerous configuration by pure arithmetic, the
+way a parity argument killed its two-colourable version — is dead, and
+provably so: the graph obtained by deleting one edge from the famous
+Petersen graph satisfies *every* arithmetic condition the dangerous
+configuration is forced to satisfy, so no arithmetic of remainders can
+ever rule the configuration out. What separates Petersen-minus-an-edge
+from an actual counterexample is one concrete cycle of length 8, and
+that is the kind of structure — actual cycles interfering with each
+other, not remainders — that the surviving proof route (the
+"cancellation across links of a chain" tension) has to exploit.
 
 ## Resolution outlook
 
 - Estimated chance of eventually settling the exact current statement: 5%
-- Previous estimate: 4% (S018)
-- Reason for change: the reachable deliverable (`G015`) moved
-  substantially — from two open-ended routes to a single named
-  configuration with real structure on it, plus a disproof-decisive
-  one-order search — and the session produced the dossier's first
-  mechanism (the descent) that converts minimality into structure on an
-  unbounded object. Against that, the density route's closure removes
-  one hoped-for path, and the surviving configuration is exactly the
-  congruence-type core the dossier has no machinery for yet. Net: a
-  small upgrade, driven by target-narrowing rather than by any movement
-  on the conjecture itself (which is why the change is one point and
-  not more).
+- Previous estimate: 5% (S019)
+- Reason for no change: the session was decisively informative but
+  symmetric. Against: one of case (5b)'s two named proof levers (the
+  congruence obstruction) is now provably dead — not stalled, dead at
+  every modulus — and the decisive search order returned empty, so the
+  disproof did not happen. For: the atom bound moved up an order with
+  full coverage verified two ways; the kill test produced the
+  calibration object (Petersen\(-e\)) that will keep future proof
+  attempts honest at essentially zero cost; the min-\(C_8\)=1 datum
+  shows this channel is the closest any class in the dossier has come
+  to a witness, sharpening the case for the Tier 4 generator; and the
+  chain-cancellation lever survived the kill untouched. The programme
+  knows strictly more and its reachable deliverable (`G015`) is
+  unchanged in difficulty: fewer routes, but the dead one was cheap to
+  test and the survivor was always the harder, more structural one.
 
 ## Resume reading
 
 1. `STATEMENT.md`
 2. the **Roadmap** section above, then `A019` (the case analysis, the
-   engine/peel, the residual object — R1's full state) and `A020` (the
-   descent, the density theorem, the sharpness tombstone — R2's)
-3. `references/carr-2026-verification-2026-07-24.md` (what `C004`–`C006`
-   now rest on)
+   engine/peel, the residual object — R1's full state) and `A021` (the
+   congruence kill: the chain-calculus ceiling, the Petersen\(-e\)
+   calibration object, what survives)
+3. `A020` (the descent, the density theorem, the sharpness tombstone —
+   R2's state) and
+   `references/carr-2026-verification-2026-07-24.md` (what
+   `C004`–`C006` now rest on)
 4. `A018` (1-atom completeness, the `L029` repair, why `G015` is the
    deliverable)
-5. `CLAIMS.md` rows `L037`–`L042`, `C004`–`C006`; `OBLIGATIONS.md`
+5. `CLAIMS.md` rows `L039`–`L042`, `C036`/`C037`; `OBLIGATIONS.md`
    `G015`/`G013`
-6. `E016/README.md` and `E017/README.md` (the machine legs and their
-   anchors); `E015/README.md` for the bipartite hunt (order 23
+6. `E018/README.md` (the order-16 scan, its anchors, and the mod-4
+   probe data); `E015/README.md` for the bipartite hunt (order 23
    harvested empty; next leg 24 or the generator)
-7. `sessions/S019-…md` (the orchestration record and audit trail)
+7. `sessions/S020-…md` (this session) and `S019-…md` (the
+   orchestration record behind `L037`–`L042`)
