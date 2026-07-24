@@ -62,6 +62,8 @@ has one independently checkable assertion.
 | L028 | taut bottom rungs | (A012 T3) No taut (D)-gadget has \(S=\{1\}\); and no taut (D)-gadget with \(s_{\min}=2\), \(S\subseteq\{2,3\}\), and no 4-cycle exists — \(C_4\)-freeness alone suffices, via the unique common neighbor \(w\), the counting bounds (\(\le1\) \(w\)-edge into each terminal side, \(\le1\) cross-neighbor per vertex), and a forced 4-cycle \(a\,x\,z\,w\). The case \(S=\{3\}\) has \(s_{\min}=3\) and is not covered. Corollaries: every 2-atom with \(s_{\min}\le2\) contains a 1-atom or a power-free minimum-degree-3 graph, and has order \(\ge17\) (\(\ge18\) when \(s_{\min}=2\)). | proved | `A012` T3 (hand proofs); instance check: all 133 rung-class gadgets at orders 12–13 are non-taut (`E011`) | `L027`; `C027` and `L022` for the corollaries |
 | L029 | reduction | Cubic reduction modulo 1-atoms (A012 T4): if no 1-atom exists, every counterexample of minimum order then minimum size is cubic; hence statement 0.1 is true **iff** no cubic counterexample and no 1-atom exist. In a minimum-order 1-atom the sub-cubic vertex has degree 2. | proved | `A012` T4 (hand proof) | `D001`–`D004` |
 | C028 | computational observation | E011 instance verification and survey at orders 12–13 of the connected \(C_4\)-free exactly-two-sub-cubic stream (1,690 and 16,106 gadgets; stream and profile counts reproduce `E010` exactly from an independent implementation): all \(19+114\) gadgets with \(S=\{1\}\) or \(2\in S\subseteq\{2,3\}\) are non-taut (`L028` instance check), and all \(38+227\) inessential components have exactly one essential attachment with internal degrees \(\ge3\) (`L027` instance check). Every taut pinched gadget at these orders — five in total — has \(S=\{6,\dots,11\}\) (ratio \(11/6\)) and contains a \(C_8\); no taut pinched gadget with \(s_{\min}\in\{3,4,5\}\) exists through order 13. | tested | `E011` (17 anchors incl. \(K_{3,3}-e\) tautness and both T1 scaffolds; CPython 3.14.2, geng nauty 2.9.3) | geng anchored as in `E010`; `L027`/`L028` supply the predictions tested |
+| L030 | taut rung theorem | The taut \(s_{\min}=3\) rung (A013 T8): no vertex-taut \(C_4\)-free (D)-gadget has \(S\subseteq\{3,4,5\}\) — equivalently, every vertex-taut \(C_4\)-free two-terminal graph with \(d(a,b)\ge3\), non-terminal degrees \(\ge3\), and terminal degrees \(\ge1\) has a simple \(a\)–\(b\) path of length \(\ge6\). Power-freeness beyond \(C_4\) and the (D) clause \(\deg(a)+\deg(b)\ge3\) are not used. Proof shape: tautness confines every middle vertex to distance one from \(N(a)\) or \(N(b)\); forbidden length-6/7 paths eliminate the middle classes, then force the middle into matched degree-3 triples, then empty it; the surviving graph is three perfect matchings on \(N(a)\cup N(b)\), where each vertex triggers a dichotomy — a \(C_4\) block or a length-7 path. Corollaries: no taut 2-atom has \(s_{\max}\le5\); with `L028`, every taut 2-atom has \(s_{\min}\ge4\) and \(s_{\max}\ge6\); every 2-atom with \(s_{\min}=3\) is non-taut, contains a 1-atom or a min-degree-3 power-free graph (`L027`), and has order \(\ge19\). | proved | `A013` T1–T8, C1–C3 (hand proofs); falsification search and endgame instance check `E012`/`C029` | `D001`–`D004`; D-A1–D-A3 (`A011`), D-B1 (`A012`); corollaries also `L027`, `L028`, `C027`, `L022` |
+| C029 | computational observation | E012 all-terminal-pair falsification search at orders 6–14: over every admissible terminal pair of every connected \(C_4\)-free min-degree-\(\ge1\) stream graph with \(\ge\lceil(3n-4)/2\rceil\) edges (stream totals reproduce `C027`; at order 13, 20,432 eligible graphs vs `E011`'s 16,106 — the degree-\(\ge3\)-terminal slice is covered for the first time), **no taut (D)-pair with \(S\subseteq\{3,4,5\}\) exists; none even non-taut** — every pair passing the distance and eccentricity prefilters is rejected by a length-\(\ge6\) path. The T8 endgame dichotomy holds on all 218 three-matchings structures at \(k\in\{2,4\}\): \(C_4\) present iff some \(x\) has \(\sigma\varphi(x)=\psi\sigma(x)\), and every \(C_4\)-free structure has an \(a\)–\(b\) path of length \(\ge7\). \(K_{3,3}-e\) is the positive control (caught as taut, \(S=\{3,5\}\)). | tested | `E012` (736 anchor checks; CPython 3.14.2, geng nauty 2.9.3) | geng anchored as in `E010`/`E011`; primitives from `E011`; `L030` supplies the prediction tested |
 
 ## Dependency notes
 
@@ -235,3 +237,23 @@ has one independently checkable assertion.
   neither. Its taut-pinched finding (all five at \(s_{\min}=6\), interval
   through-sets, each with a \(C_8\)) is the concrete shape catalogue for
   the taut \(s_{\min}=3\) rung and says nothing about larger orders.
+- `L030` closes the taut \(s_{\min}=3\) rung with \(C_4\)-freeness alone,
+  refuting S012's expectation that the power spectrum must carry this
+  rung; at \(s_{\min}=3\) it is exactly the taut form of the
+  spread-doubling inequality (`L025` R5(b)). Its limits are sharp on
+  three sides: \(K_{3,3}-e\) shows \(C_4\)-freeness cannot be dropped;
+  `L026` shows tautness cannot be dropped (a tautness-free version would
+  prove 0.1 outright); and `C028`'s five witnesses show the analogous
+  \(C_4\)-only statement is **false** at \(s_{\min}=6\) — so the
+  \(C_4\)-only regime of the taut ladder ends within
+  \(s_{\min}\in\{4,5,6\}\), and by `L028`+`L030` the assembly disproof
+  channel below \(s_{\min}=4\) routes entirely through the 1-atom
+  question or an outright counterexample. The order-\(\ge19\) corollary
+  inherits the `C027` and `L022` caveats verbatim.
+- `C029` can refute but not prove `L030`, and did not refute it. Its
+  stronger empirical finding — no (D)-pair with \(S\subseteq\{3,4,5\}\)
+  even without tautness at orders \(\le14\) — is **not** implied by
+  `L030` and must not be cited as a lemma: by `L026`-type constructions,
+  non-taut pinched pairs at small \(s_{\min}\) exist iff counterexamples
+  to 0.1 exist, so this emptiness is expected but conjecture-strength.
+  The endgame-dichotomy anchor is exhaustive only at \(k\in\{2,4\}\).

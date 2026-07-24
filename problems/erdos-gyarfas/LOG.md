@@ -291,3 +291,33 @@ attempt, experiment, or review record.
 - No change to `C001`; the main claim stays `open`. Next: the taut
   s_min = 3 rung — prove no taut C4-free power-free gadget with
   S ⊆ {3,4,5} exists, or exhibit one (disproof via `L025`).
+
+## 2026-07-24 — S013
+
+- Executed the inherited next action (the taut s_min = 3 rung) via a
+  failure-first construction attempt; the attempt collapsed into forced
+  structure at every step and became a theorem (`A013` T8 = `L030`): **no
+  vertex-taut C4-free (D)-gadget has S ⊆ {3,4,5}** — C4-freeness alone
+  suffices, power-freeness is never invoked. Proof shape: tautness pins
+  every middle vertex to distance one from N(a) or N(b); forbidden
+  length-6/7 paths kill the one-sided middle classes, force the rest into
+  matched degree-3 triples, then empty the middle; the survivor is three
+  perfect matchings on N(a) ∪ N(b), where every vertex triggers a
+  dichotomy — C4 block or length-7 path.
+- Corollaries: every taut 2-atom has s_min ≥ 4 and s_max ≥ 6; every
+  2-atom with s_min ≤ 3 is non-taut, contains a 1-atom or min-degree-3
+  power-free graph, and has order ≥ 19. S012's boundary prediction is
+  corrected: the power-spectrum fight starts not at s_min = 3 but in
+  s_min ∈ {4,5,6}, the upper end pinned by `C028`'s five witnesses.
+- Built and ran `E012` (all-terminal-pair falsification search; 736
+  anchor checks incl. the T8 endgame dichotomy verified exhaustively on
+  all 218 three-matchings structures at k ∈ {2,4} and K_{3,3}-e as
+  positive control): at orders 6–14, over every admissible terminal pair
+  of every stream graph — including degree-≥3-terminal pairs, never
+  examined before (241,135 eligible graphs and 1,357,597 pairs at order
+  14 alone) — **zero taut hits, and zero even non-taut pairs with
+  S ⊆ {3,4,5}** (`C029`). Stream totals reproduce `C027` at every order.
+- No change to `C001`; the main claim stays `open`. Next: the taut
+  s_min = 4 rung — extend the middle-layer collapse to depth-2 middles
+  (S ⊆ {4,...,7}), or find a C4-free taut pinched s_min ∈ {4,5} gadget
+  at orders 14–16.

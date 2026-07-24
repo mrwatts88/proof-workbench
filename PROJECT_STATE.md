@@ -30,21 +30,26 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   census capped at order 18). The voltage-lift falsification program is
   closed as a theorem (`L023`/`L024` collision-wall, reviewed `R001`);
   the walk-to-cycle interface is the **atom question** (`L025`, `G013`).
-  S012 corrected its rung program: the unrestricted bottom rungs
-  \(s_{\min}\in\{1,2\}\) are each *equivalent* to the conjecture
-  (`L026` — counterexamples hide behind cut vertices), so the ladder is
-  meaningful only for **taut** gadgets (every vertex on a
-  terminal-to-terminal path). The lobe decomposition (`L027`) confines
-  all hiding to 1-atom-like lobes; the taut rungs \(s_{\min}\le2\) are
-  closed by hand with \(C_4\)-freeness alone (`L028`); and modulo the
-  1-atom question the conjecture reduces to cubic graphs (`L029`).
-  Instance verification and survey (`E011`/`C028`): both lemmas hold on
-  every gadget at orders 12–13, and every taut pinched gadget there has
-  \(s_{\min}=6\) with a \(C_8\) — taut pinched \(s_{\min}\in\{3,4,5\}\)
-  is empty through order 13. Portfolio: the taut \(s_{\min}=3\) rung
-  (primary; \(K_{3,3}-e\) is the shape to beat, and power-freeness
-  beyond \(C_4\) must now carry the argument), minimal 1-atom structure
-  theory (alternative), order-16 census (deferred).
+  S012 rebased the rung ladder on **taut** gadgets (`L026`–`L029`:
+  unrestricted rungs are conjecture-complete; lobes confine hiding;
+  taut \(s_{\min}\le2\) closed; cubic reduction modulo 1-atoms). S013
+  closed the next rung as a theorem (`L030`): no vertex-taut
+  \(C_4\)-free (D)-gadget has \(S\subseteq\{3,4,5\}\) — the middle
+  layer collapses under the path-length ceiling and the surviving
+  three-matchings skeleton always carries a \(C_4\) or a length-7 path.
+  \(C_4\)-freeness alone carries this rung too, refuting S012's
+  prediction; taut 2-atoms now have \(s_{\min}\ge4\), \(s_{\max}\ge6\),
+  and every 2-atom with \(s_{\min}\le3\) routes through the 1-atom
+  question. Falsification search (`E012`/`C029`): zero targets at
+  orders 6–14 over **all** terminal pairs (first coverage of
+  degree-\(\ge3\) terminals); the endgame dichotomy exact on all 218
+  small structures. Boundary map: \(C_4\)-only provably fails at
+  \(s_{\min}=6\) (`C028`'s five witnesses, each with a \(C_8\)), so the
+  power fight lives in \(s_{\min}\in\{4,5,6\}\). Portfolio: the taut
+  \(s_{\min}=4\) rung via the collapse mechanism (primary; depth-2
+  middles are the new case), \(C_8\)-forcing at the \(s_{\min}=6\)
+  witnesses (alternative), 1-atom structure theory, order-16 census
+  (deferred).
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -93,13 +98,16 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, attack the taut \(s_{\min}=3\) rung (`L028`'s successor):
-prove that no vertex-taut \(C_4\)-free power-free (D)-gadget with
-\(S\subseteq\{3,4,5\}\) exists — the first rung where power-freeness
-beyond \(C_4\) must carry the argument (\(K_{3,3}-e\) realizes the
-shape and is blocked only by its 4-cycles; `C028` shows the target is
-empty through order 13) — or exhibit one, which disproves statement 0.1
-via the `L025` ring assembly. Alternatives: minimal 1-atom structure
+For `P-002`, attack the taut \(s_{\min}=4\) rung (`L030`'s successor):
+prove that no vertex-taut \(C_4\)-free (D)-gadget with
+\(S\subseteq\{4,5,6,7\}\) exists — extending the `L030` middle-layer
+collapse to depth-2 middles, the genuinely new configuration — or find
+a \(C_4\)-free taut pinched \(s_{\min}\in\{4,5\}\) gadget at orders
+14–16 (`C029`: empty through 14 over all terminal pairs; \(C_4\)-only
+closure provably fails at \(s_{\min}=6\)). A found gadget branches on
+power-freeness: power-free disproves statement 0.1 via `L025`;
+otherwise it marks where the \(C_8\) fight begins. Alternatives:
+\(C_8\)-forcing at the \(s_{\min}=6\) witnesses; 1-atom structure
 theory; order-16 census (deferred). No required action remains for
 `P-001`; its reference comparison is optional and freely permitted.
 

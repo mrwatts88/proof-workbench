@@ -1,0 +1,20 @@
+{
+  "n": 12,
+  "geng_command": "geng -q -c -f -d1 12 16:0",
+  "stream_total": 52331,
+  "stream_matches_e010": true,
+  "eligible_graphs_le2_subcubic": 2143,
+  "pair_counts": {
+    "pairs": 9808,
+    "reject-dist": 5844,
+    "reject-eccentric": 2099,
+    "reject-long": 1865,
+    "nontaut": 0,
+    "TAUT": 0
+  },
+  "taut_hits": [],
+  "nontaut_S345_pairs": [],
+  "seconds": 1.3,
+  "python": "3.14.2",
+  "implementation": "CPython"
+}

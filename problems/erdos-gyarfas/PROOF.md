@@ -91,6 +91,19 @@ Established preliminary reductions, none sufficient for the main claim:
   1-atoms, and taut 2-atoms with \(s_{\min}\ge3\) (`C028`: through order
   13 the taut pinched world starts at \(s_{\min}=6\), interval
   through-sets, always carrying a \(C_8\)).
+- `L030`: the taut \(s_{\min}=3\) rung. No vertex-taut \(C_4\)-free
+  (D)-gadget has \(S\subseteq\{3,4,5\}\): tautness confines every middle
+  vertex to distance one from a terminal neighborhood, forbidden
+  length-6/7 paths collapse the middle layer entirely, and the surviving
+  three-matchings structure on \(N(a)\cup N(b)\) dies in a dichotomy
+  (\(C_4\) block or length-7 path). \(C_4\)-freeness alone suffices —
+  the power spectrum is not yet needed at \(s_{\min}=3\). Corollaries:
+  every taut 2-atom has \(s_{\min}\ge4\) and \(s_{\max}\ge6\); every
+  2-atom with \(s_{\min}\le3\) routes through the 1-atom question
+  (order \(\ge19\) at \(s_{\min}=3\)). By `C028`'s witnesses the
+  \(C_4\)-only regime provably ends by \(s_{\min}=6\); the
+  \(s_{\min}\in\{4,5\}\) rungs are the open boundary (`C029`: empty
+  through order 14 over all terminal pairs).
 
 Imported frontier facts, not a candidate:
 
@@ -138,9 +151,11 @@ lemmas remain in `A001` and `CLAIMS.md`.
 - `G013`: settle the atom question — find an atom (disproof by `L025`
   assembly) or prove the spread-doubling lemma (closing the ring channel
   and giving the first conditional walk-to-cycle forcing result). After
-  `L026`–`L029` its live sub-questions are the 1-atom question (which
-  also gates the cubic reduction) and taut 2-atoms with
-  \(s_{\min}\ge3\); the next rung is taut \(s_{\min}=3\).
+  `L026`–`L030` its live sub-questions are the 1-atom question (which
+  also gates the cubic reduction) and taut 2-atoms, now with
+  \(s_{\min}\ge4\) and \(s_{\max}\ge6\); the next rung is taut
+  \(s_{\min}=4\), and \(C_4\)-only methods provably stop by
+  \(s_{\min}=6\).
 
 ## Computational dependencies
 
