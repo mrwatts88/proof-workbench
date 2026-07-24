@@ -33,6 +33,14 @@ has one independently checkable assertion.
 | L016 | separation lemma | Full two-excursion witness data also forces no power-of-two cycle: for every \(k\ge4\), the double-theta graph on \(C_7\) with disjoint ears of length \(2^{k-1}-1\) attached at \(\{c_0,c_4\}\) and \(\{c_5,c_2\}\) realizes a witness of length \(2^k-1\) for the distance-\(2\) pair \(c_0,c_2\), and its seven cycle lengths \(7,2^{k-1}+3,2^{k-1}+3,2^{k-1}+2,2^{k-1}+2,2^k+1,2^k+2\) contain no power of two. | proved | `A005/L016` | Finite simple graph conventions |
 | C011 | computational observation | The exhaustive labelled search found no graph of order \(11\), \(12\), or \(13\) with minimum degree at least \(3\) avoiding both \(C_4\) and \(C_8\); five validation anchors reproduced the independent `E001`/`E002` counts, an exact symmetry quotient, and a nonzero \(C_8\)-free positive control. | tested | `E004` | Coverage layers proved in `A006/L017` |
 | L017 | finite exclusion | Every counterexample has at least fourteen vertices. | proved | `A006/L017`, computer-assisted via the exhaustive search `E004` | `L006`, `E004` |
+| C012 | reported computation | Royle's 2002 search — all graphs on at most \(15\) vertices with minimum degree \(3\), the degree-\(\ge4\) vertices independent, and no \(C_4\) — found every such graph to contain a \(C_8\); via the minimal-counterexample degree structure this gives: every counterexample has at least \(16\) vertices. The circulating "at least 17" has no primary-source support. | imported | Royle (2002 archived page) and Markström (2004), quoted in `references/source-audit-2026-07-23-S007.md`; external computation, not reproduced | The degree-structure reduction (internally `L002`'s independence conclusion plus order-minimality); `D001`–`D004` |
+| C013 | reported computation | Markström's search of all cubic graphs on at most \(28\) vertices found each to contain a \(C_4\), \(C_8\), or \(C_{16}\); since cubic graphs have even order, every cubic counterexample has at least \(30\) vertices. | imported | Markström (2004), quoted in `references/source-audit-2026-07-23-S007.md`; external computation, not reproduced beyond order \(24\) | `D001`–`D004`; parity of cubic order |
+| C017 | spectrum-confinement theorem | For every \(q\ge3\) there exist arbitrarily large planar cubic graphs with no \(q\)-power cycles; for \(q=2\) there exist arbitrarily large planar cubic graphs whose 2-power cycles all have length \(4\) only, or all length \(8\) only. All these constructions are 1-connected: cycles are confined to bounded gadgets around an internally cubic tree, so the cycle spectrum is a fixed finite set and the powers of \(q\ge3\) can be dodged; the paper states the tools do not apply at \(q=2\). | imported | Bensmail (2017), read in full; `references/source-audit-2026-07-23-S007.md` | Finite simple graph conventions |
+| C014 | reported census | The smallest cubic graphs avoiding both \(C_4\) and \(C_8\) have \(24\) vertices; the counts of connected cubic \(\{C_4,C_8\}\)-free graphs are \(4\), \(23\), \(251\) at orders \(24\), \(26\), \(28\), each such graph found containing a \(C_{16}\); exactly one of the four at order \(24\) is planar. | imported | Markström (2004), Table 3 and Section 4; `references/source-audit-2026-07-23-S007.md`; the order-\(\le24\) part is reproduced internally as `C018` | `D001`–`D004` |
+| C015 | computational observation | The Markström graph (House of Graphs 51419) is cubic, planar, connected, non-bipartite, of order \(24\), with cycle spectrum exactly \(\{3,5,6,7\}\cup\{9,\dots,24\}\); every one of its \(240\) nonedges carries a simple path of length \(15\) (and \(225\) of length \(7\), \(105\) of length \(3\)), so adding any single edge creates a \(C_4\), \(C_8\), or \(C_{16}\). | tested | `E005` Part 1 (`verify_markstrom.py`), all checks passed | Graph data from House of Graphs entry 51419; detectors from `E004` |
+| C016 | computational observation | The exhaustive anchored census found no graph of order \(14\)–\(17\) with minimum degree at least \(3\) avoiding both \(C_4\) and \(C_8\): the connected \(C_4\)-free minimum-degree-\(3\) classes have sizes \(6059\), \(91433\), \(1655659\), \(34758006\) at orders \(14\)–\(17\), and every member contains a \(C_8\). | tested | `E006` (geng-generated, anchors A1–A5 passed, independent per-graph re-verification) | geng (nauty 2.9.3) correctness for the delegated class, anchored as recorded in `E006` |
+| L018 | finite exclusion | Every counterexample has at least eighteen vertices; consequently the smallest \(\{C_4,C_8\}\)-free graph of minimum degree at least \(3\) has between \(18\) and \(24\) vertices. | proved | `A007/L018`, computer-assisted via `E006`/`C016` (generation layer delegated to anchored geng, unlike the fully internal `E004`) | `L017`, `C016`, connectivity and collapse lemmas in `A007` |
+| C018 | computational reproduction | The connected cubic \(\{C_4,C_8\}\)-free census through order \(24\): empty at orders \(14\)–\(22\) (the \(C_4\)-free cubic classes of sizes \(36\), \(269\), \(2761\), \(36101\), \(553227\) all contain \(C_8\)), and at order \(24\) exactly four graphs among \(9{,}467{,}449\) \(C_4\)-free cubic graphs — matching Markström's Table 3 — of which exactly one is planar and labelg-isomorphic to House of Graphs 51419; all four contain \(C_{16}\), and each of the four is fully Mersenne-witness-covered: every one of its \(240\) nonedges carries a simple path of length \(3\), \(7\), or \(15\) (all \(240\) carry length \(15\)). | tested | `E005` Part 2 (`generate24.py`), planarity by nauty `planarg`, isomorphism by nauty `labelg` | geng anchored as in `E005`/`E006`; detectors from `E004`; upgrades the order-\(\le24\) part of `C014` from reported to reproduced |
 
 ## Dependency notes
 
@@ -77,3 +85,31 @@ has one independently checkable assertion.
   on `L008`. The cleared orders are below reported prior computational
   bounds in the literature; no novelty is claimed, and those prior
   computations were not reproduced or relied on here.
+- `C012` and `C013` are external computations imported at reported
+  strength; neither was reproduced here in full. `C012`'s reduction to the
+  restricted degree structure is the elementary minimal-counterexample
+  argument (the independence conclusion of `L002` plus order-minimality),
+  so its search class covers all minimum counterexamples. The
+  widely-circulated "at least 17 vertices" strengthening of `C012` is an
+  overread with no primary-source support and must not be cited
+  (`references/source-audit-2026-07-23-S007.md`). Orders \(11\)–\(16\) of
+  the range covered by `C012` are independently confirmed internally
+  (`E004`, `E006`); orders \(\le 24\) of `C013`'s range by `E005`.
+- `C017` is a strategic import: its graphs satisfy the conjecture (or
+  concern \(q\ge3\)) and none is 2-connected, so it does not intersect the
+  block reduction `L011`; its value is the spectrum-confinement mechanism
+  and the demonstration that 1-connectivity is what makes bounded cycle
+  spectra — and hence power dodging — possible at minimum degree \(3\).
+- `C015` records witness coverage, not `L008` saturation: the Markström
+  graph contains a \(C_{16}\), so it is not power-cycle-free and not an
+  `L008` object; the observation is that the Mersenne-witness half of the
+  saturation condition is realizable by an actual extremal cubic planar
+  graph at order \(24\).
+- `L018` is computer-assisted like `L017`, but with a weaker internality:
+  `E004`'s generation layer was internal and hand-proved, while `E006`
+  delegates generation to nauty's geng, an imported tool anchored against
+  OEIS A002851/A006786 counts, cross-validated against `E004` at orders
+  \(11\)–\(13\), and re-checked per graph for the degree and \(C_4\)
+  conditions. The connectivity and collapse lemmas of `A007` are hand
+  proofs. `L018` strictly strengthens `L017`'s bound; `L017` remains the
+  strongest bound with an internal generation layer.

@@ -24,10 +24,17 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   0.2. It was historically run under a since-retired internal-only rule, so no
   reference comparison has yet been made; that comparison is now freely
   permitted and simply optional.
-- `P-002` — Erdős–Gyárfás Conjecture: active and open at statement version 0.1;
-  internal structural reductions, the saturation reduction and its
-  single-witness delimitation, and a computer-assisted order-\(14\) lower
-  bound are proved; the primary-literature frontier has been audited.
+- `P-002` — Erdős–Gyárfás Conjecture: active and open at statement version 0.1.
+  The S007 frontier sweep imported the true primary-source bounds (exposing
+  the circulating "17 vertices" as an overread), confirmed by recorded sweep
+  that the edge-maximal saturation reduction is absent from the literature,
+  verified the extremal 24-vertex graphs, and proved the computer-assisted
+  bound `L018`: every counterexample has at least eighteen vertices — past
+  the strongest published general bound (sixteen, 2002). The portfolio now
+  has three named routes: saturation strengthening (proof side),
+  interval/spectrum-density mechanisms (proof side), and a Bensmail-style
+  spectrum-gap program in 2-connected blocks (disproof side); the exact
+  census layer is explicitly capped.
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -72,15 +79,14 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, stop extending the exhaustive small-order search — reported
-prior computations already exceed it — and instead reach the published
-frontier by import: pin down from primary sources the strongest verified
-finite bounds and the reported \(24\)-vertex \(\{C_4,C_8\}\)-free cubic
-graphs, verify those graphs internally, and determine from the same source
-sweep whether the edge-maximal saturation reduction `L008` is already known.
-If saturation is new, it becomes the frontier-passing target. No required
-action remains for `P-001`; its reference comparison is optional and freely
-permitted.
+For `P-002`, analyze all four verified order-24 extremal graphs as test
+material for the two deep routes: full even-cycle spectra and witness
+structure, checked against the consecutive-even-lengths and
+cycle-pair-forcing mechanisms, ending in the first concrete lemma target
+for either the saturation-strengthening or the spectrum-gap route. The
+deferred alternative is extending the exact census to order 18 with a
+compiled filter. No required action remains for `P-001`; its reference
+comparison is optional and freely permitted.
 
 ## Known process risks
 

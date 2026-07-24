@@ -15,5 +15,5 @@
   "latex_file": null,
   "pdf_file": null,
   "latex_engine": null,
-  "next_action": "Run the frontier sweep from primary sources: import the strongest verified finite bounds with exact statements, obtain and internally verify the reported 24-vertex C4/C8-free cubic graphs, and search the literature deliberately for edge-maximal power-cycle saturation (L008); if it is absent, strengthening the saturation line becomes the frontier-passing target, and if present, import its strongest published form."
+  "next_action": "Analyze all four verified order-24 extremal graphs as test material for both deep routes: compute their full even-cycle spectra and witness structure, check them against the consecutive-even-lengths and cycle-pair-forcing mechanisms, and write the first concrete lemma target for the saturation-strengthening or spectrum-gap route; deferred alternative: extend the exact census to order 18 with a compiled filter."
 }

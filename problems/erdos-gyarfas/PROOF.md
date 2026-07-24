@@ -38,6 +38,12 @@ Established preliminary reductions, none sufficient for the main claim:
 - `L017`: every counterexample has at least fourteen vertices
   (computer-assisted via the exhaustive search `E004`; at orders \(11\)–\(13\)
   no minimum-degree-\(3\) graph avoids both \(C_4\) and \(C_8\)).
+- `L018`: every counterexample has at least eighteen vertices
+  (computer-assisted via the anchored census `E006`: at orders
+  \(14\)–\(17\) no minimum-degree-\(3\) graph avoids both \(C_4\) and
+  \(C_8\) at all). This passes the strongest inspectable published
+  general bound (`C012`, sixteen); the smallest \(\{C_4,C_8\}\)-free
+  minimum-degree-\(3\) graph has between \(18\) and \(24\) vertices.
 
 Imported frontier facts, not a candidate:
 
@@ -48,6 +54,16 @@ Imported frontier facts, not a candidate:
 - `C008`: sufficiently large average degree forces a power-of-two cycle.
 - `C009`: finite Hamiltonian cubic graphs exist with arbitrarily large girth;
   this supplies the separation example in `L007`.
+- `C012`–`C013`: the primary-source computational bounds — no
+  counterexample below sixteen vertices (Royle; now superseded internally
+  by `L018`), no cubic counterexample below thirty.
+- `C014`–`C015`: the four extremal cubic \(\{C_4,C_8\}\)-free graphs at
+  order \(24\); the planar one is internally verified with full Mersenne
+  witness coverage across its nonedges.
+- `C017`: Bensmail's 1-connected spectrum-confinement constructions
+  (no \(q\)-power cycles for \(q\ge3\); only-\(C_4\) or only-\(C_8\)
+  2-power families), delimiting what bounded cycle spectra can do without
+  2-connectivity.
 
 ## Argument
 
@@ -61,10 +77,9 @@ lemmas remain in `A001` and `CLAIMS.md`.
 - `G007`: find a global minimal-counterexample restriction not shared by
   arbitrary connected cubic graphs of large girth and make it decisive; by
   `L015`–`L016` the decisive use of saturation must couple unboundedly many
-  witnesses or generate an interval of even cycle lengths.
-- `G011`: settle whether the saturation reduction is new to the literature;
-  if so, strengthen it into a publishable partial result past the published
-  frontier, and if not, import and rebase on the strongest published form.
+  witnesses or generate an interval of even cycle lengths. (`G011` is
+  resolved: the saturation reduction appears nowhere in the swept
+  literature, so it is the project's frontier-passing asset.)
 
 ## Computational dependencies
 
@@ -78,3 +93,11 @@ which instead uses the imported large-girth existence theorem `C009`.
 computer-assisted, with the collapse and coverage arguments in `A006` and the
 exhaustive, anchor-validated search `E004` as its computational leg. `L005`
 and `L006` retain independent hand proofs; `L017` does not have one.
+
+`E006` plays the same role for `L018`, with one further dependency:
+its generation layer is nauty's geng (an imported tool), anchored against
+published OEIS counts and against `E004` at overlapping orders, with
+per-graph independent re-verification of the degree and \(C_4\)
+conditions. `E005` verifies the imported Markström graph and reproduces
+the order-\(24\) cubic census; it supports `C014`, `C015`, and `C018`
+only, not any lemma.

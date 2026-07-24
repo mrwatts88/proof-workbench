@@ -103,3 +103,38 @@ attempt, experiment, or review record.
   \(14\)–\(15\), the remaining range of the small-order collapse, with
   parallel decomposition and re-validated anchors. No proof or disproof
   candidate for the main conjecture exists.
+
+## 2026-07-23 — S007 frontier sweep, true bounds, saturation novelty, and order 18
+
+- Read the primary sources in full: Markström (2004) and Royle's 2002 page
+  (Wayback snapshot). Both verify only orders \(\le15\); the circulating
+  "at least 17 vertices" is an overread with no primary support. Imported
+  the true bounds `C012` (general \(\ge16\)) and `C013` (cubic \(\ge30\)),
+  plus Markström's Table 3 as `C014`.
+- Verified the Markström graph from House of Graphs (id 51419) exactly:
+  cubic, planar, spectrum \(\{3,5,6,7\}\cup\{9..24\}\), and — new
+  observation `C015` — every one of its 240 nonedges carries a Mersenne
+  witness path, so any added edge creates a power-of-two cycle.
+- Reproduced the cubic census (`E005`, `C018`): cubic
+  \(\{C_4,C_8\}\)-free classes empty at orders 14–22; exactly four graphs
+  at order 24 among 9,467,449 \(C_4\)-free cubic graphs, exactly one
+  planar and labelg-isomorphic to HoG 51419, all four fully
+  witness-covered. A planarg wrapper bug was caught by the disagreement
+  with Markström's "only one planar" and fixed before any record used it.
+- Ran the recorded `G011` novelty sweep: the edge-maximal power-cycle
+  saturation reduction appears nowhere in the swept literature; resolved
+  `G011` with a repeat-before-publishing caveat — the saturation line is
+  the project's frontier-passing asset.
+- Built the anchored general pipeline `E006` (geng, anchors A1–A5) and
+  exhausted orders 14–17: the connected \(C_4\)-free minimum-degree-3
+  classes (6059; 91433; 1655659; 34758006 graphs) contain no
+  \(C_8\)-free member. With hand-proved connectivity and collapse lemmas
+  this gives `L018` in `A007`: every counterexample has at least
+  eighteen vertices, past the strongest inspectable published general
+  bound; the smallest \(\{C_4,C_8\}\)-free minimum-degree-3 graph has
+  18–24 vertices.
+- Read Bensmail (2017) in full; imported `C017` and named the
+  falsification-side spectrum-gap program (confinement needs cut
+  vertices; the 2-connected question is the real one). Capped the census
+  layer; PyPy verified available for future Python-bound legs. No proof
+  or disproof candidate for the main conjecture exists.

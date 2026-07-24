@@ -13,125 +13,119 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
 - `L001`–`L006`: block and edge-minimal reductions, a longest-path chord
   restriction, and hand proofs that every counterexample has at least eleven
   vertices.
-- `L007`: the retired local bundle does not force \(C_{16}\).
 - `L008`–`L013`: the saturation reduction — Mersenne witnesses across every
   nonedge — with its parity separation, odd-cycle matching structure,
-  leaf-block persistence, and external ears of shortest odd cycles.
-- `L014`–`L016`: separations. One arbitrary ear, a full one-excursion
-  witness in every configuration, and a full two-excursion pattern all admit
-  infinite power-free families; bounded single-witness data cannot force.
-- `L017` (computer-assisted): every counterexample has at least fourteen
-  vertices. At orders \(11\)–\(13\) no minimum-degree-\(3\) graph avoids
-  both \(C_4\) and \(C_8\) at all, by the exhaustive validated search
-  `E004`; at orders \(\le15\) such a graph would be exactly a
-  counterexample, so the exclusion needed neither `L008` nor saturation.
-
-## Evidence, not proof
-
-- `E001`–`E003` are exact finite checks; `E004` is exhaustive per order and
-  carries `L017` as its proved consequence (`C011` records the computation).
-- Sparsity heuristic (intuition only): bounded witness diagrams always admit
-  power-free solutions; a decisive mechanism must couple unboundedly many
-  witnesses or generate an interval of even cycle lengths.
+  leaf-block persistence, and external ears; `L014`–`L016` delimit it:
+  bounded single-witness data cannot force.
+- `L017` (computer-assisted, internal generation): every counterexample has
+  at least fourteen vertices.
+- `L018` (computer-assisted, anchored geng generation): every counterexample
+  has at least **eighteen** vertices — past the strongest inspectable
+  published general bound (sixteen, Royle 2002, `C012`). At orders
+  \(14\)–\(17\) no minimum-degree-3 graph avoids both \(C_4\) and \(C_8\)
+  at all (`E006`/`C016`), so the smallest such graph has \(18\)–\(24\)
+  vertices.
 
 ## Imported frontier
 
-- `C004`–`C006` (Carr, 2026): minimality, cubic domination, cubic density.
-- `C007` (Hegde–Sandeep–Shashank, 2025): induced \(P_{13}\) in every
-  counterexample.
-- `C008` (Liu–Montgomery, 2023): large average degree forces a power-of-two
-  cycle.
-- `C009` (Biggs, 1998): finite Hamiltonian cubic graphs of arbitrarily large
-  girth.
-- Reported prior computations exceed the internal orders; the literature
-  also exhibits cubic graphs on \(24\) vertices with no \(C_4\) or \(C_8\)
-  (but with \(C_{16}\)), so the internal \(\{C_4,C_8\}\)-free frontier ends
-  somewhere in \([14,24]\).
+- `C004`–`C006` (Carr 2026), `C007` (P13-free, 2025), `C008`
+  (Liu–Montgomery), `C009` (Biggs): unchanged.
+- `C012` (Royle 2002): general bound \(\ge16\); the circulating "\(\ge17\)"
+  is an unsupported overread — do not cite it.
+- `C013` (Markström 2004): cubic counterexamples have \(\ge30\) vertices.
+- `C014` (Markström 2004, Table 3): cubic \(\{C_4,C_8\}\)-free counts
+  \(4/23/251\) at orders \(24/26/28\); smallest at \(24\); one planar.
+- `C017` (Bensmail 2017): 1-connected spectrum-confinement families — no
+  \(q\)-power cycles for every \(q\ge3\); only-\(C_4\) or only-\(C_8\)
+  2-power families. The trick needs cut vertices, which `L011` removes.
+
+## Verified test material
+
+- The Markström graph (HoG 51419) is held and fully verified (`C015`,
+  `E005`): cubic, planar, spectrum \(\{3,5,6,7\}\cup\{9..24\}\), and every
+  one of its 240 nonedges carries a Mersenne witness — adding any edge
+  creates a power-of-two cycle. It misses `L008` sainthood only by
+  containing \(C_{16}\).
+- All four extremal order-24 cubic graphs are held, reproduced from
+  scratch (`C018`, `E005`: 4 of 9,467,449 \(C_4\)-free cubic graphs;
+  orders \(14\)–\(22\) empty; exactly one planar, isomorphic to HoG
+  51419). Every one of the four is fully Mersenne-witness-covered — the
+  whole extremal class sits "one \(C_{16}\) away" from `L008` saturation.
 
 ## Open obligations
 
-- `G002`, `G003`: make the 2-connected reduction and a global cycle-length
-  mechanism decisive.
-- `G004` (priority): pin down the published computational and structural
-  frontier from primary sources and import it at full verified strength.
-- `G007`: make the saturation restriction decisive; requires unbounded
-  witness coupling or an interval of even cycle lengths.
-- `G011` (priority): settle whether edge-maximal saturation (`L008`) is new
-  to the literature; it is the project's candidate novel asset.
-
-## Active risks
-
-- `L017` is computer-assisted; its exhaustiveness rests on the coverage
-  arguments in `A006` and the five validation anchors in `E004`, not on an
-  independent hand proof as with `L005`–`L006`.
-- Import correspondence: a miscopied hypothesis or overread bound from the
-  literature would silently corrupt the route; exact statements and sources
-  are mandatory.
-- A missed source in the `G011` novelty sweep would waste effort on a known
-  result; the sweep must be recorded with the databases and queries used, and
-  repeated skeptically before any novelty-based investment.
-- The mission is new information: work that only re-derives reported results
-  must be recognized and stopped at route-selection time.
+- `G002`, `G003`, `G007`: the global mechanism, untouched by anything
+  finite. By `L015`–`L016`, decisive saturation use needs unbounded witness
+  coupling or an even-length interval.
+- `G004`: only the original 1997 Erdős article body remains uninspected
+  (access attempts recorded).
+- `G011` is resolved: the saturation reduction appears nowhere in the swept
+  literature — it is this project's unclaimed asset (caveat: re-sweep before
+  any external novelty claim).
 
 ## Strategy portfolio
 
-- Primary route: the frontier sweep `G004` + `G011` — import the strongest
-  verified bounds, obtain and internally verify the reported \(24\)-vertex
-  \(\{C_4,C_8\}\)-free cubic graphs, and determine whether the saturation
-  reduction `L008`–`L016` is already known. If it is new, strengthen the
-  saturation line toward a publishable partial result past the frontier.
-- Live alternative: the variable-length/adjuster reframing — an interval of
-  even cycle lengths at minimum degree \(3\) — with unbounded multi-witness
-  coupling as its second form; both target the asymptotic mechanism `G007`,
-  and both would use the imported extremal graphs as test cases.
-- Pivot trigger: if the sweep finds saturation already published in a form
-  subsuming `L008`–`L016`, import it, take what is strongest, and promote
-  the interval reframing to primary.
+- Primary (proof side): strengthen the saturation line — the confirmed-novel
+  asset — using the verified extremal graphs as the concrete boundary
+  objects; its decisive form must couple unboundedly many witnesses or
+  produce an interval of even lengths (`G007`).
+- Live alternative (disproof side, new): the spectrum-gap program — Bensmail
+  confinement shows how bounded spectra dodge sparse power sets and why
+  1-connectivity is essential; the counterexample question is whether a
+  2-connected minimum-degree-3 spectrum can gap every power of two against
+  forced-density results (Bondy–Vince pairs; Sudakov–Verstraëte consecutive
+  even lengths). Erdős and Gyárfás themselves expected the answer to be
+  negative.
+- Support layer (capped): the exact census. Do not extend past order ~18
+  without a faster filter (the user has offered PyPy, installed and
+  suitable for the pure-Python bitmask detectors; a compiled filter is the
+  fallback) and a route-driven reason; the window \([18,24]\) for the
+  first \(\{C_4,C_8\}\)-free graphs is already a concrete target.
+- Pivot trigger: a \(\{C_4,C_8\}\)-free graph at orders 18–23 (new
+  structure, counterexample screen), or a decisive lean in the
+  gap-versus-density tension from the order-24 spectra analysis.
 
 ## Best next action
 
-Run the frontier sweep from primary sources: import the strongest verified
-finite bounds with exact statements; obtain the reported \(24\)-vertex
-\(\{C_4,C_8\}\)-free cubic graphs and verify their properties internally
-with the `E004` detectors; and search the literature deliberately for any
-appearance of edge-maximal power-cycle saturation, recording the queries.
-The sweep either establishes the saturation line as new — making it the
-frontier-passing target — or upgrades the dossier with the published form.
+Analyze all four order-24 extremal graphs as test material for both deep
+routes: compute their full even-cycle spectra and witness structure, check
+them against the consecutive-even-lengths and cycle-pair-forcing
+mechanisms, and from the pattern write the first concrete lemma target for
+the chosen route. Deferred alternative: extend the census to order 18 with
+a compiled filter.
 
 ## Human-level state
 
-The mission has been clarified by the user: settle open conjectures by
-standing on everything already known and spending effort only past the
-published frontier. Under that lens the project's position is this. The
-internal work proved solid but mostly non-novel results — structural
-reductions and a verified bound that any counterexample needs at least
-fourteen vertices, below what the literature already reports. The one idea
-not found in any audited source is the saturation certificate: a
-hypothetical counterexample can be maximally filled with edges so that
-every missing edge carries a path certificate of exact length one less
-than a power of two, a condition with proved consequences and proved
-limits. The immediate task is a deliberate literature check: if this idea
-is genuinely absent, it is the project's beachhead past the frontier and
-the work becomes strengthening it into a publishable new partial result;
-if it is known, the strongest published form gets imported and the effort
-moves to the harder mechanism question with imported extremal graphs as
-test material.
+The session imported the literature's real numbers from primary sources
+(catching that the widely repeated "seventeen vertices" bound was never
+actually computed), verified the famous 24-vertex near-miss graph down to
+the bone, confirmed by a recorded literature sweep that this project's
+saturation idea is genuinely absent from published work, and then used a
+modern generator to pass the 24-year-old computational frontier: every
+counterexample now provably needs at least eighteen vertices, and below
+eighteen there isn't even a graph avoiding the two smallest forbidden
+cycle lengths. Strategically, the user's challenge ("is exhaustive
+checking really the path?") was answered by capping the search layer and
+naming a falsification program built from Bensmail's constructions: the
+whole question is whether a robustly connected sparse graph can steer its
+cycle lengths around every power of two — the known constructions that do
+this all cheat with cut vertices.
 
 ## Resolution outlook
 
-- Estimated chance of eventually settling the exact current statement: 1%
+- Estimated chance of eventually settling the exact current statement: 2%
 - Previous estimate: 1%
-- Reason for no change: the finite frontier advanced three orders with a
-  reusable validated tool, but finite exclusions cannot settle the universal
-  statement, and the missing asymptotic mechanism is unchanged. This estimate
-  was set at the S006 research close; the O008 mission realignment changes
-  route selection, not the mathematical outlook.
+- Reason for change: better route inventory, not better evidence — the
+  saturation asset is confirmed unclaimed, and the falsification-side
+  spectrum-gap program is concrete and mechanistically distinct; both still
+  need tools beyond the current field.
 
 ## Resume reading
 
 1. `STATEMENT.md`
 2. `CLAIMS.md`
 3. `OBLIGATIONS.md`
-4. `attempts/A006-saturated-finite-frontier-at-order-eleven.md`
-5. `experiments/E004-order-11-saturated-search/README.md`
-6. `sessions/S006-2026-07-23-exhaustive-order-11-saturated-counterexample-search.md`
+4. `attempts/A007-the-general-finite-frontier-past-order-sixteen.md`
+5. `references/source-audit-2026-07-23-S007.md`
+6. `experiments/E005-…/README.md` and `experiments/E006-…/README.md`
+7. `sessions/S007-…md`
