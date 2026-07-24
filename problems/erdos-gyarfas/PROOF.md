@@ -53,6 +53,18 @@ Established preliminary reductions, none sufficient for the main claim:
   lemmas from the falsification program, not reductions of `C001`; with
   `C020`–`C022` they close the lift-certificate route for all finite
   voltage groups on the tested bases.
+- `L023`–`L024`: the arc-digraph structure package and the
+  collision-wall theorem (reviewed, `R001`): every voltage assignment
+  over any finite group on any connected minimum-degree-\(3\) base
+  carries identity-voltage tailless nb closed walks at every length
+  \(\equiv0\bmod4\) (every even length if non-bipartite) past
+  \(4\log_2\lvert\Gamma\rvert+C_B\). This is the lift program's closing
+  theorem: per-base effective certificate death for all
+  \(\lvert\Gamma\rvert\ge\Gamma_0(B)\), complementing the finite
+  verdicts. Its trivial-group reading — forced balanced walk intervals
+  at minimum degree \(3\) — is the quantitative core handed to `G007`;
+  the unresolved gap between these forced walks and actual cycles is
+  exactly where the main claim stands.
 
 Imported frontier facts, not a candidate:
 

@@ -50,6 +50,8 @@ has one independently checkable assertion.
 | C022 | computational observation | Non-abelian certificate verdict: over \(\mathbb{Z}_7\rtimes\mathbb{Z}_3\) (order 21, metabelian), the Heisenberg group mod 3 and \(\mathbb{Z}_9\rtimes\mathbb{Z}_3\) (both order 27), and the perfect group \(A_5\) (order 60), every voltage assignment on the cycle-rank-2 bases (theta3, dumbbell, bouquet2) — and on \(K_4\) for the three solvable groups — is L019-certificate-dead by length \(16\): some tailless non-backtracking closed walk of length \(4\), \(8\), or \(16\) has identity net voltage. Zero survivors among all assignments (e.g. all \(3600\) per base over \(A_5\), certificate lengths through \(64\)). The pre-registered solvable-cascade predictions of `A009` are confirmed at or before their bounds; the \(A_5\) deaths match the collision-wall prediction \(2^k\approx2\log_2\lvert\Gamma\rvert\), and the wall mechanism (not yet a proved lemma) is recorded in `A009`/`E008`. | tested | `E008` `probe`, `data/probes-mu2-bases.txt`, `data/probes-k4-solvable.txt`; anchors incl. bidirectional agreement with the `E007` engine on cyclic groups | Group tables axiom-checked at runtime; `L019`/`L020` in their group-agnostic form (`A009`); certificate-level only — no statement about actual cycle spectra of the lifts |
 | C023 | computational observation | The exhaustive anchored census at order \(18\): the connected \(C_4\)-free minimum-degree-\(3\) class has \(834{,}711{,}846\) members and every one contains a \(C_8\); no \(\{C_4,C_8\}\)-free graph of minimum degree at least \(3\) exists on \(18\) vertices. | tested | `E006` order-18 extension (S009: 48 geng parts, 8 PyPy workers; anchors A1–A5 re-passed under PyPy 7.3.23; empty survivor files `data/survivors_n18.*`) | geng (nauty 2.9.3) correctness for the delegated class, anchored as recorded in `E006`; same caveats as `C016` |
 | L022 | finite exclusion | Every counterexample has at least nineteen vertices; consequently the smallest \(\{C_4,C_8\}\)-free graph of minimum degree at least \(3\) has between \(19\) and \(24\) vertices. | proved | `A007` addendum (S009), computer-assisted via the order-18 census `C023` | `L018`, `C023`, connectivity and collapse lemmas in `A007` |
+| L023 | structure lemma | Arc-digraph structure of a finite connected multigraph \(B\) with \(\delta\ge3\): (i) no nonempty continuation-closed arc set is reverse-free; (ii) the non-backtracking arc digraph is strongly connected; (iii) its period is \(1\) or \(2\), equal to \(2\) exactly when \(B\) is bipartite, with class = tail side; (iv) there is a finite \(R_B\) such that every ordered arc pair is joined by an nb walk of every sufficiently large admissible exact length. (`A010` W2–W5.) | proved | `A010` (hand proofs, incl. inline numerical-semigroup sub-lemma); verified on six bases in `E009`; audited in `R001` (pass) | Finite multigraph conventions; no voltage content |
+| L024 | collision-wall theorem | For every finite connected multigraph base \(B\) with \(\delta(B)\ge3\) (\(m\) edges), every finite group \(\Gamma\), and every voltage assignment: \(B\) has a tailless non-backtracking closed walk with identity net voltage of every length \(L\equiv0\pmod4\) with \(L\ge4\ell^*+4R_B+8\) (every even such \(L\) if \(B\) is non-bipartite), where \(\ell^*=\lfloor\log_2(2m\lvert\Gamma\rvert)\rfloor+2\); in particular of length \(2^k\) for every \(2^k\ge4\log_2\lvert\Gamma\rvert+C_B\) with \(C_B=4\lceil\log_2m\rceil+4R_B+24\). Corollary (scoped per `R001` F3): for each base there is \(\Gamma_0(B)\) such that for all \(\lvert\Gamma\rvert\ge\Gamma_0(B)\) the walk certificate fails at some power \(2^k\le n\lvert\Gamma\rvert\) — per-base effective closure of the certificate program; the small-group/large-base regime is not covered by this corollary. | proved | `A010` W7–W8 (hand proof); construction verified exhaustively in scope by `E009` (9,606,333 assertions) and by the independent R001 probe (108 cases, 3,136 lengths); audited in `R001` (pass, minor findings repaired) | `L023`; the group-agnostic form of `L019` (`A009`) for the certificate reading only |
 
 ## Dependency notes
 
@@ -147,3 +149,18 @@ has one independently checkable assertion.
   \(18\) (`C023`), and every internality caveat recorded for `L018`
   applies verbatim. `L017` remains the strongest bound with a fully
   internal generation layer.
+- `L023` and `L024` are voltage-lift program results, not reductions of
+  `C001`; neither bears on the truth of `C001` directly. `L024`'s
+  certificate corollary cites `L019` at its group-agnostic strength as
+  proved in `A009` (the ledger row `L019` itself is stated for
+  \(\mathbb Z_m\); `C022` already cites the group-agnostic form the same
+  way). The corollary is per-base effective closure for
+  \(\lvert\Gamma\rvert\ge\Gamma_0(B)\) plus the finite verdicts
+  `C020`/`C022`; it does not cover a small fixed group on bases with
+  large reach constant \(R_B\) (see `R001` F3 for a concrete such
+  family). For bipartite bases the forced lengths are \(\equiv0\bmod4\)
+  only (`R001` F4); powers of two are unaffected. `E009` and the `R001`
+  probe verify the construction on finitely many instances; the
+  universal claims rest on the `A010` proofs. Unlike `L017`–`L022`,
+  `L023`/`L024` carry a delegated adversarial logic audit (`R001`,
+  delegated-subagent, pass).

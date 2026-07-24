@@ -196,3 +196,37 @@ attempt, experiment, or review record.
   narrows to \([19,24]\).
 - No proof or disproof candidate for the main conjecture exists; the
   estimate stays at 2%. Next: attempt the collision-wall lemma.
+
+## 2026-07-24 — S010
+
+- Proved the collision-wall lemma (`A010`): for every finite group, every
+  connected minimum-degree-3 multigraph base, and every voltage
+  assignment, identity-voltage tailless non-backtracking closed walks
+  exist at every length \(\equiv0\bmod4\) (every even length if
+  non-bipartite) past \(4\ell^*+4R_B+8\), hence at every power of two
+  \(\ge4\log_2\lvert\Gamma\rvert+C_B\). New machinery, all internal:
+  the reverse-free/continuation-closed counting lemma, strong
+  connectivity of the nb arc digraph via the reversal anti-automorphism
+  on sink components, period \(\le2\) via the longest-path theta,
+  exact-length reachability with an inline numerical-semigroup proof,
+  and the branch-and-steer four-junction gluing that solved the exact
+  length problem the naive pigeonhole could not.
+- Built `E009` (`wall.py`): definition-level verification of the whole
+  construction — 9,606,333 assertions across six bases, seven groups,
+  adversarial and exhaustive assignment sweeps, negative controls, and
+  a cross-engine anchor against the E008 DP. All passed (CPython
+  3.14.2).
+- Delegated a fresh-context logic audit (`R001`, delegated-subagent):
+  verdict pass at lemma level, zero critical/major findings, three
+  minor (semigroup import hygiene, `L019` citation strength, W8 scope)
+  and three notes — all repaired in place the same session. The
+  reviewer's independent probe verified the theorem's conclusion on
+  108 further cases (different bases and groups, PyPy) with zero
+  failures.
+- Promoted `L023` (arc-digraph structure package) and `L024`
+  (collision-wall theorem, scoped per R001) to `CLAIMS.md`; resolved
+  `G012` with the mod-4 and per-base-closure caveats recorded;
+  updated `G007` with the walk-interval input; `PROOF.md` outline and
+  `DECISIONS.md` updated (lift program closed as a theorem).
+- No change to `C001`; the main claim stays `open`. Next: attack the
+  walk-to-cycle interface on the proof side.

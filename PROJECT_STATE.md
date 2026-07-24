@@ -25,21 +25,23 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   reference comparison has yet been made; that comparison is now freely
   permitted and simply optional.
 - `P-002` — Erdős–Gyárfás Conjecture: active and open at statement version 0.1.
-  The S007 frontier sweep imported the true primary-source bounds (exposing
-  the circulating "17 vertices" as an overread), confirmed the saturation
-  reduction as absent from the literature, and verified the extremal
-  24-vertex graphs. S009 then built and closed the voltage-lift
-  construction program in one session: lift machinery proved
-  (`L019`–`L021`), the certificate route killed for every finite voltage
-  group — abelian by the commutator obstruction, solvable by the confirmed
-  cascade, and even the perfect group \(A_5\) by the group-size collision
-  wall (`C020`–`C022`) — leaving the collision-wall lemma as the refined
-  open target (`G012`). The census support layer completed at its cap:
-  order 18 is empty (834,711,846 graphs, `C023`), so every counterexample
-  has at least **nineteen** vertices (`L022`) and the extremal
-  \(\{C_4,C_8\}\)-free window is \([19,24]\). Portfolio: collision-wall
-  lemma (primary), proof-side interval forcing (alternative), census
-  capped and complete.
+  The finite frontier stands at `L022` (every counterexample has at least
+  **nineteen** vertices; order-18 census empty across 834,711,846 graphs;
+  extremal \(\{C_4,C_8\}\)-free window \([19,24]\); census capped). S010
+  proved the **collision-wall theorem** (`L024`, with the arc-digraph
+  structure package `L023`): for every finite voltage group, every
+  connected minimum-degree-3 base, and every assignment,
+  identity-voltage tailless non-backtracking closed walks exist at every
+  length \(\equiv0\bmod4\) (every even length if non-bipartite) past
+  \(4\log_2\lvert\Gamma\rvert+C_B\). It passed a delegated fresh-context
+  logic audit (`R001`, pass; minor findings repaired) with two
+  independent machine verifications, resolving `G012` and closing the
+  voltage-lift falsification program as a theorem rather than an
+  observation. Portfolio: proof-side walk-to-cycle interface (primary —
+  the theorem's trivial-group reading forces balanced walk intervals,
+  and the conjecture's hard core is now converting forced walks into
+  cycles), saturation-constrained transfer (alternative), census capped
+  and complete.
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -88,16 +90,16 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, attempt the collision-wall lemma: for every finite voltage
-group and every connected minimum-degree-3 base, every assignment admits
-an identity-voltage tailless non-backtracking closed walk of length
-\(2^k\) for every \(2^k\gtrsim\log_2\lvert\Gamma\rvert\) — the
-composition construction is explicit and only the first/last-arc
-diversity bookkeeping is open (`A009`). Success closes `G012` as the
-lift program's closing theorem and feeds the proof-side interval route;
-a structured counterexample family would reopen construction with a new
-lever. Deferred alternative: the proof-side consecutive-even-lengths
-lemma directly. No required action remains for `P-001`; its reference
+For `P-002`, open the proof-side walk-to-cycle attempt: (1) a
+deliberate literature sweep on cycle-length intervals and mod-\(k\)
+cycle lengths at minimum degree 3, importing the strongest
+primary-source results; (2) formulate the walk-to-cycle transfer lemma
+candidate — what cycle lengths must follow from the forced balanced
+walk intervals of `L024` plus 2-connectivity/saturation constraints;
+(3) failure-first: measure the walk-vs-cycle length gap on large-girth
+cubic graphs and the order-24 extremal graphs. Kill test: an unbounded
+walk/cycle separation in 2-connected minimum-degree-3 graphs retires
+bounded transfer. No required action remains for `P-001`; its reference
 comparison is optional and freely permitted.
 
 ## Known process risks
