@@ -1,6 +1,8 @@
 # Current state
 
-- Last updated: 2026-07-24 (S018; order-16 block data from the concurrent S017)
+- Last updated: 2026-07-24 (S019 — the first orchestrated parallel
+  session: both `G015` routes run concurrently in audited worker
+  subagents)
 - Problem: `P-002` — Erdős–Gyárfás Conjecture
 
 ## Exact target
@@ -50,23 +52,55 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   "cubic reduction modulo 1-atoms" is vacuous as originally stated and
   is restated with **tight** 1-atoms (exceptional degree exactly 2),
   and `A012` Remark T4.1 is withdrawn as unproved.
+- **New (S019): `L037`–`L042`, both `G015` routes advanced in one
+  orchestrated parallel run.** R2 side (`L037`/`L038`): the
+  **subdivision descent** — the link graph on the degree-\(\ge4\) set of
+  a minimal counterexample is power-free (cycles lift doubled) and, by
+  order-minimality, 2-degenerate — gives \(3|V_3|\ge2n+3\), strictly
+  past Carr's \(4/7\); the 15-vertex certificate S15 (`E017`) shows
+  \(2/3\) is the exact ceiling of the non-power hypotheses, so the
+  constant route to `G015` is **closed**, with the descent as the
+  reusable residue. R1 side (`L039`–`L042`): the closure calculus and
+  the (3,3) **bijection** onto the congruence class \(\mathcal G\)
+  (through-set avoids \(\{2,6,14,\dots\}\); no \(s_{\max}\) window);
+  the **engine + peel** (any counterexample below the minimum atom
+  order \(n_0\) yields a *cubic* counterexample — the repair of the
+  withdrawn T4.1); the five-case analysis at the defect vertex:
+  **the conditional cubic reduction holds modulo excluding case (5b)**
+  (defect non-cut, both neighbours cubic, residue vertex-taut), every
+  tight 1-atom has order \(\ge17\), and the case-(5b) residual object
+  is 2-connected, degree-\(\ge4\)-independent, **non-bipartite** (hand
+  proof at every order), with forced power/Mersenne memberships and
+  chain cancellation. `C004`–`C006` are upgraded to **verified**
+  (line-by-line audit of arXiv:2605.22844v1). The two routes meet: a
+  one-defect subgraph of the link graph is exactly a tight 1-atom.
 
 ## Imported frontier
 
-- `C004`–`C009`, `C012`–`C014`, `C017`, `C024`–`C026` unchanged; the
-  min-degree-3 literature frontier remains Bondy–Vince strength.
+- `C004`–`C006` now carried at **verified** strength (S019 line-by-line
+  audit and internal reconstruction,
+  `references/carr-2026-verification-2026-07-24.md`); `C006` superseded
+  internally by `L038`. `C007`–`C009`, `C012`–`C014`, `C017`,
+  `C024`–`C026` unchanged; the min-degree-3 literature frontier remains
+  Bondy–Vince strength.
 
 ## Program status
 
 `G013` has three live objects.
 
 (a) The **tight 1-atom question** — does a power-free graph exist whose
-unique sub-cubic vertex has degree exactly 2? Rewritten in S018: the
-unrestricted version is conjecture-complete (`L036`) and is retired as a
-target; the tight version is what `A012` T4 consumes, is strictly weaker
-as far as anything proved shows, and is route R1 of `G015`. Empty
-through order 15 (`C027`); no bipartite tight 1-atom through order 22
-(`C034`).
+unique sub-cubic vertex has degree exactly 2? Rewritten in S018 (the
+unrestricted version is conjecture-complete, `L036`) and **structured in
+S019**: every tight 1-atom has order \(\ge17\) (`L041`); a minimum-order
+one with both defect-neighbours cubic corresponds bijectively to the
+congruence class \(\mathcal G\) (`L039`), and under (R) the *only*
+surviving configuration is case (5b) — that closure with a vertex-taut
+residue, now heavily constrained (`L042`: 2-connected, non-bipartite,
+degree-\(\ge4\)-independent, forced through-set arithmetic, chain
+cancellation, band-4 pencil). For `G015` the conditional form suffices
+and only case (5b) remains. Empty through order 15 stream-level
+(`C027`); the \(\mathcal G\) profile at order 16 is the open decisive
+order; no bipartite tight 1-atom through order 22 (`C034`).
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -103,9 +137,13 @@ internally.
 
 ## Open obligations
 
-- `G015` (**new, the proof-side deliverable**): prove the cubic
-  reduction unconditionally, by R1 (no tight 1-atom) or R2 (Carr
-  \(4/7\to1\)).
+- `G015` (**the proof-side deliverable; reduced in S019 to one
+  configuration**): exclude case (5b) — no minimum-order tight 1-atom
+  is the 2-path closure of a vertex-taut \(\mathcal G\)-member — and
+  the cubic reduction follows (`L040`/`L041` supply every other case).
+  The constant-density route is closed (`L038` delimitation); the
+  order-16 \(\mathcal G\) scan and the mod-4 congruence hunt are the
+  live moves.
 - `G013` (core): tight 1-atoms; the block question (band 4 = pencil
   endgame, bands \(\ge5\) open); the odd-prime-gcd channel and the
   missing parity block-extraction.
@@ -151,21 +189,33 @@ No cheap move exists here, and none should be pretended. Two sub-cases:
 
 ### Tier 1 — the named deliverable: the cubic reduction (`G015`)
 
-"0.1 holds iff it holds for cubic graphs." Two independent, non-circular
-routes:
+"0.1 holds iff it holds for cubic graphs." **S019 ran both routes in
+parallel (audited worker subagents) and the target is now a single
+configuration:**
 
-- **R1** — prove no *tight* 1-atom exists (unique sub-cubic vertex, of
-  degree exactly 2); `L029` then gives the reduction. Empty through
-  order 15 (`C027`), and bipartite-empty through 22 (`C034`).
-- **R2** — strengthen the imported density bound `C006` (\(\ge4/7\) of a
-  minimal counterexample is cubic) to 1. Bypasses the atom formalism
-  entirely; ingredients on hand are `C005` and `A012` T4's unconditional
-  branch (every degree-\(\ge4\) vertex of a minimal counterexample has a
-  degree-3 neighbour). Verifying Carr's argument is a prerequisite.
+- **R1, reframed to the conditional form** — "a tight 1-atom yields a
+  cubic counterexample", which is all the reduction needs (`L040`); the
+  unconditional "no tight 1-atom exists" is retired as an R1 target
+  (unreachable by minimality: its reducts are counterexamples, not
+  atoms). By `L041` the conditional form is proved **except in case
+  (5b)**; excluding that case closes `G015`. Live moves against it, in
+  order: (i) the **order-16 \(\mathcal G\)-profile scan** — decisive at
+  one order (a hit with the \(S\)-condition disproves 0.1 outright;
+  empty lifts the atom bound to 18); (ii) a **congruence-type
+  obstruction** against the `L042` residual object — mod-4 first, on
+  the model of the parity proof; (iii) the chain-cancellation tension.
+- **R2, constant route closed** — `C004`–`C006` verified and the bound
+  improved to \(3|V_3|\ge2n+3\) (`L037`/`L038`), but S15 certifies
+  \(2/3\) as the exact ceiling of the non-power hypotheses and no
+  constant \(<1\) delivers the reduction. Surviving extension: the
+  internally-disjoint longer-link descent (`A020` W2-T8(c)). The
+  descent itself is the reusable mechanism, and the routes meet on the
+  link graph (a one-defect subgraph of it is a tight 1-atom).
 
-This is the highest-value *reachable* target in the dossier: a theorem
-about the conjecture rather than about our own gadget formalism, and it
-would make Thread C's searches decisive instead of conditional.
+This remains the highest-value *reachable* target in the dossier: a
+theorem about the conjecture rather than about our own gadget
+formalism, and it would make Thread C's searches decisive instead of
+conditional.
 
 ### Tier 2 — restricted-class theorems worth having on their own
 
@@ -187,7 +237,12 @@ would make Thread C's searches decisive instead of conditional.
 
 Harvest-only. None of these may be a session's primary work.
 
-- Order-23 bipartite hunt (`E015`; order 22 completed during S018 — 178,549 in class, all with a \(C_8\); 23 is splits \((11,12)\), \((10,13)\) and costs a few hours at the order-22 rate of 47 min).
+- Order-23 bipartite hunt (`E015`; order 22 completed during S018 —
+  178,549 in class, all with a \(C_8\)). **Launched in S019 under
+  PyPy 7.3.23 (anchors re-passed first) and still running at the S019
+  close; its results are excluded from every ledger row and the
+  harvest is a named follow-up** (re-run command in `E015/README.md`;
+  the S017 precedent applies).
 - The gcd scan over the existing order-\(\le16\) stream (needs path
   enumeration; the bipartite shortcut does not apply).
 - Order-17+ legs of the pinched catalogue (Thread A/F).
@@ -213,11 +268,16 @@ Harvest-only. None of these may be a session's primary work.
 
 ### Pivot triggers
 
-A pencil-type band-4 taut core at order 17+; a strict block or
+A hit in the order-16 \(\mathcal G\)-profile scan satisfying the
+\(S\)-condition (**immediate disproof** — a tight 1-atom); a
+pencil-type band-4 taut core at order 17+; a strict block or
 \(C_8\)-free equality block (disproof protocol); **any** power-free
-member of the `E015` class at order 23+ (immediate disproof, `L035` T3);
-a `G014` audit overturning an assumed bound; a proof of either `G015`
-route (then Thread C becomes the whole game).
+member of the `E015` class at order 23+ (immediate disproof, `L035`
+T3); a `G014` audit overturning an assumed bound; the mod-4 congruence
+hunt's kill condition firing (a vertex-taut \(C_4\)-free core realizing
+all three forced memberships with no mod-4 structure — then case (5b)
+reduces to search alone); exclusion of case (5b) (then `G015` is proved
+and Thread C becomes the whole game).
 
 ### Process correction (S018)
 
@@ -230,58 +290,71 @@ the session's work.
 
 ## Human-level state
 
-The programme's disproof engine chains copies of a small two-terminal
-"engine" into a ring; the proof side hoped that ruling out every kind of
-engine would reduce the conjecture to 3-regular graphs. S018 audited that
-architecture at the user's prompting — why had sixteen sessions kept
-deferring the "single defect" object? — and found the answer is
-mathematical, not psychological. A "single defect" graph is a power-free
-graph with exactly one vertex of too-low degree. If a counterexample to
-the conjecture exists, you can hang one extra dangling vertex on it and
-you have a single-defect graph; conversely a single-defect graph can be
-assembled into a counterexample. So the two questions are the *same
-question*, and every session that deferred it was, without saying so,
-declining to prove the conjecture that afternoon. The dossier had been
-listing it as a sub-problem with special proof-side value.
+The programme's proof-side prize is one named theorem: **the conjecture
+holds in general if and only if it holds for 3-regular graphs.** S019
+attacked it down both of its routes at once — the first orchestrated
+parallel session, one worker per route, everything audited before being
+believed — and both routes moved.
 
-The repair is small and the payoff is a clearer map. The recorded
-reduction survives if the defect vertex is required to have degree
-exactly two — that stricter version is a genuine, strictly smaller
-question, and it is exactly what the original proof of the reduction
-actually used. With that fixed, the honest proof-side prize of the whole
-programme becomes a single named theorem: **the conjecture holds in
-general if and only if it holds for 3-regular graphs.** That is now a
-target with two independent routes, one internal and one strengthening a
-published density result, and it is the first thing in this dossier that
-would be a theorem *about the conjecture* rather than about our own
-machinery. Everything else was retiered around it: the searches stay
-running but can no longer be a session's main work.
+The published-density route first: a 2026 paper of Carr proves that in
+a smallest possible counterexample, at least 4/7 of the vertices have
+degree exactly 3. We verified that paper line by line (it holds up),
+then pushed the bound: at least two-thirds, plus a little more. The
+push needed a genuinely new trick — the degree-3 vertices wedged
+between two high-degree vertices act like markers on invisible edges,
+and those invisible edges form their own smaller graph which inherits
+the no-power-of-two property with all lengths halved; because the
+original graph was the *smallest* offender, the smaller shadow graph
+must be sparse. But the same session also proved this route can go no
+further: an explicit 15-vertex example meets every hypothesis the
+counting uses at exactly two-thirds density, and no percentage short of
+100% ever delivers the reduction. So that route ends — honourably, with
+a stronger theorem than the literature has and a reusable mechanism.
+
+The internal route is now where the game is. The "single defect" graph
+question (one vertex of degree 2, everything else degree 3 or more, no
+power-of-two cycle) was analysed at its defect vertex, and of the five
+possible local shapes, four are now impossible or lead exactly where we
+want: a smaller offender, which a repaired argument converts into a
+**3-regular** counterexample — which is the reduction succeeding, not
+failing. One shape survives: the defect vertex sits on a triangle-free
+"lens" whose two anchor points are both degree 3, with every vertex on
+some anchor-to-anchor path. That single surviving configuration now
+carries the whole theorem, and it is already known to be at least
+17 vertices, two-connected, never two-colourable, and arithmetically
+squeezed (its path lengths must hit some exact powers of two and miss
+others). Excluding it — by a parity-style argument modulo 4, or by a
+one-order exhaustive search at size 16 that would *either* disprove the
+whole conjecture or push the bound up — is the next move.
 
 ## Resolution outlook
 
-- Estimated chance of eventually settling the exact current statement: 4%
-- Previous estimate: 4% (S016)
-- Reason for no change: S018 changed the map, not the terrain. Removing
-  a conjecture-complete object from the live list and naming the cubic
-  reduction as the real deliverable makes the remaining work honest and
-  better targeted, but it also makes explicit that six sessions of
-  assembly-interface work had a smaller ceiling than recorded. Those two
-  effects roughly cancel. The estimate stays where it is because nothing
-  proved this session moved the conjecture itself, and because the one
-  target that is genuinely reachable — the cubic reduction — is a
-  reduction, not a resolution.
+- Estimated chance of eventually settling the exact current statement: 5%
+- Previous estimate: 4% (S018)
+- Reason for change: the reachable deliverable (`G015`) moved
+  substantially — from two open-ended routes to a single named
+  configuration with real structure on it, plus a disproof-decisive
+  one-order search — and the session produced the dossier's first
+  mechanism (the descent) that converts minimality into structure on an
+  unbounded object. Against that, the density route's closure removes
+  one hoped-for path, and the surviving configuration is exactly the
+  congruence-type core the dossier has no machinery for yet. Net: a
+  small upgrade, driven by target-narrowing rather than by any movement
+  on the conjecture itself (which is why the change is one point and
+  not more).
 
 ## Resume reading
 
 1. `STATEMENT.md`
-2. the **Roadmap** section above, then `A018` (1-atom completeness, the
-   `L029` repair, and why `G015` is the deliverable)
-3. `A017` (the parity structure theorem and the bipartite criterion) and
-   `E015/README.md` (the hunt, the verification tables)
-3. `A016` + `references/external-agent-strategy-memo-2026-07-24.md`
-   (the channel widening this builds on)
-4. `A015` (the pencil package `L033`, the endgame, the cascade data)
-5. `A014` for the block frame; `E013/README.md` for the pinched
-   catalogue
-6. `CLAIMS.md` rows `L031`–`L035`, `C030`–`C034`; `OBLIGATIONS.md`
-   `G013`/`G014`; `sessions/S016-…md`
+2. the **Roadmap** section above, then `A019` (the case analysis, the
+   engine/peel, the residual object — R1's full state) and `A020` (the
+   descent, the density theorem, the sharpness tombstone — R2's)
+3. `references/carr-2026-verification-2026-07-24.md` (what `C004`–`C006`
+   now rest on)
+4. `A018` (1-atom completeness, the `L029` repair, why `G015` is the
+   deliverable)
+5. `CLAIMS.md` rows `L037`–`L042`, `C004`–`C006`; `OBLIGATIONS.md`
+   `G015`/`G013`
+6. `E016/README.md` and `E017/README.md` (the machine legs and their
+   anchors); `E015/README.md` only if harvesting the order-23 leg
+7. `sessions/S019-…md` (the orchestration record and audit trail)

@@ -1,0 +1,22 @@
+A5  fixed anchors: K4, K_{3,3}-e, Petersen, Petersen-e, closure of Petersen-e: OK
+A1  closure identity: 12109 connected graphs, 331115 vertex pairs, all identities hold
+A2  case dichotomy: 67432 tight-1-atom-shaped graphs, orders 5-9
+      cut/both>=4        1
+      cut/deg3-side      0
+      noncut/(3,3)       1596
+      noncut/(3,>=4)     14257
+      noncut/(>=4,>=4)   51578
+A3  saturation construction: 1596 (3,3)/non-cut reducts, 7841 lifts H+az verified
+A4  order  6: stream        4, class      0, power-free 0, 0.0s (C027 stream 4 OK)
+A4  order  7: stream        5, class      0, power-free 0, 0.0s (C027 stream 5 OK)
+A4  order  8: stream       36, class      1, power-free 0, 0.0s (C027 stream 36 OK)
+A4  order  9: stream       84, class      4, power-free 0, 0.0s (C027 stream 84 OK)
+A4  order 10: stream      918, class     39, power-free 0, 0.0s (C027 stream 918 OK)
+A4  order 11: stream     4058, class    262, power-free 0, 0.1s (C027 stream 4058 OK)
+A6  order  8: C4-free two-degree-2 class       1, power-free 0, saturated at one      1, at both      1, 0.0s
+A6  order  9: C4-free two-degree-2 class       2, power-free 0, saturated at one      2, at both      2, 0.0s
+A6  order 10: C4-free two-degree-2 class      22, power-free 0, saturated at one     22, at both     22, 0.0s
+A6  order 11: C4-free two-degree-2 class     125, power-free 0, saturated at one    123, at both    123, 0.1s
+A6  order 12: C4-free two-degree-2 class    1139, power-free 0, saturated at one   1136, at both   1133, 1.6s
+A6  order 13: C4-free two-degree-2 class   10966, power-free 0, saturated at one  10966, at both  10966, 28.6s
+EXIT 0

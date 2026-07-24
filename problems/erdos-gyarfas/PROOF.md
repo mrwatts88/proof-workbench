@@ -191,11 +191,54 @@ Established preliminary reductions, none sufficient for the main claim:
   carrying a \(C_8\) and never fewer than 13 of them; the same run verifies internally that no bipartite
   counterexample and no bipartite 1-atom exists in that range.
 
+- `L037`–`L038`: the subdivision-descent package and the cubic-density
+  theorem (S019, worker W2; audited). In an order-then-size minimal
+  counterexample the degree-2-linked cubic vertices define a **link
+  graph** on the degree-\(\ge4\) set whose cycles lift doubled, so the
+  link graph is power-free and — by order-minimality — 2-degenerate;
+  with the apex lemma and the equality classification this gives
+  \(3|V_3|\ge2n+3\) (so \(|V_{\ge4}|\le(n-3)/3\)), strictly stronger
+  than the published \(4/7\) (`C006`, now superseded internally). The
+  route's ceiling is located exactly: the 15-vertex certificate S15
+  realizes every non-power hypothesis at density exactly \(2/3\)
+  (`E017`), the proved constraints cap at \(2/3+O(1/n)\), and **no
+  density constant \(<1\) can deliver the cubic reduction** — so the
+  constant route to `G015` is closed, and the descent mechanism is the
+  reusable residue.
+- `L039`–`L041`: the tight-1-atom local-structure package (S019, worker
+  W1; audited). The closure calculus (\(j=0,1,2\) closures with exact
+  spectra) gives a **bijection** between minimum-order tight 1-atoms
+  with both defect-neighbours cubic and the class \(\mathcal G\) of
+  power-free two-terminal cores whose through-set avoids
+  \(\{2,6,14,30,\dots\}\) — `L034`'s ring criterion at \(L=1\), offset
+  2, a congruence channel with no \(s_{\max}\) bound. The engine
+  (`A012` T4 run against the minimum atom order \(n_0\)) converts any
+  counterexample of order \(<n_0\) into a **cubic** counterexample, and
+  the peel does the same for any small 1-atom — repairing the withdrawn
+  `A012` Remark T4.1 by making its unclosable branch the goal. The
+  five-case analysis at the defect vertex then kills every case but one:
+  **the conditional cubic reduction holds modulo excluding case (5b)**
+  (defect vertex non-cut, both neighbours cubic, residue vertex-taut),
+  and every tight 1-atom has order \(\ge17\) unconditionally.
+- `L042`: the residual object (case (5b)) is 2-connected, has
+  independent degree-\(\ge4\) vertices, is **non-bipartite** (a hand
+  proof, at every order, of what `C034` verified through 22), carries
+  forced power and Mersenne memberships in its through-set, obeys
+  chain-cancellation constraints at every cut vertex, and at band 4
+  inherits the `L033` pencil dichotomy verbatim. The taut ladder's
+  collapse machinery (`L030`) does **not** transfer to it — the
+  closure channel has no through-set window — so closing case (5b)
+  needs congruence-type tools (the parity proof is the model), not
+  confinement-type ones.
+
 Imported frontier facts, not a candidate:
 
 - `C004`–`C006`: an order-then-size minimal counterexample is
   subgraph-minimal for minimum degree \(3\), its cubic vertices dominate, and
-  at least \(4/7\) of its vertices are cubic;
+  at least \(4/7\) of its vertices are cubic. **All three verified
+  line-by-line against arXiv:2605.22844v1 and internally reconstructed
+  (S019, `references/carr-2026-verification-2026-07-24.md`); `C006` is
+  superseded internally by `L038`.**
 - `C007`: a counterexample contains an induced \(P_{13}\);
 - `C008`: sufficiently large average degree forces a power-of-two cycle.
 - `C009`: finite Hamiltonian cubic graphs exist with arbitrarily large girth;
@@ -236,9 +279,15 @@ lemmas remain in `A001` and `CLAIMS.md`.
   literature, so it is the project's frontier-passing asset.)
 - `G015` (**the programme's proof-side deliverable**): prove the cubic
   reduction unconditionally — 0.1 holds iff it holds for cubic graphs.
-  Route R1: no tight 1-atom exists (then `L029`). Route R2: strengthen
-  the imported \(4/7\) cubic-density bound `C006` on minimal
-  counterexamples to 1, bypassing the atom formalism.
+  After S019 this is reduced to **excluding case (5b)**: showing that no
+  minimum-order tight 1-atom is the 2-path closure of a vertex-taut
+  member of \(\mathcal G\) (`L041`). The density route is closed as a
+  path to this deliverable (`L038`'s delimitation); the surviving moves
+  are the order-16 \(\mathcal G\)-profile scan (decisive at one order:
+  a hit disproves 0.1 outright), a congruence-type obstruction against
+  the residual object (mod-4 first, on the model of `L042`'s parity
+  proof), the chain-cancellation tension, and the disjoint longer-link
+  descent.
 - `G013`: settle the atom question — find an assembly witness (disproof
   by `L025`/`L034` rings) or close the assembly channels by proving
   their necessary conditions. After `L026`–`L036` its live

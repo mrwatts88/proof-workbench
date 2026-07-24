@@ -94,13 +94,38 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   generator build), with a new process rule that every strategy audit
   name the tier its route serves. The bipartite hunt's order-22 leg
   completed empty (178,549 in class).
+  **S019 (the first orchestrated parallel session, per `O011`: two
+  audited Opus workers, one per `G015` route) advanced both routes and
+  narrowed the deliverable to one configuration.** R2 side: Carr's
+  paper verified line-by-line (`C004`–`C006` now at verified strength,
+  the R2 gate discharged), the density bound pushed to
+  \(3|V_3|\ge2n+3\) (`L038`) via the new **subdivision descent**
+  (`L037` — the link graph on the degree-\(\ge4\) set is power-free
+  and 2-degenerate; the dossier's first mechanism converting
+  minimality into structure on an unbounded object), and the constant
+  route **closed with a tombstone**: S15 (15 vertices, `E017`)
+  realizes every non-power hypothesis at density exactly \(2/3\), and
+  no constant \(<1\) delivers the reduction. R1 side: the closure
+  calculus and (3,3) **bijection** onto the congruence class
+  \(\mathcal G\) (`L039`), the **engine + peel** (`L040` — any
+  counterexample below the minimum atom order yields a *cubic* one,
+  repairing the withdrawn `A012` T4.1), and the five-case analysis
+  (`L041`): **the cubic reduction now holds modulo excluding case
+  (5b)** — a minimum-order tight 1-atom closing a vertex-taut
+  \(\mathcal G\)-member — with every tight 1-atom of order \(\ge17\)
+  and the residual object 2-connected, non-bipartite (hand proof,
+  `L042`), and arithmetically squeezed. The routes meet on the link
+  graph. R1 is reframed to its conditional form (all `G015` needs);
+  the unconditional form is retired as a target.
   Portfolio (all threads carried, per standing user instruction): the
-  pencil endgame + band-2 rung (pinched channel); the bipartite hunt
-  at order 22+ and the new gcd-channel theory question; the cubic
-  census at order 30; census mining; bipartite EGC and Carr 4/7 → 1
-  (proof side); 3-connectivity leverage; 1-atom theory; order-17+
-  pinched catalogue legs (the order-16 scan from S015 was harvested
-  concurrently in S017, commit 31db367).
+  case-(5b) endgame (order-16 \(\mathcal G\) scan + mod-4 congruence
+  hunt, now Tier 1); the pencil endgame + band-2 rung (pinched
+  channel); the bipartite hunt at order 23+ (leg running at S019
+  close, harvest = named follow-up) and the gcd-channel theory
+  question; the cubic census at order 30; census mining; bipartite EGC
+  (proof side); the disjoint longer-link descent (R2's surviving
+  extension); 3-connectivity leverage; order-17+ pinched catalogue
+  legs.
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -156,19 +181,19 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, work **Tier 1 of the new roadmap**: `G015`, the cubic
-reduction (0.1 holds iff it holds for cubic graphs). Route R1 - prove
-no *tight* 1-atom exists, or find one (a find disproves 0.1 outright);
-first move is the forced local structure at the degree-2 vertex of a
-minimum-order tight 1-atom, testing whether the `L030`/`L033` collapse
-machinery transfers from the two-terminal to the one-terminal object.
-Route R2 held in reserve - verify Carr's 4/7 density argument
-(`C006`) and attempt 4/7 -> 1, which gives the same theorem
-without the atom formalism. Tier 3 legs (order-23 bipartite, the
-odd-prime-gcd scan, order-17+ pinched, census mining) run as background
-only and may not be selected as a session's primary work. No required
-action remains for `P-001`; its reference comparison is optional and
-freely permitted.
+For `P-002`, work **Tier 1: exclude case (5b)** — the one configuration
+to which S019 reduced the cubic reduction (`L041`). Primary move,
+decisive at one order: the **order-16 \(\mathcal G\)-profile scan**
+(connected, \(C_4\)-free, exactly two degree-2 vertices, others
+\(\ge3\), power-free, through-set avoiding \(\{2,6,14\}\)) — empty
+lifts the tight-1-atom bound to 18; a hit satisfying the
+\(S\)-condition **disproves statement 0.1 outright** (disproof
+protocol). Proof-side companion: the mod-4 congruence hunt against the
+`L042` residual object, modelled on the parity proof. Do **not** grind
+the density constant (closed by `L038`'s delimitation). The `E015`
+order-23 leg is running; harvest it as a follow-up when it finishes.
+No required action remains for `P-001`; its reference comparison is
+optional and freely permitted.
 
 ## Known process risks
 

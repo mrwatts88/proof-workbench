@@ -539,3 +539,52 @@ attempt, experiment, or review record.
   route serves.
 - No proved row was falsified; one was restated and one remark withdrawn.
   `C001` stays `open`.
+
+## 2026-07-24 — S019: orchestrated parallel run on G015 — R1 reduced to one configuration, R2's constant route closed with a sharpness tombstone
+
+- First orchestrated parallel session (`O011` protocol, adopted mid-setup
+  at the user's direction): one orchestrating session holding every
+  ledger, two Opus worker subagents — W1 on route R1 (tight 1-atom local
+  structure, `A019`/`E016`), W2 on route R2 (Carr verification and
+  4/7 → 1, `A020`/`E017`/references note). Both write-sets stayed inside
+  their owned records; both outputs passed the orchestrator's
+  line-by-line audit, with `E016`/`E017` reproduced independently
+  (35/35 and all-checks-pass under CPython 3.14.2 and PyPy 7.3.23).
+- **`C004`–`C006` verified.** All four results of Carr (arXiv:2605.22844v1)
+  checked statement-by-statement and proof-by-proof; correspondence with
+  the recorded rows exact; all three internally reconstructible
+  (`references/carr-2026-verification-2026-07-24.md`). The R2
+  verification prerequisite recorded in `G015` is discharged.
+- **`L037`/`L038` proved (W2, audited).** The subdivision descent: the
+  link graph on the degree-≥4 set of a minimal counterexample is
+  power-free (cycles lift doubled) and 2-degenerate (order-minimality),
+  giving the apex/equality structure package and the density theorem
+  \(3|V_3|\ge2n+3\) — strictly past the published 4/7. Ceiling located
+  exactly: S15 (15 vertices, density exactly 2/3, all non-power
+  hypotheses satisfied, machine-certified) shows the counting cannot
+  beat 2/3, and no constant <1 delivers `G015` — the constant route is
+  retired with a tombstone.
+- **`L039`–`L041` proved (W1, audited).** The closure calculus and the
+  (3,3) bijection onto the congruence class \(\mathcal G\) (ring
+  criterion at L=1, offset 2, no s_max window); the engine and the peel
+  (any counterexample below the minimum atom order yields a cubic one —
+  the repair of the withdrawn `A012` T4.1); the five-case analysis:
+  **the conditional cubic reduction holds modulo excluding case (5b)**,
+  and every tight 1-atom has order ≥ 17.
+- **`L042` proved (W1, audited).** The case-(5b) residual object is
+  2-connected, degree-≥4-independent, **non-bipartite** (hand proof at
+  every order of `C034`'s computational verdict), carries forced power
+  and Mersenne memberships, obeys chain cancellation, and inherits the
+  band-4 pencil dichotomy verbatim. The taut ladder's collapse machinery
+  does not transfer (no through-set window) — R1 is a congruence
+  channel, and the Mersenne-saturation lever was demoted by its own
+  pre-registered kill test (`E016` A6).
+- Routes meet: a one-defect subgraph of the link graph is exactly a
+  tight 1-atom (`A020` W2-T8(d)).
+- Background Tier 3 leg: the `E015` order-23 bipartite scan was launched
+  under PyPy and is still running at close; its results are excluded
+  from every ledger row and the harvest is a named follow-up.
+- Next action: the order-16 \(\mathcal G\)-profile scan (decisive at one
+  order — a hit disproves 0.1, empty lifts the atom bound to 18), then
+  the mod-4 congruence hunt against the residual object.
+- No proved row was falsified. `C001` stays `open`.
