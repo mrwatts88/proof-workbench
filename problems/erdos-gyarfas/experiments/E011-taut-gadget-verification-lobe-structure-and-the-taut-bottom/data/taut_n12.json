@@ -1,0 +1,96 @@
+{
+  "n": 12,
+  "geng_command": "geng -q -c -f -d1 12 16:0",
+  "stream_total": 52331,
+  "examined_two_subcubic_sum3": 1690,
+  "ratio_below_2": 22,
+  "ratio_below_2_and_c8_free": 0,
+  "t3_class_size_S1_or_2in_S23": 19,
+  "t3_taut_violations": [],
+  "nontaut_gadgets": 38,
+  "lobe_components_checked": 38,
+  "lobe_violations": [],
+  "taut_pinched": [
+    {
+      "graph6": "K?AA@aKw@KIW",
+      "terminals": [
+        3,
+        4
+      ],
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ratio": 1.8333333333333333,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "graph6": "K?ABA_goOXSo",
+      "terminals": [
+        3,
+        4
+      ],
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ratio": 1.8333333333333333,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "graph6": "K?`@CPOk?sKS",
+      "terminals": [
+        5,
+        7
+      ],
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ratio": 1.8333333333333333,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "e010_counts_reproduced": true,
+  "python": "3.14.2",
+  "implementation": "CPython"
+}

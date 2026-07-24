@@ -1,0 +1,70 @@
+{
+  "n": 13,
+  "geng_command": "geng -q -c -f -d1 13 18:0",
+  "stream_total": 389734,
+  "examined_two_subcubic_sum3": 16106,
+  "ratio_below_2": 116,
+  "ratio_below_2_and_c8_free": 0,
+  "t3_class_size_S1_or_2in_S23": 114,
+  "t3_taut_violations": [],
+  "nontaut_gadgets": 227,
+  "lobe_components_checked": 227,
+  "lobe_violations": [],
+  "taut_pinched": [
+    {
+      "graph6": "L?AA@BORCSDGH_",
+      "terminals": [
+        3,
+        7
+      ],
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ratio": 1.8333333333333333,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "graph6": "L?AA@_ggUO@oPG",
+      "terminals": [
+        3,
+        6
+      ],
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ratio": 1.8333333333333333,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "e010_counts_reproduced": true,
+  "python": "3.14.2",
+  "implementation": "CPython"
+}

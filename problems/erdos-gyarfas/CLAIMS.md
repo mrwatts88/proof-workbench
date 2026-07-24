@@ -57,6 +57,11 @@ has one independently checkable assertion.
 | C026 | diameter theorem | Every graph of diameter 2 and minimum degree at least 3 contains a cycle of length 4 or 8; hence every counterexample has diameter at least 3. | imported | Carr, arXiv:2508.19302 (2025), abstract strength, preprint not verified; `references/source-audit-2026-07-24-S011.md` | `D001`–`D004` |
 | L025 | assembly reduction | The atom reduction (A011 R1–R5): (a) a **1-atom** (connected, power-free, exactly one vertex of degree \(<3\), of degree 1 or 2, others \(\ge3\)) yields a counterexample of order \(2n\) or \(3n\) by edge-doubling or triangle assembly; (b) a **2-atom** (connected two-terminal, non-terminal degrees \(\ge3\), terminal degrees \(\ge1\) summing \(\ge3\), power-free spectrum, all simple terminal-to-terminal path lengths in a window of ratio \(<2\)) yields counterexamples of unbounded order via rings of \(L\) copies placed inside a dyadic gap; the ring spectrum is exactly \(\mathrm{Spec}(H)\cup\{\sum_i s_i\}\). Contrapositively, if statement 0.1 is true, no power-free graph has exactly one sub-cubic vertex, and every power-free two-terminal graph with the degree condition has \(s_{\max}\ge2\,s_{\min}\) (**spread-doubling**). | proved | `A011` (hand proofs R1–R5); ring builder and spectrum verified against the published Bondy–Vince figure in `E010` anchor A4 | `D001`–`D004`; `C024` for context only (the proofs are self-contained) |
 | C027 | computational observation | The atom search is empty through order 15: among all connected \(C_4\)-free graphs of minimum degree \(\ge1\) with at most two sub-cubic vertices and the implied edge bound (streams of 4; 5; 36; 84; 918; 4,058; 52,331; 389,734; 5,605,161; 61,813,970 at orders 6–15; class sizes up to 3,470,555), not one is \(C_8\)-free — so no 1-atom, no 2-atom, and no power-free member of the class at all exists on \(\le15\) vertices. Calibration: with power-freeness dropped, through-ratio \(<2\) (including perfectly rigid \(S=\{1\}\)) occurs 22 times at order 12 and 116 at order 13, and every occurrence contains a \(C_8\). | tested | `E010` (geng nauty 2.9.3 anchored A1–A5; orders 6–14 CPython 3.14.2, order 15 PyPy 7.3.23 with anchors re-passed) | Coverage argument in `A011`/`E010`: atoms with both terminals of degree \(\ge3\) are excluded through order 18 by `L022`/`C023` |
+| L026 | equivalence lemma | Rung completeness (A012 T1): 2-atoms with \(S=\{1\}\) exist **iff** counterexamples to statement 0.1 exist, and 2-atoms with \(s_{\min}=2\) exist **iff** counterexamples exist — two disjoint copies of a counterexample can be hidden behind a bridge (terminals its endpoints) or behind the cut vertices \(a\) and \(w\) of a path \(a\,w\,b\) scaffold, in parts no terminal-to-terminal path visits. Hence each unrestricted bottom rung of spread-doubling at \(s_{\min}\in\{1,2\}\), and clause (b) of `L025` R5 by itself, is equivalent to statement 0.1. | proved | `A012` T1 (hand proofs); scaffold combinatorics verified in `E011` anchors A2–A3 | `D001`–`D004`; `L025` R3/R4 for the forward directions |
+| L027 | structure lemma | Lobe decomposition (A012 T2): every (D)-gadget is vertex-taut (every vertex on some simple \(a\)–\(b\) path) or contains a **lobe** — a connected subgraph meeting the essential set in exactly one vertex \(c\), with every non-\(c\) vertex keeping all its edges inside the lobe and hence degree \(\ge3\) there, and \(\deg_{\text{lobe}}(c)\ge1\). Consequently every non-taut *power-free* (D)-gadget contains a 1-atom (\(\deg_{\text{lobe}}(c)\le2\)) or a power-free graph of minimum degree \(\ge3\) (\(\deg_{\text{lobe}}(c)\ge3\)). | proved | `A012` T2 (block–cut-tree proof); instance-verified on 265 lobe components in `E011` | `D001`–`D004`; D-A2/D-A4 of `A011`; the decomposition itself is unconditional — only the final clause consumes power-freeness |
+| L028 | taut bottom rungs | (A012 T3) No taut (D)-gadget has \(S=\{1\}\); and no taut (D)-gadget with \(s_{\min}=2\), \(S\subseteq\{2,3\}\), and no 4-cycle exists — \(C_4\)-freeness alone suffices, via the unique common neighbor \(w\), the counting bounds (\(\le1\) \(w\)-edge into each terminal side, \(\le1\) cross-neighbor per vertex), and a forced 4-cycle \(a\,x\,z\,w\). The case \(S=\{3\}\) has \(s_{\min}=3\) and is not covered. Corollaries: every 2-atom with \(s_{\min}\le2\) contains a 1-atom or a power-free minimum-degree-3 graph, and has order \(\ge17\) (\(\ge18\) when \(s_{\min}=2\)). | proved | `A012` T3 (hand proofs); instance check: all 133 rung-class gadgets at orders 12–13 are non-taut (`E011`) | `L027`; `C027` and `L022` for the corollaries |
+| L029 | reduction | Cubic reduction modulo 1-atoms (A012 T4): if no 1-atom exists, every counterexample of minimum order then minimum size is cubic; hence statement 0.1 is true **iff** no cubic counterexample and no 1-atom exist. In a minimum-order 1-atom the sub-cubic vertex has degree 2. | proved | `A012` T4 (hand proof) | `D001`–`D004` |
+| C028 | computational observation | E011 instance verification and survey at orders 12–13 of the connected \(C_4\)-free exactly-two-sub-cubic stream (1,690 and 16,106 gadgets; stream and profile counts reproduce `E010` exactly from an independent implementation): all \(19+114\) gadgets with \(S=\{1\}\) or \(2\in S\subseteq\{2,3\}\) are non-taut (`L028` instance check), and all \(38+227\) inessential components have exactly one essential attachment with internal degrees \(\ge3\) (`L027` instance check). Every taut pinched gadget at these orders — five in total — has \(S=\{6,\dots,11\}\) (ratio \(11/6\)) and contains a \(C_8\); no taut pinched gadget with \(s_{\min}\in\{3,4,5\}\) exists through order 13. | tested | `E011` (17 anchors incl. \(K_{3,3}-e\) tautness and both T1 scaffolds; CPython 3.14.2, geng nauty 2.9.3) | geng anchored as in `E010`; `L027`/`L028` supply the predictions tested |
 
 ## Dependency notes
 
@@ -196,3 +201,37 @@ has one independently checkable assertion.
   The profile arm shows pinched through-spread is geometrically common
   without power-freeness, so the spread-doubling phenomenon is a genuine
   power-freeness effect, not a search-class artifact.
+- `L026` proves and disproves nothing unconditionally: both directions
+  consume hypothetical objects. Its value is methodological and sharp —
+  the unrestricted \(s_{\min}\)-stratification of spread-doubling has no
+  lemma-sized rungs (each is conjecture-complete), so rung lemmas must be
+  taut-relativized — and it upgrades `L025` R5(b) from necessary
+  condition to a statement *equivalent* to 0.1 (R5's "neither implication
+  reverses on its face" is thereby superseded for clause (b); clause (a),
+  the 1-atom question, remains potentially strictly weaker than 0.1).
+- `L027`'s decomposition (taut, or lobe with the stated degrees) holds for
+  every connected (D)-gadget with no power-freeness hypothesis; only its
+  final clause (1-atom or min-degree-3 subgraph) consumes power-freeness.
+  Lobes are induced: lobe \(=H[K\cup\{c\}]\) for a component \(K\) of the
+  inessential vertices.
+- `L028` is the corrected bottom-rung program: with `L027` it routes every
+  2-atom at \(s_{\min}\le2\) through the 1-atom question. Its taut
+  \(s_{\min}=2\) proof needs only \(C_4\)-freeness — the rung dies before
+  \(C_8\) is even mentioned — while \(K_{3,3}-e\) (taut, pinched,
+  \(s_{\min}=3\), spectrum \(\{4,6\}\)) shows the *next* rung is exactly
+  where \(C_4\)-freeness stops sufficing by itself and the power-spectrum
+  fight begins. The order bounds in the corollaries inherit the `C027`
+  and `L022` caveats verbatim.
+- `L029` does not reduce statement 0.1 to cubic graphs unconditionally;
+  the 1-atom question is the exact price. It re-weights the cubic
+  literature (`C013`, `C014`, `C018`: no cubic counterexample below 30,
+  extremal cubic \(\{C_4,C_8\}\)-free graphs start at 24) as
+  conditionally decisive: modulo 1-atoms, those searches bound the whole
+  problem. Together with `L026`–`L028` it concentrates the disproof
+  interface on two objects: 1-atoms and taut 2-atoms with
+  \(s_{\min}\ge3\).
+- `C028` is instance-level verification of proved lemmas plus an exact
+  finite survey; it can refute but not prove `L027`/`L028`, and refuted
+  neither. Its taut-pinched finding (all five at \(s_{\min}=6\), interval
+  through-sets, each with a \(C_8\)) is the concrete shape catalogue for
+  the taut \(s_{\min}=3\) rung and says nothing about larger orders.

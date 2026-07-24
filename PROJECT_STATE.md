@@ -28,20 +28,23 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   The finite frontier stands at `L022` (every counterexample has at least
   **nineteen** vertices; extremal \(\{C_4,C_8\}\)-free window \([19,24]\);
   census capped at order 18). The voltage-lift falsification program is
-  closed as a theorem (`L023`/`L024` collision-wall, reviewed `R001`).
-  S011 scoped the walk-to-cycle interface: no unconditional transfer
-  exists (Bondy–Vince's 1998 ring, imported `C024`, carries the `L024`
-  walk intervals with unbounded-ratio cycle-spectrum gaps), and the
-  conditional form is the **atom question** (`L025`, `G013`): a
-  power-free gadget with one sub-cubic vertex, or with two terminals and
-  path lengths pinched below ratio 2, would disprove the statement by a
-  proved ring/doubling assembly; contrapositively the statement forces
-  **spread-doubling**. Exhaustive search (`E010`/`C027`): no atom — no
-  power-free member of the gadget class at all — through order 15;
-  pinching without power-freeness is common and always carries a
-  \(C_8\). Portfolio: spread-doubling bottom rungs \(s_{\min}\in\{1,2\}\)
-  (primary), order-16 census extension or saturation-constrained
-  interval forcing (alternatives).
+  closed as a theorem (`L023`/`L024` collision-wall, reviewed `R001`);
+  the walk-to-cycle interface is the **atom question** (`L025`, `G013`).
+  S012 corrected its rung program: the unrestricted bottom rungs
+  \(s_{\min}\in\{1,2\}\) are each *equivalent* to the conjecture
+  (`L026` — counterexamples hide behind cut vertices), so the ladder is
+  meaningful only for **taut** gadgets (every vertex on a
+  terminal-to-terminal path). The lobe decomposition (`L027`) confines
+  all hiding to 1-atom-like lobes; the taut rungs \(s_{\min}\le2\) are
+  closed by hand with \(C_4\)-freeness alone (`L028`); and modulo the
+  1-atom question the conjecture reduces to cubic graphs (`L029`).
+  Instance verification and survey (`E011`/`C028`): both lemmas hold on
+  every gadget at orders 12–13, and every taut pinched gadget there has
+  \(s_{\min}=6\) with a \(C_8\) — taut pinched \(s_{\min}\in\{3,4,5\}\)
+  is empty through order 13. Portfolio: the taut \(s_{\min}=3\) rung
+  (primary; \(K_{3,3}-e\) is the shape to beat, and power-freeness
+  beyond \(C_4\) must now carry the argument), minimal 1-atom structure
+  theory (alternative), order-16 census (deferred).
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -90,15 +93,15 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, attack spread-doubling (`L025`/`G013`) at its bottom rungs:
-prove that no power-free pinched gadget exists with
-\(s_{\min}\in\{1,2\}\) — the distance-2 case is sharply structured
-(\(C_4\)-freeness forces a unique common neighbor of the terminals) —
-using the ear/rerouting machinery `L012`–`L013` and the `E010` profile
-samples; or exhibit such a gadget, which disproves statement 0.1 via the
-`L025` ring assembly. Deferred alternative: extend the atom census to
-order 16. No required action remains for `P-001`; its reference
-comparison is optional and freely permitted.
+For `P-002`, attack the taut \(s_{\min}=3\) rung (`L028`'s successor):
+prove that no vertex-taut \(C_4\)-free power-free (D)-gadget with
+\(S\subseteq\{3,4,5\}\) exists — the first rung where power-freeness
+beyond \(C_4\) must carry the argument (\(K_{3,3}-e\) realizes the
+shape and is blocked only by its 4-cycles; `C028` shows the target is
+empty through order 13) — or exhibit one, which disproves statement 0.1
+via the `L025` ring assembly. Alternatives: minimal 1-atom structure
+theory; order-16 census (deferred). No required action remains for
+`P-001`; its reference comparison is optional and freely permitted.
 
 ## Known process risks
 

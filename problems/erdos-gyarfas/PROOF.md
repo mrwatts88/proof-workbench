@@ -74,6 +74,23 @@ Established preliminary reductions, none sufficient for the main claim:
   two-terminal gadgets) — the sharp conditional form of walk-to-cycle
   transfer, since `C024`'s ring shows the unconditional form is false.
   `C027`: no atom exists through order 15 (exhaustive, anchored).
+- `L026`–`L029`: the corrected rung program. `L026` (rung completeness):
+  pinched gadgets at \(s_{\min}\in\{1,2\}\) can hide two counterexample
+  copies behind cut vertices, so each unrestricted bottom rung — and
+  spread-doubling itself — is *equivalent* to the main claim, not a lemma
+  short of it. `L027` (lobe decomposition): every gadget is taut (every
+  vertex on a terminal-to-terminal path) or hangs a lobe at one cut
+  vertex, and power-free lobes are 1-atoms or min-degree-3 power-free
+  graphs. `L028` (taut bottom rungs): no taut gadget has \(S=\{1\}\), and
+  no taut \(C_4\)-free gadget has \(s_{\min}=2\) with
+  \(S\subseteq\{2,3\}\) — so every 2-atom with \(s_{\min}\le2\) routes
+  through the 1-atom question and has order \(\ge17\). `L029` (cubic
+  reduction): modulo the 1-atom question, every minimal counterexample is
+  cubic — statement 0.1 is equivalent to "no cubic counterexample and no
+  1-atom". The disproof interface is thereby concentrated on two objects:
+  1-atoms, and taut 2-atoms with \(s_{\min}\ge3\) (`C028`: through order
+  13 the taut pinched world starts at \(s_{\min}=6\), interval
+  through-sets, always carrying a \(C_8\)).
 
 Imported frontier facts, not a candidate:
 
@@ -120,7 +137,10 @@ lemmas remain in `A001` and `CLAIMS.md`.
   literature, so it is the project's frontier-passing asset.)
 - `G013`: settle the atom question — find an atom (disproof by `L025`
   assembly) or prove the spread-doubling lemma (closing the ring channel
-  and giving the first conditional walk-to-cycle forcing result).
+  and giving the first conditional walk-to-cycle forcing result). After
+  `L026`–`L029` its live sub-questions are the 1-atom question (which
+  also gates the cubic reduction) and taut 2-atoms with
+  \(s_{\min}\ge3\); the next rung is taut \(s_{\min}=3\).
 
 ## Computational dependencies
 

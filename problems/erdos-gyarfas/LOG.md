@@ -261,3 +261,33 @@ attempt, experiment, or review record.
 - No change to `C001`; the main claim stays `open`. Next: attack the
   spread-doubling lemma analytically (2-connected case, ear machinery)
   with the order-16 atom search as the optional computational extension.
+
+## 2026-07-24 — S012
+
+- Audited the inherited bottom-rung plan before executing it; the premise
+  test fired at formulation time and became a theorem (`A012` T1 =
+  `L026`): pinched gadgets at s_min ∈ {1,2} can hide two disjoint copies
+  of any counterexample behind cut vertices (bridge- and lobe-packing),
+  so each unrestricted rung — and spread-doubling in full — is
+  *equivalent* to statement 0.1, not a lemma short of it.
+- Proved the lobe decomposition (`L027`): every (D)-gadget is vertex-taut
+  or hangs a lobe at one cut vertex; power-free lobes are 1-atoms or
+  min-degree-3 power-free graphs. Proved the taut bottom rungs (`L028`):
+  no taut gadget has S = {1}, and no taut C4-free gadget has s_min = 2
+  with S ⊆ {2,3} — C4-freeness alone suffices; hence every 2-atom with
+  s_min ≤ 2 routes through the 1-atom question and has order ≥ 17.
+- Proved the cubic reduction modulo 1-atoms (`L029`): if no 1-atom
+  exists, every minimal counterexample is cubic; statement 0.1 ⟺ no
+  cubic counterexample and no 1-atom. The 1-atom question is now the
+  central open object of the disproof interface.
+- Built and ran `E011` (independent implementation of the whole
+  detection stack; 17 anchors incl. K_{3,3}-e tautness and both `L026`
+  scaffolds): at orders 12–13 all 133 rung-class gadgets are non-taut
+  and all 265 lobe components have single attachments — `L027`/`L028`
+  hold on every instance; stream/profile counts reproduce `E010` exactly
+  (`C028`). Survey: every taut pinched gadget at these orders sits at
+  s_min = 6 with interval through-set {6,…,11} and carries a C8; taut
+  pinched s_min ∈ {3,4,5} is empty through order 13.
+- No change to `C001`; the main claim stays `open`. Next: the taut
+  s_min = 3 rung — prove no taut C4-free power-free gadget with
+  S ⊆ {3,4,5} exists, or exhibit one (disproof via `L025`).
