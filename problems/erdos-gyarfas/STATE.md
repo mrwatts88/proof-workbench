@@ -87,12 +87,18 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
 
 ## Best next action
 
-Analyze all four order-24 extremal graphs as test material for both deep
-routes: compute their full even-cycle spectra and witness structure, check
-them against the consecutive-even-lengths and cycle-pair-forcing
-mechanisms, and from the pattern write the first concrete lemma target for
-the chosen route. Deferred alternative: extend the census to order 18 with
-a compiled filter.
+Open the internal tool-building attempt on the falsification route:
+compute the four order-24 graphs' full even-cycle spectra as calibration,
+then attempt voltage-graph lifts of small base graphs targeting a
+2-connected minimum-degree-3 family whose cycle lengths avoid all powers
+of two up to the order — naming kill conditions before starting (a proved
+obstruction forcing a power-of-two balanced cycle in every admissible
+assignment, or loss of girth/spectrum control on the first concrete
+bases). Proof-side alternative: attempt a controlled-start
+consecutive-even-lengths lemma at minimum degree 3 on girth-extremal
+graphs. Capped support: extend the census to order 18 under PyPy. Per the
+contract's tool-building rule (O009), missing techniques are attempted
+internally, not awaited.
 
 ## Human-level state
 

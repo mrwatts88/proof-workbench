@@ -138,3 +138,18 @@ attempt, experiment, or review record.
   vertices; the 2-connected question is the real one). Capped the census
   layer; PyPy verified available for future Python-bound legs. No proof
   or disproof candidate for the main conjecture exists.
+
+## 2026-07-23 — S008 next action amended to internal tool-building
+
+- Applied the user's no-ceiling directive (contract-encoded as `O009`) to
+  the recorded route: the next action now opens the voltage-graph lift
+  construction attempt on the falsification side — targeting a
+  2-connected minimum-degree-3 family whose cycle lengths avoid all
+  powers of two — with kill conditions named in advance, spectra of the
+  four verified order-24 graphs as calibration, the controlled-start
+  interval lemma as the proof-side alternative, and the order-18 census
+  under PyPy as capped support.
+- Records amendment only: no claims, obligations, proofs, or statuses
+  changed; the resolution estimate is deliberately unchanged (posture is
+  not evidence). No proof or disproof candidate for the main conjecture
+  exists.
