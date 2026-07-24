@@ -1,0 +1,145 @@
+{
+  "n": 13,
+  "two_subcubic_examined": 16106,
+  "ratio_below_2": 116,
+  "ratio_below_2_and_c8_free": 0,
+  "min_ratio": 1.0,
+  "sample_ratio_below_2": [
+    {
+      "graph6": "L??ED@OK?WKKee",
+      "S": [
+        2,
+        3
+      ],
+      "ratio": 1.5,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "graph6": "L??ED@OK?WLKec",
+      "S": [
+        1
+      ],
+      "ratio": 1.0,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "graph6": "L??ED@OBBOEOeW",
+      "S": [
+        1
+      ],
+      "ratio": 1.0,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "graph6": "L??ED@OBBOEKe_",
+      "S": [
+        1
+      ],
+      "ratio": 1.0,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "graph6": "L??ED@OBBCQGMK",
+      "S": [
+        2,
+        3
+      ],
+      "ratio": 1.5,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "graph6": "L??ED@OBBCQKME",
+      "S": [
+        2,
+        3
+      ],
+      "ratio": 1.5,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "graph6": "L??ED@OBBCRAKW",
+      "S": [
+        2,
+        3
+      ],
+      "ratio": 1.5,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "graph6": "L??ED@OB@cLGeG",
+      "S": [
+        1
+      ],
+      "ratio": 1.0,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ]
+}

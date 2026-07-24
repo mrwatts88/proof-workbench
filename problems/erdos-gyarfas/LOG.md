@@ -230,3 +230,34 @@ attempt, experiment, or review record.
   `DECISIONS.md` updated (lift program closed as a theorem).
 - No change to `C001`; the main claim stays `open`. Next: attack the
   walk-to-cycle interface on the proof side.
+
+## 2026-07-24 — S011
+
+- Opened the walk-to-cycle interface per the S010 handoff: literature
+  sweep, transfer formulation, failure-first calibration (`S011`, `A011`,
+  `E010`, `references/source-audit-2026-07-24-S011.md`).
+- Sweep: read Bondy–Vince 1998 in the published PDF (`C024`: two cycles
+  differing by 1 or 2 at up to two sub-cubic vertices; difference exactly 1
+  at 3-connected non-bipartite; their Figure-1 **ring** of K_{3,3}-e
+  copies with spectrum {4,6,9,11,13,15}); imported Gao–Huo–Liu–Ma
+  (`C025`) and Carr's diameter-2 result (`C026`) at abstract strength;
+  confirmed the min-degree-3 frontier is Bondy–Vince strength and that
+  sparse-interval technology needs large average degree.
+- The recorded kill test fired at formulation time: the Bondy–Vince ring
+  carries the `L024` walk intervals with unbounded-ratio spectrum gaps, so
+  no unconditional walk-to-cycle transfer exists. Proved the atom
+  reduction `L025` (A011 R1–R5): a power-free single-sub-cubic-vertex
+  graph (1-atom) or a power-free two-terminal gadget with through-lengths
+  pinched below ratio 2 (2-atom) yields counterexamples by
+  doubling/triangle or ring-in-dyadic-gap assembly; contrapositively 0.1
+  forces **spread-doubling**. Opened `G013`; rescoped `G007`.
+- Built and ran `E010` (anchors incl. exact reproduction of the published
+  Bondy–Vince ring spectrum): the atom class — connected {C4,C8}-free,
+  min degree ≥ 1, at most two sub-cubic vertices — is **empty through
+  order 15** (streams to 61,813,970; classes to 3,470,555; `C027`).
+  Profile arm: through-ratio < 2 (even a single through-length) is common
+  without power-freeness (22 at order 12, 116 at 13) and every occurrence
+  contains a C8 — the pinch is geometric, the block is power-freeness.
+- No change to `C001`; the main claim stays `open`. Next: attack the
+  spread-doubling lemma analytically (2-connected case, ear machinery)
+  with the order-16 atom search as the optional computational extension.

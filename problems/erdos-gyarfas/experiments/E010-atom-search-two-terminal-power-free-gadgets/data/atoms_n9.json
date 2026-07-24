@@ -1,0 +1,10 @@
+{
+  "n": 9,
+  "geng_command": "geng -q -c -f -d1 9 12:0",
+  "geng_stream_total": 84,
+  "at_most_two_subcubic": 4,
+  "power_free_findings": [],
+  "atoms_found": 0,
+  "python": "3.14.2",
+  "implementation": "CPython"
+}

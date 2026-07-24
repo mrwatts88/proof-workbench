@@ -52,6 +52,11 @@ has one independently checkable assertion.
 | L022 | finite exclusion | Every counterexample has at least nineteen vertices; consequently the smallest \(\{C_4,C_8\}\)-free graph of minimum degree at least \(3\) has between \(19\) and \(24\) vertices. | proved | `A007` addendum (S009), computer-assisted via the order-18 census `C023` | `L018`, `C023`, connectivity and collapse lemmas in `A007` |
 | L023 | structure lemma | Arc-digraph structure of a finite connected multigraph \(B\) with \(\delta\ge3\): (i) no nonempty continuation-closed arc set is reverse-free; (ii) the non-backtracking arc digraph is strongly connected; (iii) its period is \(1\) or \(2\), equal to \(2\) exactly when \(B\) is bipartite, with class = tail side; (iv) there is a finite \(R_B\) such that every ordered arc pair is joined by an nb walk of every sufficiently large admissible exact length. (`A010` W2–W5.) | proved | `A010` (hand proofs, incl. inline numerical-semigroup sub-lemma); verified on six bases in `E009`; audited in `R001` (pass) | Finite multigraph conventions; no voltage content |
 | L024 | collision-wall theorem | For every finite connected multigraph base \(B\) with \(\delta(B)\ge3\) (\(m\) edges), every finite group \(\Gamma\), and every voltage assignment: \(B\) has a tailless non-backtracking closed walk with identity net voltage of every length \(L\equiv0\pmod4\) with \(L\ge4\ell^*+4R_B+8\) (every even such \(L\) if \(B\) is non-bipartite), where \(\ell^*=\lfloor\log_2(2m\lvert\Gamma\rvert)\rfloor+2\); in particular of length \(2^k\) for every \(2^k\ge4\log_2\lvert\Gamma\rvert+C_B\) with \(C_B=4\lceil\log_2m\rceil+4R_B+24\). Corollary (scoped per `R001` F3): for each base there is \(\Gamma_0(B)\) such that for all \(\lvert\Gamma\rvert\ge\Gamma_0(B)\) the walk certificate fails at some power \(2^k\le n\lvert\Gamma\rvert\) — per-base effective closure of the certificate program; the small-group/large-base regime is not covered by this corollary. | proved | `A010` W7–W8 (hand proof); construction verified exhaustively in scope by `E009` (9,606,333 assertions) and by the independent R001 probe (108 cases, 3,136 lengths); audited in `R001` (pass, minor findings repaired) | `L023`; the group-agnostic form of `L019` (`A009`) for the certificate reading only |
+| C024 | interval theorem | Bondy–Vince: with the exception of \(K_1\) and \(K_2\), every simple graph having at most two vertices of degree less than three contains two cycles whose lengths differ by one or two; every non-bipartite 3-connected graph has two cycles whose lengths differ by one. Their Figure 1 remark: 2-connectedness does not restore this — an odd ring of \(K_{d,d}-e\) copies gives 2-connected minimum-degree-\(d\) graphs with gapped spectra (for \(d=3\): cycle lengths exactly \(\{4,6,9,11,13,15\}\) at three copies). | imported | Bondy–Vince (1998), Theorems 1–2 and p.12 remark, read in the published PDF; `references/source-audit-2026-07-24-S011.md` | `D001`–`D004` |
+| C025 | mod-k / consecutive-lengths theorems | Gao–Huo–Liu–Ma: every graph of minimum degree \(\ge k+1\) has cycles of all even lengths mod \(k\) (all lengths mod \(k\) if also 2-connected non-bipartite); every \(k\)-connected graph (\(k\ge3\)) has a cycle \(\equiv0\bmod k\); every 3-connected non-bipartite graph of minimum degree \(\ge k+1\) has \(k\) cycles of consecutive lengths. At minimum degree 3 these give only Bondy–Vince-strength conclusions. | imported | Gao–Huo–Liu–Ma, IMRN 2022, arXiv:1904.08126, **abstract strength only**; `references/source-audit-2026-07-24-S011.md` | Their hypotheses as stated |
+| C026 | diameter theorem | Every graph of diameter 2 and minimum degree at least 3 contains a cycle of length 4 or 8; hence every counterexample has diameter at least 3. | imported | Carr, arXiv:2508.19302 (2025), abstract strength, preprint not verified; `references/source-audit-2026-07-24-S011.md` | `D001`–`D004` |
+| L025 | assembly reduction | The atom reduction (A011 R1–R5): (a) a **1-atom** (connected, power-free, exactly one vertex of degree \(<3\), of degree 1 or 2, others \(\ge3\)) yields a counterexample of order \(2n\) or \(3n\) by edge-doubling or triangle assembly; (b) a **2-atom** (connected two-terminal, non-terminal degrees \(\ge3\), terminal degrees \(\ge1\) summing \(\ge3\), power-free spectrum, all simple terminal-to-terminal path lengths in a window of ratio \(<2\)) yields counterexamples of unbounded order via rings of \(L\) copies placed inside a dyadic gap; the ring spectrum is exactly \(\mathrm{Spec}(H)\cup\{\sum_i s_i\}\). Contrapositively, if statement 0.1 is true, no power-free graph has exactly one sub-cubic vertex, and every power-free two-terminal graph with the degree condition has \(s_{\max}\ge2\,s_{\min}\) (**spread-doubling**). | proved | `A011` (hand proofs R1–R5); ring builder and spectrum verified against the published Bondy–Vince figure in `E010` anchor A4 | `D001`–`D004`; `C024` for context only (the proofs are self-contained) |
+| C027 | computational observation | The atom search is empty through order 15: among all connected \(C_4\)-free graphs of minimum degree \(\ge1\) with at most two sub-cubic vertices and the implied edge bound (streams of 4; 5; 36; 84; 918; 4,058; 52,331; 389,734; 5,605,161; 61,813,970 at orders 6–15; class sizes up to 3,470,555), not one is \(C_8\)-free — so no 1-atom, no 2-atom, and no power-free member of the class at all exists on \(\le15\) vertices. Calibration: with power-freeness dropped, through-ratio \(<2\) (including perfectly rigid \(S=\{1\}\)) occurs 22 times at order 12 and 116 at order 13, and every occurrence contains a \(C_8\). | tested | `E010` (geng nauty 2.9.3 anchored A1–A5; orders 6–14 CPython 3.14.2, order 15 PyPy 7.3.23 with anchors re-passed) | Coverage argument in `A011`/`E010`: atoms with both terminals of degree \(\ge3\) are excluded through order 18 by `L022`/`C023` |
 
 ## Dependency notes
 
@@ -164,3 +169,30 @@ has one independently checkable assertion.
   universal claims rest on the `A010` proofs. Unlike `L017`–`L022`,
   `L023`/`L024` carry a delegated adversarial logic audit (`R001`,
   delegated-subagent, pass).
+- `C024`'s two theorems were read in the published PDF and may be cited at
+  full strength; the ring remark is a construction narrated in prose around
+  their Figure 1, and our reconstruction of it (terminal identification,
+  through-lengths \(\{3,5\}\)) is verified against their quoted spectrum by
+  `E010` anchor A4. `C025` and `C026` are **abstract-strength imports**:
+  hypotheses were matched against the arXiv abstracts only, and no proof
+  was inspected; do not lean a proof step on them without a full-text
+  audit. `C026` is a preprint.
+- `L025` bears on the truth of `C001` only conditionally: it converts a
+  hypothetical finite object (an atom) into counterexamples, so its value
+  is (i) a live disproof channel with a finite search interface and (ii)
+  its contrapositive — the spread-doubling necessary condition — as the
+  sharp proof-side target replacing the retired unconditional
+  walk-to-cycle transfer. The retirement itself is witnessed by `C024`'s
+  ring plus `L024`: those graphs carry balanced nb closed walks at every
+  admissible length past a threshold while their cycle spectra have
+  unbounded-ratio gaps.
+- `C027` is a finite exclusion for the `L025` assembly constructions
+  (1-atom doublings need gadget order \(\ge16\), hence produce
+  counterexamples only at order \(\ge32\); rings need gadget order
+  \(\ge16\)); it says nothing about the universal statement. Its class is
+  **not** contained in any earlier census (`E004`/`E006`/`C023` all
+  required minimum degree 3); the coverage of atoms with a degree-\(\ge3\)
+  terminal pair is inherited from `L022`/`C023`, as recorded in the row.
+  The profile arm shows pinched through-spread is geometrically common
+  without power-freeness, so the spread-doubling phenomenon is a genuine
+  power-freeness effect, not a search-class artifact.

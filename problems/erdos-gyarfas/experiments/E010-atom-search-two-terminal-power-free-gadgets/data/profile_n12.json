@@ -1,0 +1,149 @@
+{
+  "n": 12,
+  "two_subcubic_examined": 1690,
+  "ratio_below_2": 22,
+  "ratio_below_2_and_c8_free": 0,
+  "min_ratio": 1.0,
+  "sample_ratio_below_2": [
+    {
+      "graph6": "K?AA@aKw@KIW",
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ratio": 1.8333333333333333,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "graph6": "K?AEB?WgaIEc",
+      "S": [
+        2,
+        3
+      ],
+      "ratio": 1.5,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "graph6": "K?ABA_gk?sHK",
+      "S": [
+        1
+      ],
+      "ratio": 1.0,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "graph6": "K?ABA_gE@bXQ",
+      "S": [
+        1
+      ],
+      "ratio": 1.0,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "graph6": "K?ABA_ge@bHQ",
+      "S": [
+        1
+      ],
+      "ratio": 1.0,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "graph6": "K?ABA_goOXSo",
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ratio": 1.8333333333333333,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "graph6": "K?ABA_gQSsEK",
+      "S": [
+        1
+      ],
+      "ratio": 1.0,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "graph6": "K?ABA_gQP`RO",
+      "S": [
+        1
+      ],
+      "ratio": 1.0,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ]
+}

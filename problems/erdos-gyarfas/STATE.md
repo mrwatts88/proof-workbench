@@ -1,6 +1,6 @@
 # Current state
 
-- Last updated: 2026-07-24
+- Last updated: 2026-07-24 (S011)
 - Problem: `P-002` — Erdős–Gyárfás Conjecture
 
 ## Exact target
@@ -13,123 +13,105 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
 - `L001`–`L006`: block and edge-minimal reductions, longest-path chord
   restriction, hand proofs that every counterexample has \(\ge11\)
   vertices.
-- `L008`–`L013` saturation package with `L014`–`L016` delimitations:
-  bounded single-witness data cannot force.
+- `L008`–`L013` saturation package with `L014`–`L016` delimitations.
 - `L017`/`L018`/`L022` finite exclusions: every counterexample has at
-  least **nineteen** vertices (order-18 census `C023`); the extremal
-  \(\{C_4,C_8\}\)-free window is \([19,24]\). Census capped here.
-- `L019`–`L021` lift machinery (projection certificate, tree gauge,
-  abelian commutator obstruction), with exhaustive certificate verdicts
-  `C020`/`C022` and truth census `C021`.
-- **New (S010): `L023`–`L024`, the collision-wall theorem, reviewed
-  (`R001`, delegated fresh-context logic audit, pass).** For every
-  finite group \(\Gamma\), every connected multigraph base with
-  \(\delta\ge3\), every voltage assignment: identity-voltage tailless
-  non-backtracking closed walks exist at every length
-  \(\equiv0\bmod4\) (every even length if non-bipartite) past
-  \(4\ell^*+4R_B+8\), hence at every \(2^k\ge
-  4\log_2\lvert\Gamma\rvert+C_B\). Proof: seed pair by pigeonhole,
-  branch-and-steer through the strongly connected nb arc digraph
-  (`L023`: strong connectivity, period \(\le2\), exact-length
-  reachability — all internal), four-junction gluing, voltage
-  telescoping in any group. Verified mechanically (`E009`, 9.6M
-  assertions; reviewer's independent probe, 108 further cases).
-
-## Program status
-
-The voltage-lift falsification program is **closed as a theorem**:
-abelian arm by `L021`/`C020`, non-abelian arm by `C022`, and now the
-closing theorem `L024` gives per-base effective certificate death for
-all \(\lvert\Gamma\rvert\ge\Gamma_0(B)\) (`G012` resolved). Caveats
-recorded: closure is per-base (small fixed group on large-\(R_B\) bases
-is untouched by the corollary), and bipartite bases force only
-\(\equiv0\bmod4\) lengths — powers of two unaffected.
+  least **nineteen** vertices; extremal \(\{C_4,C_8\}\)-free window
+  \([19,24]\); census capped at order 18.
+- `L019`–`L021` lift machinery; `L023`–`L024` the collision-wall theorem
+  (reviewed, `R001`): balanced nb closed walks at every admissible
+  length past a per-base threshold, in any finite voltage group — the
+  lift/falsification program is closed as a theorem.
+- **New (S011): `L025`, the atom reduction.** A power-free graph with
+  exactly one sub-cubic vertex (1-atom), or a power-free two-terminal
+  gadget with non-terminal degrees \(\ge3\) and all terminal-to-terminal
+  path lengths within multiplicative ratio \(<2\) (2-atom), yields
+  counterexamples by doubling/triangle or ring-in-dyadic-gap assembly
+  (ring spectrum computed exactly; builder verified against the
+  published Bondy–Vince figure spectrum). Contrapositively, statement
+  0.1 forces **spread-doubling**: power-freeness must push
+  \(s_{\max}\ge2\,s_{\min}\) in every such gadget.
 
 ## Imported frontier
 
-- `C004`–`C009`, `C012`–`C014`, `C017` unchanged (Carr minimality;
-  \(P_{13}\)-free; Liu–Montgomery average degree; Biggs; Royle \(\ge16\)
-  with the "17" overread flagged; Markström cubic \(\ge30\) and the
-  order-24 census; Bensmail 1-connected spectrum confinement).
+- `C004`–`C009`, `C012`–`C014`, `C017` unchanged.
+- **New (S011):** `C024` Bondy–Vince read in the published PDF (two
+  cycles differing by 1 or 2 at \(\le2\) sub-cubic vertices; difference
+  exactly 1 at 3-connected non-bipartite; the Figure-1 **ring** with
+  spectrum \(\{4,6,9,11,13,15\}\) — 2-connected min-degree-3 spectra can
+  gap at unbounded ratio); `C025` Gao–Huo–Liu–Ma and `C026` Carr
+  diameter-2 (abstract strength). The min-degree-3 frontier in the
+  literature is exactly Bondy–Vince strength; interval technology needs
+  higher degree.
+
+## Program status
+
+The walk-to-cycle interface was scoped on arrival: the inherited kill
+test fires **by construction** (`C024`'s ring carries the `L024` walk
+intervals with unbounded-ratio spectrum gaps), so no unconditional
+transfer exists — the conversion must consume power-freeness. Its sharp
+form is the two-sided atom question `G013`: find an atom (disproof) or
+prove spread-doubling (closes the entire ring/assembly channel).
+`C027` (E010, anchored, exhaustive): **no atom — indeed no power-free
+graph with \(\le2\) sub-cubic vertices — exists through order 15**;
+profile data shows the pinch (ratio \(<2\), even a single through-length)
+is geometrically common without power-freeness and every occurrence
+contains a \(C_8\). Assembly counterexamples need gadgets \(\ge16\)
+(doubling: order \(\ge32\)).
 
 ## Open obligations
 
-- `G002`, `G003`, `G007`: the global mechanism. `G007` now holds the
-  project's sharpest quantitative input (`L024`, trivial group):
-  minimum degree \(3\) forces tailless nb closed **walks** at every
-  mod-4 length past a constant threshold, balanceable in any finite
-  quotient at log cost. The open gap is exactly **walk-to-cycle**.
+- `G013` (new core): the atom / spread-doubling question.
+- `G002`, `G003`, `G007`: the global mechanism; `G007` now routes
+  through `G013`'s conditional transfer.
 - `G004`: only the original 1997 Erdős article body remains uninspected.
 
 ## Strategy portfolio
 
-- Primary (new): the walk-to-cycle interface. Before attempting,
-  sweep the cycle-lengths literature at minimum degree 3
-  (Bondy–Vince pairs; Sudakov–Verstraëte and Gao–Huo–Liu–Ma-style
-  even-interval and mod-\(k\) results; Liu–Montgomery methods) and
-  import the strongest verified even-length interval facts; then
-  formulate the transfer lemma against that frontier and search for
-  its counterexamples first (large-girth cubic graphs calibrate how
-  much length transfer must lose).
-- Live alternative: the saturation constraints (`L008`–`L013`) as the
-  extra hypothesis powering the transfer — a minimal counterexample is
-  not an arbitrary min-degree-3 graph, and the interval mechanism only
-  needs to work under those constraints.
-- Support layer: census complete at its cap (order 18 empty; order 19
-  needs a compiled filter and a route-driven reason).
-- Pivot trigger: a literature result already giving consecutive even
-  cycle lengths at minimum degree 3 (import and rebase); or a
-  demonstrated unbounded walk/cycle length separation in 2-connected
-  min-degree-3 graphs (kills bounded transfer; route must switch to
-  walk abundance/counting).
-
-## Best next action
-
-Open the proof-side walk-to-cycle attempt: (1) deliberate literature
-sweep on cycle-length intervals and mod-\(k\) cycle lengths at minimum
-degree 3, importing the strongest primary-source results; (2) formulate
-the walk-to-cycle transfer lemma candidate precisely (what cycle
-lengths must follow from the forced balanced walk intervals of `L024`
-plus 2-connectivity/saturation constraints); (3) failure-first: measure
-the walk-vs-cycle length gap on large-girth cubic graphs and the
-order-24 extremal graphs to find the transfer's true shape or its
-counterexample. Success sharpens `G007` into a concrete forcing lemma;
-the named kill test retires bounded transfer cheaply.
+- Primary: spread-doubling's bottom rungs — prove no power-free pinched
+  gadget exists with \(s_{\min}\in\{1,2\}\) (the distance-2 case is
+  tightly structured: \(C_4\)-freeness gives the terminals a unique
+  common neighbor), with the ear/rerouting machinery `L012`–`L013` and
+  the E010 profile samples as guides. Falsifiable both ways: a proof is
+  the lemma's first rung; an explicit gadget is a disproof.
+- Live alternative: extend the atom census to order 16 (multi-part PyPy,
+  `E006`/S009 pattern, \(\sim\!15\times\) order 15); or attack
+  even-interval forcing under saturation constraints directly.
+- Pivot trigger: an atom found (switch to disproof mode: assemble the
+  ring, verify, open a fresh reproduction audit); or bottom-rung proofs
+  revealing a general mechanism (promote); or a deeper sweep surfacing
+  prior ring/gadget treatments (rebase novelty).
 
 ## Human-level state
 
-The "collision wall" — last session's conjectured explanation for why
-no algebraic construction of a counterexample can ever certify itself
-safe — is now a proved theorem, checked by machine on millions of
-instances and passed by an independent adversarial audit. It says:
-in any robustly connected sparse graph, balanced round trips of every
-suitable length are unavoidable once you pass a small threshold — no
-matter what finite symmetry system labels the edges. That closes the
-construction chapter rigorously and hands the proof side its sharpest
-tool yet: the conjecture's difficulty is now cleanly concentrated in
-one question — when must an unavoidable balanced round trip contain an
-actual simple cycle of controlled length? The next session begins that
-question: first by checking what the published literature already
-knows about forced cycle lengths in minimum-degree-3 graphs, then by
-testing the transfer idea against the graphs most likely to break it.
+The project asked when unavoidable balanced round trips force actual
+cycles. This session's answer: never unconditionally — a 1998
+construction of Bondy and Vince already carries all the round trips with
+huge gaps in its cycle lengths — but the question sharpens into one
+finite object. If a small two-terminal gadget can be simultaneously free
+of power-of-two cycles and "pinched" (all connection paths within a
+factor-2 band), the conjecture is false by an explicit ring assembly we
+proved correct and verified against the 1998 paper's own numbers. If no
+such gadget exists at any size, that impossibility — power-freeness
+forcing path spread to double — is the mechanism a proof needs. The
+exhaustive search says: through 15 vertices, nothing power-free exists in
+the gadget class at all, while pinching alone is easy — the two
+properties genuinely fight, and the conjecture says power-freeness always
+wins. The fight's general outcome is now the project's central question.
 
 ## Resolution outlook
 
 - Estimated chance of eventually settling the exact current statement: 2%
-- Previous estimate: 2%
-- Reason for no change: the session converted a heuristic into a
-  reviewed theorem and closed `G012`, which is real, durable progress —
-  but it is progress on the project's *own tool chapter*, not on the
-  conjecture's hard core, which is now visibly the walk-to-cycle gap
-  (`G002`/`G003`/`G007` all stand). Calibration rule: activity and
-  elegance are not proximity.
+- Previous estimate: 2% (S010)
+- Reason for no change: structural clarity (a finite disproof interface;
+  a sharp necessary condition) is real progress but not proximity — the
+  atom search is empty where it is cheap, and spread-doubling in general
+  has the same global-forcing character as the conjecture itself.
 
 ## Resume reading
 
 1. `STATEMENT.md`
-2. `CLAIMS.md` (`L023`–`L024` new; dependency notes)
-3. `OBLIGATIONS.md` (`G012` resolved; `G007` updated)
-4. `attempts/A010-…md` (the collision-wall proof)
-5. `reviews/R001-…md` (audit verdict and repair log)
-6. `experiments/E009-…/README.md`
-7. `sessions/S010-…md`
+2. `A011` (the atom reduction and its proofs)
+3. `E010/README.md` (search + profile results)
+4. `CLAIMS.md` rows `C024`–`C027`, `L025`; `OBLIGATIONS.md` `G013`
+5. `references/source-audit-2026-07-24-S011.md`
+6. `sessions/S011-…md`

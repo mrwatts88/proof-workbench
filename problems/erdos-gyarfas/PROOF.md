@@ -65,6 +65,15 @@ Established preliminary reductions, none sufficient for the main claim:
   at minimum degree \(3\) — is the quantitative core handed to `G007`;
   the unresolved gap between these forced walks and actual cycles is
   exactly where the main claim stands.
+- `L025`: the atom reduction (assembly lemma on the disproof side, not a
+  reduction of `C001`): a power-free graph with exactly one sub-cubic
+  vertex, or a power-free two-terminal gadget with terminal path lengths
+  pinched below ratio 2, would yield counterexamples by doubling or by
+  rings placed in a dyadic gap. Contrapositively the main claim requires
+  **spread-doubling** (\(s_{\max}\ge2\,s_{\min}\) for power-free
+  two-terminal gadgets) — the sharp conditional form of walk-to-cycle
+  transfer, since `C024`'s ring shows the unconditional form is false.
+  `C027`: no atom exists through order 15 (exhaustive, anchored).
 
 Imported frontier facts, not a candidate:
 
@@ -85,6 +94,14 @@ Imported frontier facts, not a candidate:
   (no \(q\)-power cycles for \(q\ge3\); only-\(C_4\) or only-\(C_8\)
   2-power families), delimiting what bounded cycle spectra can do without
   2-connectivity.
+- `C024`: Bondy–Vince — at most two sub-cubic vertices forces two cycles
+  with lengths differing by one or two; non-bipartite 3-connected forces
+  a difference of exactly one; and their ring of \(K_{3,3}-e\) copies
+  shows 2-connected minimum-degree-3 spectra can have unbounded-ratio
+  gaps.
+- `C025`–`C026`: Gao–Huo–Liu–Ma mod-\(k\)/consecutive-lengths package
+  (nothing beyond `C024` at degree 3) and Carr's diameter-2 confirmation
+  (a counterexample has diameter \(\ge3\)); both abstract-strength.
 
 ## Argument
 
@@ -101,6 +118,9 @@ lemmas remain in `A001` and `CLAIMS.md`.
   witnesses or generate an interval of even cycle lengths. (`G011` is
   resolved: the saturation reduction appears nowhere in the swept
   literature, so it is the project's frontier-passing asset.)
+- `G013`: settle the atom question — find an atom (disproof by `L025`
+  assembly) or prove the spread-doubling lemma (closing the ring channel
+  and giving the first conditional walk-to-cycle forcing result).
 
 ## Computational dependencies
 

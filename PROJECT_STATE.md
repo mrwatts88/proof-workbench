@@ -26,22 +26,22 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   permitted and simply optional.
 - `P-002` — Erdős–Gyárfás Conjecture: active and open at statement version 0.1.
   The finite frontier stands at `L022` (every counterexample has at least
-  **nineteen** vertices; order-18 census empty across 834,711,846 graphs;
-  extremal \(\{C_4,C_8\}\)-free window \([19,24]\); census capped). S010
-  proved the **collision-wall theorem** (`L024`, with the arc-digraph
-  structure package `L023`): for every finite voltage group, every
-  connected minimum-degree-3 base, and every assignment,
-  identity-voltage tailless non-backtracking closed walks exist at every
-  length \(\equiv0\bmod4\) (every even length if non-bipartite) past
-  \(4\log_2\lvert\Gamma\rvert+C_B\). It passed a delegated fresh-context
-  logic audit (`R001`, pass; minor findings repaired) with two
-  independent machine verifications, resolving `G012` and closing the
-  voltage-lift falsification program as a theorem rather than an
-  observation. Portfolio: proof-side walk-to-cycle interface (primary —
-  the theorem's trivial-group reading forces balanced walk intervals,
-  and the conjecture's hard core is now converting forced walks into
-  cycles), saturation-constrained transfer (alternative), census capped
-  and complete.
+  **nineteen** vertices; extremal \(\{C_4,C_8\}\)-free window \([19,24]\);
+  census capped at order 18). The voltage-lift falsification program is
+  closed as a theorem (`L023`/`L024` collision-wall, reviewed `R001`).
+  S011 scoped the walk-to-cycle interface: no unconditional transfer
+  exists (Bondy–Vince's 1998 ring, imported `C024`, carries the `L024`
+  walk intervals with unbounded-ratio cycle-spectrum gaps), and the
+  conditional form is the **atom question** (`L025`, `G013`): a
+  power-free gadget with one sub-cubic vertex, or with two terminals and
+  path lengths pinched below ratio 2, would disprove the statement by a
+  proved ring/doubling assembly; contrapositively the statement forces
+  **spread-doubling**. Exhaustive search (`E010`/`C027`): no atom — no
+  power-free member of the gadget class at all — through order 15;
+  pinching without power-freeness is common and always carries a
+  \(C_8\). Portfolio: spread-doubling bottom rungs \(s_{\min}\in\{1,2\}\)
+  (primary), order-16 census extension or saturation-constrained
+  interval forcing (alternatives).
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -90,16 +90,14 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, open the proof-side walk-to-cycle attempt: (1) a
-deliberate literature sweep on cycle-length intervals and mod-\(k\)
-cycle lengths at minimum degree 3, importing the strongest
-primary-source results; (2) formulate the walk-to-cycle transfer lemma
-candidate — what cycle lengths must follow from the forced balanced
-walk intervals of `L024` plus 2-connectivity/saturation constraints;
-(3) failure-first: measure the walk-vs-cycle length gap on large-girth
-cubic graphs and the order-24 extremal graphs. Kill test: an unbounded
-walk/cycle separation in 2-connected minimum-degree-3 graphs retires
-bounded transfer. No required action remains for `P-001`; its reference
+For `P-002`, attack spread-doubling (`L025`/`G013`) at its bottom rungs:
+prove that no power-free pinched gadget exists with
+\(s_{\min}\in\{1,2\}\) — the distance-2 case is sharply structured
+(\(C_4\)-freeness forces a unique common neighbor of the terminals) —
+using the ear/rerouting machinery `L012`–`L013` and the `E010` profile
+samples; or exhibit such a gadget, which disproves statement 0.1 via the
+`L025` ring assembly. Deferred alternative: extend the atom census to
+order 16. No required action remains for `P-001`; its reference
 comparison is optional and freely permitted.
 
 ## Known process risks
