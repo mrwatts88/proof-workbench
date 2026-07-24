@@ -1,8 +1,8 @@
 # E013 — Full taut-pinched catalogue over all terminal pairs at orders 6–14, closed-ratio core catalogue, and the block dissection
 
-- Date: 2026-07-24 (orders 6–14, S014; order-15 extension in S015; an
-  order-16 closed scan was launched in S015 and its harvest is recorded
-  in the follow-up session's addendum below when present)
+- Date: 2026-07-24 (orders 6–14, S014; order-15 extension in S015;
+  order-16 closed harvest in S017 — see the S017 addendum below;
+  ledger rows `C030`–`C032`, `C035`)
 - Problem: `P-002`
 - Evidence class: exhaustive finite catalogue (strict and closed ratio) plus
   instance verification of the `A014` reduction theory and the \(C_8\)
@@ -281,8 +281,8 @@ Same environment as the S015 extension (PyPy 7.3.23; geng nauty 2.9.3;
   through-paths — 6/6 on each band-4 gadget realization and 10/10 on
   the band-6 block (whose \(C_8\)s avoid the terminals; its four
   disjoint shortest pairs give \(C_{12}\)s, as at bands 5–6 before).
-- Deferred bookkeeping (recorded in `sessions/S017-…md` because the
-  claim ledger was mid-edit by the concurrent S016 session): the
-  ledger row for this harvest, and the catalogue-frontier phrase
-  updates ("through order 15" → "through order 16") in the canonical
-  summaries.
+- Bookkeeping: initially deferred because the claim ledger was
+  mid-edit by the concurrent S016 session (punch list in
+  `sessions/S017-…md`), then applied after that session's close: this
+  harvest is ledger row **`C035`**, and the catalogue-frontier phrases
+  in the canonical summaries now read "through order 16".
