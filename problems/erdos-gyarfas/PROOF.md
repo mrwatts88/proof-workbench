@@ -100,10 +100,26 @@ Established preliminary reductions, none sufficient for the main claim:
   the power spectrum is not yet needed at \(s_{\min}=3\). Corollaries:
   every taut 2-atom has \(s_{\min}\ge4\) and \(s_{\max}\ge6\); every
   2-atom with \(s_{\min}\le3\) routes through the 1-atom question
-  (order \(\ge19\) at \(s_{\min}=3\)). By `C028`'s witnesses the
-  \(C_4\)-only regime provably ends by \(s_{\min}=6\); the
-  \(s_{\min}\in\{4,5\}\) rungs are the open boundary (`C029`: empty
-  through order 14 over all terminal pairs).
+  (order \(\ge19\) at \(s_{\min}=3\)).
+- `L031`–`L032`: the pendant/block reduction of the taut interface.
+  Stripping a degree-1 terminal is a through-path bijection onto a
+  **core** (both terminal degrees \(\ge2\)) with \(S\) shifted by one and
+  spectrum unchanged, and strict pinch upstairs is closed ratio
+  \(s_{\max}\le2s_{\min}\) downstairs; conversely every such core lifts.
+  Chains decompose at cut vertices into taut blocks with Minkowski-sum
+  through-sets and union spectra, and bridge counting extracts from any
+  taut 2-atom a **power-free vertex-taut 2-connected core with
+  \(s_{\max}\le2\,s_{\min}\)** — and conversely any such block yields a
+  2-atom. Taut 2-atoms exist iff such a block exists. Sharpness: two
+  Petersen\(-e\) blocks joined by a bridge form a strict taut core of
+  order 20 (spectrum \(\{5,6,8,9\}\)), so core-level spread-doubling is
+  false and blocks are the right level. The finite catalogue
+  (`C030`/`C031`): through order 14 the strict taut world is exactly six
+  pendant lifts, the block world exactly five 2-connected cores — all at
+  exact equality \(s_{\max}=2s_{\min}\), at bands 4 (Petersen minus an
+  edge), 5, 5, 5, and 6 — each blocked from power-freeness only by
+  \(C_8\), and every \(C_8\) in the catalogue is the symmetric
+  difference of two through-paths.
 
 Imported frontier facts, not a candidate:
 
@@ -151,11 +167,14 @@ lemmas remain in `A001` and `CLAIMS.md`.
 - `G013`: settle the atom question — find an atom (disproof by `L025`
   assembly) or prove the spread-doubling lemma (closing the ring channel
   and giving the first conditional walk-to-cycle forcing result). After
-  `L026`–`L030` its live sub-questions are the 1-atom question (which
-  also gates the cubic reduction) and taut 2-atoms, now with
-  \(s_{\min}\ge4\) and \(s_{\max}\ge6\); the next rung is taut
-  \(s_{\min}=4\), and \(C_4\)-only methods provably stop by
-  \(s_{\min}=6\).
+  `L026`–`L032` its live sub-questions are the 1-atom question (which
+  also gates the cubic reduction) and the **block question**: a
+  power-free vertex-taut 2-connected core with \(s_{\max}\le2s_{\min}\)
+  — equivalent to the existence of taut 2-atoms. The open block rungs
+  are strict blocks at \(s_{\min}\ge4\) (empty through order 14) and
+  equality-block power-forcing, where \(C_4\)-only methods provably
+  stop (five equality blocks exist from band 4 up, each carrying its
+  \(C_8\) by two-path interference).
 
 ## Computational dependencies
 

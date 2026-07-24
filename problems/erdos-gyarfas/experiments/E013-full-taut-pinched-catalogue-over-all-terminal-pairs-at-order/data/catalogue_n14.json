@@ -1,0 +1,44 @@
+{
+  "n": 14,
+  "geng_command": "geng -q -c -f -d1 14 19:0",
+  "stream_total": 5605161,
+  "stream_matches_c027": true,
+  "eligible_graphs_le2_subcubic": 241135,
+  "pair_counts": {
+    "pairs": 1357597,
+    "reject-eccentric": 1075929,
+    "reject-long": 281668,
+    "nontaut": 0,
+    "TAUT": 0
+  },
+  "by_band": {
+    "1": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "2": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "3": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "4": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "5": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "6": {
+      "nontaut": 0,
+      "TAUT": 0
+    }
+  },
+  "taut_hits": [],
+  "seconds": 167.6,
+  "python": "3.14.2",
+  "implementation": "CPython"
+}

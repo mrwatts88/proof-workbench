@@ -1,0 +1,530 @@
+{
+  "n": 11,
+  "mode": "closed",
+  "geng_command": "geng -q -c -f -d1 11 15:0",
+  "stream_total": 4058,
+  "stream_matches_c027": true,
+  "eligible_graphs_le2_subcubic": 256,
+  "pair_counts": {
+    "pairs": 1300,
+    "reject-eccentric": 795,
+    "reject-long": 488,
+    "nontaut": 0,
+    "TAUT": 17
+  },
+  "by_band": {
+    "1": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "2": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "3": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "4": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "5": {
+      "nontaut": 0,
+      "TAUT": 17
+    }
+  },
+  "taut_hits": [
+    {
+      "graph6": "J?BDA_gcrH?",
+      "terminals": [
+        3,
+        4
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?BDAaQMBA?",
+      "terminals": [
+        4,
+        5
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?BDAaQMBE?",
+      "terminals": [
+        4,
+        5
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`@EagFBH?",
+      "terminals": [
+        3,
+        6
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`@EagBbG?",
+      "terminals": [
+        3,
+        6
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`@EagBbH?",
+      "terminals": [
+        3,
+        6
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`@E`gBdG?",
+      "terminals": [
+        3,
+        6
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "ratio": 1.8,
+      "boundary": false,
+      "spectrum": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`@EaKIbG?",
+      "terminals": [
+        3,
+        6
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`@EaKHbO?",
+      "terminals": [
+        3,
+        6
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`@EQcDbE?",
+      "terminals": [
+        3,
+        4
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`@Cr_JAi?",
+      "terminals": [
+        3,
+        6
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`@Cr_P`W?",
+      "terminals": [
+        3,
+        6
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`DAaQMEQ?",
+      "terminals": [
+        2,
+        5
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`D@bGDRK?",
+      "terminals": [
+        3,
+        4
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`D@`cScq?",
+      "terminals": [
+        4,
+        5
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`D@aQXAa?",
+      "terminals": [
+        4,
+        5
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "J?`D@RGT@K?",
+      "terminals": [
+        3,
+        7
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    }
+  ],
+  "seconds": 0.1,
+  "python": "3.14.2",
+  "implementation": "CPython"
+}

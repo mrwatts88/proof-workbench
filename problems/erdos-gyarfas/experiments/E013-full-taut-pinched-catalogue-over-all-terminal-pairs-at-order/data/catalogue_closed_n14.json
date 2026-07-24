@@ -1,0 +1,269 @@
+{
+  "n": 14,
+  "mode": "closed",
+  "geng_command": "geng -q -c -f -d1 14 19:0",
+  "stream_total": 5605161,
+  "stream_matches_c027": true,
+  "eligible_graphs_le2_subcubic": 241135,
+  "pair_counts": {
+    "pairs": 1357597,
+    "reject-eccentric": 830670,
+    "reject-long": 526920,
+    "nontaut": 0,
+    "TAUT": 7
+  },
+  "by_band": {
+    "1": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "2": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "3": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "4": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "5": {
+      "nontaut": 0,
+      "TAUT": 2
+    },
+    "6": {
+      "nontaut": 0,
+      "TAUT": 5
+    }
+  },
+  "taut_hits": [
+    {
+      "graph6": "M??CA?oaf?DGU?DW?",
+      "terminals": [
+        5,
+        6
+      ],
+      "band": 6,
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "M??CB@OBCQDOh?PK?",
+      "terminals": [
+        3,
+        6
+      ],
+      "band": 6,
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "M?AA@?OqBGOWD_KW?",
+      "terminals": [
+        4,
+        8
+      ],
+      "band": 6,
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "M?AA@?ObASDG{?Do?",
+      "terminals": [
+        8,
+        4
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "has_c8": true,
+      "subcubic_terminals": false
+    },
+    {
+      "graph6": "M?AA@AOqAcB_HOIG?",
+      "terminals": [
+        6,
+        7
+      ],
+      "band": 6,
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "M?AA@AOp?kM?IO?w?",
+      "terminals": [
+        4,
+        5
+      ],
+      "band": 6,
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "has_c8": true,
+      "subcubic_terminals": false
+    },
+    {
+      "graph6": "M?AA@ACO`A]?DoAM?",
+      "terminals": [
+        3,
+        4
+      ],
+      "band": 5,
+      "S": [
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    }
+  ],
+  "seconds": 160.4,
+  "python": "3.14.2",
+  "implementation": "CPython"
+}

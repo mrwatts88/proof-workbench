@@ -1,0 +1,64 @@
+{
+  "n": 9,
+  "mode": "closed",
+  "geng_command": "geng -q -c -f -d1 9 12:0",
+  "stream_total": 84,
+  "stream_matches_c027": true,
+  "eligible_graphs_le2_subcubic": 4,
+  "pair_counts": {
+    "pairs": 11,
+    "reject-eccentric": 6,
+    "reject-long": 4,
+    "nontaut": 0,
+    "TAUT": 1
+  },
+  "by_band": {
+    "1": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "2": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "3": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "4": {
+      "nontaut": 0,
+      "TAUT": 1
+    }
+  },
+  "taut_hits": [
+    {
+      "graph6": "HCQ`e`c",
+      "terminals": [
+        4,
+        6
+      ],
+      "band": 4,
+      "S": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "ratio": 2.0,
+      "boundary": true,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    }
+  ],
+  "seconds": 0.0,
+  "python": "3.14.2",
+  "implementation": "CPython"
+}

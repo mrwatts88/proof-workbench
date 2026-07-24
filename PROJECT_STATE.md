@@ -29,27 +29,31 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   **nineteen** vertices; extremal \(\{C_4,C_8\}\)-free window \([19,24]\);
   census capped at order 18). The voltage-lift falsification program is
   closed as a theorem (`L023`/`L024` collision-wall, reviewed `R001`);
-  the walk-to-cycle interface is the **atom question** (`L025`, `G013`).
-  S012 rebased the rung ladder on **taut** gadgets (`L026`–`L029`:
-  unrestricted rungs are conjecture-complete; lobes confine hiding;
-  taut \(s_{\min}\le2\) closed; cubic reduction modulo 1-atoms). S013
-  closed the next rung as a theorem (`L030`): no vertex-taut
-  \(C_4\)-free (D)-gadget has \(S\subseteq\{3,4,5\}\) — the middle
-  layer collapses under the path-length ceiling and the surviving
-  three-matchings skeleton always carries a \(C_4\) or a length-7 path.
-  \(C_4\)-freeness alone carries this rung too, refuting S012's
-  prediction; taut 2-atoms now have \(s_{\min}\ge4\), \(s_{\max}\ge6\),
-  and every 2-atom with \(s_{\min}\le3\) routes through the 1-atom
-  question. Falsification search (`E012`/`C029`): zero targets at
-  orders 6–14 over **all** terminal pairs (first coverage of
-  degree-\(\ge3\) terminals); the endgame dichotomy exact on all 218
-  small structures. Boundary map: \(C_4\)-only provably fails at
-  \(s_{\min}=6\) (`C028`'s five witnesses, each with a \(C_8\)), so the
-  power fight lives in \(s_{\min}\in\{4,5,6\}\). Portfolio: the taut
-  \(s_{\min}=4\) rung via the collapse mechanism (primary; depth-2
-  middles are the new case), \(C_8\)-forcing at the \(s_{\min}=6\)
-  witnesses (alternative), 1-atom structure theory, order-16 census
-  (deferred).
+  the walk-to-cycle interface is the **atom question** (`L025`, `G013`),
+  taut-relativized by S012 (`L026`–`L029`) and closed \(C_4\)-only
+  through \(s_{\min}=3\) by S013 (`L030`). **S014 collapsed the taut
+  half onto blocks (`L031`/`L032`):** stripping a degree-1 terminal is a
+  reversible through-path bijection onto a **core** at closed ratio
+  \(s_{\max}\le2s_{\min}\), chains decompose at cut vertices, and
+  bridge counting extracts — taut 2-atoms exist **iff** a power-free
+  vertex-taut 2-connected core with \(s_{\max}\le2\,s_{\min}\) exists
+  (the block question). The exact catalogue through order 14 (`E013`,
+  `C030`/`C031`): six strict taut pinched gadgets (the five `C028`
+  witnesses plus a new band-5 one at order 11), all pendant lifts of
+  four 2-connected blocks; five blocks total including D14 (order 14,
+  band 6); **every block at exact equality \(s_{\max}=2s_{\min}\)**, the
+  band-4 block being Petersen minus an edge; no strict block through
+  14; each block barred from power-freeness only by \(C_8\), and every
+  \(C_8\) in the catalogue is a two-through-path symmetric difference.
+  Sharpness: two Petersen\(-e\) blocks + a bridge form a strict taut
+  core of order 20, so blocks (not cores) are the right level. Record
+  repair: the "\(s_{\min}\in\{4,5\}\) empty through 14" summary now
+  rests on `C030` (`C029` covered \(S\subseteq\{3,4,5\}\) only).
+  Portfolio: the band-4 block rungs (primary — strict impossibility
+  \(S\subseteq\{4..7\}\), equality \(C_8\)-forcing
+  \(S\subseteq\{4..8\}\Rightarrow C_8\), via the disjoint-4-path
+  interference mechanism), the order-15 closed catalogue as search leg,
+  1-atom structure theory, order-16 census (deferred).
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -98,18 +102,21 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, attack the taut \(s_{\min}=4\) rung (`L030`'s successor):
-prove that no vertex-taut \(C_4\)-free (D)-gadget with
-\(S\subseteq\{4,5,6,7\}\) exists — extending the `L030` middle-layer
-collapse to depth-2 middles, the genuinely new configuration — or find
-a \(C_4\)-free taut pinched \(s_{\min}\in\{4,5\}\) gadget at orders
-14–16 (`C029`: empty through 14 over all terminal pairs; \(C_4\)-only
-closure provably fails at \(s_{\min}=6\)). A found gadget branches on
-power-freeness: power-free disproves statement 0.1 via `L025`;
-otherwise it marks where the \(C_8\) fight begins. Alternatives:
-\(C_8\)-forcing at the \(s_{\min}=6\) witnesses; 1-atom structure
-theory; order-16 census (deferred). No required action remains for
-`P-001`; its reference comparison is optional and freely permitted.
+For `P-002`, attack the band-4 block rungs in the `L032` frame:
+(i) prove no vertex-taut \(C_4\)-free 2-connected core (non-terminal
+degrees \(\ge3\), terminal degrees \(\ge2\)) has
+\(S\subseteq\{4,5,6,7\}\) (strict; empty through order 14 by `C031`);
+(ii) prove every such core with \(S\subseteq\{4,\dots,8\}\) contains a
+\(C_8\) (the first genuinely power-specific rung; Petersen\(-e\) is the
+guide, and the candidate mechanism is two-path interference: an
+internally disjoint pair of 4-paths closes into a \(C_8\) outright).
+Search leg: extend the closed catalogue to order 15 under PyPy — a
+strict block kills (i); a \(C_8\)-free equality block kills (ii) and
+enters the disproof protocol (\(C_{16}\) check, pendant lift, ring);
+it also tests D14's predicted unique order-15 strict witness.
+Alternatives: 1-atom structure theory; the band-5 equality analogue;
+order-16 census (deferred). No required action remains for `P-001`;
+its reference comparison is optional and freely permitted.
 
 ## Known process risks
 

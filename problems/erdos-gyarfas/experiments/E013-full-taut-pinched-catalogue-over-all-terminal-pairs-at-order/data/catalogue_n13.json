@@ -1,0 +1,103 @@
+{
+  "n": 13,
+  "geng_command": "geng -q -c -f -d1 13 18:0",
+  "stream_total": 389734,
+  "stream_matches_c027": true,
+  "eligible_graphs_le2_subcubic": 20432,
+  "pair_counts": {
+    "pairs": 101216,
+    "reject-eccentric": 78055,
+    "reject-long": 23159,
+    "nontaut": 0,
+    "TAUT": 2
+  },
+  "by_band": {
+    "1": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "2": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "3": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "4": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "5": {
+      "nontaut": 0,
+      "TAUT": 0
+    },
+    "6": {
+      "nontaut": 0,
+      "TAUT": 2
+    }
+  },
+  "taut_hits": [
+    {
+      "graph6": "L?AA@BORCSDGH_",
+      "terminals": [
+        3,
+        7
+      ],
+      "band": 6,
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ratio": 1.8333333333333333,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    },
+    {
+      "graph6": "L?AA@_ggUO@oPG",
+      "terminals": [
+        3,
+        6
+      ],
+      "band": 6,
+      "S": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ratio": 1.8333333333333333,
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "has_c8": true,
+      "subcubic_terminals": true
+    }
+  ],
+  "seconds": 10.3,
+  "python": "3.14.2",
+  "implementation": "CPython"
+}

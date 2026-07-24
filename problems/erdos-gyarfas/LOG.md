@@ -321,3 +321,40 @@ attempt, experiment, or review record.
   s_min = 4 rung — extend the middle-layer collapse to depth-2 middles
   (S ⊆ {4,...,7}), or find a C4-free taut pinched s_min ∈ {4,5} gadget
   at orders 14–16.
+
+## 2026-07-24 — S014
+
+- Strategy audit weighed the inherited taut s_min = 4 rung against the
+  user-suggested dissection of the five band-6 witnesses. Two resume-time
+  findings decided it: `C029` covers S ⊆ {3,4,5} only, so the inherited
+  rung's search half ("empty through 14") was an overstatement needing
+  repair; and all five witnesses have identical through-sets AND cycle
+  spectra — one family, not five accidents.
+- Built `E013`: the first all-band taut-pinched catalogue over every
+  admissible terminal pair, orders 6–14, in strict (ratio < 2) and closed
+  (ratio ≤ 2) modes; 88 anchors incl. nauty labelg cross-validation of the
+  new isomorphism engine and the bridge-composite check.
+- Strict catalogue: exactly six taut pinched pairs at orders ≤ 14 (none at
+  14): the five `C028` witnesses plus a NEW band-5 witness at order 11 —
+  the pendant lift of Petersen minus an edge (S = {5,6,8,9}, spectrum
+  {5,6,8,9}). The strict s_min = 4 rung target is genuinely empty through
+  order 14 (`C030`).
+- Dissection: every witness has exactly one cut vertex and terminal
+  degrees (1,2) — a pendant edge on a 2-connected core at through-ratio
+  exactly 2. Proved the pendant reduction/lift bijection (`L031`) and the
+  chain/block extraction theorem (`L032`): taut 2-atoms exist iff a
+  power-free vertex-taut 2-connected core with s_max ≤ 2 s_min exists.
+  Naive core-level spread-doubling is FALSE: two Petersen−e blocks joined
+  by a bridge give a strict taut core of order 20 (machine-verified);
+  blocks are the right level.
+- Closed catalogue (`C031`): five 2-connected blocks through order 14 —
+  Petersen−e (band 4), A11/B11 (band 5), C12 (band 5), D14 (band 6, order
+  14, found this session) — ALL at exact equality s_max = 2 s_min, none
+  strict; the six strict witnesses are exactly their distinct pendant
+  lifts (bijection machine-verified). Every C8 in every block and witness
+  is the symmetric difference of two through-paths (23/23); at band 4 two
+  internally disjoint 4-paths force C8 directly (realized in Petersen−e).
+- `G013` refined: (a) 1-atoms; (b') the block question. No change to
+  `C001`; the main claim stays `open`. Next: the band-4 block rungs —
+  strict impossibility (S ⊆ {4,...,7}) and equality C8-forcing
+  (S ⊆ {4,...,8} ⇒ C8) — with the order-15 closed catalogue as search leg.

@@ -1,0 +1,403 @@
+{
+  "distinct_core_count": 4,
+  "cores": [
+    {
+      "index": 0,
+      "order": 11,
+      "terminals": [
+        7,
+        3
+      ],
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "witnesses": [
+        "K?AA@aKw@KIW",
+        "K?`@CPOk?sKS"
+      ],
+      "adjacency_rows": [
+        400,
+        1312,
+        832,
+        1088,
+        641,
+        1538,
+        1036,
+        17,
+        7,
+        52,
+        106
+      ]
+    },
+    {
+      "index": 1,
+      "order": 11,
+      "terminals": [
+        6,
+        3
+      ],
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "witnesses": [
+        "K?ABA_goOXSo"
+      ],
+      "adjacency_rows": [
+        1296,
+        352,
+        1184,
+        640,
+        1537,
+        1030,
+        258,
+        524,
+        67,
+        152,
+        53
+      ]
+    },
+    {
+      "index": 2,
+      "order": 12,
+      "terminals": [
+        7,
+        6
+      ],
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "witnesses": [
+        "L?AA@BORCSDGH_",
+        "L?AA@_ggUO@oPG"
+      ],
+      "adjacency_rows": [
+        656,
+        416,
+        3136,
+        1792,
+        2305,
+        2562,
+        1028,
+        3,
+        26,
+        41,
+        76,
+        52
+      ]
+    },
+    {
+      "index": 3,
+      "order": 10,
+      "terminals": [
+        6,
+        5
+      ],
+      "S": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "spectrum": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "witnesses": [
+        "J?`@E`gBdG?"
+      ],
+      "adjacency_rows": [
+        584,
+        208,
+        672,
+        385,
+        770,
+        260,
+        3,
+        14,
+        56,
+        21
+      ]
+    }
+  ],
+  "petersen_minus_e_core_indices": [
+    3
+  ],
+  "lift_report": [
+    {
+      "core_index": 0,
+      "order": 11,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "terminal_swap_automorphism": false,
+      "lifts": [
+        {
+          "attach_terminal": "x",
+          "band": 6,
+          "matches_witnesses": [
+            0
+          ]
+        },
+        {
+          "attach_terminal": "y",
+          "band": 6,
+          "matches_witnesses": [
+            2
+          ]
+        }
+      ],
+      "witness_count": 2
+    },
+    {
+      "core_index": 1,
+      "order": 11,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "terminal_swap_automorphism": true,
+      "lifts": [
+        {
+          "attach_terminal": "x",
+          "band": 6,
+          "matches_witnesses": [
+            1
+          ]
+        },
+        {
+          "attach_terminal": "y",
+          "band": 6,
+          "matches_witnesses": [
+            1
+          ]
+        }
+      ],
+      "witness_count": 1
+    },
+    {
+      "core_index": 2,
+      "order": 12,
+      "S": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "spectrum": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "terminal_swap_automorphism": false,
+      "lifts": [
+        {
+          "attach_terminal": "x",
+          "band": 6,
+          "matches_witnesses": [
+            3
+          ]
+        },
+        {
+          "attach_terminal": "y",
+          "band": 6,
+          "matches_witnesses": [
+            4
+          ]
+        }
+      ],
+      "witness_count": 2
+    },
+    {
+      "core_index": 3,
+      "order": 10,
+      "S": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "spectrum": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "terminal_swap_automorphism": true,
+      "lifts": [
+        {
+          "attach_terminal": "x",
+          "band": 5,
+          "matches_witnesses": [
+            5
+          ]
+        },
+        {
+          "attach_terminal": "y",
+          "band": 5,
+          "matches_witnesses": [
+            5
+          ]
+        }
+      ],
+      "witness_count": 1
+    }
+  ],
+  "single_deletion_relations": [],
+  "c8_census": [
+    {
+      "core_index": 0,
+      "c8_count": 3,
+      "c8_as_path_symdiff": 3,
+      "symdiff_combos": {
+        "6+6-2*2": 7,
+        "5+5-2*1": 1,
+        "5+9-2*3": 4,
+        "7+7-2*3": 6,
+        "8+8-2*4": 6,
+        "9+9-2*5": 9,
+        "10+10-2*6": 1,
+        "6+10-2*4": 6,
+        "5+7-2*2": 4,
+        "7+9-2*4": 6,
+        "8+10-2*5": 6,
+        "6+8-2*3": 4
+      },
+      "shortest_path_count": 4,
+      "disjoint_shortest_pairs": 2
+    },
+    {
+      "core_index": 1,
+      "c8_count": 3,
+      "c8_as_path_symdiff": 3,
+      "symdiff_combos": {
+        "8+10-2*5": 4,
+        "7+9-2*4": 20,
+        "6+8-2*3": 12,
+        "5+7-2*2": 6,
+        "8+8-2*4": 6,
+        "6+10-2*4": 2,
+        "6+6-2*2": 2
+      },
+      "shortest_path_count": 2,
+      "disjoint_shortest_pairs": 1
+    },
+    {
+      "core_index": 2,
+      "c8_count": 5,
+      "c8_as_path_symdiff": 5,
+      "symdiff_combos": {
+        "5+9-2*3": 16,
+        "6+10-2*4": 16,
+        "7+7-2*3": 2,
+        "6+6-2*2": 4,
+        "8+8-2*4": 12,
+        "9+9-2*5": 34,
+        "10+10-2*6": 22,
+        "7+9-2*4": 8,
+        "6+8-2*3": 8,
+        "5+5-2*1": 2
+      },
+      "shortest_path_count": 4,
+      "disjoint_shortest_pairs": 2
+    },
+    {
+      "core_index": 3,
+      "c8_count": 7,
+      "c8_as_path_symdiff": 7,
+      "symdiff_combos": {
+        "5+5-2*1": 6,
+        "4+8-2*2": 24,
+        "7+7-2*3": 28,
+        "8+8-2*4": 30,
+        "4+4-2*0": 2
+      },
+      "shortest_path_count": 4,
+      "disjoint_shortest_pairs": 2
+    }
+  ],
+  "python": "3.14.2",
+  "implementation": "CPython"
+}
