@@ -148,7 +148,10 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 - Two agents may work one dossier concurrently only under the record
   partition of `AGENTS.md` (Parallel sessions): owned records parallelize,
   shared ledgers are written one session at a time, record IDs are allocated
-  in advance, and a sibling session is never a reviewer.
+  in advance, and a sibling session is never a reviewer. Where the harness
+  supports delegation, parallel legs run as worker subagents of a single
+  orchestrating session that holds the ledgers throughout; two interactive
+  sessions are the fallback, not the default.
 - Computational work must be reproducible and its logical scope must be stated.
 
 ## Next action

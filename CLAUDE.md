@@ -40,6 +40,25 @@ speculative input: compare it with the canonical record, stress-test it, and kee
 responsibility for the selected strategy in the primary session. Never count an
 explorer memo as an adversarial review or as support for a claim.
 
+## Parallel legs are orchestrated here
+
+Claude Code always supports delegation, so `process/concurrency.md`'s
+orchestrated mode is the default in this harness and the two-interactive-session
+fallback applies only when the human deliberately runs the second session. To
+run parallel legs, the session launches one `general-purpose` worker subagent
+per leg with the Agent tool, passing each worker its allocated `--id` block,
+the records to read first, its file ownership, and the ledger prohibition
+verbatim. The orchestrating session keeps the only `S###` record, audits worker
+output before integrating it, and performs the single canonical checkpoint.
+Workers need no worktree; their write sets are disjoint by construction.
+
+Set each worker's model explicitly in the Agent call. The standing floor in
+this repository is Opus: route-leg workers run on `model: "opus"` at a
+minimum, and on `model: "fable"` when the leg warrants the stronger tier —
+never below Opus. Record each worker's model in the session record. The
+equivalent floor for a GPT-based harness is GPT-5.6 Soul; see
+`process/harness.md`.
+
 ## Compaction does not create a fresh context
 
 Claude Code summarizes the conversation when it grows long. A compacted session

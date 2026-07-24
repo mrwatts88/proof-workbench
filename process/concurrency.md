@@ -1,8 +1,9 @@
 # Parallel sessions on one dossier
 
 Two agents may work the same problem at the same time. This document says when
-that is allowed, how the work is partitioned, and how the shared records are
-written without one session silently overwriting the other.
+that is allowed, which of the two modes applies, how the work is partitioned,
+and how the shared records are written without one agent silently overwriting
+the other.
 
 The rules here are operational detail for the `AGENTS.md` section *Parallel
 sessions*; that section is the contract, this file is how to satisfy it.
@@ -26,6 +27,64 @@ merge.
 
 Everything below follows from that one asymmetry.
 
+## Two modes
+
+**Orchestrated mode — the default wherever the harness supports delegation.**
+One session orchestrates; each parallel leg runs in its own worker subagent.
+There is one session record, one ledger holder, and one canonical checkpoint,
+and there is no merge problem, because only the orchestrator ever writes a
+shared file. Claude Code always supports this (the Agent tool), so in that
+harness two interactive sessions are never the default.
+
+**Two interactive sessions — the fallback.** Two full harness sessions work
+the dossier under the partition rules below. Legitimate only when delegation
+is genuinely unavailable, or when a human deliberately runs the second session
+(the `S016`/`S017` precedent). This mode has real merge and staleness hazards;
+the sections from *Record ID allocation* onward exist to manage them.
+
+The admission rules (next section) and the machine-resource rules apply to
+both modes.
+
+## Orchestrated mode
+
+The orchestrating session:
+
+- performs the resume protocol and strategy audit, and creates its own `S###`
+  record — the only session record of the run;
+- allocates each worker a disjoint block of owned-record IDs and passes them
+  explicitly (`proofctl.py add ... --id A019`), recording the assignment in
+  its session record before launch;
+- holds every shared ledger for the whole run — workers never edit
+  `STATEMENT.md`, `problem.json`, `STATE.md`, `CLAIMS.md`, `OBLIGATIONS.md`,
+  `PROOF.md`, `DECISIONS.md`, `LOG.md`, `PROJECT_STATE.md`, or the generated
+  index and dashboard, and never run `set-status`, `index`, or any git write;
+- gives each worker one mechanistically distinct leg with an explicit scope:
+  the records to read first, the files it owns, the epistemic rules that bind
+  it (unverified imports stay flagged; a counterexample or proof candidate
+  stops the worker, which reports rather than self-promotes);
+- audits each worker's output before integrating anything — a worker report is
+  working input at the strength of its recorded support, not a citable record,
+  and two agreeing workers are not corroboration;
+- performs the single canonical checkpoint at close, integrating only what
+  survived its audit.
+
+Workers write only their assigned owned records (`attempts/`, `experiments/`,
+and `references/` source-audit files), directly in the orchestrator's working
+tree: worktree isolation is unnecessary because the write sets are disjoint by
+construction. A worker is never a fresh reviewer — the mandatory adversarial
+audits still go to the dedicated reviewer with no discovery context — and the
+orchestrator, not a worker, runs any review transition.
+
+If a worker dies or is cut short, its partial owned records stay on disk. The
+orchestrator records the state in its session record and either relaunches
+with the same IDs or names the leg as follow-up. An unfinished worker's
+results may not be claimed — the same rule as any background job.
+
+The orchestrator chooses each worker's model at launch as an explicit
+capability decision and records it (with the harness's mechanism, e.g. an
+Agent-tool `model` parameter) when the choice materially affects how much
+weight its output can carry.
+
 ## When parallel work is allowed
 
 Both conditions must hold.
@@ -37,13 +96,13 @@ Both conditions must hold.
    citable; if session B needs session A's lemma, B waits for A's commit or
    proves it independently.
 
-Do **not** run parallel sessions when:
+Do **not** run parallel legs, in either mode, when:
 
 - both would restate or promote the same claim row (they will collide in the
   one place merging cannot be mechanical);
-- one session's route is a premise of the other's;
+- one leg's route is a premise of the other's;
 - the work is a required adversarial review — see *Independence* below;
-- the second session exists only to add throughput to a single proof attempt.
+- the second leg exists only to add throughput to a single proof attempt.
   Proof work is bottlenecked on insight, not on hands; two agents reading the
   same records reach the same impasse twice.
 
@@ -51,6 +110,11 @@ The productive pairings are *mechanistically distinct routes to the same
 target*, or *one proof route plus one tooling/verification task*.
 
 ## Record ID allocation
+
+This and everything below it concerns the **two-interactive-session fallback**,
+except where a rule is restated for both modes. In orchestrated mode the
+orchestrator already satisfies these sections by construction: it allocates the
+IDs, holds the ledgers, and is the only committer.
 
 `proofctl.py add` assigns the next free number by scanning the tree it can see.
 Two sessions therefore receive the **same** ID, and the collision only surfaces
@@ -164,14 +228,24 @@ run them at all.
 
 ## Checklist
 
-Launching session:
+Orchestrated mode:
+
+- [ ] confirm the legs are mechanistically distinct and dependency-free
+- [ ] allocate disjoint owned-record ID blocks and record them, with each
+      worker's scope and model choice, in the session record before launch
+- [ ] give every worker its file ownership and the ledger prohibition verbatim
+- [ ] audit each worker's output before integrating it
+- [ ] perform the single canonical checkpoint; claim nothing from an
+      unfinished worker
+
+Two-session fallback — launching session:
 
 - [ ] confirm the two routes are mechanistically distinct and dependency-free
 - [ ] allocate disjoint record IDs and write them into the launch record
 - [ ] create a worktree per agent, or declare the shared-tree sequencing
 - [ ] state which agent holds the ledgers first
 
-Each parallel session:
+Two-session fallback — each parallel session:
 
 - [ ] declare the sibling, the allocated IDs, and the ledger hold in the
       Starting checkpoint

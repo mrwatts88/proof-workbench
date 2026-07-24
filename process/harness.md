@@ -92,20 +92,29 @@ review-independence requirement.
 
 ## Parallel sessions
 
-`AGENTS.md` (Parallel sessions) and `process/concurrency.md` define the
-partition; what differs per harness is only how isolation is obtained.
+`AGENTS.md` (Parallel sessions) and `process/concurrency.md` define the two
+modes and the partition; what differs per harness is which mode is available
+and how isolation is obtained.
 
-| Harness | Isolation mechanism |
-|---|---|
-| Claude Code | A git worktree per agent (`git worktree add`), or subagents launched with worktree isolation; both give each agent its own checkout and a real merge boundary |
-| Codex | A git worktree per session, created outside the repository's tooling |
+| Harness | Default parallel mode | Isolation mechanism |
+|---|---|---|
+| Claude Code | Orchestrated: one session launches one worker subagent per leg with the Agent tool, choosing each worker's model explicitly | None needed — workers write disjoint owned records in the orchestrator's tree |
+| Claude Code (fallback) | Two interactive sessions, only when a human deliberately runs the second | A git worktree per session (`git worktree add`) |
+| Codex | Orchestrated when collaboration subagents are exposed; otherwise two sessions | A git worktree per session, created outside the repository's tooling |
 
-A single shared working tree is permissible only with strictly sequenced ledger
-writes and a declared holder, because there is then no version-control boundary
-between the agents: the second writer simply overwrites the first.
+Worker model floors (user directive, 2026-07-24): route-leg workers run on the
+harness's Opus-class tier at a minimum — in Claude Code `model: "opus"`,
+escalating to `model: "fable"` when the leg warrants it, never below Opus; in
+a GPT-based harness the equivalent worker floor is GPT-5.6 Soul. The
+orchestrator records each worker's model in its session record.
 
-Neither harness's parallelism affects review independence. Two concurrent
-sessions are siblings, not reviewers, however the isolation was obtained.
+In the two-session fallback, a single shared working tree is permissible only
+with strictly sequenced ledger writes and a declared holder, because there is
+then no version-control boundary between the agents: the second writer simply
+overwrites the first.
+
+Neither harness's parallelism affects review independence. Concurrent workers
+and sessions are siblings, not reviewers, however the isolation was obtained.
 
 ## Permissions and sandboxing
 

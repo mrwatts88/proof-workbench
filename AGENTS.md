@@ -225,6 +225,18 @@ one session, from **shared ledgers** (`STATEMENT.md`, `problem.json`,
 `LOG.md`, `PROJECT_STATE.md`, and the generated index and dashboard). Owned
 records parallelize; ledgers do not.
 
+When the harness supports delegation, parallel legs run as **worker subagents
+of a single orchestrating session**, not as two interactive sessions. The
+orchestrator allocates each worker a disjoint block of owned-record IDs, holds
+every shared ledger for the whole run, audits the workers' output before
+integrating any of it, and performs the one canonical checkpoint. A worker is
+not a session: it writes only its assigned owned records — never a ledger,
+never a status change, never a commit — it leaves no `S###` record, and its
+report is working input to the orchestrator, not a citable record or
+corroborating evidence. Two interactive sessions under the partition below are
+the fallback, legitimate only when delegation is genuinely unavailable or when
+a human deliberately runs the second session.
+
 - Parallel work requires disjoint owned records and no dependency on the
   sibling's uncommitted results. A sibling's in-progress reasoning is not
   citable.
@@ -242,7 +254,7 @@ records parallelize; ledgers do not.
 - An unfinished background job's results may not be claimed. Exclude the leg
   from every ledger row and name the harvest as follow-up.
 
-See `process/concurrency.md` for isolation (worktrees), conflict handling,
+See `process/concurrency.md` for the two modes, isolation, conflict handling,
 cross-session declarations, and the machine-resource rules.
 
 ## Required end-of-session checkpoint
