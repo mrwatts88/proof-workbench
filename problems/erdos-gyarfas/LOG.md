@@ -501,3 +501,41 @@ attempt, experiment, or review record.
   sessions/S017 for the deferred ledger row and frontier-phrase
   updates ("through order 15" → "16"). This LOG entry itself was
   appended unstaged to ride with the S016 close commit.
+
+## 2026-07-24 — S018: the 1-atom question is conjecture-complete; roadmap retiered
+
+- **Audit trigger.** The user asked why sixteen sessions of strategy
+  audits kept deferring the 1-atom question while every record described
+  it as the only sub-question with direct proof-side yield.
+- **`L036` proved (`A018` T1).** A 1-atom under D-A4 exists **iff** a
+  counterexample exists: attach one pendant vertex to a connected
+  counterexample — a pendant lies on no cycle, so the spectrum is
+  unchanged and the pendant is the unique sub-cubic vertex. The
+  unrestricted 1-atom question is therefore conjecture-complete, the
+  one-terminal analogue of `L026`'s rung completeness.
+- **`L029` repaired (`A018` T2).** As recorded ("if no 1-atom exists,
+  every minimal counterexample is cubic") the implication is true but
+  vacuous. `A012` T4's proof only ever produces an exceptional vertex of
+  degree **2**, so the reduction is restated with *tight* 1-atoms, where
+  it is not vacuous: 0.1 holds iff no cubic counterexample and no tight
+  1-atom exist. `A012` Remark T4.1 ("minimum-order 1-atoms are tight") is
+  **withdrawn as unproved** — its argument fails exactly when the
+  pendant-reduct is a cubic counterexample. `A016` M6's ceiling statement
+  was circular and is corrected.
+- **`G015` opened.** The cubic reduction, unconditionally, as the
+  programme's named proof-side deliverable. Route R1: no tight 1-atom.
+  Route R2: strengthen the imported \(4/7\) cubic-density bound `C006` to
+  1, bypassing the atom formalism. Neither passes through a
+  conjecture-complete object.
+- **Roadmap retiered in `STATE.md`.** Tier 0 the conjecture itself
+  (forcing mechanism, or a cubic counterexample at order 30); Tier 1
+  `G015`; Tier 2 restricted-class theorems (bipartite EGC; the
+  path-spectrum gcd theorem); Tier 3 cheap legs that run but are never
+  selected as primary (order-22 bipartite, the gcd scan, order-17+
+  pinched, census mining); Tier 4 leverage infrastructure (the dedicated
+  generator, which unlocks both cubic 30 and bipartite 31). All threads
+  stay live per the standing instruction; the pencil endgame is demoted,
+  not dropped. New process rule: each strategy audit names the tier its
+  route serves.
+- No proved row was falsified; one was restated and one remark withdrawn.
+  `C001` stays `open`.

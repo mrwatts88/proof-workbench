@@ -73,12 +73,27 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   power-free member at any order \(\le21\)** (22 with a pendant) —
   six orders past the general wall — every member blocked by a
   \(C_8\), never fewer than 13 of them; by-products at the same
-  orders: no bipartite 1-atom and no bipartite counterexample
+  orders: no bipartite tight 1-atom and no bipartite counterexample
   (verifying internally the range `G014` item 2 was to supply, which
   is now de-gated). Not covered: `L034` channel (ii), the
   odd-prime-gcd channel (\(\Theta(3,3,3)\) is vertex-taut and
   non-bipartite with \(S=\{3\}\)) — now the only congruence channel
-  with no structure theory.
+  with no structure theory. **S018 audited the architecture
+  itself (`L036`)**: a counterexample plus one pendant vertex is a
+  1-atom, so the unrestricted 1-atom question is *conjecture-complete*
+  - it was never a sub-question, which is why sixteen audits deferred
+  it. `L029`'s "cubic reduction modulo 1-atoms" was therefore vacuous
+  and is restated with **tight** 1-atoms (exceptional degree exactly
+  2), where it holds; `A012` Remark T4.1 is withdrawn as unproved and
+  `A016` M6's ceiling is corrected (it was circular). `G015` opened:
+  the **cubic reduction** as the programme's named proof-side
+  deliverable, with two non-circular routes (no tight 1-atom; or Carr
+  4/7 -> 1). The portfolio is retiered around it in `STATE.md` (Tier 0
+  the conjecture, Tier 1 `G015`, Tier 2 restricted-class theorems,
+  Tier 3 cheap legs that run but are never selected, Tier 4 the
+  generator build), with a new process rule that every strategy audit
+  name the tier its route serves. The bipartite hunt's order-22 leg
+  completed empty (178,549 in class).
   Portfolio (all threads carried, per standing user instruction): the
   pencil endgame + band-2 rung (pinched channel); the bipartite hunt
   at order 22+ and the new gcd-channel theory question; the cubic
@@ -134,19 +149,19 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, finish the **order-22 leg of the `E015` bipartite hunt**
-(launched in S016, left unfinished on a loaded machine, so order 22 is
-excluded from `C034`): any power-free member is an immediate disproof
-by `L035` T3, an empty run extends the parity/mod-4 exclusion by one
-order. Then open **Thread B3**, the one congruence channel `L035` does
-not reach: does condition (D) forbid \(\gcd(S)\) from having an odd
-prime factor? \(\Theta(3,3,3)\) shows the degree condition, not
-parity, must do the work, and the `L035` fan argument suggests a
-mod-\(p\) analogue to try. The **pencil endgame** stays co-primary on
-the pinched channel, and every other thread in `STATE.md`'s portfolio
-stays live per the standing instruction. No required action remains
-for `P-001`; its reference comparison is optional and freely
-permitted.
+For `P-002`, work **Tier 1 of the new roadmap**: `G015`, the cubic
+reduction (0.1 holds iff it holds for cubic graphs). Route R1 - prove
+no *tight* 1-atom exists, or find one (a find disproves 0.1 outright);
+first move is the forced local structure at the degree-2 vertex of a
+minimum-order tight 1-atom, testing whether the `L030`/`L033` collapse
+machinery transfers from the two-terminal to the one-terminal object.
+Route R2 held in reserve - verify Carr's 4/7 density argument
+(`C006`) and attempt 4/7 -> 1, which gives the same theorem
+without the atom formalism. Tier 3 legs (order-23 bipartite, the
+odd-prime-gcd scan, order-17+ pinched, census mining) run as background
+only and may not be selected as a session's primary work. No required
+action remains for `P-001`; its reference comparison is optional and
+freely permitted.
 
 ## Known process risks
 

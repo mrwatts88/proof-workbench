@@ -1,6 +1,6 @@
 # E015 — Exhaustive bipartite power-free gadget hunt past the general order-15 wall
 
-- Date: 2026-07-24 (S016)
+- Date: 2026-07-24 (S016; order-22 leg completed and folded in during S018)
 - Problem: `P-002`
 - Evidence class: exhaustive finite search over a proved-complete class
   (`A017` T3/T4/T5), plus implementation and generator cross-validation
@@ -77,7 +77,7 @@ brute-force enumerator (below).
 ```sh
 python3 bipscan.py anchors        # 20,082 checks
 python3 bipscan.py crosscheck 14  # genbg class == geng (E010 stream) class
-python3 bipscan.py run 12 13 14 15 16 17 18 19 20 21
+python3 bipscan.py run 12 13 14 15 16 17 18 19 20 21 22
 python3 verify_parity.py all      # A017 T0/T1/T2 exhaustively, small orders
 python3 verify_parity.py class    # T3's two-terminal reading on the class
 ```
@@ -85,11 +85,11 @@ python3 verify_parity.py class    # T3's two-terminal reading on the class
 Outputs land in `data/scan_n{n}.json` (full per-graph records when the class
 has at most 5,000 members, otherwise histograms plus the minimum-\(C_8\)
 exemplars). Runtimes (CPython, on a loaded machine): \(\le3\)s per order
-through 19, 38s at 20, 146s at 21.
+through 19, 38s at 20, 146s at 21, 2,798s at 22.
 
 ## Results
 
-**No power-free member exists at any scanned order.** Every single graph in the
+**No power-free member exists at any scanned order (12–22).** Every single graph in the
 class contains an 8-cycle — the C8-free count is zero at every order, so the
 \(C_{16}\) test never even becomes decisive.
 
@@ -105,13 +105,13 @@ class contains an 8-cycle — the C8-free count is zero at every order, so the
 | 19 | 197 | 9,086 | \(\{8,16\}\) | 26 | 172 / 22 / 3 |
 | 20 | 2,715 | 456,735 | \(\{8,16\}\) | 18 | 2,333 / 332 / 50 |
 | 21 | 10,865 | 1,637,741 | \(\{8,16\}\) | 24 | 9,588 / 1,208 / 69 |
+| 22 | 178,549 | 55,451,237 | \(\{8,16\}\) | 14 | 155,205 / 21,579 / 1,765 |
 
-An order-22 run was launched in this session and was still inside its
-\((10,12)\) split at session close (the machine was carrying an unrelated VM at
-700% CPU plus another agent's order-16 job, so genbg was getting well under one
-core). **Order 22 is deliberately excluded from `C034`**; re-running
-`run 22` is the follow-up leg. Its admissible splits are \((9,13)\),
-\((10,12)\), \((11,11)\).
+Order 22 was launched in S016 and completed during S018 (2,798s; splits
+\((9,13)\): 1 member, \((10,12)\): 15,849, \((11,11)\): 162,699). The next
+leg is order 23 — splits \((11,12)\) and \((10,13)\) — which at the order-22
+rate is a few hours; past that genbg stops being the right instrument and the
+dedicated \(\{C_4,C_8\}\)-free generator is the tool-building move.
 
 ("profiles" counts members by their sub-cubic degree multiset: `2,2` = a
 two-terminal gadget, `2` = a bipartite 1-atom candidate, `none` = minimum degree
@@ -122,9 +122,12 @@ Three sub-results follow from the same run, at the orders covered:
 1. **Parity channel.** No power-free bipartite two-terminal gadget exists, so
    `L034`'s channels (i) and (iii) are empty here — and by `A017` T4 that is the
    whole of those channels, not a sub-case.
-2. **Bipartite 1-atoms.** The `2` column is the bipartite instance of `G013`
-   sub-question (a): no bipartite 1-atom exists at these orders (33 candidate
-   shapes at orders 17–19, all containing a \(C_8\)).
+2. **Bipartite tight 1-atoms.** The `2` column is the bipartite instance of
+   `G013` sub-question (a) as rewritten in S018: since the stream has minimum
+   degree 2, these are *tight* 1-atoms (exceptional vertex of degree exactly 2),
+   which `L036` identifies as the surviving object — the unrestricted 1-atom
+   question is conjecture-complete. None exists at these orders (33 candidate
+   shapes at orders 17–19, 21,579 at order 22, all containing a \(C_8\)).
 3. **Bipartite EGC.** The `none` column is the bipartite instance of statement
    0.1 itself: no bipartite counterexample exists at these orders. This is
    verified internally, so the corresponding unverified external import

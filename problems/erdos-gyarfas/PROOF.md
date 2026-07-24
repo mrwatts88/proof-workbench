@@ -87,12 +87,17 @@ Established preliminary reductions, none sufficient for the main claim:
   no taut \(C_4\)-free gadget has \(s_{\min}=2\) with
   \(S\subseteq\{2,3\}\) — so every 2-atom with \(s_{\min}\le2\) routes
   through the 1-atom question and has order \(\ge17\). `L029` (cubic
-  reduction): modulo the 1-atom question, every minimal counterexample is
-  cubic — statement 0.1 is equivalent to "no cubic counterexample and no
-  1-atom". The disproof interface is thereby concentrated on two objects:
-  1-atoms, and taut 2-atoms with \(s_{\min}\ge3\) (`C028`: through order
-  13 the taut pinched world starts at \(s_{\min}=6\), interval
-  through-sets, always carrying a \(C_8\)).
+  reduction, **restated**): modulo the *tight* 1-atom question — a
+  power-free graph whose unique sub-cubic vertex has degree exactly 2 —
+  every minimal counterexample is cubic, so 0.1 is equivalent to "no cubic
+  counterexample and no tight 1-atom". The tightness is not cosmetic: by
+  `L036` the unrestricted 1-atom question is *conjecture-complete* (a
+  counterexample plus one pendant vertex is a 1-atom), so the reduction as
+  originally recorded was vacuous. The disproof interface is thereby
+  concentrated on two objects: tight 1-atoms, and taut 2-atoms with
+  \(s_{\min}\ge3\) (`C028`: through order 13 the taut pinched world
+  starts at \(s_{\min}=6\), interval through-sets, always carrying a
+  \(C_8\)).
 - `L030`: the taut \(s_{\min}=3\) rung. No vertex-taut \(C_4\)-free
   (D)-gadget has \(S\subseteq\{3,4,5\}\): tautness confines every middle
   vertex to distance one from a terminal neighborhood, forbidden
@@ -229,12 +234,17 @@ lemmas remain in `A001` and `CLAIMS.md`.
   witnesses or generate an interval of even cycle lengths. (`G011` is
   resolved: the saturation reduction appears nowhere in the swept
   literature, so it is the project's frontier-passing asset.)
+- `G015` (**the programme's proof-side deliverable**): prove the cubic
+  reduction unconditionally — 0.1 holds iff it holds for cubic graphs.
+  Route R1: no tight 1-atom exists (then `L029`). Route R2: strengthen
+  the imported \(4/7\) cubic-density bound `C006` on minimal
+  counterexamples to 1, bypassing the atom formalism.
 - `G013`: settle the atom question — find an assembly witness (disproof
   by `L025`/`L034` rings) or close the assembly channels by proving
-  their necessary conditions. After `L026`–`L034` its live
-  sub-questions are: (a) the 1-atom question (which also gates the
-  cubic reduction, and is the only sub-question with direct proof-side
-  yield — the program ceiling); (b′) the **block question** for the
+  their necessary conditions. After `L026`–`L036` its live
+  sub-questions are: (a) the **tight** 1-atom question (exceptional
+  vertex of degree exactly 2 — the unrestricted version is
+  conjecture-complete by `L036` and is retired as a target); (b′) the **block question** for the
   pinched channel: a power-free vertex-taut 2-connected core with
   \(s_{\max}\le2s_{\min}\) — equivalent to taut 2-atoms as defined.
   Open pinched rungs: strict blocks at \(s_{\min}\ge4\) (empty through
