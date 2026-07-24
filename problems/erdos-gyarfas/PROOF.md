@@ -158,6 +158,29 @@ Established preliminary reductions, none sufficient for the main claim:
   reduction theory. Program ceiling made explicit (A016 M6): closing
   every assembly channel plus the 1-atom question yields the cubic
   reduction, not the main claim itself.
+- `L035`: the parity structure theorem and the bipartite assembly
+  criterion. For a vertex-taut two-terminal graph, "all through-path
+  lengths have the same parity" is **equivalent** to bipartiteness
+  (proof: cut vertices of a taut gadget separate the terminals, so the
+  blocks form a chain with Minkowski-sum through-sets; inside a
+  2-connected block an odd cycle plus a 2-fan from an apex produces two
+  arcs of opposite parity, hence through-paths of both parities).
+  Consequently **any** connected bipartite power-free graph with at most
+  two sub-cubic vertices disproves the main claim — by the 1-atom
+  doubling, outright, or by a 3-ring of the graph or of its pendant
+  lift/reduction — with no path enumeration, no tautness test and no
+  external import; and bipartite generation is an exhaustive search
+  instrument for `L034`'s parity and mod-4 channels, modulo the standing
+  1-atom relativization. This supplies the reduction theory those
+  channels lacked (the pendant shift toggles the two bipartite
+  sub-cases rather than destroying the structure) and corrects `A016`
+  M3's "instance, not equivalence" reading. It does **not** extend to
+  the odd-prime-gcd channel: \(\Theta(3,3,3)\) is vertex-taut,
+  non-bipartite, with \(S=\{3\}\). Finite status (`C034`, `E015`): the
+  bipartite class is empty of power-free members through order 22
+  (23 with a pendant), every member carrying a \(C_8\) and never fewer
+  than 13 of them; the same run verifies internally that no bipartite
+  counterexample and no bipartite 1-atom exists in that range.
 
 Imported frontier facts, not a candidate:
 
@@ -215,12 +238,14 @@ lemmas remain in `A001` and `CLAIMS.md`.
   case is exactly the **pencil endgame** (fan and unique-path
   impossibility), with the band-2 closed rung
   (\(S\subseteq\{2,3,4\}\), \(4\in S\)) the last \(C_4\)-only gap
-  below it. (c) the **congruence channels** (`L034`): power-free
-  (D)-gadgets with all-odd \(S\) (bipartite instance: terminals in
-  opposite parts), odd-prime gcd, or \(S\subseteq2+4\mathbb{Z}\) —
-  empty through order 15 but never shape-scanned, with no reduction
-  theory yet; the bipartite instance doubles as a proof-side target
-  ("bipartite EGC").
+  below it. (c) the **congruence channels** (`L034`), now split by
+  `L035`: the all-odd and mod-4 channels **are** the bipartite class,
+  searched exhaustively and empty through order 21 (`C034`), so what
+  survives in (c) is the odd-prime-gcd channel — not bipartite-forced,
+  no structure theorem, no reduction, no dedicated search — together
+  with the missing parity analogue of `L032`'s 2-connected block
+  extraction. The bipartite instance also remains a proof-side target
+  ("bipartite EGC"), now with an internally verified base range.
 
 ## Computational dependencies
 

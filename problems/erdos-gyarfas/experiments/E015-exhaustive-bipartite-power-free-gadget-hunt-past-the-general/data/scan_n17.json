@@ -1,0 +1,273 @@
+{
+  "n": 17,
+  "min_edges": 25,
+  "generator": "genbg -q -c -Z1 -d2 p q 25:0",
+  "splits": [
+    {
+      "p": 2,
+      "q": 15,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 3,
+      "q": 14,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 4,
+      "q": 13,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 5,
+      "q": 12,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 6,
+      "q": 11,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 7,
+      "q": 10,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 8,
+      "q": 9,
+      "generated": 63,
+      "in_class": 8
+    }
+  ],
+  "totals": {
+    "generated": 63,
+    "in_class": 8,
+    "power_free": 0
+  },
+  "power_length_histogram": {
+    "8,16": 8
+  },
+  "c8_count_histogram": {
+    "29": 1,
+    "27": 1,
+    "37": 1,
+    "28": 3,
+    "39": 1,
+    "42": 1
+  },
+  "subcubic_profile_histogram": {
+    "2,2": 7,
+    "2": 1
+  },
+  "min_c8_count": 27,
+  "min_c8_exemplars": [
+    {
+      "graph6": "P????B?gB_H_OoI_Og?k?EO?",
+      "n": 17,
+      "edges": 25,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 27,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    }
+  ],
+  "all_records": [
+    {
+      "graph6": "P????B?gB_H_E_aOOo?i?Go?",
+      "n": 17,
+      "edges": 25,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 29,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "P????B?gB_H_OoI_Og?k?EO?",
+      "n": 17,
+      "edges": 25,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 27,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "P????B?gB_H_OoI_Cg?k?eO?",
+      "n": 17,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 37,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "P????B?gAoE_I_cOOo?Y?Oo?",
+      "n": 17,
+      "edges": 25,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 28,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "P????B?KCWL?g_cOGg?U?D_?",
+      "n": 17,
+      "edges": 25,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 28,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "P????B?KCWL?g_cOCg?U?T_?",
+      "n": 17,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 39,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "P????B?KCWL?_oP_IG?s?HO?",
+      "n": 17,
+      "edges": 25,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 28,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "P????B?kCWOWY?S_CoAI?EO?",
+      "n": 17,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 42
+    }
+  ],
+  "c8_free": [],
+  "hits": [],
+  "seconds": 0.1,
+  "interpreter": "CPython 3.14.2"
+}

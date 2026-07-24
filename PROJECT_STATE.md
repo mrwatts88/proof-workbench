@@ -59,13 +59,29 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   glosses are retracted (no proved row false); the program ceiling is
   explicit (assembly closure + 1-atoms = cubic reduction, not 0.1);
   `G014` opened for the memo's unverified literature/census leads.
+  **S016 proved `L035`, the parity structure theorem**: for a
+  vertex-taut two-terminal graph, parity-constancy of the through-set
+  is *equivalent* to bipartiteness, so (a) any connected bipartite
+  power-free graph with \(\le2\) sub-cubic vertices disproves 0.1 with
+  no path enumeration and no external import, and (b) bipartite
+  generation is exhaustive for `L034` channels (i) and (iii) modulo
+  1-atoms. `E015`/`C034` then searched that class exhaustively: **no
+  power-free member at any order \(\le21\)** (22 with a pendant) —
+  six orders past the general wall — every member blocked by a
+  \(C_8\), never fewer than 13 of them; by-products at the same
+  orders: no bipartite 1-atom and no bipartite counterexample
+  (verifying internally the range `G014` item 2 was to supply, which
+  is now de-gated). Not covered: `L034` channel (ii), the
+  odd-prime-gcd channel (\(\Theta(3,3,3)\) is vertex-taut and
+  non-bipartite with \(S=\{3\}\)) — now the only congruence channel
+  with no structure theory.
   Portfolio (all threads carried, per standing user instruction): the
-  pencil endgame + band-2 rung (pinched channel); the parity
-  calibration and bipartite gadget hunt; the cubic census at order 30;
-  census mining; bipartite EGC and Carr 4/7 → 1 (proof side);
-  3-connectivity leverage; 1-atom theory; order-16 catalogue (scan
-  launched in S015, still running at close; harvest reserved for a
-  short dedicated follow-up session).
+  pencil endgame + band-2 rung (pinched channel); the bipartite hunt
+  at order 22+ and the new gcd-channel theory question; the cubic
+  census at order 30; census mining; bipartite EGC and Carr 4/7 → 1
+  (proof side); 3-connectivity leverage; 1-atom theory; order-16
+  pinched catalogue (a separate agent's in-flight scan from S015,
+  untouched by S016).
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -114,22 +130,19 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, strategy-audit the expanded (post-`L034`) portfolio; the
-proposed first moves are the two cheap decisive ones: (i) the
-**odd-\(S\) calibration scan** — all-band all-terminal-pair taut scan
-at orders \(\le15\) with "every through-path odd" in place of the
-ratio ceiling (abort on the first even through-path), which either
-exhibits all-odd taut cores (the parity analogue of the five equality
-blocks — reshapes the program) or shows the parity channel is
-shape-empty like the pinched one; and (ii) the **`G014` source
-audits** (Chen–Saito; the bipartite \(\ge32\) bound gating the
-Mersenne-window logic; Heckman–Krakovski; Shauger/Daniel–Shauger;
-census provenance), which gate the bipartite gadget hunt, census
-mining, and cubic-census legs. The **pencil endgame** (fan case first,
-`A015` pressure points) remains co-primary on the pinched channel, and
-every other thread in `STATE.md`'s portfolio stays live per the
-standing instruction. No required action remains for `P-001`; its
-reference comparison is optional and freely permitted.
+For `P-002`, finish the **order-22 leg of the `E015` bipartite hunt**
+(launched in S016, left unfinished on a loaded machine, so order 22 is
+excluded from `C034`): any power-free member is an immediate disproof
+by `L035` T3, an empty run extends the parity/mod-4 exclusion by one
+order. Then open **Thread B3**, the one congruence channel `L035` does
+not reach: does condition (D) forbid \(\gcd(S)\) from having an odd
+prime factor? \(\Theta(3,3,3)\) shows the degree condition, not
+parity, must do the work, and the `L035` fan argument suggests a
+mod-\(p\) analogue to try. The **pencil endgame** stays co-primary on
+the pinched channel, and every other thread in `STATE.md`'s portfolio
+stays live per the standing instruction. No required action remains
+for `P-001`; its reference comparison is optional and freely
+permitted.
 
 ## Known process risks
 

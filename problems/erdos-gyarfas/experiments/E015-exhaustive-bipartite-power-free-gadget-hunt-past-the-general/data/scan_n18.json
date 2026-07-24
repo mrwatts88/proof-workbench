@@ -1,0 +1,1811 @@
+{
+  "n": 18,
+  "min_edges": 26,
+  "generator": "genbg -q -c -Z1 -d2 p q 26:0",
+  "splits": [
+    {
+      "p": 2,
+      "q": 16,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 3,
+      "q": 15,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 4,
+      "q": 14,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 5,
+      "q": 13,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 6,
+      "q": 12,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 7,
+      "q": 11,
+      "skipped": "T5 counting bound"
+    },
+    {
+      "p": 8,
+      "q": 10,
+      "generated": 995,
+      "in_class": 1
+    },
+    {
+      "p": 9,
+      "q": 9,
+      "generated": 3114,
+      "in_class": 74
+    }
+  ],
+  "totals": {
+    "generated": 4109,
+    "in_class": 75,
+    "power_free": 0
+  },
+  "power_length_histogram": {
+    "8,16": 75
+  },
+  "c8_count_histogram": {
+    "56": 1,
+    "31": 3,
+    "37": 3,
+    "32": 5,
+    "42": 3,
+    "46": 2,
+    "28": 5,
+    "23": 4,
+    "27": 2,
+    "35": 5,
+    "33": 6,
+    "30": 2,
+    "54": 3,
+    "26": 3,
+    "36": 8,
+    "38": 10,
+    "34": 1,
+    "51": 1,
+    "47": 2,
+    "25": 1,
+    "49": 1,
+    "50": 1,
+    "48": 2,
+    "66": 1
+  },
+  "subcubic_profile_histogram": {
+    "2,2": 62,
+    "2": 8,
+    "cubic-or-better": 5
+  },
+  "min_c8_count": 23,
+  "min_c8_exemplars": [
+    {
+      "graph6": "Q??????oD_P_Y?S_Ag?R?Go?E_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 23,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_Y?E_CWAB?DO?E_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 23,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_WOAoAH?EO?B_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 23,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_EOAS@B?@o@C_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          1,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 23,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    }
+  ],
+  "all_records": [
+    {
+      "graph6": "Q????B?KCWL?g_cOGWAg?E_?d??",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 56,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????oD?J?D_CWCg?U?WgAK_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 31,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????o@_T?P_BOAc?T?co@`_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 37,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????o@_P_AoQGCo?d?TOA`_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 32,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????o@_P_AoQGCo@B?TOAQ_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 32,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????o@_P_AoIGAoAD?XOAP_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 42,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????oD_L?H_DO@c@B?Ao@Q_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          0,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 31,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_L?H_DO@c@B?ao@Q_?",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 46
+    },
+    {
+      "graph6": "Q??????oD_P_Y?S_Ag@B?Ao?E_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 28,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_Y?S_Ag?R?Go?E_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 23,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_Y?E_GW@B?DO?E_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 27,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_Y?E_GW?b?HO?E_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 28,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_Y?E_GW?R?DO?e_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 35,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_Y?E_CWAB?DO?E_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 23,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_Y?E_CW?R?DO@E_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 33,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_Y?E_CW?R?@g@T??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 30,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_W_E_HG@I?TGAB_?",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 54,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_W_E_HG@H?DO?B_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 26,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_W_E_HG@H?DOAB_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 36,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_W_E_HG@H?@o?P_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 32,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_W_E_HG?h?HO?B_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 26,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_W_E_HG?h?HOAB_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 36,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_W_E_HG?L?HO?P_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 38,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_W_E_DG@H??w@T??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 34,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_W_E_DG@H?TOAB_?",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 51,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_W_Ao?s@B?DO@W_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 33
+    },
+    {
+      "graph6": "Q??????oD_P_I_WOAoAH?EO?B_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 23,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_WOAoAH?EOAB_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 33,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_WOAoAD?EO?D_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 28,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_WO?wAH?EO?Q_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 28,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_WO?w@H?EO@Q_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 38,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_WO?w@H?AW@Q_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          3,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 35,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_EOAoA`??w@d??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 30,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_EOAoA`?XOAB_?",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 47,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_EOGWB@?D_?D_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 28,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_EOGWB@?Cg?D_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          5,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 27,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_EOGWAP?D_?d_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 36,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_EOAS?M?HG@@_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          1,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 26,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_EOAS@B?@o@C_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          1,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 23,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P_I_OoAS?R?DO@c_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 38
+    },
+    {
+      "graph6": "Q??????oD_P_I_OoCK?d?EO@C_?",
+      "n": 18,
+      "edges": 26,
+      "subcubic": [
+        [
+          5,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 25,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?IOAI?Hg?X_?",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 54,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?IO?L?HO?X_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 35,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?BO?L?HO@P_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 38,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?BOAB?DO?e_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 36,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?BO@B?@g@T??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 35,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?BO?R?TO?e_?",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 49,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?AoA`?Ag?d_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          7,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 38,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?AoAD?EG?d_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          7,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 38,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?Ao@D?EO@D_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 38,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?BC@D?D_@D_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          7,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 36,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oY?BC@D?@W@U??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          7,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 33,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oI_AoB@?@W@X??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 36,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oI_AoAD?UO?d_?",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 50,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oI_KC?p?@W@U??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          7,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 38,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oI_KC?L?EG@T??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          7,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 36,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oI_KC?L?AW@T??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          3,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 37,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oI_BC?L?DO@`_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          1,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 38,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oI_BC?L?GW@T??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          1,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 33,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oI_BCAB?HG@U??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          7,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 35,
+      "terminals_same_part": false,
+      "through_parity": "odd"
+    },
+    {
+      "graph6": "Q??????oD_P__oIGAS?J?X_@X??",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          9,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 48
+    },
+    {
+      "graph6": "Q??????wCoI_K_QODC?[?`O?P_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 37,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????wCoI_K_QODC?[?HOAA_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 32,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????wCoI_K_QODC?[?HOAB_?",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          8,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 48
+    },
+    {
+      "graph6": "Q??????wCoI_K_QODC?[?_oAC_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 42,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????wCoI_K_QODC?[?_o?D_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 38
+    },
+    {
+      "graph6": "Q??????wCoI__oIG?s@I?Q_?P_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 42
+    },
+    {
+      "graph6": "Q??????wCoI__oOgHGCH?J??p??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 31,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????wCoI__oOgHGCH?J??`_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 32,
+      "terminals_same_part": true,
+      "through_parity": "even"
+    },
+    {
+      "graph6": "Q??????wCoI__oOgHGCH?J??p_?",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [
+        [
+          6,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 46
+    },
+    {
+      "graph6": "Q??????wCoI__oOgHGCH?J_?p_?",
+      "n": 18,
+      "edges": 29,
+      "subcubic": [],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 66
+    },
+    {
+      "graph6": "Q??????wCoI__oOgHG?X?H_?p??",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [
+        [
+          8,
+          2
+        ]
+      ],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 33
+    },
+    {
+      "graph6": "Q??????wCoI__oOgHG?X?H_?p_?",
+      "n": 18,
+      "edges": 28,
+      "subcubic": [],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 47
+    },
+    {
+      "graph6": "Q??????wCoI__oGg@c@I?Q_?P_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 36
+    },
+    {
+      "graph6": "Q??????w?w?[c_QOCc@S?`O@O_?",
+      "n": 18,
+      "edges": 27,
+      "subcubic": [],
+      "powers_present": [
+        8,
+        16
+      ],
+      "power_free": false,
+      "c8_count": 54
+    }
+  ],
+  "c8_free": [],
+  "hits": [],
+  "seconds": 1.1,
+  "interpreter": "CPython 3.14.2"
+}

@@ -424,3 +424,53 @@ attempt, experiment, or review record.
   until source-audited. The six memo paths entered the portfolio
   alongside every pre-existing thread (user's standing instruction:
   carry all threads; no execution this session per user instruction).
+
+## 2026-07-24 — S016: the parity channel is the bipartite channel
+
+- **Strategy audit.** The inherited next action proposed an odd-\(S\) taut
+  scan mode over the existing order-\(\le15\) stream plus the `G014` source
+  audits. Audit outcome: the scan's *class* was already proved empty
+  (`C027` is profile-agnostic), so its only value was shape data — and a
+  cheaper, stronger instrument existed. Selected route: prove the parity
+  structure theorem first, then search the class it identifies. The pencil
+  endgame (Thread A) and every other thread stayed live per the standing
+  user instruction.
+- **`L035` proved (`A017` T0–T5).** For a vertex-taut two-terminal graph,
+  "all through-path lengths have the same parity" is **equivalent** to
+  bipartiteness. Proof: cut vertices of a taut gadget separate the
+  terminals, so the blocks form a chain with Minkowski-sum through-sets
+  (T0, `A014` T3 with the degree hypotheses deleted); inside a 2-connected
+  block, an odd cycle plus a 2-fan from an added apex yields two arcs of
+  opposite parity, hence through-paths of both parities (T1). Corollaries:
+  **any** connected bipartite power-free graph with at most two sub-cubic
+  vertices disproves 0.1 (T3 — via 1-atom doubling, outright, or a 3-ring
+  of the graph or of its pendant lift/reduction), and bipartite generation
+  is exhaustive for `L034` channels (i) and (iii) modulo 1-atoms (T4).
+  Scope: channel (ii) (odd-prime gcd) is **not** bipartite-forced —
+  \(\Theta(3,3,3)\) is the recorded counterexample.
+- **`E015` built and run (`C034`).** genbg with `-Z1 -d2` over the splits
+  admitted by T5 generates the class exactly. No power-free member exists
+  at any order \(\le21\) (hence none of order \(\le22\) with a pendant):
+  class sizes 0,0,2,1,6,8,75,197,2715,10865 at orders 12–21, **every**
+  member containing a \(C_8\), minimum \(C_8\) count never below 13, so the
+  \(C_{16}\) test is never decisive. Sub-results in the same run: no
+  bipartite 1-atom and no bipartite counterexample at those orders — the
+  latter verifying internally the range that `G014` item (2) was to
+  supply. An order-22 run was launched and left unfinished (machine
+  contention); it is deliberately excluded from `C034`.
+- **Verification before recording.** `verify_parity.py` ran the theorem's
+  own kill condition over every connected graph of order \(\le7\) (39,690
+  ordered pairs) and every connected \(C_4\)-free graph of orders 8–9
+  (63,696 pairs), with through-sets by explicit path enumeration: T2 held
+  in all 952 hypothesis instances, T1 in 27,196, T0's chain/Minkowski in
+  33,962, and all 10,788 parity-constant non-bipartite pairs were non-taut
+  (tautness is the whole hypothesis). Generator cross-check: the genbg
+  class equals the `E010`-stream-derived class at order 14 by `labelg` set
+  equality; the unique cubic member at order 14 is the Heawood graph.
+- **Corrections recorded.** `A016` M3 ("the bipartite reformulation is an
+  instance, not an equivalence") and M4 ("the parity channel has no
+  reduction theory") were both too weak: on the taut side the equivalence
+  holds, and pendant shift toggles the two bipartite sub-cases rather than
+  destroying the structure. Both corrections strengthen the audited
+  external memo. `G014` item (2) de-gated for this thread. No proved row
+  changed; `C001` stays `open`.
