@@ -227,8 +227,62 @@ expectations were updated from the S014 values (six witnesses,
 re-pass under both interpreters after the edit.
 
 An order-16 closed scan (`runclosed 16`; no `C027` reference total
-exists at 16, so the stream total will itself be new data) was launched
-in S015 and left running at session close; its harvest — including the
-strict/closed derivation via the boundary flag and any block/dissection
-updates — is deliberately excluded from `C032` and will be recorded by
-a short dedicated follow-up session.
+exists at 16, so the stream total is itself new data) was launched in
+S015 and left running at session close; its harvest — excluded from
+`C032` — is recorded in the S017 addendum below.
+
+## S017 addendum — order-16 closed harvest
+
+Same environment as the S015 extension (PyPy 7.3.23; geng nauty 2.9.3;
+`pypy3 catalogue.py runclosed 16`, 5,986.0s). Output
+`data/catalogue_closed_n16.json`.
+
+- Stream total **1,006,553,591** (new data — no `C027` reference at
+  16); 55,213,924 eligible graphs; 420,006,891 admissible pairs;
+  rejects: 265,285,070 eccentric, 154,721,809 long; zero non-taut
+  completions.
+- **Twelve taut closed hits, all at boundary \(s_{\max}=2d\) — so no
+  strict hit exists at order 16**, and the strict taut-pinched
+  catalogue stands complete at seven witnesses through order 16 (the
+  closed-mode boundary flag subsumes the strict scan, as asserted at
+  orders \(\le15\)). Every hit contains a \(C_8\): no power-free
+  closed taut pair exists at order 16. (This is pair-level, not
+  stream-level: order 16 has no analogue of `C027`'s all-graphs
+  \(C_8\) statement.)
+- Band distribution: three at band 4, three at band 6, six at band 7.
+  Eight hits are pendant-type (degree-1 terminal; boundary, so their
+  reductions are excess-\(+1\) cores, not blocks).
+- **Four core pairs on three new graphs — the first new blocks since
+  D14, and the first band-4 blocks since Petersen\(-e\):**
+  - `O??CA?oBD@QOI_QOI_?I_`, pairs (3,4) and (12,14), terminal degrees
+    (3,3) each (the graph has **no** sub-cubic vertex), band 4,
+    \(S=\{4,\dots,8\}\), spectrum \(\{3,5,\dots,16\}\); the two pairs
+    are **isomorphic as two-terminal gadgets** (checked with the
+    labelg-cross-anchored engine), so they count as one block with a
+    second symmetric realization;
+  - ``O?AA@?O`AOSGJ?CIIO?F_`` (the graph6 string contains a backtick),
+    pair (4,15), terminal degrees (2,4), band 4, \(S=\{4,\dots,8\}\),
+    spectrum \(\{3,5,\dots,16\}\);
+  - `O??CA?_CCSHGHGDC]??F_`, pair (4,5), terminal degrees (2,2),
+    band 6, \(S=\{6,\dots,12\}\), spectrum
+    \(\{3,6,7,\dots,16\}\) — the first block whose spectrum contains a
+    \(C_{16}\).
+  The block catalogue grows from five to **eight**, every one at exact
+  equality \(s_{\max}=2\,s_{\min}\); no strict block exists through
+  order 16.
+- **Pencil-endgame check (`L033` frame):** all three band-4 core
+  gadgets are **disjoint-type** — each has exactly 4 shortest paths
+  forming 4 internally disjoint pairs and exactly 4 of its 6 \(C_8\)s
+  pass through both terminals. No pencil-type band-4 taut core exists
+  through order 16; the endgame conjecture's exhaustive base extends
+  by one order.
+- **Interference census extends and stays perfect:** every \(C_8\) of
+  every new core pair is the symmetric difference of two
+  through-paths — 6/6 on each band-4 gadget realization and 10/10 on
+  the band-6 block (whose \(C_8\)s avoid the terminals; its four
+  disjoint shortest pairs give \(C_{12}\)s, as at bands 5–6 before).
+- Deferred bookkeeping (recorded in `sessions/S017-…md` because the
+  claim ledger was mid-edit by the concurrent S016 session): the
+  ledger row for this harvest, and the catalogue-frontier phrase
+  updates ("through order 15" → "through order 16") in the canonical
+  summaries.
