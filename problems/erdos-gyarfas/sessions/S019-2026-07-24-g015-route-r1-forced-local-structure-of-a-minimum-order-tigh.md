@@ -313,9 +313,27 @@ template; record the real strategic choice or explain why the session is exempt
   `A020`, the Carr verification note, `CLAIMS.md` `L037`–`L042`,
   `OBLIGATIONS.md` `G015`.
 - Background job at close: the `E015` order-23 leg (PyPy, harness task
-  `be2dzoawp`) is still running; its results are excluded from every
-  ledger row above, and the harvest is a named follow-up (S017
+  `be2dzoawp`) was still running; its results were excluded from every
+  ledger row above, and the harvest was a named follow-up (S017
   precedent). Re-run command in `E015/README.md`.
+
+## Follow-up harvest (applied after the close, same session context)
+
+The order-23 leg completed with exit 0 shortly after the S019 commit
+(79d5df3). Result: **empty** — 928,562 in class from 260,796,118
+generated in 5,239.8s under PyPy 7.3.23 (all 20,082 anchors re-passed
+under PyPy before the run); splits (10,13): 6,012 and (11,12): 922,550,
+the eight smaller splits proved empty by the `A017` T5 counting bound;
+zero \(C_8\)-free, zero power-free; every member carries **both** a
+\(C_8\) and a \(C_{16}\); minimum \(C_8\) count 19; sub-cubic profiles
+814,453 / 107,787 / 6,322 (gadgets / tight-1-atom candidates /
+min-degree-\(\ge3\)), all blocked. Harvest bookkeeping applied in a
+separate commit: `C034` extended to order 23 (24 with a pendant),
+`E015` README, `STATE.md`, `OBLIGATIONS.md` (`G013`, `G014` item-2
+range), `PROOF.md` (including a conservative repair of the `L035`
+bullet's stale pre-S018 numbers), `PROJECT_STATE.md`, `problem.json`
+next-action Tier 3 sentence, and this addendum. The dossier is
+reconciled; nothing unfinished remains attached to S019.
 
 ## Plain-language recap
 

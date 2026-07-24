@@ -185,11 +185,13 @@ Established preliminary reductions, none sufficient for the main claim:
   M3's "instance, not equivalence" reading. It does **not** extend to
   the odd-prime-gcd channel: \(\Theta(3,3,3)\) is vertex-taut,
   non-bipartite, with \(S=\{3\}\). Finite status (`C034`, `E015`): the
-  bipartite class is empty of power-free members through order 21
-  (22 with a pendant; the order-22 run was launched and left
-  unfinished, deliberately excluded from `C034`), every member
-  carrying a \(C_8\) and never fewer than 13 of them; the same run verifies internally that no bipartite
-  counterexample and no bipartite 1-atom exists in that range.
+  bipartite class is empty of power-free members through order 23
+  (24 with a pendant; the order-22 leg completed in S018 and the
+  order-23 leg in the S019 follow-up harvest — at 23, all 928,562
+  members carry both a \(C_8\) and a \(C_{16}\)), every member at
+  every scanned order carrying a \(C_8\) and never fewer than 13 of
+  them; the same runs verify internally that no bipartite
+  counterexample and no bipartite tight 1-atom exists in that range.
 
 - `L037`–`L038`: the subdivision-descent package and the cubic-density
   theorem (S019, worker W2; audited). In an order-then-size minimal
@@ -303,7 +305,7 @@ lemmas remain in `A001` and `CLAIMS.md`.
   (\(S\subseteq\{2,3,4\}\), \(4\in S\)) the last \(C_4\)-only gap
   below it. (c) the **congruence channels** (`L034`), now split by
   `L035`: the all-odd and mod-4 channels **are** the bipartite class,
-  searched exhaustively and empty through order 21 (`C034`), so what
+  searched exhaustively and empty through order 23 (`C034`), so what
   survives in (c) is the odd-prime-gcd channel — not bipartite-forced,
   no structure theorem, no reduction, no dedicated search — together
   with the missing parity analogue of `L032`'s 2-connected block

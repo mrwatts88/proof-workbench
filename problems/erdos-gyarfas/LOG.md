@@ -588,3 +588,23 @@ attempt, experiment, or review record.
   order — a hit disproves 0.1, empty lifts the atom bound to 18), then
   the mod-4 congruence hunt against the residual object.
 - No proved row was falsified. `C001` stays `open`.
+
+## 2026-07-24 — S019 follow-up harvest: the order-23 bipartite leg lands empty
+
+- The background `E015` order-23 leg (launched in S019 under PyPy 7.3.23,
+  anchors re-passed first) completed after the S019 close with exit 0:
+  **empty** — 928,562 in class from 260,796,118 generated in 5,239.8s;
+  splits (10,13): 6,012 and (11,12): 922,550, eight smaller splits proved
+  empty by the T5 bound; zero C8-free, zero power-free; every member
+  carries **both** a C8 and a C16 (the C16 test is never decisive);
+  minimum C8 count 19; profiles 814,453 gadgets / 107,787 tight-1-atom
+  candidates / 6,322 min-degree-≥3 graphs, all blocked.
+- Applied per the punch-list precedent (S017): `C034` extended to order
+  23 (24 with a pendant), `E015` README updated, the frontier phrases in
+  `STATE.md`, `OBLIGATIONS.md` (`G013`, `G014` item-2 range),
+  `PROOF.md` (`L035` finite status — also repairing that bullet's stale
+  pre-S018 numbers), and `PROJECT_STATE.md` brought current; the
+  order-24 leg (or the Tier 4 generator) named as the next Tier 3 move;
+  pivot trigger moved to order 24+.
+- No power-free member, so no ledger claim changes beyond `C034`'s
+  range; `C001` stays `open`.

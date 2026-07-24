@@ -70,7 +70,8 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   no path enumeration and no external import, and (b) bipartite
   generation is exhaustive for `L034` channels (i) and (iii) modulo
   1-atoms. `E015`/`C034` then searched that class exhaustively: **no
-  power-free member at any order \(\le21\)** (22 with a pendant) —
+  power-free member at any order \(\le23\)** (24 with a pendant;
+  extended by the S018 order-22 leg and the S019 order-23 harvest) —
   six orders past the general wall — every member blocked by a
   \(C_8\), never fewer than 13 of them; by-products at the same
   orders: no bipartite tight 1-atom and no bipartite counterexample
@@ -120,9 +121,9 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   Portfolio (all threads carried, per standing user instruction): the
   case-(5b) endgame (order-16 \(\mathcal G\) scan + mod-4 congruence
   hunt, now Tier 1); the pencil endgame + band-2 rung (pinched
-  channel); the bipartite hunt at order 23+ (leg running at S019
-  close, harvest = named follow-up) and the gcd-channel theory
-  question; the cubic census at order 30; census mining; bipartite EGC
+  channel); the bipartite hunt at order 24+ (order 23 harvested
+  empty in the S019 follow-up — 928,562 in class, all with a
+  \(C_8\)) and the gcd-channel theory question; the cubic census at order 30; census mining; bipartite EGC
   (proof side); the disjoint longer-link descent (R2's surviving
   extension); 3-connectivity leverage; order-17+ pinched catalogue
   legs.
@@ -191,7 +192,8 @@ lifts the tight-1-atom bound to 18; a hit satisfying the
 protocol). Proof-side companion: the mod-4 congruence hunt against the
 `L042` residual object, modelled on the parity proof. Do **not** grind
 the density constant (closed by `L038`'s delimitation). The `E015`
-order-23 leg is running; harvest it as a follow-up when it finishes.
+order-23 leg completed empty and its harvest is applied; the next Tier 3
+leg there is order 24 (or the Tier 4 generator).
 No required action remains for `P-001`; its reference comparison is
 optional and freely permitted.
 

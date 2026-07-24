@@ -100,7 +100,8 @@ degree-\(\ge4\)-independent, forced through-set arithmetic, chain
 cancellation, band-4 pencil). For `G015` the conditional form suffices
 and only case (5b) remains. Empty through order 15 stream-level
 (`C027`); the \(\mathcal G\) profile at order 16 is the open decisive
-order; no bipartite tight 1-atom through order 22 (`C034`).
+order; no bipartite tight 1-atom through order 23 (`C034`, S019
+follow-up harvest).
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -123,7 +124,7 @@ constructions died to the cascade obstruction (`A015`).
 (c) The **congruence channels**, now **split by `L035`**. Channels (i)
 (all-odd \(S\)) and (iii) (\(S\subseteq2+4\mathbb Z\)) *are* the
 bipartite class, and `E015`/`C034` searched it exhaustively: **no
-power-free member at any order \(\le22\)** (\(\le23\) with a pendant),
+power-free member at any order \(\le23\)** (\(\le24\) with a pendant),
 with every member of the class carrying a \(C_8\) and the minimum
 \(C_8\) count never dropping below 13 — so the \(C_{16}\) test is never
 even decisive, and this channel is *further* from a witness than the
@@ -132,7 +133,7 @@ survives in (c): channel (ii), the odd-prime-gcd channel — not
 bipartite-forced, no structure theorem, no reduction, no dedicated
 search — plus the missing parity analogue of `L032`'s 2-connected block
 extraction. Two by-products of the same run: no bipartite counterexample
-and no bipartite **tight** 1-atom at orders \(\le22\), verified
+and no bipartite **tight** 1-atom at orders \(\le23\), verified
 internally.
 
 ## Open obligations
@@ -221,7 +222,7 @@ conditional.
 
 - **Bipartite EGC** (Thread E): every bipartite \(\delta\ge3\) graph has
   a power-of-two cycle. `L035` fixes the class (girth \(\ge6\)
-  bipartite), `C034` gives an internally verified base through order 22,
+  bipartite), `C034` gives an internally verified base through order 23,
   and the naive "\(C_8\) always" form is *false* at large order
   (bipartite double covers of `C009`'s large-girth cubic graphs), so any
   proof must be order-bounded or consume \(C_{16}/C_{32}\). Reported
@@ -237,12 +238,14 @@ conditional.
 
 Harvest-only. None of these may be a session's primary work.
 
-- Order-23 bipartite hunt (`E015`; order 22 completed during S018 —
-  178,549 in class, all with a \(C_8\)). **Launched in S019 under
-  PyPy 7.3.23 (anchors re-passed first) and still running at the S019
-  close; its results are excluded from every ledger row and the
-  harvest is a named follow-up** (re-run command in `E015/README.md`;
-  the S017 precedent applies).
+- Bipartite hunt (`E015`): **order 23 completed empty in the S019
+  follow-up harvest** (PyPy 7.3.23, anchors re-passed first; 928,562
+  in class from 260.8M generated in 5,240s, every member with both a
+  \(C_8\) and a \(C_{16}\), minimum \(C_8\) count 19; no bipartite
+  tight 1-atom, no bipartite counterexample). The class is now clean
+  through order 23 (24 with a pendant). Next leg: order 24 — roughly
+  \(4\times\) the cost — after which genbg stops being the right
+  instrument and the Tier 4 generator is the move.
 - The gcd scan over the existing order-\(\le16\) stream (needs path
   enumeration; the bipartite shortcut does not apply).
 - Order-17+ legs of the pinched catalogue (Thread A/F).
@@ -272,7 +275,7 @@ A hit in the order-16 \(\mathcal G\)-profile scan satisfying the
 \(S\)-condition (**immediate disproof** — a tight 1-atom); a
 pencil-type band-4 taut core at order 17+; a strict block or
 \(C_8\)-free equality block (disproof protocol); **any** power-free
-member of the `E015` class at order 23+ (immediate disproof, `L035`
+member of the `E015` class at order 24+ (immediate disproof, `L035`
 T3); a `G014` audit overturning an assumed bound; the mod-4 congruence
 hunt's kill condition firing (a vertex-taut \(C_4\)-free core realizing
 all three forced memberships with no mod-4 structure — then case (5b)
@@ -356,5 +359,6 @@ whole conjecture or push the bound up — is the next move.
 5. `CLAIMS.md` rows `L037`–`L042`, `C004`–`C006`; `OBLIGATIONS.md`
    `G015`/`G013`
 6. `E016/README.md` and `E017/README.md` (the machine legs and their
-   anchors); `E015/README.md` only if harvesting the order-23 leg
+   anchors); `E015/README.md` for the bipartite hunt (order 23
+   harvested empty; next leg 24 or the generator)
 7. `sessions/S019-…md` (the orchestration record and audit trail)

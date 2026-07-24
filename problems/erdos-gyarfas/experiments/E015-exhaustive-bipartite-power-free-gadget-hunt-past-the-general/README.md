@@ -108,10 +108,24 @@ class contains an 8-cycle — the C8-free count is zero at every order, so the
 | 22 | 178,549 | 55,451,237 | \(\{8,16\}\) | 14 | 155,205 / 21,579 / 1,765 |
 
 Order 22 was launched in S016 and completed during S018 (2,798s; splits
-\((9,13)\): 1 member, \((10,12)\): 15,849, \((11,11)\): 162,699). The next
-leg is order 23 — splits \((11,12)\) and \((10,13)\) — which at the order-22
-rate is a few hours; past that genbg stops being the right instrument and the
-dedicated \(\{C_4,C_8\}\)-free generator is the tool-building move.
+\((9,13)\): 1 member, \((10,12)\): 15,849, \((11,11)\): 162,699).
+
+Order 23 was launched as an S019 background leg under **PyPy 7.3.23**
+(anchors re-run first: all 20,082 pass under PyPy) and completed after the
+S019 close; harvested as the S019 follow-up. Result: **empty** — 928,562 in
+class from 260,796,118 generated in 5,239.8s; splits \((10,13)\): 6,012 and
+\((11,12)\): 922,550, the eight smaller splits proved empty by the T5
+counting bound; zero \(C_8\)-free, zero power-free. Every member carries
+**both** a \(C_8\) and a \(C_{16}\) (the power-length histogram is the single
+bucket \(\{8,16\}\)), so the \(C_{16}\) test is again never decisive; the
+minimum \(C_8\) count is **19**. Sub-cubic profiles: 814,453 two-terminal
+gadgets, 107,787 tight-1-atom candidates (profile `2`, degree exactly 2 in
+this stream), 6,322 minimum-degree-\(\ge3\) graphs — so no bipartite tight
+1-atom and no bipartite counterexample at order 23 either. The next leg is
+order 24 — splits \((12,12)\), \((11,13)\) and any \((10,14)\) admitted by
+the T5 bound — at roughly \(4\times\) the order-23 cost on the observed
+growth; past that genbg stops being the right instrument and the dedicated
+\(\{C_4,C_8\}\)-free generator is the tool-building move.
 
 ("profiles" counts members by their sub-cubic degree multiset: `2,2` = a
 two-terminal gadget, `2` = a bipartite 1-atom candidate, `none` = minimum degree
