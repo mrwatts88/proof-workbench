@@ -1238,10 +1238,13 @@ attempt, experiment, or review record.
   instrument that could not be diffed against the recorded one. Closed by two
   re-runs on the **committed** instrument: the anchor suite reproduced
   `anchors_search_pypy.json` byte-identically except its own timing field
-  (80,131 checks, identical histograms) — done and verified; and a from-scratch
-  re-run of the order-30 rung, which was **still running when these records
-  were written**. A later session must check `search_29_29_c16.json` for
-  0 survivors and 49,882,612 nodes and either confirm or retract the rung.
+  (80,131 checks, identical histograms), and the order-30 rung was **re-run end
+  to end** and agrees with the production record on **every field** — survivors
+  0, nodes 49,882,612, `capped` false, and all seven prune counters identical to
+  the digit (cycle 1,334,986,730, reserve 233,544,446, cover 44,065,721, …),
+  only the wall clock differing (2,907.2 s against 4,195.9 s). Seven independent
+  counters in the billions cannot match if the traversal was perturbed, so the
+  repairs are confirmed confined to the anchor suite.
 - **`O012` is EXECUTED** (operational, committed separately): `E024`'s order-21
   rung now runs on Railway behind a **passed** linux/amd64 anchor re-gate —
   the 146-check suite, the cubic-24 positive control, the stream cross-check at

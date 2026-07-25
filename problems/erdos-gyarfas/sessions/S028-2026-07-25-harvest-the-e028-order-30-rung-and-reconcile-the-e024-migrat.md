@@ -75,19 +75,20 @@ Two independent things close the gap:
   file **byte-identical** to the recorded `anchors_search_pypy.json` except for
   its own wall-clock field (80,131 checks, identical histograms; 57.3 s versus
   the recorded 83.35 s);
-- the rung itself was set re-running from scratch on the committed instrument
-  (`search 29 29 c16` → `search_29_29_c16.json`). **This was still running when
-  the session's records were written and is NOT yet confirmed.**
+- the rung itself was **re-run end to end** on the committed instrument
+  (`search 29 29 c16` → `search_29_29_c16.json`) and **agrees with the
+  production record on every field**: survivors 0, nodes 49,882,612, `capped`
+  false, targets \(\{2,6,14\}\), 0 gap-free survivors, and all seven prune
+  counters identical to the digit — cover 44,065,721; cycle 1,334,986,730;
+  minimal 2,890,076; poison 0; reserve 233,544,446; symmetry 22,837,229;
+  count 0. Only the wall clock differs (2,907.2 s against 4,195.9 s, the
+  laptop now being unloaded).
 
-The anchor re-pass is done and is real evidence: the repairs reproduce the
-recorded suite exactly. `R003` independently reproduced this run's node counts
-to the last digit from the shipped instrument, which covers the same question
-for the lower rungs. The order-30 re-run closes it for this rung specifically.
-
-**Open item, explicitly carried:** a later session must read
-`E028/data/search_29_29_c16.json`, check it reports 0 survivors and 49,882,612
-nodes, and either record the confirmation in `C048` or retract the order-30
-rung. This is the one loose end this session leaves.
+The gap is closed. The prune counters are the load-bearing part of that: a
+search whose traversal had been perturbed by the repairs could not match seven
+independent counters in the billions. The `R003` repairs are confirmed confined
+to the anchor suite, and the order-30 rung rests on the instrument the
+repository actually holds.
 
 ### 3. The `E024` migration (tooling recorded in `O012`, not here)
 
