@@ -1218,3 +1218,53 @@ attempt, experiment, or review record.
   architecture-tagged **second** pin, not a replacement.
 - No claim, obligation, proof, statement or status changed. `E024` and the
   `E028` ladder both still running, both excluded from every ledger row.
+
+## 2026-07-25 — S028: the order-30 rung lands empty and the ladder is stopped; the E024 rung moves to Railway
+
+- **`E028` order 30 (\(M=29\)) is EMPTY**: 0 survivors, 49,882,612 nodes,
+  4,195.9 s, `capped: false` (exhaustive, not truncated). `C048` extends from
+  orders 16–29 to **16–30**. The poison prune's kills are 2, 1, 0, 0, 0, 0 at
+  \(M=24\ldots29\), so by `R003` F4 order 30 — like 27–29 — proves the
+  *stronger* poison-free class-emptiness statement and exercises none of (F)'s
+  forcing mechanism.
+- **The ladder is stopped there**, executing the S027 post-close decision
+  rather than rolling into order 31. Recorded for the future: the search *is*
+  parallelisable — its DFS branches at position 0 over the single chord
+  \((0,q)\), giving \(\approx M\) independent root subtrees — so the stop is a
+  judgement about mathematical value, not a computational limit.
+- **Provenance gap found and closed.** The production process began at 14:03
+  while `search.py` was edited at 15:19 (the `R003` a6/a7 repairs, made during
+  the run), and only one revision was ever committed, so the rungs came from an
+  instrument that could not be diffed against the recorded one. Closed by two
+  re-runs on the **committed** instrument: the anchor suite reproduced
+  `anchors_search_pypy.json` byte-identically except its own timing field
+  (80,131 checks, identical histograms) — done and verified; and a from-scratch
+  re-run of the order-30 rung, which was **still running when these records
+  were written**. A later session must check `search_29_29_c16.json` for
+  0 survivors and 49,882,612 nodes and either confirm or retract the rung.
+- **`O012` is EXECUTED** (operational, committed separately): `E024`'s order-21
+  rung now runs on Railway behind a **passed** linux/amd64 anchor re-gate —
+  the 146-check suite, the cubic-24 positive control, the stream cross-check at
+  orders 12–17 and a production-modulus partition check, all verified locally
+  against the dossier; the amd64 `genc48` sha256 is recorded as an
+  architecture-tagged **second** pin beside the untouched arm64 one. Six
+  services, 24 workers each, modulus 144. The laptop is freed.
+- **Two corrections to `O012`'s premises**, both measured: a Pro service is
+  capped at **24 vCPU**, not 1,000; and **width is not free** — `geng`
+  duplicates the whole tree above split level \(n-4\) once per part, so total
+  work is \(\text{mod}\times A+B\) and, with the largest part running 2.86× the
+  mean, the wall clock has a floor no modulus can beat. "About an hour instead
+  of fifteen" was not achievable.
+- **An instrument caveat worth carrying**: `scan.py` writes a part's class file
+  only under `SAVE_LIMIT = 200,000` graphs, and the graph6 strings of
+  degree-profile members exist **only** there (every profile object found so
+  far is \(C_{16}\)-blocked, so they are not among the scan JSON's
+  `survivors`). At order 20 this left only 3 of 7 members recoverable from
+  stored class files; in the stopped order-21 laptop run, part 0/16 emitted
+  210,802 graphs and took 8 of its 11 profile members with it. Modulus 144
+  keeps every part far under the limit.
+- The stopped laptop run's six completed order-21 parts are banked as a
+  cross-check (359,199 graphs, 11 profile members, all \(C_{16}\)-blocked) and
+  are **not** citable as a rung.
+- No statement, proof, or decision changed. The `E024` cloud rung is excluded
+  from every ledger row until harvested.

@@ -12,7 +12,8 @@
   T4's frame: decide the **disjunction** (F) rather than (F-S)/(F-T)
   separately, which hands us \(C_{16}\)-freeness as a free hypothesis, and
   use the whole poison set \(\{2,6,14,30\}\). Verdict (`E028`/`C048`):
-  **empty at every order 16–29** — the last completed rung — so case (5b)
+  **empty at every order 16–30** — the last completed rung, and the last that
+  will be run (`S028` stopped the ladder there) — so case (5b)
   is closed there for every residual object with a Hamiltonian
   through-path. Audited: **`R003` PASS** at lemma-and-instrument level
   (0 critical / 4 major / 4 minor / 3 notes; all four majors repaired in
@@ -379,11 +380,11 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   cover whose graph is \(\{C_4,C_8,C_{16}\}\)-free and whose savings set
   misses \(\{M-2,M-6,M-14,M-30\}\); by (ii)/(iii) every counterexample
   yields one, so **emptiness proves (F) at that order**. Verdict: **empty at
-  every order 16–29**, the last completed rung (node growth
+  every order 16–30**, the last completed rung (node growth
   \(\approx\times1.9\) per order — the \(C_{16}\) hypothesis, free because
   it is half of (F)'s negation, cut it from \(\approx\times3.5\) and carried
   the ladder eight orders past the recorded frontier in under an hour;
-  wall-clock growth is 1.8–2.4 per rung, so orders 30–35 are days of
+  wall-clock growth is 1.8–2.4 per rung, so orders 31–35 are days of
   single-core computation and **nothing is claimed above the last completed
   rung** — `R003` F3). **Above order 26 the poison prune stops firing**
   (branch kills 61, 33, 45, 17, 2, 1, 0, 0, 0 at \(M=20\ldots28\)), so
@@ -501,7 +502,7 @@ savings-reachability lemma, `A027` proved two reductions (`L052`) that
 make (F) a **finite decision problem per order**, sharpened the aim to
 the disjunction (F) (which supplies \(C_{16}\)-freeness free) and to the
 full poison set \(\{2,6,14,30\}\), and decided it — **empty at every
-order 16–29** (`E028`/`C048`), i.e. case (5b) is closed there for every
+order 16–30** (`E028`/`C048`), i.e. case (5b) is closed there for every
 residual object with a Hamiltonian through-path. What is left of the
 (F) program below order 36: finish the ladder to order 35, and the
 **non-Hamiltonian stratum** (`A027` T5).
@@ -664,30 +665,40 @@ configuration:**
   monotone-reroute prune make (F) exhaustively decidable per order,
   the disjunction is decided directly (so \(C_{16}\)-freeness is a
   free hypothesis, and it is what makes the window reachable), and
-  the verdict is **empty at every order 16–29** (last completed rung;
+  the verdict is **empty at every order 16–30** (last completed rung;
   audited `R003` PASS, all four major findings repaired) — case (5b)
   closed there on the Hamiltonian stratum, with the first order-21/22
   \(\mathcal G\)-profile objects exhibited and all doubly blocked.
   Next falsifiable moves, **re-ordered by the S027 post-close review**
   (see `DECISIONS.md`: the remaining risk is stratified by *shape*, not
-  by size — the Hamiltonian stratum is clear at 16–29, the
+  by size — the Hamiltonian stratum is clear at 16–30, the
   non-Hamiltonian one at no order at all, so extending the ladder
   completes nothing): **(1) harvest `E024`** — it measures the decisive
   split, \(\max S\) vs \(n-1\), over the *complete* order-21 class
-  rather than the Hamiltonian-only slice `E028` can see; the tooling
-  plan to finish it in about an hour on Railway instead of fifteen on
-  the laptop is `O012` (planned, nothing executed). Cheap proxy
-  available immediately on data already on disk: sweep the orders 18–20
+  rather than the Hamiltonian-only slice `E028` can see. **`O012` is now
+  EXECUTED (`S028`)**: the rung runs on Railway behind a passed
+  linux/amd64 anchor re-gate, at modulus 144 on six services, and the
+  laptop is freed. Two corrections came out of it — width is *not* free
+  (`geng` duplicates the tree above split level \(n-4\) once per part,
+  so total work is \(\text{mod}\times A+B\) and the wall clock has a
+  floor), and `scan.py` writes a part's class file only under
+  `SAVE_LIMIT`, so an oversized part silently discards the graph6
+  strings of its profile members (this cost 8 of the 11 members the
+  stopped laptop run had found; modulus 144 avoids it). Cheap proxy
+  still available on data already on disk: sweep the orders 18–20
   classes by degree-2 count and see whether \(\max S=n-1\) becomes
   universal as that count falls toward two. **(2) the non-Hamiltonian
   stratum** (`A027` T5 — extend the descent to bridges, where a
   zero-savings two-attachment component forces an all-equal-length
   bipartite interior-degree-\(\ge3\) gadget, the class `L035`/`C034`
   empties): this is now the primary *proof* work. **(3) the `E028`
-  ladder — stop after order 30**; orders 32–35 are days of single-core
-  computing, do not parallelise as the instrument stands, and above
-  order 26 prove class-emptiness rather than poison forcing
-  (`R003` F4), so they buy confirmation and no understanding; behind them min-degree-3 at 22
+  ladder is STOPPED** — order 30 ran, came back empty, and the process
+  was halted there (`S028`) rather than rolled into 31. It *is*
+  parallelisable (the DFS branches at position 0 over the single chord
+  \((0,q)\), giving \(\approx M\) independent root subtrees), so this
+  is a judgement about value, not a limit: above order 26 the rungs
+  prove class-emptiness rather than poison forcing (`R003` F4), so they
+  buy confirmation and no understanding; behind them min-degree-3 at 22
   (\(\approx\)38 h) and the `C038` **kill rung** at block orders
   15–16 + the disjoint long-link descent (unchanged).
 - **R2, constant route closed** — `C004`–`C006` verified and the bound
@@ -816,7 +827,7 @@ away from a tight 1-atom — disproof-adjacent; **this is exactly what
 each `E028` rung tests**, and it is the trigger to watch on every new
 rung); ~~a **proof of (F-S) or (F-T) on the window**~~ (**superseded,
 S027**: (F) is decided directly per order by `E028`, empty at every
-order 16–29 on the Hamiltonian stratum — the live remainder is the
+order 16–30 on the Hamiltonian stratum — the live remainder is the
 non-Hamiltonian stratum, `A027` T5, plus continuing the ladder, which is
 open-ended and above order 26 proves class-emptiness rather than poison
 forcing);
@@ -1158,7 +1169,7 @@ for several sessions.
   proof-side question stopped being "find a lemma nobody knows how to
   prove" and became "run a finite decision procedure". Two small proved
   reductions (`L052`) turned (F) into an exhaustive per-order
-  enumeration; it is **empty at orders 16–29**, eight orders past the
+  enumeration; it is **empty at orders 16–30**, nine orders past the
   previous frontier, in under an hour, and a delegated fresh-context audit
   (`R003`) passed the reduction and the instrument after reproducing the
   numbers independently. The route is now genuinely easier, not merely

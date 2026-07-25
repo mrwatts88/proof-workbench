@@ -383,6 +383,33 @@
     6,
     14
    ]
+  },
+  "29": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 30,
+   "nodes": 49882612,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 44065721,
+    "cycle": 1334986730,
+    "minimal": 2890076,
+    "poison": 0,
+    "reserve": 233544446,
+    "symmetry": 22837229
+   },
+   "seconds": 4195.95,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
   }
  }
 }

@@ -12,3 +12,5 @@ M=25 n=26 poison-hit-savings=[23, 19, 11] survivors=0 nodes=3945231 capped=False
 M=26 n=27 poison-hit-savings=[24, 20, 12] survivors=0 nodes=7577405 capped=False (504.0 s) | exact: gapfree=0 poison={} powers={} GENUINE=0 (0.0 s)
 M=27 n=28 poison-hit-savings=[25, 21, 13] survivors=0 nodes=14415162 capped=False (1220.0 s) | exact: gapfree=0 poison={} powers={} GENUINE=0 (0.0 s)
 M=28 n=29 poison-hit-savings=[26, 22, 14] survivors=0 nodes=26421019 capped=False (2200.5 s) | exact: gapfree=0 poison={} powers={} GENUINE=0 (0.0 s)
+M=29 n=30 poison-hit-savings=[27, 23, 15] survivors=0 nodes=49882612 capped=False (4195.9 s) | exact: gapfree=0 poison={} powers={} GENUINE=0 (0.0 s)
+M=30 n=31  TRIVIAL: max S = 30 is itself poison
