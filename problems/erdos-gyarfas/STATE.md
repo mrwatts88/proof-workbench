@@ -1,23 +1,27 @@
 # Current state
 
-- Last updated: 2026-07-25 (S025 — **the S-gap census is spent:
-  pre-registered outcome (i), with a decisive mechanism
-  recalibration**. Over 18,754,354 degree-2 pairs of the on-disk
-  \(\{C_4,C_8\}\)-free classes at orders 10–20 (`E026`/`C046`; 10–19
-  complete, 20 the 572,519-graph 11/16-part sample + the four
-  recorded part-14 profile members): **zero (F-S) kill candidates** —
-  no exactly-two member carries \(S\cap\{6,14\}=\emptyset\); the
-  eight profile objects re-verified saturated — **(F-S) survives its
-  first kill test where the residual object lives**. But **9,061
-  vertex-taut gapped pairs** exist off the profile (min degree-2
-  count 5/6/4 at 18/19/20; 6,934 full \(\mathbb P{-}2\) dodges;
-  5,419 on power-free members, most 2-connected): tautness + class +
-  window order do **not** force the poisons, so any interpolation
-  lemma proving (F-S) must consume the **exactly-two profile** (min
-  degree \(\ge3\) off the terminals) — the tautness-only mechanism is
-  refuted and the missing tool's spec is sharpened. Floors unchanged;
-  `E024` (order-21 rung) still **running**, excluded from every
-  ledger)
+- Last updated: 2026-07-25 (S026 — **the corpus dissection is spent:
+  the dodge mechanism is extracted, two candidate mechanisms are
+  killed, and the interpolation lemma splits into (L-A) ∧ (L-B) with
+  a validated formal engine for the long-range half.** Over the
+  9,061-row `E026` corpus vs the eight profile objects + a 556-member
+  control (`E027`/`C047`, attempt `A026`): the dodge economy has
+  exactly **three rigid shapes** (A: short, \(\max S=13\) walls; A′:
+  distance exactly 7; B: long-range, even part \(\subseteq4\mathbb
+  Z\), holes at \(\{6,10,14\}\)); the dodge is **pair-local**
+  (frontier members carry five saturated sibling pairs — member-level
+  lemmas dead) with the frontier at **ndeg2 = 4 at order 20** (the
+  profile load-bearing by two subdivision vertices); **99.1% of dodge
+  rows smooth to class-violating reduced graphs** (near-misses are
+  subdivisions escaping the class constraint; the profile is the
+  subdivision-free stratum). The **span law** is proved (no chord of
+  span 3 or 7 on any path in a \(\{C_4,C_8\}\)-free graph) and the
+  **first-order chord-exchange calculus** generates the entire top of
+  \(S\) down to 10 — including 14 — on all eight profile objects
+  while respecting every dodger hole: the missing tool sharpens to
+  **span/savings combinatorics of longest-path chord systems**.
+  Floors unchanged; `E024` (order-21 rung) still **running**,
+  excluded from every ledger)
 - Problem: `P-002` — Erdős–Gyárfás Conjecture
 
 ## Exact target
@@ -294,6 +298,38 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   agreements per run) + stride sample; per-line integrity on all
   members; two production runs, identical tallies; zero bipartite
   members in the classes.
+- **New (S026): `C047` — the near-miss dissection; the dodge taxonomy,
+  the subdivision frame, and the chord-exchange validation.** Against
+  the eight profile objects and a stride control: **(a)** every corpus
+  dodge is shape A (short + 6-hole; minimal full dodges have
+  \(\max S=13\) *exactly* at orders 16–20), A′ (\(\min S=7\) exactly),
+  or B (long-range; holes exactly \(\{6,10,14\}\); even part
+  \(\subseteq4\mathbb Z\) — the `L034` channel-(iii) pattern in-window
+  on non-bipartite members; needs \(\ge7\) degree-2 vertices);
+  **(b)** the dodge is pair-local — the order-20 frontier members
+  (ndeg2 4; one adjacent-terminals full dodge \(S=\{1\}\cup[8,13]\))
+  carry five fully saturated sibling pairs, so no member-level
+  hypothesis works, and the profile hypothesis is load-bearing by
+  exactly two subdivision vertices; **(c)** corridors are short
+  (weights 2–3) and 99.1% of dodge rows reduce (suppressing
+  non-terminal degree-2 vertices) to graphs carrying a \(C_4\)/
+  \(C_8\) — subdivision is the escape from the class constraint;
+  **(d)** killed: member-level lemmas, odd-cycle-supply
+  discrimination (100% of dodge members have triangles); **(e)**
+  control base rates: ordinary taut pairs break the upper-interval
+  property at 12–17% (holes at 7–9, nearly gone by 13), Hamiltonian
+  pairs 22–29% — the profile-8's joint saturation is far outside
+  both; **(f)** the **span law** (proved, `A026` T5: no span-3/7
+  chords) plus the first-order disjoint-chord calculus reproduce the
+  profile saturation from 10 up (14 on all eight; misses confined to
+  \([4,9]\)) and exactly explain the dodgers' holes (two span-2
+  chords + spans \(\equiv1,2\bmod4\) ⟹ savings never \(\equiv3\bmod
+  4\)). Consequence (`A026` T7): **(F-S) ⟸ (L-A) ∧ (L-B)** — (L-A)
+  short-range exclusion (\(\max S\ge14\) in-window on the profile, or
+  \(6\in S\) when short); (L-B) long-range poison forcing
+  (\(\max S\ge14\Rightarrow14\in S\) or \(6\in S\)) — with the
+  chord-savings combinatorics as (L-B)'s engine and ear-overload as
+  (L-A)'s candidate.
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -377,11 +413,17 @@ exactly-two members on all of 10–20's disk classes), and the
 mechanism is recalibrated — 9,061 vertex-taut gapped pairs off the
 profile prove that tautness + class + order force nothing; the
 interpolation lemma must consume the exactly-two profile itself.
-Next: the profile-consuming interpolation attempt (target:
-\(S\supseteq[c,n-1]\), \(c\le14\), for vertex-taut
-\(\{C_4,C_8\}\)-free pairs with all non-terminal degrees \(\ge3\)
-in the window), fed by the census's stored near-miss corpus. Its
-search side is the ladder at order 21+ (`E024` running).
+**S026 spent the dissection** (`E027`/`C047`, attempt `A026`): the
+dodge taxonomy is rigid (shapes A/A′/B), the dodge is pair-local
+with the frontier two subdivisions from the profile, near-misses are
+subdivisions of class-violating graphs, and the interpolation target
+splits into **(L-A) ∧ (L-B) ⟹ (F-S)** with the span law proved and
+the chord-exchange calculus validated as (L-B)'s engine (top-of-S
+saturation from 10 up reproduced on all eight profile objects).
+Next: harvest `E024` (census the order-21 rung on landing), then the
+(L-B) chord-savings attempt (prove in-window profile chord systems
+realize savings \(M-14\) or \(M-6\)), with (L-A) ear-overload behind
+it.
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -530,19 +572,23 @@ configuration:**
   sharpened: 9,061 vertex-taut gapped pairs off the profile (down to
   4 degree-2 vertices at order 20, most on power-free 2-connected
   members) prove the lemma must consume the **exactly-two profile**,
-  not just tautness. Next falsifiable move: the profile-consuming
-  interpolation attempt — target \(S\supseteq[c,n-1]\), \(c\le14\),
-  for vertex-taut \(\{C_4,C_8\}\)-free pairs with all non-terminal
-  degrees \(\ge3\) in the window; first sub-move: dissect the stored
-  near-miss corpus against the eight profile objects for the
-  structure of the extra degree-2 vertices (forced corridors vs
-  branchy detours), extract the candidate reroute mechanism, and
-  verify it fails off-window on the calibration pair; (ii) the
-  \(\mathcal G\) rung at order 21 (**`E024` running**, launched at
-  S023 close — each new profile member is a new (F) data point, an
-  \(S\)-satisfying hit a disproof) and min-degree-3 at 22
-  (\(\approx\)38 h); (iii) the `C038` **kill rung** at block orders
-  15–16 and the disjoint long-link descent (unchanged).
+  not just tautness. **S026 spent the dissection sub-move**
+  (`E027`/`C047`, attempt `A026`): the taxonomy (A/A′/B), the
+  pair-locality warning, the ndeg2-4 frontier, the subdivision frame
+  (99.1% class-violating reductions), the span law (proved), and the
+  chord-exchange validation — the target lemma is now the split
+  **(L-A) ∧ (L-B)** with the chord-savings combinatorics as (L-B)'s
+  engine. Next falsifiable moves, in order: **harvest `E024`** when
+  it lands (census the order-21 rung; a gapped exactly-two member
+  kills (F-S); an \(S\)-satisfying hit is a disproof), then the
+  **(L-B) chord-savings attempt** (build the \(C_4/C_8\) chord-pair
+  exclusion table over a longest path; prove in-window profile chord
+  systems realize savings \(M-14\) or \(M-6\); any draft must fail
+  on the 36 Hamiltonian dodgers and respect the corpus), then the
+  **(L-A) ear-overload attempt** (short-range exclusion; the
+  adjacent-case recursion of `A026` T2); behind them min-degree-3 at
+  22 (\(\approx\)38 h) and the `C038` **kill rung** at block orders
+  15–16 + the disjoint long-link descent (unchanged).
 - **R2, constant route closed** — `C004`–`C006` verified and the bound
   improved to \(3|V_3|\ge2n+3\) (`L037`/`L038`), but S15 certifies
   \(2/3\) as the exact ceiling of the non-power hypotheses and no
@@ -653,7 +699,13 @@ dodge is no longer a trigger, it is the recorded norm);
 a **profile-consuming interpolation lemma that also holds on the
 census's near-miss corpus** (would be false — 9,061 counterexamples
 on disk — so any draft proof matching the corpus is unsound: use it
-as the standing sanity check beside the calibration pair); a **power-free vertex-taut (5b)-profile pair anywhere in
+as the standing sanity check beside the calibration pair; after
+S026, the sharp instances are the **36 Hamiltonian dodgers** for
+(L-B) — any savings-forcing draft must fail on their chord systems —
+and the **ndeg2-4/5 frontier members** for (L-A)); a **short-range
+or gapped exactly-two member at order 21+** (a \(\max S\le13\)
+profile pair kills (L-A) as stated; a gapped one kills (F-S) —
+check each new ladder rung); a **power-free vertex-taut (5b)-profile pair anywhere in
 the window** (defeats (F) in both forms and is one 2-path closure
 away from a tight 1-atom — disproof-adjacent); a **proof of (F-S) or
 (F-T) on the window** (then case (5b) is closed below 36, `G015` is
@@ -879,69 +931,87 @@ escape the poisons freely — over nine thousand escapes, many on
 graphs that also avoid all the forbidden cycles, growing rather than
 dying out as size increases. So the escape phenomenon is real and
 abundant right up to the wall, and it stops exactly at the shape
-itself. The lesson for the proof attempt is concrete: whatever
-forces the poisons, it is not the "every vertex carries traffic"
-property alone — it is that property *plus* having only two
-low-degree vertices. The next session attacks exactly that: why does
-demanding degree three everywhere (except the two terminals) force
-paths of every length to exist? The nine thousand near-miss escapes,
-all stored with full detail, are the perfect foil — any proposed
-explanation must fail on them and succeed on the eight.
+itself.
+
+S026 dissected those nine thousand escapes against the eight
+shape-matching graphs, and the anatomy came out cleaner than hoped.
+Every escape works one of three ways, each rigid: keep all paths
+short (the longest terminal-to-terminal path is *always* exactly 13
+— one below the poison), start too far apart (distance exactly 7,
+never more), or run a striking arithmetic pattern where the
+even-length paths come only in multiples of four (killing lengths 6,
+10 and 14 together). Three structural facts explain the escapes.
+The escape belongs to the *pair*, not the graph — the frontier
+graphs carry one escaping pair alongside five fully saturated ones,
+so no whole-graph explanation can work. Every escape rides on
+"corridor" vertices — degree-2 vertices that would be forbidden in
+the exact shape — and 99% of escapes, when those corridors are
+contracted away, reveal a graph that violates the forbidden-cycle
+rules: the escapes are stretched-out versions of illegal graphs,
+and the exact shape is precisely the class that cannot stretch.
+And the escape frontier now stands two corridor vertices from the
+exact shape. On the positive side, a concrete engine emerged: on
+each of the eight shape-matching graphs, take one longest
+terminal-to-terminal path and reroute it along its shortcut edges
+(a one-line rule says shortcuts spanning 3 or 7 steps cannot exist,
+because they would close a forbidden cycle) — and those reroutes
+alone already produce every path length from 10 up to the maximum,
+including both poisons, on all eight graphs, while provably
+producing none of the escapees' missing lengths. The proof problem
+is now two named lemmas: show that the exact shape in the critical
+size range cannot keep all paths short (the thin-margin half), and
+show that its shortcut structure always reaches down to a poison
+length (the half the new engine covers).
 
 ## Resolution outlook
 
 - Estimated chance of eventually settling the exact current statement: 8%
-- Previous estimate: 8% (S024)
-- Reason for no change: the census's two halves roughly cancel. For:
-  (F-S) survived its first kill test exactly where the residual
-  object lives, and the missing tool's specification is now sharp and
-  empirically forced (consume the exactly-two profile; nothing weaker
-  is true — a 9,061-row proof of that). Against: the dodge is
-  abundant and growing right up to the profile wall (down to four
-  degree-2 vertices at order 20, on otherwise residual-object-shaped
-  graphs), the hypothesis class has only eight data points, and the
-  sharpened lemma is *harder* than the tautness-only version the
-  redirect first imagined — the profile hypothesis is stronger fuel
-  but nobody has ever burned it (no recorded technique converts "min
-  degree 3 off the terminals" into path-length lower bounds). The
-  upper window (21–35) still has no exactly-two data beyond eight
-  objects.
+- Previous estimate: 8% (S025)
+- Reason for no change: the dissection's findings again roughly
+  cancel. For: the mechanism extraction succeeded beyond expectation —
+  the dodge taxonomy is rigid, the exchange calculus is a *validated*
+  engine (it already reproduces the entire poison-relevant part of
+  the saturation on all eight profile objects, with the span law
+  proved), and (L-B) now has a concrete combinatorial proof target
+  where none existed. Against: (L-A) — the short-range half — has a
+  two-subdivision empirical margin, no engine, and the frontier trend
+  (dodges at ndeg2 4 by order 20, hi = 13 walls) is compatible with
+  (F-S) simply failing at some order 21–35; the exactly-two class
+  still has eight data points; and even (L-B)'s target (savings
+  reachability) is an unproved combinatorial statement about a chord
+  structure nobody has axiomatized. The route is sharper and better
+  instrumented but not yet easier.
 
 ## Resume reading
 
 1. `STATEMENT.md`
-2. **`A025`** (the probe verdict T1, the trunk bound T2, saturation
-   T3, the (F-S)/(F-T) redirect T4, the S-gap census design T5) and
-   **`A024`**/`A023` (the T5 theorem and the interference frame it
-   consumes); then `A019` (the case analysis, the engine/peel, the
-   residual object — R1's foundation)
+2. **`A026`** (the dissection deductions T1–T6, the (L-A)/(L-B)
+   split T7, the sharpened tool spec and kill discipline) and
+   **`A025`** (the (F-S)/(F-T) redirect frame it serves); then
+   `A024`/`A023` (the T5 theorem and interference frame) and `A019`
+   (the case analysis, the engine/peel, the residual object)
 3. **`E024` is running** (order-21 \(\mathcal G\) rung, launched at
-   S023 close; not citable until harvested — harvest it first when it
-   finishes: floors move if empty, each profile member is a new (F)
-   data point to census, an \(S\)-satisfying hit is a disproof).
-   **First action: the profile-consuming interpolation attempt** —
-   target lemma: vertex-taut \(\{C_4,C_8\}\)-free pairs with all
-   non-terminal degrees \(\ge3\) at orders 18–35 have
-   \(S\supseteq[c,n-1]\) for some \(c\le14\) (implies (F-S)); first
-   sub-move: dissect `E026`'s stored near-miss corpus (9,061
-   vertex-taut gapped pairs, `census_summary.json` +
-   `analysis.json`) against the eight profile objects — where do the
-   extra degree-2 vertices sit, what reroutes do degree-\(\ge3\)
-   vertices enable that the near-misses lack — and check any
-   candidate mechanism fails off-window on the calibration pair and
-   fails on the corpus
-4. `E026/README.md` (the census: design, anchors, the ladder and
-   mechanism tables, coverage caveats) and `E025/README.md` (the
-   tables), with `E021`/`E022`/`E023` READMEs for the imported
-   instruments
+   S023 close; not citable until harvested — **harvest it first when
+   it finishes**: floors move if empty, each profile member is a new
+   (F) data point to census + exchange-test, an \(S\)-satisfying hit
+   is a disproof, a gapped or short-range exactly-two member kills
+   (F-S)/(L-A)). **Then: the (L-B) chord-savings attempt** — build
+   the \(C_4/C_8\) chord-pair exclusion table over a longest path
+   and prove in-window profile chord systems realize savings
+   \(M-14\) or \(M-6\); any draft must fail on the 36 Hamiltonian
+   dodgers (`E027/data/exchange_test.json`) and hold on the eight
+   profile objects. Behind it: the (L-A) ear-overload attempt.
+4. `E027/README.md` (the dissection: taxonomy, frontier, subdivision
+   frame, control rates, the exchange validation) with
+   `corpus_rows_compact.json` as the per-row refutation set; then
+   `E026/README.md` (the census) and the `E021`/`E022` READMEs for
+   the imported instruments
 5. `A021` (the congruence kill and the two-object calibration
-   discipline — Petersen\(-e\) + the order-14 exemplar
-   `M?AA@?WcKWHOWOL??`; both bind every case-(5b) argument, and both
-   sub-targets (F-S)/(F-T) correctly fail on them off-window) and
-   `A022`/`E020` (the chain package and its 15/16 kill rung)
-6. `CLAIMS.md` rows `C046` (new, S025), `L051`/`C045` (S024),
-   `L049`/`L050`/`C044` (S023), `L048`/`C042` (updated) (and
-   `L039`–`L047`, `C036`–`C043` for the frame); `OBLIGATIONS.md`
-   `G015`/`G013`
-7. `sessions/S025-…md` (this session: the census, the verdict, the
-   sharpened tool spec) and `S019`–`S024` for the preceding arc
+   discipline — Petersen\(-e\) shows \(C_8\)-freeness is necessary
+   for (L-A)) and `A022`/`E020` (the chain package and its 15/16
+   kill rung)
+6. `CLAIMS.md` rows `C047` (new, S026), `C046` (S025), `L051`/`C045`
+   (S024), `L049`/`L050`/`C044` (S023) (and `L039`–`L048`,
+   `C036`–`C043` for the frame); `OBLIGATIONS.md` `G015`/`G013`
+7. `sessions/S026-…md` (this session: the dissection, the split, the
+   engine) and `S019`–`S025` for the preceding arc

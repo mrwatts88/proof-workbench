@@ -290,6 +290,34 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   near-miss corpus is simultaneously the mechanism's raw material
   and the refutation set for any overclaiming draft. `E024` ran
   throughout, untouched, **still running**.
+  **S026 (2026-07-25) spent the dissection sub-move — the mechanism
+  is extracted and the lemma splits.** The corpus dissection
+  (`E027`/`C047`, attempt `A026`; anchors 35 checks both
+  interpreters; every row re-validated, the `L035` parity alarm
+  never firing): the dodge economy has exactly **three rigid
+  shapes** — A (short: \(\max S=13\) *exactly* on every minimal
+  full dodge at 16–20), A′ (distance: \(\min S=7\) exactly), B
+  (long-range: holes exactly \(\{6,10,14\}\), even part
+  \(\subseteq4\mathbb Z\), needing \(\ge7\) degree-2 vertices) —
+  the dodge is **pair-local** (frontier members carry five
+  saturated sibling pairs; member-level lemmas dead) with the
+  frontier at **ndeg2 = 4 at order 20** (profile load-bearing by
+  two subdivision vertices), and **99.1% of dodge rows smooth to
+  class-violating reduced graphs** (near-misses are subdivisions
+  escaping the class constraint; the profile is the
+  subdivision-free stratum). Proved en route: the **span law** (no
+  path chord of span 3 or 7 in a \(\{C_4,C_8\}\)-free graph). The
+  **first-order chord-exchange calculus** (disjoint-chord surgery
+  on one Hamiltonian path) generates the entire top of \(S\) down
+  to 10 — including 14 — on **all eight** profile objects while
+  filling no interval on any of the 36 Hamiltonian dodgers (their
+  spans \(\equiv1,2\bmod4\) make the poison-hitting savings class
+  \(\equiv3\bmod4\) unreachable). **(F-S) ⟸ (L-A) ∧ (L-B)**: (L-A)
+  short-range exclusion (thin margin, no engine); (L-B) long-range
+  poison forcing (engine validated — the span/savings combinatorics
+  of longest-path chord systems, the sharpened missing tool).
+  Killed: member-level lemmas, odd-cycle-supply discrimination.
+  `E024` ran throughout, untouched, **still running**.
   Portfolio (all threads carried, per standing user instruction): the
   case-(5b) endgame (the **(F) program**, Tier 1, now the
   (F-S)/(F-T) pair with the **profile-consuming interpolation
@@ -359,39 +387,41 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 For `P-002`, keep working **Tier 1: exclude case (5b)** via the
 **(F) program**: (F) = **(F-S) ∨ (F-T)** (S024; either closes case
-(5b) below 36), and **S025 spent (F-S)'s first kill test** — the
-S-gap census (`E026`/`C046`, 18,754,354 degree-2 pairs over the
-on-disk classes at orders 10–20) found **zero** gapped exactly-two
-members ((F-S) survives where the residual object lives) and
-**9,061 vertex-taut gapped pairs off the profile** (down to 4
-degree-2 vertices at order 20, most on power-free 2-connected
-members) — so tautness + class + window order force nothing, and
-any interpolation lemma proving (F-S) must consume the
-**exactly-two profile** (min degree \(\ge3\) off the terminals).
-**First action: the profile-consuming interpolation attempt** (new
-attempt record) — target lemma: vertex-taut \(\{C_4,C_8\}\)-free
-pairs with all non-terminal degrees \(\ge3\) at orders 18–35 have
-\(S\supseteq[c,n-1]\) for some \(c\le14\) (implies (F-S)). First
-falsifiable sub-move: dissect `E026`'s stored near-miss corpus
-against the eight profile objects — where the extra degree-2
-vertices sit, which length-adjusting reroutes degree-\(\ge3\)
-vertices enable that the near-misses lack — and extract the
-candidate mechanism. Kill discipline: any candidate must **fail on
-the 9,061-row corpus** (else it is unsound by construction) and
-**fail off-window on the calibration pair** (`A021`); it must
-succeed on the eight profile objects. Background: the order-21
-\(\mathcal G\) rung is **running** (`E024`, launched at S023 close —
-not citable until harvested; **harvest it first when it lands**:
-floors move if empty, each new profile member gets the census
-treatment, an \(S\)-satisfying hit is a disproof). Tier 3 stays
-harvest-only (the `C038` kill rung at block orders 15–16; cubic
-26/28; min-degree-3 at 22, \(\approx\)38 h — a deliberate decision;
-bipartite 26). Do **not** reopen congruence obstructions (`C037`),
-membership-only chain exclusion (`L045`), the density constant
-(`L038`), or the membership-collision form of (F) (`C045`); a
-non-decomposable cycle in a vertex-taut pair is a **soundness
-alarm** (it would contradict the reviewed `L049`), not a route
-pivot.
+(5b) below 36). S025 spent (F-S)'s first kill test (zero gapped
+exactly-two members on disk; 9,061 near-miss dodges force the
+lemma to consume the profile), and **S026 spent the dissection**
+(`E027`/`C047`, attempt `A026`): the dodge taxonomy is rigid
+(shapes A/A′/B), the dodge is pair-local with the frontier two
+subdivision vertices from the profile, near-misses are
+subdivisions of class-violating graphs, the **span law** is proved
+(no path chord of span 3 or 7), and the **chord-exchange
+calculus** is validated as the long-range engine (top-of-\(S\)
+saturation from 10 up, including 14, reproduced on all eight
+profile objects; every dodger hole respected). The target is now
+the split **(L-A) ∧ (L-B) ⟹ (F-S)**: (L-A) — in-window profile
+pairs have \(\max S\ge14\) (or \(6\in S\) when short); (L-B) —
+\(\max S\ge14\) forces \(14\in S\) or \(6\in S\).
+**First action: harvest `E024`** (the order-21 \(\mathcal G\) rung,
+running since S023 close — not citable until harvested): census +
+exchange-test each new profile member; empty moves the \(\mathcal
+G\) floor to 22; a gapped or short-range exactly-two member kills
+(F-S)/(L-A) as stated; an \(S\)-satisfying hit is a disproof.
+**Then: the (L-B) chord-savings attempt** — build the
+\(C_4/C_8\) chord-pair exclusion table over a longest path (the
+span law + interlocking-pair exclusions) and prove in-window
+profile chord systems realize savings \(M-14\) or \(M-6\). Kill
+discipline: any draft must **fail on the 36 Hamiltonian dodgers**
+(`E027/data/exchange_test.json`) and on the corpus, and hold on
+the eight profile objects. Behind it: the (L-A) ear-overload
+attempt (thin margin — the priority order is deliberate). Tier 3
+stays harvest-only (the `C038` kill rung at block orders 15–16;
+cubic 26/28; min-degree-3 at 22, \(\approx\)38 h — a deliberate
+decision; bipartite 26). Do **not** reopen congruence obstructions
+(`C037`), membership-only chain exclusion (`L045`), the density
+constant (`L038`), or the membership-collision form of (F)
+(`C045`); a non-decomposable cycle in a vertex-taut pair is a
+**soundness alarm** (it would contradict the reviewed `L049`), not
+a route pivot.
 No required action remains for `P-001`; its reference comparison is
 optional and freely permitted.
 

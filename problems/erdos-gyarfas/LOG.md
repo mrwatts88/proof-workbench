@@ -1000,3 +1000,68 @@ attempt, experiment, or review record.
   degree-2 vertices. Background: `E024` (order-21 rung) ran
   throughout, untouched, **still running** — excluded from every
   ledger row; harvest it first when it lands. Outlook: 8% (held).
+
+## 2026-07-25 — S026: the corpus dissection — three rigid dodge shapes, the subdivision frame, and the chord-exchange engine (`A026`/`E027`/`C047`)
+
+- Session `S026` opened the profile-consuming interpolation attempt
+  (`A026`) and ran its first falsifiable sub-move: the dissection of
+  `E026`'s 9,061-row near-miss corpus against the eight profile
+  objects (`E027`; anchors 35 checks under CPython 3.14.2 and PyPy
+  7.3.23; production single-process nice-15 beside the running
+  `E024`; every corpus row structurally re-validated, \(\min
+  S=d(a,b)\) asserted per row, every 250th row fully re-enumerated,
+  the `L035` parity law asserted on all 9,061 corpus rows and 7,781
+  control taut pairs with zero violations).
+- **The dodge taxonomy is rigid** (`C047`(a)): every stored dodge is
+  shape A (short + 6-hole; \(\max S=13\) exactly on every minimal
+  full dodge at orders 16–20), A′ (distance: \(\min S=7\) exactly,
+  never more), or B (long-range: holes exactly at \(\{6,10,14\}\);
+  even part \(\subseteq4\mathbb Z\) — the `L034` channel-(iii)
+  pattern realized in-window on non-bipartite members; needs \(\ge7\)
+  degree-2 vertices). The 14-dodge is never by distance, the 6-dodge
+  never by shortness.
+- **The dodge is pair-local and the frontier is two subdivisions from
+  the profile** (`C047`(b)): the order-20 ndeg2-4 frontier members
+  (incl. one adjacent-terminals full dodge, \(S=\{1\}\cup[8,13]\),
+  which reduces recursively to an off-terminal distance dodge) carry
+  five fully saturated sibling pairs each — member-level hypotheses
+  are dead.
+- **The subdivision frame** (`C047`(c)): corridor weights are 2–3
+  (never \(\ge5\)); 99.1% of dodge rows (8,978/9,061), smoothed at
+  their pair, reduce to graphs whose simple part carries a
+  \(C_4\)/\(C_8\) — near-misses are subdivisions of class-violating
+  graphs; the profile is the subdivision-free stratum. Killed
+  candidates: member-level lemmas, odd-cycle-supply discrimination
+  (100% of dodge members have triangles).
+- **Control base rates** (556 members, 14,098 full enumerations):
+  ordinary taut pairs break the upper-interval property at 12–17%
+  (holes concentrated at 7–9, nearly gone by 13); Hamiltonian pairs
+  22–29%; the profile-8's joint gap-free + Hamiltonian saturation is
+  far outside both.
+- **The span law and the exchange engine** (`A026` T5/T6,
+  `C047`(f)): proved — no path in a \(\{C_4,C_8\}\)-free graph has a
+  chord of span 3 or 7; and the first-order disjoint-chord calculus
+  on one Hamiltonian path per profile object generates the entire
+  top of \(S\) down to 10 (misses confined to \([4,9]\)) —
+  **including 14 on all eight** — while on the 36 Hamiltonian
+  dodgers it fills no interval (two span-2 chords + spans
+  \(\equiv1,2\bmod4\) make savings \(\equiv3\bmod4\) unreachable).
+  Soundness asserted throughout (every generated length is a real
+  path in the recorded \(S\)).
+- **The target splits** (`A026` T7): (L-A) ∧ (L-B) ⟹ (F-S) — (L-A)
+  short-range exclusion (in-window profile pairs have \(\max
+  S\ge14\), or \(6\in S\) when short; thin margin, no engine yet);
+  (L-B) long-range poison forcing (\(\max S\ge14\Rightarrow14\in S\)
+  or \(6\in S\); engine validated — the span/savings combinatorics
+  of longest-path chord systems). The missing tool named by `A025`
+  T4 sharpens accordingly.
+- Ledgers reconciled: `C047` new; `G015` updated (S026 update: the
+  split, the engine, the new move order); `STATE.md`,
+  `problem.json`, index. `PROOF.md`/`DECISIONS.md` unchanged (no
+  integrated-argument change; (F-S)/(F-T) statements stand verbatim —
+  the dissection refined the mechanism and split the lemma inside
+  `A025` T4's frame). Next action: **harvest `E024` first** (ran
+  throughout, untouched, still running — excluded from every ledger
+  row), then the (L-B) chord-savings attempt (kill discipline: fail
+  on the 36 Hamiltonian dodgers, hold on the eight), then (L-A)
+  ear-overload. Outlook: 8% (held).
