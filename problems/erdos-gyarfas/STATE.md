@@ -1,18 +1,19 @@
 # Current state
 
-- Last updated: 2026-07-25 (S023 — **T5 is a theorem**: `L049`, the
-  trimming construction, delegated audit `R002` **PASS** (0 critical /
-  0 major; all findings repaired in place); both remaining
-  pre-registered kill rungs were spent **first** and survived
-  (`C044`: `smallworld 13` exhaustive, biconditional exact; order
-  \(\le8\) general exhaustive; slices 9–11); the case-(5b) spectrum
-  identity is now **unconditional** (`L048`(iii):
-  \(\mathrm{Spec}(B)=T_1\cup(S+2)\), every element a trunk-split pair
-  value), completeness ⟺ tautness on connected \(\delta\ge2\) graphs
-  (`L050`), and **the proof side of case (5b) below order 36 is
-  exactly the forcing target (F)**; floors unchanged — every
-  counterexample \(\ge22\), window \([22,24]\); tight 1-atoms
-  \(\ge22\), \(\mathcal G\)-members \(\ge21\); nothing left running)
+- Last updated: 2026-07-25 (S024 — **the (F) opening probe is spent:
+  pre-registered branch (b)**. The complete trunk-split realization
+  tables of the ten named objects (`E025`/`C045`: 604 power cycles,
+  61,901 witnessing pairs, 1,971 trunk-split realizations, every
+  `L049` invariant asserted, no soundness alarm) show **no
+  membership-patterned regularity** — the membership-collision form
+  of (F) is dead (`A025` T1). What replaces it: the **trunk bound**
+  `L051` (\(s\le n-L\), proved, tight on all ten objects) and
+  **frontier saturation** (all eight profile objects have spectrum
+  exactly \([3,n]\setminus\{4,8\}\) and \(S\supseteq[6,n-1]\ni6,14\)).
+  **(F) is re-aimed as (F-S) ∨ (F-T)** (`A025` T4): the window forces
+  \(S\cap\{6,14\}\ne\emptyset\), or forces \(16\in\mathrm{Spec}\) —
+  either closes case (5b) below 36. Floors unchanged; `E024` (order-21
+  rung) still **running**, excluded from every ledger)
 - Problem: `P-002` — Erdős–Gyárfás Conjecture
 
 ## Exact target
@@ -218,6 +219,50 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   (F) is now the whole proof side there. Imports: Menger
   \(k=2\)/Whitney and block facts B1–B3, precise statements in
   `references/textbook-classics-2026-07-25.md`.
+- **New (S024): `L051`/`C045` — the (F) opening probe spent, branch
+  (b) taken, (F) re-aimed.** The complete trunk-split power-collision
+  realization tables of the ten named objects (`E025`, anchors 45+14
+  both interpreters, every recorded reference field re-verified, the
+  weave control separating trunk-split from weaving pairs): none of
+  the nine pre-registered membership patterns is universal; **30
+  cycles across six profile objects are membership-blind outright**
+  (trunk-split sets \(\{(5,13,1)\}\), \(\{(9,11,2),(10,10,2)\}\), or
+  \(\{(5,11,0)\}\)); the calibration pair's 100% `has_PP` structure
+  (every calibration \(C_8\) realized by two power-length paths)
+  collapses to 1–8/37–112 at the frontier. **The membership-collision
+  form of (F) is dead** — the empirical third leg beside `C037`
+  (congruence caps at parity) and `L045` (memberships cannot exclude
+  the chain case). Proved en route: **`L051`, the trunk bound** —
+  every trunk-split realization has \(s=t_a+t_b\le n-L\), hence
+  \(x+y\le2n-L\) (trunks live on off-cycle vertices; one paragraph
+  from `L049`'s arc form) — **tight on all ten objects** (max \(s\) =
+  \(n-L\) exactly: 2/6/3/4 at orders 10/14/19/20); with `L048`(iii)
+  the residual object's entire collision system is order-confined
+  (\(C_{32}\) at order \(\le33\): \(s\le1\)). Frontier saturation
+  recorded (`A025` T3): spectra exactly \([3,n]\setminus\{4,8\}\) and
+  \(S\supseteq[6,n-1]\) with \(6,14\in S\) on **all eight** profile
+  objects (the double blocking, now seen as saturation); the only
+  known \(\mathbb P-2\) dodges (\(S\cap\{6,14\}=\emptyset\)) are the
+  calibration pair at orders 10 and 14, both gapping \(S\) exactly at
+  6. **(F) = (F-S) ∨ (F-T)** (`A025` T4, both order-windowed, both
+  failing off-window on the calibration pair as the discipline
+  requires): (F-S) — vertex-taut (5b)-profile pairs with
+  \(4,8\notin\mathrm{Spec}\) in the window force
+  \(S\cap\{6,14\}\ne\emptyset\) (closure blocked via
+  \(\mathrm{Spec}(B)\supseteq S+2\)); (F-T) — they force
+  \(16\in\mathrm{Spec}\). Either, proved on \([18,35]\), closes case
+  (5b) there (`L046` covers the chain side). Candidate mechanism:
+  **saturation/interpolation** — a lower-bound theory for through-path
+  length sets of taut windowed pairs (missing tool, named; `L049`'s
+  block chain + `L051` are the raw material). First falsifiable move:
+  the **S-gap census at the window bottom** (`A025` T5) — the
+  \(\{C_4,C_8\}\)-free two-degree-2 classes are on disk at 18–20
+  (`E022/data`, order 20 SAVE_LIMIT-sampled) with 21 generating
+  (`E024`): per member, the \(S\)-gap structure at \(\{2,6,14\}\) and
+  tautness; no taut gapped member ⟹ (F-S) survives where the residual
+  object lives; a taut gapped member kills (F-S) as stated and is
+  calibration object #3; the gap-vs-order curve against 10–16
+  measures the mechanism either way.
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -291,10 +336,12 @@ trunk-split pair value) — and the forcing target **(F)** is now the
 entire proof side below 36: (F) says the forced \(S\)-arithmetic
 makes a power-length trunk-split collision unavoidable in the window
 \([18,35]\), which is *equivalent* to case (5b)'s emptiness there.
-First (F) move: the power-collision realization tables of the ten
-named objects. Its search side is the ladder at order 21+ (20 was
-spent by the S022 harvest; 21 is \(\approx\)18 h on 8 workers — a
-deliberate decision).
+**S024 spent (F)'s opening move**: the realization tables came back
+with no membership pattern (branch (b), `C045`), so (F) is re-aimed
+as **(F-S) ∨ (F-T)** — the window forces \(S\cap\{6,14\}\ne\emptyset\)
+or \(16\in\mathrm{Spec}\) — with the trunk bound `L051` proved and
+the S-gap census as the next move. Its search side is the ladder at
+order 21+ (`E024` running).
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -423,23 +470,30 @@ configuration:**
   argument exists in the final proof; audited `R002` PASS) with the
   spectrum identity unconditional (`L048`(iii) upgrade) and the
   biconditional a theorem on \(\delta\ge2\) (`L050`). Live moves
-  against case (5b), in order: (i) **the (F) program** — (F)
-  (`A023` T6, consuming `L049`): vertex-taut (5b)-profile pairs with
-  the forced \(S\)-arithmetic in the window \([18,35]\) always
-  realize a **trunk-split** collision at a power length; by
-  `L048`(iii) this is *equivalent* to case (5b)'s emptiness below 36,
-  so it is the entire proof side there. First falsifiable move: the
-  **power-collision realization tables** of the ten named objects
-  (all eight profile members + Petersen\(-e\) + the order-14
-  exemplar) — every \((x,y,s)\) trunk-split realization of every
-  \(C_8/C_{16}\); a membership-patterned regularity names (F)'s
-  mechanism, its absence redirects (F) toward window/order
-  arithmetic. Doubly calibrated (Petersen\(-e\), the order-14
-  exemplar), with eight profile data points realizing the
-  16-collision and the \(S\)-violation simultaneously; (ii) the
-  \(\mathcal G\) rung at order 21 (\(\approx\)18 h on 8 workers, a
-  deliberate decision — each new profile member is a new (F) data
-  point, an \(S\)-satisfying hit a disproof) and min-degree-3 at 22
+  against case (5b), in order — **S024 spent move (i)'s opening probe
+  (branch (b)) and re-aimed the program**: (i) **the (F) program,
+  now (F-S) ∨ (F-T)** (`A025` T4): the membership-collision form is
+  dead (`C045` — no pattern survives the ten objects; 30
+  membership-blind cycles), and (F) splits into (F-S) — in the window
+  \([18,35]\), vertex-taut (5b)-profile pairs with
+  \(4,8\notin\mathrm{Spec}\) force \(S\cap\{6,14\}\ne\emptyset\)
+  (closure blocked) — and (F-T) — they force \(16\in\mathrm{Spec}\)
+  (\(H\) blocked); either closes case (5b) below 36. Supporting
+  structure proved: the trunk bound `L051` (\(s\le n-L\), tight on
+  all ten objects — the collision system is order-confined).
+  Candidate mechanism: **saturation/interpolation** (all eight
+  profile objects have \(S\supseteq[6,n-1]\) and spectrum
+  \([3,n]\setminus\{4,8\}\); the missing tool is a lower-bound theory
+  for through-path length sets of taut windowed pairs). First
+  falsifiable move: the **S-gap census at the window bottom**
+  (`A025` T5) — per member of the on-disk 18–20 classes (and 21 when
+  `E024` lands), the \(S\)-gap structure at \(\{2,6,14\}\) plus
+  tautness; no taut gapped member ⟹ (F-S) survives its first kill
+  test; a taut gapped member kills (F-S) as stated and becomes
+  calibration object #3, leaving (F-T); (ii) the
+  \(\mathcal G\) rung at order 21 (**`E024` running**, launched at
+  S023 close — each new profile member is a new (F) data point, an
+  \(S\)-satisfying hit a disproof) and min-degree-3 at 22
   (\(\approx\)38 h); (iii) the `C038` **kill rung** at block orders
   15–16 and the disjoint long-link descent (unchanged).
 - **R2, constant route closed** — `C004`–`C006` verified and the bound
@@ -539,18 +593,20 @@ pair would now **contradict the reviewed theorem `L049`** (the S023
 rungs gave it 12.7M further chances and it never happened) — any such
 find is a soundness alarm on `A024`/`R002`/the census predicate, to be
 treated as a critical audit event, not a route pivot;
-a **membership-patterned regularity in the (F) realization tables**
-(then (F) has a candidate mechanism and the proof attempt starts) —
-subject to the standing `A021` discipline: any claimed (F)-mechanism
-must fail on Petersen\(-e\) and the order-14 exemplar unless it
-consumes power-freeness or minimality, both being non-power-free
-realizers of the forced arithmetic; a **power-free vertex-taut
-(5b)-profile pair anywhere in the window** (defeats (F) as stated and
-is one 2-path closure away from a tight 1-atom — disproof-adjacent);
-a **proof of (F) on the window** (then case (5b) is closed below 36,
-`G015` is proved below 36, and the search ladder becomes the whole
-case); exclusion of case (5b) outright (then `G015` is proved
-and Thread C becomes the whole game).
+~~a membership-patterned regularity in the (F) realization tables~~
+(**spent, S024**: the tables came back with no pattern — branch (b)
+taken, the membership-collision form of (F) is dead, `C045`/`A025`);
+a **vertex-taut member of the 18+ class with
+\(S\cap\{6,14\}=\emptyset\)** in the S-gap census (kills (F-S) as
+stated, becomes calibration object #3 — the first in-window
+\(\mathbb P-2\) dodge — and leaves (F-T) as the surviving
+sub-target); a **power-free vertex-taut (5b)-profile pair anywhere in
+the window** (defeats (F) in both forms and is one 2-path closure
+away from a tight 1-atom — disproof-adjacent); a **proof of (F-S) or
+(F-T) on the window** (then case (5b) is closed below 36, `G015` is
+proved below 36, and the search ladder becomes the whole case);
+exclusion of case (5b) outright (then `G015` is proved and Thread C
+becomes the whole game).
 
 ### Process correction (S018)
 
@@ -723,55 +779,80 @@ to have always collide into a power-of-two cycle when the graph is
 small enough? Answer yes below 36 vertices, and the programme's
 centerpiece theorem (the cubic reduction) is proved there.
 
+S024 took that question's first step: it built the complete
+"collision tables" of all ten graphs closest to the dangerous
+configuration — for every power-of-two cycle in each graph, every way
+that cycle arises as two terminal-to-terminal paths overlaid in the
+theorem's normal form. The question the tables were built to answer:
+do the special path lengths the dangerous configuration is forced to
+carry (powers of two and their neighbours) drive the collisions? The
+answer is a clean no — the collisions run through ordinary lengths,
+thirty of the cycles involve no special length at all, and the two
+small graphs where power lengths did drive everything turn out to be
+small-size artifacts. That kills one candidate proof mechanism early
+and cheaply, and the same tables revealed what actually governs the
+collisions: geometry and size, not length arithmetic. Two facts stand
+out. First, a newly proved (small) lemma: the shared part of any such
+overlay must fit entirely outside the cycle, so at the sizes in
+question the collisions have almost no room — a bound the data meets
+exactly on every one of the ten graphs. Second, saturation: each of
+the eight frontier graphs has cycles of *every* length except exactly
+4 and 8, and terminal-to-terminal paths of *every* length from 6 up —
+in particular the two "poison" lengths (6 and 14) whose presence
+dooms a candidate seed. So the forcing question sharpens into two
+concrete alternatives, either of which suffices below 36 vertices:
+prove that in the critical size window every candidate is forced to
+carry a poison path length, or prove it is forced to carry a
+16-cycle. The next move is a direct census over the already-generated
+databases: does any graph in the window escape both poison lengths?
+If none does, the first alternative survives its cheapest test; if
+one does, it is a named new test object and the attack shifts to the
+second alternative.
+
 ## Resolution outlook
 
 - Estimated chance of eventually settling the exact current statement: 8%
-- Previous estimate: 7% (S022)
-- Reason for the change: the program's gate lemma stopped being a
-  hope. For: T5 is now a reviewed theorem (`L049`/`R002`), proved by
-  a mechanism simpler than the one planned — which usually signals a
-  right framing — and the case-(5b) object's power-freeness is
-  unconditionally through-path arithmetic (`L048`(iii)), the exact
-  genre the two impossibility theorems (`C037`/`L045`) left alive;
-  the machinery (block chain, trunk-split normal form) transfers
-  directly to the (F) attack. Against: (F) itself is untouched and is
-  *equivalent* to the emptiness being sought — T5 supplies the
-  language, not the forcing; the ease of T5's proof also means the
-  hard content was never there; Tier 0's global forcing question is
-  unmoved, and the deliverable remains the cubic reduction, not 0.1.
-  One point, for converting the route's foundation from conjecture to
-  theorem without any negative surprise en route.
+- Previous estimate: 8% (S023)
+- Reason for no change: the session did exactly what a probe should —
+  it killed the membership-collision form of (F) for a few minutes of
+  compute instead of weeks of proof attempts, and it replaced it with
+  two sharper, mutually-covering sub-targets ((F-S)/(F-T)) plus a
+  proved confinement lemma (`L051`) and a named missing tool
+  (through-set lower bounds in taut windowed pairs). The negative
+  (the forced memberships do not organize the collisions — the third
+  arithmetic-can't-do-it result in a row) and the positive (the
+  saturation phenomenon is real, universal at the frontier, and now
+  the explicit target) roughly cancel: the route is narrower and
+  better aimed, but the forcing content is still unproved and the
+  upper window (22–35) has no data at all.
 
 ## Resume reading
 
 1. `STATEMENT.md`
-2. **`A024`** (the T5 proof: the taut block chain T1, the fan/
-   subdivision lemmas T2/T3, Lemma A T4, the trimming construction
-   T5 with the trunk-identical arc form, the corollaries T6 —
-   audited `R002`, PASS, all findings repaired in place) and
-   **`A023`** (the interference frame: the calculus T2–T4 = `L048`,
-   the forcing target **(F)** T6 with its calibration discipline, the
-   order-14 exemplar T7); then `A019` (the case analysis, the
-   engine/peel, the residual object — R1's foundation)
-3. Nothing is running. **First action: the (F) program's opening
-   move** — build the power-collision realization tables of the ten
-   named objects (every trunk-split \((x,y,s)\) realization of every
-   \(C_8/C_{16}\); the eight profile members' g6 identities are in
-   `E022/data`, the calibration pair in `E021`/`A023`), and read
-   them against the forced memberships; a membership-patterned
-   regularity names (F)'s mechanism, its absence redirects (F)
-   toward window/order arithmetic
-4. `E023/README.md` (the kill rungs, the exhaustive-through-8
-   statement, and the constructive per-instance verification of the
-   proof) with `E021`/`E022` READMEs for the instruments it imports
-5. `A021` (the congruence kill and the Petersen\(-e\) calibration
-   discipline — joined by the order-14 exemplar `M?AA@?WcKWHOWOL??`;
-   both bind every case-(5b) argument, **including any proposed (F)
-   mechanism**) and `A022`/`E020` (the chain package and its 15/16
-   kill rung)
-6. `CLAIMS.md` rows `L049`/`L050`/`C044` (new), `L048`/`C042`
-   (updated), `C041`/`C043` (and `L039`–`L047`, `C036`–`C040` for
-   the frame); `OBLIGATIONS.md` `G015`/`G013`/`G014`
-7. `sessions/S023-…md` (this session: rungs-first ordering, the
-   proof, the review, the repairs) and `S019`–`S022` for the
-   preceding arc
+2. **`A025`** (the probe verdict T1, the trunk bound T2, saturation
+   T3, the (F-S)/(F-T) redirect T4, the S-gap census design T5) and
+   **`A024`**/`A023` (the T5 theorem and the interference frame it
+   consumes); then `A019` (the case analysis, the engine/peel, the
+   residual object — R1's foundation)
+3. **`E024` is running** (order-21 \(\mathcal G\) rung, launched at
+   S023 close, \(\approx\)21 h wall; not citable until harvested —
+   harvest it when it finishes, floors move to 22/22 if empty).
+   **First action: the S-gap census at the window bottom** (`A025`
+   T5) — over `E022/data` `class_n18/19/20_part*` (order 20 is
+   SAVE_LIMIT-sampled; add order 21 when `E024` lands): per member,
+   \(S\)-gaps at \(\{2,6,14\}\) + tautness for gapped members; a
+   vertex-taut gapped member kills (F-S) and becomes calibration
+   object #3; none ⟹ (F-S) survives; either way the gap-vs-order
+   curve against orders 10–16 measures the saturation mechanism
+4. `E025/README.md` (the tables, the pattern verdicts, the anchors)
+   with `E021`/`E022`/`E023` READMEs for the imported instruments
+5. `A021` (the congruence kill and the two-object calibration
+   discipline — Petersen\(-e\) + the order-14 exemplar
+   `M?AA@?WcKWHOWOL??`; both bind every case-(5b) argument, and both
+   sub-targets (F-S)/(F-T) correctly fail on them off-window) and
+   `A022`/`E020` (the chain package and its 15/16 kill rung)
+6. `CLAIMS.md` rows `L051`/`C045` (new, S024), `L049`/`L050`/`C044`
+   (S023), `L048`/`C042` (updated) (and `L039`–`L047`,
+   `C036`–`C043` for the frame); `OBLIGATIONS.md` `G015`/`G013`
+7. `sessions/S024-…md` (this session: the probe, the verdict, the
+   redirect) and `S019`–`S023` for the preceding arc

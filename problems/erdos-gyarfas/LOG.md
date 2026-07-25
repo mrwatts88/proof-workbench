@@ -883,3 +883,58 @@ attempt, experiment, or review record.
   Whitney + block facts, precise statements). Next action: the (F)
   program's first falsifiable move — the power-collision realization
   tables of the ten named objects. Outlook: 7% → 8%.
+
+## 2026-07-25 — S024: the (F) opening probe is spent — no membership mechanism; the trunk bound; (F) re-aimed as (F-S) ∨ (F-T)
+
+- Session `S024` ran the recorded first move of the (F) program: the
+  complete **trunk-split power-collision realization tables** of the
+  ten named objects (`E025`; the eight profile members re-verified
+  field-by-field against `E022` records, Petersen\(-e\) from `E013`
+  core 3, the order-14 exemplar against `E021` family-1 data).
+  Anchors first per standing rule: `E021`'s 45-check suite through
+  the import plus 14 new-code checks (including a weave control the
+  trunk-split classifier must reject), both interpreters. Totals:
+  604 power cycles, 61,901 witnessing pairs, 1,971 trunk-split
+  realizations, every `L049` arc-form invariant asserted per pair,
+  full-payload CPython cross-check identical; **neither pre-registered
+  soundness alarm fired** (every power cycle has a trunk-split
+  realization — `L049` corroborated again).
+- **The pre-registered verdict is branch (b)**: none of the nine
+  membership patterns (fixed in code before the first table) is
+  universal; even the weakest disjunction fails — **30 cycles across
+  six profile objects are membership-blind** (entire trunk-split sets
+  \(\{(5,13,1)\}\), \(\{(9,11,2),(10,10,2)\}\), or \(\{(5,11,0)\}\));
+  the calibration pair's 100% `has_PP` structure (every calibration
+  \(C_8\) realized by two power-length paths) collapses to
+  1–8/37–112 at the frontier. **The membership-collision form of (F)
+  is dead** (`A025` T1, `C045`) — the empirical third leg beside
+  `C037` (congruence caps at parity) and `L045` (memberships cannot
+  exclude the chain case).
+- Proved en route: **`L051`, the trunk bound** — in `L049`'s arc form
+  \(s=t_a+t_b\le n-L\) (trunks live on off-cycle vertices), hence
+  \(x+y\le2n-L\) — **tight on all ten objects** (max \(s=n-L\)
+  exactly: 2/6/3/4 at orders 10/14/19/20). With `L048`(iii) the
+  case-(5b) collision system is order-confined (\(C_{32}\) at order
+  \(\le33\): \(s\le1\)).
+- Frontier saturation recorded (`A025` T3): all eight profile objects
+  have spectrum exactly \([3,n]\setminus\{4,8\}\) and
+  \(S\supseteq[6,n-1]\) with \(6,14\in S\) (the double blocking read
+  as saturation); the only known \(\mathbb P-2\) dodges are the
+  calibration pair (orders 10/14), both gapping \(S\) exactly at 6.
+- **(F) re-aimed** (`A025` T4): (F) = **(F-S)** (window forces
+  \(S\cap\{6,14\}\ne\emptyset\); closure blocked) **∨ (F-T)** (window
+  forces \(16\in\mathrm{Spec}\); \(H\) blocked) — either closes case
+  (5b) below 36; both order-windowed and correctly failing off-window
+  on the calibration pair. Candidate mechanism:
+  saturation/interpolation (through-set lower bounds in taut windowed
+  pairs — the named missing tool).
+- Ledgers reconciled: `L051`/`C045` new; `G015` updated; `STATE.md`,
+  `problem.json`, index. `PROOF.md`/`DECISIONS.md` unchanged (no
+  integrated-argument change; no statement/assumption change —
+  the (F) split is program structure inside `G015`). Next action:
+  the **S-gap census at the window bottom** (`A025` T5) over the
+  on-disk 18–20 classes (+21 when `E024` lands): a vertex-taut
+  member with \(S\cap\{6,14\}=\emptyset\) kills (F-S) and becomes
+  calibration object #3; none ⟹ (F-S) survives its first kill test.
+  Background: `E024` (order-21 rung) ran throughout and is **still
+  running** — excluded from every ledger row. Outlook: 8% (unchanged).

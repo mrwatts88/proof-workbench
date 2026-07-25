@@ -245,9 +245,35 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   window \([22,24]\); atoms 22/21). At close, the order-21
   \(\mathcal G\)-profile rung was launched as `E024`
   (\(\approx\)21 h on 8 workers; **running, not citable**).
+  **S024 (2026-07-25) spent the (F) opening probe — pre-registered
+  branch (b).** The complete trunk-split realization tables of the
+  ten named objects (`E025`/`C045`: 604 power cycles, 61,901
+  witnessing pairs, 1,971 trunk-split realizations, every `L049`
+  invariant asserted, anchors 45+14 both interpreters, CPython
+  payload identical, no soundness alarm) show **no
+  membership-patterned regularity** — none of the nine pre-registered
+  patterns is universal, 30 cycles are membership-blind outright, and
+  the calibration pair's 100% power-participant structure is a
+  small-order artifact — so the **membership-collision form of (F)
+  is dead** (`A025` T1; the empirical third leg beside
+  `C037`/`L045`). Proved en route: **`L051`, the trunk bound**
+  (\(s\le n-L\), hence \(x+y\le2n-L\); **tight on all ten objects** —
+  the case-(5b) collision system is order-confined). Saturation
+  recorded: all eight profile objects have spectrum exactly
+  \([3,n]\setminus\{4,8\}\) and \(S\supseteq[6,n-1]\ni6,14\); the
+  only known \(\mathbb P-2\) dodges are the calibration pair (orders
+  10/14, both gapping \(S\) exactly at 6). **(F) is re-aimed as
+  (F-S) ∨ (F-T)** (`A025` T4, both order-windowed, both correctly
+  failing off-window on the calibration pair): the window forces
+  \(S\cap\{6,14\}\ne\emptyset\) (closure blocked), or forces
+  \(16\in\mathrm{Spec}\) (\(H\) blocked) — either closes case (5b)
+  below 36. First move: the **S-gap census** over the on-disk 18–20
+  classes (+21 when `E024` lands). `E024` ran throughout, untouched,
+  **still running**.
   Portfolio (all threads carried, per standing user instruction): the
-  case-(5b) endgame (the **(F) program**, Tier 1, gate passed by
-  `L049`; + the ladder at order 21+, `E024` running); the `C038`
+  case-(5b) endgame (the **(F) program**, Tier 1, now the
+  (F-S)/(F-T) pair with the S-gap census as its first move; + the
+  ladder at order 21+, `E024` running); the `C038`
   kill rung at block orders 15–16; the pencil endgame + band-2 rung
   (pinched channel); the bipartite hunt at order 26 (order 24
   harvested empty on the new instrument) and the gcd-channel theory
@@ -310,32 +336,38 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, keep working **Tier 1: exclude case (5b)**, now via the
-**(F) program** — its gate is passed: **T5 is a theorem** (S023:
-`L049`, trimming construction, audited `R002` PASS; both kill rungs
-spent first and survived, `C044`), so the case-(5b) residual object's
-power-freeness is **unconditionally** through-path arithmetic
-(`L048`(iii): \(\mathrm{Spec}(B)=T_1\cup(S+2)\), every element a
-trunk-split pair value) and **(F) ⟺ case (5b) empty below 36**.
-**First action: the (F) opening probe** — build the power-collision
-realization tables of the ten named objects (the eight profile
-members, g6 identities in `E022/data`; Petersen\(-e\); the order-14
-exemplar): for every \(C_8/C_{16}\), every trunk-split realization
-\((x,y,s)\) with \(x,y\in S\), read against the forced memberships. A
-membership-patterned regularity names (F)'s mechanism and starts its
-proof attempt; absence redirects (F) toward window/order arithmetic.
-Binding calibration (`A021` discipline): any proposed (F) mechanism
-must fail on **both** calibration objects unless it consumes
-power-freeness or minimality. Background: the order-21 \(\mathcal
-G\) rung is **running** (`E024`, launched at S023 close, ~21 h on 8
-workers — not citable until harvested; harvest it first next
-session). Tier 3 stays harvest-only (the `C038` kill rung at block
-orders 15–16; cubic 26/28; min-degree-3 at 22, \(\approx\)38 h — a
-deliberate decision; bipartite 26). Do **not** reopen congruence
-obstructions (`C037`), membership-only chain exclusion (`L045`), or
-the density constant (`L038`); a non-decomposable cycle in a
-vertex-taut pair is now a **soundness alarm** (it would contradict
-the reviewed `L049`), not a route pivot.
+For `P-002`, keep working **Tier 1: exclude case (5b)** via the
+**(F) program, re-aimed by S024**: the opening probe is spent
+(branch (b), `E025`/`C045`/`A025`) — the membership-collision form
+of (F) is **dead**, and (F) is now the pair **(F-S) ∨ (F-T)**
+(either closes case (5b) below 36): (F-S) — in the window
+\([18,35]\), vertex-taut (5b)-profile pairs with
+\(4,8\notin\mathrm{Spec}\) force \(S\cap\{6,14\}\ne\emptyset\)
+(closure blocked via \(\mathrm{Spec}(B)\supseteq S+2\)); (F-T) —
+they force \(16\in\mathrm{Spec}\). Proved support: `L051` (the trunk
+bound, tight on all ten objects). **First action: the S-gap census
+at the window bottom** (`A025` T5) — over the on-disk
+\(\{C_4,C_8\}\)-free two-degree-2 classes (`E022/data`
+`class_n18/19/20_part*`; order 20 SAVE_LIMIT-sampled; add 21 when
+`E024` lands): per member compute \(S\), record gaps at
+\(\{2,6,14\}\), and tautness for every gapped member. No taut gapped
+member ⟹ (F-S) survives its first kill test where the residual
+object lives (and the gap-vs-order curve against orders 10–16
+measures the saturation mechanism to prove); a taut member with
+\(S\cap\{6,14\}=\emptyset\) **kills (F-S) as stated**, becomes
+calibration object #3, and shifts the attack to (F-T). Then: the
+saturation-mechanism proof attempt (through-set lower bounds in taut
+windowed pairs — the named missing tool). Background: the order-21
+\(\mathcal G\) rung is **running** (`E024`, launched at S023 close —
+not citable until harvested; harvest it first when it lands). Tier 3
+stays harvest-only (the `C038` kill rung at block orders 15–16;
+cubic 26/28; min-degree-3 at 22, \(\approx\)38 h — a deliberate
+decision; bipartite 26). Do **not** reopen congruence obstructions
+(`C037`), membership-only chain exclusion (`L045`), the density
+constant (`L038`), or the membership-collision form of (F)
+(`C045`); a non-decomposable cycle in a vertex-taut pair is a
+**soundness alarm** (it would contradict the reviewed `L049`), not a
+route pivot.
 No required action remains for `P-001`; its reference comparison is
 optional and freely permitted.
 
