@@ -383,6 +383,12 @@ responsible for the substance.
 - Put reusable code and its invocation in `experiments/<id>/`; separate generated
   data from conclusions.
 - Record tool versions when output is material to an argument.
+- Rented compute is available when wall clock is blocking research. It is not a
+  default and not a reward for a job being parallelisable: decide first whether
+  the computation is worth doing, then whether splitting it is worth what
+  splitting costs. A binary rebuilt on a different architecture is a **new
+  instrument** and must re-pass its anchor gate before any of its output is
+  citable. See `process/compute.md`.
 - Do not fabricate references, theorem names, computations, reviews, or consensus.
 - Use stable IDs from `process/records.md` in proofs and cross-references.
 - Keep `STATE.md` short enough to read at session start; move history to records.

@@ -12,6 +12,9 @@ Read in this order:
 5. [records.md](records.md) — persistent files and stable IDs.
 6. [toolkit.md](toolkit.md) — mathematical and computational tactics.
 7. [harness.md](harness.md) — how each agent harness satisfies the contract.
+8. [concurrency.md](concurrency.md) — running parallel legs on one dossier.
+9. [compute.md](compute.md) — where to run a computation, and what a
+   cloud-produced number must survive before it may be cited.
 
 Changes to these rules are process decisions. Record significant changes in
 `PROJECT_STATE.md` and cover enforceable behavior with tests.
