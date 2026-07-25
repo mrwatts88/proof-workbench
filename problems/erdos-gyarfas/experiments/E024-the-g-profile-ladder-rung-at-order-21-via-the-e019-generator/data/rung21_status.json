@@ -1,0 +1,15 @@
+{
+ "stages": {
+  "0_anchors": {
+   "status": "passed",
+   "seconds": 3.6
+  },
+  "B_rung21": {
+   "status": "running",
+   "parts_finished": 6,
+   "failed_parts": []
+  }
+ },
+ "interpreter_note": "pypy3 throughout",
+ "launched_by": "S023 at session close; not citable until harvested by a later session"
+}

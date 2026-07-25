@@ -1,0 +1,6 @@
+n=21 part=3/16 {C4,C8}-free=2505 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=32 7886.5s -> scan_n21_part3of16.json
+n=21 part=4/16 {C4,C8}-free=24243 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=33 12083.6s -> scan_n21_part4of16.json
+n=21 part=1/16 {C4,C8}-free=61940 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=32 17165.8s -> scan_n21_part1of16.json
+n=21 part=0/16 {C4,C8}-free=210802 profile=8 c16_blocked=8 survivors=0 min#deg2=2 max_e=33 23841.7s -> scan_n21_part0of16.json
+n=21 part=9/16 {C4,C8}-free=47357 profile=3 c16_blocked=3 survivors=0 min#deg2=2 max_e=32 13084.7s -> scan_n21_part9of16.json
+n=21 part=8/16 {C4,C8}-free=12352 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=32 18167.2s -> scan_n21_part8of16.json
