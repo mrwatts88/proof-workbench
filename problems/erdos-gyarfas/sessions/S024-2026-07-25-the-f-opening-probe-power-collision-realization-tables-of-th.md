@@ -168,9 +168,9 @@ reading that produced the redirect.
 - [x] `CLAIMS.md` (`L051`, `C045` new)
 - [x] `OBLIGATIONS.md` (`G015` S024 update)
 - [ ] `PROOF.md` (unchanged — integrated argument did not change)
-- [ ] `DECISIONS.md` (unchanged — no statement/assumption change; the
-  (F) split is program structure inside `G015`, recorded there and in
-  `A025`)
+- [x] `DECISIONS.md` (S024 row: the membership-collision form of (F)
+  closed as a route; the program re-aimed as (F-S) ∨ (F-T) — a
+  disposition change of a major approach; statement unchanged)
 - [x] `LOG.md`
 - [x] `problem.json` and index
 - [x] Session-scoped changes committed
