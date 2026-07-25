@@ -457,22 +457,27 @@ profile objects; every dodger hole respected). The target is now
 the split **(L-A) ∧ (L-B) ⟹ (F-S)**: (L-A) — in-window profile
 pairs have \(\max S\ge14\) (or \(6\in S\) when short); (L-B) —
 \(\max S\ge14\) forces \(14\in S\) or \(6\in S\).
-**First action: finish the `E028` ladder to order 35** — resume with
-`nice -n 15 pypy3 search.py search <M0> <M1> c16` after re-passing
-the anchors under both interpreters. Each rung *decides* (F) at that
-order on the Hamiltonian stratum; a survivor that passes the exact
-stage is a case-(5b) residual object — **disproof-adjacent, report
-immediately**. **Then: the non-Hamiltonian stratum** (`A027` T5) —
+**First action: harvest `E024`** — the S027 post-close review re-ordered
+the moves (`DECISIONS.md`): the remaining risk is stratified by *shape*,
+not by size, so extending the ladder completes nothing while the
+non-Hamiltonian stratum sits at zero coverage at every order. `E024`
+measures the decisive split (\(\max S\) vs \(n-1\)) over the *complete*
+order-21 class. The tooling plan to finish it in about an hour on Railway
+(Pro plan; ~$10 of compute; the linux/amd64 anchor re-gate blocking) is
+**`O012` — planned, nothing executed**. Cheap proxy meanwhile, on data
+already on disk: sweep the orders 18–20 classes by degree-2 count for
+whether \(\max S=n-1\) becomes universal as that count falls to two.
+**Then: the non-Hamiltonian stratum** (`A027` T5) —
 extend the descent from chords to **bridges** \((i,j,w)\)
 (maximality gives \(w\le j-i\); the cycle gives
 \((j-i)+w\notin\{4,8,16,32\}\); T2 generalises), where the open point
 is that a zero-savings bridge covers two positions for nothing; the
 first purchase is that a zero-savings **two-attachment** component
 forces an all-equal-length, hence bipartite, interior-degree-\(\ge3\)
-gadget — the class `L035`/`C034` empties. **Behind them: harvest
-`E024`** (deferred in S027 as a deliberate reordering: it is
-unfinished, and an empty rung moves a floor without bearing on (F);
-it ran throughout, untouched, excluded from every ledger row). Tier 3
+gadget — the class `L035`/`C034` empties. **Behind them: the `E028` ladder,
+stopped after order 30** — orders 32–35 are days of single-core
+computing, do not parallelise as the instrument stands, and above order
+26 prove class-emptiness rather than poison forcing (`R003` F4). Tier 3
 stays harvest-only (the `C038` kill rung at block orders 15–16;
 cubic 26/28; min-degree-3 at 22, \(\approx\)38 h — a deliberate
 decision; bipartite 26). Do **not** reopen congruence obstructions

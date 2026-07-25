@@ -668,15 +668,26 @@ configuration:**
   audited `R003` PASS, all four major findings repaired) — case (5b)
   closed there on the Hamiltonian stratum, with the first order-21/22
   \(\mathcal G\)-profile objects exhibited and all doubly blocked.
-  Next falsifiable moves, in order: **(1) finish the `E028` ladder to
-  order 35** (each rung is a kill test; a survivor passing the exact
-  stage is a case-(5b) residual object and disproof-adjacent);
-  **(2) the non-Hamiltonian stratum** (`A027` T5 — extend the descent
-  to bridges, where a zero-savings two-attachment component forces an
-  all-equal-length bipartite interior-degree-\(\ge3\) gadget, the class
-  `L035`/`C034` empties); **(3) harvest `E024`** when it lands
-  (deferred in S027: unfinished, and an empty rung moves a floor
-  without bearing on (F)); behind them min-degree-3 at 22
+  Next falsifiable moves, **re-ordered by the S027 post-close review**
+  (see `DECISIONS.md`: the remaining risk is stratified by *shape*, not
+  by size — the Hamiltonian stratum is clear at 16–29, the
+  non-Hamiltonian one at no order at all, so extending the ladder
+  completes nothing): **(1) harvest `E024`** — it measures the decisive
+  split, \(\max S\) vs \(n-1\), over the *complete* order-21 class
+  rather than the Hamiltonian-only slice `E028` can see; the tooling
+  plan to finish it in about an hour on Railway instead of fifteen on
+  the laptop is `O012` (planned, nothing executed). Cheap proxy
+  available immediately on data already on disk: sweep the orders 18–20
+  classes by degree-2 count and see whether \(\max S=n-1\) becomes
+  universal as that count falls toward two. **(2) the non-Hamiltonian
+  stratum** (`A027` T5 — extend the descent to bridges, where a
+  zero-savings two-attachment component forces an all-equal-length
+  bipartite interior-degree-\(\ge3\) gadget, the class `L035`/`C034`
+  empties): this is now the primary *proof* work. **(3) the `E028`
+  ladder — stop after order 30**; orders 32–35 are days of single-core
+  computing, do not parallelise as the instrument stands, and above
+  order 26 prove class-emptiness rather than poison forcing
+  (`R003` F4), so they buy confirmation and no understanding; behind them min-degree-3 at 22
   (\(\approx\)38 h) and the `C038` **kill rung** at block orders
   15–16 + the disjoint long-link descent (unchanged).
 - **R2, constant route closed** — `C004`–`C006` verified and the bound

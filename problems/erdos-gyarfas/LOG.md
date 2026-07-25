@@ -1182,3 +1182,39 @@ attempt, experiment, or review record.
   order 35**, then the non-Hamiltonian stratum, with the `E024`
   harvest behind them. `E024` ran throughout, untouched, still
   running, excluded from every ledger row. Outlook 8% → 10%.
+
+## 2026-07-25 — S027 post-close review: the moves are re-ordered, and the E024 harvest is promoted to first
+
+- Not a new investigation; a re-reading of `S027`'s own results, prompted
+  by the question of what the remaining compute is actually buying.
+- **The remaining risk in case (5b) is stratified by shape, not by size.**
+  `E028` cleared the **Hamiltonian** stratum at orders 16–29. The
+  **non-Hamiltonian** stratum is cleared at *no* order — including the ones
+  already done. So finishing the ladder to 35 completes nothing; it widens
+  the axis that was already the easy one. `R003` F4 sharpens this: above
+  order 26 the ladder had stopped exercising (F)'s mechanism at all.
+- **Consequence.** The decisive question is now the split itself: does the
+  exactly-two profile force a through-path covering every vertex? All eight
+  independently generated profile objects have \(\max S=n-1\), but that is
+  eight points at orders 19–20, and `C047`(e)'s control says only 22–29% of
+  ordinary taut degree-2 pairs are Hamiltonian. `E024` measures exactly this
+  at order 21, over the **complete** class rather than the Hamiltonian-only
+  slice `E028` can see — so the harvest deferred at the S027 open is
+  promoted to the first move. Recorded in `DECISIONS.md`; this reverses the
+  session's own opening judgement.
+- Cheap proxy available immediately, on data already on disk: sweep the
+  orders 18–20 classes by degree-2 count and see whether \(\max S=n-1\)
+  becomes universal as that count falls toward two.
+- The `E028` ladder is to **stop after order 30**: orders 32–35 are days of
+  single-core computing, do not parallelise as the instrument stands, and
+  would prove class-emptiness rather than poison forcing.
+- Tooling half recorded separately as **`O012`** (planned, nothing
+  executed): move `E024` to Railway on the Pro plan — it is already 16
+  independent `geng` res/mod parts, so it parallelises perfectly, and
+  usage-based billing makes width nearly free (~$10 of compute, about an
+  hour instead of fifteen). Blocking precondition: the linux/amd64 rebuild
+  must re-pass `E019`'s 146-anchor gate plus the cubic-24 positive control
+  before any cloud output is citable, and the new sha256 is recorded as an
+  architecture-tagged **second** pin, not a replacement.
+- No claim, obligation, proof, statement or status changed. `E024` and the
+  `E028` ladder both still running, both excluded from every ledger row.
