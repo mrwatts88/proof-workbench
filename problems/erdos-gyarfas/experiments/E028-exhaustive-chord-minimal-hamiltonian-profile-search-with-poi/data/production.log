@@ -1,0 +1,7 @@
+M=15 n=16 poison-hit-savings=[13, 9, 1] survivors=0 nodes=10345 capped=False (0.4 s) | exact: gapfree=0 poison={} powers={} GENUINE=0 (0.0 s)
+M=16 n=17 poison-hit-savings=[14, 10, 2] survivors=0 nodes=52391 capped=False (0.5 s) | exact: gapfree=0 poison={} powers={} GENUINE=0 (0.0 s)
+M=17 n=18 poison-hit-savings=[15, 11, 3] survivors=0 nodes=145178 capped=False (1.1 s) | exact: gapfree=0 poison={} powers={} GENUINE=0 (0.0 s)
+M=18 n=19 poison-hit-savings=[16, 12, 4] survivors=0 nodes=413945 capped=False (3.4 s) | exact: gapfree=0 poison={} powers={} GENUINE=0 (0.0 s)
+M=19 n=20 poison-hit-savings=[17, 13, 5] survivors=0 nodes=1374926 capped=False (11.8 s) | exact: gapfree=0 poison={} powers={} GENUINE=0 (0.0 s)
+M=20 n=21 poison-hit-savings=[18, 14, 6] survivors=10 nodes=4860618 capped=False (43.0 s) | exact: gapfree=10 poison={'[6, 14]': 10} powers={'[16]': 10} GENUINE=0 (0.0 s)
+M=21 n=22 poison-hit-savings=[19, 15, 7] survivors=43 nodes=17076872 capped=False (154.0 s) | exact: gapfree=30 poison={'[6, 14]': 30, '[14]': 13} powers={'[16]': 43} GENUINE=0 (0.0 s)

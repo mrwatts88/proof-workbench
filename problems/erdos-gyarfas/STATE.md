@@ -1,6 +1,35 @@
 # Current state
 
-- Last updated: 2026-07-25 (S026 — **the corpus dissection is spent:
+- Last updated: 2026-07-25 (S027 — **(F) is no longer a lemma to find; it
+  is a finite decision procedure, and it comes back empty.** Two proved
+  reductions (`L052`, `A027` T1/T2) — the **chord-minimal descent** (on a
+  pair with a Hamiltonian \(a\)–\(b\) path the chords cover every path
+  position, and any inclusion-minimal subcover inherits every hypothesis of
+  (F)'s negation) and the **monotone reroute** (interval-disjoint chord
+  families are real paths, so a savings hit certifies a poison length,
+  monotonically and on prefixes) — turn the forcing target into an
+  exhaustive per-order enumeration. Two aims were sharpened inside `A025`
+  T4's frame: decide the **disjunction** (F) rather than (F-S)/(F-T)
+  separately, which hands us \(C_{16}\)-freeness as a free hypothesis, and
+  use the whole poison set \(\{2,6,14,30\}\). Verdict (`E028`/`C048`):
+  **empty at every order 16–29** — the last completed rung — so case (5b)
+  is closed there for every residual object with a Hamiltonian
+  through-path. Audited: **`R003` PASS** at lemma-and-instrument level
+  (0 critical / 4 major / 4 minor / 3 notes; all four majors repaired in
+  place), and its two scope corrections are load-bearing: the ladder is an
+  **open-ended computation**, not a window closure (wall-clock growth
+  1.8–2.4 per rung), and above order 26 the poison prune stops firing, so
+  orders 27–29 prove the **stronger** poison-free class-emptiness statement
+  and exercise none of (F)'s forcing mechanism. En route: the **first
+  \(\mathcal G\)-profile objects at orders 21 and 22** (10 and 43
+  chord-minimal, 3 and 16 isomorphism classes), *all* doubly blocked
+  (\(14\in S\), \(C_{16}\) present), and the first in-window exactly-two
+  objects whose \(S\) is **not** a full interval — so saturation is not the
+  mechanism, and the real one survives its first counterexamples. Adversarial
+  audit `R003` delegated. Named residue: the **non-Hamiltonian stratum**
+  (`A027` T5). `E024` untouched, still running, excluded from every ledger
+  row)
+- Previous update: 2026-07-25 (S026 — **the corpus dissection is spent:
   the dodge mechanism is extracted, two candidate mechanisms are
   killed, and the interpolation lemma splits into (L-A) ∧ (L-B) with
   a validated formal engine for the long-range half.** Over the
@@ -330,6 +359,53 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   (\(\max S\ge14\Rightarrow14\in S\) or \(6\in S\)) — with the
   chord-savings combinatorics as (L-B)'s engine and ear-overload as
   (L-A)'s candidate.
+- **New (S027): `L052`/`C048` — (F) becomes a decision procedure, and it
+  is empty on the Hamiltonian stratum.** `L052` (proved, `A027`): for a
+  pair \((H,a,b)\) with \(d(a)=d(b)=2\), all other degrees \(\ge3\), and a
+  **Hamiltonian \(a\)–\(b\) path** \(P=v_0\cdots v_M\): (i) the chords
+  cover \(\{0,\dots,M\}\), with 0 and \(M\) covered exactly once; (ii) every
+  inclusion-minimal subcover \(\mathcal C'\) gives \(H'=P+\mathcal C'\) with
+  the same degree profile, the same Hamiltonian path,
+  \(\mathrm{Spec}(H')\subseteq\mathrm{Spec}(H)\) and
+  \(S(H')\subseteq S(H)\), every chord having an endpoint of chord-degree
+  1 — so a search for a pair avoiding prescribed cycle lengths *and*
+  prescribed through-lengths may be restricted to **chord-minimal** systems;
+  (iii) interval-disjoint chord families give genuine \(a\)–\(b\) paths of
+  length \(M-\sum(\sigma_k-1)\), with the savings set a left-to-right DP
+  whose prefixes already certify membership; (iv) the corrected chord-pair
+  geometry (interior-disjoint chords close **no** extra cycle — a
+  hand-table entry that was wrong, caught by the instrument's anchors).
+  Consequence (`E028`/`C048`): at each order, enumerate every chord-minimal
+  cover whose graph is \(\{C_4,C_8,C_{16}\}\)-free and whose savings set
+  misses \(\{M-2,M-6,M-14,M-30\}\); by (ii)/(iii) every counterexample
+  yields one, so **emptiness proves (F) at that order**. Verdict: **empty at
+  every order 16–29**, the last completed rung (node growth
+  \(\approx\times1.9\) per order — the \(C_{16}\) hypothesis, free because
+  it is half of (F)'s negation, cut it from \(\approx\times3.5\) and carried
+  the ladder eight orders past the recorded frontier in under an hour;
+  wall-clock growth is 1.8–2.4 per rung, so orders 30–35 are days of
+  single-core computation and **nothing is claimed above the last completed
+  rung** — `R003` F3). **Above order 26 the poison prune stops firing**
+  (branch kills 61, 33, 45, 17, 2, 1, 0, 0, 0 at \(M=20\ldots28\)), so
+  orders 27–29 prove the *stronger*, poison-free statement that the
+  \(\{C_4,C_8,C_{16}\}\)-free chord-minimal Hamiltonian exactly-two stratum
+  is empty — implying (F) a fortiori but exercising none of its mechanism
+  (`R003` F4). Run A
+  (\(\{C_4,C_8\}\) only) exhibited the **first \(\mathcal G\)-profile
+  objects at orders 21 and 22** (10 and 43 chord-minimal ones, 3 and 16
+  isomorphism classes, all 2-connected, girth 3, 91–186 \(C_{16}\)s), every
+  one killed twice (\(14\in S\) on all 53, \(6\in S\) on 40, \(C_{16}\) on
+  all 53); 13 of the order-22 objects have \(S\) **not** a full interval
+  (holes at \(\{6\}\) or \(\{2,3,4,6,7\}\)) — the first in-window
+  exactly-two objects breaking the `A025` T3 saturation pattern while
+  keeping the double blocking. Independent cross-check of the recorded
+  ladder from a different generation principle: with the poison prune off,
+  chord-minimal cover counts are 0 at orders 12–18 and 6, 65 at 19, 20, all
+  signatures already recorded. Not covered: pairs whose longest \(a\)–\(b\)
+  path is not Hamiltonian (`A027` T5 — the named residue, with a first
+  purchase: a zero-savings two-attachment off-path component forces an
+  all-equal-length, hence bipartite, interior-degree-\(\ge3\) gadget, the
+  class `L035`/`C034` has been emptying).
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -420,10 +496,15 @@ subdivisions of class-violating graphs, and the interpolation target
 splits into **(L-A) ∧ (L-B) ⟹ (F-S)** with the span law proved and
 the chord-exchange calculus validated as (L-B)'s engine (top-of-S
 saturation from 10 up reproduced on all eight profile objects).
-Next: harvest `E024` (census the order-21 rung on landing), then the
-(L-B) chord-savings attempt (prove in-window profile chord systems
-realize savings \(M-14\) or \(M-6\)), with (L-A) ear-overload behind
-it.
+**S027 changed the shape of the target**: instead of proving a
+savings-reachability lemma, `A027` proved two reductions (`L052`) that
+make (F) a **finite decision problem per order**, sharpened the aim to
+the disjunction (F) (which supplies \(C_{16}\)-freeness free) and to the
+full poison set \(\{2,6,14,30\}\), and decided it — **empty at every
+order 16–29** (`E028`/`C048`), i.e. case (5b) is closed there for every
+residual object with a Hamiltonian through-path. What is left of the
+(F) program below order 36: finish the ladder to order 35, and the
+**non-Hamiltonian stratum** (`A027` T5).
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -578,16 +659,25 @@ configuration:**
   (99.1% class-violating reductions), the span law (proved), and the
   chord-exchange validation — the target lemma is now the split
   **(L-A) ∧ (L-B)** with the chord-savings combinatorics as (L-B)'s
-  engine. Next falsifiable moves, in order: **harvest `E024`** when
-  it lands (census the order-21 rung; a gapped exactly-two member
-  kills (F-S); an \(S\)-satisfying hit is a disproof), then the
-  **(L-B) chord-savings attempt** (build the \(C_4/C_8\) chord-pair
-  exclusion table over a longest path; prove in-window profile chord
-  systems realize savings \(M-14\) or \(M-6\); any draft must fail
-  on the 36 Hamiltonian dodgers and respect the corpus), then the
-  **(L-A) ear-overload attempt** (short-range exclusion; the
-  adjacent-case recursion of `A026` T2); behind them min-degree-3 at
-  22 (\(\approx\)38 h) and the `C038` **kill rung** at block orders
+  engine. **S027 replaced the lemma hunt with a decision procedure**
+  (`A027`/`L052`, `E028`/`C048`): the chord-minimal descent plus the
+  monotone-reroute prune make (F) exhaustively decidable per order,
+  the disjunction is decided directly (so \(C_{16}\)-freeness is a
+  free hypothesis, and it is what makes the window reachable), and
+  the verdict is **empty at every order 16–29** (last completed rung;
+  audited `R003` PASS, all four major findings repaired) — case (5b)
+  closed there on the Hamiltonian stratum, with the first order-21/22
+  \(\mathcal G\)-profile objects exhibited and all doubly blocked.
+  Next falsifiable moves, in order: **(1) finish the `E028` ladder to
+  order 35** (each rung is a kill test; a survivor passing the exact
+  stage is a case-(5b) residual object and disproof-adjacent);
+  **(2) the non-Hamiltonian stratum** (`A027` T5 — extend the descent
+  to bridges, where a zero-savings two-attachment component forces an
+  all-equal-length bipartite interior-degree-\(\ge3\) gadget, the class
+  `L035`/`C034` empties); **(3) harvest `E024`** when it lands
+  (deferred in S027: unfinished, and an empty rung moves a floor
+  without bearing on (F)); behind them min-degree-3 at 22
+  (\(\approx\)38 h) and the `C038` **kill rung** at block orders
   15–16 + the disjoint long-link descent (unchanged).
 - **R2, constant route closed** — `C004`–`C006` verified and the bound
   improved to \(3|V_3|\ge2n+3\) (`L037`/`L038`), but S15 certifies
@@ -705,11 +795,24 @@ S026, the sharp instances are the **36 Hamiltonian dodgers** for
 and the **ndeg2-4/5 frontier members** for (L-A)); a **short-range
 or gapped exactly-two member at order 21+** (a \(\max S\le13\)
 profile pair kills (L-A) as stated; a gapped one kills (F-S) —
-check each new ladder rung); a **power-free vertex-taut (5b)-profile pair anywhere in
+check each new ladder rung; **S027 note:** 13 of the order-22 objects
+already have \(S\) non-interval with a hole at 6, so the *saturation*
+form of the trigger has fired and is retired — what has never been seen
+is a hole at **14** on an exactly-two pair in the window, and that is the
+live form); a **power-free vertex-taut (5b)-profile pair anywhere in
 the window** (defeats (F) in both forms and is one 2-path closure
-away from a tight 1-atom — disproof-adjacent); a **proof of (F-S) or
-(F-T) on the window** (then case (5b) is closed below 36, `G015` is
-proved below 36, and the search ladder becomes the whole case);
+away from a tight 1-atom — disproof-adjacent; **this is exactly what
+each `E028` rung tests**, and it is the trigger to watch on every new
+rung); ~~a **proof of (F-S) or (F-T) on the window**~~ (**superseded,
+S027**: (F) is decided directly per order by `E028`, empty at every
+order 16–29 on the Hamiltonian stratum — the live remainder is the
+non-Hamiltonian stratum, `A027` T5, plus continuing the ladder, which is
+open-ended and above order 26 proves class-emptiness rather than poison
+forcing);
+a **failure of the `E028` growth trend** (a rung whose node count
+breaks \(\approx\times1.9\) badly enough to stall the ladder before
+order 35 — then the decision route needs a stronger prune or the T5
+bridge theory must carry more);
 exclusion of case (5b) outright (then `G015` is proved and Thread C
 becomes the whole game).
 
@@ -963,45 +1066,129 @@ size range cannot keep all paths short (the thin-margin half), and
 show that its shortcut structure always reaches down to a poison
 length (the half the new engine covers).
 
+S027 did not prove either lemma. It made them unnecessary — for most
+of the remaining ground — by turning the question into something a
+computer can settle outright, one size at a time.
+
+Two small observations did it. First: in the exact shape, *every*
+vertex of a full-length terminal-to-terminal path must have a shortcut
+edge attached, because every vertex except the two endpoints needs a
+third edge and there is nowhere else for it to go. So the shortcut
+edges "cover" the path. And if we throw away every shortcut edge that
+isn't needed for that covering, nothing we care about gets worse: the
+graph stays inside the forbidden-cycle rules, its terminal-to-terminal
+path lengths only shrink, and the degrees stay right. So a hypothetical
+bad graph can always be assumed to be **shortcut-minimal** — which is a
+finite, small family at each size. Second: rerouting along
+non-overlapping shortcuts always produces a genuine path, so finding one
+whose total saving lands on a forbidden length immediately disqualifies
+the candidate — and that test can be applied to a half-built graph, not
+just a finished one.
+
+Together these turn "prove a lemma" into "enumerate a finite family and
+check". Two further choices made it practical. We stopped trying to
+prove either of the two alternative death sentences separately (a
+forbidden path length, or a 16-cycle) and instead asked only that *at
+least one* holds — which is all the programme needs, and which hands us
+the absence of 16-cycles as a **free extra assumption**. And we counted
+the forbidden path lengths honestly: 30 is one of them too, which
+matters at the large end.
+
+The result: at every size the search has reached — 16 through 29 — **there
+is no such graph**. That is the programme's target question, answered
+outright, eight sizes past where the previous machinery had reached, in
+under an hour. The free extra assumption is what made it possible: it cut
+the growth of the search from roughly three and a half times per size to
+under two.
+
+An independent referee, given only the claim and the code and none of the
+reasoning, attacked all of it, re-ran the search outside the repository and
+reproduced the numbers digit for digit, wrote its own search from scratch
+and got the same answers, and passed the mathematics. It also found four
+real problems with the *evidence*, two of which matter. First: the large
+test suite, impressive as its size looked, never once made the crucial
+sub-test say "yes" — every check of the 16-cycle detector ran on graphs too
+small to contain a 16-cycle, so a bug there would have produced exactly the
+clean sweep we observed. That gap is now closed with tests that force the
+detector to fire, hundreds of times, at every size in range. Second, and
+more interesting mathematically: past size 26 the "forbidden path length"
+test stops doing any work at all — the graphs are already ruled out on
+shape alone. So above that size we have proved something *stronger* than
+intended (no such graph exists at all, whatever its path lengths) but
+learned *nothing* about why the forbidden lengths appear. And the honest
+reading of the growth rate is that the remaining sizes, 30 through 35, are
+days of computing rather than hours: this is an open-ended ladder with a
+stated last rung, not a finished sweep.
+
+Two by-products are worth recording. The search produced the **first
+exact-shape graphs ever exhibited at sizes 21 and 22** — ten and
+forty-three of them — and every single one dies twice over, exactly as
+all eight previously known ones did. And thirteen of the size-22 ones
+break a pattern that had held on all eight: their terminal-to-terminal
+path lengths are no longer a solid unbroken run (one length, 6, is
+missing). So the "everything is present" explanation that had been
+guiding the search is *not* the real mechanism — but the real mechanism
+survived its first counterexamples, because those thirteen still carry
+the length 14 and still carry a 16-cycle.
+
+What is left is one honest gap: all of this assumes the graph has a
+terminal-to-terminal path passing through *every* vertex. Every known
+example does, but that is not proved. Closing that case is the next
+piece of work, and it already has a first foothold — a detour that
+saves nothing forces a very rigid two-colourable sub-structure, which is
+exactly the family a different arm of this programme has been emptying
+for several sessions.
+
 ## Resolution outlook
 
-- Estimated chance of eventually settling the exact current statement: 8%
-- Previous estimate: 8% (S025)
-- Reason for no change: the dissection's findings again roughly
-  cancel. For: the mechanism extraction succeeded beyond expectation —
-  the dodge taxonomy is rigid, the exchange calculus is a *validated*
-  engine (it already reproduces the entire poison-relevant part of
-  the saturation on all eight profile objects, with the span law
-  proved), and (L-B) now has a concrete combinatorial proof target
-  where none existed. Against: (L-A) — the short-range half — has a
-  two-subdivision empirical margin, no engine, and the frontier trend
-  (dodges at ndeg2 4 by order 20, hi = 13 walls) is compatible with
-  (F-S) simply failing at some order 21–35; the exactly-two class
-  still has eight data points; and even (L-B)'s target (savings
-  reachability) is an unproved combinatorial statement about a chord
-  structure nobody has axiomatized. The route is sharper and better
-  instrumented but not yet easier.
+- Estimated chance of eventually settling the exact current statement: 10%
+- Previous estimate: 8% (S026)
+- Reason for change: for the first time in the programme, the surviving
+  proof-side question stopped being "find a lemma nobody knows how to
+  prove" and became "run a finite decision procedure". Two small proved
+  reductions (`L052`) turned (F) into an exhaustive per-order
+  enumeration; it is **empty at orders 16–29**, eight orders past the
+  previous frontier, in under an hour, and a delegated fresh-context audit
+  (`R003`) passed the reduction and the instrument after reproducing the
+  numbers independently. The route is now genuinely easier, not merely
+  sharper. Against: the audit also showed the ladder is **open-ended**
+  (orders 30–35 are days of computation, not hours) and that above order 26
+  it proves class-emptiness rather than poison forcing, so it stopped
+  informing the mechanism exactly where the mechanism was the point; the closure is confined
+  to pairs carrying a Hamiltonian through-path, and the remaining
+  stratum is exactly where the near-miss corpus says the escapes live
+  (`C047`(c): dodges ride on degree-2 corridors, which is the same
+  mechanism as an off-path detour that saves nothing); the S027 data
+  itself broke the saturation reading that had been guiding the search
+  (13 order-22 objects have a hole at 6), so the mechanism is narrower
+  than believed; and even a complete closure of case (5b) proves the
+  **cubic reduction** (`G015`), not statement 0.1 — Tier 0 still has no
+  cheap move. The increment is deliberately small: real, structural, and
+  still two named steps from the programme's own deliverable.
 
 ## Resume reading
 
 1. `STATEMENT.md`
-2. **`A026`** (the dissection deductions T1–T6, the (L-A)/(L-B)
-   split T7, the sharpened tool spec and kill discipline) and
-   **`A025`** (the (F-S)/(F-T) redirect frame it serves); then
+2. **`A027`** (the chord-minimal descent T1, the monotone-reroute prune
+   T2, what the search decides T3, the calculus's reach T4, the
+   non-Hamiltonian residue T5, the corrected chord-pair table T6) and
+   **`E028/README.md`** (the instrument, the anchors, both ladder runs);
+   then **`A026`** (the dissection and the (L-A)/(L-B) split it
+   supersedes) and **`A025`** (the (F-S)/(F-T) frame); then
    `A024`/`A023` (the T5 theorem and interference frame) and `A019`
    (the case analysis, the engine/peel, the residual object)
-3. **`E024` is running** (order-21 \(\mathcal G\) rung, launched at
-   S023 close; not citable until harvested — **harvest it first when
-   it finishes**: floors move if empty, each profile member is a new
-   (F) data point to census + exchange-test, an \(S\)-satisfying hit
-   is a disproof, a gapped or short-range exactly-two member kills
-   (F-S)/(L-A)). **Then: the (L-B) chord-savings attempt** — build
-   the \(C_4/C_8\) chord-pair exclusion table over a longest path
-   and prove in-window profile chord systems realize savings
-   \(M-14\) or \(M-6\); any draft must fail on the 36 Hamiltonian
-   dodgers (`E027/data/exchange_test.json`) and hold on the eight
-   profile objects. Behind it: the (L-A) ear-overload attempt.
-4. `E027/README.md` (the dissection: taxonomy, frontier, subdivision
+3. **The `E028` ladder is the live instrument.** Resume it with
+   `nice -n 15 pypy3 search.py search <M0> <M1> c16` (anchors first,
+   both interpreters). Each rung decides (F) at order \(M+1\) on the
+   Hamiltonian stratum; a survivor that passes the exact stage is a
+   case-(5b) residual object — **report immediately, disproof-adjacent**.
+   Then `A027` T5: extend the descent from chords to **bridges** for the
+   non-Hamiltonian stratum. **`E024` is still running** (order-21
+   \(\mathcal G\) rung, launched at S023 close; not citable until
+   harvested) — deliberately deferred in S027 because it is unfinished
+   and an empty rung moves a floor without bearing on (F).
+4. `R003` (the delegated audit of the descent and the instrument), then
+   `E027/README.md` (the dissection: taxonomy, frontier, subdivision
    frame, control rates, the exchange validation) with
    `corpus_rows_compact.json` as the per-row refutation set; then
    `E026/README.md` (the census) and the `E021`/`E022` READMEs for
@@ -1010,8 +1197,9 @@ length (the half the new engine covers).
    discipline — Petersen\(-e\) shows \(C_8\)-freeness is necessary
    for (L-A)) and `A022`/`E020` (the chain package and its 15/16
    kill rung)
-6. `CLAIMS.md` rows `C047` (new, S026), `C046` (S025), `L051`/`C045`
-   (S024), `L049`/`L050`/`C044` (S023) (and `L039`–`L048`,
-   `C036`–`C043` for the frame); `OBLIGATIONS.md` `G015`/`G013`
-7. `sessions/S026-…md` (this session: the dissection, the split, the
-   engine) and `S019`–`S025` for the preceding arc
+6. `CLAIMS.md` rows `L052`/`C048` (new, S027), `C047` (S026), `C046`
+   (S025), `L051`/`C045` (S024), `L049`/`L050`/`C044` (S023) (and
+   `L039`–`L048`, `C036`–`C043` for the frame); `OBLIGATIONS.md`
+   `G015`/`G013`
+7. `sessions/S027-…md` (this session: the reductions, the decision
+   procedure, the ladder) and `S019`–`S026` for the preceding arc

@@ -1,0 +1,388 @@
+{
+ "forbidden": [
+  4,
+  8,
+  16
+ ],
+ "interpreter": "3.11.15/PyPy",
+ "results": {
+  "15": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 16,
+   "nodes": 8924,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 7063,
+    "cycle": 83807,
+    "minimal": 857,
+    "poison": 1445,
+    "reserve": 14236,
+    "symmetry": 3406
+   },
+   "seconds": 0.48,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "16": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 17,
+   "nodes": 26080,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 22017,
+    "cycle": 280221,
+    "minimal": 1841,
+    "poison": 982,
+    "reserve": 50352,
+    "symmetry": 10209
+   },
+   "seconds": 0.61,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "17": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 18,
+   "nodes": 38362,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 33206,
+    "cycle": 461881,
+    "minimal": 2633,
+    "poison": 880,
+    "reserve": 77868,
+    "symmetry": 16144
+   },
+   "seconds": 0.96,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "18": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 19,
+   "nodes": 61040,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 53852,
+    "cycle": 826665,
+    "minimal": 4706,
+    "poison": 1234,
+    "reserve": 145206,
+    "symmetry": 22036
+   },
+   "seconds": 1.67,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "19": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 20,
+   "nodes": 108068,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 96242,
+    "cycle": 1604291,
+    "minimal": 8793,
+    "poison": 738,
+    "reserve": 288302,
+    "symmetry": 35246
+   },
+   "seconds": 3.4,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "20": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 21,
+   "nodes": 182613,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 162656,
+    "cycle": 2949695,
+    "minimal": 14974,
+    "poison": 61,
+    "reserve": 520058,
+    "symmetry": 67104
+   },
+   "seconds": 6.54,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "21": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 22,
+   "nodes": 323622,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 285816,
+    "cycle": 5580016,
+    "minimal": 25298,
+    "poison": 33,
+    "reserve": 971456,
+    "symmetry": 140012
+   },
+   "seconds": 13.06,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "22": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 23,
+   "nodes": 634125,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 559896,
+    "cycle": 11598890,
+    "minimal": 48562,
+    "poison": 45,
+    "reserve": 2121545,
+    "symmetry": 264653
+   },
+   "seconds": 28.58,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "23": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 24,
+   "nodes": 1204578,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 1067016,
+    "cycle": 23521058,
+    "minimal": 91597,
+    "poison": 17,
+    "reserve": 4369438,
+    "symmetry": 479512
+   },
+   "seconds": 61.43,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "24": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 25,
+   "nodes": 2164278,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 1917018,
+    "cycle": 44866355,
+    "minimal": 154024,
+    "poison": 2,
+    "reserve": 8130209,
+    "symmetry": 951645
+   },
+   "seconds": 116.41,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "25": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 26,
+   "nodes": 3945231,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 3485821,
+    "cycle": 86125684,
+    "minimal": 259279,
+    "poison": 1,
+    "reserve": 15269756,
+    "symmetry": 1848716
+   },
+   "seconds": 216.23,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "26": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 27,
+   "nodes": 7577405,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 6704537,
+    "cycle": 174410675,
+    "minimal": 485569,
+    "poison": 0,
+    "reserve": 31521042,
+    "symmetry": 3342101
+   },
+   "seconds": 504.03,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "27": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 28,
+   "nodes": 14415162,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 12776038,
+    "cycle": 350465771,
+    "minimal": 906564,
+    "poison": 0,
+    "reserve": 63737417,
+    "symmetry": 6079512
+   },
+   "seconds": 1220.04,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  },
+  "28": {
+   "capped": false,
+   "exact_seconds": 0.0,
+   "examples": [],
+   "gapfree_survivors": 0,
+   "genuine_dodgers": [],
+   "n": 29,
+   "nodes": 26421019,
+   "poison_hist": {},
+   "power_hist": {},
+   "prunes": {
+    "count": 0,
+    "cover": 23398817,
+    "cycle": 676070818,
+    "minimal": 1610852,
+    "poison": 0,
+    "reserve": 120420135,
+    "symmetry": 11551726
+   },
+   "seconds": 2200.54,
+   "survivors": 0,
+   "targets": [
+    2,
+    6,
+    14
+   ]
+  }
+ }
+}

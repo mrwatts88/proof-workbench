@@ -318,6 +318,62 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   of longest-path chord systems, the sharpened missing tool).
   Killed: member-level lemmas, odd-cycle-supply discrimination.
   `E024` ran throughout, untouched, **still running**.
+  **S027 (2026-07-25) turned (F) into a decision procedure — and it
+  comes back empty on the Hamiltonian stratum.** Instead of proving
+  the (L-B) savings lemma by hand, `A027` proves two reductions
+  (`L052`): the **chord-minimal descent** (on a pair with a
+  Hamiltonian \(a\)–\(b\) path the chords cover every path position,
+  0 and \(M\) exactly once, and every inclusion-minimal subcover
+  inherits the degree profile, the Hamiltonian path,
+  cycle-length-freedom and the through-set — so the search may be
+  restricted to chord-minimal systems) and the **monotone reroute**
+  (interval-disjoint chord families are genuine \(a\)–\(b\) paths of
+  length \(M-\sum(\sigma_k-1)\), with a left-to-right DP whose
+  *prefixes* already certify a poison length). Two aims sharpened
+  inside `A025` T4's frame, both strictly in our favour: decide the
+  **disjunction** (F) directly rather than (F-S)/(F-T) separately —
+  which supplies \(C_{16}\)-freeness as a **free** hypothesis, and
+  that is exactly what cuts the enumeration's growth from
+  \(\approx\times3.5\) to \(\approx\times1.9\) per order and brings
+  the window \([18,35]\) into computational range — and use the whole
+  poison set \(\{2,6,14,30\}\) (\(30+2=32\)). Verdict
+  (`E028`/`C048`): **empty at every order 16–29** — the last completed
+  rung — so case (5b) is closed there for every residual object carrying
+  a Hamiltonian through-path. **Audited `R003`** (delegated fresh
+  reviewer): PASS at lemma-and-instrument level, 0 critical / 4 major /
+  4 minor / 3 notes, with the reviewer reproducing both runs' node counts
+  to the last digit and re-deriving the run-B emptiness from its own
+  from-scratch enumerator; all four majors repaired in place. Two of its
+  corrections are load-bearing: the ladder is an **open-ended
+  computation**, not a window closure (wall-clock growth 1.8–2.4 per rung,
+  so orders 30–35 are days of single-core computing), and **above order 26
+  the poison prune stops firing**, so orders 27–29 prove the *stronger*
+  poison-free class-emptiness statement while exercising none of (F)'s
+  forcing mechanism. The anchor repair matters too: before it, none of the
+  three loss-capable prunes was ever exercised on a positive or nonempty
+  instance. En route the \(\{C_4,C_8\}\)-only run exhibited the
+  **first \(\mathcal G\)-profile objects at orders 21 and 22** (10 and
+  43 chord-minimal ones, 3 and 16 isomorphism classes, all
+  2-connected, girth 3, 91–186 \(C_{16}\)s), every one killed twice
+  (\(14\in S\) on all 53, \(6\in S\) on 40, a \(C_{16}\) on all 53) —
+  and **13 of the order-22 objects have \(S\) *not* a full interval**
+  (8 with \([5,21]\setminus\{6\}\); 5 adjacent-terminal with
+  \(\{1,5\}\cup[8,21]\)): the first in-window exactly-two objects to
+  break the `A025` T3 saturation pattern while keeping the double
+  blocking, so **saturation is not the mechanism** and any future
+  argument must explain 14 and 16 specifically. Independent
+  cross-check of the recorded ladder from a different generation
+  principle (poison prune off: 0 covers at orders 12–18, 6 and 65 at
+  19 and 20, only recorded signatures). Corrected en route (`A027`
+  T6): interior-disjoint chords close **no** extra cycle with the
+  path — a hand-table entry that was wrong, caught by the
+  instrument's own anchors, nothing downstream affected. Adversarial
+  audit `R003` delegated to a fresh reviewer. Named residue: the
+  **non-Hamiltonian stratum** (`A027` T5), with a first purchase — a
+  zero-savings two-attachment off-path component forces an
+  all-equal-length, hence bipartite, interior-degree-\(\ge3\) gadget,
+  exactly the class `L035`/`C034` empties. `E024` still running,
+  untouched, excluded from every ledger row.
   Portfolio (all threads carried, per standing user instruction): the
   case-(5b) endgame (the **(F) program**, Tier 1, now the
   (F-S)/(F-T) pair with the **profile-consuming interpolation
@@ -401,25 +457,31 @@ profile objects; every dodger hole respected). The target is now
 the split **(L-A) ∧ (L-B) ⟹ (F-S)**: (L-A) — in-window profile
 pairs have \(\max S\ge14\) (or \(6\in S\) when short); (L-B) —
 \(\max S\ge14\) forces \(14\in S\) or \(6\in S\).
-**First action: harvest `E024`** (the order-21 \(\mathcal G\) rung,
-running since S023 close — not citable until harvested): census +
-exchange-test each new profile member; empty moves the \(\mathcal
-G\) floor to 22; a gapped or short-range exactly-two member kills
-(F-S)/(L-A) as stated; an \(S\)-satisfying hit is a disproof.
-**Then: the (L-B) chord-savings attempt** — build the
-\(C_4/C_8\) chord-pair exclusion table over a longest path (the
-span law + interlocking-pair exclusions) and prove in-window
-profile chord systems realize savings \(M-14\) or \(M-6\). Kill
-discipline: any draft must **fail on the 36 Hamiltonian dodgers**
-(`E027/data/exchange_test.json`) and on the corpus, and hold on
-the eight profile objects. Behind it: the (L-A) ear-overload
-attempt (thin margin — the priority order is deliberate). Tier 3
+**First action: finish the `E028` ladder to order 35** — resume with
+`nice -n 15 pypy3 search.py search <M0> <M1> c16` after re-passing
+the anchors under both interpreters. Each rung *decides* (F) at that
+order on the Hamiltonian stratum; a survivor that passes the exact
+stage is a case-(5b) residual object — **disproof-adjacent, report
+immediately**. **Then: the non-Hamiltonian stratum** (`A027` T5) —
+extend the descent from chords to **bridges** \((i,j,w)\)
+(maximality gives \(w\le j-i\); the cycle gives
+\((j-i)+w\notin\{4,8,16,32\}\); T2 generalises), where the open point
+is that a zero-savings bridge covers two positions for nothing; the
+first purchase is that a zero-savings **two-attachment** component
+forces an all-equal-length, hence bipartite, interior-degree-\(\ge3\)
+gadget — the class `L035`/`C034` empties. **Behind them: harvest
+`E024`** (deferred in S027 as a deliberate reordering: it is
+unfinished, and an empty rung moves a floor without bearing on (F);
+it ran throughout, untouched, excluded from every ledger row). Tier 3
 stays harvest-only (the `C038` kill rung at block orders 15–16;
 cubic 26/28; min-degree-3 at 22, \(\approx\)38 h — a deliberate
 decision; bipartite 26). Do **not** reopen congruence obstructions
 (`C037`), membership-only chain exclusion (`L045`), the density
 constant (`L038`), or the membership-collision form of (F)
-(`C045`); a non-decomposable cycle in a vertex-taut pair is a
+(`C045`); the **saturation** form of the gapped-member pivot trigger
+is **retired** (it fired at order 22 — 13 objects with \(S\) not an
+interval), and the live form is a hole at **14** on an in-window
+exactly-two pair; a non-decomposable cycle in a vertex-taut pair is a
 **soundness alarm** (it would contradict the reviewed `L049`), not
 a route pivot.
 No required action remains for `P-001`; its reference comparison is

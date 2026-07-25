@@ -1065,3 +1065,120 @@ attempt, experiment, or review record.
   row), then the (L-B) chord-savings attempt (kill discipline: fail
   on the 36 Hamiltonian dodgers, hold on the eight), then (L-A)
   ear-overload. Outlook: 8% (held).
+
+## 2026-07-25 — S027: (F) becomes a decision procedure and comes back empty on the Hamiltonian stratum (`A027`/`L052`, `E028`/`C048`, audit `R003`)
+
+- Session goal (user-directed): skip the unfinished `E024` harvest —
+  its likely outcome moves a floor without bearing on (F) — and go
+  straight to the highest-value proof move, the shortcut/chord
+  ("(L-B)") route of `A026` T7.
+- **Route change inside `A025` T4's frame, reduction-first instead of
+  lemma-first.** Rather than trying to prove savings reachability by
+  hand, `A027` proves two reductions that make the question finite:
+  **`L052`(ii) the chord-minimal descent** — on a pair with a
+  Hamiltonian \(a\)–\(b\) path the chords cover every path position
+  (0 and \(M\) exactly once), and any inclusion-minimal subcover
+  \(\mathcal C'\) gives \(H'=P+\mathcal C'\) with the same degree
+  profile, the same Hamiltonian path,
+  \(\mathrm{Spec}(H')\subseteq\mathrm{Spec}(H)\) and
+  \(S(H')\subseteq S(H)\) — so any "avoid these cycle lengths and
+  these through-lengths" hypothesis is inherited and the search may
+  be restricted to chord-minimal systems; **`L052`(iii) the monotone
+  reroute** — interval-disjoint chord families are genuine paths, so
+  a savings hit certifies a poison length, monotonically and on
+  prefixes.
+- **Two aims sharpened, both strictly in our favour.** Decide the
+  **disjunction** (F) directly rather than (F-S)/(F-T) separately
+  (only (F) closes case (5b), and assuming both conclusions fail
+  supplies \(C_{16}\)-freeness as a *free* extra hypothesis); and use
+  the whole poison set \(\{2,6,14,30\}\) rather than \(\{6,14\}\)
+  (\(30+2=32\); at long path lengths 30 is the cheap target).
+- **Verdict (`E028`/`C048`).** Run B (\(\{C_4,C_8,C_{16}\}\), the (F)
+  hypothesis): **empty at every order 16–29**, the last completed rung, so
+  case (5b) is closed there for every residual object carrying a
+  Hamiltonian through-path. The \(C_{16}\) hypothesis cut the node growth
+  from \(\approx\times3.5\) to \(\approx\times1.9\) per order (a
+  \(27\times\) node reduction at order 21) and carried the ladder eight
+  orders past the recorded frontier in under an hour.
+- **Audit `R003` (delegated fresh-context reviewer): PASS at
+  lemma-and-instrument level** — 0 critical, 4 major, 4 minor, 3 notes.
+  T1/T2/T6 correct as stated; the enumerator exhaustive over chord-minimal
+  covers; every prune one-sided; the symmetry break lossless. The reviewer
+  re-ran the shipped instrument outside the repository and reproduced run A
+  \(M=15..21\) and run B \(M=15..23\) node counts **to the last digit**,
+  and its own from-scratch enumerator (sets not bitmasks, no reservation
+  propagation, no symmetry break) is set-equal to `Search` everywhere it
+  ran and independently returns empty for run B at orders 19–25.
+  All four majors repaired in place:
+  - **F1/F2** — none of the three loss-capable prunes (poison DP, reversal
+    symmetry break, \(C_{16}\) detection) was exercised on a positive or
+    nonempty instance by any recorded check: the \(\{C_4,C_8\}\)-free
+    chord-minimal class is empty below order 19, so every `a3` comparison
+    was \(\emptyset=\emptyset\), and the depth-15 \(C_{16}\) branch was
+    only ever called on graphs of order \(\le12\), where it can only
+    return `False` — a bug there would have produced exactly the observed
+    all-zero table. **Repaired** by new anchor families a6 (539 positive,
+    63 negative \(C_{16}\) instances across \(M=15..34\), three
+    detectors) and a7 (reversal closure and poison-prune selection on the
+    nonempty order-19/20 cover sets, plus the full production
+    configuration against the independent reference on nonempty sets);
+    suite now **80,131** checks under both interpreters, identical
+    histograms.
+  - **F3** — the "brings the whole window into range" claim is
+    **withdrawn**: that was the node ratio; wall-clock growth is 1.8–2.4
+    per rung and rising, so orders 30–35 are days of single-core
+    computation. The ladder is recorded as an open-ended computation with
+    a stated last completed rung.
+  - **F4 (the scientifically interesting one)** — the poison prune's
+    branch kills fall 61, 33, 45, 17, 2, 1, **0, 0, 0** at
+    \(M=20\ldots28\), so from \(M=26\) the tree with the poison test is
+    identical to the tree without it. What run B proves at orders 27–29 is
+    the **stronger**, poison-free statement that the
+    \(\{C_4,C_8,C_{16}\}\)-free chord-minimal Hamiltonian exactly-two
+    stratum is empty — implying (F) a fortiori but exercising none of its
+    forcing mechanism. **No inference about why the poisons appear is
+    supported above order 26.**
+  Minors/notes answered in `E028/README.md`: provenance and revision drift
+  (F5), the reproduction block and anchor count (F6), the cross-check
+  restated at **isomorphism** level where it is *stronger* than claimed —
+  1 and 7 classes at orders 19 and 20, set-equal to the recorded objects
+  (F7), and removal of the "eighteen objects" over-count with its
+  selection bias, since objects built on a Hamiltonian path are no
+  evidence about the non-Hamiltonian gap (F8).
+- **New objects.** Run A (\(\{C_4,C_8\}\) only) exhibited the **first
+  \(\mathcal G\)-profile objects at orders 21 and 22** — 10 and 43
+  chord-minimal ones, 3 and 16 isomorphism classes, all 2-connected,
+  girth 3, 91–186 \(C_{16}\)s — every one killed twice (\(14\in S\)
+  on all 53, \(6\in S\) on 40, a \(C_{16}\) on all 53).
+- **Saturation is not the mechanism.** 13 of the order-22 objects have
+  \(S\) **not** a full interval (holes at \(\{6\}\), or
+  \(\{2,3,4,6,7\}\) with adjacent terminals) — the first in-window
+  exactly-two objects to break the `A025` T3 pattern, while still
+  carrying 14 and a \(C_{16}\). The saturation form of the pivot
+  trigger is retired; the live form is a hole at **14**.
+- **Independent cross-check of the recorded ladder** from a different
+  generation principle: with the poison prune off, chord-minimal cover
+  counts are 0 at orders 12–18 and 6, 65 at 19, 20, with only
+  invariant signatures already recorded for the eight profile objects
+  — reproducing `C027`/`C039`/`C043` without geng.
+- **Correction recorded** (`A027` T6): a hand-derived chord-pair table
+  entry was wrong — interior-disjoint chords close **no** extra cycle
+  with the path. Caught by the instrument's own anchors before use;
+  nothing downstream depended on it. `A026` T5's span law is
+  unaffected.
+- Adversarial audit **`R003`** opened and delegated to a fresh
+  `proof-reviewer` subagent, targeted at the two fatal spots: whether
+  the descent is lossless and whether any prune can discard a genuine
+  counterexample.
+- Named residue (`A027` T5): the **non-Hamiltonian stratum**. First
+  purchase: a zero-savings two-attachment off-path component forces an
+  all-equal-length — hence bipartite — interior-degree-\(\ge3\)
+  gadget, exactly the class `L035`/`C034` has been emptying.
+- Ledgers reconciled: `L052`/`C048` new; `G015` updated (S027 update);
+  `STATE.md`, `problem.json`, index, `LOG.md`. `PROOF.md` unchanged
+  (no integrated-argument change for statement 0.1);
+  `DECISIONS.md` records the route change from proving a disjunct to
+  deciding the disjunction. Next action: **finish the `E028` ladder to
+  order 35**, then the non-Hamiltonian stratum, with the `E024`
+  harvest behind them. `E024` ran throughout, untouched, still
+  running, excluded from every ledger row. Outlook 8% → 10%.
