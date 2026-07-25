@@ -1,0 +1,11 @@
+# graph6 edges n_degree2 power_free   ({C4,C8}-free class, order 13)
+L??CE?oaPHI_Y` 19 4 1
+L??CE?oIGwGohQ 19 4 1
+L??ED?WDJC@gSP 19 4 1
+L?AA@AOQ@g@Ww[ 19 4 1
+L?AA@AOQD@@W\S 19 4 1
+L?AA@AOQD@GINo 19 4 1
+L?AAD@OICQAopK 19 4 1
+L?AAD@OIAPCaec 19 4 1
+L?AAD@OaPWEOWW 19 4 1
+L?AAD@OaPWEOWI 19 4 1

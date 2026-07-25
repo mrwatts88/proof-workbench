@@ -139,15 +139,42 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   unless it invokes power-freeness or minimality. Case (5b)'s
   surviving levers: the chain-cancellation tension (proof side) and
   the generator-powered order-17 rung (search side).
+  **S021 (second orchestrated parallel session; one `fable` worker on
+  the proof leg, one `opus` worker on the instrument leg, both audited
+  with reproductions) spent both recorded moves and moved the
+  frontier.** Proof side: the chain-cancellation tension is now a
+  theorem package (`L043`–`L046`) — the cancellation is *quantified*
+  (exactly three equal-exponent collision patterns per cut, so
+  membership arithmetic provably cannot exclude the chain case) and
+  per-block order bounds confine any chain-shaped residual object to
+  order \(\ge36\): **below 36, case (5b) is a single 2-connected
+  configuration**; the chain-case analogue of Petersen\(-e\) does not
+  exist over blocks of order \(\le14\) (`C038`; the 15/16 rung is
+  named). Search side: the dedicated \(\{C_4,C_8\}\)-free generator is
+  **built and verified** (`E019`/`C039`: geng + PREPRUNE plugin, 146
+  anchors under both interpreters, 23 set-equality checks against the
+  old pipeline, cubic-24 positive control = Markström's census);
+  **order 17 is empty** — tight 1-atoms \(\ge19\), \(\mathcal
+  G\)-members \(\ge18\), `C027`'s class empty through 17 — and the
+  min-degree-3 sweep through order 19 (slice-audited at 18 against the
+  old instrument) gives `C040`/`L047`: **every counterexample has at
+  least 20 vertices** (window \([20,24]\)). A user-supplied
+  MathOverflow-512914 claim that order 20 was already settled was
+  audited: its cubic-20 computation is right (and matches `E019`
+  independently), but its cubic→min-degree-3 step assumes exactly the
+  open cubic reduction and was rejected as an import; the internal
+  order-20 run (plus bipartite 24 on the new instrument) was launched
+  as the close-of-session background follow-up.
   Portfolio (all threads carried, per standing user instruction): the
-  case-(5b) endgame (chain cancellation + the Tier 4 generator, still
-  Tier 1); the pencil endgame + band-2 rung (pinched
-  channel); the bipartite hunt at order 24+ (order 23 harvested
-  empty in the S019 follow-up — 928,562 in class, all with a
-  \(C_8\)) and the gcd-channel theory question; the cubic census at order 30; census mining; bipartite EGC
-  (proof side); the disjoint longer-link descent (R2's surviving
-  extension); 3-connectivity leverage; order-17+ pinched catalogue
-  legs.
+  case-(5b) endgame (the 2-connected branch's interference structure +
+  the `E019` search ladder at 18–20, Tier 1); the `C038` kill rung at
+  block orders 15–16; the pencil endgame + band-2 rung (pinched
+  channel); the bipartite hunt at order 24+ (leg running on the new
+  instrument) and the gcd-channel theory question; the cubic census at
+  orders 26/28/30 (now ~15 min/3.5 h/2.3 days on 8 workers); census
+  mining; bipartite EGC (proof side); the disjoint longer-link descent
+  (R2's surviving extension); 3-connectivity leverage; order-17+
+  pinched catalogue legs.
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -203,22 +230,23 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, keep working **Tier 1: exclude case (5b)** (`L041`), whose
-S019-recorded moves S020 has now spent: the order-16 scan is **empty**
-(`C036` — tight 1-atoms have order \(\ge18\)) and the congruence hunt
-is **dead at every modulus** (`C037`/`A021` — Petersen\(-e\) realizes
-the forced hypotheses; do not reopen congruence obstructions). Primary
-(proof side): the **chain-cancellation tension** (`L042`/W1-T14) —
-quantify the forced cancellation of forbidden lengths across the block
-chain of \(H\); first falsifiable target: bound the chain length or
-prove \(H\) 2-connected; sanity-check every candidate argument on
-Petersen\(-e\). Search side (build first, then scan): the `G014`
-item-6 dedicated \(\{C_4,C_8\}\)-free generator — the \(C_8\) filter
-is 100% decisive in this profile at every scanned order and min
-\(C_8\) count at 16 is 1, and it unlocks the order-17 \(\mathcal G\)
-rung, cubic order 30, and bipartite order 24+ at once. Do **not**
-grind the density constant (closed by `L038`). Tier 3 stays
-harvest-only (bipartite 24, gcd scan, pinched 17+).
+For `P-002`, keep working **Tier 1: exclude case (5b)** — now a single
+2-connected configuration below order 36 (`L046`), with the search
+instrument built (`E019`) and the atom/counterexample floors at 19/20
+(`C039`, `L047`). **First action: harvest the S021 background
+follow-up** (`E019/data/followup_s021.json` — MO recount; min-degree-3
+order 20; bipartite order 24 — plus the pending order-18 audit slice);
+nothing from it is citable until read. Primary (proof side): the
+**interference dissection** — check whether every blocking
+\(C_8\)/\(C_{16}\) among the closest known objects (min-\(C_8\)=1
+exemplars at 14–16, three-degree-2 boundary graphs at 16–17) is a
+two-through-path symmetric difference, or exhibit a non-interference
+blocker. Search side: the \(\mathcal G\)-profile ladder at orders
+18–19 (minutes on 8 workers; each rung decisive). Tier 3 stays
+harvest-only (the `C038` kill rung at block order 15; cubic 26/28;
+min-degree-3 order 21). Do **not** reopen congruence obstructions
+(`C037`), membership-only chain exclusion (`L045`), or the density
+constant (`L038`).
 No required action remains for `P-001`; its reference comparison is
 optional and freely permitted.
 

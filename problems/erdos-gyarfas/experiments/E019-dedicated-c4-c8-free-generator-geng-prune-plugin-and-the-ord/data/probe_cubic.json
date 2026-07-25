@@ -1,0 +1,550 @@
+[
+ {
+  "probe": "cubic",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3",
+   "-D3"
+  ],
+  "order": 14,
+  "part": "0/1",
+  "mine": 21,
+  "maxe": 21,
+  "out": 0,
+  "prune_calls": 9063,
+  "prune_rejects": 5730,
+  "generator_cpu": 0.01,
+  "wall": 0.0,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 8,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 24,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 73,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 410,
+    "rejects": 4
+   },
+   "11": {
+    "calls": 2742,
+    "rejects": 765
+   },
+   "12": {
+    "calls": 5319,
+    "rejects": 4482
+   },
+   "13": {
+    "calls": 479,
+    "rejects": 479
+   }
+  }
+ },
+ {
+  "probe": "cubic",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3",
+   "-D3"
+  ],
+  "order": 16,
+  "part": "0/1",
+  "mine": 24,
+  "maxe": 24,
+  "out": 0,
+  "prune_calls": 85345,
+  "prune_rejects": 61586,
+  "generator_cpu": 0.04,
+  "wall": 0.0,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 5,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 15,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 47,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 125,
+    "rejects": 1
+   },
+   "11": {
+    "calls": 593,
+    "rejects": 5
+   },
+   "12": {
+    "calls": 6242,
+    "rejects": 962
+   },
+   "13": {
+    "calls": 35791,
+    "rejects": 21161
+   },
+   "14": {
+    "calls": 40467,
+    "rejects": 37411
+   },
+   "15": {
+    "calls": 2051,
+    "rejects": 2045
+   },
+   "16": {
+    "calls": 1,
+    "rejects": 1
+   }
+  }
+ },
+ {
+  "probe": "cubic",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3",
+   "-D3"
+  ],
+  "order": 18,
+  "part": "0/1",
+  "mine": 27,
+  "maxe": 27,
+  "out": 0,
+  "prune_calls": 843516,
+  "prune_rejects": 651458,
+  "generator_cpu": 0.38,
+  "wall": 0.4,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 5,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 15,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 50,
+    "rejects": 0
+   },
+   "11": {
+    "calls": 151,
+    "rejects": 1
+   },
+   "12": {
+    "calls": 733,
+    "rejects": 6
+   },
+   "13": {
+    "calls": 9495,
+    "rejects": 1013
+   },
+   "14": {
+    "calls": 101872,
+    "rejects": 39660
+   },
+   "15": {
+    "calls": 422495,
+    "rejects": 319736
+   },
+   "16": {
+    "calls": 296429,
+    "rejects": 278857
+   },
+   "17": {
+    "calls": 12256,
+    "rejects": 12179
+   },
+   "18": {
+    "calls": 6,
+    "rejects": 6
+   }
+  }
+ },
+ {
+  "probe": "cubic",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3",
+   "-D3"
+  ],
+  "order": 20,
+  "part": "0/1",
+  "mine": 30,
+  "maxe": 30,
+  "out": 0,
+  "prune_calls": 9022828,
+  "prune_rejects": 7258048,
+  "generator_cpu": 3.67,
+  "wall": 3.8,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 4,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 9,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 29,
+    "rejects": 0
+   },
+   "11": {
+    "calls": 92,
+    "rejects": 0
+   },
+   "12": {
+    "calls": 255,
+    "rejects": 2
+   },
+   "13": {
+    "calls": 944,
+    "rejects": 9
+   },
+   "14": {
+    "calls": 11690,
+    "rejects": 1026
+   },
+   "15": {
+    "calls": 179657,
+    "rejects": 49631
+   },
+   "16": {
+    "calls": 1600118,
+    "rejects": 913428
+   },
+   "17": {
+    "calls": 4751019,
+    "rejects": 3931162
+   },
+   "18": {
+    "calls": 2395982,
+    "rejects": 2280291
+   },
+   "19": {
+    "calls": 82988,
+    "rejects": 82467
+   },
+   "20": {
+    "calls": 32,
+    "rejects": 32
+   }
+  }
+ },
+ {
+  "probe": "cubic",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3",
+   "-D3"
+  ],
+  "order": 22,
+  "part": "0/1",
+  "mine": 33,
+  "maxe": 33,
+  "out": 0,
+  "prune_calls": 104644797,
+  "prune_rejects": 86382689,
+  "generator_cpu": 40.94,
+  "wall": 42.1,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 4,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 9,
+    "rejects": 0
+   },
+   "11": {
+    "calls": 29,
+    "rejects": 0
+   },
+   "12": {
+    "calls": 95,
+    "rejects": 0
+   },
+   "13": {
+    "calls": 283,
+    "rejects": 2
+   },
+   "14": {
+    "calls": 1080,
+    "rejects": 10
+   },
+   "15": {
+    "calls": 12926,
+    "rejects": 1031
+   },
+   "16": {
+    "calls": 239879,
+    "rejects": 53173
+   },
+   "17": {
+    "calls": 3398405,
+    "rejects": 1466079
+   },
+   "18": {
+    "calls": 24370462,
+    "rejects": 16554827
+   },
+   "19": {
+    "calls": 54503392,
+    "rejects": 47076053
+   },
+   "20": {
+    "calls": 21504452,
+    "rejects": 20621634
+   },
+   "21": {
+    "calls": 613560,
+    "rejects": 609669
+   },
+   "22": {
+    "calls": 211,
+    "rejects": 211
+   }
+  }
+ },
+ {
+  "probe": "cubic",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3",
+   "-D3"
+  ],
+  "order": 24,
+  "part": "0/1",
+  "mine": 36,
+  "maxe": 36,
+  "out": 4,
+  "prune_calls": 1316000543,
+  "prune_rejects": 1104990198,
+  "generator_cpu": 503.93,
+  "wall": 511.3,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 4,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 6,
+    "rejects": 0
+   },
+   "11": {
+    "calls": 16,
+    "rejects": 0
+   },
+   "12": {
+    "calls": 55,
+    "rejects": 0
+   },
+   "13": {
+    "calls": 171,
+    "rejects": 1
+   },
+   "14": {
+    "calls": 468,
+    "rejects": 4
+   },
+   "15": {
+    "calls": 1459,
+    "rejects": 15
+   },
+   "16": {
+    "calls": 13923,
+    "rejects": 1043
+   },
+   "17": {
+    "calls": 274903,
+    "rejects": 54183
+   },
+   "18": {
+    "calls": 5100705,
+    "rejects": 1771239
+   },
+   "19": {
+    "calls": 63801813,
+    "rejects": 34740265
+   },
+   "20": {
+    "calls": 371719580,
+    "rejects": 276283404
+   },
+   "21": {
+    "calls": 658693453,
+    "rejects": 583678428
+   },
+   "22": {
+    "calls": 211141787,
+    "rejects": 203260350
+   },
+   "23": {
+    "calls": 5250187,
+    "rejects": 5199294
+   },
+   "24": {
+    "calls": 2003,
+    "rejects": 1972
+   }
+  }
+ }
+]

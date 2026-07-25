@@ -642,3 +642,56 @@ attempt, experiment, or review record.
   primary; the `G014` item-6 \(\{C_4,C_8\}\)-free generator as the
   search-side build before any order-17 leg.
 - No proved row was falsified. `C001` stays `open`.
+
+## 2026-07-24 — S021: orchestrated parallel legs — the chain case theorem-closed below 36, the generator built, order 17 empty, the counterexample floor at 20
+
+- Second orchestrated parallel session (`O011`): worker W1 (`fable`) on
+  the chain-cancellation tension, worker W2 (`opus`) on the `G014`
+  item-6 generator; both audited line-by-line before integration; all
+  ledgers held by the orchestrating session.
+- W1 (`A022`, `E020`): the chain-case constraint system (`L043` — every
+  prefix/suffix meets all three forbidden families and is
+  non-bipartite; [min] engine: prefixes hide the second terminal);
+  terminal power saturation (`L044`, filter strength); the collision
+  table (`L045` — the cancellation is exactly three exponent-
+  disjointness conditions; membership arithmetic can never exclude the
+  chain case); the order dichotomy (`L046` — either \(H\) is
+  2-connected or \(n_0\ge32\), sharpened to 36 by `C039`; the recorded
+  falsifiable target delivered). Kill test refuted in range (`C038`:
+  zero candidates over the order-\(\le14\) block catalogue, single
+  mechanism — the forced 14; abstract solutions first at block orders
+  15–16, the named rung). The chain floor (taut+cut needs order
+  \(\ge15\)) retro-explains `C037`'s all-2-connected datum.
+- W2 (`E019`): `genc48` = nauty geng + `prune_c8` PREPRUNE plugin
+  (sha256-verified source, completeness argument recorded, 146 anchors
+  under both interpreters, 23 `labelg` set-equality checks, res/mod
+  partition checks, cubic-24 external positive control = Markström
+  Table 3 = `E005`). Order-17 \(\mathcal G\)-profile run: **empty**
+  (class 2,580 = unsplit count; `C039`) — every tight 1-atom has order
+  \(\ge19\), every \(\mathcal G\)-member \(\ge18\); `C027`'s whole
+  class empty at 16 and 17; \(C_{16}\) decisive at the three-degree-2
+  boundary (first time in the dossier); ladder priced (18/19/20 ≈
+  4 min/25 min/2.8 h on 8 workers; cubic 30 ≈ 2.3 days).
+- Orchestrator audit of the flagged min-degree-3 sweep: stream-side
+  slice checks at order 18 (parts 3/19 of 24 clean at close — 6.7M and
+  7.6M graphs, zero \(C_8\)-free — plus the 12–17 full cross-checks and
+  the cubic-24 control) → `C040` (no \(\{C_4,C_8\}\)-free
+  \(\delta\ge3\) graph through order 19) and `L047`: **every
+  counterexample has at least 20 vertices**; extremal window
+  \([20,24]\).
+- External input handled: user-supplied MathOverflow-512914 quote —
+  cubic-20 figures corroborated (its {C4,C8}-free-cubic-empty verdict
+  matches `E019`'s independent probe); its cubic→min-degree-3 step
+  **rejected as an import** (that inference is the open `G015`);
+  `references/mathoverflow-512914-audit-2026-07-24.md`.
+- Close-of-session background follow-up launched
+  (`E019/followup_s021.py`): MO recount (stage A), min-degree-3 order
+  20 (stage B), bipartite order 24 on the new instrument (stage C).
+  Not citable until harvested.
+- Ledgers: `CLAIMS.md` `L043`–`L047`, `C038`–`C040` + dependency
+  notes; `OBLIGATIONS.md` `G015`/`G013`(a)/`G014` (item 6 discharged;
+  item 7 opened); `PROOF.md` (bounds, chain package, stale `G015` gap
+  bullet repaired); `DECISIONS.md` (instrument adoption; chain-branch
+  arithmetic retirement; MO rejection); `STATE.md` rewritten;
+  `problem.json`/index; `PROJECT_STATE.md`.
+- No proved row was falsified. `C001` stays `open`. Outlook 5% → 6%.

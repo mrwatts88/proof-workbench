@@ -1,0 +1,310 @@
+[
+ {
+  "probe": "subcubic2",
+  "switches": [
+   "-c",
+   "-f",
+   "-d1"
+  ],
+  "order": 14,
+  "part": "0/1",
+  "mine": 19,
+  "maxe": 91,
+  "out": 24184,
+  "prune_calls": 4930837,
+  "prune_rejects": 4357351,
+  "generator_cpu": 1.75,
+  "wall": 1.9,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 8,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 25,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 91,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 581,
+    "rejects": 4
+   },
+   "10": {
+    "calls": 4464,
+    "rejects": 582
+   },
+   "11": {
+    "calls": 32223,
+    "rejects": 12169
+   },
+   "12": {
+    "calls": 215750,
+    "rejects": 119982
+   },
+   "13": {
+    "calls": 1385668,
+    "rejects": 969214
+   },
+   "14": {
+    "calls": 3292020,
+    "rejects": 3255400
+   }
+  }
+ },
+ {
+  "probe": "subcubic2",
+  "switches": [
+   "-c",
+   "-f",
+   "-d1"
+  ],
+  "order": 15,
+  "part": "0/1",
+  "mine": 21,
+  "maxe": 105,
+  "out": 18982,
+  "prune_calls": 27146868,
+  "prune_rejects": 24759234,
+  "generator_cpu": 9.07,
+  "wall": 10.0,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 8,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 25,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 91,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 552,
+    "rejects": 4
+   },
+   "10": {
+    "calls": 3692,
+    "rejects": 539
+   },
+   "11": {
+    "calls": 27361,
+    "rejects": 9142
+   },
+   "12": {
+    "calls": 193768,
+    "rejects": 104205
+   },
+   "13": {
+    "calls": 1370976,
+    "rejects": 957002
+   },
+   "14": {
+    "calls": 9225546,
+    "rejects": 7391581
+   },
+   "15": {
+    "calls": 16324842,
+    "rejects": 16296761
+   }
+  }
+ },
+ {
+  "probe": "subcubic2",
+  "switches": [
+   "-c",
+   "-f",
+   "-d1"
+  ],
+  "order": 16,
+  "part": "0/1",
+  "mine": 22,
+  "maxe": 120,
+  "out": 272596,
+  "prune_calls": 250516728,
+  "prune_rejects": 239474932,
+  "generator_cpu": 65.89,
+  "wall": 70.4,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 4,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 14,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 47,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 196,
+    "rejects": 1
+   },
+   "10": {
+    "calls": 1615,
+    "rejects": 37
+   },
+   "11": {
+    "calls": 15704,
+    "rejects": 2884
+   },
+   "12": {
+    "calls": 158164,
+    "rejects": 80757
+   },
+   "13": {
+    "calls": 1275612,
+    "rejects": 880356
+   },
+   "14": {
+    "calls": 9188075,
+    "rejects": 7357844
+   },
+   "15": {
+    "calls": 64089473,
+    "rejects": 55786489
+   },
+   "16": {
+    "calls": 175787819,
+    "rejects": 175366564
+   }
+  }
+ },
+ {
+  "probe": "subcubic2",
+  "switches": [
+   "-c",
+   "-f",
+   "-d1"
+  ],
+  "order": 17,
+  "part": "0/1",
+  "mine": 24,
+  "maxe": 136,
+  "out": 229259,
+  "prune_calls": 1466206903,
+  "prune_rejects": 1416688722,
+  "generator_cpu": 370.29,
+  "wall": 411.3,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 4,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 14,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 47,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 195,
+    "rejects": 1
+   },
+   "10": {
+    "calls": 1526,
+    "rejects": 37
+   },
+   "11": {
+    "calls": 12328,
+    "rejects": 2514
+   },
+   "12": {
+    "calls": 122391,
+    "rejects": 53420
+   },
+   "13": {
+    "calls": 1086558,
+    "rejects": 719844
+   },
+   "14": {
+    "calls": 8764549,
+    "rejects": 6976745
+   },
+   "15": {
+    "calls": 63986321,
+    "rejects": 55689017
+   },
+   "16": {
+    "calls": 459718459,
+    "rejects": 421096285
+   },
+   "17": {
+    "calls": 932514506,
+    "rejects": 932150859
+   }
+  }
+ }
+]

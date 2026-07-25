@@ -1,0 +1,68 @@
+{
+ "order": 15,
+ "part": "0/1",
+ "out": 168,
+ "prune_calls": 11647469,
+ "prune_rejects": 9704091,
+ "generator_cpu": 6.2,
+ "wall": 6.3,
+ "levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 8,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 25,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 91,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 552,
+   "rejects": 4
+  },
+  "10": {
+   "calls": 3692,
+   "rejects": 539
+  },
+  "11": {
+   "calls": 27361,
+   "rejects": 9142
+  },
+  "12": {
+   "calls": 193768,
+   "rejects": 104205
+  },
+  "13": {
+   "calls": 1370976,
+   "rejects": 957002
+  },
+  "14": {
+   "calls": 7839930,
+   "rejects": 6422360
+  },
+  "15": {
+   "calls": 2211059,
+   "rejects": 2210839
+  }
+ },
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -u -c -f -d2 15 22:105"
+}

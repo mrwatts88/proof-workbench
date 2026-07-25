@@ -1,0 +1,56 @@
+{
+ "order": 12,
+ "part": "0/1",
+ "out": 94,
+ "prune_calls": 51065,
+ "prune_rejects": 26815,
+ "generator_cpu": 0.05,
+ "wall": 0.1,
+ "levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 8,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 28,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 142,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 1000,
+   "rejects": 29
+  },
+  "10": {
+   "calls": 6756,
+   "rejects": 1396
+  },
+  "11": {
+   "calls": 31077,
+   "rejects": 13469
+  },
+  "12": {
+   "calls": 12047,
+   "rejects": 11921
+  }
+ },
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -u -c -f -d2 12 17:66"
+}

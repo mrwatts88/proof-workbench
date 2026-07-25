@@ -1,0 +1,15 @@
+# graph6 edges n_degree2 power_free   ({C4,C8}-free class, order 10)
+I?ABA_yrO 14 5 1
+I?ABAcwrG 14 5 1
+I?`@C`Wxo 14 5 1
+I?`@C`wpo 14 5 1
+I?`@C`[wo 14 5 1
+I?`@Cb@^_ 14 5 1
+I?`@Cb`V_ 14 5 1
+I?`@CbD]_ 14 5 1
+I?`@EaKLg 14 5 1
+I?`D@`keO 14 4 1
+I?`D@aQrO 14 5 1
+I?`D@pScg 14 4 1
+I?`DCdcMG 14 4 1
+I?`@dEWR_ 14 4 1

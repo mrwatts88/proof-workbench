@@ -1,0 +1,430 @@
+[
+ {
+  "probe": "bip",
+  "switches": [
+   "-c",
+   "-f",
+   "-b",
+   "-d2"
+  ],
+  "order": 14,
+  "part": "0/1",
+  "mine": 20,
+  "maxe": 91,
+  "out": 0,
+  "prune_calls": 14353,
+  "prune_rejects": 2701,
+  "generator_cpu": 0.03,
+  "wall": 0.0,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 7,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 22,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 73,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 307,
+    "rejects": 3
+   },
+   "11": {
+    "calls": 1076,
+    "rejects": 81
+   },
+   "12": {
+    "calls": 4051,
+    "rejects": 523
+   },
+   "13": {
+    "calls": 8809,
+    "rejects": 2094
+   }
+  }
+ },
+ {
+  "probe": "bip",
+  "switches": [
+   "-c",
+   "-f",
+   "-b",
+   "-d2"
+  ],
+  "order": 16,
+  "part": "0/1",
+  "mine": 23,
+  "maxe": 120,
+  "out": 0,
+  "prune_calls": 147246,
+  "prune_rejects": 51546,
+  "generator_cpu": 0.28,
+  "wall": 0.3,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 5,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 13,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 38,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 105,
+    "rejects": 1
+   },
+   "11": {
+    "calls": 443,
+    "rejects": 4
+   },
+   "12": {
+    "calls": 2162,
+    "rejects": 172
+   },
+   "13": {
+    "calls": 8964,
+    "rejects": 1643
+   },
+   "14": {
+    "calls": 38407,
+    "rejects": 10436
+   },
+   "15": {
+    "calls": 97101,
+    "rejects": 39290
+   }
+  }
+ },
+ {
+  "probe": "bip",
+  "switches": [
+   "-c",
+   "-f",
+   "-b",
+   "-d2"
+  ],
+  "order": 18,
+  "part": "0/1",
+  "mine": 26,
+  "maxe": 153,
+  "out": 0,
+  "prune_calls": 1900375,
+  "prune_rejects": 991923,
+  "generator_cpu": 2.94,
+  "wall": 3.1,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 7,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 22,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 64,
+    "rejects": 0
+   },
+   "11": {
+    "calls": 187,
+    "rejects": 2
+   },
+   "12": {
+    "calls": 961,
+    "rejects": 13
+   },
+   "13": {
+    "calls": 5519,
+    "rejects": 654
+   },
+   "14": {
+    "calls": 25144,
+    "rejects": 6001
+   },
+   "15": {
+    "calls": 116576,
+    "rejects": 40979
+   },
+   "16": {
+    "calls": 474808,
+    "rejects": 214961
+   },
+   "17": {
+    "calls": 1277078,
+    "rejects": 729313
+   }
+  }
+ },
+ {
+  "probe": "bip",
+  "switches": [
+   "-c",
+   "-f",
+   "-b",
+   "-d2"
+  ],
+  "order": 20,
+  "part": "0/1",
+  "mine": 29,
+  "maxe": 190,
+  "out": 0,
+  "prune_calls": 28357873,
+  "prune_rejects": 19094106,
+  "generator_cpu": 34.03,
+  "wall": 36.3,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 5,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 13,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 40,
+    "rejects": 0
+   },
+   "11": {
+    "calls": 110,
+    "rejects": 1
+   },
+   "12": {
+    "calls": 345,
+    "rejects": 4
+   },
+   "13": {
+    "calls": 2180,
+    "rejects": 52
+   },
+   "14": {
+    "calls": 14463,
+    "rejects": 2302
+   },
+   "15": {
+    "calls": 71980,
+    "rejects": 20797
+   },
+   "16": {
+    "calls": 367996,
+    "rejects": 158726
+   },
+   "17": {
+    "calls": 1632046,
+    "rejects": 866378
+   },
+   "18": {
+    "calls": 6654047,
+    "rejects": 4106554
+   },
+   "19": {
+    "calls": 19614638,
+    "rejects": 13939291
+   },
+   "20": {
+    "calls": 1,
+    "rejects": 1
+   }
+  }
+ },
+ {
+  "probe": "bip",
+  "switches": [
+   "-c",
+   "-f",
+   "-b",
+   "-d2"
+  ],
+  "order": 22,
+  "part": "0/1",
+  "mine": 32,
+  "maxe": 231,
+  "out": 0,
+  "prune_calls": 481555031,
+  "prune_rejects": 379160037,
+  "generator_cpu": 448.55,
+  "wall": 476.7,
+  "levels": {
+   "2": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "3": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "4": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "5": {
+    "calls": 1,
+    "rejects": 0
+   },
+   "6": {
+    "calls": 2,
+    "rejects": 0
+   },
+   "7": {
+    "calls": 3,
+    "rejects": 0
+   },
+   "8": {
+    "calls": 4,
+    "rejects": 0
+   },
+   "9": {
+    "calls": 8,
+    "rejects": 0
+   },
+   "10": {
+    "calls": 23,
+    "rejects": 0
+   },
+   "11": {
+    "calls": 68,
+    "rejects": 0
+   },
+   "12": {
+    "calls": 183,
+    "rejects": 2
+   },
+   "13": {
+    "calls": 665,
+    "rejects": 7
+   },
+   "14": {
+    "calls": 5146,
+    "rejects": 215
+   },
+   "15": {
+    "calls": 38416,
+    "rejects": 7655
+   },
+   "16": {
+    "calls": 208812,
+    "rejects": 69456
+   },
+   "17": {
+    "calls": 1213020,
+    "rejects": 606113
+   },
+   "18": {
+    "calls": 5659142,
+    "rejects": 3367681
+   },
+   "19": {
+    "calls": 25532518,
+    "rejects": 17476313
+   },
+   "20": {
+    "calls": 106971582,
+    "rejects": 79878778
+   },
+   "21": {
+    "calls": 341925432,
+    "rejects": 277753814
+   },
+   "22": {
+    "calls": 3,
+    "rejects": 3
+   }
+  }
+ }
+]

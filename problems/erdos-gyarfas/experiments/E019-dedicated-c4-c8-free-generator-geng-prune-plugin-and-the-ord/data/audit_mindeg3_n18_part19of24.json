@@ -1,0 +1,12 @@
+{
+ "order": 18,
+ "mine": 27,
+ "maxe": 153,
+ "part": "19/24",
+ "geng": "/opt/homebrew/bin/geng",
+ "detector": "E015/bipscan.py has_cycle_len",
+ "stream": 6685165,
+ "c8_free_survivors": [],
+ "wall_s": 679.8,
+ "python": "3.14.2"
+}

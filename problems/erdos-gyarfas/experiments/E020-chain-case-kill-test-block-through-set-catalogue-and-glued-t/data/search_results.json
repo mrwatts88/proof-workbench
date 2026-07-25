@@ -1,0 +1,109 @@
+{
+ "counts_by_order": {
+  "10": {
+   "stream": 198,
+   "le2deg2": 31,
+   "exactly2deg2": 22,
+   "twoconn_le2deg2": 31,
+   "taut_terminal_pairs": 283,
+   "end_usable": 58
+  },
+  "11": {
+   "stream": 885,
+   "le2deg2": 178,
+   "exactly2deg2": 125,
+   "twoconn_le2deg2": 177,
+   "taut_terminal_pairs": 1059,
+   "end_usable": 564
+  },
+  "12": {
+   "stream": 13759,
+   "le2deg2": 1497,
+   "exactly2deg2": 1139,
+   "twoconn_le2deg2": 1478,
+   "taut_terminal_pairs": 8193,
+   "end_usable": 4431
+  },
+  "13": {
+   "stream": 111379,
+   "le2deg2": 14580,
+   "exactly2deg2": 10966,
+   "twoconn_le2deg2": 14467,
+   "taut_terminal_pairs": 87419,
+   "end_usable": 48185
+  },
+  "14": {
+   "stream": 1706820,
+   "le2deg2": 175648,
+   "exactly2deg2": 130461,
+   "twoconn_le2deg2": 129654,
+   "taut_terminal_pairs": 129654,
+   "end_usable": 129654
+  },
+  "4": {
+   "stream": 0,
+   "le2deg2": 0,
+   "exactly2deg2": 0,
+   "twoconn_le2deg2": 0,
+   "taut_terminal_pairs": 0,
+   "end_usable": 0
+  },
+  "5": {
+   "stream": 0,
+   "le2deg2": 0,
+   "exactly2deg2": 0,
+   "twoconn_le2deg2": 0,
+   "taut_terminal_pairs": 0,
+   "end_usable": 0
+  },
+  "6": {
+   "stream": 0,
+   "le2deg2": 0,
+   "exactly2deg2": 0,
+   "twoconn_le2deg2": 0,
+   "taut_terminal_pairs": 0,
+   "end_usable": 0
+  },
+  "7": {
+   "stream": 0,
+   "le2deg2": 0,
+   "exactly2deg2": 0,
+   "twoconn_le2deg2": 0,
+   "taut_terminal_pairs": 0,
+   "end_usable": 0
+  },
+  "8": {
+   "stream": 5,
+   "le2deg2": 1,
+   "exactly2deg2": 1,
+   "twoconn_le2deg2": 1,
+   "taut_terminal_pairs": 1,
+   "end_usable": 1
+  },
+  "9": {
+   "stream": 10,
+   "le2deg2": 3,
+   "exactly2deg2": 2,
+   "twoconn_le2deg2": 3,
+   "taut_terminal_pairs": 10,
+   "end_usable": 10
+  }
+ },
+ "distinct_end_T": 166,
+ "distinct_mid_T": 176,
+ "m2_kill_pairs": 0,
+ "m2_ext_pairs": 0,
+ "m3_kill_pairs": 0,
+ "m3_ext_pairs": 0,
+ "m3mid_kill_triples": 0,
+ "m3mid_ext_triples": 0,
+ "m2_first_hits": [],
+ "m3_first_hits": [],
+ "m3mid_first_hits": [],
+ "verified": [],
+ "best": {
+  "L1_kill": null,
+  "L2_ext": null,
+  "L3_full": null
+ }
+}

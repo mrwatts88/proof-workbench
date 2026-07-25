@@ -1,0 +1,110 @@
+[
+ {
+  "probe": "mindeg3",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3"
+  ],
+  "order": 12,
+  "mine": 18,
+  "maxe": 66,
+  "genc48": 0,
+  "geng_stream": 57,
+  "geng_c8_free": 0,
+  "set_equal": true,
+  "genc48_wall": 0.0,
+  "stream_wall": 0.0,
+  "interpreter": "3.11.15/PyPy"
+ },
+ {
+  "probe": "mindeg3",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3"
+  ],
+  "order": 13,
+  "mine": 20,
+  "maxe": 78,
+  "genc48": 0,
+  "geng_stream": 503,
+  "geng_c8_free": 0,
+  "set_equal": true,
+  "genc48_wall": 0.1,
+  "stream_wall": 0.1,
+  "interpreter": "3.11.15/PyPy"
+ },
+ {
+  "probe": "mindeg3",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3"
+  ],
+  "order": 14,
+  "mine": 21,
+  "maxe": 91,
+  "genc48": 0,
+  "geng_stream": 6059,
+  "geng_c8_free": 0,
+  "set_equal": true,
+  "genc48_wall": 0.3,
+  "stream_wall": 0.8,
+  "interpreter": "3.11.15/PyPy"
+ },
+ {
+  "probe": "mindeg3",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3"
+  ],
+  "order": 15,
+  "mine": 23,
+  "maxe": 105,
+  "genc48": 0,
+  "geng_stream": 91433,
+  "geng_c8_free": 0,
+  "set_equal": true,
+  "genc48_wall": 1.7,
+  "stream_wall": 7.9,
+  "interpreter": "3.11.15/PyPy"
+ },
+ {
+  "probe": "mindeg3",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3"
+  ],
+  "order": 16,
+  "mine": 24,
+  "maxe": 120,
+  "genc48": 0,
+  "geng_stream": 1655659,
+  "geng_c8_free": 0,
+  "set_equal": true,
+  "genc48_wall": 10.0,
+  "stream_wall": 96.4,
+  "interpreter": "3.11.15/PyPy"
+ },
+ {
+  "probe": "mindeg3",
+  "switches": [
+   "-c",
+   "-f",
+   "-d3"
+  ],
+  "order": 17,
+  "mine": 26,
+  "maxe": 136,
+  "genc48": 0,
+  "geng_stream": 34758006,
+  "geng_c8_free": 0,
+  "set_equal": true,
+  "genc48_wall": 59.5,
+  "stream_wall": 1069.6,
+  "interpreter": "3.11.15/PyPy"
+ }
+]

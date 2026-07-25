@@ -1,0 +1,12 @@
+{
+ "order": 24,
+ "genc48": 4,
+ "e005": 4,
+ "set_equal": true,
+ "markstrom_table3": 4,
+ "prune_calls": 1316000543,
+ "prune_rejects": 1104990198,
+ "wall": 522.4,
+ "interpreter": "3.11.15/PyPy"
+}
+cubic order-24 census reproduced: 4 graphs, set-equal to E005, == Markstroem Table 3

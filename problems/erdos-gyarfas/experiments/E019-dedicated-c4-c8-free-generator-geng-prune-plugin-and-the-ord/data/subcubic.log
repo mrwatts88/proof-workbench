@@ -1,0 +1,6 @@
+n=12 {C4,C8}-free=2515  <=2 sub-cubic=0 {}  power-free=0  0.1s
+n=13 {C4,C8}-free=1939  <=2 sub-cubic=0 {}  power-free=0  0.3s
+n=14 {C4,C8}-free=24184  <=2 sub-cubic=0 {}  power-free=0  2.0s
+n=15 {C4,C8}-free=18982  <=2 sub-cubic=0 {}  power-free=0  10.2s
+n=16 {C4,C8}-free=272596  <=2 sub-cubic=0 {}  power-free=0  73.5s
+n=17 {C4,C8}-free=229259  <=2 sub-cubic=0 {}  power-free=0  409.2s

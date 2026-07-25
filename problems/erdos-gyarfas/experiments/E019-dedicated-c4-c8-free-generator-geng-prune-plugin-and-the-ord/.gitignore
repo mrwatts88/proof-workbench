@@ -1,0 +1,5 @@
+# build/ holds the imported nauty 2.9.3 source tree and the compiled
+# binaries (stock geng + genc48).  Neither belongs in the dossier: build.sh
+# re-creates both from the sha256-checked upstream tarball.
+build/
+__pycache__/

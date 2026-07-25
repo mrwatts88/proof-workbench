@@ -1,0 +1,1 @@
+{"n": 8, "geng": "geng -q -c -f -d2 8 11:28", "stream": 5, "le2deg2": 1, "exactly2deg2": 1, "twoconn_le2deg2": 1, "taut_terminal_pairs": 1, "end_usable": 1, "seconds": 0.0, "records": [{"n": 8, "g6": "GCpdag", "x": 2, "y": 4, "dx": 2, "dy": 2, "T": [3, 4, 5, 6, 7]}]}

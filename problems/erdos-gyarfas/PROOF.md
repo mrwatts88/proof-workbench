@@ -46,8 +46,13 @@ Established preliminary reductions, none sufficient for the main claim:
 - `L022`: every counterexample has at least nineteen vertices (the
   order-18 census extension `C023`: all \(834{,}711{,}846\) connected
   \(C_4\)-free minimum-degree-\(3\) graphs on \(18\) vertices contain a
-  \(C_8\)); the smallest \(\{C_4,C_8\}\)-free minimum-degree-\(3\)
-  graph has between \(19\) and \(24\) vertices.
+  \(C_8\)); superseded in constant by `L047` (S021): **every
+  counterexample has at least twenty vertices**, and the smallest
+  \(\{C_4,C_8\}\)-free minimum-degree-\(3\) graph has between \(20\)
+  and \(24\) vertices (`C040`: the dedicated generator finds the class
+  empty at orders 14–19, with full stream cross-checks at 12–17, the
+  cubic-24 positive control, and sampled stream slices at 18; the
+  18/19 caveat is recorded on the row).
 - `L019`–`L021`: the voltage-lift machinery (projection certificate,
   tree gauge, abelian commutator obstruction) — unconditional tool
   lemmas from the falsification program, not reductions of `C001`; with
@@ -224,7 +229,12 @@ Established preliminary reductions, none sufficient for the main claim:
   and every tight 1-atom has order \(\ge17\) unconditionally — improved
   to **\(\ge18\)** by the S020 order-16 scan (`C036`, `E018`: the
   \(\mathcal G\) profile at order 16 is 29,713,305 graphs, every one
-  \(C_8\)-blocked, none power-free).
+  \(C_8\)-blocked, none power-free), and to **\(\ge19\)** by the S021
+  order-17 run of the dedicated \(\{C_4,C_8\}\)-free generator
+  (`C039`, `E019`: the whole \(\{C_4,C_8\}\)-free class at 17 is 2,580
+  graphs, none with fewer than three degree-2 vertices; `C027`'s
+  \(\le2\)-sub-cubic class is empty at 16 and 17 outright). Every
+  \(\mathcal G\)-member has order \(\ge18\).
 - `L042`: the residual object (case (5b)) is 2-connected, has
   independent degree-\(\ge4\) vertices, is **non-bipartite** (a hand
   proof, at every order, of what `C034` verified through 22), carries
@@ -242,6 +252,29 @@ Established preliminary reductions, none sufficient for the main claim:
   (Minkowski-additive, not residue-based) and mechanisms that make
   power-freeness itself fight (the band-4 pencil `L033` is the model:
   it is exactly the constraint Petersen\(-e\) violates).
+- `L043`–`L046` (S021): the chain-cancellation tension **run to a
+  verdict**. If the residual object's \(H\) has a cut vertex, the
+  block–cut path forces every prefix and suffix to meet all three
+  forbidden families (\(\mathbb P-2\), \((\mathbb P-1)\cup\{1\}\),
+  \(\mathbb P\cup\{1,2\}\), escapes localized) and to be non-bipartite,
+  both end blocks non-bipartite — all by [min] closures, because a
+  prefix hides the second terminal, so every 2-/1-/0-closure lands
+  tight-1-atom-shaped (`L043`); a new saturation lemma (terminal power
+  saturation, `L044`, filter strength) comes from the same engine on
+  every residual object. The cancellation itself is **quantified and
+  capped**: the only forced-membership collisions into \(\mathbb P-2\)
+  are equal-exponent (Mersenne,Mersenne) and (power,\(\mathbb P-2\))
+  pairs, so the tension is three exponent-disjointness conditions per
+  cut and provably cannot exclude the chain case by itself (`L045`).
+  What does confine it is per-block order: every non-bridge block is a
+  power-free member of `C027`'s class, so **either \(H\) is 2-connected
+  or \(n_0\ge36\)** (`L046`, constants 32/36 by lineage; the chain case
+  is empty below order 36 and the 2-connected branch is the entire
+  case-(5b) frontier there). The chain-case analogue of the
+  Petersen\(-e\) calibration object does **not** exist over blocks of
+  order \(\le14\) (`C038`, kill refuted in range, single mechanism: the
+  forced sum 14); the first abstract solutions appear at block orders
+  15–16, which is the named kill rung.
 
 Imported frontier facts, not a candidate:
 
@@ -294,12 +327,20 @@ lemmas remain in `A001` and `CLAIMS.md`.
   After S019 this is reduced to **excluding case (5b)**: showing that no
   minimum-order tight 1-atom is the 2-path closure of a vertex-taut
   member of \(\mathcal G\) (`L041`). The density route is closed as a
-  path to this deliverable (`L038`'s delimitation); the surviving moves
-  are the order-16 \(\mathcal G\)-profile scan (decisive at one order:
-  a hit disproves 0.1 outright), a congruence-type obstruction against
-  the residual object (mod-4 first, on the model of `L042`'s parity
-  proof), the chain-cancellation tension, and the disjoint longer-link
-  descent.
+  path to this deliverable (`L038`'s delimitation). Of the moves that
+  list left open, S020 spent two — the order-16 scan (empty, `C036`)
+  and the congruence obstruction (dead at every modulus,
+  `C037`/`A021`) — and S021 spent two more: the chain-cancellation
+  tension is now the theorem package `L043`–`L046` (quantified, capped,
+  and converted into the order dichotomy: the chain case is empty below
+  \(n_0=36\), so the residual object is 2-connected there), and the
+  search rung moved to order 17 and came back empty by the new
+  dedicated generator (`C039`: tight 1-atoms \(\ge19\)). What remains
+  against case (5b): the 2-connected branch's \(C_8\)-interference
+  structure (the `C037` diagnosis; `L044` saturation at filter
+  strength), the `E019` search ladder at orders 18–20, the `C038` kill
+  rung at block orders 15–16, and the disjoint longer-link descent
+  (`A020` W2-T8(c)).
 - `G013`: settle the atom question — find an assembly witness (disproof
   by `L025`/`L034` rings) or close the assembly channels by proving
   their necessary conditions. After `L026`–`L036` its live

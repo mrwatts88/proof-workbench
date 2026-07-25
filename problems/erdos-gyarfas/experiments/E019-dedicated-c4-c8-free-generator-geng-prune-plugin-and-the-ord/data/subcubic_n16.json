@@ -1,0 +1,13 @@
+{
+ "order": 16,
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d1 16 22:120",
+ "mine": 22,
+ "generated_c4c8_free": 272596,
+ "at_most_two_subcubic": 0,
+ "by_subcubic_profile": {},
+ "power_free": [],
+ "power_free_count": 0,
+ "prune_calls": 250516728,
+ "wall": 73.5,
+ "interpreter": "3.11.15/PyPy"
+}
