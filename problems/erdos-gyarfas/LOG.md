@@ -812,3 +812,28 @@ attempt, experiment, or review record.
 - Ledgers reconciled: `C042`/`C043` extended, `G015`/`G013`(a),
   `PROOF.md` floors, `STATE.md`, `PROJECT_STATE.md`, `problem.json`.
   Outlook unchanged at 7% (the harvest landed inside the S022 call).
+
+## 2026-07-25 — S022 second harvest: all eight profile objects survive T5; the counterexample floor moves to 22 (window [22,24])
+
+- Part-14 recollection landed (two runs, identical aggregates — the
+  first lacked per-graph persistence, a disclosed script bug, fixed
+  and re-run): stream total 439,745 reproduced **exactly**; the four
+  remaining order-20 profile members identified
+  (`profile_n20_part14.g6`), all vertex-taut, 2-connected, 65–80
+  \(C_{16}\)s, \(S\ni6,14\); **T5 survives on all four**
+  (2,360/2,360 cycles). Cumulative (`C042`(e)): **all eight profile
+  objects in existence (orders 19–20) survive T5 — 4,661/4,661
+  cycles — and every one carries the \(S\ni\{6,14\}\) double
+  blocking.** First member independently re-audited by the
+  orchestrator (spectrum, 69 \(C_{16}\)s, S-set, 572 cycles).
+- Stage D landed: **no \(\{C_4,C_8\}\)-free graph of minimum degree
+  \(\ge3\) exists on 21 vertices** (16/16 parts empty, all return
+  codes 0, anchor gate re-passed post-wait, 20,288 s wall on 8
+  workers) — `C040` runs 14–21 and **`L047` lifts to: every
+  counterexample has at least 22 vertices** (extremal window
+  \([22,24]\), three orders wide; atom floors unchanged at 22/21).
+- Ledgers reconciled: `C040`/`C042`/`C043`/`L047`, `OBLIGATIONS.md`
+  (`G015`), `PROOF.md`, `STATE.md`, `PROJECT_STATE.md`,
+  `problem.json`. Next action: the two remaining cheap T5 kill rungs
+  (`smallworld 13`; sparse general 8–9), then the T5 proof attempt.
+  Outlook unchanged at 7%.

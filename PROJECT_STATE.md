@@ -208,10 +208,16 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   same \(S\ni6,14\) double blocking) — so **every \(\mathcal
   G\)-member has order \(\ge21\) and every tight 1-atom \(\ge22\)**
   (`L041` cases (4)/(5) propagating `L047`; direct generation gives
-  21). Still running, not citable: the part-14 recollection of the
-  four remaining order-20 profile members (SAVE_LIMIT truncation,
-  documented) and the chained stage-D min-degree-3 order-21 sweep
-  (empty lifts `L047` to 22).
+  21). **The second harvest closed the run (2026-07-25):** the
+  part-14 recollection recovered the four remaining order-20 profile
+  members (stream 439,745 reproduced exactly; all vertex-taut,
+  2-connected, \(S\ni6,14\)) and **T5 survives on all four** — so
+  **all eight profile objects in existence survive T5, 4,661/4,661
+  cycles, every one \(S\ni\{6,14\}\)-double-blocked** — and the
+  stage-D min-degree-3 order-21 sweep came back **empty**: `C040`
+  runs 14–21 and **every counterexample has \(\ge22\) vertices**
+  (`L047`, extremal window \([22,24]\), three orders wide). Nothing
+  is left running.
   Portfolio (all threads carried, per standing user instruction): the
   case-(5b) endgame (the **T5 → (F) interference program** + the
   ladder at order 20+, Tier 1); the `C038` kill rung at
@@ -278,30 +284,28 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 ## Next action
 
 For `P-002`, keep working **Tier 1: exclude case (5b)** via the **T5 →
-(F) interference program** (S022): T5 has survived its first two kill
-rungs (the order-19 exemplar; the three on-disk order-20 profile
-members), the atom/\(\mathcal G\) floors are at 22/21 and the
-counterexample floor at 21 (`C043`, `L047`; extremal window
-\([21,24]\)). **First action: harvest the residual follow-ups**
-(`E022/data/mindeg3_n21_summary.json` — the stage-D min-degree-3
-order-21 sweep, empty lifts `L047` to 22; and
-`E022/data/collect_n20_part14.json` — the four remaining order-20
-profile members with their T5 verdicts); nothing from them is citable
-until read. Then the remaining T5 kill rungs (`smallworld 13`,
-minutes; a sparse general-graph probe at orders 8–9), and — if T5
-survives everything — the **T5 proof attempt** (clean-window reroute
-+ minimal-choice exchange; named sub-obligations: cycle-edge
-essentiality in taut pairs, weaving control). The forcing target (F)
-follows T5, order-windowed \([18,35]\), doubly calibrated
-(Petersen\(-e\) and the order-14 exemplar of `C041`) and now backed
-by seven profile-member data points realizing the 16-collision and
-the \(S\)-violation simultaneously. Tier 3 stays harvest-only (the
-`C038` kill rung at block orders 15–16; cubic 26/28; the \(\mathcal
-G\) rung at order 21, \(\approx\)18 h; bipartite 26). Do **not**
-reopen congruence obstructions (`C037`), membership-only chain
-exclusion (`L045`), or the density constant (`L038`); any case-(5b)
-exclusion argument must fail on **both** calibration objects unless
-it consumes power-freeness or minimality.
+(F) interference program** (S022, fully harvested): T5 has survived
+every kill rung run so far — all eight profile objects in existence
+(orders 19–20), 4,661/4,661 cycles — the atom/\(\mathcal G\) floors
+are at 22/21, and the counterexample floor at 22 (`C043`/`C042`,
+`L047`; extremal window \([22,24]\), three orders wide). **First
+action: the two remaining cheap T5 kill rungs** — `smallworld 13`
+(minutes, exhaustive in-class at order 13, via `E021/dissect.py`) and
+a sparse general-graph probe at orders 8–9 — then, if T5 survives,
+the **T5 proof attempt** (clean-window reroute + minimal-choice
+exchange; named sub-obligations: cycle-edge essentiality in taut
+pairs, weaving control). The forcing target (F) follows T5,
+order-windowed \([18,35]\), doubly calibrated (Petersen\(-e\) and the
+order-14 exemplar of `C041`) and backed by eight profile-member data
+points realizing the 16-collision and the \(S\)-violation
+simultaneously. Tier 3 stays harvest-only (the `C038` kill rung at
+block orders 15–16; cubic 26/28; the \(\mathcal G\) rung at order 21,
+\(\approx\)18 h, and min-degree-3 at 22, \(\approx\)38 h — both
+deliberate decisions; bipartite 26). Do **not** reopen congruence
+obstructions (`C037`), membership-only chain exclusion (`L045`), or
+the density constant (`L038`); any case-(5b) exclusion argument must
+fail on **both** calibration objects unless it consumes
+power-freeness or minimality.
 No required action remains for `P-001`; its reference comparison is
 optional and freely permitted.
 

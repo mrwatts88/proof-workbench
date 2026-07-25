@@ -46,11 +46,12 @@ Established preliminary reductions, none sufficient for the main claim:
 - `L022`: every counterexample has at least nineteen vertices (the
   order-18 census extension `C023`: all \(834{,}711{,}846\) connected
   \(C_4\)-free minimum-degree-\(3\) graphs on \(18\) vertices contain a
-  \(C_8\)); superseded in constant by `L047` (S021, harvest-updated same day):
-  **every counterexample has at least twenty-one vertices**, and the
+  \(C_8\)); superseded in constant by `L047` (S021, twice
+  harvest-updated — S021 stage B and S022 stage D):
+  **every counterexample has at least twenty-two vertices**, and the
   smallest \(\{C_4,C_8\}\)-free minimum-degree-\(3\) graph has between
-  \(21\) and \(24\) vertices (`C040`: the dedicated generator finds
-  the class empty at orders 14–20, with full stream cross-checks at
+  \(22\) and \(24\) vertices (`C040`: the dedicated generator finds
+  the class empty at orders 14–21, with full stream cross-checks at
   12–17, the cubic-24 positive control, three sampled stream slices at
   18 covering ~24% of that stream, and a triple-instrument agreement
   on the order-20 cubic sub-slice; the 18–20 caveat is recorded on the

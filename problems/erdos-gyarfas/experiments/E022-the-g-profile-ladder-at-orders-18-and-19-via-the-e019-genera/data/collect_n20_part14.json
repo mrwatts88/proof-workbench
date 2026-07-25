@@ -1,0 +1,493 @@
+{
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 20 29:190 14/16",
+ "return_code": 0,
+ "stream_total": 439745,
+ "expected_stream_total": 439745,
+ "stream_matches_stage_b_tally": true,
+ "members_found": 4,
+ "expected_members": 4,
+ "generator_wall_seconds": 6766.5,
+ "graphs": [
+  {
+   "g6": "S????A?O@_@_?oIABODC?S@?@a?H_CA_?",
+   "order": 20,
+   "terminals": [
+    1,
+    5
+   ],
+   "S": [
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "S_cap_2_6_14": [
+    6,
+    14
+   ],
+   "spectrum": [
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c16_count": 69,
+   "vertex_taut": true,
+   "two_connected": true,
+   "paths": 472,
+   "cycles": 572,
+   "per_length": {
+    "3": {
+     "cycles": 2,
+     "decomposable": 2
+    },
+    "5": {
+     "cycles": 4,
+     "decomposable": 4
+    },
+    "6": {
+     "cycles": 9,
+     "decomposable": 9
+    },
+    "7": {
+     "cycles": 6,
+     "decomposable": 6
+    },
+    "9": {
+     "cycles": 12,
+     "decomposable": 12
+    },
+    "10": {
+     "cycles": 26,
+     "decomposable": 26
+    },
+    "11": {
+     "cycles": 30,
+     "decomposable": 30
+    },
+    "12": {
+     "cycles": 37,
+     "decomposable": 37
+    },
+    "13": {
+     "cycles": 70,
+     "decomposable": 70
+    },
+    "14": {
+     "cycles": 91,
+     "decomposable": 91
+    },
+    "15": {
+     "cycles": 76,
+     "decomposable": 76
+    },
+    "16": {
+     "cycles": 69,
+     "decomposable": 69
+    },
+    "17": {
+     "cycles": 68,
+     "decomposable": 68
+    },
+    "18": {
+     "cycles": 50,
+     "decomposable": 50
+    },
+    "19": {
+     "cycles": 20,
+     "decomposable": 20
+    },
+    "20": {
+     "cycles": 2,
+     "decomposable": 2
+    }
+   },
+   "non_decomposable": []
+  },
+  {
+   "g6": "S???C@?G?_P?B?@_@OQH?WO?PO?cQD?g?",
+   "order": 20,
+   "terminals": [
+    8,
+    10
+   ],
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "S_cap_2_6_14": [
+    6,
+    14
+   ],
+   "spectrum": [
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c16_count": 80,
+   "vertex_taut": true,
+   "two_connected": true,
+   "paths": 744,
+   "cycles": 648,
+   "per_length": {
+    "3": {
+     "cycles": 6,
+     "decomposable": 6
+    },
+    "5": {
+     "cycles": 4,
+     "decomposable": 4
+    },
+    "6": {
+     "cycles": 7,
+     "decomposable": 7
+    },
+    "7": {
+     "cycles": 3,
+     "decomposable": 3
+    },
+    "9": {
+     "cycles": 5,
+     "decomposable": 5
+    },
+    "10": {
+     "cycles": 22,
+     "decomposable": 22
+    },
+    "11": {
+     "cycles": 46,
+     "decomposable": 46
+    },
+    "12": {
+     "cycles": 70,
+     "decomposable": 70
+    },
+    "13": {
+     "cycles": 94,
+     "decomposable": 94
+    },
+    "14": {
+     "cycles": 107,
+     "decomposable": 107
+    },
+    "15": {
+     "cycles": 99,
+     "decomposable": 99
+    },
+    "16": {
+     "cycles": 80,
+     "decomposable": 80
+    },
+    "17": {
+     "cycles": 58,
+     "decomposable": 58
+    },
+    "18": {
+     "cycles": 33,
+     "decomposable": 33
+    },
+    "19": {
+     "cycles": 12,
+     "decomposable": 12
+    },
+    "20": {
+     "cycles": 2,
+     "decomposable": 2
+    }
+   },
+   "non_decomposable": []
+  },
+  {
+   "g6": "S???C@?G?_P?B?@_@OQGAGc?p?ABOC_W?",
+   "order": 20,
+   "terminals": [
+    8,
+    9
+   ],
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "S_cap_2_6_14": [
+    6,
+    14
+   ],
+   "spectrum": [
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c16_count": 80,
+   "vertex_taut": true,
+   "two_connected": true,
+   "paths": 684,
+   "cycles": 648,
+   "per_length": {
+    "3": {
+     "cycles": 6,
+     "decomposable": 6
+    },
+    "5": {
+     "cycles": 4,
+     "decomposable": 4
+    },
+    "6": {
+     "cycles": 7,
+     "decomposable": 7
+    },
+    "7": {
+     "cycles": 3,
+     "decomposable": 3
+    },
+    "9": {
+     "cycles": 5,
+     "decomposable": 5
+    },
+    "10": {
+     "cycles": 22,
+     "decomposable": 22
+    },
+    "11": {
+     "cycles": 46,
+     "decomposable": 46
+    },
+    "12": {
+     "cycles": 70,
+     "decomposable": 70
+    },
+    "13": {
+     "cycles": 94,
+     "decomposable": 94
+    },
+    "14": {
+     "cycles": 107,
+     "decomposable": 107
+    },
+    "15": {
+     "cycles": 99,
+     "decomposable": 99
+    },
+    "16": {
+     "cycles": 80,
+     "decomposable": 80
+    },
+    "17": {
+     "cycles": 58,
+     "decomposable": 58
+    },
+    "18": {
+     "cycles": 33,
+     "decomposable": 33
+    },
+    "19": {
+     "cycles": 12,
+     "decomposable": 12
+    },
+    "20": {
+     "cycles": 2,
+     "decomposable": 2
+    }
+   },
+   "non_decomposable": []
+  },
+  {
+   "g6": "S???C@?G?_P?B?oO?S`B?@__SO@?o?s??",
+   "order": 20,
+   "terminals": [
+    1,
+    10
+   ],
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "S_cap_2_6_14": [
+    6,
+    14
+   ],
+   "spectrum": [
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c16_count": 65,
+   "vertex_taut": true,
+   "two_connected": true,
+   "paths": 498,
+   "cycles": 492,
+   "per_length": {
+    "3": {
+     "cycles": 3,
+     "decomposable": 3
+    },
+    "5": {
+     "cycles": 4,
+     "decomposable": 4
+    },
+    "6": {
+     "cycles": 8,
+     "decomposable": 8
+    },
+    "7": {
+     "cycles": 5,
+     "decomposable": 5
+    },
+    "9": {
+     "cycles": 9,
+     "decomposable": 9
+    },
+    "10": {
+     "cycles": 20,
+     "decomposable": 20
+    },
+    "11": {
+     "cycles": 23,
+     "decomposable": 23
+    },
+    "12": {
+     "cycles": 33,
+     "decomposable": 33
+    },
+    "13": {
+     "cycles": 57,
+     "decomposable": 57
+    },
+    "14": {
+     "cycles": 71,
+     "decomposable": 71
+    },
+    "15": {
+     "cycles": 65,
+     "decomposable": 65
+    },
+    "16": {
+     "cycles": 65,
+     "decomposable": 65
+    },
+    "17": {
+     "cycles": 66,
+     "decomposable": 66
+    },
+    "18": {
+     "cycles": 45,
+     "decomposable": 45
+    },
+    "19": {
+     "cycles": 16,
+     "decomposable": 16
+    },
+    "20": {
+     "cycles": 2,
+     "decomposable": 2
+    }
+   },
+   "non_decomposable": []
+  }
+ ],
+ "total_cycles": 2360,
+ "total_non_decomposable": 0,
+ "t5_verdict_on_these_objects": "SURVIVES on all 4 recovered members",
+ "wall_seconds_total": 6766.6,
+ "interpreter": "3.11.15 (194f9f44b505, Jul 15 2026, 12:14:56)\n[PyPy 7.3.23 with GCC Apple LLVM 21.0.0 (clang-2100.0.123.102)]"
+}

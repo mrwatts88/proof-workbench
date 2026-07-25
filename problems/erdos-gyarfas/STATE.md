@@ -1,16 +1,13 @@
 # Current state
 
-- Last updated: 2026-07-25 (S022 + same-conversation follow-up
-  harvest — the interference model survived its frontier kill test on
-  all 553 blockers and the calculus is fixed (`L048`); the ladder
-  spent orders 18–20 (first-ever profile members at 19 and 20, all
-  \(C_{16}\)-blocked, 19's and all three recovered 20's also
-  \(S\)-violating); **T5 survived its first two kill rungs** (the
-  order-19 exemplar 411/411, the on-disk order-20 members
-  1,890/1,890); tight 1-atoms \(\ge22\), \(\mathcal G\)-members
-  \(\ge21\); still running: the min-degree-3 order-21 sweep (stage D)
-  and the part-14 recollection of the four remaining order-20 profile
-  members)
+- Last updated: 2026-07-25 (S022 + complete follow-up harvest — the
+  interference model survived its frontier kill test on all 553
+  blockers and the calculus is fixed (`L048`); the ladder spent
+  orders 18–20 and **all eight profile objects in existence survive
+  T5** (4,661/4,661 cycles; every one \(S\ni\{6,14\}\)-double-blocked);
+  the min-degree-3 sweep is empty through 21 — **every counterexample
+  has \(\ge22\) vertices**, window \([22,24]\); tight 1-atoms
+  \(\ge22\), \(\mathcal G\)-members \(\ge21\); nothing left running)
 - Problem: `P-002` — Erdős–Gyárfás Conjecture
 
 ## Exact target
@@ -164,12 +161,18 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   **all survive** (1,890/1,890 cycles; 254 \(C_{16}\) verdicts
   re-verified pairwise), and all three repeat the \(S\ni6,14\) double
   blocking. SAVE_LIMIT caveat recorded: order-20 class files are
-  per-part 200k samples (18/19 were complete); the four part-14
-  profile members are being recollected (`collect_n20_part14.py`,
-  running, with a stream-total assertion against the 439,745 tally).
-  Still running, not citable: that recollection and the min-degree-3
-  order-21 sweep (`followup_s022b.py`, stage D; empty lifts `L047`
-  to 22).
+  per-part 200k samples (18/19 were complete). **Second harvest
+  (both residual legs landed):** the part-14 recollection recovered
+  the four remaining order-20 profile members (stream total 439,745
+  reproduced exactly; identities in `profile_n20_part14.g6`; all
+  vertex-taut, 2-connected, 65–80 \(C_{16}\)s, \(S\ni6,14\)) and
+  **T5 survives on all four** (2,360/2,360) — so **all eight profile
+  objects in existence survive T5** (`C042`(e), 4,661/4,661 cycles),
+  every one carrying the same double blocking; and stage D
+  (`followup_s022b.py`) came back **empty at order 21** — `C040`
+  runs 14–21 and **`L047` lifts to 22** (window \([22,24]\), three
+  orders wide; atom floors unchanged at 22/21, case (5) still
+  binding).
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -429,9 +432,11 @@ Harvest-only. None of these may be a session's primary work.
   enumeration; the bipartite shortcut does not apply).
 - Order-17+ legs of the pinched catalogue (Thread A/F).
 - Census mining (Thread D), gated by `G014`.
-- The min-degree-3 ladder at order 21 (`E019`, ≈5.3 h on 8 workers):
-  order 20 landed empty in the S021 harvest (`C040`, `L047` at 21);
-  each further empty order lifts the counterexample bound by one.
+- The min-degree-3 ladder at order 22 (≈38 h on 8 workers at the
+  measured ×7.2 growth — a deliberate decision, no longer a cheap
+  leg): orders 20 and 21 landed empty in the S021/S022 harvests
+  (`C040` runs 14–21, `L047` at 22); order 22 is the window's bottom,
+  so the next empty rung meets Markström's order-24 ceiling two away.
 
 ### Tier 4 — infrastructure with cross-thread leverage
 
@@ -467,9 +472,9 @@ A hit in a \(\mathcal G\)-profile scan at order 21+ satisfying the
 \(S\)-condition (**immediate disproof** — a tight 1-atom; 16–20 were
 consumed in S020–S022, the eight profile members at 19–20 all
 \(C_{16}\)-blocked);
-a \(\{C_4,C_8\}\)-free min-degree-3 graph at order 21+ (first at 21
-would refute nothing but ends `L047`'s climb; a *power-free* one is a
-**counterexample**); a pencil-type band-4 taut core at order 17+; a
+a \(\{C_4,C_8\}\)-free min-degree-3 graph at order 22+ (first at 22
+would refute nothing but ends `L047`'s climb at the window's bottom;
+a *power-free* one is a **counterexample**; 14–21 are all empty); a pencil-type band-4 taut core at order 17+; a
 strict block or \(C_8\)-free equality block (disproof protocol);
 **any** power-free member of the `E015` class at order 25+ (immediate
 disproof, `L035` T3; 24 landed empty in the S021 harvest); a `G014`
@@ -620,11 +625,17 @@ forbidden path lengths, the same double death as size 19 — and the
 size-19 consistency count came back exact. The lemma then survived on
 all three of the size-20 graphs recoverable from disk (1,890 more
 cycles, zero exceptions). Net: every single-defect seed now needs at
-least 22 vertices, and the candidate lemma has passed its two
-sharpest cheap tests. Four of the seven size-20 graphs fell outside a
-data-retention window and are being regenerated now, alongside the
-size-21 sweep of the minimum-degree-three world (where an empty
-result would push every counterexample to 22+ vertices).
+least 22 vertices, and the candidate lemma has passed its sharpest
+cheap tests. The four size-20 graphs that fell outside a
+data-retention window were regenerated (the stream recount matched
+the original tally to the digit) and the lemma survived on them too —
+so **all eight graphs in existence with the dangerous degree pattern
+pass the lemma, on every one of their 4,661 cycles**, and every one
+of the eight is killed by the same double mechanism (a 16-cycle plus
+the two forbidden path lengths). And the size-21 sweep of the
+minimum-degree-three world came back empty: **every counterexample
+to the conjecture now needs at least 22 vertices**, and the extremal
+window is down to three sizes, 22 through 24.
 
 ## Resolution outlook
 
@@ -646,10 +657,11 @@ result would push every counterexample to 22+ vertices).
   trims the disproof side without paying the proof side. The
   increment is one point again: real structural progress on the
   deliverable, but the deliverable is still the reduction, not the
-  conjecture. (The same-conversation follow-up harvest landed inside
-  this call — T5 survived both cheap rungs it was given, order 20 was
-  spent, and the floors moved to 21/22 — confirmation of the 7%, not
-  a further increment.)
+  conjecture. (The complete follow-up harvest landed inside this
+  call — T5 survived every rung it was given, all eight profile
+  objects included, 4,661/4,661 cycles; order 20 was spent; the
+  floors moved to 21/22 and the counterexample floor to 22, window
+  \([22,24]\) — confirmation of the 7%, not a further increment.)
 
 ## Resume reading
 
@@ -659,14 +671,15 @@ result would push every counterexample to 22+ vertices).
    kill tests and proof obligations, the forcing target (F), the two
    calibration objects — S022's proof leg) and `A019` (the case
    analysis, the engine/peel, the residual object — R1's foundation)
-3. **First action: harvest the residual follow-ups**
-   (`E022/data/mindeg3_n21_summary.json` — the stage-D min-degree-3
-   order-21 sweep, empty lifts `L047` to 22; and
-   `E022/data/collect_n20_part14.json` — the four remaining order-20
-   profile members with their T5 verdicts); stages A/B/C are already
-   harvested (`followup_s022.json`, `exemplar_t5_n19.json`,
-   `t5_n20_profile.json`, `count_n19.json` — reconciled into `C042`/
-   `C043`); nothing still running is citable until read
+3. All S022 follow-ups are **harvested and reconciled** (stages
+   A/B/C/D + the part-14 recollection: `followup_s022.json`,
+   `exemplar_t5_n19.json`, `t5_n20_profile.json`, `count_n19.json`,
+   `collect_n20_part14.json`, `mindeg3_n21_summary.json` — all in
+   `C040`/`C042`/`C043`/`L047`); nothing is running. **First action:
+   the two remaining T5 kill rungs** — `smallworld 13` (minutes,
+   through `E021/dissect.py`) and a sparse general-graph probe at
+   orders 8–9 — then, if T5 survives, the proof attempt (`A023` T5:
+   clean-window reroute + minimal-choice exchange)
 4. `E021/README.md` (the dissection instrument: extraction layer,
    45-anchor suite, the dichotomy probes) and `E022/README.md` (the
    ladder at 18–19: the first profile member, the dual-split check,

@@ -414,3 +414,41 @@ points at the two still-running legs; then the remaining T5 kill
 rungs; then the proof attempt). Resolution outlook unchanged at 7% —
 the harvest landed inside the S022 call (T5 survived what it was
 given; every emptiness moved the floors as projected).
+
+## Second follow-up harvest addendum (2026-07-25, closing the run)
+
+Both residual legs landed and were audited:
+
+- **Part-14 recollection** (`collect_n20_part14.py`; two runs with
+  identical aggregates — the first run's per-graph reports were
+  computed but not persisted, a script bug disclosed in `LOG.md`;
+  fixed, re-run with a raw g6 dump written during the stream pass):
+  stream total **439,745 = the stage-B tally exactly**; the four
+  remaining order-20 profile members recovered and identified
+  (`profile_n20_part14.g6`) — all vertex-taut, 2-connected, 65–80
+  \(C_{16}\)s, \(S\ni6,14\) — and **T5 survives on all four**
+  (2,360/2,360 cycles). The orchestrator independently re-audited the
+  first member (spectrum, 69 \(C_{16}\)s, \(S\)-set, cycle count)
+  with the from-scratch primitives. Cumulative, now on `C042`(e):
+  **all eight profile objects in existence survive T5 — 4,661/4,661
+  cycles — and every one carries the \(S\ni\{6,14\}\) double
+  blocking**, the (F)-shaped pattern.
+- **Stage D** (`followup_s022b.py`): the min-degree-3
+  \(\{C_4,C_8\}\)-free sweep at order 21 is **empty** — 16/16 parts,
+  zero output (16 empty files verified on disk), all return codes 0,
+  the 146-anchor gate re-passed under PyPy immediately before
+  generation, 20,288 s wall on 8 workers. `C040` extends to 14–21
+  and **`L047` lifts to \(\ge22\)**: every counterexample has at
+  least twenty-two vertices; the extremal window is \([22,24]\),
+  three orders wide. Atom floors unchanged (22/21; `L041` case (5)
+  still binds).
+
+Ledger deltas in this commit: `C040` (order 21; the 18–21 caveat),
+`L047` (22; window \([22,24]\); constant history), `C042`(e) (the
+four members; the cumulative eight-object statement), `C043` (the
+recollection landed), `OBLIGATIONS.md` `G015`, `PROOF.md` (`L022`
+supersession note and floors), `STATE.md`, `PROJECT_STATE.md`,
+`problem.json` (next action: the two remaining cheap T5 kill rungs —
+`smallworld 13`, sparse general 8–9 — then the T5 proof attempt).
+Nothing is left running; the dossier is reconciled. Resolution
+outlook unchanged at 7% (both results landed inside the S022 call).

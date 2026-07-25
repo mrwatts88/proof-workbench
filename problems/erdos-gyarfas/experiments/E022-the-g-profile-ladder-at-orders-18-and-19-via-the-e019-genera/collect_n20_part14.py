@@ -48,6 +48,7 @@ def main():
         stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
     stream = 0
     members = []
+    g6dump = open(os.path.join(DATA, "profile_n20_part14.g6"), "w")
     for line in proc.stdout:
         line = line.strip()
         if not line:
@@ -57,6 +58,9 @@ def main():
         degs = [len(r) for r in adj]
         if degs.count(2) == 2 and all(d >= 3 for d in degs if d != 2):
             members.append((line, adj))
+            g6dump.write(line + "\n")
+            g6dump.flush()
+    g6dump.close()
     rc = proc.wait()
     gen_seconds = round(time.time() - t0, 1)
 
@@ -118,6 +122,7 @@ def main():
         })
 
     result.update({
+        "graphs": reports,
         "total_cycles": total_cycles,
         "total_non_decomposable": total_nondec,
         "t5_verdict_on_these_objects": (
