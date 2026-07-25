@@ -1,0 +1,1326 @@
+{
+ "label": "n18_part7of16",
+ "order": 18,
+ "tally": {
+  "members": 2218,
+  "members_lt2": 0,
+  "exactly_two_members": 0,
+  "pairs": 44870,
+  "bit2": 10665,
+  "bit6": 40362,
+  "bit14": 37898,
+  "gap6": 4508,
+  "gap14": 6972,
+  "gap_both": 911,
+  "gap_both_taut": 46,
+  "members_with_gap": 562,
+  "stride_checks": 13,
+  "stride_taut": 6,
+  "flag_rechecks": 4,
+  "bipartite_members": 0
+ },
+ "taut_gapped_pairs": [
+  {
+   "g6": "Q??????_E?K?K?B?GX@DGaS?Sb?",
+   "order": 18,
+   "terminals": [
+    3,
+    4
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 1,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q??????_B?B?PA_oQA?d@IH?DB?",
+   "order": 18,
+   "terminals": [
+    2,
+    5
+   ],
+   "n_degree2": 8,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 1,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_SOH_@P?OcaHK?",
+   "order": 18,
+   "terminals": [
+    5,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_SOCECGSA`_`@_",
+   "order": 18,
+   "terminals": [
+    3,
+    6
+   ],
+   "n_degree2": 8,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_oCEG?WKOga@@_",
+   "order": 18,
+   "terminals": [
+    3,
+    5
+   ],
+   "n_degree2": 9,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 1,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_oAAGag?Oc_h_O",
+   "order": 18,
+   "terminals": [
+    5,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_oAAG``?@C`JAO",
+   "order": 18,
+   "terminals": [
+    6,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_oAAG``?PC`J?O",
+   "order": 18,
+   "terminals": [
+    6,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_oAAGbH?Aca@__",
+   "order": 18,
+   "terminals": [
+    4,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_oAAG_Gc[G@JA?",
+   "order": 18,
+   "terminals": [
+    6,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_oAAG_GcIW@QAG",
+   "order": 18,
+   "terminals": [
+    6,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_cAI_AQ?Oc_pc?",
+   "order": 18,
+   "terminals": [
+    5,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_cAI?_WCOSOba?",
+   "order": 18,
+   "terminals": [
+    4,
+    6
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_cAAGaQ?PC`q_?",
+   "order": 18,
+   "terminals": [
+    6,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_cAAGaGCAS?qq?",
+   "order": 18,
+   "terminals": [
+    1,
+    6
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_cA?gQW?Oo@os?",
+   "order": 18,
+   "terminals": [
+    4,
+    9
+   ],
+   "n_degree2": 6,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_cA?gQE?R@?os?",
+   "order": 18,
+   "terminals": [
+    4,
+    9
+   ],
+   "n_degree2": 6,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_cA?gQE?GL@KCO",
+   "order": 18,
+   "terminals": [
+    4,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_cA?gQE?R?D_s?",
+   "order": 18,
+   "terminals": [
+    4,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_cA?gQS_[@A@__",
+   "order": 18,
+   "terminals": [
+    6,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_cA?gQSGKKA@__",
+   "order": 18,
+   "terminals": [
+    6,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 3,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@__QI_@a_QDAAa?",
+   "order": 18,
+   "terminals": [
+    4,
+    8
+   ],
+   "n_degree2": 6,
+   "S": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 20,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPI_AQ?GgBAY?",
+   "order": 18,
+   "terminals": [
+    5,
+    9
+   ],
+   "n_degree2": 6,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPI_B@?OcaHG_",
+   "order": 18,
+   "terminals": [
+    5,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPH_ACc`E?``?",
+   "order": 18,
+   "terminals": [
+    6,
+    7
+   ],
+   "n_degree2": 6,
+   "S": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 20,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPHG@H?S_aCY?",
+   "order": 18,
+   "terminals": [
+    6,
+    9
+   ],
+   "n_degree2": 6,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPHG@H?_E`QA_",
+   "order": 18,
+   "terminals": [
+    6,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPHG@H?S_J?Y?",
+   "order": 18,
+   "terminals": [
+    6,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPDGAG_`GHQ?g",
+   "order": 18,
+   "terminals": [
+    2,
+    8
+   ],
+   "n_degree2": 8,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": false,
+   "c16_count": 0,
+   "power_free_flag": true
+  },
+  {
+   "g6": "Q????A?OD?B?@_CP@gAG_W_IO_g",
+   "order": 18,
+   "terminals": [
+    2,
+    8
+   ],
+   "n_degree2": 8,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": false,
+   "c16_count": 0,
+   "power_free_flag": true
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPECEG?Oc`h?_",
+   "order": 18,
+   "terminals": [
+    5,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPECAQ?PCbQG?",
+   "order": 18,
+   "terminals": [
+    6,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPCcAS_pA?`@_",
+   "order": 18,
+   "terminals": [
+    4,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 3,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_PQ??e_q_O",
+   "order": 18,
+   "terminals": [
+    5,
+    9
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": false,
+   "c16_count": 0,
+   "power_free_flag": true
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_PQ?CcE?_w",
+   "order": 18,
+   "terminals": [
+    2,
+    8
+   ],
+   "n_degree2": 9,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": false,
+   "c16_count": 0,
+   "power_free_flag": true
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_P`?ASAQY?",
+   "order": 18,
+   "terminals": [
+    1,
+    6
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_P`?_c_hOO",
+   "order": 18,
+   "terminals": [
+    1,
+    6
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_RD?aE?BB?",
+   "order": 18,
+   "terminals": [
+    4,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_QO_GKaBH?",
+   "order": 18,
+   "terminals": [
+    4,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_OQ_KGEAY?",
+   "order": 18,
+   "terminals": [
+    1,
+    6
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_OQ_cACaq?",
+   "order": 18,
+   "terminals": [
+    1,
+    6
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_P@_aQ?QQG",
+   "order": 18,
+   "terminals": [
+    1,
+    6
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_P@_cE?JQ?",
+   "order": 18,
+   "terminals": [
+    1,
+    6
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_PP_oa?BB?",
+   "order": 18,
+   "terminals": [
+    4,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_QOgGwA?Y?",
+   "order": 18,
+   "terminals": [
+    4,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  },
+  {
+   "g6": "Q????A?OD?B?@_CPG_QOg_q?_q?",
+   "order": 18,
+   "terminals": [
+    4,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 2,
+   "power_free_flag": false
+  }
+ ],
+ "exactly_two_members": [],
+ "stride": 4999,
+ "member_stride": 500,
+ "seconds": 0.5,
+ "interpreter": "3.11.15/PyPy"
+}

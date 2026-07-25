@@ -1,19 +1,23 @@
 # Current state
 
-- Last updated: 2026-07-25 (S024 — **the (F) opening probe is spent:
-  pre-registered branch (b)**. The complete trunk-split realization
-  tables of the ten named objects (`E025`/`C045`: 604 power cycles,
-  61,901 witnessing pairs, 1,971 trunk-split realizations, every
-  `L049` invariant asserted, no soundness alarm) show **no
-  membership-patterned regularity** — the membership-collision form
-  of (F) is dead (`A025` T1). What replaces it: the **trunk bound**
-  `L051` (\(s\le n-L\), proved, tight on all ten objects) and
-  **frontier saturation** (all eight profile objects have spectrum
-  exactly \([3,n]\setminus\{4,8\}\) and \(S\supseteq[6,n-1]\ni6,14\)).
-  **(F) is re-aimed as (F-S) ∨ (F-T)** (`A025` T4): the window forces
-  \(S\cap\{6,14\}\ne\emptyset\), or forces \(16\in\mathrm{Spec}\) —
-  either closes case (5b) below 36. Floors unchanged; `E024` (order-21
-  rung) still **running**, excluded from every ledger)
+- Last updated: 2026-07-25 (S025 — **the S-gap census is spent:
+  pre-registered outcome (i), with a decisive mechanism
+  recalibration**. Over 18,754,354 degree-2 pairs of the on-disk
+  \(\{C_4,C_8\}\)-free classes at orders 10–20 (`E026`/`C046`; 10–19
+  complete, 20 the 572,519-graph 11/16-part sample + the four
+  recorded part-14 profile members): **zero (F-S) kill candidates** —
+  no exactly-two member carries \(S\cap\{6,14\}=\emptyset\); the
+  eight profile objects re-verified saturated — **(F-S) survives its
+  first kill test where the residual object lives**. But **9,061
+  vertex-taut gapped pairs** exist off the profile (min degree-2
+  count 5/6/4 at 18/19/20; 6,934 full \(\mathbb P{-}2\) dodges;
+  5,419 on power-free members, most 2-connected): tautness + class +
+  window order do **not** force the poisons, so any interpolation
+  lemma proving (F-S) must consume the **exactly-two profile** (min
+  degree \(\ge3\) off the terminals) — the tautness-only mechanism is
+  refuted and the missing tool's spec is sharpened. Floors unchanged;
+  `E024` (order-21 rung) still **running**, excluded from every
+  ledger)
 - Problem: `P-002` — Erdős–Gyárfás Conjecture
 
 ## Exact target
@@ -263,6 +267,33 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   object lives; a taut gapped member kills (F-S) as stated and is
   calibration object #3; the gap-vs-order curve against 10–16
   measures the mechanism either way.
+- **New (S025): `C046` — the S-gap census spent; (F-S) survives; the
+  saturation mechanism is profile-bound.** Over every unordered
+  degree-2 pair of every on-disk class member (orders 10–19 complete;
+  order 20 the per-part-complete 11/16 sample, **572,519** graphs —
+  the S022 "572,530" figure counted the 11 file headers, corrected
+  against the scan tallies — plus the four part-14 profile members):
+  18,754,354 pairs, 767,004 members, anchors 45+57 under both
+  interpreters (the calibration pair must be *found* gapped+taut, and
+  is; the eight profile objects matched field-for-field). **(a)**
+  Zero exactly-two members are gapped — (F-S)'s hypothesis class has
+  exactly eight known realizations, all with \(6,14\in S\); outcome
+  (i) of the pre-registration. **(b)** The wider class realizes the
+  dodge freely: 9,061 vertex-taut gapped pairs (8/8/371/24 at
+  12/14/16/17; 2,727/167/5,756 at 18/19/20 — no decay), 6,934 full
+  \(\mathbb P{-}2\) dodges (\(2,6,14\notin S\)), on members with
+  4–11 degree-2 vertices (min 5/6/4 at 18/19/20, never \(\le3\);
+  thin-strata caveat). **(c)** 5,419 taut gapped rows sit on
+  **power-free** members, most 2-connected: at window orders, every
+  residual-object hypothesis *except the exactly-two profile* is
+  realized simultaneously with the full dodge — the (F-T) double
+  blocking is likewise profile-specific. Consequence for the missing
+  tool: the interpolation lemma must consume min degree \(\ge3\) off
+  the terminals; nothing weaker is true. Verification: every gapped
+  pair recomputed by the independent full enumerator (540,135
+  agreements per run) + stride sample; per-line integrity on all
+  members; two production runs, identical tallies; zero bipartite
+  members in the classes.
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -340,8 +371,17 @@ makes a power-length trunk-split collision unavoidable in the window
 with no membership pattern (branch (b), `C045`), so (F) is re-aimed
 as **(F-S) ∨ (F-T)** — the window forces \(S\cap\{6,14\}\ne\emptyset\)
 or \(16\in\mathrm{Spec}\) — with the trunk bound `L051` proved and
-the S-gap census as the next move. Its search side is the ladder at
-order 21+ (`E024` running).
+the S-gap census as the next move. **S025 spent the census**
+(`E026`/`C046`): (F-S) survives its first kill test (zero gapped
+exactly-two members on all of 10–20's disk classes), and the
+mechanism is recalibrated — 9,061 vertex-taut gapped pairs off the
+profile prove that tautness + class + order force nothing; the
+interpolation lemma must consume the exactly-two profile itself.
+Next: the profile-consuming interpolation attempt (target:
+\(S\supseteq[c,n-1]\), \(c\le14\), for vertex-taut
+\(\{C_4,C_8\}\)-free pairs with all non-terminal degrees \(\ge3\)
+in the window), fed by the census's stored near-miss corpus. Its
+search side is the ladder at order 21+ (`E024` running).
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -484,13 +524,20 @@ configuration:**
   Candidate mechanism: **saturation/interpolation** (all eight
   profile objects have \(S\supseteq[6,n-1]\) and spectrum
   \([3,n]\setminus\{4,8\}\); the missing tool is a lower-bound theory
-  for through-path length sets of taut windowed pairs). First
-  falsifiable move: the **S-gap census at the window bottom**
-  (`A025` T5) — per member of the on-disk 18–20 classes (and 21 when
-  `E024` lands), the \(S\)-gap structure at \(\{2,6,14\}\) plus
-  tautness; no taut gapped member ⟹ (F-S) survives its first kill
-  test; a taut gapped member kills (F-S) as stated and becomes
-  calibration object #3, leaving (F-T); (ii) the
+  for through-path length sets). **S025 spent the census** (`E026`/
+  `C046`, outcome (i)): **(F-S) survives** — zero gapped exactly-two
+  members anywhere on disk at 10–20 — and the tool's spec is
+  sharpened: 9,061 vertex-taut gapped pairs off the profile (down to
+  4 degree-2 vertices at order 20, most on power-free 2-connected
+  members) prove the lemma must consume the **exactly-two profile**,
+  not just tautness. Next falsifiable move: the profile-consuming
+  interpolation attempt — target \(S\supseteq[c,n-1]\), \(c\le14\),
+  for vertex-taut \(\{C_4,C_8\}\)-free pairs with all non-terminal
+  degrees \(\ge3\) in the window; first sub-move: dissect the stored
+  near-miss corpus against the eight profile objects for the
+  structure of the extra degree-2 vertices (forced corridors vs
+  branchy detours), extract the candidate reroute mechanism, and
+  verify it fails off-window on the calibration pair; (ii) the
   \(\mathcal G\) rung at order 21 (**`E024` running**, launched at
   S023 close — each new profile member is a new (F) data point, an
   \(S\)-satisfying hit a disproof) and min-degree-3 at 22
@@ -596,11 +643,17 @@ treated as a critical audit event, not a route pivot;
 ~~a membership-patterned regularity in the (F) realization tables~~
 (**spent, S024**: the tables came back with no pattern — branch (b)
 taken, the membership-collision form of (F) is dead, `C045`/`A025`);
-a **vertex-taut member of the 18+ class with
-\(S\cap\{6,14\}=\emptyset\)** in the S-gap census (kills (F-S) as
-stated, becomes calibration object #3 — the first in-window
-\(\mathbb P-2\) dodge — and leaves (F-T) as the surviving
-sub-target); a **power-free vertex-taut (5b)-profile pair anywhere in
+~~a vertex-taut member of the 18+ class with
+\(S\cap\{6,14\}=\emptyset\) in the S-gap census~~ (**spent, S025**:
+the census found none on any exactly-two member — (F-S) survives —
+while the wider class realizes the dodge freely, so the trigger's
+surviving form is a **gapped vertex-taut exactly-two member at order
+21+**, checked when each new ladder rung is censused; a wider-class
+dodge is no longer a trigger, it is the recorded norm);
+a **profile-consuming interpolation lemma that also holds on the
+census's near-miss corpus** (would be false — 9,061 counterexamples
+on disk — so any draft proof matching the corpus is unsound: use it
+as the standing sanity check beside the calibration pair); a **power-free vertex-taut (5b)-profile pair anywhere in
 the window** (defeats (F) in both forms and is one 2-path closure
 away from a tight 1-atom — disproof-adjacent); a **proof of (F-S) or
 (F-T) on the window** (then case (5b) is closed below 36, `G015` is
@@ -809,22 +862,50 @@ If none does, the first alternative survives its cheapest test; if
 one does, it is a named new test object and the attack shifts to the
 second alternative.
 
+S025 ran that census — every pair of degree-2 vertices of every
+graph in the databases, three-quarters of a million graphs, nearly
+nineteen million pairs, with the search code cross-checked against
+two older independent programs on every interesting case and the
+whole run executed twice with identical counts. The answer has two
+halves, both sharp. First: no graph with the dangerous
+configuration's exact shape (exactly two degree-2 vertices) escapes
+the poison lengths — the eight known such graphs all carry both
+poisons, and no ninth shape-matching graph exists in any database —
+so the "poison is forced" alternative survives its cheapest kill
+test exactly where the dangerous configuration would have to live.
+Second, and just as important: graphs that are *near* the shape but
+not exactly on it (three or more low-degree vertices instead of two)
+escape the poisons freely — over nine thousand escapes, many on
+graphs that also avoid all the forbidden cycles, growing rather than
+dying out as size increases. So the escape phenomenon is real and
+abundant right up to the wall, and it stops exactly at the shape
+itself. The lesson for the proof attempt is concrete: whatever
+forces the poisons, it is not the "every vertex carries traffic"
+property alone — it is that property *plus* having only two
+low-degree vertices. The next session attacks exactly that: why does
+demanding degree three everywhere (except the two terminals) force
+paths of every length to exist? The nine thousand near-miss escapes,
+all stored with full detail, are the perfect foil — any proposed
+explanation must fail on them and succeed on the eight.
+
 ## Resolution outlook
 
 - Estimated chance of eventually settling the exact current statement: 8%
-- Previous estimate: 8% (S023)
-- Reason for no change: the session did exactly what a probe should —
-  it killed the membership-collision form of (F) for a few minutes of
-  compute instead of weeks of proof attempts, and it replaced it with
-  two sharper, mutually-covering sub-targets ((F-S)/(F-T)) plus a
-  proved confinement lemma (`L051`) and a named missing tool
-  (through-set lower bounds in taut windowed pairs). The negative
-  (the forced memberships do not organize the collisions — the third
-  arithmetic-can't-do-it result in a row) and the positive (the
-  saturation phenomenon is real, universal at the frontier, and now
-  the explicit target) roughly cancel: the route is narrower and
-  better aimed, but the forcing content is still unproved and the
-  upper window (22–35) has no data at all.
+- Previous estimate: 8% (S024)
+- Reason for no change: the census's two halves roughly cancel. For:
+  (F-S) survived its first kill test exactly where the residual
+  object lives, and the missing tool's specification is now sharp and
+  empirically forced (consume the exactly-two profile; nothing weaker
+  is true — a 9,061-row proof of that). Against: the dodge is
+  abundant and growing right up to the profile wall (down to four
+  degree-2 vertices at order 20, on otherwise residual-object-shaped
+  graphs), the hypothesis class has only eight data points, and the
+  sharpened lemma is *harder* than the tautness-only version the
+  redirect first imagined — the profile hypothesis is stronger fuel
+  but nobody has ever burned it (no recorded technique converts "min
+  degree 3 off the terminals" into path-length lower bounds). The
+  upper window (21–35) still has no exactly-two data beyond eight
+  objects.
 
 ## Resume reading
 
@@ -835,24 +916,32 @@ second alternative.
    consumes); then `A019` (the case analysis, the engine/peel, the
    residual object — R1's foundation)
 3. **`E024` is running** (order-21 \(\mathcal G\) rung, launched at
-   S023 close, \(\approx\)21 h wall; not citable until harvested —
-   harvest it when it finishes, floors move to 22/22 if empty).
-   **First action: the S-gap census at the window bottom** (`A025`
-   T5) — over `E022/data` `class_n18/19/20_part*` (order 20 is
-   SAVE_LIMIT-sampled; add order 21 when `E024` lands): per member,
-   \(S\)-gaps at \(\{2,6,14\}\) + tautness for gapped members; a
-   vertex-taut gapped member kills (F-S) and becomes calibration
-   object #3; none ⟹ (F-S) survives; either way the gap-vs-order
-   curve against orders 10–16 measures the saturation mechanism
-4. `E025/README.md` (the tables, the pattern verdicts, the anchors)
-   with `E021`/`E022`/`E023` READMEs for the imported instruments
+   S023 close; not citable until harvested — harvest it first when it
+   finishes: floors move if empty, each profile member is a new (F)
+   data point to census, an \(S\)-satisfying hit is a disproof).
+   **First action: the profile-consuming interpolation attempt** —
+   target lemma: vertex-taut \(\{C_4,C_8\}\)-free pairs with all
+   non-terminal degrees \(\ge3\) at orders 18–35 have
+   \(S\supseteq[c,n-1]\) for some \(c\le14\) (implies (F-S)); first
+   sub-move: dissect `E026`'s stored near-miss corpus (9,061
+   vertex-taut gapped pairs, `census_summary.json` +
+   `analysis.json`) against the eight profile objects — where do the
+   extra degree-2 vertices sit, what reroutes do degree-\(\ge3\)
+   vertices enable that the near-misses lack — and check any
+   candidate mechanism fails off-window on the calibration pair and
+   fails on the corpus
+4. `E026/README.md` (the census: design, anchors, the ladder and
+   mechanism tables, coverage caveats) and `E025/README.md` (the
+   tables), with `E021`/`E022`/`E023` READMEs for the imported
+   instruments
 5. `A021` (the congruence kill and the two-object calibration
    discipline — Petersen\(-e\) + the order-14 exemplar
    `M?AA@?WcKWHOWOL??`; both bind every case-(5b) argument, and both
    sub-targets (F-S)/(F-T) correctly fail on them off-window) and
    `A022`/`E020` (the chain package and its 15/16 kill rung)
-6. `CLAIMS.md` rows `L051`/`C045` (new, S024), `L049`/`L050`/`C044`
-   (S023), `L048`/`C042` (updated) (and `L039`–`L047`,
-   `C036`–`C043` for the frame); `OBLIGATIONS.md` `G015`/`G013`
-7. `sessions/S024-…md` (this session: the probe, the verdict, the
-   redirect) and `S019`–`S023` for the preceding arc
+6. `CLAIMS.md` rows `C046` (new, S025), `L051`/`C045` (S024),
+   `L049`/`L050`/`C044` (S023), `L048`/`C042` (updated) (and
+   `L039`–`L047`, `C036`–`C043` for the frame); `OBLIGATIONS.md`
+   `G015`/`G013`
+7. `sessions/S025-…md` (this session: the census, the verdict, the
+   sharpened tool spec) and `S019`–`S024` for the preceding arc

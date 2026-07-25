@@ -1,0 +1,145 @@
+{
+ "label": "n19_part15of16",
+ "order": 19,
+ "tally": {
+  "members": 1049,
+  "members_lt2": 0,
+  "exactly_two_members": 0,
+  "pairs": 21760,
+  "bit2": 5453,
+  "bit6": 19733,
+  "bit14": 18966,
+  "gap6": 2027,
+  "gap14": 2794,
+  "gap_both": 435,
+  "gap_both_taut": 4,
+  "members_with_gap": 290,
+  "stride_checks": 9,
+  "stride_taut": 8,
+  "flag_rechecks": 2,
+  "bipartite_members": 0
+ },
+ "taut_gapped_pairs": [
+  {
+   "g6": "R???????E?S?E?D??W?D@WQAOU?Xa_",
+   "order": 19,
+   "terminals": [
+    7,
+    8
+   ],
+   "n_degree2": 8,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 1,
+   "power_free_flag": false
+  },
+  {
+   "g6": "R???????E?S?E?D??W?D@WQ?OqSWi?",
+   "order": 19,
+   "terminals": [
+    7,
+    8
+   ],
+   "n_degree2": 8,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 1,
+   "power_free_flag": false
+  },
+  {
+   "g6": "R???????E?S?E?D??W?D@_U?KaR_i?",
+   "order": 19,
+   "terminals": [
+    7,
+    8
+   ],
+   "n_degree2": 8,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 1,
+   "power_free_flag": false
+  },
+  {
+   "g6": "R???????E?S?E?D??W?D@cE``S?XA_",
+   "order": 19,
+   "terminals": [
+    7,
+    8
+   ],
+   "n_degree2": 8,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 1,
+   "power_free_flag": false
+  }
+ ],
+ "exactly_two_members": [],
+ "stride": 4999,
+ "member_stride": 500,
+ "seconds": 0.28,
+ "interpreter": "3.11.15/PyPy"
+}

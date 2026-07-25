@@ -1,0 +1,145 @@
+{
+ "label": "n19_part0of16",
+ "order": 19,
+ "tally": {
+  "members": 2410,
+  "members_lt2": 0,
+  "exactly_two_members": 0,
+  "pairs": 47141,
+  "bit2": 12340,
+  "bit6": 43677,
+  "bit14": 44560,
+  "gap6": 3464,
+  "gap14": 2581,
+  "gap_both": 80,
+  "gap_both_taut": 4,
+  "members_with_gap": 73,
+  "stride_checks": 14,
+  "stride_taut": 14,
+  "flag_rechecks": 4,
+  "bipartite_members": 0
+ },
+ "taut_gapped_pairs": [
+  {
+   "g6": "R??????_B?I?a?@_?K?IAOIGYPD@K?",
+   "order": 19,
+   "terminals": [
+    6,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "R??????_B?I?a?@_?K?IAOIIQB@Pg?",
+   "order": 19,
+   "terminals": [
+    6,
+    7
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "R??????_B?I?a?@_?KAGQ?oWWoDGK?",
+   "order": 19,
+   "terminals": [
+    6,
+    8
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  },
+  {
+   "g6": "R??????_B?I?a?@_?KAGQ?oYOa@Wg?",
+   "order": 19,
+   "terminals": [
+    6,
+    8
+   ],
+   "n_degree2": 7,
+   "S": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "vertex_taut": true,
+   "bit2": false,
+   "bit6": false,
+   "bit14": false,
+   "gapped": true,
+   "c16_present": true,
+   "c16_count": 4,
+   "power_free_flag": false
+  }
+ ],
+ "exactly_two_members": [],
+ "stride": 4999,
+ "member_stride": 500,
+ "seconds": 0.43,
+ "interpreter": "3.11.15/PyPy"
+}

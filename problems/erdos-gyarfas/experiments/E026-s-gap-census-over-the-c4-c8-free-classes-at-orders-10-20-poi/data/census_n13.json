@@ -1,0 +1,28 @@
+{
+ "label": "n13",
+ "order": 13,
+ "tally": {
+  "members": 10,
+  "members_lt2": 0,
+  "exactly_two_members": 0,
+  "pairs": 60,
+  "bit2": 24,
+  "bit6": 60,
+  "bit14": 0,
+  "gap6": 0,
+  "gap14": 60,
+  "gap_both": 0,
+  "gap_both_taut": 0,
+  "members_with_gap": 0,
+  "stride_checks": 5,
+  "stride_taut": 5,
+  "flag_rechecks": 0,
+  "bipartite_members": 0
+ },
+ "taut_gapped_pairs": [],
+ "exactly_two_members": [],
+ "stride": 4999,
+ "member_stride": 500,
+ "seconds": 0.0,
+ "interpreter": "3.11.15/PyPy"
+}

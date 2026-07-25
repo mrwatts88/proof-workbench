@@ -938,3 +938,65 @@ attempt, experiment, or review record.
   calibration object #3; none ⟹ (F-S) survives its first kill test.
   Background: `E024` (order-21 rung) ran throughout and is **still
   running** — excluded from every ledger row. Outlook: 8% (unchanged).
+
+## 2026-07-25 — S025: the S-gap census is spent — (F-S) survives its first kill test; the tautness-only saturation mechanism is refuted
+
+- Ran `A025` T5, the recorded next action, as `E026`: the S-gap census
+  over every unordered degree-2 pair of every \(\{C_4,C_8\}\)-free
+  class member on disk — orders 10–19 complete, order 20 the
+  per-part-complete 11/16-part sample (572,519 graphs; the S022
+  "572,530 saved" figure counted the 11 class-file headers — corrected
+  against the authoritative scan tallies) plus the four recorded
+  part-14 profile members. 18,754,354 pairs over 767,004 members.
+  Design refinement recorded in `S025`: the exactly-two stratum at
+  18–20 is fully known (the eight profile objects), so the faithful
+  nonvacuous census quantifies over all degree-2 pairs; the
+  exactly-two stratum is (F-S)'s hypothesis class proper.
+- Anchors first (standing rule): `E021`'s 45-check suite through the
+  import plus 57 new checks, under CPython 3.14.2 **and** PyPy 7.3.23
+  — the calibration pair must be *found* gapped+taut (it is), the
+  eight profile objects saturated field-for-field against the `E022`
+  records, three independent enumerators agreeing on 20,554 pairs.
+- **Verdict (pre-registered outcome (i)): zero (F-S) kill
+  candidates.** No exactly-two member of any censused class carries a
+  gapped pair (\(S\cap\{6,14\}=\emptyset\)); all eight profile
+  objects re-verified \(6,14\in S\). (F-S) survives its first kill
+  test exactly where the residual object lives.
+- **The recalibration: the dodge is abundant off the profile.** 9,061
+  vertex-taut gapped pairs at orders 12–20 (2,727/167/5,756 at
+  18/19/20; rate 0.01–0.2% of pairs, no monotone decay), 6,934 of
+  them full \(\mathbb P{-}2\) dodges (2, 6, 14 all absent), 5,419
+  rows on **power-free** members, most on 2-connected members —
+  at window orders there exist 2-connected
+  \(\{C_4,C_8,C_{16}\}\)-free vertex-taut pairs with
+  \(S\cap\{2,6,14\}=\emptyset\) and 4–11 degree-2 vertices. So
+  **tautness + class + window order do not force the poisons**: the
+  tautness-only form of the saturation mechanism is refuted, and any
+  interpolation lemma proving (F-S) must consume the exactly-two
+  profile (minimum degree \(\ge3\) off the terminals). The gradient:
+  min degree-2 count of a dodge-carrying member is 5/6/4 at
+  18/19/20, never \(\le3\) anywhere (thin strata caveat recorded).
+  The (F-T) reading is parallel: the double blocking is
+  profile-specific, not a class phenomenon.
+- Verification: every gapped pair and profile member recomputed by
+  the `E018` full enumerator with verdicts asserted (540,135
+  agreements per run) + deterministic stride sample (3,867 more);
+  per-line integrity on every member; `power_free` flag re-verified
+  on every 500th member and every gapped row; **two full production
+  runs with identical tallies** (storage trimmed to taut-only rows
+  between them, `run1_tallies.json` preserving run 1); zero
+  bipartite members anywhere in the censused classes.
+- Ledgers reconciled: `C046` new; `G015` updated (live move (i) is
+  now the profile-consuming interpolation attempt); `STATE.md`,
+  `problem.json`, index. `PROOF.md`/`DECISIONS.md` unchanged (no
+  integrated-argument change; (F-S)/(F-T) statements unchanged — the
+  census refined the mechanism inside `A025` T4's frame, which
+  already listed the profile degrees among the candidate hypotheses).
+  Next action: the profile-consuming interpolation attempt — target
+  lemma \(S\supseteq[c,n-1]\), \(c\le14\), for vertex-taut
+  \(\{C_4,C_8\}\)-free pairs with all non-terminal degrees \(\ge3\)
+  in the window; first sub-move: dissect the stored near-miss corpus
+  against the eight profile objects for the structure of the extra
+  degree-2 vertices. Background: `E024` (order-21 rung) ran
+  throughout, untouched, **still running** — excluded from every
+  ledger row; harvest it first when it lands. Outlook: 8% (held).

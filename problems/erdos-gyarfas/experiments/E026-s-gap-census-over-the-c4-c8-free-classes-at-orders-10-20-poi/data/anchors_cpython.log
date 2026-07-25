@@ -1,0 +1,61 @@
+== E021 45-check suite (through the import) ==
+anchors: all 45 checks passed (cpython 3.14.2)
+== E026 census anchors ==
+  ok  c1 P10 S = {4,5,7,8}
+  ok  c2 P10 vertex-taut
+  ok  c3 P10 bits (no 2, no 6, no 14): GAPPED
+  ok  c4 N14 S = [3,13] minus {6}
+  ok  c5 N14 vertex-taut
+  ok  c6 N14 GAPPED
+  ok  c7 N19 S = [5,18]
+  ok  c8 N19 vertex-taut
+  ok  c9 N19 bits: NOT gapped
+  ok  c10 S???C@?G?_OGQ?@_S_?W_CW?AgA_S@Ca? S matches record
+  ok  c10 S???C@?G?_OGQ?@_S_?W_CW?AgA_S@Ca? tautness matches record
+  ok  c10 S???C@?G?_OGQ?@_S_?W_CW?AgA_S@Ca? C16 count matches record
+  ok  c10 S???C@?G?_OGQ?@_S_?W_CW?AgA_S@Ca? bits 6,14 present
+  ok  c10 S????A?O@_D?@_@O@PCP?oO?PO@CKAGa? S matches record
+  ok  c10 S????A?O@_D?@_@O@PCP?oO?PO@CKAGa? tautness matches record
+  ok  c10 S????A?O@_D?@_@O@PCP?oO?PO@CKAGa? C16 count matches record
+  ok  c10 S????A?O@_D?@_@O@PCP?oO?PO@CKAGa? bits 6,14 present
+  ok  c10 S??CA?_C?O?___oOKO@`?EC?HG?GK?Go? S matches record
+  ok  c10 S??CA?_C?O?___oOKO@`?EC?HG?GK?Go? tautness matches record
+  ok  c10 S??CA?_C?O?___oOKO@`?EC?HG?GK?Go? C16 count matches record
+  ok  c10 S??CA?_C?O?___oOKO@`?EC?HG?GK?Go? bits 6,14 present
+  ok  c11 S????A?O@_@_?oIABODC?S@?@a?H_CA_? S matches record
+  ok  c11 S????A?O@_@_?oIABODC?S@?@a?H_CA_? tautness matches record
+  ok  c11 S????A?O@_@_?oIABODC?S@?@a?H_CA_? C16 count matches record
+  ok  c11 S????A?O@_@_?oIABODC?S@?@a?H_CA_? bits 6,14 present
+  ok  c11 S???C@?G?_P?B?@_@OQH?WO?PO?cQD?g? S matches record
+  ok  c11 S???C@?G?_P?B?@_@OQH?WO?PO?cQD?g? tautness matches record
+  ok  c11 S???C@?G?_P?B?@_@OQH?WO?PO?cQD?g? C16 count matches record
+  ok  c11 S???C@?G?_P?B?@_@OQH?WO?PO?cQD?g? bits 6,14 present
+  ok  c11 S???C@?G?_P?B?@_@OQGAGc?p?ABOC_W? S matches record
+  ok  c11 S???C@?G?_P?B?@_@OQGAGc?p?ABOC_W? tautness matches record
+  ok  c11 S???C@?G?_P?B?@_@OQGAGc?p?ABOC_W? C16 count matches record
+  ok  c11 S???C@?G?_P?B?@_@OQGAGc?p?ABOC_W? bits 6,14 present
+  ok  c11 S???C@?G?_P?B?oO?S`B?@__SO@?o?s?? S matches record
+  ok  c11 S???C@?G?_P?B?oO?S`B?@__SO@?o?s?? tautness matches record
+  ok  c11 S???C@?G?_P?B?oO?S`B?@__SO@?o?s?? C16 count matches record
+  ok  c11 S???C@?G?_P?B?oO?S`B?@__SO@?o?s?? bits 6,14 present
+  ok  c12 P15 endpoints: length 14 yes, 6 no
+  ok  c13 C16 dist-2 pair: lengths {2,14} only
+  ok  c14 cross-algorithm sweep: 32239 pairs, all three agree
+  ok  c15 order 10 class file total = 14
+  ok  c15 order 11 class file total = 0
+  ok  c15 order 12 class file total = 94
+  ok  c15 order 13 class file total = 10
+  ok  c15 order 14 class file total = 778
+  ok  c15 order 15 class file total = 168
+  ok  c15 order 16 class file total = 7615
+  ok  c15 order 17 class file total = 2580
+  ok  c15 order 18 class file total = 108447
+  ok  c15 order 19 class file total = 74589
+  ok  c15 order 20 class file total = 572519
+  ok  c15b order-20 part accounting
+  ok  c15c order 18 scan tallies sum to 108447
+  ok  c15c order 19 scan tallies sum to 74589
+  ok  c15c order 20 scan tallies sum to 572519
+  ok  c15d full order-20 class tally = 2569481
+  ok  c16 supp14 identities match collect_n20_part14.json
+E026 anchors: 57/57 passed (3.14.2/CPython)
