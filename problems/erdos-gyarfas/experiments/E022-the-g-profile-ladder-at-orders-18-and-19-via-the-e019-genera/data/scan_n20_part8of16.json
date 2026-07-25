@@ -1,0 +1,127 @@
+{
+ "order": 20,
+ "part": "8/16",
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 20 29:190 8/16",
+ "generated_c4c8_free": 10025,
+ "profile": 2,
+ "c16_blocked": 2,
+ "survivors": [],
+ "max_edges_in_profile": 30,
+ "max_edges_in_class": 31,
+ "deg2_hist": {
+  "2": 2,
+  "3": 15,
+  "4": 158,
+  "5": 676,
+  "6": 899,
+  "7": 1074,
+  "8": 3589,
+  "9": 2828,
+  "10": 579,
+  "11": 100,
+  "12": 103,
+  "13": 2
+ },
+ "min_deg2_in_class": 2,
+ "power_free_in_class": 806,
+ "power_free_deg2_hist": {
+  "5": 11,
+  "6": 18,
+  "7": 24,
+  "8": 113,
+  "9": 229,
+  "10": 214,
+  "11": 92,
+  "12": 103,
+  "13": 2
+ },
+ "power_free_min_deg2": 5,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 6357448310,
+  "rejects": 6181153792,
+  "out": 10025,
+  "cpu": 2370.61
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 8,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 27,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 88,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 444,
+   "rejects": 2
+  },
+  "11": {
+   "calls": 1608,
+   "rejects": 38
+  },
+  "12": {
+   "calls": 3606,
+   "rejects": 625
+  },
+  "13": {
+   "calls": 34469,
+   "rejects": 17312
+  },
+  "14": {
+   "calls": 332063,
+   "rejects": 250227
+  },
+  "15": {
+   "calls": 2611358,
+   "rejects": 2250058
+  },
+  "16": {
+   "calls": 20403514,
+   "rejects": 18465910
+  },
+  "17": {
+   "calls": 183774481,
+   "rejects": 176296904
+  },
+  "18": {
+   "calls": 939873871,
+   "rejects": 912850825
+  },
+  "19": {
+   "calls": 4433351623,
+   "rejects": 4293980447
+  },
+  "20": {
+   "calls": 777061142,
+   "rejects": 777041444
+  }
+ },
+ "verify_all": true,
+ "seconds": 2382.4,
+ "interpreter": "3.11.15/PyPy"
+}

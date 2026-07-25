@@ -775,3 +775,40 @@ attempt, experiment, or review record.
 - Ledgers reconciled: `CLAIMS.md` (`L048`, `C041`–`C043`),
   `OBLIGATIONS.md` (`G015`, `G013`(a)), `PROOF.md`, `DECISIONS.md`,
   `STATE.md`, `problem.json`, index. Outlook 6% → 7%.
+
+## 2026-07-25 — S022 follow-up harvest: T5 survives its first two kill rungs, order 20 is spent, the atom floors move to 21/22
+
+- Stage A (the order-19 exemplar vs T5): **all 411 cycles decompose**,
+  zero failures, every length \(\{3,5,6,7,9..19\}\) — the candidate
+  lemma survived the sharpest available kill test, on the
+  determined-partner algorithm (independent of `E021`'s pairwise).
+- Stage C: the order-19 independent unsplit count = **74,589 exactly**
+  — `C043`'s named partition follow-up is closed.
+- Stage B (order 20): class 2,569,481 (16 parts, `--verify-all`),
+  **profile 7** (parts 1/8/14), every one \(C_{16}\)-blocked, zero
+  power-free; 0-/1-buckets empty; spotcheck 4,436 near-boundary
+  graphs clean. With `C036`/`C039`/`C043`: **every \(\mathcal
+  G\)-member has order \(\ge21\)**, and — `L041` cases (4)/(5)
+  propagating `L047` and the \(\mathcal G\) floor — **every tight
+  1-atom has order \(\ge22\)** (direct generation certifies 21).
+- The three on-disk order-20 profile members (parts 1/8 complete)
+  were verified and T5-tested by the orchestrator: all vertex-taut,
+  2-connected, **all 1,890 cycles decompose**, 254 \(C_{16}\)
+  verdicts re-verified pairwise; all three carry \(S\ni6,14\) — the
+  order-19 double blocking repeats at every profile object seen.
+- SAVE_LIMIT caveat recorded (new at 20): class files are per-part
+  200k samples (572,530 of 2,569,481 saved; 18/19 were complete);
+  part 14's four profile members fell outside the window — a
+  dedicated single-part recollection with a stream-total assertion is
+  running (`collect_n20_part14.py`), alongside stage D
+  (`followup_s022b.py`: the min-degree-3 order-21 sweep, chained
+  after the follow-up finished, anchor gate re-passed post-wait).
+- Orchestrator audit before any ledger write: count/harvest/splitcheck
+  JSONs re-read; the three members extracted by an independently
+  written filter (a first-draft filter bug and a class-file-format
+  assumption were caught and fixed — class lines carry metadata
+  columns; extraction re-run clean); T5 machinery cross-checked
+  between two algorithms on 254 shared verdicts.
+- Ledgers reconciled: `C042`/`C043` extended, `G015`/`G013`(a),
+  `PROOF.md` floors, `STATE.md`, `PROJECT_STATE.md`, `problem.json`.
+  Outlook unchanged at 7% (the harvest landed inside the S022 call).

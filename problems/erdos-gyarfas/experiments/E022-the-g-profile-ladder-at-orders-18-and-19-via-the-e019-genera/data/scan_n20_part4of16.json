@@ -1,0 +1,123 @@
+{
+ "order": 20,
+ "part": "4/16",
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 20 29:190 4/16",
+ "generated_c4c8_free": 126650,
+ "profile": 0,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_in_profile": 0,
+ "max_edges_in_class": 31,
+ "deg2_hist": {
+  "4": 14,
+  "5": 1528,
+  "6": 12309,
+  "7": 34566,
+  "8": 46697,
+  "9": 24536,
+  "10": 5812,
+  "11": 1099,
+  "12": 89
+ },
+ "min_deg2_in_class": 4,
+ "power_free_in_class": 16734,
+ "power_free_deg2_hist": {
+  "5": 10,
+  "6": 504,
+  "7": 2238,
+  "8": 4855,
+  "9": 5271,
+  "10": 2759,
+  "11": 1008,
+  "12": 89
+ },
+ "power_free_min_deg2": 5,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 18288171555,
+  "rejects": 18031482961,
+  "out": 126650,
+  "cpu": 4475.45
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 8,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 27,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 88,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 444,
+   "rejects": 2
+  },
+  "11": {
+   "calls": 1604,
+   "rejects": 41
+  },
+  "12": {
+   "calls": 3678,
+   "rejects": 640
+  },
+  "13": {
+   "calls": 38723,
+   "rejects": 19502
+  },
+  "14": {
+   "calls": 393492,
+   "rejects": 303486
+  },
+  "15": {
+   "calls": 2733990,
+   "rejects": 2412550
+  },
+  "16": {
+   "calls": 14584889,
+   "rejects": 13033145
+  },
+  "17": {
+   "calls": 119321811,
+   "rejects": 109202557
+  },
+  "18": {
+   "calls": 1553189200,
+   "rejects": 1495137022
+  },
+  "19": {
+   "calls": 12293715343,
+   "rejects": 12107464657
+  },
+  "20": {
+   "calls": 4304188250,
+   "rejects": 4303909359
+  }
+ },
+ "verify_all": true,
+ "seconds": 4494.7,
+ "interpreter": "3.11.15/PyPy"
+}

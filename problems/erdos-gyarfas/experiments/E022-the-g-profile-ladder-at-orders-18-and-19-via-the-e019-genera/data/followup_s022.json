@@ -1,0 +1,32 @@
+{
+ "stages": {
+  "0_anchors": {
+   "status": "passed",
+   "seconds": 3.7,
+   "tail": "anchors: 146 checks passed (3.11.15/PyPy)\n"
+  },
+  "A_exemplar_t5": {
+   "status": "done",
+   "seconds": 0.0,
+   "tail": "exemplar T5 test: 411 cycles, 0 non-decomposable -> SURVIVES: every cycle is an interference cycle\n"
+  },
+  "B_rung20": {
+   "status": "harvested",
+   "seconds": 12509.7,
+   "tail": "he-ord/build/genc48 -q -c -f -d2 20 29:190 r/16\",\n \"generated_c4c8_free\": 2569481,\n \"profile\": 7,\n \"c16_blocked\": 7,\n \"max_edges_in_profile\": 30,\n \"max_edges_in_class\": 31,\n \"deg2_hist\": {\n  \"2\": 7,\n  \"3\": 377,\n  \"4\": 7205,\n  \"5\": 58618,\n  \"6\": 241781,\n  \"7\": 551791,\n  \"8\": 717097,\n  \"9\": 533708,\n  \"10\": 269732,\n  \"11\": 124593,\n  \"12\": 47436,\n  \"13\": 13092,\n  \"14\": 3452,\n  \"15\": 592\n },\n \"min_deg2_in_class\": 2,\n \"power_free_in_class\": 823535,\n \"power_free_deg2_hist\": {\n  \"5\": 642,\n  \"6\": 7456,\n  \"7\": 44498,\n  \"8\": 147355,\n  \"9\": 235459,\n  \"10\": 203884,\n  \"11\": 119745,\n  \"12\": 47360,\n  \"13\": 13092,\n  \"14\": 3452,\n  \"15\": 592\n },\n \"power_free_min_deg2\": 5,\n \"cpu_seconds_sum\": 74188.2,\n \"prune_calls\": 266801319859\n}\ndegree-2-vertex histogram over the {C4,C8}-free class: {'2': 7, '3': 377, '4': 7205, '5': 58618, '6': 241781, '7': 551791, '8': 717097, '9': 533708, '10': 269732, '11': 124593, '12': 47436, '13': 13092, '14': 3452, '15': 592}\npower-free members by degree-2 count: {'5': 642, '6': 7456, '7': 44498, '8': 147355, '9': 235459, '10': 203884, '11': 119745, '12': 47360, '13': 13092, '14': 3452, '15': 592}\nsurvivors: 0\nVERDICT: the order-20 G-profile class has no power-free member.\n"
+  },
+  "C_count19": {
+   "status": "done",
+   "seconds": 12510.3
+  },
+  "B_rung20_spotcheck": {
+   "status": "done",
+   "tail": "spotcheck n=20: 4436 graphs with <=4 degree-2 vertices re-verified by the brute-force spectrum enumerator (3.11.15/PyPy)\n"
+  },
+  "finished": {
+   "at_stage_wall_seconds": 12510.3
+  }
+ },
+ "interpreter_note": "pypy3 throughout",
+ "launched_by": "S022 orchestrator at session close"
+}

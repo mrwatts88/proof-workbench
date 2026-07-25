@@ -1,0 +1,128 @@
+{
+ "order": 20,
+ "part": "9/16",
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 20 29:190 9/16",
+ "generated_c4c8_free": 144904,
+ "profile": 0,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_in_profile": 0,
+ "max_edges_in_class": 31,
+ "deg2_hist": {
+  "3": 53,
+  "4": 407,
+  "5": 2021,
+  "6": 14655,
+  "7": 50164,
+  "8": 47713,
+  "9": 20801,
+  "10": 6862,
+  "11": 1749,
+  "12": 441,
+  "13": 37,
+  "14": 1
+ },
+ "min_deg2_in_class": 3,
+ "power_free_in_class": 34478,
+ "power_free_deg2_hist": {
+  "5": 23,
+  "6": 275,
+  "7": 4376,
+  "8": 11459,
+  "9": 10474,
+  "10": 5672,
+  "11": 1720,
+  "12": 441,
+  "13": 37,
+  "14": 1
+ },
+ "power_free_min_deg2": 5,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 17926212927,
+  "rejects": 17658490153,
+  "out": 144904,
+  "cpu": 4801.35
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 8,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 27,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 88,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 444,
+   "rejects": 2
+  },
+  "11": {
+   "calls": 1595,
+   "rejects": 41
+  },
+  "12": {
+   "calls": 3494,
+   "rejects": 677
+  },
+  "13": {
+   "calls": 31970,
+   "rejects": 16795
+  },
+  "14": {
+   "calls": 310851,
+   "rejects": 235693
+  },
+  "15": {
+   "calls": 3046122,
+   "rejects": 2647350
+  },
+  "16": {
+   "calls": 23601756,
+   "rejects": 21047358
+  },
+  "17": {
+   "calls": 225602532,
+   "rejects": 210214348
+  },
+  "18": {
+   "calls": 2042369598,
+   "rejects": 1974587913
+  },
+  "19": {
+   "calls": 11463012628,
+   "rejects": 11281812511
+  },
+  "20": {
+   "calls": 4168231806,
+   "rejects": 4167927465
+  }
+ },
+ "verify_all": true,
+ "seconds": 4811.5,
+ "interpreter": "3.11.15/PyPy"
+}

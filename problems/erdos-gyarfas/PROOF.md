@@ -236,12 +236,15 @@ Established preliminary reductions, none sufficient for the main claim:
   (`C039`, `E019`: the whole \(\{C_4,C_8\}\)-free class at 17 is 2,580
   graphs, none with fewer than three degree-2 vertices; `C027`'s
   \(\le2\)-sub-cubic class is empty at 16 and 17 outright), and to
-  **\(\ge20\)** by the S022 ladder rungs (`C043`, `E022`: order 18 is
-  profile-empty; order 19's unique profile member — the first ever —
-  is \(C_{16}\)-blocked and \(S\)-condition-violating; the
-  one-degree-2 bucket is empty at 18 and 19, so the atom bound also
-  holds **directly by generation**, without the case analysis). Every
-  \(\mathcal G\)-member has order \(\ge20\).
+  **\(\ge22\)** by the S022 ladder rungs and their same-conversation
+  harvest (`C043`, `E022`: orders 18 and 20 are profile-empty of
+  power-free members — order 19's unique profile member, the first
+  ever, and order 20's seven are all \(C_{16}\)-blocked, order 19's
+  also \(S\)-condition-violating; the one-degree-2 bucket is empty at
+  18–20, so **no tight 1-atom exists through order 20, directly by
+  generation**, and `L041`'s cases (4)/(5), propagating `L047` and the
+  \(\mathcal G\) floor, force \(n_0\ge22\)). Every \(\mathcal
+  G\)-member has order \(\ge21\).
 - `L042`: the residual object (case (5b)) is 2-connected, has
   independent degree-\(\ge4\) vertices, is **non-bipartite** (a hand
   proof, at every order, of what `C034` verified through 22), carries
@@ -309,9 +312,15 @@ Established preliminary reductions, none sufficient for the main claim:
   moved the floors in parallel: order 18 profile-empty, order 19 the
   first nonempty profile rung with its unique member — vertex-taut,
   2-connected, non-bipartite — excluded twice over
-  (\(C_{16}\)-blocked and \(S\ni6,14\)), so **every tight 1-atom and
-  every \(\mathcal G\)-member has order \(\ge20\)** (`C043`, direct
-  and via `L041`).
+  (\(C_{16}\)-blocked and \(S\ni6,14\)). The same-conversation harvest
+  spent order 20 as well (profile 7, all \(C_{16}\)-blocked, none
+  power-free) and ran T5's first two kill rungs — the order-19
+  exemplar (411/411 cycles decompose) and the three on-disk order-20
+  profile members (1,890/1,890, all with the same \(S\ni6,14\) double
+  blocking) — **T5 survived both**; so **every \(\mathcal G\)-member
+  has order \(\ge21\) and every tight 1-atom has order \(\ge22\)**
+  (`C043` with `L041`/`L047`; the direct generation route certifies
+  \(\ge21\)).
 
 Imported frontier facts, not a candidate:
 

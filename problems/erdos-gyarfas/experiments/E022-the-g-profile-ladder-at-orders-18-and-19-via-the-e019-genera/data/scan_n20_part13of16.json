@@ -1,0 +1,128 @@
+{
+ "order": 20,
+ "part": "13/16",
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 20 29:190 13/16",
+ "generated_c4c8_free": 646160,
+ "profile": 0,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_in_profile": 0,
+ "max_edges_in_class": 31,
+ "deg2_hist": {
+  "3": 100,
+  "4": 1836,
+  "5": 13021,
+  "6": 46010,
+  "7": 103516,
+  "8": 183153,
+  "9": 159456,
+  "10": 88026,
+  "11": 36692,
+  "12": 10792,
+  "13": 3100,
+  "14": 458
+ },
+ "min_deg2_in_class": 3,
+ "power_free_in_class": 299153,
+ "power_free_deg2_hist": {
+  "5": 67,
+  "6": 1228,
+  "7": 11287,
+  "8": 56331,
+  "9": 99066,
+  "10": 80282,
+  "11": 36542,
+  "12": 10792,
+  "13": 3100,
+  "14": 458
+ },
+ "power_free_min_deg2": 5,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 35467021959,
+  "rejects": 34998874991,
+  "out": 646160,
+  "cpu": 8002.17
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 8,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 27,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 88,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 444,
+   "rejects": 2
+  },
+  "11": {
+   "calls": 1612,
+   "rejects": 40
+  },
+  "12": {
+   "calls": 3539,
+   "rejects": 603
+  },
+  "13": {
+   "calls": 34017,
+   "rejects": 17161
+  },
+  "14": {
+   "calls": 352448,
+   "rejects": 266897
+  },
+  "15": {
+   "calls": 3477314,
+   "rejects": 2933845
+  },
+  "16": {
+   "calls": 35023145,
+   "rejects": 31252199
+  },
+  "17": {
+   "calls": 359713596,
+   "rejects": 335007360
+  },
+  "18": {
+   "calls": 3335430167,
+   "rejects": 3222287699
+  },
+  "19": {
+   "calls": 20630229543,
+   "rejects": 20305505342
+  },
+  "20": {
+   "calls": 11102756003,
+   "rejects": 11101603843
+  }
+ },
+ "verify_all": true,
+ "seconds": 8005.7,
+ "interpreter": "3.11.15/PyPy"
+}

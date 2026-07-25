@@ -1,12 +1,16 @@
 # Current state
 
-- Last updated: 2026-07-24 (S022 — orchestrated parallel legs: the
-  interference model survived its frontier kill test on all 553
-  blockers and the calculus is fixed (`L048`); the ladder spent orders
-  18–19 — the first-ever profile member appeared at 19, doubly
-  blocked — and every tight 1-atom and \(\mathcal G\)-member now has
-  order \(\ge20\); follow-up running: the exemplar T5 kill test, the
-  order-20 rung, the order-19 unsplit count)
+- Last updated: 2026-07-25 (S022 + same-conversation follow-up
+  harvest — the interference model survived its frontier kill test on
+  all 553 blockers and the calculus is fixed (`L048`); the ladder
+  spent orders 18–20 (first-ever profile members at 19 and 20, all
+  \(C_{16}\)-blocked, 19's and all three recovered 20's also
+  \(S\)-violating); **T5 survived its first two kill rungs** (the
+  order-19 exemplar 411/411, the on-disk order-20 members
+  1,890/1,890); tight 1-atoms \(\ge22\), \(\mathcal G\)-members
+  \(\ge21\); still running: the min-degree-3 order-21 sweep (stage D)
+  and the part-14 recollection of the four remaining order-20 profile
+  members)
 - Problem: `P-002` — Erdős–Gyárfás Conjecture
 
 ## Exact target
@@ -145,9 +149,27 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   orders, so **every tight 1-atom and every \(\mathcal G\)-member has
   order \(\ge20\)** (direct 1-bucket route and `L041` route agree);
   \(C_{16}\) is decisive on the whole \(\le4\)-degree-2 stratum at 19.
-  Follow-up running (`E022/followup_s022.py`; nothing citable until
-  harvested): the exemplar's full cycle set against T5 (stage A), the
-  order-20 rung (stage B), the order-19 unsplit count (stage C).
+  **Follow-up harvest (same conversation, 2026-07-25):** stage A — the
+  exemplar's **full cycle set decomposes**, 411/411 across every
+  length, zero failures (determined-partner algorithm, independent of
+  `E021`'s pairwise) — **T5 survived the sharpest available kill
+  test**; stage C — the order-19 unsplit count = 74,589 **exactly**
+  (the partition follow-up is closed); stage B — **order 20 spent**:
+  class 2,569,481, profile **7** (all \(C_{16}\)-blocked, none
+  power-free; 0-/1-buckets empty), so **every \(\mathcal G\)-member
+  has order \(\ge21\) and every tight 1-atom \(\ge22\)** (`L041`
+  cases (4)/(5) propagate `L047` and the \(\mathcal G\) floor; direct
+  generation certifies \(\ge21\)); the three on-disk order-20 profile
+  members were fully verified and T5-tested by the orchestrator —
+  **all survive** (1,890/1,890 cycles; 254 \(C_{16}\) verdicts
+  re-verified pairwise), and all three repeat the \(S\ni6,14\) double
+  blocking. SAVE_LIMIT caveat recorded: order-20 class files are
+  per-part 200k samples (18/19 were complete); the four part-14
+  profile members are being recollected (`collect_n20_part14.py`,
+  running, with a stream-total assertion against the 439,745 tally).
+  Still running, not citable: that recollection and the min-degree-3
+  order-21 sweep (`followup_s022b.py`, stage D; empty lifts `L047`
+  to 22).
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -201,9 +223,11 @@ the dedicated generator (`C039`, S021), and through order 19 for the
 profile ladder (`C043`, S022 — order 18 empty; order 19's unique and
 first-ever profile member is vertex-taut but \(C_{16}\)-blocked and
 \(S\)-violating, doubly excluded)** — **every tight 1-atom has order
-\(\ge20\), every \(\mathcal G\)-member \(\ge20\)** (the 1-bucket is
-empty at 18–19, so the atom bound is also direct, without the case
-analysis); no bipartite tight 1-atom through order 24 (`C034`, S021
+\(\ge22\), every \(\mathcal G\)-member \(\ge21\)** (S022 harvest:
+order 20 also spent — profile 7, all \(C_{16}\)-blocked, none
+power-free; the 1-bucket is empty at 18–20, so \(\ge21\) holds
+directly by generation, and `L041`'s cases (4)/(5) with `L047` give
+\(\ge22\)); no bipartite tight 1-atom through order 24 (`C034`, S021
 harvest). The congruence-obstruction leg
 is retired (`C037`/`A021`) and the chain-cancellation leg is **spent
 as a theorem** (S021, `L043`–`L046`): the tension cannot exclude the
@@ -216,9 +240,9 @@ blocker at the frontier is a two-through-path symmetric difference
 vertex-tautness (`C042`, necessity proved in `L048`), and under the
 candidate lemma T5 the object's power-freeness is through-path
 arithmetic (`L048`(iii)) — the forcing target (F) would then close the
-case below 36. Its search side is the ladder at order 20+ (the
-order-20 rung is running as the S022 follow-up; 21 is \(\approx\)18 h
-on 8 workers).
+case below 36. Its search side is the ladder at order 21+ (20 was
+spent by the S022 harvest; 21 is \(\approx\)18 h on 8 workers — a
+deliberate decision once the cheap rungs are done).
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -341,25 +365,27 @@ configuration:**
   the property is exactly tautness-shaped (`C042`), the calculus is
   proved (`L048`), and the ladder moved the floors to 20 with the
   **first-ever profile member** at order 19, doubly blocked
-  (`C043`). Live moves against case (5b), in order: (i) the **T5
-  program** — kill rungs first: the order-19 exemplar's full cycle
-  set (S022 follow-up stage A — the exemplar is vertex-taut, so a
-  single non-decomposable cycle kills T5 at the most relevant object;
-  survival is the strongest cheap evidence yet), then `smallworld 13`
-  (\(\approx\)minutes, exhaustive in-class at 13) and a sparse
-  general-graph probe at orders 8–9; if T5 survives, the **proof
-  attempt**: the clean-window reroute + minimal-choice exchange
-  argument, with two named sub-obligations (cycle-edge essentiality
-  in taut pairs; weaving control); (ii) the forcing target **(F)**
-  (`A023` T6): vertex-taut (5b)-profile pairs with the forced
-  \(S\)-arithmetic in the window \([18,35]\) always realize a
-  \(t=1\) collision at a power length — with T5/`L048` this closes
-  case (5b) below 36; doubly calibrated (Petersen\(-e\), the order-14
-  exemplar); (iii) the **ladder at order 20** (follow-up stage B
-  running; empty would lift both floors to 21 — direct 1-bucket at
-  20 — and 21 costs \(\approx\)18 h on 8 workers); (iv) the `C038`
-  **kill rung** at block orders 15–16 and the disjoint long-link
-  descent (unchanged).
+  (`C043`). Live moves against case (5b), in order — **T5's first
+  two kill rungs are spent and survived** (harvest: the order-19
+  exemplar 411/411; the three on-disk order-20 members 1,890/1,890,
+  \(C_{16}\) verdicts re-verified pairwise): (i) the **T5 program**,
+  remaining kill rungs — the four part-14 order-20 members
+  (recollection running), `smallworld 13` (\(\approx\)minutes,
+  exhaustive in-class at 13), a sparse general-graph probe at orders
+  8–9; if T5 survives, the **proof attempt**: the clean-window
+  reroute + minimal-choice exchange argument, with two named
+  sub-obligations (cycle-edge essentiality in taut pairs; weaving
+  control); (ii) the forcing target **(F)** (`A023` T6): vertex-taut
+  (5b)-profile pairs with the forced \(S\)-arithmetic in the window
+  \([18,35]\) always realize a \(t=1\) collision at a power length —
+  with T5/`L048` this closes case (5b) below 36; doubly calibrated
+  (Petersen\(-e\), the order-14 exemplar), and now with seven
+  profile-member data points all realizing the 16-collision **and**
+  the \(S\)-violation simultaneously; (iii) the **min-degree-3
+  order-21 sweep** (follow-up stage D running; empty lifts `L047` to
+  22) and the \(\mathcal G\) rung at order 21 (\(\approx\)18 h on 8
+  workers, a deliberate decision); (iv) the `C038` **kill rung** at
+  block orders 15–16 and the disjoint long-link descent (unchanged).
 - **R2, constant route closed** — `C004`–`C006` verified and the bound
   improved to \(3|V_3|\ge2n+3\) (`L037`/`L038`), but S15 certifies
   \(2/3\) as the exact ceiling of the non-power hypotheses and no
@@ -437,9 +463,10 @@ Harvest-only. None of these may be a session's primary work.
 
 ### Pivot triggers
 
-A hit in a \(\mathcal G\)-profile scan at order 20+ satisfying the
-\(S\)-condition (**immediate disproof** — a tight 1-atom; 16–19 were
-consumed in S020–S022, order 19's sole profile member doubly blocked);
+A hit in a \(\mathcal G\)-profile scan at order 21+ satisfying the
+\(S\)-condition (**immediate disproof** — a tight 1-atom; 16–20 were
+consumed in S020–S022, the eight profile members at 19–20 all
+\(C_{16}\)-blocked);
 a \(\{C_4,C_8\}\)-free min-degree-3 graph at order 21+ (first at 21
 would refute nothing but ends `L047`'s climb; a *power-free* one is a
 **counterexample**); a pencil-type band-4 taut core at order 17+; a
@@ -583,11 +610,21 @@ The search ladder swept sizes 18 and 19. Size 18: nothing. Size 19
 produced a genuine first — the very first graph ever found with the
 dangerous configuration's exact degree pattern — and it is killed
 twice over, independently: a 16-cycle sits inside it, and its path
-lengths hit two forbidden values. Every "single-defect" seed now needs
-at least 20 vertices. The new graph is itself the best test object yet
-for the lemma above, and testing it is stage one of the overnight
-run launched at close (stages two and three: the size-20 sweep and a
-final consistency count for size 19).
+lengths hit two forbidden values. The new graph is itself the best
+test object yet for the lemma above, and the overnight run launched
+at close delivered: the lemma **survived** on it (all 411 of its
+cycles are path overlays, zero exceptions); the size-20 sweep found
+seven more graphs with the dangerous degree pattern — every one
+killed by a 16-cycle, with each recovered one *also* hitting the two
+forbidden path lengths, the same double death as size 19 — and the
+size-19 consistency count came back exact. The lemma then survived on
+all three of the size-20 graphs recoverable from disk (1,890 more
+cycles, zero exceptions). Net: every single-defect seed now needs at
+least 22 vertices, and the candidate lemma has passed its two
+sharpest cheap tests. Four of the seven size-20 graphs fell outside a
+data-retention window and are being regenerated now, alongside the
+size-21 sweep of the minimum-degree-three world (where an empty
+result would push every counterexample to 22+ vertices).
 
 ## Resolution outlook
 
@@ -609,7 +646,10 @@ final consistency count for size 19).
   trims the disproof side without paying the proof side. The
   increment is one point again: real structural progress on the
   deliverable, but the deliverable is still the reduction, not the
-  conjecture.
+  conjecture. (The same-conversation follow-up harvest landed inside
+  this call — T5 survived both cheap rungs it was given, order 20 was
+  spent, and the floors moved to 21/22 — confirmation of the 7%, not
+  a further increment.)
 
 ## Resume reading
 
@@ -619,10 +659,14 @@ final consistency count for size 19).
    kill tests and proof obligations, the forcing target (F), the two
    calibration objects — S022's proof leg) and `A019` (the case
    analysis, the engine/peel, the residual object — R1's foundation)
-3. **First action: harvest the S022 follow-up**
-   (`E022/data/followup_s022.json` — stage A: the order-19 exemplar's
-   full cycle set vs T5; stage B: the order-20 profile rung; stage C:
-   the order-19 unsplit count); nothing from it is citable until read
+3. **First action: harvest the residual follow-ups**
+   (`E022/data/mindeg3_n21_summary.json` — the stage-D min-degree-3
+   order-21 sweep, empty lifts `L047` to 22; and
+   `E022/data/collect_n20_part14.json` — the four remaining order-20
+   profile members with their T5 verdicts); stages A/B/C are already
+   harvested (`followup_s022.json`, `exemplar_t5_n19.json`,
+   `t5_n20_profile.json`, `count_n19.json` — reconciled into `C042`/
+   `C043`); nothing still running is citable until read
 4. `E021/README.md` (the dissection instrument: extraction layer,
    45-anchor suite, the dichotomy probes) and `E022/README.md` (the
    ladder at 18–19: the first profile member, the dual-split check,

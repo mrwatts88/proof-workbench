@@ -197,13 +197,21 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   Search side (`C043`): order 18 profile-empty; order 19 the
   **first-ever nonempty profile rung** — its unique member
   vertex-taut, 2-connected, non-bipartite, and blocked twice
-  independently (46 \(C_{16}\)s; \(S\ni6,14\)) — so **every tight
-  1-atom and every \(\mathcal G\)-member has order \(\ge20\)**
-  (direct 1-bucket route and the case-analysis route agree).
-  Close-of-session background follow-up running
-  (`E022/followup_s022.py`; not citable until harvested): the
-  exemplar's full cycle set vs T5 (a genuine kill test at the most
-  relevant object), the order-20 rung, the order-19 unsplit count.
+  independently (46 \(C_{16}\)s; \(S\ni6,14\)).
+  **The same-conversation follow-up harvest (2026-07-25) landed:**
+  stage A — **T5 survived the exemplar**, 411/411 cycles decompose
+  (determined-partner algorithm, independent of `E021`'s); stage C —
+  the order-19 unsplit count 74,589 **exact**; stage B — **order 20
+  spent** (class 2,569,481; profile 7, all \(C_{16}\)-blocked, none
+  power-free; 0-/1-buckets empty), and the three on-disk profile
+  members all pass verification and T5 (1,890/1,890; all with the
+  same \(S\ni6,14\) double blocking) — so **every \(\mathcal
+  G\)-member has order \(\ge21\) and every tight 1-atom \(\ge22\)**
+  (`L041` cases (4)/(5) propagating `L047`; direct generation gives
+  21). Still running, not citable: the part-14 recollection of the
+  four remaining order-20 profile members (SAVE_LIMIT truncation,
+  documented) and the chained stage-D min-degree-3 order-21 sweep
+  (empty lifts `L047` to 22).
   Portfolio (all threads carried, per standing user instruction): the
   case-(5b) endgame (the **T5 → (F) interference program** + the
   ladder at order 20+, Tier 1); the `C038` kill rung at
@@ -270,25 +278,30 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 ## Next action
 
 For `P-002`, keep working **Tier 1: exclude case (5b)** via the **T5 →
-(F) interference program** (S022): the atom/\(\mathcal G\) floors are
-at 20/20 and the counterexample floor at 21 (`C043`, `L047`; extremal
-window \([21,24]\)). **First action: harvest the S022 background
-follow-up** (`E022/data/followup_s022.json` — stage A: the vertex-taut
-order-19 exemplar's full cycle set vs candidate lemma T5, a genuine
-kill test; stage B: the order-20 profile rung; stage C: the order-19
-unsplit count); nothing from it is citable until read. Then the
-remaining T5 kill rungs (`smallworld 13`, minutes; a sparse
-general-graph probe at orders 8–9), and — if T5 survives everything —
-the **T5 proof attempt** (clean-window reroute + minimal-choice
-exchange; named sub-obligations: cycle-edge essentiality in taut
-pairs, weaving control). The forcing target (F) follows T5,
-order-windowed \([18,35]\), doubly calibrated (Petersen\(-e\) and the
-order-14 exemplar of `C041`). Tier 3 stays harvest-only (the `C038`
-kill rung at block orders 15–16; cubic 26/28; min-degree-3 order 21;
-bipartite 26). Do **not** reopen congruence obstructions (`C037`),
-membership-only chain exclusion (`L045`), or the density constant
-(`L038`); any case-(5b) exclusion argument must fail on **both**
-calibration objects unless it consumes power-freeness or minimality.
+(F) interference program** (S022): T5 has survived its first two kill
+rungs (the order-19 exemplar; the three on-disk order-20 profile
+members), the atom/\(\mathcal G\) floors are at 22/21 and the
+counterexample floor at 21 (`C043`, `L047`; extremal window
+\([21,24]\)). **First action: harvest the residual follow-ups**
+(`E022/data/mindeg3_n21_summary.json` — the stage-D min-degree-3
+order-21 sweep, empty lifts `L047` to 22; and
+`E022/data/collect_n20_part14.json` — the four remaining order-20
+profile members with their T5 verdicts); nothing from them is citable
+until read. Then the remaining T5 kill rungs (`smallworld 13`,
+minutes; a sparse general-graph probe at orders 8–9), and — if T5
+survives everything — the **T5 proof attempt** (clean-window reroute
++ minimal-choice exchange; named sub-obligations: cycle-edge
+essentiality in taut pairs, weaving control). The forcing target (F)
+follows T5, order-windowed \([18,35]\), doubly calibrated
+(Petersen\(-e\) and the order-14 exemplar of `C041`) and now backed
+by seven profile-member data points realizing the 16-collision and
+the \(S\)-violation simultaneously. Tier 3 stays harvest-only (the
+`C038` kill rung at block orders 15–16; cubic 26/28; the \(\mathcal
+G\) rung at order 21, \(\approx\)18 h; bipartite 26). Do **not**
+reopen congruence obstructions (`C037`), membership-only chain
+exclusion (`L045`), or the density constant (`L038`); any case-(5b)
+exclusion argument must fail on **both** calibration objects unless
+it consumes power-freeness or minimality.
 No required action remains for `P-001`; its reference comparison is
 optional and freely permitted.
 

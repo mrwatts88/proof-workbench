@@ -1,0 +1,123 @@
+{
+ "order": 20,
+ "part": "10/16",
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 20 29:190 10/16",
+ "generated_c4c8_free": 31973,
+ "profile": 0,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_in_profile": 0,
+ "max_edges_in_class": 31,
+ "deg2_hist": {
+  "3": 16,
+  "4": 17,
+  "5": 122,
+  "6": 3821,
+  "7": 13675,
+  "8": 11048,
+  "9": 3023,
+  "10": 244,
+  "11": 6,
+  "12": 1
+ },
+ "min_deg2_in_class": 3,
+ "power_free_in_class": 2280,
+ "power_free_deg2_hist": {
+  "6": 30,
+  "7": 320,
+  "8": 927,
+  "9": 837,
+  "10": 159,
+  "11": 6,
+  "12": 1
+ },
+ "power_free_min_deg2": 6,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 7884497131,
+  "rejects": 7701399167,
+  "out": 31973,
+  "cpu": 2515.68
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 8,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 27,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 88,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 444,
+   "rejects": 2
+  },
+  "11": {
+   "calls": 1616,
+   "rejects": 41
+  },
+  "12": {
+   "calls": 3724,
+   "rejects": 702
+  },
+  "13": {
+   "calls": 35839,
+   "rejects": 19169
+  },
+  "14": {
+   "calls": 310361,
+   "rejects": 246629
+  },
+  "15": {
+   "calls": 2242623,
+   "rejects": 1889151
+  },
+  "16": {
+   "calls": 22828138,
+   "rejects": 20814104
+  },
+  "17": {
+   "calls": 172819978,
+   "rejects": 165234173
+  },
+  "18": {
+   "calls": 951948606,
+   "rejects": 919666932
+  },
+  "19": {
+   "calls": 5348691575,
+   "rejects": 5207987792
+  },
+  "20": {
+   "calls": 1385614096,
+   "rejects": 1385540472
+  }
+ },
+ "verify_all": true,
+ "seconds": 2519.1,
+ "interpreter": "3.11.15/PyPy"
+}

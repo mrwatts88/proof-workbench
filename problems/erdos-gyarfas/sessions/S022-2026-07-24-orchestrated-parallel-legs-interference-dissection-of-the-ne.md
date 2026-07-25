@@ -364,3 +364,53 @@ spent).
 
 This is a subjective research outlook, not mathematical evidence or a claim-status
 promotion.
+
+## Follow-up harvest addendum (same conversation, 2026-07-25)
+
+The close-of-session background run completed and was harvested in the
+same conversation (fresh reconciliation commit; the S019/S021
+precedent):
+
+- **Stage 0/A:** anchors re-passed (146, PyPy); the order-19
+  exemplar's full cycle set against T5 — **411/411 decompose, zero
+  failures** across every length. T5 survived the sharpest available
+  kill test, on the determined-partner algorithm (deliberately
+  different from `E021`'s pairwise search).
+- **Stage C:** the order-19 independent unsplit count = **74,589
+  exactly**; `C043`'s named partition follow-up is closed.
+- **Stage B:** order 20 spent — class 2,569,481, **profile 7**, all
+  \(C_{16}\)-blocked, zero power-free, 0-/1-buckets empty, 4,436
+  near-boundary graphs spot-checked. Floors: **\(\mathcal G\)-members
+  \(\ge21\); tight 1-atoms \(\ge22\)** (`L041` cases (4)/(5)
+  propagating `L047` and the \(\mathcal G\) floor — the case-(4)
+  constant in the `L041` row text predates `L047`; the direct
+  1-bucket route certifies \(\ge21\)).
+- **Orchestrator additions at harvest:** the three on-disk order-20
+  profile members extracted, verified, and T5-tested
+  (`t5_n20_profile.py`; **1,890/1,890 decompose**; 254 \(C_{16}\)
+  verdicts re-verified by the independent pairwise algorithm; all
+  three vertex-taut, 2-connected, \(S\ni6,14\)). Two of my own
+  tooling errors were caught and fixed during this audit: a
+  first-draft degree filter that over-restricted the third-smallest
+  degree, and a class-file-format assumption (lines carry metadata
+  columns after the graph6 field); extraction re-run clean both
+  times. **SAVE_LIMIT finding:** `scan.py` caps saved class rows at
+  200k/part, so the order-20 class files are samples (572,530 of
+  2,569,481) — unlike 18/19, which this addendum re-confirms as
+  complete; part 14's four profile members fell outside its window
+  and their dedicated recollection (`collect_n20_part14.py`, with a
+  stream-total assertion against the 439,745 tally) is running.
+- **Chained mid-wait (recorded in-conversation, per the standing
+  Tier 3 rule and the user's utilization request):** stage D
+  (`followup_s022b.py`) — the min-degree-3 order-21 sweep, launched
+  as a waiter that started when stages B/C finished, after re-passing
+  the anchor gate. Empty would lift `L047` to 22. Running.
+
+Ledger deltas in the harvest commit: `C042`/`C043` extended (T5 rungs
+1–2 survived; order 20; floors 21/22), `OBLIGATIONS.md`
+(`G015`/`G013`(a)), `PROOF.md` floors, `STATE.md`,
+`PROJECT_STATE.md`, `problem.json` next action (harvest-first now
+points at the two still-running legs; then the remaining T5 kill
+rungs; then the proof attempt). Resolution outlook unchanged at 7% —
+the harvest landed inside the S022 call (T5 survived what it was
+given; every emptiness moved the floors as projected).

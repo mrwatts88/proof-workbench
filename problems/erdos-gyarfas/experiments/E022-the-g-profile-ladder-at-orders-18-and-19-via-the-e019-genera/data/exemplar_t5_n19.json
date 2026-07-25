@@ -1,0 +1,94 @@
+{
+ "graph6": "R???C@?GC_B?@_aAA_aP?W_?BO@Gc?",
+ "terminals": [
+  7,
+  8
+ ],
+ "order": 19,
+ "paths": 398,
+ "path_lengths": [
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18
+ ],
+ "vertex_taut": true,
+ "cycles_total": 411,
+ "per_length": {
+  "3": {
+   "cycles": 5,
+   "decomposable": 5
+  },
+  "5": {
+   "cycles": 4,
+   "decomposable": 4
+  },
+  "6": {
+   "cycles": 7,
+   "decomposable": 7
+  },
+  "7": {
+   "cycles": 3,
+   "decomposable": 3
+  },
+  "9": {
+   "cycles": 5,
+   "decomposable": 5
+  },
+  "10": {
+   "cycles": 19,
+   "decomposable": 19
+  },
+  "11": {
+   "cycles": 34,
+   "decomposable": 34
+  },
+  "12": {
+   "cycles": 48,
+   "decomposable": 48
+  },
+  "13": {
+   "cycles": 65,
+   "decomposable": 65
+  },
+  "14": {
+   "cycles": 70,
+   "decomposable": 70
+  },
+  "15": {
+   "cycles": 58,
+   "decomposable": 58
+  },
+  "16": {
+   "cycles": 46,
+   "decomposable": 46
+  },
+  "17": {
+   "cycles": 32,
+   "decomposable": 32
+  },
+  "18": {
+   "cycles": 13,
+   "decomposable": 13
+  },
+  "19": {
+   "cycles": 2,
+   "decomposable": 2
+  }
+ },
+ "non_decomposable": 0,
+ "failures": [],
+ "t5_verdict_on_this_object": "SURVIVES: every cycle is an interference cycle",
+ "algorithm": "determined-partner (P xor C in pathset), independent of E021's pairwise search",
+ "interpreter": "3.11.15 (194f9f44b505, Jul 15 2026, 12:14:56)\n[PyPy 7.3.23 with GCC Apple LLVM 21.0.0 (clang-2100.0.123.102)]"
+}

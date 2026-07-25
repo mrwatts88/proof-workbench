@@ -1,0 +1,84 @@
+{
+ "order": 19,
+ "part": "0/1",
+ "out": 74589,
+ "prune_calls": 32344235538,
+ "prune_rejects": 31384362283,
+ "generator_cpu": 9394.18,
+ "wall": 9416.8,
+ "levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 8,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 27,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 88,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 444,
+   "rejects": 2
+  },
+  "11": {
+   "calls": 4324,
+   "rejects": 242
+  },
+  "12": {
+   "calls": 41622,
+   "rejects": 10456
+  },
+  "13": {
+   "calls": 555558,
+   "rejects": 289309
+  },
+  "14": {
+   "calls": 6237682,
+   "rejects": 4697701
+  },
+  "15": {
+   "calls": 57060738,
+   "rejects": 49256593
+  },
+  "16": {
+   "calls": 450650522,
+   "rejects": 412299112
+  },
+  "17": {
+   "calls": 3387954982,
+   "rejects": 3203131908
+  },
+  "18": {
+   "calls": 22234049962,
+   "rejects": 21507147740
+  },
+  "19": {
+   "calls": 6207679573,
+   "rejects": 6207529220
+  }
+ },
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -u -c -f -d2 19 28:171"
+}

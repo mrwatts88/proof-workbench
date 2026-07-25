@@ -1,0 +1,376 @@
+{
+ "profile_members_on_disk": 3,
+ "profile_tally_stage_b": 7,
+ "truncation_note": "class_n20 files are SAVE_LIMIT samples; parts 1 and 8 complete (3 members here); part 14's 4 members await the recollection run",
+ "total_cycles": 1890,
+ "total_non_decomposable": 0,
+ "t5_verdict_on_these_objects": "SURVIVES on all 3 on-disk members",
+ "graphs": [
+  {
+   "g6": "S???C@?G?_OGQ?@_S_?W_CW?AgA_S@Ca?",
+   "order": 20,
+   "terminals": [
+    4,
+    11
+   ],
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "S_cap_2_6_14": [
+    6,
+    14
+   ],
+   "spectrum": [
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c16_count": 112,
+   "vertex_taut": true,
+   "two_connected": true,
+   "bipartite": false,
+   "paths": 672,
+   "cycles": 766,
+   "per_length": {
+    "3": {
+     "cycles": 5,
+     "decomposable": 5
+    },
+    "5": {
+     "cycles": 6,
+     "decomposable": 6
+    },
+    "6": {
+     "cycles": 10,
+     "decomposable": 10
+    },
+    "7": {
+     "cycles": 4,
+     "decomposable": 4
+    },
+    "9": {
+     "cycles": 6,
+     "decomposable": 6
+    },
+    "10": {
+     "cycles": 21,
+     "decomposable": 21
+    },
+    "11": {
+     "cycles": 36,
+     "decomposable": 36
+    },
+    "12": {
+     "cycles": 55,
+     "decomposable": 55
+    },
+    "13": {
+     "cycles": 87,
+     "decomposable": 87
+    },
+    "14": {
+     "cycles": 112,
+     "decomposable": 112
+    },
+    "15": {
+     "cycles": 118,
+     "decomposable": 118
+    },
+    "16": {
+     "cycles": 112,
+     "decomposable": 112
+    },
+    "17": {
+     "cycles": 94,
+     "decomposable": 94
+    },
+    "18": {
+     "cycles": 64,
+     "decomposable": 64
+    },
+    "19": {
+     "cycles": 30,
+     "decomposable": 30
+    },
+    "20": {
+     "cycles": 6,
+     "decomposable": 6
+    }
+   },
+   "non_decomposable": [],
+   "c16_pairwise_reverified": 112,
+   "c16_pairwise_agrees": true
+  },
+  {
+   "g6": "S????A?O@_D?@_@O@PCP?oO?PO@CKAGa?",
+   "order": 20,
+   "terminals": [
+    3,
+    8
+   ],
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "S_cap_2_6_14": [
+    6,
+    14
+   ],
+   "spectrum": [
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c16_count": 105,
+   "vertex_taut": true,
+   "two_connected": true,
+   "bipartite": false,
+   "paths": 720,
+   "cycles": 774,
+   "per_length": {
+    "3": {
+     "cycles": 5,
+     "decomposable": 5
+    },
+    "5": {
+     "cycles": 6,
+     "decomposable": 6
+    },
+    "6": {
+     "cycles": 10,
+     "decomposable": 10
+    },
+    "7": {
+     "cycles": 4,
+     "decomposable": 4
+    },
+    "9": {
+     "cycles": 5,
+     "decomposable": 5
+    },
+    "10": {
+     "cycles": 19,
+     "decomposable": 19
+    },
+    "11": {
+     "cycles": 38,
+     "decomposable": 38
+    },
+    "12": {
+     "cycles": 62,
+     "decomposable": 62
+    },
+    "13": {
+     "cycles": 94,
+     "decomposable": 94
+    },
+    "14": {
+     "cycles": 117,
+     "decomposable": 117
+    },
+    "15": {
+     "cycles": 117,
+     "decomposable": 117
+    },
+    "16": {
+     "cycles": 105,
+     "decomposable": 105
+    },
+    "17": {
+     "cycles": 92,
+     "decomposable": 92
+    },
+    "18": {
+     "cycles": 67,
+     "decomposable": 67
+    },
+    "19": {
+     "cycles": 29,
+     "decomposable": 29
+    },
+    "20": {
+     "cycles": 4,
+     "decomposable": 4
+    }
+   },
+   "non_decomposable": [],
+   "c16_pairwise_reverified": 105,
+   "c16_pairwise_agrees": true
+  },
+  {
+   "g6": "S??CA?_C?O?___oOKO@`?EC?HG?GK?Go?",
+   "order": 20,
+   "terminals": [
+    8,
+    11
+   ],
+   "S": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "S_cap_2_6_14": [
+    6,
+    14
+   ],
+   "spectrum": [
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c16_count": 37,
+   "vertex_taut": true,
+   "two_connected": true,
+   "bipartite": false,
+   "paths": 448,
+   "cycles": 350,
+   "per_length": {
+    "3": {
+     "cycles": 6,
+     "decomposable": 6
+    },
+    "5": {
+     "cycles": 2,
+     "decomposable": 2
+    },
+    "6": {
+     "cycles": 4,
+     "decomposable": 4
+    },
+    "7": {
+     "cycles": 2,
+     "decomposable": 2
+    },
+    "9": {
+     "cycles": 2,
+     "decomposable": 2
+    },
+    "10": {
+     "cycles": 11,
+     "decomposable": 11
+    },
+    "11": {
+     "cycles": 26,
+     "decomposable": 26
+    },
+    "12": {
+     "cycles": 40,
+     "decomposable": 40
+    },
+    "13": {
+     "cycles": 54,
+     "decomposable": 54
+    },
+    "14": {
+     "cycles": 64,
+     "decomposable": 64
+    },
+    "15": {
+     "cycles": 56,
+     "decomposable": 56
+    },
+    "16": {
+     "cycles": 37,
+     "decomposable": 37
+    },
+    "17": {
+     "cycles": 24,
+     "decomposable": 24
+    },
+    "18": {
+     "cycles": 15,
+     "decomposable": 15
+    },
+    "19": {
+     "cycles": 6,
+     "decomposable": 6
+    },
+    "20": {
+     "cycles": 1,
+     "decomposable": 1
+    }
+   },
+   "non_decomposable": [],
+   "c16_pairwise_reverified": 37,
+   "c16_pairwise_agrees": true
+  }
+ ],
+ "interpreter": "3.11.15 (194f9f44b505, Jul 15 2026, 12:14:56)\n[PyPy 7.3.23 with GCC Apple LLVM 21.0.0 (clang-2100.0.123.102)]"
+}
