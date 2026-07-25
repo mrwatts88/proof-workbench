@@ -1,0 +1,13 @@
+{
+ "order": 11,
+ "geng": "geng -q -c 11 11:13",
+ "graphs": 44490,
+ "graphs_with_cycles": 44490,
+ "pairs": 2446950,
+ "taut_pairs": 39360,
+ "cycles_tested": 217272,
+ "non_decomposable": 0,
+ "counterexamples": [],
+ "seconds": 2.9,
+ "interpreter": "pypy 3.11.15"
+}

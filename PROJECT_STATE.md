@@ -1,6 +1,6 @@
 # Project state
 
-Last reviewed: 2026-07-24
+Last reviewed: 2026-07-25
 
 ## Mission
 
@@ -216,18 +216,45 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   cycles, every one \(S\ni\{6,14\}\)-double-blocked** — and the
   stage-D min-degree-3 order-21 sweep came back **empty**: `C040`
   runs 14–21 and **every counterexample has \(\ge22\) vertices**
-  (`L047`, extremal window \([22,24]\), three orders wide). Nothing
-  is left running.
+  (`L047`, extremal window \([22,24]\), three orders wide).
+  **S023 (2026-07-25) closed the T5 program: T5 IS A THEOREM.** The
+  two remaining pre-registered kill rungs ran **first** and survived
+  (`C044`: `smallworld 13` exhaustive in-class with the tautness
+  biconditional exact — all 10,853 taut members pass on 1,614,300
+  cycles, all 113 non-taut members fail; the general probes clean
+  with order \(\le8\) **exhaustive** — every graph, every vertex-taut
+  pair, every cycle — and cyclomatic-bounded slices at 9–11). Then
+  the proof landed (`A024`, promoted `L049`): every vertex-taut pair
+  is interference-complete, in trunk-identical arc form with
+  prescribed-edge freedom, by the **trimming construction** — the
+  recorded weaving obstruction is discarded with the trimmed middle,
+  never controlled; **Lemma A** (cycle-edge essentiality in taut
+  pairs) proved en route. Delegated fresh-context audit `R002`:
+  **PASS at lemma level** (0 critical / 0 major; 2 minor + 6 notes,
+  all repaired in place), with the reviewer independently re-running
+  every `E023` command and re-verifying the claim set with its own
+  implementation. Mechanically verified per instance (17.4M
+  (cycle, edge) instances incl. all eight profile objects).
+  Consequences: interference-complete ⟺ vertex-taut on connected
+  \(\delta\ge2\) graphs (`L050`); the case-(5b) residual object's
+  spectrum identity is **unconditional** (`L048`(iii):
+  \(\mathrm{Spec}(B)=T_1\cup(S+2)\), every element a trunk-split
+  pair value) — **the forcing target (F) is now the entire proof
+  side of case (5b) below order 36**, and (F) ⟺ that case's
+  emptiness there. Floors unchanged (counterexamples \(\ge22\),
+  window \([22,24]\); atoms 22/21). At close, the order-21
+  \(\mathcal G\)-profile rung was launched as `E024`
+  (\(\approx\)21 h on 8 workers; **running, not citable**).
   Portfolio (all threads carried, per standing user instruction): the
-  case-(5b) endgame (the **T5 → (F) interference program** + the
-  ladder at order 20+, Tier 1); the `C038` kill rung at
-  block orders 15–16; the pencil endgame + band-2 rung (pinched
-  channel); the bipartite hunt at order 26 (order 24 harvested empty on the
-  new instrument) and the gcd-channel theory question; the cubic census at
-  orders 26/28/30 (now ~15 min/3.5 h/2.3 days on 8 workers); census
-  mining; bipartite EGC (proof side); the disjoint longer-link descent
-  (R2's surviving extension); 3-connectivity leverage; order-17+
-  pinched catalogue legs.
+  case-(5b) endgame (the **(F) program**, Tier 1, gate passed by
+  `L049`; + the ladder at order 21+, `E024` running); the `C038`
+  kill rung at block orders 15–16; the pencil endgame + band-2 rung
+  (pinched channel); the bipartite hunt at order 26 (order 24
+  harvested empty on the new instrument) and the gcd-channel theory
+  question; the cubic census at orders 26/28/30 (~15 min/3.5 h/2.3
+  days on 8 workers); census mining; bipartite EGC (proof side); the
+  disjoint longer-link descent (R2's surviving extension);
+  3-connectivity leverage; order-17+ pinched catalogue legs.
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -283,29 +310,32 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, keep working **Tier 1: exclude case (5b)** via the **T5 →
-(F) interference program** (S022, fully harvested): T5 has survived
-every kill rung run so far — all eight profile objects in existence
-(orders 19–20), 4,661/4,661 cycles — the atom/\(\mathcal G\) floors
-are at 22/21, and the counterexample floor at 22 (`C043`/`C042`,
-`L047`; extremal window \([22,24]\), three orders wide). **First
-action: the two remaining cheap T5 kill rungs** — `smallworld 13`
-(minutes, exhaustive in-class at order 13, via `E021/dissect.py`) and
-a sparse general-graph probe at orders 8–9 — then, if T5 survives,
-the **T5 proof attempt** (clean-window reroute + minimal-choice
-exchange; named sub-obligations: cycle-edge essentiality in taut
-pairs, weaving control). The forcing target (F) follows T5,
-order-windowed \([18,35]\), doubly calibrated (Petersen\(-e\) and the
-order-14 exemplar of `C041`) and backed by eight profile-member data
-points realizing the 16-collision and the \(S\)-violation
-simultaneously. Tier 3 stays harvest-only (the `C038` kill rung at
-block orders 15–16; cubic 26/28; the \(\mathcal G\) rung at order 21,
-\(\approx\)18 h, and min-degree-3 at 22, \(\approx\)38 h — both
-deliberate decisions; bipartite 26). Do **not** reopen congruence
+For `P-002`, keep working **Tier 1: exclude case (5b)**, now via the
+**(F) program** — its gate is passed: **T5 is a theorem** (S023:
+`L049`, trimming construction, audited `R002` PASS; both kill rungs
+spent first and survived, `C044`), so the case-(5b) residual object's
+power-freeness is **unconditionally** through-path arithmetic
+(`L048`(iii): \(\mathrm{Spec}(B)=T_1\cup(S+2)\), every element a
+trunk-split pair value) and **(F) ⟺ case (5b) empty below 36**.
+**First action: the (F) opening probe** — build the power-collision
+realization tables of the ten named objects (the eight profile
+members, g6 identities in `E022/data`; Petersen\(-e\); the order-14
+exemplar): for every \(C_8/C_{16}\), every trunk-split realization
+\((x,y,s)\) with \(x,y\in S\), read against the forced memberships. A
+membership-patterned regularity names (F)'s mechanism and starts its
+proof attempt; absence redirects (F) toward window/order arithmetic.
+Binding calibration (`A021` discipline): any proposed (F) mechanism
+must fail on **both** calibration objects unless it consumes
+power-freeness or minimality. Background: the order-21 \(\mathcal
+G\) rung is **running** (`E024`, launched at S023 close, ~21 h on 8
+workers — not citable until harvested; harvest it first next
+session). Tier 3 stays harvest-only (the `C038` kill rung at block
+orders 15–16; cubic 26/28; min-degree-3 at 22, \(\approx\)38 h — a
+deliberate decision; bipartite 26). Do **not** reopen congruence
 obstructions (`C037`), membership-only chain exclusion (`L045`), or
-the density constant (`L038`); any case-(5b) exclusion argument must
-fail on **both** calibration objects unless it consumes
-power-freeness or minimality.
+the density constant (`L038`); a non-decomposable cycle in a
+vertex-taut pair is now a **soundness alarm** (it would contradict
+the reviewed `L049`), not a route pivot.
 No required action remains for `P-001`; its reference comparison is
 optional and freely permitted.
 

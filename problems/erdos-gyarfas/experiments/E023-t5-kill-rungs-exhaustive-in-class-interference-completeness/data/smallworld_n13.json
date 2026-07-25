@@ -1,0 +1,22 @@
+{
+ "interpreter": "pypy 3.11.15",
+ "orders": {
+  "13": {
+   "class": 10966,
+   "taut": 10853,
+   "taut_cycles": 1614300,
+   "taut_cycles_nondec": 0,
+   "taut_nondec_by_stratum": {
+    "both": 0,
+    "one": 0,
+    "neither": 0
+   },
+   "taut_members_with_nondec": 0,
+   "nontaut_cycles": 10255,
+   "nontaut_cycles_nondec": 10142,
+   "nontaut_members_with_nondec": 113,
+   "taut_nondec_examples": [],
+   "seconds": 191.4
+  }
+ }
+}

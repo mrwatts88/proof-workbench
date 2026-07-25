@@ -1,12 +1,17 @@
 # Current state
 
-- Last updated: 2026-07-25 (S022 + complete follow-up harvest — the
-  interference model survived its frontier kill test on all 553
-  blockers and the calculus is fixed (`L048`); the ladder spent
-  orders 18–20 and **all eight profile objects in existence survive
-  T5** (4,661/4,661 cycles; every one \(S\ni\{6,14\}\)-double-blocked);
-  the min-degree-3 sweep is empty through 21 — **every counterexample
-  has \(\ge22\) vertices**, window \([22,24]\); tight 1-atoms
+- Last updated: 2026-07-25 (S023 — **T5 is a theorem**: `L049`, the
+  trimming construction, delegated audit `R002` **PASS** (0 critical /
+  0 major; all findings repaired in place); both remaining
+  pre-registered kill rungs were spent **first** and survived
+  (`C044`: `smallworld 13` exhaustive, biconditional exact; order
+  \(\le8\) general exhaustive; slices 9–11); the case-(5b) spectrum
+  identity is now **unconditional** (`L048`(iii):
+  \(\mathrm{Spec}(B)=T_1\cup(S+2)\), every element a trunk-split pair
+  value), completeness ⟺ tautness on connected \(\delta\ge2\) graphs
+  (`L050`), and **the proof side of case (5b) below order 36 is
+  exactly the forcing target (F)**; floors unchanged — every
+  counterexample \(\ge22\), window \([22,24]\); tight 1-atoms
   \(\ge22\), \(\mathcal G\)-members \(\ge21\); nothing left running)
 - Problem: `P-002` — Erdős–Gyárfás Conjecture
 
@@ -173,6 +178,46 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   runs 14–21 and **`L047` lifts to 22** (window \([22,24]\), three
   orders wide; atom floors unchanged at 22/21, case (5) still
   binding).
+- **New (S023): `L049`/`L050`/`C044` — T5 is a theorem; the
+  interference program's gate is passed.** The two remaining
+  pre-registered kill rungs ran first and survived (`C044`:
+  `smallworld 13` exhaustive in-class, class 10,966 = `A021`'s count,
+  all 10,853 taut members pass on 1,614,300 cycles and **all 113
+  non-taut members fail** — the biconditional exact at 13; order
+  \(\le8\) **exhaustive** over every graph, every vertex-taut pair,
+  every cycle — 36.8M cycles at order 8 alone; cyclomatic-bounded
+  slices at 9–11 clean). Then the proof (`A024`, promoted `L049`):
+  **every vertex-taut pair is interference-complete** — for every
+  cycle \(C\) and every prescribed edge of \(C\) there are two
+  distinct through-paths in **trunk-identical arc form** with
+  symmetric difference exactly \(C\) — by the **trimming
+  construction**: tautness forces the block chain (block–cut tree a
+  path, terminals non-cut in the end blocks); Menger's fan corollary
+  plus subdivision put a through-path through any prescribed cycle
+  edge (**Lemma A**: cycle-edge essentiality in taut pairs, proved);
+  trimming that path at its first/last \(V(C)\)-contacts and
+  completing through **both** arcs yields the pair. The recorded
+  weaving obstruction never arises — the woven middle is discarded,
+  not controlled. Audited `R002` (delegated fresh context): **PASS at
+  lemma level**, 0 critical / 0 major, 2 minor + 6 notes, all
+  repaired in place; the reviewer re-ran every `E023` command
+  independently and re-verified the claim set with its own
+  implementation (all labelled graphs \(\le6\); the ten named
+  objects). Mechanically verified per instance (`E023
+  constructive`): every step asserted on 17.4M (cycle, edge)
+  instances including **all eight profile objects** (the recorded
+  4,661 cycles reproduced object by object). Consequences: `L050` —
+  on connected \(\delta\ge2\) graphs, interference-complete ⟺
+  vertex-taut (the `C042` law is a theorem; the pinched census and
+  `C041`'s 553/553 are instances); `L048`(iii) **unconditional** for
+  the case-(5b) residual object (vertex-taut by `L042`):
+  \(\mathrm{Spec}(H)=T_1(H,a,b)\),
+  \(\mathrm{Spec}(B)=T_1(H,a,b)\cup(S+2)\) — its entire
+  power-freeness is through-path arithmetic, every spectrum element
+  realized by a trunk-split pair. **(F) ⟺ case (5b) empty below 36**;
+  (F) is now the whole proof side there. Imports: Menger
+  \(k=2\)/Whitney and block facts B1–B3, precise statements in
+  `references/textbook-classics-2026-07-25.md`.
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -237,15 +282,19 @@ as a theorem** (S021, `L043`–`L046`): the tension cannot exclude the
 chain case by arithmetic alone (`L045`), but per-block order bounds
 confine that case to \(n_0\ge36\) (`L046`) — so the case-(5b) frontier
 below 36 is exactly the **2-connected** residual object. Its proof
-side now runs through the **interference program** (S022): every
-blocker at the frontier is a two-through-path symmetric difference
-(`C041`), interference-completeness is empirically equivalent to
-vertex-tautness (`C042`, necessity proved in `L048`), and under the
-candidate lemma T5 the object's power-freeness is through-path
-arithmetic (`L048`(iii)) — the forcing target (F) would then close the
-case below 36. Its search side is the ladder at order 21+ (20 was
+side now runs through the **interference program**, whose gate is
+passed (S023): interference-completeness holds for **every**
+vertex-taut pair (`L049`, theorem, audited `R002`), so the object's
+power-freeness **is** through-path arithmetic unconditionally
+(`L048`(iii): \(\mathrm{Spec}(B)=T_1\cup(S+2)\), every element a
+trunk-split pair value) — and the forcing target **(F)** is now the
+entire proof side below 36: (F) says the forced \(S\)-arithmetic
+makes a power-length trunk-split collision unavoidable in the window
+\([18,35]\), which is *equivalent* to case (5b)'s emptiness there.
+First (F) move: the power-collision realization tables of the ten
+named objects. Its search side is the ladder at order 21+ (20 was
 spent by the S022 harvest; 21 is \(\approx\)18 h on 8 workers — a
-deliberate decision once the cheap rungs are done).
+deliberate decision).
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -368,27 +417,31 @@ configuration:**
   the property is exactly tautness-shaped (`C042`), the calculus is
   proved (`L048`), and the ladder moved the floors to 20 with the
   **first-ever profile member** at order 19, doubly blocked
-  (`C043`). Live moves against case (5b), in order — **T5's first
-  two kill rungs are spent and survived** (harvest: the order-19
-  exemplar 411/411; the three on-disk order-20 members 1,890/1,890,
-  \(C_{16}\) verdicts re-verified pairwise): (i) the **T5 program**,
-  remaining kill rungs — the four part-14 order-20 members
-  (recollection running), `smallworld 13` (\(\approx\)minutes,
-  exhaustive in-class at 13), a sparse general-graph probe at orders
-  8–9; if T5 survives, the **proof attempt**: the clean-window
-  reroute + minimal-choice exchange argument, with two named
-  sub-obligations (cycle-edge essentiality in taut pairs; weaving
-  control); (ii) the forcing target **(F)** (`A023` T6): vertex-taut
-  (5b)-profile pairs with the forced \(S\)-arithmetic in the window
-  \([18,35]\) always realize a \(t=1\) collision at a power length —
-  with T5/`L048` this closes case (5b) below 36; doubly calibrated
-  (Petersen\(-e\), the order-14 exemplar), and now with seven
-  profile-member data points all realizing the 16-collision **and**
-  the \(S\)-violation simultaneously; (iii) the **min-degree-3
-  order-21 sweep** (follow-up stage D running; empty lifts `L047` to
-  22) and the \(\mathcal G\) rung at order 21 (\(\approx\)18 h on 8
-  workers, a deliberate decision); (iv) the `C038` **kill rung** at
-  block orders 15–16 and the disjoint long-link descent (unchanged).
+  (`C043`). **S023 closed the T5 program**: the remaining kill
+  rungs ran first and survived (`C044`), then **T5 was proved
+  outright** (`L049`, the trimming construction — no exchange
+  argument exists in the final proof; audited `R002` PASS) with the
+  spectrum identity unconditional (`L048`(iii) upgrade) and the
+  biconditional a theorem on \(\delta\ge2\) (`L050`). Live moves
+  against case (5b), in order: (i) **the (F) program** — (F)
+  (`A023` T6, consuming `L049`): vertex-taut (5b)-profile pairs with
+  the forced \(S\)-arithmetic in the window \([18,35]\) always
+  realize a **trunk-split** collision at a power length; by
+  `L048`(iii) this is *equivalent* to case (5b)'s emptiness below 36,
+  so it is the entire proof side there. First falsifiable move: the
+  **power-collision realization tables** of the ten named objects
+  (all eight profile members + Petersen\(-e\) + the order-14
+  exemplar) — every \((x,y,s)\) trunk-split realization of every
+  \(C_8/C_{16}\); a membership-patterned regularity names (F)'s
+  mechanism, its absence redirects (F) toward window/order
+  arithmetic. Doubly calibrated (Petersen\(-e\), the order-14
+  exemplar), with eight profile data points realizing the
+  16-collision and the \(S\)-violation simultaneously; (ii) the
+  \(\mathcal G\) rung at order 21 (\(\approx\)18 h on 8 workers, a
+  deliberate decision — each new profile member is a new (F) data
+  point, an \(S\)-satisfying hit a disproof) and min-degree-3 at 22
+  (\(\approx\)38 h); (iii) the `C038` **kill rung** at block orders
+  15–16 and the disjoint long-link descent (unchanged).
 - **R2, constant route closed** — `C004`–`C006` verified and the bound
   improved to \(3|V_3|\ge2n+3\) (`L037`/`L038`), but S15 certifies
   \(2/3\) as the exact ceiling of the non-power hypotheses and no
@@ -481,16 +534,22 @@ disproof, `L035` T3; 24 landed empty in the S021 harvest); a `G014`
 audit overturning an assumed bound; a realized
 \(\{7,8,12,13,14\}\)-shaped block through-set at order 15–16 (kills
 arithmetic-only chain exclusion; the chain-case Petersen\(-e\) then
-exists at order ~29); a **non-decomposable cycle in any vertex-taut
-pair** — in particular in the order-19 exemplar (follow-up stage A),
-at `smallworld 13`, or in the sparse 8–9 probe — kills T5 as stated,
-names its missing hypothesis, and redirects the proof side (the S022
-frontier families gave it every chance and it did not happen, `C041`);
-a **proof of T5** (then the case-(5b) object's spectrum equals its
-\(T_1\) set, `L048`(iii), and the forcing target (F) becomes the
-entire proof side); exclusion of case (5b)'s 2-connected branch below
-36 (then `G015` is proved below 36 and the search ladder becomes the
-whole case); exclusion of case (5b) outright (then `G015` is proved
+exists at order ~29); a non-decomposable cycle in a vertex-taut
+pair would now **contradict the reviewed theorem `L049`** (the S023
+rungs gave it 12.7M further chances and it never happened) — any such
+find is a soundness alarm on `A024`/`R002`/the census predicate, to be
+treated as a critical audit event, not a route pivot;
+a **membership-patterned regularity in the (F) realization tables**
+(then (F) has a candidate mechanism and the proof attempt starts) —
+subject to the standing `A021` discipline: any claimed (F)-mechanism
+must fail on Petersen\(-e\) and the order-14 exemplar unless it
+consumes power-freeness or minimality, both being non-power-free
+realizers of the forced arithmetic; a **power-free vertex-taut
+(5b)-profile pair anywhere in the window** (defeats (F) as stated and
+is one 2-path closure away from a tight 1-atom — disproof-adjacent);
+a **proof of (F) on the window** (then case (5b) is closed below 36,
+`G015` is proved below 36, and the search ladder becomes the whole
+case); exclusion of case (5b) outright (then `G015` is proved
 and Thread C becomes the whole game).
 
 ### Process correction (S018)
@@ -637,59 +696,82 @@ minimum-degree-three world came back empty: **every counterexample
 to the conjecture now needs at least 22 vertices**, and the extremal
 window is down to three sizes, 22 through 24.
 
+S023 finished what the overnight tests began. The two remaining cheap
+attempts to kill the key lemma were run first — every candidate graph
+with the right shape on 13 vertices, and every graph whatsoever up
+through 8 vertices — and the lemma survived all of them, tens of
+millions of cycles with not one exception. Then, instead of the
+planned delicate argument about controlling how paths wind through a
+cycle, a much simpler idea landed the proof outright: route a path
+through any chosen edge of the cycle, throw away everything between
+its first and last touches of the cycle, and complete the two kept
+ends around both sides of the cycle. The two hybrid routes so built
+are the desired pair, and all the winding one feared lives entirely
+in the part that was thrown away. A fresh, isolated referee — given
+only the claim and the proof, none of the discovery reasoning —
+attacked it, re-ran every computation independently, rebuilt the
+whole verification from scratch in its own code, and passed it with
+only cosmetic repairs, each now applied. So the pattern spotted two
+sessions ago ("every blocking cycle is an interference pattern of two
+terminal-to-terminal paths") is now a theorem wherever the dangerous
+configuration can live, and that configuration's defining
+no-power-of-two property is now, provably and unconditionally, a
+statement about the arithmetic of its own path system. What remains
+of this branch of the programme is exactly one named question — the
+forcing question: do the path lengths that configuration is *forced*
+to have always collide into a power-of-two cycle when the graph is
+small enough? Answer yes below 36 vertices, and the programme's
+centerpiece theorem (the cubic reduction) is proved there.
+
 ## Resolution outlook
 
-- Estimated chance of eventually settling the exact current statement: 7%
-- Previous estimate: 6% (S021)
-- Reason for the change: the last surviving proof-side route survived
-  the one test that could have killed it immediately, and came back
-  with a mechanism instead of a hope. For: the interference outcome
-  was not forced — a single non-interference blocker among 553 would
-  have ended the route — and the property landed exactly on the
-  hypothesis (vertex-tautness) the case-(5b) object is forced to
-  satisfy; the calculus lemma `L048` gives, for the first time, a
-  stated pathway by which power-freeness itself fights (the
-  requirement both dead routes lacked); the floors moved again
-  (atoms/\(\mathcal G\) at 20) and the first profile object exists as
-  a concrete test bed. Against, unchanged: T5 is a conjecture (its
-  order-19 kill test is running tonight), (F) has no proof step,
-  Tier 0's forcing question is untouched, and every emptiness result
-  trims the disproof side without paying the proof side. The
-  increment is one point again: real structural progress on the
-  deliverable, but the deliverable is still the reduction, not the
-  conjecture. (The complete follow-up harvest landed inside this
-  call — T5 survived every rung it was given, all eight profile
-  objects included, 4,661/4,661 cycles; order 20 was spent; the
-  floors moved to 21/22 and the counterexample floor to 22, window
-  \([22,24]\) — confirmation of the 7%, not a further increment.)
+- Estimated chance of eventually settling the exact current statement: 8%
+- Previous estimate: 7% (S022)
+- Reason for the change: the program's gate lemma stopped being a
+  hope. For: T5 is now a reviewed theorem (`L049`/`R002`), proved by
+  a mechanism simpler than the one planned — which usually signals a
+  right framing — and the case-(5b) object's power-freeness is
+  unconditionally through-path arithmetic (`L048`(iii)), the exact
+  genre the two impossibility theorems (`C037`/`L045`) left alive;
+  the machinery (block chain, trunk-split normal form) transfers
+  directly to the (F) attack. Against: (F) itself is untouched and is
+  *equivalent* to the emptiness being sought — T5 supplies the
+  language, not the forcing; the ease of T5's proof also means the
+  hard content was never there; Tier 0's global forcing question is
+  unmoved, and the deliverable remains the cubic reduction, not 0.1.
+  One point, for converting the route's foundation from conjecture to
+  theorem without any negative surprise en route.
 
 ## Resume reading
 
 1. `STATEMENT.md`
-2. the **Roadmap** section above, then `A023` (the interference
-   dissection: the calculus T2–T4, the candidate lemma T5 with its
-   kill tests and proof obligations, the forcing target (F), the two
-   calibration objects — S022's proof leg) and `A019` (the case
-   analysis, the engine/peel, the residual object — R1's foundation)
-3. All S022 follow-ups are **harvested and reconciled** (stages
-   A/B/C/D + the part-14 recollection: `followup_s022.json`,
-   `exemplar_t5_n19.json`, `t5_n20_profile.json`, `count_n19.json`,
-   `collect_n20_part14.json`, `mindeg3_n21_summary.json` — all in
-   `C040`/`C042`/`C043`/`L047`); nothing is running. **First action:
-   the two remaining T5 kill rungs** — `smallworld 13` (minutes,
-   through `E021/dissect.py`) and a sparse general-graph probe at
-   orders 8–9 — then, if T5 survives, the proof attempt (`A023` T5:
-   clean-window reroute + minimal-choice exchange)
-4. `E021/README.md` (the dissection instrument: extraction layer,
-   45-anchor suite, the dichotomy probes) and `E022/README.md` (the
-   ladder at 18–19: the first profile member, the dual-split check,
-   the bucket statements)
+2. **`A024`** (the T5 proof: the taut block chain T1, the fan/
+   subdivision lemmas T2/T3, Lemma A T4, the trimming construction
+   T5 with the trunk-identical arc form, the corollaries T6 —
+   audited `R002`, PASS, all findings repaired in place) and
+   **`A023`** (the interference frame: the calculus T2–T4 = `L048`,
+   the forcing target **(F)** T6 with its calibration discipline, the
+   order-14 exemplar T7); then `A019` (the case analysis, the
+   engine/peel, the residual object — R1's foundation)
+3. Nothing is running. **First action: the (F) program's opening
+   move** — build the power-collision realization tables of the ten
+   named objects (every trunk-split \((x,y,s)\) realization of every
+   \(C_8/C_{16}\); the eight profile members' g6 identities are in
+   `E022/data`, the calibration pair in `E021`/`A023`), and read
+   them against the forced memberships; a membership-patterned
+   regularity names (F)'s mechanism, its absence redirects (F)
+   toward window/order arithmetic
+4. `E023/README.md` (the kill rungs, the exhaustive-through-8
+   statement, and the constructive per-instance verification of the
+   proof) with `E021`/`E022` READMEs for the instruments it imports
 5. `A021` (the congruence kill and the Petersen\(-e\) calibration
-   discipline — now joined by the order-14 exemplar
-   `M?AA@?WcKWHOWOL??` of `C041`; both bind every case-(5b)
-   argument) and `A022`/`E020` (the chain package and its 15/16 kill
-   rung)
-6. `CLAIMS.md` rows `L048`, `C041`–`C043` (and `L039`–`L047`,
-   `C036`–`C040` for the frame); `OBLIGATIONS.md` `G015`/`G013`/`G014`
-7. `sessions/S022-…md` (this session: worker allocation, audits, the
-   independent re-derivations) and `S019`–`S021` for the preceding arc
+   discipline — joined by the order-14 exemplar `M?AA@?WcKWHOWOL??`;
+   both bind every case-(5b) argument, **including any proposed (F)
+   mechanism**) and `A022`/`E020` (the chain package and its 15/16
+   kill rung)
+6. `CLAIMS.md` rows `L049`/`L050`/`C044` (new), `L048`/`C042`
+   (updated), `C041`/`C043` (and `L039`–`L047`, `C036`–`C040` for
+   the frame); `OBLIGATIONS.md` `G015`/`G013`/`G014`
+7. `sessions/S023-…md` (this session: rungs-first ordering, the
+   proof, the review, the repairs) and `S019`–`S022` for the
+   preceding arc

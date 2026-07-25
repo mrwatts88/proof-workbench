@@ -322,6 +322,33 @@ Established preliminary reductions, none sufficient for the main claim:
   has order \(\ge21\) and every tight 1-atom has order \(\ge22\)**
   (`C043` with `L041`/`L047`; the direct generation route certifies
   \(\ge21\)).
+- `L049`/`L050` + `C044` (S023): **the candidate lemma is now a
+  theorem — the interference program's gate is passed.** T5 ("every
+  vertex-taut pair is interference-complete") is proved by the
+  **trimming construction** (`A024`: tautness forces the block chain;
+  Menger's fan corollary plus subdivision put a through-path through
+  any prescribed cycle edge; trimming that path at its first and last
+  contacts with the cycle and completing through **both** arcs yields
+  two distinct through-paths whose symmetric difference is exactly the
+  cycle — the recorded weaving obstruction is discarded with the
+  path's middle, never controlled), in trunk-identical arc form with
+  prescribed-edge freedom, plus **Lemma A** (cycle-edge essentiality
+  in taut pairs). Audited: `R002`, delegated fresh context, **PASS at
+  lemma level** (0 critical / 0 major; two minor findings repaired in
+  place), with the reviewer independently re-implementing and
+  re-verifying the claim set. Mechanically verified per instance
+  (`C044`): every cycle, every cycle edge, every vertex-taut pair —
+  orders \(\le8\) exhaustive, order 13 in-class exhaustive, slices at
+  9–11, and all eight profile objects. The pre-registered kill rungs
+  were spent **before** the write-up and survived. Consequences:
+  \(\mathrm{Spec}(H)=T_1(H,a,b)\) and
+  \(\mathrm{Spec}(B)=T_1(H,a,b)\cup(S+2)\) hold **unconditionally**
+  for the case-(5b) residual object (`L048`(iii) upgrade — its entire
+  power-freeness is through-path arithmetic, every spectrum element a
+  trunk-split pair value); interference-completeness ⟺ vertex-tautness
+  on connected \(\delta\ge2\) graphs (`L050`); the pinched census and
+  the frontier dissection are instances. **The proof side of case (5b)
+  below order 36 is now exactly the forcing target (F).**
 
 Imported frontier facts, not a candidate:
 
@@ -389,15 +416,17 @@ lemmas remain in `A001` and `CLAIMS.md`.
   tautness-shaped; the calculus converts power-freeness into
   through-path arithmetic under completeness) and the floors moved to
   \(\ge20\) (`C043`, with the first-ever profile member at 19 doubly
-  excluded). What remains against case (5b), in order: the **T5
-  program** (kill rungs — the vertex-taut order-19 exemplar's full
-  cycle set, `smallworld 13`, sparse general orders 8–9 — then the
-  proof attempt: clean-window reroute + minimal-choice exchange, with
-  cycle-edge essentiality and weaving control as named
-  sub-obligations); the forcing target **(F)** (order-windowed
-  \([18,35]\), doubly calibrated); the ladder rung at order 20 (S022
-  follow-up stage B) and the `C038` kill rung at block orders 15–16;
-  and the disjoint longer-link descent (`A020` W2-T8(c)).
+  excluded). S023 then closed the T5 program itself: both remaining
+  kill rungs spent and survived (`C044`), **T5 proved** (`L049`,
+  trimming construction, audited `R002`) with the spectrum identity
+  unconditional (`L048`(iii) upgrade) and the biconditional a theorem
+  (`L050`). What remains against case (5b), in order: the forcing
+  target **(F)** — now the *entire* proof side below order 36
+  (order-windowed \([18,35]\), doubly calibrated, first move: the
+  power-collision realization tables of the ten named objects); the
+  ladder rungs at order 21 (\(\mathcal G\)) and 22 (min-degree-3);
+  the `C038` kill rung at block orders 15–16; and the disjoint
+  longer-link descent (`A020` W2-T8(c)).
 - `G013`: settle the atom question — find an assembly witness (disproof
   by `L025`/`L034` rings) or close the assembly channels by proving
   their necessary conditions. After `L026`–`L036` its live

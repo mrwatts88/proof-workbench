@@ -837,3 +837,49 @@ attempt, experiment, or review record.
   `problem.json`. Next action: the two remaining cheap T5 kill rungs
   (`smallworld 13`; sparse general 8–9), then the T5 proof attempt.
   Outlook unchanged at 7%.
+
+## 2026-07-25 — S023: T5 is a theorem — the interference program's gate is passed; (F) is now the whole case-(5b) proof side below 36
+
+- The two remaining pre-registered kill rungs ran **first** and
+  survived (`E023`/`C044`): `smallworld 13` exhaustive in-class
+  (class 10,966 = `A021`'s count; all 10,853 taut members pass on
+  1,614,300 cycles; **all 113 non-taut members fail** — the
+  biconditional exact at 13) and the general-graph probes (order
+  \(\le8\) **exhaustive** — 218,095 taut pairs and 36.8M cycles at
+  order 8 alone; cyclomatic-bounded slices at 9–11) — zero
+  non-decomposable cycles anywhere.
+- **T5 proved** (`A024`, offered and promoted as `L049`): every
+  vertex-taut pair is interference-complete, in trunk-identical arc
+  form with prescribed-edge freedom, via the **trimming
+  construction** — tautness forces the block chain; Menger's fan +
+  subdivision put a through-path through any prescribed cycle edge;
+  trimming it at its first/last cycle contacts and completing through
+  both arcs produces the witnessing pair. The recorded weaving
+  obstruction is discarded with the path's middle; Lemma A
+  (cycle-edge essentiality in taut pairs) is proved en route.
+  Corollaries (`L050` + `L048`(iii) upgrade): completeness ⟺
+  tautness on connected \(\delta\ge2\) graphs; the case-(5b)
+  residual object's spectrum identity is **unconditional**
+  (\(\mathrm{Spec}(B)=T_1\cup(S+2)\), every \(T_1\) element a
+  trunk-split pair value).
+- The proof was mechanically re-executed per instance (`E023
+  constructive`: every cycle, every cycle edge — orders 4–7 general,
+  8–9 slices, and the **eight profile objects** at 19–20 plus both
+  calibration graphs; 17.4M (cycle, edge) instances, zero assertion
+  failures; CPython cross-checks identical).
+- **Adversarial review delegated and passed** (`R002`, fresh-context
+  subagent, independence mode `delegated-subagent`): PASS at lemma
+  level, 0 critical / 0 major, 2 minor + 6 notes — all eight repaired
+  in place (splice rescoped as a standalone chain-splice lemma; the
+  dense-run citation repaired to its landed figures; scope/symmetry
+  clauses added; \(a\ne b\) made explicit; trunk-split defined; two
+  block facts itemized in the references note). The reviewer re-ran
+  every recorded command outside the repository and re-verified the
+  claim set with a fully independent implementation (all labelled
+  graphs through order 6; the ten named objects).
+- Ledgers reconciled: `L049`/`L050`/`C044` new; `C042`/`L048`
+  updated; `G015`/`G013`(a) rewritten; `PROOF.md`; `DECISIONS.md`;
+  `references/textbook-classics-2026-07-25.md` (Menger \(k=2\)/
+  Whitney + block facts, precise statements). Next action: the (F)
+  program's first falsifiable move — the power-collision realization
+  tables of the ten named objects. Outlook: 7% → 8%.

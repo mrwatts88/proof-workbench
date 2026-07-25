@@ -1,0 +1,21 @@
+{
+ "recorded": {
+  "orders": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "pairs": 19476,
+  "taut_pairs": 12313,
+  "cycles_tested": 723926,
+  "non_decomposable": 0
+ },
+ "reproduced": {
+  "pairs": 19476,
+  "taut_pairs": 12313,
+  "cycles_tested": 723926,
+  "non_decomposable": 0
+ },
+ "interpreter": "pypy 3.11.15"
+}

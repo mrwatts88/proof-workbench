@@ -1,0 +1,14 @@
+{
+ "runs": [
+  {
+   "label": "slice_n8_sparse",
+   "geng": "geng -q -c 8 8:12",
+   "graphs": 2794,
+   "taut_pairs": 25907,
+   "cycle_instances": 399120,
+   "edge_instances": 2008186,
+   "seconds": 10.2
+  }
+ ],
+ "interpreter": "pypy 3.11.15"
+}

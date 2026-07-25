@@ -1,0 +1,115 @@
+{
+ "runs": [
+  {
+   "label": "petersen-e",
+   "order": 10,
+   "terminals": [
+    0,
+    1
+   ],
+   "cycle_instances": 29,
+   "edge_instances": 204,
+   "seconds": 0.0
+  },
+  {
+   "label": "M?AA@?WcKWHOWOL??",
+   "order": 14,
+   "terminals": [
+    6,
+    7
+   ],
+   "cycle_instances": 64,
+   "edge_instances": 624,
+   "seconds": 0.0
+  },
+  {
+   "label": "R???C@?GC_B?@_aAA_aP?W_?BO@Gc?",
+   "order": 19,
+   "terminals": [
+    7,
+    8
+   ],
+   "cycle_instances": 411,
+   "edge_instances": 5530,
+   "seconds": 0.1
+  },
+  {
+   "label": "S???C@?G?_OGQ?@_S_?W_CW?AgA_S@Ca?",
+   "order": 20,
+   "terminals": [
+    4,
+    11
+   ],
+   "cycle_instances": 766,
+   "edge_instances": 11154,
+   "seconds": 0.1
+  },
+  {
+   "label": "S????A?O@_D?@_@O@PCP?oO?PO@CKAGa?",
+   "order": 20,
+   "terminals": [
+    3,
+    8
+   ],
+   "cycle_instances": 774,
+   "edge_instances": 11226,
+   "seconds": 0.1
+  },
+  {
+   "label": "S??CA?_C?O?___oOKO@`?EC?HG?GK?Go?",
+   "order": 20,
+   "terminals": [
+    8,
+    11
+   ],
+   "cycle_instances": 350,
+   "edge_instances": 4802,
+   "seconds": 0.1
+  },
+  {
+   "label": "S????A?O@_@_?oIABODC?S@?@a?H_CA_?",
+   "order": 20,
+   "terminals": [
+    1,
+    5
+   ],
+   "cycle_instances": 572,
+   "edge_instances": 8168,
+   "seconds": 0.1
+  },
+  {
+   "label": "S???C@?G?_P?B?@_@OQH?WO?PO?cQD?g?",
+   "order": 20,
+   "terminals": [
+    8,
+    10
+   ],
+   "cycle_instances": 648,
+   "edge_instances": 9045,
+   "seconds": 0.1
+  },
+  {
+   "label": "S???C@?G?_P?B?@_@OQGAGc?p?ABOC_W?",
+   "order": 20,
+   "terminals": [
+    8,
+    9
+   ],
+   "cycle_instances": 648,
+   "edge_instances": 9045,
+   "seconds": 0.1
+  },
+  {
+   "label": "S???C@?G?_P?B?oO?S`B?@__SO@?o?s??",
+   "order": 20,
+   "terminals": [
+    1,
+    10
+   ],
+   "cycle_instances": 492,
+   "edge_instances": 7068,
+   "seconds": 0.1
+  }
+ ],
+ "interpreter": "pypy 3.11.15"
+}

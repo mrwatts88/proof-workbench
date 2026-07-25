@@ -1,0 +1,41 @@
+{
+ "runs": [
+  {
+   "label": "general_n4",
+   "geng": "geng -q -c 4 0:6",
+   "graphs": 6,
+   "taut_pairs": 20,
+   "cycle_instances": 68,
+   "edge_instances": 234,
+   "seconds": 0.0
+  },
+  {
+   "label": "general_n5",
+   "geng": "geng -q -c 5 0:10",
+   "graphs": 21,
+   "taut_pairs": 119,
+   "cycle_instances": 1153,
+   "edge_instances": 4517,
+   "seconds": 0.1
+  },
+  {
+   "label": "general_n6",
+   "geng": "geng -q -c 6 0:15",
+   "graphs": 112,
+   "taut_pairs": 979,
+   "cycle_instances": 24258,
+   "edge_instances": 109341,
+   "seconds": 0.5
+  },
+  {
+   "label": "general_n7",
+   "geng": "geng -q -c 7 0:21",
+   "graphs": 853,
+   "taut_pairs": 11195,
+   "cycle_instances": 698447,
+   "edge_instances": 3613040,
+   "seconds": 17.1
+  }
+ ],
+ "interpreter": "pypy 3.11.15"
+}
