@@ -695,3 +695,32 @@ attempt, experiment, or review record.
   arithmetic retirement; MO rejection); `STATE.md` rewritten;
   `problem.json`/index; `PROJECT_STATE.md`.
 - No proved row was falsified. `C001` stays `open`. Outlook 5% → 6%.
+
+## 2026-07-24 — S021 follow-up harvest: order 20 empty (counterexamples ≥ 21), bipartite 24 empty, MO figures reproduced exactly
+
+- The close-of-session background runs completed in-conversation and
+  were harvested per the S019 precedent (single reconciliation commit).
+- Stage A: stock-geng recount at order 20 — 510,489 connected cubic
+  (= A002851) and 36,101 \(C_4\)-free cubic — **both MO-512914 figures
+  exact**; MO-1/MO-2 upgraded to corroborated, MO-4 (the invalid
+  inference) moot.
+- Stage B: `genc48 -c -f -d3 20 30:190`, 16/16 parts, **empty** —
+  `C040` extends to orders 14–20; **`L047`: every counterexample has
+  at least 21 vertices**; extremal window \([21,24]\).
+- Stage C: `genc48 -c -f -b -d2 24 35:276`, 16/16 parts, **empty** —
+  `C034` extends through order 24 (25 with a pendant); first bipartite
+  order covered by generation rather than genbg.
+- Order-18 audit slice 11/24 landed clean (24,452,192 graphs, zero
+  \(C_8\)-free): all three sampled slices (38.7M, ~24% of the stream)
+  agree with the generator.
+- Mid-wait user input recorded: the `G014` item-2 source title
+  (Nowbandegani et al., "An Experimental Result on the Erdős–Gyárfás
+  Conjecture in Bipartite Graphs") added to the obligation with the
+  scope note that the reported \(\ge32\) bound covers only
+  all-degrees-\(\ge3\) bipartite graphs — it does not touch the
+  gadget class at 24–31, so the S016 de-gating stands.
+- Ledgers reconciled: `C034`/`C040`/`L047`, the MO reference audit,
+  `OBLIGATIONS.md`, `PROOF.md`, `STATE.md`, `PROJECT_STATE.md`,
+  `problem.json` (next action: interference dissection + ladder
+  18/19; Tier 3: kill rung, cubic 26/28, min-degree-3 21, bipartite
+  25/26). S021 addendum records the harvest. Outlook unchanged (6%).

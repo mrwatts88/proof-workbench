@@ -46,13 +46,15 @@ Established preliminary reductions, none sufficient for the main claim:
 - `L022`: every counterexample has at least nineteen vertices (the
   order-18 census extension `C023`: all \(834{,}711{,}846\) connected
   \(C_4\)-free minimum-degree-\(3\) graphs on \(18\) vertices contain a
-  \(C_8\)); superseded in constant by `L047` (S021): **every
-  counterexample has at least twenty vertices**, and the smallest
-  \(\{C_4,C_8\}\)-free minimum-degree-\(3\) graph has between \(20\)
-  and \(24\) vertices (`C040`: the dedicated generator finds the class
-  empty at orders 14–19, with full stream cross-checks at 12–17, the
-  cubic-24 positive control, and sampled stream slices at 18; the
-  18/19 caveat is recorded on the row).
+  \(C_8\)); superseded in constant by `L047` (S021, harvest-updated same day):
+  **every counterexample has at least twenty-one vertices**, and the
+  smallest \(\{C_4,C_8\}\)-free minimum-degree-\(3\) graph has between
+  \(21\) and \(24\) vertices (`C040`: the dedicated generator finds
+  the class empty at orders 14–20, with full stream cross-checks at
+  12–17, the cubic-24 positive control, three sampled stream slices at
+  18 covering ~24% of that stream, and a triple-instrument agreement
+  on the order-20 cubic sub-slice; the 18–20 caveat is recorded on the
+  row).
 - `L019`–`L021`: the voltage-lift machinery (projection certificate,
   tree gauge, abelian commutator obstruction) — unconditional tool
   lemmas from the falsification program, not reductions of `C001`; with
@@ -190,7 +192,7 @@ Established preliminary reductions, none sufficient for the main claim:
   M3's "instance, not equivalence" reading. It does **not** extend to
   the odd-prime-gcd channel: \(\Theta(3,3,3)\) is vertex-taut,
   non-bipartite, with \(S=\{3\}\). Finite status (`C034`, `E015`): the
-  bipartite class is empty of power-free members through order 23
+  bipartite class is empty of power-free members through order 24
   (24 with a pendant; the order-22 leg completed in S018 and the
   order-23 leg in the S019 follow-up harvest — at 23, all 928,562
   members carry both a \(C_8\) and a \(C_{16}\)), every member at
@@ -356,7 +358,7 @@ lemmas remain in `A001` and `CLAIMS.md`.
   (\(S\subseteq\{2,3,4\}\), \(4\in S\)) the last \(C_4\)-only gap
   below it. (c) the **congruence channels** (`L034`), now split by
   `L035`: the all-odd and mod-4 channels **are** the bipartite class,
-  searched exhaustively and empty through order 23 (`C034`), so what
+  searched exhaustively and empty through order 24 (`C034`), so what
   survives in (c) is the odd-prime-gcd channel — not bipartite-forced,
   no structure theorem, no reduction, no dedicated search — together
   with the missing parity analogue of `L032`'s 2-connected block

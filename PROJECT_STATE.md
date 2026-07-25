@@ -232,7 +232,7 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 For `P-002`, keep working **Tier 1: exclude case (5b)** — now a single
 2-connected configuration below order 36 (`L046`), with the search
-instrument built (`E019`) and the atom/counterexample floors at 19/20
+instrument built (`E019`) and the atom/counterexample floors at 19/21
 (`C039`, `L047`). **First action: harvest the S021 background
 follow-up** (`E019/data/followup_s021.json` — MO recount; min-degree-3
 order 20; bipartite order 24 — plus the pending order-18 audit slice);

@@ -347,3 +347,38 @@ cheaper rungs are spent.
 
 This is a subjective research outlook, not mathematical evidence or a claim-status
 promotion.
+
+## Follow-up harvest addendum (same day, 2026-07-24)
+
+The close-of-session background runs completed and were harvested in
+the same conversation (fresh reconciliation commit; the S019
+follow-up-harvest precedent):
+
+- **Order-18 audit slice, part 11/24** (the third and largest sampled
+  slice): 24,452,192 stream graphs, zero \(C_8\)-free — all three
+  sampled slices (38,744,628 graphs, ~24% of the order-18 stream)
+  agree with the generator.
+- **Stage A (MO-512914 recount, stock geng):** 510,489 connected cubic
+  graphs at order 20 (= A002851) and 36,101 \(C_4\)-free — **both MO
+  figures reproduced exactly**; MO-1/MO-2 upgraded to corroborated in
+  the reference audit. The thread's inference (MO-4) stays rejected
+  and is now moot.
+- **Stage B (min-degree-3 order 20, `genc48`, 16/16 parts, 3,272 s
+  wall):** **empty** — `C040` extends to 14–20 and `L047` lifts to
+  **every counterexample has \(\ge21\) vertices** (window
+  \([21,24]\)).
+- **Stage C (bipartite order 24, `genc48 -b`, 16/16 parts, 925 s
+  wall):** **empty** — `C034` extends through order 24 (25 with a
+  pendant); no bipartite counterexample, no bipartite tight 1-atom at
+  24; first order covered by generation rather than genbg.
+
+Ledger deltas in the harvest commit: `C040`/`L047`/`C034` rows
+updated; `references/mathoverflow-512914-audit-2026-07-24.md` MO-1/2
+upgraded; `OBLIGATIONS.md` (`G013` bipartite range, `G014` item-2
+range 25–31 and the item-2 source title supplied by the user mid-wait,
+plus the scope note that the \(\ge32\) bound covers only all-degrees-
+\(\ge3\) bipartite graphs, not the gadget class); `PROOF.md`,
+`STATE.md`, `PROJECT_STATE.md`, `problem.json` next action
+(harvest-first removed; interference dissection + ladder 18/19
+primary). Resolution outlook unchanged from the session close (6%);
+the harvest landed exactly as projected.

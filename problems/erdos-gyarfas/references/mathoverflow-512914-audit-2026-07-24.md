@@ -56,10 +56,17 @@
 
 | item | statement | strength here |
 |---|---|---|
-| MO-1 | connected cubic count at order 20 is 510,489 (A002851) | corroborated (stage A recount pending only as formality) |
-| MO-2 | 36,101 of them are C4-free | reported; stage A recount pending |
+| MO-1 | connected cubic count at order 20 is 510,489 (A002851) | **corroborated exactly** (stage A recount, stock geng: 510,489) |
+| MO-2 | 36,101 of them are C4-free | **corroborated exactly** (stage A recount, stock geng `-f`: 36,101) |
 | MO-3 | no {C4,C8}-free cubic graph on 20 vertices | reported and independently corroborated by `E019` (probe cubic, order 20 = 0) |
-| MO-4 | no {C4,C8}-free min-degree-3 graph on 20 vertices | **not usable**: rests on an unread claimed reduction whose general form is the open `G015`; superseded by the internal stage-B run once harvested |
+| MO-4 | no {C4,C8}-free min-degree-3 graph on 20 vertices | the *inference* in the quote remains **not usable** (unread claimed reduction; its general form is the open `G015`) — but the *statement* is now **established internally without it**: stage B of the harvest (`followup_s021.json`) finds the class empty at order 20 by direct generation, 16/16 parts. `C040`/`L047` carry it; nothing rests on this thread |
+
+**Harvest note (same day):** stage A reproduced MO-1 and MO-2 exactly, so
+the answerer's raw computation is fully corroborated; only the quoted
+cubic→min-degree-3 inference stays rejected. Reading the thread body
+(the question's claimed "reduction", other answers) remains the named
+follow-up for `G014` item (7), now of purely archival interest for this
+order since stage B superseded the conclusion.
 
 Nothing from this thread may support a proof step beyond the strengths above.
 The thread should be re-read in full (question body, all answers, comments,

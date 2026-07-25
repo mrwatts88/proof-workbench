@@ -1,6 +1,6 @@
 # Current state
 
-- Last updated: 2026-07-24 (S021 — orchestrated parallel legs: the
+- Last updated: 2026-07-24 (S021 + same-day follow-up harvest — orchestrated parallel legs: the
   chain-cancellation tension is now a theorem package and the chain
   case is empty below order 36; the dedicated \(\{C_4,C_8\}\)-free
   generator is built, verified, and has already emptied order 17)
@@ -98,14 +98,18 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   \(\ge19\), \(\mathcal G\)-members \(\ge18\), `C027`'s whole class
   empty through 17; at the boundary (three degree-2 vertices, orders
   16–17) \(C_{16}\) is decisive — the first time in the dossier.
-  Flagged min-degree-3 sweep audited (orchestrator slice checks at 18):
-  **no \(\{C_4,C_8\}\)-free \(\delta\ge3\) graph through order 19**
-  (`C040`), so **every counterexample has \(\ge20\) vertices**
-  (`L047`, extremal window now \([20,24]\)). External input: the
-  MathOverflow-512914 quote (user-supplied) — cubic-20 figures
-  corroborated, its cubic→min-degree-3 step **rejected** (that
-  inference is the open `G015`); internal order-20 run launched as the
-  follow-up instead.
+  Flagged min-degree-3 sweep audited (orchestrator slice checks at 18,
+  three parts, 38.7M stream graphs, all clean) and extended by the
+  same-day follow-up harvest to order 20: **no
+  \(\{C_4,C_8\}\)-free \(\delta\ge3\) graph through order 20**
+  (`C040`), so **every counterexample has \(\ge21\) vertices**
+  (`L047`, extremal window now \([21,24]\) — four orders wide). The
+  same harvest emptied the bipartite class at order 24 on the new
+  instrument (`C034` extended; clean through 24, 25 with a pendant).
+  External input: the MathOverflow-512914 quote (user-supplied) —
+  cubic-20 figures now reproduced *exactly* (510,489 / 36,101, stage
+  A), its cubic→min-degree-3 step **rejected** (that inference is the
+  open `G015`) and superseded by the internal stage-B run.
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -157,7 +161,7 @@ and only case (5b) remains. Empty through order 15 stream-level
 (`C036`, S020), and through order 17 for `C027`'s **entire class** by
 the dedicated generator (`C039`, S021)** — every tight 1-atom has
 order \(\ge19\), every \(\mathcal G\)-member \(\ge18\); no bipartite
-tight 1-atom through order 23 (`C034`). The congruence-obstruction leg
+tight 1-atom through order 24 (`C034`, S021 harvest). The congruence-obstruction leg
 is retired (`C037`/`A021`) and the chain-cancellation leg is **spent
 as a theorem** (S021, `L043`–`L046`): the tension cannot exclude the
 chain case by arithmetic alone (`L045`), but per-block order bounds
@@ -189,7 +193,7 @@ constructions died to the cascade obstruction (`A015`).
 (c) The **congruence channels**, now **split by `L035`**. Channels (i)
 (all-odd \(S\)) and (iii) (\(S\subseteq2+4\mathbb Z\)) *are* the
 bipartite class, and `E015`/`C034` searched it exhaustively: **no
-power-free member at any order \(\le23\)** (\(\le24\) with a pendant),
+power-free member at any order \(\le24\)** (\(\le25\) with a pendant),
 with every member of the class carrying a \(C_8\) and the minimum
 \(C_8\) count never dropping below 13 — so the \(C_{16}\) test is never
 even decisive, and this channel is *further* from a witness than the
@@ -316,7 +320,7 @@ conditional.
 
 - **Bipartite EGC** (Thread E): every bipartite \(\delta\ge3\) graph has
   a power-of-two cycle. `L035` fixes the class (girth \(\ge6\)
-  bipartite), `C034` gives an internally verified base through order 23,
+  bipartite), `C034` gives an internally verified base through order 24,
   and the naive "\(C_8\) always" form is *false* at large order
   (bipartite double covers of `C009`'s large-girth cubic graphs), so any
   proof must be order-bounded or consume \(C_{16}/C_{32}\). Reported
@@ -332,7 +336,7 @@ conditional.
 
 Harvest-only. None of these may be a session's primary work.
 
-- Bipartite hunt (`E015`): clean through order 23 (24 with a pendant;
+- Bipartite hunt (`E015`): clean through order 24 (25 with a pendant;
   S019 follow-up harvest). **The instrument switched in S021**: `E019`'s
   generator with `-b` beats genbg from order ~22 (476.7 s vs 2,798 s at
   22; measured empty at every even order 14–22), and the **order-24 leg
@@ -477,16 +481,21 @@ first production run emptied size 17 in forty seconds of wall clock
 (the dangerous object now needs at least 19 vertices), and as a
 by-product it swept the "minimum degree three" world — where any
 counterexample to the whole conjecture must live — up through 19
-vertices: empty, so **every counterexample to the conjecture now needs
-at least 20 vertices**, one better than the previous record, with the
-first unchecked orders independently spot-audited against the old
-instrument. A reader-supplied MathOverflow thread claimed 20 was
-already settled; auditing it showed its cubic computation is right
-(and matches ours) but its leap from "no cubic example" to "no example
-at all" silently assumes the very theorem this programme is trying to
-prove. Our own size-20 run — which needs no such assumption — was
-launched in the background at session close, alongside the bipartite
-size-24 leg on the new machine.
+vertices: empty, with the first unchecked orders independently
+spot-audited against the old instrument (three slices, 38.7 million
+graphs, all agreeing). A reader-supplied MathOverflow thread claimed
+size 20 was already settled; auditing it showed its cubic computation
+is right (and matches ours) but its leap from "no cubic example" to
+"no example at all" silently assumes the very theorem this programme
+is trying to prove — so we rejected that step and ran our own size-20
+sweep, which needs no such assumption. It landed the same evening,
+empty: **every counterexample to the conjecture now needs at least 21
+vertices**, two better than the previous record, and the extremal
+window is down to four sizes, 21 through 24. The same evening's runs
+also emptied bipartite size 24 on the new machine (that class is now
+clean through 24) and reproduced the thread's two cubic counts to the
+digit — their computation was right, their inference was the only gap,
+and nothing now rests on it.
 
 ## Resolution outlook
 
@@ -501,8 +510,8 @@ size-24 leg on the new machine.
   are already on disk); the instrument exists, is verified, and prices
   the entire near ladder in minutes-to-hours, with Tier 0's best
   counterexample ticket (cubic order 30) at ~2.3 days for the first
-  time; the counterexample floor moved to 20 with the extremal window
-  \([20,24]\) tightening the cubic-30 case. Against, unchanged: no
+  time; the counterexample floor moved to 21 with the extremal window
+  \([21,24]\) tightening the cubic-30 case. Against, unchanged: no
   mechanism yet forces a specific power length at \(\delta\ge3\)
   (Tier 0's proof side), the interference lever is still a question
   rather than a theorem, and every emptiness result makes a small
@@ -521,11 +530,12 @@ size-24 leg on the new machine.
 3. `E019/README.md` (the generator: completeness argument, anchors,
    the order-17 verdict, the min-degree-3 sweep, the ladder prices)
    and `E020/README.md` (the kill test and its 15/16 frontier)
-4. **First action: harvest `E019/data/followup_s021.json`** (stage A:
-   MO-512914 recount; stage B: min-degree-3 order 20; stage C:
-   bipartite order 24) — launched at S021 close, not citable until
-   read; `references/mathoverflow-512914-audit-2026-07-24.md` for what
-   may and may not be imported from that thread
+4. `E019/data/followup_s021.json` — the S021 follow-up, **harvested
+   same day** (stage A: MO figures reproduced exactly; stage B:
+   min-degree-3 order 20 empty → `L047` at 21; stage C: bipartite 24
+   empty → `C034` through 24);
+   `references/mathoverflow-512914-audit-2026-07-24.md` for what may
+   and may not be imported from that thread
 5. `A021` (the congruence kill and the Petersen\(-e\) calibration
    discipline; still binding on every case-(5b) argument)
 6. `CLAIMS.md` rows `L043`–`L047`, `C038`–`C040` (and `L039`–`L042`
