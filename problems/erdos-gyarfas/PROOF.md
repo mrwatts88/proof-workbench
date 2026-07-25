@@ -231,12 +231,17 @@ Established preliminary reductions, none sufficient for the main claim:
   and every tight 1-atom has order \(\ge17\) unconditionally — improved
   to **\(\ge18\)** by the S020 order-16 scan (`C036`, `E018`: the
   \(\mathcal G\) profile at order 16 is 29,713,305 graphs, every one
-  \(C_8\)-blocked, none power-free), and to **\(\ge19\)** by the S021
+  \(C_8\)-blocked, none power-free), to **\(\ge19\)** by the S021
   order-17 run of the dedicated \(\{C_4,C_8\}\)-free generator
   (`C039`, `E019`: the whole \(\{C_4,C_8\}\)-free class at 17 is 2,580
   graphs, none with fewer than three degree-2 vertices; `C027`'s
-  \(\le2\)-sub-cubic class is empty at 16 and 17 outright). Every
-  \(\mathcal G\)-member has order \(\ge18\).
+  \(\le2\)-sub-cubic class is empty at 16 and 17 outright), and to
+  **\(\ge20\)** by the S022 ladder rungs (`C043`, `E022`: order 18 is
+  profile-empty; order 19's unique profile member — the first ever —
+  is \(C_{16}\)-blocked and \(S\)-condition-violating; the
+  one-degree-2 bucket is empty at 18 and 19, so the atom bound also
+  holds **directly by generation**, without the case analysis). Every
+  \(\mathcal G\)-member has order \(\ge20\).
 - `L042`: the residual object (case (5b)) is 2-connected, has
   independent degree-\(\ge4\) vertices, is **non-bipartite** (a hand
   proof, at every order, of what `C034` verified through 22), carries
@@ -277,6 +282,36 @@ Established preliminary reductions, none sufficient for the main claim:
   order \(\le14\) (`C038`, kill refuted in range, single mechanism: the
   forced sum 14); the first abstract solutions appear at block orders
   15–16, which is the named kill rung.
+- `L048` + `C041`–`C043` (S022): the surviving lever **mapped and
+  armed**. The interference dissection of the closest known objects
+  landed the interference outcome — all 553 blocking
+  \(C_8\)/\(C_{16}\)s of the min-\(C_8\) exemplars (orders 14–16,
+  exhaustively extracted) and the three-degree-2 \(C_{16}\) boundary
+  (16–17) are two-through-path symmetric differences, for every
+  admissible terminal reading; the recorded non-interference pivot
+  trigger did not fire (`C041`). The property is empirically **exactly
+  vertex-tautness-shaped**: complete biconditional on the profile
+  class at orders 10–12 and zero failures over all vertex-taut pairs
+  of all connected graphs of orders 4–7 (`C042`), with the necessity
+  direction proved (`L048`(i): interference cycles are confined to the
+  essential subgraph). The calculus itself is fixed by `L048`:
+  interference is the \(t=1\), leak-**pinned** case of the `A021` T1
+  identity — a realization statement, not a residue statement, so it
+  survives both kill theorems — and under interference-completeness
+  the closure spectrum factors as
+  \(\mathrm{Spec}(B)=T_1(H,a,b)\cup(S+2)\): the tight 1-atom's entire
+  power-freeness becomes arithmetic of the through-path system, the
+  same object the forced memberships constrain. The candidate lemma
+  ("vertex-taut \(\Rightarrow\) interference-complete", `A023` T5) and
+  the order-windowed forcing target (F) (`A023` T6, calibrated on
+  Petersen\(-e\) and the new order-14 exemplar) are recorded as
+  labelled conjecture and program, not results. The search ladder
+  moved the floors in parallel: order 18 profile-empty, order 19 the
+  first nonempty profile rung with its unique member — vertex-taut,
+  2-connected, non-bipartite — excluded twice over
+  (\(C_{16}\)-blocked and \(S\ni6,14\)), so **every tight 1-atom and
+  every \(\mathcal G\)-member has order \(\ge20\)** (`C043`, direct
+  and via `L041`).
 
 Imported frontier facts, not a candidate:
 
@@ -337,12 +372,22 @@ lemmas remain in `A001` and `CLAIMS.md`.
   and converted into the order dichotomy: the chain case is empty below
   \(n_0=36\), so the residual object is 2-connected there), and the
   search rung moved to order 17 and came back empty by the new
-  dedicated generator (`C039`: tight 1-atoms \(\ge19\)). What remains
-  against case (5b): the 2-connected branch's \(C_8\)-interference
-  structure (the `C037` diagnosis; `L044` saturation at filter
-  strength), the `E019` search ladder at orders 18–20, the `C038` kill
-  rung at block orders 15–16, and the disjoint longer-link descent
-  (`A020` W2-T8(c)).
+  dedicated generator (`C039`: tight 1-atoms \(\ge19\)). S022 ran the
+  interference lever and the next two rungs to verdicts: the
+  interference model survived its frontier kill test in full
+  (`C041`/`C042`/`L048` — every blocker decomposes; the property is
+  tautness-shaped; the calculus converts power-freeness into
+  through-path arithmetic under completeness) and the floors moved to
+  \(\ge20\) (`C043`, with the first-ever profile member at 19 doubly
+  excluded). What remains against case (5b), in order: the **T5
+  program** (kill rungs — the vertex-taut order-19 exemplar's full
+  cycle set, `smallworld 13`, sparse general orders 8–9 — then the
+  proof attempt: clean-window reroute + minimal-choice exchange, with
+  cycle-edge essentiality and weaving control as named
+  sub-obligations); the forcing target **(F)** (order-windowed
+  \([18,35]\), doubly calibrated); the ladder rung at order 20 (S022
+  follow-up stage B) and the `C038` kill rung at block orders 15–16;
+  and the disjoint longer-link descent (`A020` W2-T8(c)).
 - `G013`: settle the atom question — find an assembly witness (disproof
   by `L025`/`L034` rings) or close the assembly channels by proving
   their necessary conditions. After `L026`–`L036` its live

@@ -724,3 +724,54 @@ attempt, experiment, or review record.
   `problem.json` (next action: interference dissection + ladder
   18/19; Tier 3: kill rung, cubic 26/28, min-degree-3 21, bipartite
   25/26). S021 addendum records the harvest. Outlook unchanged (6%).
+
+## 2026-07-24 — S022: orchestrated parallel legs — the interference model survives its frontier kill test, the calculus is fixed, the first profile object appears at 19, the atom floors move to 20
+
+- Orchestrated run (third of its kind): W1 (`fable`) on the proof-side
+  interference dissection (`A023`/`E021`), W2 (`opus`) on the
+  \(\mathcal G\)-profile ladder at orders 18–19 (`E022`); this session
+  held every ledger, audited both reports (anchors re-run, three W1
+  sample claims and the W2 exemplar re-derived with independently
+  written code, probes re-run exact), and integrated only what
+  survived.
+- On entry (user-requested): repaired `PROJECT_STATE.md`, which still
+  carried the pre-harvest "first harvest the S021 follow-up" next
+  action and bullet tail; no mathematical content changed.
+- Proof side (`C041`/`C042`/`L048`, from `A023`/`E021`): all **553**
+  blocking \(C_8/C_{16}\)s of the closest known objects — the
+  min-\(C_8\) exemplars at 14–16 (exhaustively re-extracted: 11/20/103
+  graphs with \(\le3\) \(C_8\)s; `E018` recorded only the statistic)
+  and the three-degree-2 \(C_{16}\) boundary at 16–17 — are
+  **two-through-path symmetric differences**; the non-interference
+  pivot trigger did **not** fire. The property is empirically exactly
+  vertex-tautness-shaped (biconditional at orders 10–12; zero failures
+  over all 12,313 taut pairs of all connected graphs of orders 4–7),
+  with necessity proved (`L048`(i)). `L048` fixes the calculus:
+  interference = the \(t=1\), leak-pinned case of `A021` T1, and under
+  completeness \(\mathrm{Spec}(B)=T_1(H,a,b)\cup(S+2)\) — power-
+  freeness becomes through-path arithmetic, the genre surviving
+  `C037`/`L045`. Candidate lemma T5 and forcing target (F) recorded as
+  labelled conjecture/program with ordered kill tests; new second
+  calibration object `M?AA@?WcKWHOWOL??` (order 14, full membership
+  triple, 3 interference \(C_8\)s).
+- Search side (`C043`, from `E022`): 146 anchors re-passed under both
+  interpreters before production (byte-identical to `E019`'s). Order
+  18: class 108,447, **profile empty**. Order 19: class 74,589,
+  **profile = 1** — the first nonempty rung ever —
+  `R???C@?GC_B?@_aAA_aP?W_?BO@Gc?`, vertex-taut, 2-connected,
+  non-bipartite, **\(C_{16}\)-blocked (46) and \(S\)-violating
+  (\(6,14\in S\)) independently**. Order-18 unsplit count exact;
+  order-19 16-vs-24 dual-split labelg set-equal; 2,233 near-boundary
+  graphs spot-checked by the brute-force enumerator; 0- and 1-buckets
+  empty at both orders (different-tree corroboration of `C040`'s two
+  flagged orders; direct tight-1-atom exclusion). **Every tight 1-atom
+  and every \(\mathcal G\)-member has order \(\ge20\).**
+- Close-of-session background follow-up (`E022/followup_s022.py`,
+  results not citable until harvested): stage A — the order-19
+  exemplar's full cycle set against T5 (it is vertex-taut, so a single
+  non-decomposable cycle kills the lemma at the most relevant object);
+  stage B — the order-20 profile rung (\(\approx\)2.5–3 h, 8
+  workers); stage C — the order-19 unsplit count.
+- Ledgers reconciled: `CLAIMS.md` (`L048`, `C041`–`C043`),
+  `OBLIGATIONS.md` (`G015`, `G013`(a)), `PROOF.md`, `DECISIONS.md`,
+  `STATE.md`, `problem.json`, index. Outlook 6% → 7%.

@@ -1,0 +1,116 @@
+{
+ "order": 19,
+ "part": "17/24",
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 19 28:171 17/24",
+ "generated_c4c8_free": 484,
+ "profile": 0,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_in_profile": 0,
+ "max_edges_in_class": 29,
+ "deg2_hist": {
+  "3": 28,
+  "4": 105,
+  "5": 136,
+  "6": 99,
+  "7": 71,
+  "8": 37,
+  "9": 6,
+  "10": 2
+ },
+ "min_deg2_in_class": 3,
+ "power_free_in_class": 76,
+ "power_free_deg2_hist": {
+  "5": 12,
+  "6": 24,
+  "7": 3,
+  "8": 29,
+  "9": 6,
+  "10": 2
+ },
+ "power_free_min_deg2": 5,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 745649777,
+  "rejects": 717758963,
+  "out": 484,
+  "cpu": 264.15
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 8,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 27,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 88,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 444,
+   "rejects": 2
+  },
+  "11": {
+   "calls": 2620,
+   "rejects": 116
+  },
+  "12": {
+   "calls": 3384,
+   "rejects": 473
+  },
+  "13": {
+   "calls": 24257,
+   "rejects": 12461
+  },
+  "14": {
+   "calls": 255474,
+   "rejects": 185249
+  },
+  "15": {
+   "calls": 2773912,
+   "rejects": 2415419
+  },
+  "16": {
+   "calls": 22646326,
+   "rejects": 21130320
+  },
+  "17": {
+   "calls": 125292458,
+   "rejects": 119854300
+  },
+  "18": {
+   "calls": 518216915,
+   "rejects": 497727888
+  },
+  "19": {
+   "calls": 76433856,
+   "rejects": 76432735
+  }
+ },
+ "verify_all": true,
+ "seconds": 266.0,
+ "interpreter": "3.11.15/PyPy"
+}

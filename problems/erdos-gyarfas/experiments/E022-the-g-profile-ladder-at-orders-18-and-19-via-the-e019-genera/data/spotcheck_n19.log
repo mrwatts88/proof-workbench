@@ -1,0 +1,1 @@
+spotcheck n=19: 1421 graphs with <=4 degree-2 vertices re-verified by the brute-force spectrum enumerator (3.11.15/PyPy)

@@ -1,0 +1,56 @@
+{
+ "interpreter": "pypy 3.11.15",
+ "orders": {
+  "10": {
+   "class": 22,
+   "taut": 22,
+   "taut_cycles": 729,
+   "taut_cycles_nondec": 0,
+   "taut_nondec_by_stratum": {
+    "both": 0,
+    "one": 0,
+    "neither": 0
+   },
+   "taut_members_with_nondec": 0,
+   "nontaut_cycles": 0,
+   "nontaut_cycles_nondec": 0,
+   "nontaut_members_with_nondec": 0,
+   "taut_nondec_examples": [],
+   "seconds": 0.1
+  },
+  "11": {
+   "class": 125,
+   "taut": 124,
+   "taut_cycles": 6749,
+   "taut_cycles_nondec": 0,
+   "taut_nondec_by_stratum": {
+    "both": 0,
+    "one": 0,
+    "neither": 0
+   },
+   "taut_members_with_nondec": 0,
+   "nontaut_cycles": 27,
+   "nontaut_cycles_nondec": 26,
+   "nontaut_members_with_nondec": 1,
+   "taut_nondec_examples": [],
+   "seconds": 0.4
+  },
+  "12": {
+   "class": 1139,
+   "taut": 1120,
+   "taut_cycles": 101404,
+   "taut_cycles_nondec": 0,
+   "taut_nondec_by_stratum": {
+    "both": 0,
+    "one": 0,
+    "neither": 0
+   },
+   "taut_members_with_nondec": 0,
+   "nontaut_cycles": 1141,
+   "nontaut_cycles_nondec": 1122,
+   "nontaut_members_with_nondec": 19,
+   "taut_nondec_examples": [],
+   "seconds": 7.6
+  }
+ }
+}

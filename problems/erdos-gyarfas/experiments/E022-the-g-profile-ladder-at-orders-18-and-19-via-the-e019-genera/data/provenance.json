@@ -1,0 +1,12 @@
+{
+ "scan_py": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/scan.py",
+ "scan_py_sha256": "968421be062ceb40a969d1b82f7c5127e1a33189933a1c69dfa20c7874efe5d6",
+ "genc48": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48",
+ "genc48_sha256": "f0d9ca22a164838d9b2b6287e8d6f8abe6cc901a6cc369fb82de7f2f87ef341e",
+ "geng_reference": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/nauty2_9_3/geng",
+ "geng_reference_sha256": "440758302235ea0e6494d1cc8e1175f122bb9177be5d951ffe423200eaf11151",
+ "prune_c8_c_sha256": "0cbeb2e3876951cb6e1891da842ab1ea04837502349421307f67b7dc1a5111a4",
+ "labelg": "/opt/homebrew/bin/labelg",
+ "interpreter": "3.14.2/CPython",
+ "data_dir": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E022-the-g-profile-ladder-at-orders-18-and-19-via-the-e019-genera/data"
+}

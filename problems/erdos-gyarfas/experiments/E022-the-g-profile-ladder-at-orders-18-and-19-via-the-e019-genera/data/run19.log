@@ -1,0 +1,16 @@
+n=19 part=6/16 {C4,C8}-free=54 profile=0 c16_blocked=0 survivors=0 min#deg2=5 max_e=28 202.5s -> scan_n19_part6of16.json
+n=19 part=0/16 {C4,C8}-free=2410 profile=0 c16_blocked=0 survivors=0 min#deg2=4 max_e=29 271.1s -> scan_n19_part0of16.json
+n=19 part=8/16 {C4,C8}-free=26 profile=0 c16_blocked=0 survivors=0 min#deg2=5 max_e=28 137.7s -> scan_n19_part8of16.json
+n=19 part=1/16 {C4,C8}-free=1609 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=29 377.9s -> scan_n19_part1of16.json
+n=19 part=5/16 {C4,C8}-free=601 profile=0 c16_blocked=0 survivors=0 min#deg2=4 max_e=29 462.4s -> scan_n19_part5of16.json
+n=19 part=7/16 {C4,C8}-free=8609 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=29 701.0s -> scan_n19_part7of16.json
+n=19 part=10/16 {C4,C8}-free=773 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=29 413.9s -> scan_n19_part10of16.json
+n=19 part=2/16 {C4,C8}-free=3864 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=29 787.3s -> scan_n19_part2of16.json
+n=19 part=9/16 {C4,C8}-free=1060 profile=0 c16_blocked=0 survivors=0 min#deg2=4 max_e=29 812.0s -> scan_n19_part9of16.json
+n=19 part=4/16 {C4,C8}-free=12449 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=29 1142.5s -> scan_n19_part4of16.json
+n=19 part=11/16 {C4,C8}-free=7674 profile=0 c16_blocked=0 survivors=0 min#deg2=4 max_e=29 820.7s -> scan_n19_part11of16.json
+n=19 part=3/16 {C4,C8}-free=7145 profile=1 c16_blocked=1 survivors=0 min#deg2=2 max_e=29 1214.7s -> scan_n19_part3of16.json
+n=19 part=15/16 {C4,C8}-free=1049 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=28 530.1s -> scan_n19_part15of16.json
+n=19 part=12/16 {C4,C8}-free=5053 profile=0 c16_blocked=0 survivors=0 min#deg2=5 max_e=29 1023.2s -> scan_n19_part12of16.json
+n=19 part=14/16 {C4,C8}-free=10490 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=29 1000.7s -> scan_n19_part14of16.json
+n=19 part=13/16 {C4,C8}-free=11723 profile=0 c16_blocked=0 survivors=0 min#deg2=3 max_e=29 1329.1s -> scan_n19_part13of16.json

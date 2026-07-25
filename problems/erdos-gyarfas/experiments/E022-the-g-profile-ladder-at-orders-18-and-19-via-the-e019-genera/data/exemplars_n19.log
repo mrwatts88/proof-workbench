@@ -1,0 +1,89 @@
+order 19: 1 class member(s) with <=2 degree-2 vertices
+{
+ "g6": "R???C@?GC_B?@_aAA_aP?W_?BO@Gc?",
+ "n": 19,
+ "edges": 28,
+ "degree_sequence": [
+  4,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  2,
+  2
+ ],
+ "n_degree_2": 2,
+ "degree_2_vertices": [
+  7,
+  8
+ ],
+ "power_free": false,
+ "power_lengths_present": [
+  16
+ ],
+ "spectrum": [
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19
+ ],
+ "girth": 3,
+ "c16_count": 46,
+ "bipartite": false,
+ "cut_vertices": [],
+ "source_file": "class_n19_part3of16.txt",
+ "S": [
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18
+ ],
+ "S_hits_P_minus_2": [
+  6,
+  14
+ ],
+ "in_G": false,
+ "S_meets_P": [
+  8,
+  16
+ ],
+ "S_meets_P_minus_1": [
+  7,
+  15
+ ],
+ "ab_adjacent": false,
+ "ab_distance": 5
+}

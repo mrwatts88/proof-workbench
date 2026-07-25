@@ -1,0 +1,341 @@
+{
+ "checks": 146,
+ "interpreter": "3.14.2/CPython",
+ "comparisons": [
+  {
+   "variant": "d2",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2"
+   ],
+   "order": 8,
+   "genc48": 17,
+   "geng_stream": 28,
+   "geng_c8_free": 17,
+   "prune_calls": 150,
+   "prune_rejects": 15
+  },
+  {
+   "variant": "d2",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2"
+   ],
+   "order": 9,
+   "genc48": 55,
+   "geng_stream": 112,
+   "geng_c8_free": 55,
+   "prune_calls": 575,
+   "prune_rejects": 108
+  },
+  {
+   "variant": "d2",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2"
+   ],
+   "order": 10,
+   "genc48": 151,
+   "geng_stream": 533,
+   "geng_c8_free": 151,
+   "prune_calls": 2516,
+   "prune_rejects": 737
+  },
+  {
+   "variant": "d2",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2"
+   ],
+   "order": 11,
+   "genc48": 500,
+   "geng_stream": 3126,
+   "geng_c8_free": 500,
+   "prune_calls": 11777,
+   "prune_rejects": 5147
+  },
+  {
+   "variant": "d2",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2"
+   ],
+   "order": 12,
+   "genc48": 1644,
+   "geng_stream": 22707,
+   "geng_c8_free": 1644,
+   "prune_calls": 63689,
+   "prune_rejects": 36882
+  },
+  {
+   "variant": "d1",
+   "switches": [
+    "-c",
+    "-f",
+    "-d1"
+   ],
+   "order": 6,
+   "genc48": 19,
+   "geng_stream": 19,
+   "geng_c8_free": 19,
+   "prune_calls": 46,
+   "prune_rejects": 0
+  },
+  {
+   "variant": "d1",
+   "switches": [
+    "-c",
+    "-f",
+    "-d1"
+   ],
+   "order": 7,
+   "genc48": 57,
+   "geng_stream": 57,
+   "geng_c8_free": 57,
+   "prune_calls": 143,
+   "prune_rejects": 0
+  },
+  {
+   "variant": "d1",
+   "switches": [
+    "-c",
+    "-f",
+    "-d1"
+   ],
+   "order": 8,
+   "genc48": 175,
+   "geng_stream": 186,
+   "geng_c8_free": 175,
+   "prune_calls": 464,
+   "prune_rejects": 15
+  },
+  {
+   "variant": "d1",
+   "switches": [
+    "-c",
+    "-f",
+    "-d1"
+   ],
+   "order": 9,
+   "genc48": 642,
+   "geng_stream": 740,
+   "geng_c8_free": 642,
+   "prune_calls": 1804,
+   "prune_rejects": 189
+  },
+  {
+   "variant": "d1",
+   "switches": [
+    "-c",
+    "-f",
+    "-d1"
+   ],
+   "order": 10,
+   "genc48": 2430,
+   "geng_stream": 3389,
+   "geng_c8_free": 2430,
+   "prune_calls": 8024,
+   "prune_rejects": 1812
+  },
+  {
+   "variant": "sub3",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2",
+    "-D3"
+   ],
+   "order": 8,
+   "genc48": 6,
+   "geng_stream": 14,
+   "geng_c8_free": 6,
+   "prune_calls": 116,
+   "prune_rejects": 12
+  },
+  {
+   "variant": "sub3",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2",
+    "-D3"
+   ],
+   "order": 9,
+   "genc48": 12,
+   "geng_stream": 37,
+   "geng_c8_free": 12,
+   "prune_calls": 387,
+   "prune_rejects": 72
+  },
+  {
+   "variant": "sub3",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2",
+    "-D3"
+   ],
+   "order": 10,
+   "genc48": 31,
+   "geng_stream": 105,
+   "geng_c8_free": 31,
+   "prune_calls": 1237,
+   "prune_rejects": 303
+  },
+  {
+   "variant": "sub3",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2",
+    "-D3"
+   ],
+   "order": 11,
+   "genc48": 66,
+   "geng_stream": 290,
+   "geng_c8_free": 66,
+   "prune_calls": 3923,
+   "prune_rejects": 1276
+  },
+  {
+   "variant": "sub3",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2",
+    "-D3"
+   ],
+   "order": 12,
+   "genc48": 166,
+   "geng_stream": 956,
+   "geng_c8_free": 166,
+   "prune_calls": 13770,
+   "prune_rejects": 5515
+  },
+  {
+   "variant": "sub3",
+   "switches": [
+    "-c",
+    "-f",
+    "-d2",
+    "-D3"
+   ],
+   "order": 13,
+   "genc48": 428,
+   "geng_stream": 3178,
+   "geng_c8_free": 428,
+   "prune_calls": 47065,
+   "prune_rejects": 21696
+  },
+  {
+   "variant": "bipd1",
+   "switches": [
+    "-c",
+    "-f",
+    "-b",
+    "-d1"
+   ],
+   "order": 8,
+   "genc48": 29,
+   "geng_stream": 30,
+   "geng_c8_free": 29,
+   "prune_calls": 96,
+   "prune_rejects": 1
+  },
+  {
+   "variant": "bipd1",
+   "switches": [
+    "-c",
+    "-f",
+    "-b",
+    "-d1"
+   ],
+   "order": 9,
+   "genc48": 62,
+   "geng_stream": 64,
+   "geng_c8_free": 62,
+   "prune_calls": 207,
+   "prune_rejects": 2
+  },
+  {
+   "variant": "bipd1",
+   "switches": [
+    "-c",
+    "-f",
+    "-b",
+    "-d1"
+   ],
+   "order": 10,
+   "genc48": 164,
+   "geng_stream": 177,
+   "geng_c8_free": 164,
+   "prune_calls": 559,
+   "prune_rejects": 19
+  },
+  {
+   "variant": "bipd2",
+   "switches": [
+    "-c",
+    "-f",
+    "-b",
+    "-d2"
+   ],
+   "order": 10,
+   "genc48": 3,
+   "geng_stream": 6,
+   "geng_c8_free": 3,
+   "prune_calls": 205,
+   "prune_rejects": 4
+  },
+  {
+   "variant": "bipd2",
+   "switches": [
+    "-c",
+    "-f",
+    "-b",
+    "-d2"
+   ],
+   "order": 11,
+   "genc48": 1,
+   "geng_stream": 7,
+   "geng_c8_free": 1,
+   "prune_calls": 544,
+   "prune_rejects": 23
+  },
+  {
+   "variant": "bipd2",
+   "switches": [
+    "-c",
+    "-f",
+    "-b",
+    "-d2"
+   ],
+   "order": 12,
+   "genc48": 6,
+   "geng_stream": 29,
+   "geng_c8_free": 6,
+   "prune_calls": 1551,
+   "prune_rejects": 124
+  },
+  {
+   "variant": "bipd2",
+   "switches": [
+    "-c",
+    "-f",
+    "-b",
+    "-d2"
+   ],
+   "order": 13,
+   "genc48": 5,
+   "geng_stream": 57,
+   "geng_c8_free": 5,
+   "prune_calls": 4544,
+   "prune_rejects": 600
+  }
+ ]
+}

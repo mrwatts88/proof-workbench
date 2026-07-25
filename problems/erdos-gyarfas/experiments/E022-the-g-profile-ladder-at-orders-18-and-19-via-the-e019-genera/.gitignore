@@ -1,0 +1,4 @@
+# Python bytecode from `import ladder` (exemplar.py).  ladder.py sets
+# sys.dont_write_bytecode before importing E019/scan.py, so nothing is ever
+# written into E019; its own .pyc lands here.
+__pycache__/

@@ -165,12 +165,51 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   open cubic reduction and was rejected as an import; the internal
   order-20 run (plus bipartite 24 on the new instrument) was launched
   as the close-of-session background follow-up.
+  **The same-day follow-up harvest landed all three stages** (fresh
+  reconciliation commit): stage A reproduced both MO cubic-20 figures
+  exactly (510,489 = A002851; 36,101 \(C_4\)-free — MO-1/MO-2
+  corroborated; the rejected inference stays rejected and is now
+  moot); stage B (min-degree-3 order 20, `genc48 -d3`, 16/16 parts)
+  came back **empty**, extending `C040` to 14–20 and lifting `L047`
+  to **every counterexample has \(\ge21\) vertices** (extremal window
+  \([21,24]\), four orders wide); stage C (bipartite order 24,
+  `genc48 -b`, 16/16 parts) came back **empty**, extending `C034`
+  through 24 (25 with a pendant). The order-18 audit slice completed
+  clean — all three sampled slices (38.7M graphs, ~24% of the stream)
+  agree with the generator.
+  **S022 (third orchestrated parallel session; W1 `fable` on the
+  dissection, W2 `opus` on the ladder, both audited with independent
+  re-derivations) ran both recorded moves to verdicts.** Proof side:
+  the interference dissection landed the **interference outcome** —
+  all 553 blocking \(C_8/C_{16}\)s of the closest known objects (the
+  min-\(C_8\) exemplars at 14–16, exhaustively re-extracted, and the
+  three-degree-2 \(C_{16}\) boundary at 16–17) are two-through-path
+  symmetric differences (`C041`); the non-interference pivot trigger
+  did **not** fire; the property is empirically **exactly
+  vertex-tautness-shaped** (`C042`: biconditional at 10–12; zero
+  failures over all taut pairs, orders 4–7), with the calculus proved
+  (`L048`: interference = the \(t=1\), leak-pinned case of the chain
+  identity; under completeness \(\mathrm{Spec}(B)=T_1\cup(S+2)\) —
+  power-freeness becomes through-path arithmetic, the genre surviving
+  both kill theorems). Candidate lemma **T5** and forcing target
+  **(F)** recorded with ordered kill tests; a second calibration
+  object (order 14, full membership triple) joins Petersen\(-e\).
+  Search side (`C043`): order 18 profile-empty; order 19 the
+  **first-ever nonempty profile rung** — its unique member
+  vertex-taut, 2-connected, non-bipartite, and blocked twice
+  independently (46 \(C_{16}\)s; \(S\ni6,14\)) — so **every tight
+  1-atom and every \(\mathcal G\)-member has order \(\ge20\)**
+  (direct 1-bucket route and the case-analysis route agree).
+  Close-of-session background follow-up running
+  (`E022/followup_s022.py`; not citable until harvested): the
+  exemplar's full cycle set vs T5 (a genuine kill test at the most
+  relevant object), the order-20 rung, the order-19 unsplit count.
   Portfolio (all threads carried, per standing user instruction): the
-  case-(5b) endgame (the 2-connected branch's interference structure +
-  the `E019` search ladder at 18–20, Tier 1); the `C038` kill rung at
+  case-(5b) endgame (the **T5 → (F) interference program** + the
+  ladder at order 20+, Tier 1); the `C038` kill rung at
   block orders 15–16; the pencil endgame + band-2 rung (pinched
-  channel); the bipartite hunt at order 24+ (leg running on the new
-  instrument) and the gcd-channel theory question; the cubic census at
+  channel); the bipartite hunt at order 26 (order 24 harvested empty on the
+  new instrument) and the gcd-channel theory question; the cubic census at
   orders 26/28/30 (now ~15 min/3.5 h/2.3 days on 8 workers); census
   mining; bipartite EGC (proof side); the disjoint longer-link descent
   (R2's surviving extension); 3-connectivity leverage; order-17+
@@ -230,23 +269,26 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, keep working **Tier 1: exclude case (5b)** — now a single
-2-connected configuration below order 36 (`L046`), with the search
-instrument built (`E019`) and the atom/counterexample floors at 19/21
-(`C039`, `L047`). **First action: harvest the S021 background
-follow-up** (`E019/data/followup_s021.json` — MO recount; min-degree-3
-order 20; bipartite order 24 — plus the pending order-18 audit slice);
-nothing from it is citable until read. Primary (proof side): the
-**interference dissection** — check whether every blocking
-\(C_8\)/\(C_{16}\) among the closest known objects (min-\(C_8\)=1
-exemplars at 14–16, three-degree-2 boundary graphs at 16–17) is a
-two-through-path symmetric difference, or exhibit a non-interference
-blocker. Search side: the \(\mathcal G\)-profile ladder at orders
-18–19 (minutes on 8 workers; each rung decisive). Tier 3 stays
-harvest-only (the `C038` kill rung at block order 15; cubic 26/28;
-min-degree-3 order 21). Do **not** reopen congruence obstructions
-(`C037`), membership-only chain exclusion (`L045`), or the density
-constant (`L038`).
+For `P-002`, keep working **Tier 1: exclude case (5b)** via the **T5 →
+(F) interference program** (S022): the atom/\(\mathcal G\) floors are
+at 20/20 and the counterexample floor at 21 (`C043`, `L047`; extremal
+window \([21,24]\)). **First action: harvest the S022 background
+follow-up** (`E022/data/followup_s022.json` — stage A: the vertex-taut
+order-19 exemplar's full cycle set vs candidate lemma T5, a genuine
+kill test; stage B: the order-20 profile rung; stage C: the order-19
+unsplit count); nothing from it is citable until read. Then the
+remaining T5 kill rungs (`smallworld 13`, minutes; a sparse
+general-graph probe at orders 8–9), and — if T5 survives everything —
+the **T5 proof attempt** (clean-window reroute + minimal-choice
+exchange; named sub-obligations: cycle-edge essentiality in taut
+pairs, weaving control). The forcing target (F) follows T5,
+order-windowed \([18,35]\), doubly calibrated (Petersen\(-e\) and the
+order-14 exemplar of `C041`). Tier 3 stays harvest-only (the `C038`
+kill rung at block orders 15–16; cubic 26/28; min-degree-3 order 21;
+bipartite 26). Do **not** reopen congruence obstructions (`C037`),
+membership-only chain exclusion (`L045`), or the density constant
+(`L038`); any case-(5b) exclusion argument must fail on **both**
+calibration objects unless it consumes power-freeness or minimality.
 No required action remains for `P-001`; its reference comparison is
 optional and freely permitted.
 
