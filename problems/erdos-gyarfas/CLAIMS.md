@@ -681,3 +681,85 @@ hamiltonian-connected graph* — which is exactly the shape a counterexample to 
 needs, repeatedly (\(\sim\log_2 n\) gaps, spread across the whole spectrum
 including the top). The best current work produces gaps only in the bottom half.
 | tested | orchestrator, direct read of arXiv:2506.09667 §1–2 |
+
+### S032 addendum 4 — Conjecture 8: the exchange criterion, an infinite family, and two dead routes
+
+**Target (`X005`, imported).** Nowbandegani–Esfandiari–Nowbandegani–Haghighi,
+*Discuss. Math. Graph Theory* 34 (2014) 635–640, **Conjecture 8**: every cubic
+graph has a cycle of length \(\ell\) with \(2\ell\le2^k<3\ell\). Open; implied by
+statement 0.1. Transfer: their Corollary 7 gives that a cycle of length \(\ell\)
+in a cubic \(G\) yields **all** lengths in \([2\ell,3\ell]\) in the derived
+claw-free \(\hat G\), so (C8) applied to the **base** delivers 0.1 for the
+derived \(C_4\)-free cubic claw-free graphs. (Applied to a claw-free graph itself
+(C8) is vacuous — such a graph has a triangle and \(3\in\mathcal G\) — so the
+transfer must be read base-side; recorded because the S032 agent initially read
+it the other way.)
+
+**`L075` — the 3/4 target and the exchange criterion at width 4/3.** Write
+\(\mathcal G=\bigcup_k(2^k/3,2^{k-1}]\), \(\mathcal B\) its complement. If
+\(c\in\mathcal B\) and \(g\) is the largest power of two below \(c\), then
+\(g<c\le4g/3\), so \(g\ge3c/4\) and the whole block \((2g/3,g]\subseteq\mathcal
+G\); hence \(\lceil3c/4\rceil\in\mathcal G\) and every integer of
+\([\lceil3c/4\rceil,g]\) is. **Criterion:** let \(C\) be a cycle of length \(c\)
+with ears whose chosen arcs are pairwise edge-disjoint and savings
+\(\sigma_i\ge1\); if \(\max\sigma_i\le c/4\) and \(\sum\sigma_i\ge c/4\), then
+\(G\) has a cycle in \(\mathcal G\). Proof: with \(\delta=c-g\le c/4\), the first
+partial sum \(S_j\ge\delta\) satisfies \(S_j\le\delta-1+c/4\le c-2g/3-1\), so
+\(c-S_j\in(2g/3,g]\). **No subset-sum machinery is needed** — consecutive partial
+sums cannot jump a target this wide. The 0.1-analogue requires \(\sigma_i=1\) for
+every ear, which is exactly the factor-of-2 shortfall recorded at `L066`; here it
+is paid. | proved | S032 round-3 agent (hand proof), orchestrator-checked
+arithmetic |
+**`L076` — the span dichotomy for Hamiltonian counterexamples.** Let \(G\) be
+cubic with a Hamiltonian cycle of length \(n\) and \(L(G)\subseteq\mathcal B\),
+\(g\) the largest power of two below \(n\), \(\delta=n-g\le n/4\). A chord of
+span \(s\) gives cycles \(s+1\) and \(n-s+1\), both in \(\mathcal B\); hence
+every chord is **small** (\(s\le\delta\)) or **large**
+(\(s\ge n+1-\lfloor2g/3\rfloor\ge n/4+2\)), with **no intermediate span**, and
+always \(s\ge4\). Small chords are exactly those `L075` can consume. Derived
+independently by the orchestrator in the equivalent form "short (\(s<n/3\)) or
+near-diameter (within \(n/6\) of \(n/2\))", with the same data. | proved |
+S032 round 3; orchestrator's independent derivation and the per-\(n\) admissible
+span computation over all 4,532 even \(n\in\mathcal B\) up to 20,000 |
+**`L077` — an infinite family of Hamiltonian orders closed.** *Every Hamiltonian
+cubic graph on \(n=2^k+2\) vertices satisfies (C8)* — \(n=10,18,34,66,130,258,
+\dots\). With \(\delta\le2<4\le s\) every chord is large; \(s+1\in\mathcal B\)
+and \(s\le n/2\) pin \(s\in\{n/2-1,n/2\}\); if every two chords cross the
+matching is antipodal and \(G\) is a Möbius ladder, which contains
+\(v_0v_1v_{1+n/2}v_{n/2}\), a \(C_4\in\mathcal G\); otherwise a non-crossing pair
+has facing arcs \(a,c\ge n/2-1\) with \(a+c\le n-2\), forcing
+\(a=c=n/2-1\), \(b=d=1\) and an exchange cycle of length \(b+d+2=4\).
+**Corollary:** every Hamiltonian cubic graph on fewer than 36 vertices satisfies
+(C8) (\(n=20\) separately: all spans forced to 4, and the circulant
+\(C_{20}(4)\) is four 5-cycles, admitting no perfect matching; \(n=10\) has no
+admissible span at all). | proved | S032 round 3; the \(n=10,18,20\) cases
+independently re-derived by the orchestrator |
+**`L078` — two routes to (C8) killed, with certificates.** (a) **The gadget /
+necklace ladder is dead.** The orchestrator's uniform reduction (∗) — on every
+\(a\)–\(b\) path there are consecutive \(z,w\) with every shortest \(a\)–\(z\)
+path meeting every shortest \(w\)–\(b\) path — **is satisfiable**: Petersen minus
+an edge is \(C_4\)-free with the right degree profile, \(\tau=4\), and satisfies
+(∗). So no contradiction follows from (∗) plus \(C_4\)-freeness and the degrees,
+and the pre-registered decision rule fires: **the ladder is retired, no rung 5.**
+(Also, from \(\tau_{\min}=6\) on, \(\tau_{\max}\le\lfloor4\tau_{\min}/3\rfloor\)
+admits three or more values, so the two-value target was not even the right one.)
+(b) **No universal topological-minor argument via \(K_4\).** Every graph with
+\(\delta\ge3\) has a \(K_4\)-subdivision (Dirac), but branch lengths
+\(a_{12}=a_{13}=a_{14}=1\), \(a_{23}=3\), \(a_{24}=16\), \(a_{34}=15\) give the
+seven cycle lengths \(\{5,17,18,34\}\cup\{33,20,21\}\), all in \(\mathcal B\).
+Residue worth keeping: the four triangles and the three quadrilaterals each sum
+to \(2S\), forcing \(\max/\min\ge4/3\) among the seven, so a \(K_4\)-subdivision's
+spectrum can never fit inside a **single** \(\mathcal B\)-gap — only straddle
+two. | proved | S032 round 3 (explicit certificates, verified) |
+**`G019` — the named obstruction (open).** The Hamiltonian case of (C8) closes as
+soon as the small chords admit an arc-disjoint family with
+\(\sum(s_i-1)\ge n/4\). There are \(n/2\) chords, every vertex an endpoint and
+every span \(\ge4\), so the arcs cover the circle with multiplicity \(\ge2\); but
+the available packing bound gives only
+\(\sum\sigma\gtrsim 3n/\bigl(2(\delta+3)\bigr)\), which reaches \(n/4\) only for
+\(\delta\le3\). **The gap is a constant factor of about 4 in an interval-packing
+lemma for arc families with distinct endpoints** — a quantitative gap in a
+well-studied setting, not a conceptual barrier. Alternative closure: use large
+chords too, whose \(\sigma\) violates the \(\le c/4\) hypothesis but whose
+non-crossing/nesting exchanges yield the short cycles \(s_e-s_f+2\) and
+\(n-s_e-s_f+2\).
