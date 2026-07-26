@@ -1,0 +1,122 @@
+{
+ "order": 21,
+ "parts": 144,
+ "generator": "/Users/mattwatts/code/rh/problems/erdos-gyarfas/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 21 31:210 r/144",
+ "generated_c4c8_free": 2951168,
+ "profile": 19,
+ "c16_blocked": 19,
+ "survivors": [],
+ "max_edges_in_profile": 32,
+ "max_edges_in_class": 33,
+ "deg2_hist": {
+  "2": 19,
+  "3": 1071,
+  "4": 15792,
+  "5": 106188,
+  "6": 378371,
+  "7": 765621,
+  "8": 883192,
+  "9": 552238,
+  "10": 188130,
+  "11": 48910,
+  "12": 11636
+ },
+ "min_deg2_in_class": 2,
+ "power_free_in_class": 308098,
+ "power_free_deg2_hist": {
+  "5": 426,
+  "6": 4134,
+  "7": 20665,
+  "8": 61354,
+  "9": 95053,
+  "10": 75786,
+  "11": 39297,
+  "12": 11383
+ },
+ "power_free_min_deg2": 5,
+ "power_free_exemplars": [],
+ "cpu_seconds_sum": 652935.0,
+ "prune_calls": 2007089904936,
+ "prune_levels": {
+  "2": {
+   "calls": 144,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 144,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 144,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 288,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 432,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 720,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 2160,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 7776,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 34416,
+   "rejects": 144
+  },
+  "11": {
+   "calls": 318816,
+   "rejects": 5616
+  },
+  "12": {
+   "calls": 2445282,
+   "rejects": 299920
+  },
+  "13": {
+   "calls": 2066581,
+   "rejects": 198948
+  },
+  "14": {
+   "calls": 6623230,
+   "rejects": 3929065
+  },
+  "15": {
+   "calls": 49166553,
+   "rejects": 40644084
+  },
+  "16": {
+   "calls": 400404788,
+   "rejects": 362554457
+  },
+  "17": {
+   "calls": 3281092887,
+   "rejects": 3098216204
+  },
+  "18": {
+   "calls": 25562784578,
+   "rejects": 24651613299
+  },
+  "19": {
+   "calls": 198670641773,
+   "rejects": 194025669312
+  },
+  "20": {
+   "calls": 1381704864406,
+   "rejects": 1361861990782
+  },
+  "21": {
+   "calls": 397409449818,
+   "rejects": 397403417197
+  }
+ }
+}

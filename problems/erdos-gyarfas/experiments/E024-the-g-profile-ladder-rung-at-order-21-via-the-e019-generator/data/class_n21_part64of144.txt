@@ -1,0 +1,1 @@
+# graph6 edges n_degree2 power_free   ({C4,C8}-free class, order 21)

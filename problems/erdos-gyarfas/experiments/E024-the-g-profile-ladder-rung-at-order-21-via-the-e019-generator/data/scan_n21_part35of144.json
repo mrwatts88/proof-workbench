@@ -1,0 +1,125 @@
+{
+ "order": 21,
+ "part": "35/144",
+ "generator": "/rh/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 21 31:210 35/144",
+ "generated_c4c8_free": 37914,
+ "profile": 3,
+ "c16_blocked": 3,
+ "survivors": [],
+ "max_edges_in_profile": 31,
+ "max_edges_in_class": 32,
+ "deg2_hist": {
+  "2": 3,
+  "3": 13,
+  "4": 54,
+  "5": 28,
+  "6": 16,
+  "7": 5,
+  "8": 109,
+  "9": 18720,
+  "10": 14937,
+  "11": 2395,
+  "12": 1634
+ },
+ "min_deg2_in_class": 2,
+ "power_free_in_class": 10833,
+ "power_free_deg2_hist": {
+  "9": 2829,
+  "10": 4756,
+  "11": 1614,
+  "12": 1634
+ },
+ "power_free_min_deg2": 9,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 52857625892,
+  "rejects": 51381692674,
+  "out": 37914,
+  "cpu": 29829.85
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 5,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 15,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 54,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 239,
+   "rejects": 1
+  },
+  "11": {
+   "calls": 2214,
+   "rejects": 39
+  },
+  "12": {
+   "calls": 16984,
+   "rejects": 2084
+  },
+  "13": {
+   "calls": 14476,
+   "rejects": 1418
+  },
+  "14": {
+   "calls": 46633,
+   "rejects": 28587
+  },
+  "15": {
+   "calls": 272613,
+   "rejects": 226944
+  },
+  "16": {
+   "calls": 1822397,
+   "rejects": 1558821
+  },
+  "17": {
+   "calls": 30463644,
+   "rejects": 28626270
+  },
+  "18": {
+   "calls": 298944956,
+   "rejects": 289163780
+  },
+  "19": {
+   "calls": 2018283644,
+   "rejects": 1885550627
+  },
+  "20": {
+   "calls": 39485364644,
+   "rejects": 38154199541
+  },
+  "21": {
+   "calls": 11022393366,
+   "rejects": 11022334562
+  }
+ },
+ "verify_all": true,
+ "seconds": 30239.5,
+ "interpreter": "3.11.15/PyPy"
+}

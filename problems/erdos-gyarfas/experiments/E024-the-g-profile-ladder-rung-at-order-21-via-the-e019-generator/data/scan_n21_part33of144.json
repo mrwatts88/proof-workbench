@@ -1,0 +1,128 @@
+{
+ "order": 21,
+ "part": "33/144",
+ "generator": "/rh/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 21 31:210 33/144",
+ "generated_c4c8_free": 108415,
+ "profile": 0,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_in_profile": 0,
+ "max_edges_in_class": 32,
+ "deg2_hist": {
+  "3": 22,
+  "4": 1022,
+  "5": 13612,
+  "6": 40618,
+  "7": 33642,
+  "8": 13170,
+  "9": 4248,
+  "10": 1642,
+  "11": 431,
+  "12": 8
+ },
+ "min_deg2_in_class": 3,
+ "power_free_in_class": 5669,
+ "power_free_deg2_hist": {
+  "5": 69,
+  "6": 818,
+  "7": 1546,
+  "8": 1148,
+  "9": 473,
+  "10": 1186,
+  "11": 421,
+  "12": 8
+ },
+ "power_free_min_deg2": 5,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 39500038896,
+  "rejects": 39103492943,
+  "out": 108415,
+  "cpu": 12315.6
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 5,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 15,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 54,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 239,
+   "rejects": 1
+  },
+  "11": {
+   "calls": 2214,
+   "rejects": 39
+  },
+  "12": {
+   "calls": 16983,
+   "rejects": 2086
+  },
+  "13": {
+   "calls": 14361,
+   "rejects": 1422
+  },
+  "14": {
+   "calls": 43860,
+   "rejects": 25990
+  },
+  "15": {
+   "calls": 267202,
+   "rejects": 219851
+  },
+  "16": {
+   "calls": 1956680,
+   "rejects": 1662976
+  },
+  "17": {
+   "calls": 30306692,
+   "rejects": 26805279
+  },
+  "18": {
+   "calls": 584859679,
+   "rejects": 560738931
+  },
+  "19": {
+   "calls": 5292028232,
+   "rejects": 5196040702
+  },
+  "20": {
+   "calls": 24452978557,
+   "rejects": 24180736423
+  },
+  "21": {
+   "calls": 9137564115,
+   "rejects": 9137259243
+  }
+ },
+ "verify_all": true,
+ "seconds": 12460.4,
+ "interpreter": "3.11.15/PyPy"
+}

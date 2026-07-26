@@ -1,0 +1,126 @@
+{
+ "order": 21,
+ "part": "29/144",
+ "generator": "/rh/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 21 31:210 29/144",
+ "generated_c4c8_free": 11980,
+ "profile": 0,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_in_profile": 0,
+ "max_edges_in_class": 32,
+ "deg2_hist": {
+  "3": 4,
+  "4": 5,
+  "5": 53,
+  "6": 770,
+  "7": 2105,
+  "8": 1985,
+  "9": 3943,
+  "10": 2675,
+  "11": 438,
+  "12": 2
+ },
+ "min_deg2_in_class": 3,
+ "power_free_in_class": 651,
+ "power_free_deg2_hist": {
+  "7": 1,
+  "8": 1,
+  "9": 231,
+  "10": 279,
+  "11": 137,
+  "12": 2
+ },
+ "power_free_min_deg2": 7,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 26080991079,
+  "rejects": 25638743090,
+  "out": 11980,
+  "cpu": 9815.74
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 5,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 15,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 54,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 239,
+   "rejects": 1
+  },
+  "11": {
+   "calls": 2214,
+   "rejects": 39
+  },
+  "12": {
+   "calls": 16984,
+   "rejects": 2085
+  },
+  "13": {
+   "calls": 14365,
+   "rejects": 1397
+  },
+  "14": {
+   "calls": 46216,
+   "rejects": 26822
+  },
+  "15": {
+   "calls": 401152,
+   "rejects": 330680
+  },
+  "16": {
+   "calls": 4327211,
+   "rejects": 3774827
+  },
+  "17": {
+   "calls": 53666620,
+   "rejects": 51825945
+  },
+  "18": {
+   "calls": 228377613,
+   "rejects": 221987759
+  },
+  "19": {
+   "calls": 1476721859,
+   "rejects": 1414586922
+  },
+  "20": {
+   "calls": 20089573104,
+   "rejects": 19718389726
+  },
+  "21": {
+   "calls": 4227843420,
+   "rejects": 4227816887
+  }
+ },
+ "verify_all": true,
+ "seconds": 9982.9,
+ "interpreter": "3.11.15/PyPy"
+}

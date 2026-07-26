@@ -1,0 +1,128 @@
+{
+ "order": 21,
+ "part": "44/144",
+ "generator": "/rh/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 21 31:210 44/144",
+ "generated_c4c8_free": 46904,
+ "profile": 0,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_in_profile": 0,
+ "max_edges_in_class": 32,
+ "deg2_hist": {
+  "3": 60,
+  "4": 677,
+  "5": 3077,
+  "6": 5947,
+  "7": 3381,
+  "8": 3298,
+  "9": 15220,
+  "10": 12565,
+  "11": 2534,
+  "12": 145
+ },
+ "min_deg2_in_class": 3,
+ "power_free_in_class": 5016,
+ "power_free_deg2_hist": {
+  "5": 13,
+  "6": 87,
+  "7": 57,
+  "8": 68,
+  "9": 2118,
+  "10": 2224,
+  "11": 447,
+  "12": 2
+ },
+ "power_free_min_deg2": 5,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 76803206209,
+  "rejects": 75762965664,
+  "out": 46904,
+  "cpu": 23470.76
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 5,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 15,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 54,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 239,
+   "rejects": 1
+  },
+  "11": {
+   "calls": 2214,
+   "rejects": 39
+  },
+  "12": {
+   "calls": 16989,
+   "rejects": 2086
+  },
+  "13": {
+   "calls": 14579,
+   "rejects": 1437
+  },
+  "14": {
+   "calls": 50529,
+   "rejects": 32089
+  },
+  "15": {
+   "calls": 300567,
+   "rejects": 244272
+  },
+  "16": {
+   "calls": 2557595,
+   "rejects": 2201231
+  },
+  "17": {
+   "calls": 43897120,
+   "rejects": 40037444
+  },
+  "18": {
+   "calls": 761409341,
+   "rejects": 735695955
+  },
+  "19": {
+   "calls": 6385204946,
+   "rejects": 6206707963
+  },
+  "20": {
+   "calls": 58070480408,
+   "rejects": 57238867194
+  },
+  "21": {
+   "calls": 11539271600,
+   "rejects": 11539175953
+  }
+ },
+ "verify_all": true,
+ "seconds": 23663.3,
+ "interpreter": "3.11.15/PyPy"
+}

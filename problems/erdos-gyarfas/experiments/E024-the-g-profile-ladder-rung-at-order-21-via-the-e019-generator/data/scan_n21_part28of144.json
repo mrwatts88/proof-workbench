@@ -1,0 +1,126 @@
+{
+ "order": 21,
+ "part": "28/144",
+ "generator": "/rh/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 21 31:210 28/144",
+ "generated_c4c8_free": 88782,
+ "profile": 6,
+ "c16_blocked": 6,
+ "survivors": [],
+ "max_edges_in_profile": 32,
+ "max_edges_in_class": 32,
+ "deg2_hist": {
+  "2": 6,
+  "3": 89,
+  "4": 343,
+  "5": 1227,
+  "6": 12428,
+  "7": 37178,
+  "8": 30212,
+  "9": 6783,
+  "10": 510,
+  "11": 6
+ },
+ "min_deg2_in_class": 2,
+ "power_free_in_class": 1992,
+ "power_free_deg2_hist": {
+  "5": 4,
+  "6": 71,
+  "7": 518,
+  "8": 947,
+  "9": 392,
+  "10": 60
+ },
+ "power_free_min_deg2": 5,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 51390845936,
+  "rejects": 51071296579,
+  "out": 88782,
+  "cpu": 11023.56
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 5,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 15,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 54,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 239,
+   "rejects": 1
+  },
+  "11": {
+   "calls": 2214,
+   "rejects": 39
+  },
+  "12": {
+   "calls": 16979,
+   "rejects": 2083
+  },
+  "13": {
+   "calls": 14468,
+   "rejects": 1482
+  },
+  "14": {
+   "calls": 46870,
+   "rejects": 27902
+  },
+  "15": {
+   "calls": 366718,
+   "rejects": 303365
+  },
+  "16": {
+   "calls": 3112738,
+   "rejects": 2567220
+  },
+  "17": {
+   "calls": 53552550,
+   "rejects": 48945833
+  },
+  "18": {
+   "calls": 638653632,
+   "rejects": 614829989
+  },
+  "19": {
+   "calls": 5716144932,
+   "rejects": 5624224394
+  },
+  "20": {
+   "calls": 32833368814,
+   "rejects": 32635009160
+  },
+  "21": {
+   "calls": 12145565700,
+   "rejects": 12145385111
+  }
+ },
+ "verify_all": true,
+ "seconds": 11460.1,
+ "interpreter": "3.11.15/PyPy"
+}

@@ -1,0 +1,126 @@
+{
+ "order": 21,
+ "part": "53/144",
+ "generator": "/rh/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 21 31:210 53/144",
+ "generated_c4c8_free": 37275,
+ "profile": 0,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_in_profile": 0,
+ "max_edges_in_class": 32,
+ "deg2_hist": {
+  "3": 28,
+  "4": 729,
+  "5": 3626,
+  "6": 11518,
+  "7": 14872,
+  "8": 5607,
+  "9": 791,
+  "10": 103,
+  "11": 1
+ },
+ "min_deg2_in_class": 3,
+ "power_free_in_class": 2241,
+ "power_free_deg2_hist": {
+  "5": 20,
+  "6": 143,
+  "7": 754,
+  "8": 890,
+  "9": 356,
+  "10": 77,
+  "11": 1
+ },
+ "power_free_min_deg2": 5,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 8781502695,
+  "rejects": 8560233914,
+  "out": 37275,
+  "cpu": 4445.01
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 5,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 15,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 54,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 239,
+   "rejects": 1
+  },
+  "11": {
+   "calls": 2214,
+   "rejects": 39
+  },
+  "12": {
+   "calls": 16992,
+   "rejects": 2081
+  },
+  "13": {
+   "calls": 14451,
+   "rejects": 1457
+  },
+  "14": {
+   "calls": 45717,
+   "rejects": 27296
+  },
+  "15": {
+   "calls": 337351,
+   "rejects": 269632
+  },
+  "16": {
+   "calls": 3635544,
+   "rejects": 3316701
+  },
+  "17": {
+   "calls": 31246078,
+   "rejects": 29065741
+  },
+  "18": {
+   "calls": 342463539,
+   "rejects": 335358141
+  },
+  "19": {
+   "calls": 1534063046,
+   "rejects": 1509747419
+  },
+  "20": {
+   "calls": 5589947446,
+   "rejects": 5402812751
+  },
+  "21": {
+   "calls": 1279729996,
+   "rejects": 1279632655
+  }
+ },
+ "verify_all": true,
+ "seconds": 4537.5,
+ "interpreter": "3.11.15/PyPy"
+}

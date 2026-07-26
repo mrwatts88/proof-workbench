@@ -1,0 +1,121 @@
+{
+ "order": 21,
+ "part": "141/144",
+ "generator": "/rh/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord/build/genc48 -q -c -f -d2 21 31:210 141/144",
+ "generated_c4c8_free": 4252,
+ "profile": 0,
+ "c16_blocked": 0,
+ "survivors": [],
+ "max_edges_in_profile": 0,
+ "max_edges_in_class": 32,
+ "deg2_hist": {
+  "5": 24,
+  "6": 458,
+  "7": 1364,
+  "8": 1552,
+  "9": 780,
+  "10": 70,
+  "11": 4
+ },
+ "min_deg2_in_class": 5,
+ "power_free_in_class": 71,
+ "power_free_deg2_hist": {
+  "6": 5,
+  "7": 26,
+  "8": 34,
+  "9": 6
+ },
+ "power_free_min_deg2": 6,
+ "power_free_exemplars": [],
+ "prune_total": {
+  "calls": 8796726313,
+  "rejects": 8700814821,
+  "out": 4252,
+  "cpu": 2510.17
+ },
+ "prune_levels": {
+  "2": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "3": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "4": {
+   "calls": 1,
+   "rejects": 0
+  },
+  "5": {
+   "calls": 2,
+   "rejects": 0
+  },
+  "6": {
+   "calls": 3,
+   "rejects": 0
+  },
+  "7": {
+   "calls": 5,
+   "rejects": 0
+  },
+  "8": {
+   "calls": 15,
+   "rejects": 0
+  },
+  "9": {
+   "calls": 54,
+   "rejects": 0
+  },
+  "10": {
+   "calls": 239,
+   "rejects": 1
+  },
+  "11": {
+   "calls": 2214,
+   "rejects": 39
+  },
+  "12": {
+   "calls": 16984,
+   "rejects": 2082
+  },
+  "13": {
+   "calls": 14334,
+   "rejects": 1434
+  },
+  "14": {
+   "calls": 44425,
+   "rejects": 26124
+  },
+  "15": {
+   "calls": 322025,
+   "rejects": 270560
+  },
+  "16": {
+   "calls": 2091107,
+   "rejects": 1912105
+  },
+  "17": {
+   "calls": 15410762,
+   "rejects": 14513861
+  },
+  "18": {
+   "calls": 129279064,
+   "rejects": 125041600
+  },
+  "19": {
+   "calls": 1011522948,
+   "rejects": 989460848
+  },
+  "20": {
+   "calls": 6667055759,
+   "rejects": 6598630103
+  },
+  "21": {
+   "calls": 970966370,
+   "rejects": 970956064
+  }
+ },
+ "verify_all": true,
+ "seconds": 2553.5,
+ "interpreter": "3.11.15/PyPy"
+}

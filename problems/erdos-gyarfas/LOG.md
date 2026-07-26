@@ -1271,3 +1271,39 @@ attempt, experiment, or review record.
   are **not** citable as a rung.
 - No statement, proof, or decision changed. The `E024` cloud rung is excluded
   from every ledger row until harvested.
+
+## 2026-07-26 — S029: the order-21 rung is empty, and the profile is Hamiltonian 19 for 19
+
+- **The `E024` order-21 rung landed and is harvested** (`C049`). Complete
+  \(\{C_4,C_8\}\)-free class at order 21: **2,951,168 graphs**, 652,935
+  generator cpu-seconds (181.4 core-hours), 144-part split, max 33 edges.
+  Degree-profile members: **19**, **all \(C_{16}\)-blocked**, **zero power-free
+  survivors**. So \(\mathcal G\) is empty at 21 as well — every
+  \(\mathcal G\)-member has order \(\ge22\), every tight 1-atom \(\ge23\).
+- **THE DECISIVE MEASUREMENT: \(\max S = 20 = n-1\) on all nineteen.** Every
+  order-21 profile member carries a Hamiltonian \(a\)–\(b\) path. Cumulatively
+  **27 of 27** in-window profile objects, against `C047`(e)'s measured control
+  of **22–29%** for ordinary taut degree-2 pairs. The pre-registered pivot did
+  **not** fire, so `C048`'s ladder is *supported* — not proved — to address
+  case (5b) as a whole rather than a Hamiltonian-only sub-stratum.
+- **Scope kept explicit: this is evidence, not a theorem.** 27 examples do not
+  force Hamiltonicity, and the non-Hamiltonian stratum (`A027` T5) is cleared
+  at no order. What changed is the prior, from 8 points at two orders to 27
+  across three.
+- **Refinement:** 18 of the 19 carry both 6 and 14 in \(S\); one does not
+  (\(d(a,b)=4\), \(S\cap\{2,6,14,30\}=\{14\}\)), so `A025` T3's
+  \(S\supseteq[6,n-1]\) saturation is **not universal** at order 21 while the
+  double blocking survives. The break `S027` first saw at order 22, one order
+  lower.
+- Verification before any number was used: 144/144 parts present exactly once,
+  every file matching the sha256 its container recorded, per-part coverage
+  identity holding, and the harvest plus the measurement run with the **local,
+  already-anchored arm64 instrument**. Three parts (115, 99, 142) exceeded
+  `SAVE_LIMIT` and have no class file; each was checked and holds **zero**
+  profile members, so nothing was lost — recorded because that was luck, not
+  design.
+- Recalibration carried to `process/compute.md`/`O012`: modulus sizing must be
+  driven by the **tail** of the part-size distribution, not the mean. Three
+  parts exceeded the limit (one by 1.8×), and the wall clock came in at 14.4 h
+  against a ~7 h projection — the mean was predicted well, the tail was not.
+- Outlook 8% → **9%**. No statement, proof, or decision changed.

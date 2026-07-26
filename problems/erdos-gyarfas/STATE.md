@@ -673,9 +673,17 @@ configuration:**
   (see `DECISIONS.md`: the remaining risk is stratified by *shape*, not
   by size — the Hamiltonian stratum is clear at 16–30, the
   non-Hamiltonian one at no order at all, so extending the ladder
-  completes nothing): **(1) harvest `E024`** — it measures the decisive
-  split, \(\max S\) vs \(n-1\), over the *complete* order-21 class
-  rather than the Hamiltonian-only slice `E028` can see. **`O012` is now
+  completes nothing): **(1) `E024` IS HARVESTED (`S029`, `C049`) — the
+  measurement came back UNANIMOUS.** The complete order-21 class
+  (2,951,168 graphs) has 19 degree-profile members, all
+  \(C_{16}\)-blocked, **zero** power-free survivors — \(\mathcal G\)
+  is empty at 21, every \(\mathcal G\)-member \(\ge22\), every tight
+  1-atom \(\ge23\) — and **\(\max S=n-1\) on all nineteen**, so the
+  exactly-two profile carries a Hamiltonian through-path on **27 of 27**
+  known in-window objects against a 22–29% control (`C047`(e)). The
+  pre-registered pivot did **not** fire: `C048`'s ladder is *supported*,
+  not proved, to address case (5b) whole rather than a slice. One member
+  has \(6\notin S\), so saturation is not universal. **`O012` was
   EXECUTED (`S028`)**: the rung runs on Railway behind a passed
   linux/amd64 anchor re-gate, at modulus 144 on six services, and the
   laptop is freed. Two corrections came out of it — width is *not* free
