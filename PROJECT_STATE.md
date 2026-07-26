@@ -527,6 +527,24 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
+**S032 (2026-07-26) supersedes everything below in this section.** The dossier now
+has a **proved case of statement 0.1** — `L061`: every planar graph with
+minimum degree \(\ge4\) contains a cycle of length 4 or 8 (also
+projective-planar, and 2-connected toroidal/Klein), via `L060` and a discharging
+bound \(m\le2n-2\chi(S)\) colliding with \(m\ge2n\); prior art swept in both the
+Erdős–Gyárfás and planar-Turán literatures and not found. It also has a closed
+channel (`L064` resolves `G013`(c), the odd-prime-gcd channel open since S016,
+and every modulus with it) and **three barrier theorems that retire the
+inherited programme**: `L059` (no subdivision-closed hypothesis can imply 0.1's
+conclusion — which covers the whole (F) programme, `L048`–`L052` included),
+`L062` (no additive surgery on a minimum counterexample can contradict
+anything), `L063` (girth does not localize the spectrum). The new primary
+obligation is `G016`: extend `L061` below \(\delta\ge4\) toward all planar graphs
+with \(\delta\ge3\), closing the gap to Heckman–Krakovski's 3-connected cubic
+planar case. See `problem.json`, `DECISIONS.md` and `sessions/S032`.
+
+The paragraph below is the S031 state, retained for provenance:
+
 For `P-002`, keep working **Tier 1: exclude case (5b)** — but by closing the
 **non-Hamiltonian stratum**, not by any interpolation lemma. S031 refuted the
 recorded successor architecture outright. `L056`: **(INT) and (INT-14) are false**,

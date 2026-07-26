@@ -1,6 +1,47 @@
 # Current state
 
-- Last updated: 2026-07-26 (S031 — **the kill test that was never run: the
+- Last updated: 2026-07-26 (S032 — **the dossier has a proved case of statement
+  0.1, and a proof that its own machinery cannot produce another one.** Nine
+  delegated Opus workers, aimed at 0.1 itself rather than at `G015`, with the
+  orchestrator re-verifying every load-bearing computation independently.
+  **`L061`: every planar graph with \(\delta\ge4\) contains a cycle of length 4
+  or 8** — also projective-planar, and 2-connected toroidal/Klein — via
+  `L060` (in a \(C_4\)-free graph a 5-cycle with three edges in triangles forces
+  a \(C_8\); verified exhaustively to order 11) and a discharging bound
+  \(m\le2n-2\chi(S)\) colliding with \(m\ge2n\). Prior art: **not found**, in
+  either the Erdős–Gyárfás or the planar-Turán literature; the by-product
+  \(\mathrm{ex}_P(n,\{C_4,C_8\})\le2n-4\) appears to be the first planar Turán
+  bound for a *set* of cycle lengths. **`L064`: `G013`(c) is resolved** — a
+  gadget whose through-set lies in a single residue class mod any \(m\ge3\)
+  makes 0.1 already false via a proper subgraph, so \(d(S)\in\{1,2\}\) always;
+  the odd-prime-gcd channel, open with no theory and no search since S016, is
+  closed together with every modulus (conditional only on the Fan import,
+  `G017`). **`L059`, the finding that reframes the whole dossier:** any class
+  closed under subdivision fails against any target avoiding \(t\mathbb N\),
+  because \(L(G^{(t)})=t\,L(G)\); with \(t=3\), **no subdivision-closed
+  hypothesis implies 0.1's conclusion**, and every through-set / ear / theta /
+  exchange / interference law is subdivision-covariant. So the (F) programme and
+  `L048`–`L052` cannot reach 0.1 however far they run — `L049` remains a correct
+  theorem, but not a route. Two further barriers: **`L062`**, no additive
+  surgery on a minimum counterexample can contradict anything (only
+  length-preserving or power-of-two-multiplying reductions can), which is why
+  the orchestrator's own contraction lemma audited **true but vacuous**; and
+  **`L063`**, girth does not localize the spectrum (cubic graphs of girth exactly
+  \(g\) with no cycle in \([g+1,M]\); explicit 768-vertex witness), so no
+  shortest-cycle anchor works. Residue: **`L065`**, a minimum-order
+  counterexample is non-bipartite, bridgeless, subgraph-minimal, blockwise
+  non-bipartite and not a \(2^s\)-lift. **Frontier imports the dossier lacked:**
+  Exoo arXiv:1403.5636 (\(G_{78}\), \(G_{450}\), \(G_{420}\) — the real
+  near-counterexamples, now the primary calibration objects, `G018`);
+  Heckman–Krakovski conclude "\(2^m\), \(2\le m\le7\)", **not** "4 or 8" (the
+  buckyball is a 3-connected cubic planar \(\{C_4,C_8\}\)-free witness);
+  Liu–Montgomery JAMS 2023 makes 0.1 entirely a bounded-degree question;
+  Dean–Lesniak–Saito 1993 caps the mod-\(k\) route at \(k\le4\) permanently;
+  Erdős believed 0.1 **false**. Withdrawn: "every non-planar graph has a cycle
+  \(\equiv0\bmod4\)" is in print (Győri et al., JCTB 176 (2026), Lemma 2).
+  Counterexample side: none; margin \(f(k)/2^{k+1}=1.25,\,1.5,\,\ge1.69\) is
+  **widening**, evidence that 0.1 is true. No floor, status or statement changed)
+- Previous update: 2026-07-26 (S031 — **the kill test that was never run: the
   interpolation genre is empty.** The recorded next action was to *prove*
   (INT). The dossier's binding kill discipline says test a candidate against
   **every** calibration object first; `C050` tested (INT) against the 24

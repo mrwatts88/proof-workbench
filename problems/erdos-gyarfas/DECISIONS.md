@@ -46,3 +46,37 @@ architecture, or disposition of a major approach.
 | 2026-07-26 | **Retire (INT) ∧ (L-A) as the Tier-1 architecture, recorded as refuted rather than unproved.** | `L056` (`A029` T1, audited `R004`): **(INT) and (INT-14) are false, with explicit witnesses inside the window.** Truncated Petersen minus a link edge — cubic, 3-connected, order 30, spectrum below 13 \(=\{3,10,11,12\}\), hence \(\{C_4,C_8\}\)-free — gives a 2-connected vertex-taut exactly-two-profile pair with \(S=[9,26]\), so \(8\notin S\); the two-copy chain at a cut vertex gives order 59 with \(S=[18,52]\), so \(14\notin S\). Neither imports anything. The attempt's own draft claimed no such object below order 70; `R004` F4 refuted that and supplied the order-30 object, so the refutation lands *inside* the case-(5b) window rather than asymptotically — the correction makes the decision more forced, not less. `C050` could not have caught it: nothing with \(\min S>8\) has ever been generated, because the ladders stop at order 21. The recorded reason for adopting (INT) — that it was order-unbounded — is exactly where it fails. | `A029` T1, `L056`, `L053`, `C050`, `OBLIGATIONS.md` `G015`, `STATE.md`, `S031` |
 | 2026-07-26 | **Close the interpolation genre: no lower bound of the form "\(S\) has no gap above a threshold" holds at class strength, absolute or relativized to \(\min S\).** | `L057` (`A029` T2): the triangle expansion at one vertex of a bipartite cubic 3-connected graph of even girth \(g\ge10\) with \(\mathrm{diam}\ge g/2+1\), minus an edge on a shortest cycle at distance \(\rho\ge g/2\) from the triangle, is a **non-bipartite** vertex-taut \(\{C_4,C_8\}\)-free profile pair with \(\min S=g-1\) odd and every even through-length \(\ge2\rho+2\) — a parity hole at \(\min S+1\ge10\) — so \(S\supseteq[\min S+c,\max S]\) fails for every \(c\) and the recorded "hole at a value \(\ge8\)" pivot trigger fires. Adding non-bipartiteness — which `L042` supplies free — does not save the genre. **Scope of this decision:** `L057` failed its audit (`R004` F1–F3, F5) and is repaired but not re-audited, so it is recorded at `proposed`. The decision to close the genre does **not** rest on it: `L056` alone kills the absolute form, and the bipartite one-liner kills the relativized form against a bipartite defender; `L057` is what removes the non-bipartite defender, and until it is re-audited that half is provisional. This is the third genre to die (after congruence, `C037`, and membership, `L045`/`C045`) and the three share one diagnosis: every class-level hypothesis is local and hereditary, hence inherited by large-girth cubic graphs minus an edge. The first (F)-side lemma that consumes power-freeness **above the girth** or minimum-order minimality is the first that can be order-unbounded. | `A029` T2/T3, `L057`, `X004`, `references/bipartite-large-girth-cubic-2026-07-26.md`, `STATE.md`, `S031` |
 | 2026-07-26 | **Supersede `L046`'s constant: the case-(5b) window is \(n_0\in[23,41]\), not \([18,35]\).** | `L058` (`A029` T5): `A022` W1-T8's proof is unchanged; its block-order input rises from 16 to **21** (`C039` for orders \(\le17\), `C043`/S022 for 18–20, and at 21 `C040` for the 0-bucket and `C049` for the 2-bucket), giving "either \(H\) is 2-connected or \(n_0\ge42\)". The window's bottom rises too, to \(n_0\ge23\) (`C049`'s tight-1-atom floor). Consequence, and the reason this is recorded as a decision: the `E028` ladder stopped at \(H\)-order 30 is **ten** rungs short of the window's top (\(H\)-order 40), not four, at 1.8–2.4× wall clock per rung. The re-derivation sharpens S030's ceiling finding instead of softening it, and the finite-window route is correspondingly less attractive. | `A029` T5, `L058`, `A022` W1-T8, `L046`, `C039`/`C040`/`C043`/`C049`, `STATE.md`, `S031` |
+
+## 2026-07-26 — S032: the (F) programme is retired as a route to statement 0.1
+
+**Change.** The proof architecture is redirected from `G015`/case (5b)/(F) to
+statement 0.1 itself. `G015` is not abandoned as a *deliverable*, but it may no
+longer be described as a route to 0.1.
+
+**Reason (mathematical, not strategic).** Two independent facts compose. First,
+`S030` proved the (F) programme has a ceiling below its own target: `L046`
+supplies the 2-connectivity the frame assumes only below order 36, so a complete
+ladder plus a complete non-Hamiltonian treatment closes case (5b) for
+\(n_0\le35\) and leaves the rest untouched. Second, and decisively, **`L059`**
+proves that every law of the through-set / ear / theta / exchange / interference
+family is subdivision-covariant, and no subdivision-closed hypothesis can imply
+0.1's conclusion — because subdividing every edge into a path of three multiplies
+all cycle lengths by three. So even a *completed* `G015` would not be a step
+toward 0.1 by that machinery.
+
+**What replaces it.** `L059`, `L062` and `L063` jointly specify what a proof must
+look like: it must consume \(\delta\ge3\) **quantitatively** (counting, not
+topology); it may not come from an additive surgery on a minimum counterexample;
+and it may not be anchored at a shortest cycle. `L061` is the first internal
+result meeting that specification — a counting collision between \(m\ge2n\) and a
+discharging bound — and is therefore adopted as the template. The new primary
+obligation is `G016`, extending `L061` below \(\delta\ge4\) toward all planar
+graphs with \(\delta\ge3\).
+
+**Calibration discipline changed.** Exoo's \(G_{78}\), \(G_{450}\) and
+\(G_{420}\) replace Petersen\(-e\), the order-14 exemplar and calibration object
+#3 as the primary calibration objects (`G018`). They clear three and four
+consecutive powers of two; everything previously used here clears two.
+
+**No statement change.** Version 0.1 is untouched; no quantifier, domain,
+convention or nondegeneracy assumption moved.

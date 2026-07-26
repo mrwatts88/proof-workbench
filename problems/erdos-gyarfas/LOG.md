@@ -1421,3 +1421,75 @@ attempt, experiment, or review record.
   order-unbounded successor that is now refuted, the refutation is generic
   rather than incidental, and the one arithmetic improvement runs against the
   finite-window route.
+
+## 2026-07-26 — S032 (orchestrated, nine delegated Opus workers)
+
+- **The session broke with the recorded route on purpose.** `S030` had already
+  proved the (F) programme cannot prove `G015`, and `G015` is itself only a
+  reduction of 0.1; a final session was directed at statement 0.1 itself. Every
+  leg was aimed at the conjecture, not at the reduction. Nine workers, no access
+  to the dossier narrative, orchestrator re-verification of every load-bearing
+  computation with independent code.
+- **`L059` (subdivision barrier).** Any class closed under subdivision and any
+  target avoiding \(t\mathbb N\): the implication fails, because
+  \(L(G^{(t)})=t\,L(G)\). With \(t=3\) and the powers of two: **no
+  subdivision-closed hypothesis implies 0.1's conclusion.** Every through-set /
+  ear / theta / exchange / interference law is subdivision-covariant, so the
+  whole (F) programme — `L048`–`L052` included — cannot reach 0.1 however far it
+  runs. Smallest defeater \(K_4^{(3)}\). `L049` stands as a theorem; what is
+  delimited is its use.
+- **`L060`/`L061` — a proved case of 0.1, and the dossier's first result about
+  0.1 rather than about a reduction.** `L060`: in a \(C_4\)-free graph a 5-cycle
+  with three edges in triangles forces a \(C_8\) (verified exhaustively to order
+  11, 143,038 graphs). `L061`: discharging gives \(m\le2n-2\chi(S)\) for
+  \(\{C_4,C_8\}\)-free graphs on a surface, and against \(m\ge2n\) from
+  \(\delta\ge4\) this yields **every planar graph with \(\delta\ge4\) contains a
+  cycle of length 4 or 8** — also projective-planar, and 2-connected
+  toroidal/Klein. By-product \(\mathrm{ex}_P(n,\{C_4,C_8\})\le2n-4\), apparently
+  the first bound for a *set* of forbidden cycle lengths. Prior art: not found
+  in either the EGC or the planar-Turán corpus.
+- **`L064` — `G013`(c) resolved.** A gadget whose through-set lies in one
+  residue class mod any \(m\ge3\) makes 0.1 already false via a proper subgraph;
+  equivalently \(d(S)\in\{1,2\}\) always. The odd-prime-gcd channel, open since
+  S016 with no theory and no search, is closed — along with every modulus.
+  Conditional on the Fan import (`G017`).
+- **`L062`/`L063` — two further barriers.** No additive surgery on a minimum
+  counterexample can contradict anything (only length-preserving or
+  power-of-two-multiplying reductions can), and girth does not localize the
+  spectrum (cubic graphs of girth exactly \(g\) with no cycle in \([g+1,M]\),
+  explicit 768-vertex witness). The orchestrator's own contraction lemma was
+  audited and found **true but vacuous**, exactly as `L062` predicts; its
+  residue is `L065`.
+- **`L065`** — a minimum-order counterexample is non-bipartite, bridgeless,
+  has no proper subgraph of minimum degree 3, has all blocks non-bipartite, and
+  is not a regular \(2^s\)-lift. Not found in the literature. Does **not**
+  settle bipartite EGC.
+- **Frontier imports the dossier was missing entirely.** Exoo (arXiv:1403.5636):
+  \(G_{78}\), \(G_{450}\), \(G_{420}\) — the real near-counterexamples, far
+  stronger than the order-24 graphs in use here, and now the primary calibration
+  objects (`G018`). Heckman–Krakovski conclude "\(2^m\), \(2\le m\le7\)", not "4
+  or 8" — the buckyball is a 3-connected cubic planar \(\{C_4,C_8\}\)-free
+  witness (verified). Liu–Montgomery (JAMS 2023): 0.1 is entirely a
+  bounded-degree question. Dean–Lesniak–Saito (1993): \(\delta\ge3\) forces a
+  cycle \(\equiv0\bmod4\), and \(\equiv0\bmod k\) is forced iff \(k\le4\) — the
+  mod-\(k\) route is capped permanently. Erdős (1997) believed 0.1 **false**.
+- **Withdrawn en route:** "every non-planar graph has a cycle of length
+  divisible by 4" was derived and verified here but is in print
+  (Győri–Li–Salia–Tompkins–Varga–Zhu, JCTB 176 (2026), Lemma 2, same reduction);
+  its cubic corollary is weaker than Dean–Lesniak–Saito. Retained as a verified
+  fact, not as a novelty claim.
+- **Counterexample side:** none. New order-98 cubic \(\{C_4,C_8,C_{16}\}\)-free
+  graph; leaf-gadget census exhaustive to order 23 (22,455,873 graphs, zero
+  survivors) — and that family is genuinely *not* covered by the standard
+  2-connectivity reduction, because suppressing a degree-2 cut vertex shifts
+  lengths by 1. Substitution barrier measured: gadgets whose own cycles miss
+  4, 8, 16 have \(\rho\ge7/3>2\), so the top band is forced to contain a power;
+  300 H7-inflations all miss exactly \(\{4,8,16\}\) and all contain 32 and 64.
+  Margin \(f(k)/2^{k+1}=1.25,\,1.5,\,\ge1.69\) — **widening**, which is evidence
+  that 0.1 is **true**.
+- Hamiltonian stratum: exact structure theorem for \(L(C_n+M)\); verified for
+  all \(n\le42\) with a \(\le4\)-chord certificate; depth exactly 4, so no
+  shallow proof exists there.
+- Outlook **7% → 7%** (unchanged in number, changed in content): a proved case
+  and a closed channel push up; three genres proved incapable — including the
+  one this dossier was built on — push down.
