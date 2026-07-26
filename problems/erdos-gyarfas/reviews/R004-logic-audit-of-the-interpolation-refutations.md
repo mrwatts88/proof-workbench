@@ -321,3 +321,28 @@ review type, and the list of records to consult. All computations are the
 reviewer's own; the order-30 and order-59 witnesses now in T1 were produced by
 this audit, which is why F4 is marked resolved in the target rather than
 outstanding.
+
+---
+
+## Second round (the reviewer re-audited the repairs)
+
+The audit was resumed against the revised attempt. Steps (i)–(iv) of T2 and
+all of T1 and T3(b) were re-derived and confirmed; the \(2\rho+2\) bound was
+measured tight in 11 of 11 computed instances. Two **new major** findings, and
+three minor, were raised against the repairs themselves:
+
+| Finding | Severity | Status | Resolution |
+|---|---|---|---|
+| F11 | major | **resolved** | Deriving \(\rho\) from the diameter is a non sequitur once \(ab\) is fixed: what the construction consumes is the eccentricity of a *pre-chosen edge*, and \(\mathrm{diam}=D\) gives only \(\mathrm{ecc}(\{a,b\})\ge(D-1)/2\). Repaired with the reviewer's own suggestion: hypothesise the **order** and use the tree ball bound \(\lvert B(\{a,b\},r-1)\rvert\le2^{\,r+1}-2\). Diameter is now absent from the argument and from `X004`. At \(g=10\), \(r=g/2\) the bound reads \(N>62\), automatic for a girth-10 cubic graph. |
+| F3′ | major | **OPEN** | `X004` now asserts 3-connectivity in a regime it does not source: Erdős–Sachs and the bipartite double cover supply none, and cages — its only previous support — were withdrawn in the same revision. Recorded as a boxed unresolved finding in the reference file. **`L057` is not established**, stays at `proposed`, and may not be cited. |
+| F17 | minor | **resolved** | T1's boxed claim let "2-connected" scope over the order-59 chain, which has a cut vertex. Reworded: the chain is vertex-taut but not 2-connected, and (INT) requires only vertex-tautness. |
+| F12 | minor | **resolved** | The \(T\)-meeting path was justified by "\(v\) is not a cut vertex", which does not produce a path *through* \(v\). Replaced by the already-proved vertex-tautness of \(H\). |
+| F13 | minor | **resolved** | "\(\rho\to\infty\) from \(\mathrm{diam}\to\infty\)" was asserted. The order/ball bound of F11's repair supplies \(\rho\ge r\) directly. |
+| — | note | **resolved** | `E030`'s README labelled the truncation scan "cycle lengths \(<13\)"; the enumeration reaches 13. Relabelled, and it is recorded that there is no 13-cycle. |
+
+**Net standing.** `L056` — **proved and audited**, and materially strengthened
+by the audit (order-30 and order-59 witnesses, in-window, no imports).
+`L058` — proved in the `L046` frame. `L057` — **not established**, blocked on
+F3′. The interpolation-genre conclusion rests on `L056` plus the bipartite
+one-liner and does **not** depend on `L057`; the non-bipartite relativized
+kill is the part that remains open.

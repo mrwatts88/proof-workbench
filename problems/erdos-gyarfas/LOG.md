@@ -1382,11 +1382,13 @@ attempt, experiment, or review record.
   for every \(c\), and the recorded pivot trigger fires. Modulo `X004`
   (bipartite cubic 3-connected graphs of fixed girth \(\ge10\) and unbounded
   diameter), an existence use inside a negative result. **This half FAILED its
-  audit** (`R004` F1–F3, F5) and every finding is repaired — choices reordered,
-  \(\rho\le\mathrm{diam}-1\) proved, the even bound sharpened to
-  \(2\rho+2\), the requirement restated as \(\mathrm{diam}\ge g/2+1\),
-  `X004` decoupled and the Tutte 12-cage withdrawn as a witness — but the
-  repair is **not re-audited**, so `L057` is recorded at `proposed`.
+  audit twice and is NOT ESTABLISHED.** Round 1 (`R004` F1–F3, F5) and round 2
+  against the repairs (**F11**: the diameter route is a non sequitur once
+  \(ab\) is fixed — repaired again, the requirement is on the **order** via
+  the tree ball bound \(\lvert B(\{a,b\},r-1)\rvert\le2^{\,r+1}-2\),
+  automatic at \(g=10\)). **`R004` F3′ remains open:** `X004`'s
+  3-connectivity clause has no source. `L057` stays at `proposed` and may not
+  be cited; the genre conclusion does not depend on it.
 - **The genre is empty**, and it is the third: congruence (`C037`), membership
   (`L045`/`C045`), interpolation (`L056`/`L057`). One diagnosis fits all
   three — every class-level hypothesis is local and hereditary, hence

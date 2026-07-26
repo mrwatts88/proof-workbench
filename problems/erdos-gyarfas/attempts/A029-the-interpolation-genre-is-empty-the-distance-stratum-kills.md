@@ -91,10 +91,12 @@ The two recorded conjectures under test (`A028` T9, verbatim in content):
 ### T1 (the distance stratum: (INT) and (INT-14) are both false) — proved
 
 > **(INT) and (INT-14) are false**, with explicit witnesses:
-> a vertex-taut \(\{C_4,C_8\}\)-free 2-connected profile pair of order **30**
-> with \(S=[9,26]\) (so \(8\notin S\), \(\max S\ge8\)), and one of order
-> **59** with \(S=[18,52]\) (so \(14\notin S\), \(\max S\ge14\)). The same
-> conclusion also follows asymptotically from the already-proved `L053`.
+> a vertex-taut \(\{C_4,C_8\}\)-free profile pair of order **30**, which is
+> also 2-connected, with \(S=[9,26]\) (so \(8\notin S\), \(\max S\ge8\));
+> and a vertex-taut one of order **59** — **not** 2-connected, which (INT)
+> does not require — with \(S=[18,52]\) (so \(14\notin S\),
+> \(\max S\ge14\)). The same conclusion also follows asymptotically from the
+> already-proved `L053`.
 
 *Proof, asymptotic form (the route the attempt found first).* Take \(H=F-ab\) exactly as in `L053` (`A028` T1): \(F\) is a cubic,
 3-connected, simple graph of girth \(\ge17\) and \(ab\in E(F)\). `L053`
@@ -142,7 +144,8 @@ recorded window \([18,35]\) too. No import of any kind is used.
 > \(2+2=4\); the two surviving terminals have degree 2; no cycle is created at
 > a cut vertex, so \(\{C_4,C_8\}\)-freeness persists; and every vertex lies on
 > a terminal-to-terminal path because each copy is vertex-taut, so the chain is
-> too. Every terminal-to-terminal path splits at the cut vertex, so
+> too (it is **not** 2-connected — the identified vertex is a cut vertex — but
+> (INT) requires only vertex-tautness). Every terminal-to-terminal path splits at the cut vertex, so
 > \(S=S(H)+S(H)=[18,52]\). Order \(30+30-1=59\).
 
 Hence \(14\notin S\) with \(\max S=52\): **(INT-14) is false at order 59** —
@@ -193,22 +196,23 @@ below \(\min S\) is not a hole). Write
 for a constant \(c\); the pivot-trigger form is the \(c\)-free assertion "no
 hole at a value \(\ge8\)". T2 kills all of these at once.
 
-> For every even \(g\ge10\) and every \(\rho\ge g/2\) realisable in a
-> bipartite cubic 3-connected graph of girth \(g\), there is a vertex-taut
+> For every even \(g\ge10\) and every \(r\ge g/2\), given a bipartite cubic
+> 3-connected graph of girth \(g\) and order \(>2^{\,r+1}-2\), there is a
+> vertex-taut
 > \(\{C_4,C_8\}\)-free profile pair \((H,a,b)\) which is **non-bipartite**,
 > 2-connected, has \(\min S=g-1\) (odd, \(\ge9\)), and has \(h\notin S\) for
-> **every even** \(h\in[g,2\rho+2)\). In particular \(\min S+1=g\) is a
-> **hole at a value \(\ge10\)**; the hole contains \(\rho+1-g/2\) even
-> values, which is unbounded once the girth is held fixed and the order grows,
+> **every even** \(h\in[g,2\rho+2)\) with \(\rho\ge r\). In particular
+> \(\min S+1=g\) is a **hole at a value \(\ge10\)**; the hole contains at
+> least \(r+1-g/2\) even values, unbounded as the order grows at fixed girth,
 > so (INT-rel\(_c\)) fails for every constant \(c\) and the recorded pivot
 > trigger fires.
 
 *Construction.* Let \(\tilde F\) be a connected **bipartite** cubic
-3-connected graph of even girth \(g\ge10\) with
-\(\mathrm{diam}(\tilde F)\ge g/2+1\) (`X004`, in its **decoupled** form:
-girth held fixed while the order — hence the diameter — grows. The diameter,
-not the girth, is what (v) consumes; this is the correction `R004` F3
-required). Pick a vertex \(v\) with
+3-connected graph of even girth \(g\ge10\) and order \(N>2^{\,r+1}-2\) for
+a radius \(r\ge g/2\) fixed in advance (`X004`, in its **decoupled** form:
+girth held fixed while the order grows. The **order** is what (v) consumes —
+see the ball bound there — and at \(g=10\), \(r=g/2\) it is automatic).
+Pick a vertex \(v\) with
 neighbours \(n_1,n_2,n_3\) and let \(F_1\) be the **triangle expansion** of
 \(\tilde F\) at \(v\): delete \(v\), add a triangle \(T=v_1v_2v_3\), and join
 \(v_i\) to \(n_i\). Let \(\pi:V(F_1)\to V(\tilde F)\) contract \(T\) back to
@@ -274,21 +278,35 @@ middle 1 is the single triangle edge; being even, \(|Q|\ge2\rho+2\). ∎(iv)
 F1/F2; the draft's numerics were wrong in two independent places and its
 parameter choices were made in the wrong order.
 
-First a fact the draft missed (`R004` F2(a)). In a **bipartite** graph with
-\(ab\in E\), \(a\) and \(b\) lie in opposite classes, so \(d(a,x)\) and
-\(d(b,x)\) have opposite parities for every \(x\); they therefore differ, and
-\(\min(d(a,x),d(b,x))\le\max(d(a,x),d(b,x))-1\). Hence for every choice of
-\(v\),
-\[
-  \rho\;=\;d(\{a,b\},v)\;\le\;\mathrm{diam}(\tilde F)-1 .
-\]
-
-Now make the choices **in this order**:
+Make the choices **in this order**:
 
 1. choose \(ab\) **on a shortest cycle** of \(\tilde F\), so that the shortest
    cycle through \(ab\) has length exactly \(g\);
-2. choose \(v\) with \(\rho=d(\{a,b\},v)\ge g/2\), which is possible as soon
-   as \(\mathrm{diam}(\tilde F)\ge g/2+1\).
+2. choose \(v\) with \(\rho=d(\{a,b\},v)\ge r\), for a radius \(r\ge g/2\)
+   fixed in advance.
+
+Step 2 is where the previous revision went wrong (`R004` F11): it derived
+\(\rho\) from the **diameter**, which is a non sequitur once \(ab\) is
+already fixed — what the construction consumes is the eccentricity of a
+*pre-chosen* edge, and \(\mathrm{diam}=D\) gives only
+\(\mathrm{ecc}(\{a,b\})\ge(D-1)/2\). The correct hypothesis is on the
+**order**, and it is a one-line ball count. Girth \(g\) makes
+\(B(\{a,b\},r-1)\) a tree: \(a\) and \(b\) contribute 2 vertices, each has
+2 neighbours besides the other, and every subsequent vertex has 2 children, so
+\[
+  \lvert B(\{a,b\},r-1)\rvert\;\le\;2+4(2^{\,r-1}-1)\;=\;2^{\,r+1}-2 ,
+  \qquad r\le g/2 .
+\]
+Hence **if \(N>2^{\,r+1}-2\) then some vertex lies at distance \(\ge r\)
+from \(\{a,b\}\)**, which is step 2. No diameter, no eccentricity argument,
+and no equality analysis of the Moore bound.
+
+Two consequences worth recording. At \(r=g/2\) and \(g=10\) the requirement
+is \(N>2^{6}-2=62\), which is **automatic**: a cubic graph of girth 10 has
+order \(\ge70\). So the pivot-trigger form of T2 needs no order hypothesis at
+all. And taking \(r\) large with \(g\) fixed gives \(\rho\ge r\)
+from \(N>2^{\,r+1}-2\) alone, which is what supplies arbitrarily long holes
+(`R004` F13 — previously asserted from "\(\mathrm{diam}\to\infty\)").
 
 *\(\min S=g-1\), and it is odd.* The \(\ge\) is (iii). For the \(\le\): the
 shortest cycle through \(ab\) gives an \(a\)–\(b\) path \(Q_0\) of
@@ -300,28 +318,29 @@ bipartite, \(g\) is even, so \(\min S=g-1\) is odd, and \(\ge9\).
 *The hole.* \(\min S+1=g\) is even, so by (iv) it lies in \(S\) only if
 \(g\ge2\rho+2\), i.e. \(\rho\le g/2-1\) — excluded by choice 2. Hence
 \(g\notin S\). It exceeds \(\min S\); it is \(\ge10\); and it is below
-\(\max S\), because a \(T\)-meeting \(a\)–\(b\) path exists (\(v\) is not a
-cut vertex of the 2-connected \(\tilde F-ab\), so some \(a\)–\(b\) path of
-\(\tilde F-ab\) passes through \(v\); route it through two triangle edges),
-giving \(\max S\ge2\rho\ge g\); and \(\max S\ne g\) since \(g\notin S\), so
+\(\max S\), because \(H\) is **vertex-taut** by (i), so every vertex of
+\(T\) lies on some \(a\)–\(b\) path — that path meets \(T\), so by (iv)'s
+count it has length \(\ge2\rho\ge g\) (`R004` F12: "\(v\) is not a cut
+vertex" was the wrong justification; it does not produce a path *through*
+\(v\), and tautness is already available). Since \(g\notin S\),
 \(\max S>g\). So \(g\) is a **hole at a value \(\ge10\)**.
 
 *Arbitrarily long holes.* By (iv) every even value in \([g,2\rho+2)\) is
 absent, so the hole contains \(\rho+1-g/2\) even values. Fixing \(g=10\) and
-letting \(\mathrm{diam}(\tilde F)\to\infty\) — the **decoupled** form of
-`X004`, girth held at 10 while the order grows — makes \(\rho\) and hence the
-hole arbitrarily long. Therefore \(S\supseteq[\min S+c,\max S]\) fails for
-every constant \(c\). ∎
+taking \(N>2^{\,r+1}-2\) gives \(\rho\ge r\) for any prescribed \(r\), so
+the hole is arbitrarily long. Therefore \(S\supseteq[\min S+c,\max S]\) fails
+for every constant \(c\). ∎
 
 **What the numbers actually need, recorded so the next reader does not have to
 re-derive them.** The hole needs \(\rho\ge g/2\); the \(\min S=g-1\)
-identification needs \(\rho\ge g/2\) as well; and \(\rho\le\mathrm{diam}-1\).
-So the requirement on the ambient graph is \(\mathrm{diam}(\tilde F)\ge
-g/2+1\), *not* the \(\mathrm{diam}\ge g\) of the previous revision and
-certainly not the \(\mathrm{diam}\ge5\) of the draft. **The Tutte 12-cage does
-not satisfy it** (\(g=12\), diameter 6, so \(\rho\le5<6\)) and is withdrawn as
-a witness; every \((3,g)\)-cage has diameter \(\approx g/2\) and so lies in
-the failing regime — cages are exactly the wrong family here (`R004` F3).
+identification needs \(\rho\ge g/2\) as well; and \(\rho\ge r\) follows from
+\(N>2^{\,r+1}-2\). So the requirement on the ambient graph is on its
+**order**, not its diameter — and at \(g=10\) it is automatic. Three earlier
+revisions got this wrong in three different ways (\(\mathrm{diam}\ge5\);
+\(\mathrm{diam}\ge g\); \(\mathrm{diam}\ge g/2+1\)), which is why the
+requirement is now derived rather than asserted. The Tutte 12-cage was
+withdrawn as a witness on the way (`R004` F3) and stays withdrawn; with the
+order form it is simply irrelevant.
 
 **\(F_1\) is non-bipartite** (it contains \(T\)), so the repair "add
 non-bipartiteness, which `L042` supplies anyway" does not save (INT-rel).

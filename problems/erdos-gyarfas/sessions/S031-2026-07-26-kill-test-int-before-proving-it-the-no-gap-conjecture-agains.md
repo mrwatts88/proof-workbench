@@ -100,8 +100,8 @@ experiment `E030`.
 - `L056` (T1, **proved**, audited `R004` — passed and strengthened):
   **(INT) and (INT-14) are false**, with explicit witnesses of orders **30**
   and **59** that import nothing, plus the asymptotic `L053` route.
-- `L057` (T2, modulo `X004`; **audit FAIL, repaired, not re-audited —
-  recorded at `proposed`**): no relativized interpolation either. For every
+- `L057` (T2, modulo `X004`; **audit FAIL twice, `R004` F3′ still open —
+  NOT ESTABLISHED, recorded at `proposed`, not citable**): no relativized interpolation either. For every
   \(c\), \(S\supseteq[\min S+c,\max S]\) fails on a non-bipartite class
   member; the recorded pivot trigger ("a hole in \(S\) at a value \(\ge8\)")
   fires.
@@ -145,9 +145,16 @@ import.
   session's headline is **stronger** than it claimed, and that its own T4 move
   4 ("find such an object in-window") was answered by the auditor rather than
   left open.
-- **T2's numerics were wrong twice and its parameter choices were made in the
-  wrong order** (`R004` F1/F2/F3/F5). All repaired; the repair is not
-  re-audited, and `L057` is recorded at `proposed` accordingly.
+- **T2 is the session's real failure.** Its numerics were wrong in three
+  successive revisions (`R004` F2, then F11) and its parameter choices were
+  made in the wrong order (F1); the named import witness was wrong (F3); and
+  after all repairs the import still asserts 3-connectivity **with no source**
+  (F3′, open). `L057` is recorded at `proposed` and is **not citable**. The
+  first decisive failure is identifiable and worth stating: the construction
+  was written before the quantity it depends on was identified, so each
+  revision fixed a symptom (diameter \(\ge5\), then \(\ge g\), then
+  \(\ge g/2+1\)) rather than the cause — that what places the far vertex is
+  the **order**, via a girth ball count, and never the diameter.
 - **The session's first guess about `L046` was wrong and is corrected in
   place.** `A029` T3(c) initially recorded that `L046`'s threshold was stale
   by four orders and that re-deriving it would *widen* the programme's
@@ -165,9 +172,15 @@ import.
   4 minor, 2 notes). T1 passed and was strengthened by F4's order-30 object;
   T2 failed on F1/F2 (the hole was not proved to open; two false numeric
   steps) and F3 (the named `X004` witness provably fails, as does every cage);
-  T3(b) passed up to side conditions. All ten findings are answered in
-  `reviews/R004-…md`, and the two that changed the mathematics — F4 and the
-  T2 repair — are reflected in every ledger row.
+  T3(b) passed up to side conditions. The reviewer then **re-audited the
+  repairs** and raised two more majors: F11 (the diameter route is a non
+  sequitur once \(ab\) is fixed — resolved, the requirement is now on the
+  **order** via a tree ball bound, which is automatic at \(g=10\)) and
+  **F3′, still open** — `X004`'s 3-connectivity clause has no source, so
+  `L057` is **not established** and may not be cited. All findings are
+  recorded in `reviews/R004-…md` with their resolution status. Net: `L056`
+  proved and audited (and strengthened by the audit); `L058` proved in the
+  `L046` frame; `L057` blocked.
 - Before delegation: every hypothesis of (INT) matched field by field against
   `L053`'s recorded conclusion; T2's connectivity proved in all three cases
   including the degenerate branch that needs simplicity; T2 checked to
@@ -225,6 +238,12 @@ import.
   object satisfies every class-level hypothesis. (iv) A non-decomposable
   cycle in a vertex-taut pair remains a soundness alarm against `L049`, not a
   route pivot.
+- **Open obligation carried out of this session.** `R004` F3′: `X004`'s
+  3-connectivity clause is unsourced, so `L057` is blocked. Discharge it by
+  sourcing bipartite cubic 3-connected graphs of fixed girth \(\ge10\) and
+  unbounded order, or by replacing 3-connectivity with anything that delivers
+  vertex-tautness — the only use T2 makes of it. Cheap, and it converts a
+  blocked row into a proved one.
 - **Best next action.** Close `A028` T8's two gaps for the non-Hamiltonian
   stratum: a component-atomic minimal-cover notion with a bound on the number
   of components, and an interval-disjoint family of positive-savings bridges

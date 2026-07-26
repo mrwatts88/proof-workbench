@@ -448,9 +448,12 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   \(\ge10\) and large order, minus an edge far from the triangle, is a
   *non-bipartite* class member whose through-set has a parity hole at
   \(\min S+1\ge10\) (verified end to end on an explicit 106-vertex graph,
-  `E030`) — this half **failed** its audit and is repaired but not
-  re-audited, so it is recorded at `proposed`; the genre conclusion does not
-  depend on it. **The interpolation genre is empty — the third dead genre** after
+  `E030`) — this half **failed** its audit twice and is **not
+  established**: `R004` F3′ is still open (`X004`'s 3-connectivity clause has
+  no source), so it is recorded at `proposed` and may not be cited. The genre
+  conclusion does not depend on it — `L056` kills the absolute form and the
+  bipartite one-liner kills the relativized form against a bipartite
+  defender. **The interpolation genre is empty — the third dead genre** after
   congruence (`C037`) and membership (`L045`/`C045`), and all three fail for
   one reason (`A029` T3(a)): every class-level hypothesis is **local and
   hereditary**, hence inherited by large-girth cubic graphs minus an edge, and

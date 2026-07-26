@@ -14,39 +14,46 @@ strength at which the dossier may cite it.
 
 ## `X004` — bipartite cubic 3-connected graphs of girth \(\ge10\)
 
-**Statement used (decoupled form — this matters, see below).** Fix an even
-\(g\ge10\). For every \(D\) there exists a connected **bipartite** 3-regular
-simple graph that is 3-connected, has girth \(\ge g\), and has diameter
-\(\ge D\). Girth is held **fixed** while order and diameter grow.
+**Statement used (decoupled form).** Fix an even \(g\ge10\). For every \(N_0\)
+there exists a connected **bipartite** 3-regular simple graph that is
+**3-connected**, has girth \(\ge g\), and has order \(\ge N_0\). Girth is held
+**fixed** while the order grows.
 
-**Why decoupled.** `A029` T2 consumes the **diameter**, not the girth: it needs
-a vertex at distance \(\rho\ge g/2\) from a chosen shortest-cycle edge, i.e.
-\(\mathrm{diam}\ge g/2+1\), and it needs \(\rho\to\infty\) *with \(g\) fixed*
-to make the hole arbitrarily long. A coupled statement of the form "larger
-girth forces larger order, hence larger diameter" does **not** supply that,
-and this was `R004` F3 against an earlier revision of this row. The bipartite
-parity bound \(\rho\le\mathrm{diam}-1\), proved inside `A029` T2(v), is why
-the diameter must exceed \(g/2\) rather than merely reach it.
+**Order, not diameter.** An earlier revision of this row asked for large
+*diameter*. `A029` T2 does not need it: with \(ab\) fixed first, what the
+construction consumes is a vertex far from a **pre-chosen edge**, and the
+girth makes \(B(\{a,b\},r-1)\) a tree of size \(\le2^{\,r+1}-2\), so order
+\(>2^{\,r+1}-2\) already supplies one at distance \(\ge r\). Diameter
+hypotheses were wrong twice here (`R004` F2(a), F11) and are gone. At
+\(g=10\), \(r=g/2\) the bound reads \(N>62\), which a girth-10 cubic graph
+(order \(\ge70\)) satisfies automatically.
 
-**Withdrawn: the Tutte 12-cage as a witness.** An earlier revision named it.
-It has girth 12 and diameter 6, so \(\rho\le5<6=g/2\): it **fails** the
-requirement. More generally every \((3,g)\)-cage has diameter \(\approx g/2\)
-and therefore lies in the failing regime — cages are extremal in exactly the
-wrong direction here, and no cage can serve as the witness. Recorded so that
-no later session reaches for one.
+**Withdrawn: the Tutte 12-cage as a witness.** An earlier revision named it as
+satisfying a diameter requirement it does not meet. With the order form it is
+simply not the relevant kind of object, and it stays withdrawn.
 
-**Route.** Bipartite cubic graphs of girth \(\ge g\) exist for every \(g\)
-(the Erdős–Sachs argument of `X001` applies verbatim to the bipartite case;
-equivalently, for a cubic \(G\) of girth \(\ge g\) the bipartite double
-cover \(G\times K_2\) is bipartite, cubic and of girth \(\ge g\), because
-a cycle of the cover projects to a non-backtracking closed walk of the same
-length, which contains a cycle of at most that length). Arbitrarily large
-diameter at fixed girth is the standard "many graphs, few of small diameter"
-observation: a cubic graph of diameter \(D\) has at most \(1+3(2^{D}-1)\)
-vertices, so any infinite family of bipartite cubic graphs of girth \(\ge g\)
-has unbounded diameter. What is **not** derived internally is 3-connectivity —
-the double-cover route does not supply it — which is why this row is an
-import rather than a lemma.
+> ## ⚠ UNRESOLVED — `R004` F3′ (major, open)
+>
+> **The 3-connectivity clause of this row has no source.** The two routes
+> recorded below — Erdős–Sachs (`X001`) and the bipartite double cover —
+> supply bipartiteness, cubicity and girth, and **neither supplies
+> connectivity**, as the "Route" paragraph itself states. The only support
+> the row ever had for 3-connectivity was "cages of girth \(\ge5\) are
+> 3-connected", and the same revision that decoupled the statement
+> **withdrew cages**. So as recorded, `X004` asserts an existence claim in a
+> regime it does not source.
+>
+> Consequences, stated plainly: **`L057` is not established.** It is recorded
+> at `proposed` and may not be cited. The interpolation-genre conclusion does
+> **not** depend on it — `L056` (audited, passed) kills the absolute form
+> outright at order 30, and the bipartite one-liner \(\tilde F-ab\) kills the
+> relativized form against a bipartite defender. What is unproved is exactly
+> the *non-bipartite* relativized kill.
+>
+> To discharge: either source bipartite cubic **3-connected** graphs of fixed
+> girth \(\ge10\) and unbounded order, or replace 3-connectivity by something
+> derivable — note `A029` T2 uses it only to make \(H=F_1-ab\) vertex-taut, so
+> any hypothesis delivering vertex-tautness would do.
 
 **Sources.** W. T. Tutte, *A family of cubical graphs*, Proc. Cambridge
 Philos. Soc. **43** (1947), 459–474 (the 8-cage); C. T. Benson, *Minimal
@@ -57,15 +64,15 @@ cage survey*, Electron. J. Combin., Dynamic Survey DS16). P. Erdős and
 H. Sachs (1963) as recorded in `X001`.
 
 **Hypothesis match.** `A029` T2 uses only: bipartite, cubic, simple, finite,
-3-connected, even girth \(\ge10\), and \(\mathrm{diam}\ge g/2+1\) — the
-last so that a vertex at distance \(\ge g/2\) from a chosen shortest-cycle
-edge exists. It does not use regularity of the bipartition classes beyond
-cubicity, vertex-transitivity, or any incidence-geometric property. A single
-instance with \(g=10\) and diameter \(\ge6\) already defeats the recorded
-pivot-trigger form; unbounded diameter at fixed girth is used only to defeat
-(INT-rel\(_c\)) for **every** constant \(c\).
+3-connected, even girth \(\ge10\), and order \(>2^{\,r+1}-2\) for the chosen
+radius \(r\ge g/2\). It does not use regularity of the bipartition classes
+beyond cubicity, vertex-transitivity, or any incidence-geometric property.
+Unbounded order at fixed girth is used only to defeat (INT-rel\(_c\)) for
+**every** constant \(c\); a single \(g=10\) instance already defeats the
+recorded pivot-trigger form, and there the order condition is automatic.
 
-**Strength.** `reported-classical`. Not verified line by line here. Its use
+**Strength.** `reported-classical` for the girth/bipartite/cubic clauses;
+**unsourced** for 3-connectivity (see the boxed finding above). Its use
 is an **existence** use inside a *negative* result — it produces a
 calibration object showing a conjecture's hypotheses are too weak — so an
 error in it could only remove a warning, never create a false claim in

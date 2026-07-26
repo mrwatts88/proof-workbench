@@ -45,14 +45,13 @@ Run: `python3 check.py` (also run under `pypy3`; identical output).
 
 Base graph: the cyclic Haar graph \(H(52;\{0,1,5\})\) — bipartite, cubic,
 order 104, girth **6**, diameter **12**, verified 3-connected by exhaustive
-cut enumeration. T2(v) requires \(\mathrm{diam}\ge g/2+1=4\); the diameter
-is 12, checked directly, so the requirement is met with room to spare.
+cut enumeration. T2(v) requires order \(>2^{\,r+1}-2\) for the chosen radius; here \(\rho=6\)
+is exhibited directly, which is what the bound is for.
 
 Chosen edge \(ab=(0,52)\): the shortest cycle through it has length 6, i.e.
 it lies on a shortest cycle, as T2(v) requires (choice 1). Chosen expansion
 vertex \(v=11\) with \(\rho=6\ge g/2=3\) (choice 2; 54 candidates were
-available). Note \(\rho\le\mathrm{diam}-1\), the bipartite parity bound
-proved in T2(v), holds here with room to spare.
+available).
 
 Expanded graph \(F_1\): order 106, 159 edges, cubic, verified 3-connected.
 \(H=F_1-ab\): order 106, exactly two degree-2 vertices, all others \(\ge3\),
@@ -102,7 +101,7 @@ every claim.
 | assertion | verdict |
 |---|---|
 | \(P^{\ast}\) is cubic, order 30, 45 edges | **true** |
-| cycle lengths below 13 are exactly \(\{3,10,11,12\}\) | **true** — so \(C_4\)-free and \(C_8\)-free |
+| cycle lengths **at most 13** are exactly \(\{3,10,11,12\}\) (the enumeration reaches 13; there is no 13-cycle) | **true** — so \(C_4\)-free and \(C_8\)-free |
 | \(P^{\ast}\) is 3-connected (exhaustive cut enumeration) | **true** |
 | \(H=P^{\ast}-ab\) has exactly two degree-2 vertices, min degree 2 | **true** |
 | \(H\) is 2-connected, hence vertex-taut | **true** |

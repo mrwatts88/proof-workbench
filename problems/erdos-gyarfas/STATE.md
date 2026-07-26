@@ -27,15 +27,20 @@
   bipartite cubic 3-connected graph of girth \(\ge10\), minus an edge far
   from the triangle, is a *non-bipartite* class member with a parity hole at
   \(\min S+1\ge10\), so \(S\supseteq[\min S+c,\max S]\) fails for every \(c\)
-  (import `X004`, existence use inside a negative result). **`L057` FAILED
-  its audit** (`R004` F1–F3, F5: the hole was not proved to open, two false
-  numeric steps, and the named witness — the Tutte 12-cage — provably fails,
-  as does every cage). Every finding is repaired (choices reordered,
-  \(\rho\le\mathrm{diam}-1\) proved, bound sharpened to \(2\rho+2\),
-  requirement restated as \(\mathrm{diam}\ge g/2+1\), `X004` decoupled), but
-  **the repair is not re-audited**, so `L057` sits at `proposed` and the
-  non-bipartite relativized kill may not be cited yet. The genre conclusion
-  does not depend on it.
+  (import `X004`, existence use inside a negative result). **`L057` FAILED its audit
+  twice and is NOT ESTABLISHED.** Round 1 (`R004` F1–F3, F5): the hole was not
+  proved to open, two false numeric steps, and the named witness provably
+  fails. Round 2, against the repairs: **F11** (the diameter route is a non
+  sequitur once \(ab\) is fixed — repaired again, the requirement is now on
+  the **order** via the tree ball bound \(\lvert B(\{a,b\},r-1)\rvert\le
+  2^{\,r+1}-2\), which is automatic at \(g=10\)) and **F3′, still open**:
+  `X004`'s 3-connectivity clause has **no source**, since Erdős–Sachs and the
+  double cover supply none and cages — its only previous support — were
+  withdrawn in the same revision. So `L057` sits at `proposed` and **may not
+  be cited at all**. The genre conclusion does not depend on it: `L056` kills
+  the absolute form and the bipartite one-liner kills the relativized form
+  against a bipartite defender; what is open is exactly the *non-bipartite*
+  relativized kill.
   **The genre is empty, and it is the third**: congruence (`C037`),
   membership (`L045`/`C045`), interpolation. One diagnosis fits all three —
   every class-level hypothesis is **local and hereditary**, hence inherited by
@@ -527,8 +532,8 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   cut vertex gives order **59** with \(S=[18,52]\), so \(14\notin S\).
   Neither imports anything (verified, `E030/truncation.py`). Asymptotically the
   same follows from `L053` (\(\min S\ge16\) for \(F-ab\) at girth
-  \(\ge17\)). `L057` (`A029` T2, modulo `X004`; **audit FAIL,
-  repaired, not re-audited — cite at `proposed` only**): the triangle
+  \(\ge17\)). `L057` (`A029` T2, modulo `X004`; **audit FAIL
+  twice, one major finding still open — NOT ESTABLISHED, do not cite**): the triangle
   expansion at one vertex of a bipartite cubic 3-connected graph of even girth
   \(g\ge10\) with \(\mathrm{diam}\ge g/2+1\), minus an edge on a shortest
   cycle at distance \(\rho\ge g/2\) from the triangle, is a
