@@ -1,6 +1,6 @@
 # Project state
 
-Last reviewed: 2026-07-25
+Last reviewed: 2026-07-26
 
 ## Mission
 
@@ -374,6 +374,47 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   all-equal-length, hence bipartite, interior-degree-\(\ge3\) gadget,
   exactly the class `L035`/`C034` empties. `E024` still running,
   untouched, excluded from every ledger row.
+  **S030 (2026-07-26) spent the recorded next action, killed the
+  deferred alternative, and named the programme's ceiling — all
+  proof-side, with one read of data already on disk.** (i) `L053`: for
+  every \(N\) there is a 2-connected exactly-two-profile pair of order
+  \(\ge N\) with girth \(\ge17\) — hence no \(C_4\), \(C_8\),
+  \(C_{16}\) — and **no Hamiltonian through-path** (a cubic
+  non-Hamiltonian graph of large girth minus an edge; Haythorpe,
+  independently Kochol's snarks plus the three-line proof that a
+  Hamiltonian cubic graph is 3-edge-colourable). So `C049`'s 27/27 is a
+  small-order **pattern, not a lemma**, the non-Hamiltonian stratum is
+  unavoidable, and **calibration object #3** joins Petersen\(-e\).
+  Asymptotic — nothing exhibited in \([18,35]\), no floor moves.
+  (ii) `L055`, the **positive-savings theorem**: every off-path
+  component of a longest through-path admits a bridge with savings
+  \(\ge1\), and \(\ge2\) with three or more attachments (the
+  Y-identity \(\sigma(i,k)=\sigma(i,j)+\sigma(j,k)+2\beta\),
+  maximality alone); the two-attachment case runs through the new
+  `L054` **bipartite exclusion dichotomy** with its power-freeness
+  hypothesis finally matched. `A027` T5's zero-savings obstruction is
+  **gone** and `L052`(iii)'s reroute machinery transports from chords to
+  bridges — but the stratum is cleared at **no** order (`A028` T8: no
+  component-atomic minimality; savings per component, not per position).
+  (iii) **The ceiling.** `L046` supplies the 2-connectivity the whole
+  (F) frame assumes only below order 36, so the (F) programme — complete
+  on both strata — closes case (5b) for \(n_0\le35\) and **cannot
+  prove `G015`**; with `R003` F4 and `L053` its top rungs prove
+  something that must stop being true. The `E028` ladder is **demoted to
+  a source of floors**. (iv) The successor is order-unbounded:
+  **(INT) ∧ (L-A)** (`A028` T9) — (INT) says
+  \(S\supseteq[8,\max S]\) for a vertex-taut \(\{C_4,C_8\}\)-free
+  exactly-two-profile pair; with \(\max S\ge14\) it forces
+  \(14\in S\), poison, hence (F-S) **at every order**, no window and no
+  \(C_{16}\) hypothesis. `C050`/`E029` kill-tested it with **no
+  generation**: 24 recorded profile objects, **zero violations**, every
+  hole in \(\{4,5,6\}\); over the 9,061-row near-miss corpus the
+  minimum degree-2 count admitting a hole is 4 for every value
+  \(\le7\) and **5** at 8 (the constant is pinned from both sides),
+  while a hole at **14** needs \(\ge7\) — five above the profile. New
+  en route: a second non-interval profile object, at order 20. (INT) is
+  a **conjecture**; 1,920 corpus rows refute it the moment the profile
+  hypothesis is dropped, and they are its standing sanity check.
   Portfolio (all threads carried, per standing user instruction): the
   case-(5b) endgame (the **(F) program**, Tier 1, now the
   (F-S)/(F-T) pair with the **profile-consuming interpolation
@@ -441,54 +482,50 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, keep working **Tier 1: exclude case (5b)** via the
-**(F) program**: (F) = **(F-S) ∨ (F-T)** (S024; either closes case
-(5b) below 36). S025 spent (F-S)'s first kill test (zero gapped
-exactly-two members on disk; 9,061 near-miss dodges force the
-lemma to consume the profile), and **S026 spent the dissection**
-(`E027`/`C047`, attempt `A026`): the dodge taxonomy is rigid
-(shapes A/A′/B), the dodge is pair-local with the frontier two
-subdivision vertices from the profile, near-misses are
-subdivisions of class-violating graphs, the **span law** is proved
-(no path chord of span 3 or 7), and the **chord-exchange
-calculus** is validated as the long-range engine (top-of-\(S\)
-saturation from 10 up, including 14, reproduced on all eight
-profile objects; every dodger hole respected). The target is now
-the split **(L-A) ∧ (L-B) ⟹ (F-S)**: (L-A) — in-window profile
-pairs have \(\max S\ge14\) (or \(6\in S\) when short); (L-B) —
-\(\max S\ge14\) forces \(14\in S\) or \(6\in S\).
-**First action: harvest `E024`** — the S027 post-close review re-ordered
-the moves (`DECISIONS.md`): the remaining risk is stratified by *shape*,
-not by size, so extending the ladder completes nothing while the
-non-Hamiltonian stratum sits at zero coverage at every order. `E024`
-measures the decisive split (\(\max S\) vs \(n-1\)) over the *complete*
-order-21 class. The tooling plan to finish it in about an hour on Railway
-(Pro plan; ~$10 of compute; the linux/amd64 anchor re-gate blocking) is
-**`O012` — planned, nothing executed**. Cheap proxy meanwhile, on data
-already on disk: sweep the orders 18–20 classes by degree-2 count for
-whether \(\max S=n-1\) becomes universal as that count falls to two.
-**Then: the non-Hamiltonian stratum** (`A027` T5) —
-extend the descent from chords to **bridges** \((i,j,w)\)
-(maximality gives \(w\le j-i\); the cycle gives
-\((j-i)+w\notin\{4,8,16,32\}\); T2 generalises), where the open point
-is that a zero-savings bridge covers two positions for nothing; the
-first purchase is that a zero-savings **two-attachment** component
-forces an all-equal-length, hence bipartite, interior-degree-\(\ge3\)
-gadget — the class `L035`/`C034` empties. **Behind them: the `E028` ladder,
-stopped after order 30** — orders 32–35 are days of single-core
-computing, do not parallelise as the instrument stands, and above order
-26 prove class-emptiness rather than poison forcing (`R003` F4). Tier 3
-stays harvest-only (the `C038` kill rung at block orders 15–16;
-cubic 26/28; min-degree-3 at 22, \(\approx\)38 h — a deliberate
-decision; bipartite 26). Do **not** reopen congruence obstructions
-(`C037`), membership-only chain exclusion (`L045`), the density
-constant (`L038`), or the membership-collision form of (F)
-(`C045`); the **saturation** form of the gapped-member pivot trigger
-is **retired** (it fired at order 22 — 13 objects with \(S\) not an
-interval), and the live form is a hole at **14** on an in-window
-exactly-two pair; a non-decomposable cycle in a vertex-taut pair is a
-**soundness alarm** (it would contradict the reviewed `L049`), not
-a route pivot.
+For `P-002`, keep working **Tier 1: exclude case (5b)** — but by the
+**order-unbounded** route, not the ladder. S030 established the
+architectural fact the records had stopped saying out loud: `L046`
+supplies the 2-connectivity the (F) frame assumes only below order 36,
+so the (F) programme, even decided completely on both strata, closes
+case (5b) for \(n_0\le35\) and **cannot prove `G015`**. The `E028`
+ladder is therefore demoted to a source of floors — **do not restart
+it** (stopped at order 30, `S028`) and do not re-run `E024`
+(harvested, `C049`).
+
+**The recorded successor is (INT) ∧ (L-A)** (`A028` T9). (INT) — for a
+vertex-taut \(\{C_4,C_8\}\)-free exactly-two-profile pair,
+\(S\supseteq[8,\max S]\) — together with (L-A) (\(\max S\ge14\))
+forces \(14\in S\), which is poison by `L048`(iii): that is (F-S) at
+**every** order, with no window, no ladder and no \(C_{16}\)
+hypothesis.
+
+**First action: attack (INT) on the Hamiltonian stratum** with `A026`
+T6's chord-exchange calculus. Concretely: on a pair with a Hamiltonian
+\(a\)–\(b\) path, take the chord-minimal cover of `L052`(i)/(ii) and
+decide whether the reachable savings set can skip a value once every
+chord spans \(\ge4\) (spans 3 and 7 are already excluded by the span
+law). That is a hand question about span systems, not a search. Kill
+condition: a span system whose savings set has a gap above 8 while
+satisfying the class constraints — it becomes a new test object and
+(INT) weakens to **(INT-14)**, the form that only asks about 14, which
+`C050` measures as having a five-degree-2-vertex margin to the nearest
+recorded refutation. **Alternative considered and deferred:** prove
+(L-A) instead — a *lower* bound on longest through-paths rather than an
+interpolation — deferred because (INT) has a validated engine and a
+sharply calibrated conjecture in front of it.
+
+**Behind it: the non-Hamiltonian stratum**, which now has an engine
+(`L055`) and two named gaps (`A028` T8) and is cleared at no order.
+Tier 3 stays harvest-only (the `C038` kill rung at block orders 15–16;
+cubic 26/28; min-degree-3 at 22, \(\approx\)38 h; bipartite 26). Do
+**not** reopen congruence obstructions (`C037`), membership-only chain
+exclusion (`L045`), the density constant (`L038`), the
+membership-collision form of (F) (`C045`), or — new in S030 — the
+**Hamiltonian-forcing route** (`L053`: dead at class strength;
+calibration object #3). The live pivot trigger is a **profile object at
+any order with a hole in \(S\) at a value \(\ge8\)** — it refutes
+(INT) outright. A non-decomposable cycle in a vertex-taut pair remains a
+**soundness alarm** against the reviewed `L049`, not a route pivot.
 No required action remains for `P-001`; its reference comparison is
 optional and freely permitted.
 

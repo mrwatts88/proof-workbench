@@ -1,6 +1,37 @@
 # Current state
 
-- Last updated: 2026-07-25 (S027 — **(F) is no longer a lemma to find; it
+- Last updated: 2026-07-26 (S030 — **the non-Hamiltonian stratum gets an
+  engine, and the (F) programme gets a ceiling.** Three proved rows and one
+  measurement, no generation. **`L053`:** a cubic non-Hamiltonian graph of
+  girth \(\ge17\) minus an edge is an exactly-two-profile, 2-connected,
+  \(\{C_4,C_8,C_{16}\}\)-free pair with **no** Hamiltonian through-path — so
+  `C049`'s 27/27 cannot be promoted to a lemma at class strength, the
+  non-Hamiltonian stratum is unavoidable, and calibration object #3 joins
+  Petersen\(-e\). Asymptotic: it exhibits nothing in \([18,35]\) and moves no
+  floor. **`L054`:** the bipartite exclusion dichotomy — a bipartite piece with
+  \(\le2\) sub-cubic vertices inside a power-free graph disproves 0.1 (`L035`
+  T3); recorded in three logical forms because the dichotomy form is *not* a
+  contradiction inside `G015`. **`L055`:** the positive-savings theorem —
+  **every** off-path component of a longest through-path admits a bridge with
+  savings \(\ge1\), and \(\ge2\) when it has three or more attachments (the
+  Y-identity \(\sigma(i,k)=\sigma(i,j)+\sigma(j,k)+2\beta\), maximality alone).
+  `A027` T5's zero-savings obstruction **does not arise**, and `L052`(iii)'s
+  reroute machinery transports from chords to bridges. The stratum is still
+  cleared at **no** order (`A028` T8: components are not thinnable edge by
+  edge, and the savings are per component, not per position).
+  **The architectural finding:** `L046` supplies 2-connectivity only below
+  order 36, so the (F) programme closes case (5b) for \(n_0\le35\) and **cannot
+  prove `G015`** however far the ladder runs; with `R003` F4 and `L053` its top
+  rungs are proving something that must stop being true. The ladder is demoted
+  to a source of floors. **Successor architecture: (INT) ∧ (L-A)** — (INT)
+  says \(S\supseteq[8,\max S]\) for a vertex-taut \(\{C_4,C_8\}\)-free
+  exactly-two-profile pair; with \(\max S\ge14\) it forces \(14\in S\), poison,
+  hence (F-S) **at every order**. `C050`/`E029` kill-tested (INT) on data
+  already on disk: 24 recorded profile objects, **zero violations**, every hole
+  in \(\{4,5,6\}\); the constant 8 is the smallest the corpus permits; a hole at
+  14 needs five more degree-2 vertices than the profile has. New en route: a
+  second non-interval profile object, at order 20)
+- Previous update: 2026-07-25 (S027 — **(F) is no longer a lemma to find; it
   is a finite decision procedure, and it comes back empty.** Two proved
   reductions (`L052`, `A027` T1/T2) — the **chord-minimal descent** (on a
   pair with a Hamiltonian \(a\)–\(b\) path the chords cover every path
@@ -30,7 +61,7 @@
   audit `R003` delegated. Named residue: the **non-Hamiltonian stratum**
   (`A027` T5). `E024` untouched, still running, excluded from every ledger
   row)
-- Previous update: 2026-07-25 (S026 — **the corpus dissection is spent:
+- Earlier update: 2026-07-25 (S026 — **the corpus dissection is spent:
   the dodge mechanism is extracted, two candidate mechanisms are
   killed, and the interpolation lemma splits into (L-A) ∧ (L-B) with
   a validated formal engine for the long-range half.** Over the
@@ -407,6 +438,34 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   purchase: a zero-savings two-attachment off-path component forces an
   all-equal-length, hence bipartite, interior-degree-\(\ge3\) gadget, the
   class `L035`/`C034` has been emptying).
+- **New (S030): `L053`/`L054`/`L055`, `C050` — the non-Hamiltonian stratum
+  gets an engine, and the programme's ceiling is named.** `L053`: for every
+  \(N\) there is a 2-connected exactly-two-profile pair of order \(\ge N\) with
+  girth \(\ge17\) (hence no \(C_4\), \(C_8\), \(C_{16}\)) and **no Hamiltonian
+  through-path** — a cubic non-Hamiltonian graph of large girth minus an edge
+  (`X002` Haythorpe; independently `X003` Kochol's snarks plus the three-line
+  proof that a Hamiltonian cubic graph is 3-edge-colourable). So the class-level
+  hypotheses do **not** force Hamiltonicity: `C049`'s 27/27 is a small-order
+  pattern, not a lemma, and any surviving form of that route must consume
+  power-freeness, the poison condition, minimality, or an order bound
+  (**calibration object #3**). The same object shows the ladder's
+  class-emptiness verdict above order 26 must fail at some order. `L054`: the
+  **bipartite exclusion dichotomy** — a connected bipartite subgraph with
+  \(\le2\) sub-cubic vertices inside a power-free graph disproves 0.1 by
+  `L035` T3; in range \(\le24\) it is an outright exclusion via `C034`, and
+  inside `G015` the dichotomy form alone is *not* a contradiction. `L055`: the
+  **positive-savings theorem** — for a power-free 2-connected profile pair and
+  a longest \(a\)–\(b\) path, every component of \(H-V(P)\) admits a bridge of
+  savings \(\ge1\) (\(\ge2\) with \(\ge3\) attachments, by the Y-identity, which
+  uses maximality alone; exactly two attachments by parity via `L035` T2 and
+  `L054`), plus the bridge span law and the transported coverage step. `A027`
+  T5's zero-savings obstruction is removed; the stratum is nonetheless cleared
+  at **no** order (`A028` T8). `C050` (`E029`, no generation): (INT) —
+  \(S\supseteq[8,\max S]\) — holds on all 24 recorded profile objects with \(S\)
+  recomputed from graph6, every hole in \(\{4,5,6\}\); over the 9,061-row corpus
+  the minimum degree-2 count admitting a hole is 4 for every value \(\le7\) and
+  **5** at 8 (so the constant is pinned), and a hole at **14** needs \(\ge7\)
+  degree-2 vertices — five above the profile.
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -503,9 +562,27 @@ make (F) a **finite decision problem per order**, sharpened the aim to
 the disjunction (F) (which supplies \(C_{16}\)-freeness free) and to the
 full poison set \(\{2,6,14,30\}\), and decided it — **empty at every
 order 16–30** (`E028`/`C048`), i.e. case (5b) is closed there for every
-residual object with a Hamiltonian through-path. What is left of the
-(F) program below order 36: finish the ladder to order 35, and the
-**non-Hamiltonian stratum** (`A027` T5).
+residual object with a Hamiltonian through-path.
+**S030 changed what the (F) program is for.** Three things, in order.
+(1) `L053`: the class-level hypotheses do **not** force a Hamiltonian
+through-path, so `C049`'s 27/27 is a pattern and not a lemma, the
+non-Hamiltonian stratum must be handled on its own, and the ladder's
+class-emptiness verdict above order 26 must fail at some order.
+(2) `L055`: that stratum now has an engine — every off-path component
+of a longest through-path pays savings \(\ge1\), so `A027` T5's
+zero-savings obstruction is gone and the reroute machinery transports
+from chords to bridges; two gaps remain before it is a decision
+procedure (`A028` T8), and no order is cleared.
+(3) The ceiling: `L046` supplies 2-connectivity only below 36, so the
+(F) program — complete on **both** strata — would close case (5b) for
+\(n_0\le35\) and leave \(n_0\ge36\) untouched. **It cannot prove
+`G015`.** The recorded successor is order-unbounded: **(INT) ∧ (L-A)**
+(`A028` T9), where (INT) — \(S\supseteq[8,\max S]\) for a vertex-taut
+\(\{C_4,C_8\}\)-free exactly-two-profile pair — plus \(\max S\ge14\)
+gives \(14\in S\), poison, hence (F-S) at every order. (INT) is a
+**conjecture** with a survived kill test (`C050`) and a constant pinned
+from both sides; the corpus refutes it the moment the profile
+hypothesis is dropped.
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -699,7 +776,22 @@ configuration:**
   stratum** (`A027` T5 — extend the descent to bridges, where a
   zero-savings two-attachment component forces an all-equal-length
   bipartite interior-degree-\(\ge3\) gadget, the class `L035`/`C034`
-  empties): this is now the primary *proof* work. **(3) the `E028`
+  empties): this is now the primary *proof* work.
+  **S030 SPENT MOVES (1) AND (2), AND RE-AIMED THE TIER.** Move (1)'s
+  deferred alternative — promote 27/27 to a lemma — is **dead at class
+  strength** (`L053`; calibration object #3), so the cheap
+  degree-2-count proxy is pointless and is retired. Move (2) delivered
+  its engine (`L055`: every off-path component pays savings \(\ge1\);
+  `L054`: the bipartite transfer with its hypothesis finally matched)
+  but **clears no order** — `A028` T8 names the two remaining gaps
+  (component-atomic minimality; savings per component rather than per
+  position). Above both: `L046` gives 2-connectivity only below 36, so
+  the whole (F) programme is a **finite-window instrument** and cannot
+  prove `G015`. **The tier's primary work is now (INT) ∧ (L-A)**
+  (`A028` T9) — order-unbounded, calibrated by `C050`, with the
+  chord-exchange calculus of `A026` T6 as (INT)'s engine on the
+  Hamiltonian stratum and `L055` as its raw material on the other.
+  **(3) the `E028`
   ladder is STOPPED** — order 30 ran, came back empty, and the process
   was halted there (`S028`) rather than rolled into 31. It *is*
   parallelisable (the DFS branches at position 0 over the single chord
@@ -839,6 +931,17 @@ order 16–30 on the Hamiltonian stratum — the live remainder is the
 non-Hamiltonian stratum, `A027` T5, plus continuing the ladder, which is
 open-ended and above order 26 proves class-emptiness rather than poison
 forcing);
+**NEW, S030 — the live primary trigger: a profile object, at any
+order, with a hole in \(S\) at a value \(\ge8\).** That refutes (INT)
+outright and sends the architecture back to the window. It is the
+successor to the retired saturation form and it is sharper: `C050`
+verified 24 recorded profile objects with every hole in \(\{4,5,6\}\),
+and the near-miss corpus opens its first hole at 8 only at degree-2
+count 5 and its first hole at **14** only at count 7 — so the margin is
+measured, and any object narrowing it is worth recording even if it does
+not violate (INT). ~~Prove the Hamiltonian forcing (27/27 as a
+lemma)~~ (**dead, S030**: `L053` — the class-level hypotheses do not
+force it; calibration object #3);
 a **failure of the `E028` growth trend** (a rung whose node count
 breaks \(\approx\times1.9\) badly enough to stall the ladder before
 order 35 — then the decision route needs a stronger prune or the T5
@@ -1169,67 +1272,124 @@ saves nothing forces a very rigid two-colourable sub-structure, which is
 exactly the family a different arm of this programme has been emptying
 for several sessions.
 
+S029 finished the big overnight survey at size 21 — nothing there
+either, and all nineteen graphs of the right shape do have a route
+through every point, twenty-seven out of twenty-seven overall against a
+base rate near a quarter.
+
+S030 asked whether that pattern could be turned into a proof, and the
+answer is no. There are graphs of exactly the right shape, obeying every
+structural rule, with no such route — they are just large. So the
+pattern is real at the sizes we can search and false in general, and the
+untouched case has to be handled on its own. Two literature lookups were
+the whole cost.
+
+Then it was handled, in part. The sticking point had been that a detour
+hanging off the main route could in principle be a pure liability: it
+covers ground while shortening nothing, which is what made the argument
+stall. Two independent arguments now show that cannot happen. If the
+detour touches the main route in three or more places, a short
+calculation on the three legs of a Y forces one of its shortcuts to save
+at least two steps — using nothing but the fact that the route was
+chosen as long as possible. If it touches in exactly two places, then
+either it saves something, or it is two-colourable in a very rigid way,
+and a two-colourable piece of that kind hands us an outright
+counterexample to the conjecture. Every detour pays. One more piece is
+needed before this becomes a decision procedure, and it is named.
+
+The third finding is accounting, and it is the important one. The search
+ladder everyone has been climbing can only ever settle sizes below
+thirty-six — not because the computer is slow, but because the
+structural fact that sets up the whole question is only available below
+thirty-six. Above that the ladder says nothing, however far it goes. And
+a by-product of the first result shows its recent rungs have been
+proving something that must stop being true at some size. So the
+programme needed a route whose strength does not depend on size, and
+there is one, hiding in the data: in every one of these graphs so far,
+the set of achievable route-lengths has no holes above eight. If that is
+a theorem then the length fourteen is always achievable, and fourteen is
+exactly one of the lengths that kills a candidate — settling the case at
+every size, with no search. Tested against everything on disk, it holds
+on all twenty-four graphs of the right shape whose descriptions we
+store, their holes stopping at six; eight is the smallest threshold the
+data allows; and the nearest near-miss to fourteen needs five more
+low-degree vertices than the shape permits. It is a conjecture, and
+nearly two thousand graphs on disk break it the moment the shape
+constraint is relaxed — which is precisely what any proof will have to
+use.
+
 ## Resolution outlook
 
-- Estimated chance of eventually settling the exact current statement: 10%
-- Previous estimate: 8% (S026)
-- Reason for change: for the first time in the programme, the surviving
-  proof-side question stopped being "find a lemma nobody knows how to
-  prove" and became "run a finite decision procedure". Two small proved
-  reductions (`L052`) turned (F) into an exhaustive per-order
-  enumeration; it is **empty at orders 16–30**, nine orders past the
-  previous frontier, in under an hour, and a delegated fresh-context audit
-  (`R003`) passed the reduction and the instrument after reproducing the
-  numbers independently. The route is now genuinely easier, not merely
-  sharper. Against: the audit also showed the ladder is **open-ended**
-  (orders 30–35 are days of computation, not hours) and that above order 26
-  it proves class-emptiness rather than poison forcing, so it stopped
-  informing the mechanism exactly where the mechanism was the point; the closure is confined
-  to pairs carrying a Hamiltonian through-path, and the remaining
-  stratum is exactly where the near-miss corpus says the escapes live
-  (`C047`(c): dodges ride on degree-2 corridors, which is the same
-  mechanism as an off-path detour that saves nothing); the S027 data
-  itself broke the saturation reading that had been guiding the search
-  (13 order-22 objects have a hole at 6), so the mechanism is narrower
-  than believed; and even a complete closure of case (5b) proves the
-  **cubic reduction** (`G015`), not statement 0.1 — Tier 0 still has no
-  cheap move. The increment is deliberately small: real, structural, and
-  still two named steps from the programme's own deliverable.
+- Estimated chance of eventually settling the exact current statement: **9%**
+- Previous estimate: 9% (S029); 10% (S027)
+- Reason for change: unchanged, but for two offsetting reasons rather than
+  because nothing happened. **Down:** S030 established that the route the last
+  eight sessions have been extending has a **ceiling at order 36** — `L046`
+  supplies the 2-connectivity the (F) frame assumes only below 36, so even a
+  complete ladder plus a complete non-Hamiltonian treatment closes case (5b)
+  for \(n_0\le35\) and cannot prove `G015` — and it killed the shortcut
+  (`L053`) that would have made the completed ladder mean more than it does.
+  That is real negative information about the architecture. **Up:** the same
+  session removed the named obstruction on the untouched half with two clean
+  order-unbounded lemmas (`L054`/`L055`) and identified a successor
+  architecture, **(INT) ∧ (L-A)**, that is order-unbounded, already sharply
+  calibrated against every object on record (`C050`: 24 profile objects, zero
+  violations, constant pinned from both sides, five-vertex margin at the
+  operative value 14), and would close case (5b) at every order rather than in
+  a window. A route with no ceiling, even a conjectural one, is worth about
+  what the ceiling cost.
+- Basis: most promising route is **(INT)** via `A026` T6's chord-exchange
+  calculus, with (L-A) as its live alternative; strongest obstacle is
+  unchanged — nothing yet forces through-path lengths from **below**, which is
+  both what (L-A) asks for and why (INT) is hard; the evidence that informed
+  the judgment is `L053` (a proved delimitation), `L055` (a proved reduction),
+  and `C050` (a survived kill test with measured margins), against the facts
+  that no order of the non-Hamiltonian stratum is cleared and that even full
+  success on case (5b) proves the **cubic reduction** (`G015`), not statement
+  0.1 — Tier 0 still has no cheap move.
 
 ## Resume reading
 
 1. `STATEMENT.md`
-2. **`A027`** (the chord-minimal descent T1, the monotone-reroute prune
-   T2, what the search decides T3, the calculus's reach T4, the
-   non-Hamiltonian residue T5, the corrected chord-pair table T6) and
-   **`E028/README.md`** (the instrument, the anchors, both ladder runs);
-   then **`A026`** (the dissection and the (L-A)/(L-B) split it
-   supersedes) and **`A025`** (the (F-S)/(F-T) frame); then
-   `A024`/`A023` (the T5 theorem and interference frame) and `A019`
-   (the case analysis, the engine/peel, the residual object)
-3. **The `E028` ladder is the live instrument.** Resume it with
-   `nice -n 15 pypy3 search.py search <M0> <M1> c16` (anchors first,
-   both interpreters). Each rung decides (F) at order \(M+1\) on the
-   Hamiltonian stratum; a survivor that passes the exact stage is a
-   case-(5b) residual object — **report immediately, disproof-adjacent**.
-   Then `A027` T5: extend the descent from chords to **bridges** for the
-   non-Hamiltonian stratum. **`E024` is still running** (order-21
-   \(\mathcal G\) rung, launched at S023 close; not citable until
-   harvested) — deliberately deferred in S027 because it is unfinished
-   and an empty rung moves a floor without bearing on (F).
-4. `R003` (the delegated audit of the descent and the instrument), then
-   `E027/README.md` (the dissection: taxonomy, frontier, subdivision
-   frame, control rates, the exchange validation) with
-   `corpus_rows_compact.json` as the per-row refutation set; then
-   `E026/README.md` (the census) and the `E021`/`E022` READMEs for
-   the imported instruments
-5. `A021` (the congruence kill and the two-object calibration
-   discipline — Petersen\(-e\) shows \(C_8\)-freeness is necessary
-   for (L-A)) and `A022`/`E020` (the chain package and its 15/16
-   kill rung)
-6. `CLAIMS.md` rows `L052`/`C048` (new, S027), `C047` (S026), `C046`
-   (S025), `L051`/`C045` (S024), `L049`/`L050`/`C044` (S023) (and
-   `L039`–`L048`, `C036`–`C043` for the frame); `OBLIGATIONS.md`
-   `G015`/`G013`
-7. `sessions/S027-…md` (this session: the reductions, the decision
-   procedure, the ladder) and `S019`–`S026` for the preceding arc
+2. **`A028`** (this arc's attempt: T1 no class-level Hamiltonian forcing +
+   calibration object #3, T2 the bipartite exclusion dichotomy, T3–T7 the
+   positive-savings theorem and the bridge span/coverage laws, T8 the two
+   remaining gaps, **T9 the ceiling and the (INT) ∧ (L-A) successor**), then
+   **`E029/README.md`** (the (INT) kill test, its anchors and its margins)
+3. **`A027`** (the chord-minimal descent T1, the monotone-reroute prune T2,
+   what the search decides T3, the calculus's reach T4, the non-Hamiltonian
+   residue T5 that `A028` T3–T5 discharges, the corrected chord-pair table T6)
+   and **`E028/README.md`** (the instrument, the anchors, both ladder runs);
+   then **`A026`** (the dissection, the span law, and the chord-exchange
+   calculus that is now **(INT)'s engine**) and **`A025`** (the (F-S)/(F-T)
+   frame); then `A024`/`A023` (the T5 theorem and interference frame) and
+   `A019` (the case analysis, the engine/peel, the residual object)
+4. **The live work is proof-side, not the ladder.** The `E028` ladder is
+   **stopped** at order 30 (`S028`) and demoted to a source of floors
+   (`S030`): it cannot prove `G015` at any length, because `L046` supplies
+   2-connectivity only below order 36. Do **not** restart it, and do not re-run
+   `E024` (harvested, `C049`). The next move is `A028`'s exit action — attack
+   **(INT)** on the Hamiltonian stratum with the chord-exchange calculus.
+   If a search is ever wanted again, `E028` resumes with
+   `nice -n 15 pypy3 search.py search <M0> <M1> c16` (anchors first, both
+   interpreters), and a survivor passing the exact stage is a case-(5b)
+   residual object — **report immediately, disproof-adjacent**.
+5. `R003` (the delegated audit of the descent and the instrument), then
+   `E027/README.md` (the dissection: taxonomy, frontier, subdivision frame,
+   control rates, the exchange validation) with `corpus_rows_compact.json` as
+   the per-row refutation set — it is also **(INT)'s standing refutation set**;
+   then `E026/README.md` (the census) and the `E021`/`E022` READMEs for the
+   imported instruments
+6. `A021` (the congruence kill and the calibration discipline —
+   Petersen\(-e\) shows \(C_8\)-freeness is necessary for (L-A); calibration
+   object #3 of `L053` now shows the same for any Hamiltonicity argument) and
+   `A022`/`E020` (the chain package and its 15/16 kill rung)
+7. `CLAIMS.md` rows `L053`–`L055`/`C050` (new, S030), `C049` (S029),
+   `L052`/`C048` (S027), `C047` (S026), `C046` (S025), `L051`/`C045` (S024),
+   `L049`/`L050`/`C044` (S023) (and `L039`–`L048`, `C036`–`C043` for the
+   frame), plus the **dependency notes at the foot of `CLAIMS.md`**, which
+   record exactly how far `L053`–`L055` and `C050` may be cited;
+   `OBLIGATIONS.md` `G015`/`G013`
+8. `sessions/S030-…md` (this session: the killed alternative, the savings
+   theorem, the ceiling, the successor architecture) and `S019`–`S029` for the
+   preceding arc

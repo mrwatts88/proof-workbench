@@ -1,0 +1,930 @@
+{
+ "corpus": {
+  "corpus_rows": 9061,
+  "max_hole_value_anywhere": 14,
+  "min_ndeg2_per_hole_value": {
+   "10": 6,
+   "11": 8,
+   "14": 7,
+   "2": 4,
+   "3": 4,
+   "4": 4,
+   "5": 4,
+   "6": 4,
+   "7": 4,
+   "8": 5,
+   "9": 7
+  },
+  "min_ndeg2_with_hole_ge_8": 5,
+  "rows_and_violations_by_ndeg2": {
+   "10": {
+    "rows": 235,
+    "with_hole_ge_8": 8
+   },
+   "11": {
+    "rows": 16,
+    "with_hole_ge_8": 0
+   },
+   "4": {
+    "rows": 6,
+    "with_hole_ge_8": 0
+   },
+   "5": {
+    "rows": 123,
+    "with_hole_ge_8": 10
+   },
+   "6": {
+    "rows": 936,
+    "with_hole_ge_8": 224
+   },
+   "7": {
+    "rows": 2588,
+    "with_hole_ge_8": 626
+   },
+   "8": {
+    "rows": 3484,
+    "with_hole_ge_8": 755
+   },
+   "9": {
+    "rows": 1673,
+    "with_hole_ge_8": 297
+   }
+  },
+  "rows_with_hole_ge_8": 1920
+ },
+ "interpreter": "3.14.2",
+ "profile_objects": {
+  "c4_free": 24,
+  "checked": 24,
+  "gapped": [
+   {
+    "g6": "T????A?O@?B?D??oQ?_KAoG?AoB?_@OO?LA?",
+    "gaps": [
+     6
+    ],
+    "hi": 20,
+    "lo": 4,
+    "n": 21,
+    "source": "E024 n=21"
+   },
+   {
+    "g6": "S????A?O@_@_?oIABODC?S@?@a?H_CA_?",
+    "gaps": [
+     4,
+     5
+    ],
+    "hi": 19,
+    "lo": 3,
+    "n": 20,
+    "source": "E022 n=20 part14"
+   }
+  ],
+  "hamiltonian": 24,
+  "hole_values_occurring": [
+   4,
+   5,
+   6
+  ],
+  "int_violations": 0
+ },
+ "pypy": false,
+ "rows": [
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T????A?O@?B?D??o@_cCAAgB?_B?_@AO?OY?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    5,
+    7
+   ]
+  },
+  {
+   "S": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T????A?O@?B?D??o@_c`?o_?cG@C_?QC@@P?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 6,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    8,
+    10
+   ]
+  },
+  {
+   "S": [
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T????A?O@?B?D??oQ?_KAoG?AoB?_@OO?LA?",
+   "gaps": [
+    6
+   ],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 4,
+   "max_gap": 6,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    7,
+    10
+   ]
+  },
+  {
+   "S": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T????A?O@?B?D?A_Q?OHGOWA@OAC_@OA?bG?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 6,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    5,
+    10
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 32,
+   "g6": "T????A?O@?B?D?__?W?QGOS@c??T@@_SACH?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    8,
+    9
+   ]
+  },
+  {
+   "S": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 32,
+   "g6": "T????A?O@?B?D?__?WCOAOK@`??XG@CP?PI?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 4,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    5,
+    9
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 32,
+   "g6": "T????A?O@?OCE?D??WEO?Ac?`_?IQ@CP@OQ?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    5,
+    11
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T????A?O@?Q?B??oB?Ok?P@A?oB@??SO?`H?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    7,
+    9
+   ]
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T????A?O@?Q?B??oB?Ok?Q_?@PAB?@@_?cK?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 3,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    0,
+    10
+   ]
+  },
+  {
+   "S": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T????A?O@?Q?B??oH?RG?I_?@H?cO?b?ACo?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 3,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    9,
+    11
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 32,
+   "g6": "T????A?O@?Q?CGB??WAOAOc?d?@CPCBO?WS?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    5,
+    12
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T???C@?G?_@?_O@_WCAI?GK?OI@o??GI?IS?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    6,
+    10
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 32,
+   "g6": "T???C@?G?_@?_OP??oDC?CW?IO?PWA_Q?cO_",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    11,
+    12
+   ]
+  },
+  {
+   "S": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T???C@?G?_@?`?@_GcB?_KA?QA?P_?QGAB@?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 6,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    10,
+    11
+   ]
+  },
+  {
+   "S": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T???C@?G?_@?`?@_GcB?_KA?WC?SC?AoAB@?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 6,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    8,
+    11
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T???C@?G?_@?`?@_W?R@?CK?gO?QG?cO?DH?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    6,
+    11
+   ]
+  },
+  {
+   "S": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 32,
+   "g6": "T???C@?G?_@?`?@_WG@CCCa?W_?@g@Ga@GC_",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 6,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    7,
+    10
+   ]
+  },
+  {
+   "S": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 31,
+   "g6": "T???C@?G?_@?`?@_WG@CCCa?W_A@G?Og?cP?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 6,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    7,
+    10
+   ]
+  },
+  {
+   "S": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "c4_free": true,
+   "edges": 32,
+   "g6": "T???C@?G?_@?`?___wAH?[??IC?o_@?oA@G@",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 20,
+   "int_ok": true,
+   "lo": 6,
+   "max_gap": null,
+   "n": 21,
+   "source": "E024 n=21",
+   "terminals": [
+    8,
+    11
+   ]
+  },
+  {
+   "S": [
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "c4_free": true,
+   "edges": 29,
+   "g6": "S????A?O@_@_?oIABODC?S@?@a?H_CA_?",
+   "gaps": [
+    4,
+    5
+   ],
+   "hamiltonian": true,
+   "hi": 19,
+   "int_ok": true,
+   "lo": 3,
+   "max_gap": 5,
+   "n": 20,
+   "source": "E022 n=20 part14",
+   "terminals": [
+    1,
+    5
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "c4_free": true,
+   "edges": 30,
+   "g6": "S???C@?G?_P?B?@_@OQH?WO?PO?cQD?g?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 19,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 20,
+   "source": "E022 n=20 part14",
+   "terminals": [
+    8,
+    10
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "c4_free": true,
+   "edges": 30,
+   "g6": "S???C@?G?_P?B?@_@OQGAGc?p?ABOC_W?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 19,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 20,
+   "source": "E022 n=20 part14",
+   "terminals": [
+    8,
+    9
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "c4_free": true,
+   "edges": 29,
+   "g6": "S???C@?G?_P?B?oO?S`B?@__SO@?o?s??",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 19,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 20,
+   "source": "E022 n=20 part14",
+   "terminals": [
+    1,
+    10
+   ]
+  },
+  {
+   "S": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+   ],
+   "c4_free": true,
+   "edges": 28,
+   "g6": "R???C@?GC_B?@_aAA_aP?W_?BO@Gc?",
+   "gaps": [],
+   "hamiltonian": true,
+   "hi": 18,
+   "int_ok": true,
+   "lo": 5,
+   "max_gap": null,
+   "n": 19,
+   "source": "C043 n=19",
+   "terminals": [
+    7,
+    8
+   ]
+  }
+ ]
+}

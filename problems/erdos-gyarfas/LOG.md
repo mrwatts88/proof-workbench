@@ -1307,3 +1307,42 @@ attempt, experiment, or review record.
   parts exceeded the limit (one by 1.8×), and the wall clock came in at 14.4 h
   against a ~7 h projection — the mean was predicted well, the tail was not.
 - Outlook 8% → **9%**. No statement, proof, or decision changed.
+
+## 2026-07-26 — S030: the non-Hamiltonian stratum gets an engine, and the (F) programme gets a ceiling
+
+- Session goal: the recorded next action (`A027` T5 — extend the chord-minimal
+  descent from chords to **bridges**), under the standing user steer to bias
+  toward proof-side work rather than moving computational boundaries.
+- **The recorded best alternative died first, cheaply.** `L053` (`A028` T1): a
+  cubic non-Hamiltonian graph of girth \(\ge17\) minus an edge is an
+  exactly-two-profile, 2-connected, \(\{C_4,C_8,C_{16}\}\)-free pair with **no**
+  Hamiltonian through-path, so `C049`'s 27/27 cannot be promoted to a lemma at
+  class strength. Recorded as **calibration object #3**. Asymptotic — it
+  exhibits nothing in \([18,35]\) and moves no floor.
+- **The obstruction `A027` T5 named is removed.** `L055` (`A028` T3–T7): every
+  off-path component of a longest through-path admits a bridge with savings
+  \(\ge1\) — \(\ge2\) with three or more attachments, by the Y-identity
+  \(\sigma(i,k)=\sigma(i,j)+\sigma(j,k)+2\beta\), which consumes maximality
+  alone; with exactly two attachments, by parity, via the new `L054` bipartite
+  exclusion dichotomy with its power-freeness hypothesis finally matched.
+  Zero-savings components do not exist. The stratum is still cleared at **no**
+  order: `A028` T8 records the two remaining gaps.
+- **The architectural finding.** `L046` gives 2-connectivity only below order
+  36, so the (F) programme — even decided completely on both strata — closes
+  case (5b) for \(n_0\le35\) and cannot prove `G015`. With `R003` F4 (the
+  ladder proves class-emptiness above order 26) and `L053` (the ambient class is
+  nonempty at arbitrarily large order, so that verdict must fail), the ladder is
+  demoted from the proof-side route to a source of floors.
+- **Successor architecture recorded:** **(INT) ∧ (L-A)** (`A028` T9) — (INT)
+  says \(S\supseteq[8,\max S]\) for a vertex-taut \(\{C_4,C_8\}\)-free
+  exactly-two-profile pair; with \(\max S\ge14\) it forces \(14\in S\), which
+  is poison, hence (F-S) **at every order**, no window and no \(C_{16}\)
+  hypothesis. `C050`/`E029` kill-tested it on data already on disk (nothing
+  generated): 24 recorded profile objects, zero violations, every hole in
+  \(\{4,5,6\}\); the constant 8 is the smallest the near-miss corpus permits;
+  a hole at 14 needs five more degree-2 vertices than the profile has. New en
+  route: a second non-interval profile object, at order 20.
+- Three decisions recorded (`DECISIONS.md`): the ceiling, the successor
+  architecture, and the retirement of the Hamiltonian-forcing route.
+- Outlook unchanged at **9%** — the ceiling cost about what the order-unbounded
+  successor bought. No statement, status, or floor changed.
