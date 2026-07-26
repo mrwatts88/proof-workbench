@@ -1,0 +1,539 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{question}[theorem]{Question}
+
+\newcommand{\Cfour}{C_4}
+\newcommand{\Ceight}{C_8}
+\newcommand{\Csixteen}{C_{16}}
+
+\title{Powers of two as cycle lengths in graphs embedded in surfaces}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The Erd\H{o}s--Gy\'arf\'as conjecture asserts that every finite simple graph of
+minimum degree at least $3$ contains a cycle whose length is a power of two. We
+prove two new cases. First, every planar graph of minimum degree at least $4$
+contains a cycle of length $4$ or $8$; the same holds for graphs embeddable in
+the projective plane, and for $2$-connected graphs embeddable in the torus or
+the Klein bottle. Second, every bipartite graph of minimum degree at least $3$
+embeddable in the torus contains a cycle of length $4$, $8$ or $16$; in the
+planar case a $4$-cycle already occurs. The engine is an extremal bound of
+independent interest: a connected graph of minimum degree at least $2$ with no
+$\Cfour$ and no $\Ceight$, $2$-cell embedded in a surface $S$, satisfies
+$|E|\le 2|V|-2\chi(S)$. Specialised to the sphere this gives
+$\mathrm{ex}_{\mathcal P}(n,\{\Cfour,\Ceight\})\le 2n-4$, which appears to be
+the first planar Tur\'an bound for a \emph{set} of forbidden cycle lengths, and
+which we sharpen to $20|E|\le 39|V|-78$ under minimum degree $3$. All bounds are
+shown to be attained or nearly attained by explicit graphs.
+\end{abstract}
+
+\section{Introduction}
+
+All graphs are finite and simple. We write $n=|V(G)|$, $m=|E(G)|$, and
+$L(G)$ for the \emph{cycle spectrum} of $G$, the set of lengths of its cycles.
+A \emph{power cycle} is a cycle of length $2^k$ with $k\ge2$.
+
+\begin{conjecture}[Erd\H{o}s and Gy\'arf\'as, 1994]\label{conj:eg}
+Every graph with $\delta(G)\ge3$ contains a power cycle.
+\end{conjecture}
+
+Conjecture~\ref{conj:eg} is open. Erd\H{o}s later wrote that he had become
+convinced it is false, but no counterexample is known. The known proved cases
+are: $K_{1,m}$-free graphs with $\delta\ge m+1$, and graphs with
+$\Delta\ge2m-1$ (Shauger); planar claw-free graphs (Daniel and Shauger);
+$3$-connected cubic planar graphs, which contain a $2^m$-cycle for some
+$2\le m\le 7$ (Heckman and Krakovski); graphs with no long induced path (Gao and
+Shan; Hu and Shen; Hegde, Sandeep and Shashank); and graphs of diameter $2$
+(Carr). A theorem of Liu and Montgomery implies the conjecture for all graphs of
+average degree exceeding an absolute constant, so the conjecture is entirely a
+bounded-degree question. On the computational side, Markstr\"om verified it for
+all cubic graphs on fewer than $29$ vertices; Exoo constructed a cubic graph on
+$78$ vertices with no cycle of length $4$, $8$ or $16$, and one on $450$
+vertices with no cycle of length $4$, $8$, $16$ or $32$.
+
+Notably, \emph{no} case of Conjecture~\ref{conj:eg} with a minimum-degree
+hypothesis above $3$ appears in the literature, and no case for planar graphs
+beyond the claw-free and $3$-connected cubic ones. We supply both.
+
+\begin{theorem}\label{thm:main-planar}
+Every planar graph with $\delta(G)\ge4$ contains a cycle of length $4$ or $8$.
+The same conclusion holds for every graph of Euler genus at most $1$ with
+$\delta(G)\ge4$, and for every $2$-connected graph of Euler genus at most $2$
+with $\delta(G)\ge4$.
+\end{theorem}
+
+\begin{theorem}\label{thm:main-bip}
+Every bipartite graph with $\delta(G)\ge3$ that embeds in the torus contains a
+cycle of length $4$, $8$ or $16$. In particular Conjecture~\ref{conj:eg} holds
+for bipartite graphs of orientable genus at most $1$. Every \emph{planar}
+bipartite graph with $\delta(G)\ge3$ already contains a $4$-cycle.
+\end{theorem}
+
+Both theorems rest on the following extremal bound, which we believe is of
+independent interest.
+
+\begin{theorem}\label{thm:density}
+Let $G$ be a $2$-connected simple graph with $n\ge4$, containing no cycle of
+length $4$ and no cycle of length $8$, and $2$-cell embedded in a surface $S$.
+Then
+\[
+  m\;\le\;2n-2\chi(S).
+\]
+\end{theorem}
+
+For the sphere this reads $m\le 2n-4$, i.e.
+$\mathrm{ex}_{\mathcal P}(n,\{\Cfour,\Ceight\})\le 2n-4$. The known planar
+Tur\'an bounds for single cycles are $\mathrm{ex}_{\mathcal P}(n,\Cfour)\le
+\tfrac{15}{7}(n-2)$ (Dowden) and $\mathrm{ex}_{\mathcal P}(n,\Ceight)\le
+\tfrac{69}{25}(n-2)$ (Bai, Liu, Nie and Zhang); our bound is smaller than
+either, and coincides with the exact value $\mathrm{ex}_{\mathcal
+P}(n,C_3)=2n-4$. We are not aware of any previous planar Tur\'an bound for a set
+of two forbidden cycle lengths. Under the additional hypothesis
+$\delta(G)\ge3$ we sharpen it to $20m\le 39n-78$ (Theorem~\ref{thm:sharp}).
+
+The combinatorial heart of all of this is a short lemma with no topological
+content whatsoever.
+
+\begin{lemma}[Detour Lemma]\label{lem:detour}
+Let $G$ contain no $4$-cycle. If some $5$-cycle of $G$ has three of its edges
+lying in triangles, then $G$ contains an $8$-cycle.
+\end{lemma}
+
+\section{The Detour Lemma}
+
+\begin{lemma}\label{lem:chordless}
+In a $\Cfour$-free graph every $5$-cycle is chordless.
+\end{lemma}
+
+\begin{proof}
+A chord of a $5$-cycle joins two vertices at distance $2$ along the cycle,
+splitting it into arcs of lengths $2$ and $3$; the chord together with the arc of
+length $3$ is a $4$-cycle.
+\end{proof}
+
+\begin{lemma}\label{lem:apex-off}
+Let $G$ be $\Cfour$-free, let $C$ be a $5$-cycle of $G$, and let $uv\in E(C)$ lie
+in a triangle $uvw$. Then $w\notin V(C)$, and $uv$ lies in exactly one triangle.
+\end{lemma}
+
+\begin{proof}
+Write $C=uvx_1x_2x_3$. Suppose $w\in V(C)$, so $w\in\{x_1,x_2,x_3\}$. On a
+$5$-cycle each of $x_1,x_2,x_3$ is adjacent along $C$ to at most one of $u,v$;
+hence at least one of $wu$, $wv$ is a chord of $C$, contradicting
+Lemma~\ref{lem:chordless}. If $uv$ lay in two triangles with distinct apexes
+$w\ne w'$, then $w u w' v$ would be a $4$-cycle.
+\end{proof}
+
+\begin{lemma}\label{lem:apex-distinct}
+Let $G$ be $\Cfour$-free and let $C$ be a $5$-cycle. If $e\ne e'$ are edges of
+$C$ lying in triangles with apexes $w,w'\notin V(C)$, then $w\ne w'$.
+\end{lemma}
+
+\begin{proof}
+Suppose $w=w'$ and write $C=v_1v_2v_3v_4v_5$. Up to the symmetry of $C$ we may
+take $e=v_1v_2$ and $e'\in\{v_2v_3,\;v_3v_4,\;v_4v_5\}$.
+
+If $e'=v_2v_3$ then $w$ is adjacent to $v_1,v_2,v_3$ and $w v_1 v_2 v_3$ is a
+$4$-cycle. If $e'=v_3v_4$ then $w$ is adjacent to $v_1,v_2,v_3,v_4$ and
+$w v_4 v_5 v_1$ is a $4$-cycle. If $e'=v_4v_5$ then $w$ is adjacent to
+$v_1,v_2,v_4,v_5$ and $w v_2 v_3 v_4$ is a $4$-cycle. In each case the four
+listed vertices are distinct, because $w\notin V(C)$.
+\end{proof}
+
+\begin{proof}[Proof of Lemma~\ref{lem:detour}]
+Let $C$ be a $5$-cycle with edges $e_1,e_2,e_3$ lying in triangles with apexes
+$w_1,w_2,w_3$. By Lemma~\ref{lem:apex-off} the $w_i$ lie off $C$, and by
+Lemma~\ref{lem:apex-distinct} they are pairwise distinct. Replace each $e_i=uv$
+by the path $u\,w_i\,v$. The resulting closed walk visits the five vertices of
+$C$ in cyclic order with $w_1,w_2,w_3$ inserted, so it visits eight pairwise
+distinct vertices, each once, and consecutive vertices are adjacent. Its length
+is $5-3+3\cdot2=8$.
+\end{proof}
+
+\begin{remark}
+Lemma~\ref{lem:detour} is equivalent to: in a $\{\Cfour,\Ceight\}$-free graph,
+every $5$-cycle has at most two edges lying in triangles. We verified it by
+exhaustive computation over all $143{,}038$ connected $\Cfour$-free graphs of
+order at most $11$, of which $1{,}366$ contain a $5$-cycle with three edges in
+triangles; every one of those contains an $8$-cycle.
+\end{remark}
+
+\section{The density theorem}
+
+We use standard facts about $2$-cell embeddings. If $G$ is $2$-connected and
+$2$-cell embedded in $S$, every face boundary is a cycle of $G$ and every edge
+lies on exactly two distinct faces. Euler's formula reads $n-m+f=\chi(S)$, where
+$f$ is the number of faces.
+
+\begin{proof}[Proof of Theorem~\ref{thm:density}]
+Fix a $2$-cell embedding. Since every face is bounded by a cycle and $G$ has no
+$4$-cycle and no $8$-cycle, there are no faces of length $4$ and none of length
+$8$. Assign initial charges
+\[
+  \mu(v)=d(v)-4\quad(v\in V),\qquad \mu(f)=\ell(f)-4\quad(f\text{ a face}).
+\]
+Since $\sum_v d(v)=2m$ and $\sum_f \ell(f)=2m$, and $n+f=m+\chi(S)$,
+\[
+  \sum_v\mu(v)+\sum_f\mu(f)=(2m-4n)+(2m-4f)=4m-4(n+f)=-4\chi(S).
+\]
+
+\emph{Discharging rule.} For every edge $e$ having a face of length $3$ on one
+side and a face $g$ on the other, $g$ sends $\tfrac13$ to that $3$-face across
+$e$.
+
+The rule is well defined. Each edge lies on two distinct faces, and no two
+$3$-faces are adjacent: if triangles $uvw$ and $uvw'$ bounded the two faces at
+$uv$, then $w\ne w'$ (a face is determined by its boundary and its side) and
+$w u w' v$ would be a $4$-cycle. Consequently a $3$-face never sends charge, and
+each face $g$ sends at most $\tfrac13$ across each of its $\ell(g)$ edge-sides.
+
+Let $\mu^{*}$ denote the final charges. Vertices neither send nor receive, so
+$\sum_v\mu^{*}(v)=2m-4n$. For faces:
+
+\begin{itemize}
+\item $\ell(f)=3$: $f$ receives $\tfrac13$ across each of its three edges and
+sends nothing, so $\mu^{*}(f)=-1+1=0$.
+\item $\ell(f)=4$ or $\ell(f)=8$: no such face exists.
+\item $\ell(f)=5$: the boundary is a $5$-cycle. If three of its edges had
+$3$-faces on the other side, those three edges would lie in triangles and
+Lemma~\ref{lem:detour} would produce an $8$-cycle. Hence $f$ sends at most
+$2\cdot\tfrac13$, and $\mu^{*}(f)\ge 1-\tfrac23=\tfrac13>0$.
+\item $\ell(f)=\ell\ge6$: $\mu^{*}(f)\ge \ell-4-\tfrac{\ell}{3}
+=\tfrac{2\ell-12}{3}\ge0$.
+\end{itemize}
+
+Therefore $\sum_f\mu^{*}(f)\ge0$, and
+\[
+  2m-4n=\sum_v\mu^{*}(v)=-4\chi(S)-\sum_f\mu^{*}(f)\le-4\chi(S),
+\]
+which is the assertion.
+\end{proof}
+
+\begin{corollary}\label{cor:planarturan}
+Every connected planar graph with $\delta\ge2$, $n\ge4$ and no $\Cfour$ and no
+$\Ceight$ satisfies $m\le 2n-4$. In particular
+$\mathrm{ex}_{\mathcal P}(n,\{\Cfour,\Ceight\})\le 2n-4$.
+\end{corollary}
+
+\begin{proof}
+For $2$-connected $G$ this is Theorem~\ref{thm:density} with $\chi=2$, using that
+every embedding of a connected graph in the sphere is $2$-cell. In general let
+$B_1,\dots,B_b$ be the blocks, with $n_i,m_i$ vertices and edges. Then
+$\sum_i n_i=n+b-1$ and $\sum_i m_i=m$. If $n_i\ge4$ then $B_i$ is $2$-connected
+and $m_i\le 2n_i-4$; if $n_i=3$ then $B_i$ is a triangle and $m_i=2n_i-3$; if
+$n_i=2$ then $m_i=1=2n_i-3$. In all cases $m_i\le 2n_i-3$, so
+$m\le 2(n+b-1)-3b=2n-2-b$. For $b\ge2$ this gives $m\le 2n-4$, and for $b=1$ the
+graph is $2$-connected.
+\end{proof}
+
+We verified Corollary~\ref{cor:planarturan} exhaustively over all $150{,}791$
+connected $\Cfour$-free planar graphs with $\delta\ge2$ and $4\le n\le13$, of
+which $8{,}242$ are also $\Ceight$-free.
+
+\section{Minimum degree four}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main-planar}]
+Suppose $G$ has $\delta(G)\ge4$, no $\Cfour$ and no $\Ceight$. Passing to a
+component we may assume $G$ connected. Since $\delta\ge4$, no block of $G$ is a
+single edge; let $B$ be an endblock, that is, a block containing at most one cut
+vertex $c$ of $G$. Then $B$ is $2$-connected, every $v\in V(B)\setminus\{c\}$ has
+$d_B(v)=d_G(v)\ge4$, and $d_B(c)\ge2$. Hence $|V(B)|\ge5$ and
+\[
+  2|E(B)|\;\ge\;4\bigl(|V(B)|-1\bigr)+2,\qquad\text{i.e.}\qquad
+  |E(B)|\;\ge\;2|V(B)|-1 .
+\]
+$B$ inherits $\{\Cfour,\Ceight\}$-freeness and embeds in the same surfaces as
+$G$.
+
+\emph{Euler genus $0$ or $1$.} Embed $B$ in a surface $S$ of its own Euler
+genus $\gamma\le1$. If $\gamma=0$ this is a sphere embedding of a connected
+graph, hence $2$-cell. If $\gamma=1$ then $B$ is non-planar; a face of an
+embedding in the projective plane that is not a disc is a M\"obius band, whose
+complement is a disc, which would make $B$ planar; so the embedding is $2$-cell.
+Now $\chi(S)=2-\gamma\ge1$ and Theorem~\ref{thm:density} gives
+$|E(B)|\le 2|V(B)|-2$, contradicting the display above.
+
+\emph{Euler genus $2$, $G$ $2$-connected.} Take $B=G$ and fix a minimum-genus
+embedding, which is $2$-cell. We may assume the Euler genus is exactly $2$, so
+$\chi=0$ and Theorem~\ref{thm:density} gives $m\le 2n$, while $\delta\ge4$ gives
+$m\ge2n$. Hence $m=2n$ and every inequality in the proof of
+Theorem~\ref{thm:density} is tight. Therefore $\sum_v(d(v)-4)=0$ with all
+degrees at least $4$, so $G$ is $4$-regular; and $\mu^{*}(f)=0$ for every face,
+so, since $\mu^{*}>0$ for faces of length $5$ and of length $\ge7$, and no
+$4$-faces exist, every face has length $3$ or $6$, and every $6$-face sends the
+full $6\cdot\tfrac13$, i.e.\ all six of its edge-sides border a $3$-face.
+
+Every edge separates a $3$-face from a $6$-face: two $3$-faces on one edge is
+excluded as before, and if both faces at an edge had length $6$ then some
+$6$-face would have an edge-side not bordering a $3$-face.
+
+Every $6$-face is bounded by a $6$-cycle. Its boundary walk does not backtrack
+(that would force a vertex of degree $1$). If it is not a cycle it splits into
+two closed walks of lengths at least $3$ summing to $6$, so it has the form
+$w,p,q,w,r,s$ with $wpq$ a triangle. The edge $wp$ has the $6$-face on one side
+and a $3$-face $T'$ on the other. If $T'$ is bounded by $wpq$ then all three
+edges of $wpq$ separate these two faces, forcing $\deg(p)=2$, contradicting
+$4$-regularity; otherwise $T'$ is bounded by $wpt$ with $t\ne q$, and the
+triangles $wpq$, $wpt$ share $wp$, giving the $4$-cycle $q\,w\,t\,p$.
+
+Since consecutive faces around a vertex share an edge and every edge is of type
+$(3,6)$, the faces around each vertex alternate $3,6,3,6$. Fix $v$ with
+$N(v)=\{a,b,c,d\}$ in rotation and faces $T_1$ (between $va,vb$), $H_1$ (between
+$vb,vc$), $T_2$ (between $vc,vd$), $H_2$ (between $vd,va$), with
+$\ell(T_i)=3$, $\ell(H_i)=6$. Then $T_1$ is the triangle $vab$, so $ab\in E$;
+$T_2$ is the triangle $vcd$, so $cd\in E$; and $H_1$ is a $6$-cycle
+$v\,b\,x\,y\,z\,c$. Consider the closed walk
+\[
+  W^{*}:\quad v,\;a,\;b,\;x,\;y,\;z,\;c,\;d,\;v,
+\]
+all of whose consecutive pairs are edges of $G$. Its eight vertices are
+distinct: $a,b,c,d$ are distinct and differ from $v$; $b,x,y,z,c$ lie on the
+$6$-cycle $H_1$ and differ from $v$; and
+\begin{itemize}
+\item $a=x$ would make $ab$ the edge $bx$ of $H_1$, so $T_1$ and $H_1$ would both
+have $bv,ba$ as their edges at $b$, forcing $\deg(b)=2$;
+\item $a=y$ would make $va$ a chord joining antipodal vertices of $H_1$,
+splitting it into two $4$-cycles;
+\item $a=z$ would give $a\sim c$, so $vac$ and $vab$ are triangles sharing $va$,
+giving the $4$-cycle $b\,v\,c\,a$;
+\item $d=z$, $d=y$, $d=x$ are excluded symmetrically.
+\end{itemize}
+Hence $W^{*}$ is an $8$-cycle, a contradiction.
+\end{proof}
+
+\begin{remark}[Sharpness]
+The hypothesis $\delta\ge4$ cannot be weakened to $\delta\ge3$: the truncated
+icosahedron (the buckyball) is a $3$-connected cubic planar graph on $60$
+vertices with no $\Cfour$ and no $\Ceight$, its smallest power cycle being a
+$\Csixteen$. The conclusion cannot be strengthened by dropping either forbidden
+length: the icosidodecahedron is a $4$-regular planar $\Cfour$-free graph on
+$30$ vertices, and it contains an $8$-cycle, as Theorem~\ref{thm:main-planar}
+requires. Indeed the following holds.
+\end{remark}
+
+\begin{proposition}
+Every planar graph with $\delta\ge4$ and no $\Cfour$ has at least $30$ vertices,
+and $30$ is attained by the icosidodecahedron.
+\end{proposition}
+
+\begin{proof}
+Take an endblock $B$ as above, so $|E(B)|\ge2|V(B)|-1$, and fix a plane
+embedding. All faces are bounded by cycles, there is no $4$-face, and no two
+$3$-faces share an edge, so each edge lies on at most one $3$-face and
+$3f_3\le|E(B)|$. Hence
+\[
+  2|E(B)|=\sum_f\ell(f)\ \ge\ 3f_3+5(f-f_3)=5f-2f_3\ \ge\ 5f-\tfrac23|E(B)|,
+\]
+so $f\le\tfrac{8}{15}|E(B)|$, and Euler gives
+$|V(B)|=2+|E(B)|-f\ge2+\tfrac{7}{15}|E(B)|$, i.e.\
+$|E(B)|\le\tfrac{15}{7}(|V(B)|-2)$. With $|E(B)|\ge2|V(B)|-1$ this yields
+$14|V(B)|-7\le15|V(B)|-30$, so $|V(B)|\ge23$. If $G$ is $2$-connected we may take
+$B=G$ and use $m\ge2n$, giving $|V|\ge30$; otherwise $G$ has two endblocks
+sharing at most one vertex, so $n\ge23+23-1\ge30$.
+\end{proof}
+
+\section{A sharper planar bound}
+
+\begin{lemma}\label{lem:facelemma}
+Let $G$ be a $2$-connected plane graph with $\delta(G)\ge3$, no $\Cfour$ and no
+$\Ceight$. For a face $f$ let $t(f)$ be the number of edges of $\partial f$ whose
+other face is a triangle. Then
+\[
+  \ell(f)=5\Rightarrow t(f)\le2,\qquad
+  \ell(f)=6\Rightarrow t(f)\le1,\qquad
+  \ell(f)=7\Rightarrow t(f)=0.
+\]
+\end{lemma}
+
+\begin{proof}
+Write $C=\partial f$, a cycle of length $\ell\le7$, and let $e_1,\dots,e_t$ be
+the counted edges with triangle apexes $w_1,\dots,w_t$.
+
+First, $w_i\notin V(C)$. For $\ell=5$ this is Lemma~\ref{lem:apex-off}. For
+$\ell\in\{6,7\}$, write $C=u\,v\,x_1\cdots x_{\ell-2}$ with $e_i=uv$ and suppose
+$w_i=x_j$. If $j=1$, then both $uv$ and $vx_1$ lie on $\partial f$ and on the
+triangle $T=uvx_1$, so the two faces at each of these edges are $f$ and $T$; a
+third edge at $v$ would have to be drawn inside $f$ or inside $T$, so
+$\deg(v)=2$, contradicting $\delta\ge3$. The case $j=\ell-2$ is symmetric. For
+$2\le j\le\ell-3$ put $a=j$ and $b=\ell-1-j$, the two lengths of the $C$-paths
+from $v$ to $w_i$ and from $w_i$ to $u$; then $a,b\ge2$ and $a+b=\ell-1\le6$, so
+$\min(a,b)\le3$. If $a=2$ then $u\,v\,x_1\,w_i$ is a $4$-cycle; if $a=3$ then
+$v\,x_1\,x_2\,w_i$ is a $4$-cycle; and symmetrically for $b$.
+
+Second, the $w_i$ are pairwise distinct. For $\ell=5$ this is
+Lemma~\ref{lem:apex-distinct}. For $\ell\in\{6,7\}$ suppose $w_i=w_j=w$. If
+$e_i,e_j$ share a vertex, say $e_i=tu$ and $e_j=uv$ with $t\ne v$, then
+$t\,w\,v\,u$ is a $4$-cycle. Otherwise write $C=u\,v\,P\,s\,t\,Q\,u$ with
+$e_i=uv$, $e_j=st$, $|P|=p\ge1$, $|Q|=q\ge1$ and $p+q+2=\ell\le7$, so
+$\min(p,q)\le2$. If $p=1$ then $u\,w\,s\,v$ is a $4$-cycle; if $p=2$, say
+$v\,x\,s$, then $v\,w\,s\,x$ is a $4$-cycle; symmetrically for $q$.
+
+Now replace any subset of $\{e_1,\dots,e_t\}$ by the corresponding detours as in
+Lemma~\ref{lem:detour}: this produces cycles of every length in
+$[\ell,\ell+t]$. If $\ell=5$ and $t\ge3$, or $\ell=6$ and $t\ge2$, or $\ell=7$
+and $t\ge1$, that interval contains $8$.
+\end{proof}
+
+\begin{theorem}\label{thm:sharp}
+Let $G$ be a $2$-connected plane graph with $\delta(G)\ge3$, $n\ge4$, no
+$\Cfour$ and no $\Ceight$, and let $f_3$ be its number of triangular faces. Then
+\[
+  7m\;\le\;13n+f_3-26,\qquad\text{and hence}\qquad 20m\;\le\;39n-78 .
+\]
+\end{theorem}
+
+\begin{proof}
+Run the discharging of Theorem~\ref{thm:density}. By Lemma~\ref{lem:facelemma}
+the final charge of a face of length $5$ is at least $1-\tfrac23=\tfrac13$; of
+length $6$ at least $2-\tfrac13=\tfrac53$; of length $7$ at least $3$; and of
+length $\ell\ge9$ at least $(2\ell-12)/3\ge2$. There are no faces of length $4$
+or $8$. Hence every non-triangular face retains at least $\tfrac13$, so
+$\sum_f\mu^{*}(f)\ge (f-f_3)/3$. On the other hand
+$\sum_f\mu^{*}(f)=\sum_f\mu(f)=-8-(2m-4n)=4n-2m-8$. With $f=m-n+2$ this gives
+\[
+  4n-2m-8\;\ge\;\tfrac13\bigl(m-n+2-f_3\bigr),
+\]
+i.e.\ $12n-6m-24\ge m-n+2-f_3$, i.e.\ $7m\le13n+f_3-26$. Finally,
+$\Cfour$-freeness makes triangles pairwise edge-disjoint, so $3f_3\le m$, and
+substituting gives $21m\le39n+m-78$.
+\end{proof}
+
+\begin{corollary}
+Every $2$-connected planar graph with $\delta\ge3$ and $20m\ge39n-77$ contains a
+cycle of length $4$ or $8$. Equivalently, writing $D=\sum_{d(v)\ge4}(d(v)-3)
+=2m-3n$, this holds whenever $D\ge(9n-77)/10$. In particular, every
+$2$-connected planar graph all of whose degrees are $3$ or $4$ and which has at
+most $(n+77)/10$ vertices of degree $3$ contains a cycle of length $4$ or $8$.
+\end{corollary}
+
+Taking no vertices of degree $3$ recovers the planar case of
+Theorem~\ref{thm:main-planar}, so this is a strict extension. The constant in
+Theorem~\ref{thm:sharp} cannot be pushed below $90/59$: chaining $k$ copies of
+the buckyball at cut vertices produces planar $\{\Cfour,\Ceight\}$-free graphs
+with $\delta\ge3$, $n=59k+1$ and $m=90k$.
+
+\begin{remark}
+The same discharging yields a further structural restriction which may be useful
+elsewhere. If $F$ is a set of faces of a $2$-connected plane graph whose closed
+union is a disc, then $\partial F$ is a cycle of length
+$\sum_{f\in F}\ell(f)-2e_F$, where $e_F$ counts edges incident with two faces of
+$F$. Applying this to two faces sharing exactly one edge shows that in a
+$\{\Cfour,\Ceight\}$-free plane graph no two $3$-faces are adjacent, \emph{no two
+$5$-faces are adjacent}, and no $3$-face is adjacent to a $7$-face.
+\end{remark}
+
+\section{Bipartite graphs of genus at most one}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main-bip}]
+Let $G$ be bipartite with $\delta(G)\ge3$, embeddable in the torus, and suppose
+$G$ has no $\Cfour$; being bipartite, $G$ then has girth at least $6$. Passing
+to a component and then to an endblock $B$ with cut vertex $c$ (or $B=G$), we
+have $B$ $2$-connected with $d_B(v)=d_G(v)\ge3$ for $v\ne c$ and $d_B(c)\ge2$,
+so
+\[
+  2m\;\ge\;3n-1,
+\]
+where from now on $n=|V(B)|$ and $m=|E(B)|$. Fix a minimum-genus embedding of
+$B$, which is $2$-cell. Since $B$ is $2$-connected every face is bounded by a
+cycle, necessarily of even length at least $6$; hence $2m=\sum_f\ell(f)\ge6f$,
+i.e.\ $f\le m/3$.
+
+\emph{Genus $0$.} Euler gives $f=m-n+2\le m/3$, so $m\le\tfrac32(n-2)$ and
+$2m\le3n-6<3n-1$, a contradiction. Hence every planar bipartite graph with
+$\delta\ge3$ contains a $4$-cycle.
+
+\emph{Genus $1$.} Euler gives $f=m-n\le m/3$, so $2m\le3n$, and therefore
+$3n-1\le2m\le3n$. If $n$ is odd then $3n$ is odd, so $2m=3n-1$ and
+$f=(n-1)/2$; then $\sum_f\ell(f)=2m=3n-1$ while $6f=3n-3$, and since all face
+lengths are even and at least $6$, exactly one face has length $8$, giving an
+$8$-cycle. If $n$ is even then $2m=3n$, so $B$ is cubic, $f=n/2$ and
+$\sum_f\ell(f)=6f$: every face is a hexagon.
+
+So $B$ is a hexagonal tessellation of the torus. Its universal cover is the
+hexagonal tessellation $\mathcal H$ of the plane, and the deck group is a rank-2
+lattice $\Lambda'$ of translations, so $B=\mathcal H/\Lambda'$. Identify the
+translation lattice of $\mathcal H$ with $\mathbb Z^2$ and let $|\cdot|$ be the
+triangular norm, $|(a,b)|=|a|+|b|$ if $ab\ge0$ and $\max(|a|,|b|)$ otherwise;
+two vertices of $\mathcal H$ have the same image in $B$ exactly when they have
+the same type and their difference lies in $\Lambda'$. Put
+\[
+  t=\min\{\,|\lambda| : \lambda\in\Lambda'\setminus\{0\}\,\}.
+\]
+Then $t\le1$ makes the quotient non-simple; $t=2$ produces a $4$-cycle; $t=3$
+produces an $8$-cycle; and $t\ge4$ produces a $16$-cycle. For the last, take the
+polyhex whose four hexagon centres are $0$, $e_1$, $2e_1$, $e_2$: it has four
+hexagons and four adjacent pairs, so its boundary has length
+$6\cdot4-2\cdot4=16$, and every difference of two same-type vertices along that
+boundary has norm at most $3$, so the projection to $B$ is injective when
+$t\ge4$. For $t\in\{2,3,4\}$ and each of the $12$, $18$, respectively $24$
+lattice vectors $\lambda$ of that norm we exhibit a path of length $2t$ in
+$\mathcal H$ from a vertex to its $\lambda$-translate all of whose same-type
+differences have norm smaller than $t$; its projection is then a $2t$-cycle. This
+is a finite verification which we carried out exhaustively, with no exceptions.
+\end{proof}
+
+\begin{remark}[Sharpness]
+All three lengths in Theorem~\ref{thm:main-bip} are needed. The hexagonal torus
+$\mathcal H/\Lambda'$ with $t=5$ of smallest index, on $38$ vertices, is a cubic
+bipartite graph of girth exactly $6$ with cycle counts $19,0,171,323,969$ at
+lengths $6,8,10,12,14$: it has neither a $4$-cycle nor an $8$-cycle, and its
+smallest power cycle is a $16$-cycle. Since $t\ge5$ forces the triangular balls
+of radius $2$ about lattice points to be disjoint, and each contains $19$ points,
+the index of $\Lambda'$ is at least $19$; hence $38$ is exactly the minimum order
+of a toroidal bipartite graph with $\delta\ge3$, girth $6$ and no $8$-cycle. In
+particular the implication ``bipartite, $\delta\ge3$, girth $6$ $\Rightarrow$
+$\Ceight$'' is false.
+\end{remark}
+
+\begin{remark}
+The Klein bottle and the projective plane are not covered by
+Theorem~\ref{thm:main-bip}: the counting above already forces Euler genus at
+least $2$ in the relevant range, and the classification of hexagonal
+tessellations we use is specific to the torus.
+\end{remark}
+
+\section{Concluding remarks}
+
+Theorem~\ref{thm:density} degenerates exactly at $\chi=0$, where the bound
+$m\le 2n$ meets the hypothesis $m\ge2n$ supplied by $\delta\ge4$; this is why
+the torus and Klein bottle require the separate argument in the proof of
+Theorem~\ref{thm:main-planar}, and why surfaces of negative Euler
+characteristic are out of reach by this method. For $\delta\ge5$ the same
+counting gives $n\le-4\chi(S)$, so for each fixed surface only finitely many
+orders survive.
+
+The planar case of Conjecture~\ref{conj:eg} at $\delta=3$ remains open, and two
+obstructions delimit it. First, one cannot hope to prove that a planar
+counterexample is cubic: identifying a vertex of one buckyball with a vertex of
+another yields a planar graph with $\delta\ge3$, a vertex of degree $6$, and no
+$\Cfour$ and no $\Ceight$. Second, one cannot hope to conclude with the lengths
+$4$, $8$ and $16$ alone: the buckyball is triangle-free and the truncated
+dodecahedron is pentagon-free, both are $3$-connected cubic planar with no
+$\Cfour$ and no $\Ceight$, and every $2$-connected plane graph with $\delta\ge3$
+and no $4$-face satisfies $\sum_f(6-\ell(f))\ge12$ and therefore has a $3$-face
+or a $5$-face. This is consistent with the range $2\le m\le7$ in the theorem of
+Heckman and Krakovski, and with Exoo's $3$-connected cubic planar graph on $420$
+vertices having no cycle of length $2^m$ for $m\le4$.
+
+\begin{question}
+Is $\mathrm{ex}_{\mathcal P}(n,\{\Cfour,\Ceight\})=\bigl(\tfrac32+o(1)\bigr)n$?
+The constructions above give $\tfrac{90}{59}n+O(1)$ from below, and
+Theorem~\ref{thm:sharp} gives $\tfrac{39}{20}n$ from above under $\delta\ge3$.
+\end{question}
+
+\end{document}
