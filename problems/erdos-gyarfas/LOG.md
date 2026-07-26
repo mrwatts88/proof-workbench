@@ -1493,3 +1493,61 @@ attempt, experiment, or review record.
 - Outlook **7% → 7%** (unchanged in number, changed in content): a proved case
   and a closed channel push up; three genres proved incapable — including the
   one this dossier was built on — push down.
+
+## 2026-07-26 — S032 round 2 (four further legs, all aimed at closing)
+
+- **`L066` the chaining barrier (fourth barrier).** The \(t\)-necklace of a
+  two-terminal gadget has \(L(N_t(W))=L(W)\cup\{t+\sum\tau_i\}\). With
+  \(W=K_4-e\) this gives **cubic, 2-connected, Hamiltonian** graphs with spectrum
+  \(\{3,4\}\cup[3t,4t]\) — **Conjecture SF is false**. With a 10-vertex \(W\)
+  bridging \(K_{2,3}\) and \(K_{2,3}+e\), for odd \(t\) the necklace is cubic
+  with **entire even spectrum \(\{4\}\)**. So no window strengthening of 0.1 of
+  any width is true, and exporting Liu–Montgomery to \(\delta=3\) is impossible
+  because their *conclusion* is false there. Both verified independently.
+  Self-limiting under 2-connectivity: iterating the gadget narrows the top window
+  to \(6/5\) but at the third step a window reappears; only the connectivity-1
+  parity construction collapses the even spectrum, and a parity lemma shows it
+  *requires* connectivity 1.
+- **`L067` SF4**, the repair: every \(C_4\)-free graph with \(\delta\ge3\) has a
+  window. Implies 0.1 with no exceptional graph. **But it is a strengthening, not
+  a reduction** (addendum 2): the universality construction \(W=H+\{u,v\}\) with
+  \(uv,uz,vz\) makes "SF4 for necklaces" \(\iff\) SF4, so any proof of it proves
+  0.1 for \(C_4\)-free graphs. Monotonicity then kills the whole composite genre:
+  a window of any piece is a window of the whole, so no amalgam refutes SF4
+  unless every piece is window-free — and exhaustively, over 22.5M \(C_4\)-free
+  graphs and 20.9M gadgets at orders 8–15, there are **none**. SF3 is false only
+  degenerately (\(K_4,K_5,K_5-e,W_4\)); Merker's gap families do **not** refute
+  it, since a single gap cannot kill a window.
+- **`L068`–`L070` the bipartite case.** Every bipartite graph with \(\delta\ge3\)
+  embeddable in the **torus** contains a cycle of length 4, 8 or 16 — a second
+  proved case of 0.1, sharp in all three lengths; the planar sub-case is a
+  one-liner (every planar bipartite \(\delta\ge3\) graph has a \(C_4\)).
+  Refuted en route: "bipartite + girth 6 \(\Rightarrow C_8\)" is **false**, by
+  the hexagonal torus \(H(19,1,8)\) — cubic, bipartite, order 38, girth 6, zero
+  8-cycles (orchestrator-verified) — which is provably the toroidal minimum.
+  Plus the bipartite localization barrier and a **hand** lower bound \(n\ge30\).
+- **`L071`–`L073`, `C051` the planar case.** Density sharpens to
+  \(20m\le39n-78\) via a face lemma (5-face \(\le2\) triangular neighbours,
+  6-face \(\le1\), 7-face none), giving strictly larger closed cases. Step A
+  closes: a **minimum** planar counterexample is 2-connected or is two equal
+  blocks at one degree-4 cut vertex — proved by a **doubling** argument, which is
+  length-preserving and hence exactly what `L062` permits. Step C is **false**:
+  two buckyballs glued at a vertex are planar with \(\delta\ge3\), a degree-6
+  vertex and no \(C_4\)/\(C_8\). The smallest 3-connected cubic planar
+  \(\{C_4,C_8\}\)-free graph is unique at order 24 (`C051`, verified).
+- **`L074` the substitution route closed as a theorem.** \(\rho\) is *exactly
+  multiplicative* under composition, so iteration only increases it and the only
+  value stable under unbounded iteration is \(\rho=1\); every \(\rho=1\) gadget
+  contains a bridge cutting off a leaf gadget, so \(H[W]\) is power-free iff that
+  leaf gadget is — **substitution contributes nothing and reduces to itself**.
+  The orchestrator's proposed "\(\rho\ge2\)" barrier is false (the triangle has
+  \(\rho=3/2\); an explicit order-241 gadget has \(\rho=1\)); multiplicativity is
+  the correct closing statement.
+- **`C052` the many-gaps lead, tested and dead.** arXiv:2506.09667's family has
+  **all gaps in the first half**; the second half is a full interval, hence
+  contains a power of two. The authors' own open problem — *gaps in the second
+  half of the cycle spectrum* — is exactly the shape a counterexample needs, and
+  nobody can produce one.
+- Outlook **7% → 8%**: two proved cases of 0.1 and a closed disproof genre push
+  up; four proved barriers and the discovery that SF4 is a strengthening rather
+  than a reduction push down.

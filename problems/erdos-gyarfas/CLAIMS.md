@@ -563,3 +563,121 @@ has one independently checkable assertion.
 | L072 | structure theorem | **Step A for the planar case: the block structure of a minimum planar counterexample (S032 round 2).** Let \(G\) be planar with \(\delta\ge3\) and no power cycle, of **minimum order** among all such graphs. Then either \(G\) is **2-connected**, or: \(G\) has exactly **two** blocks, meeting at a single cut vertex \(c\); \(\deg_{B_i}(c)=2\); \(\deg_G(c)=4\); and \(\lvert V(B_1)\rvert=\lvert V(B_2)\rvert=(n+1)/2\), so \(n\) is odd. Engine — and it is exactly the shape `L062` permits, i.e. **length-preserving**: glue two copies of an endblock \(B\) at its cut vertex \(c\); the result is planar with \(\delta\ge3\) (\(c\) gains degree \(2+2=4\)), \(c\) is a cut vertex so every cycle lies inside one copy and is a cycle of \(G\), hence it has no power cycle, hence \(2\lvert V(B)\rvert-1\ge n\) by minimality. Companion (**Step B**, 2-edge-cuts): for a 2-edge-cut with sides \(G_1,G_2\), the exponent sets \(A_i=\{a:G_i^+\text{ has a }2^a\text{-cycle}\}\) are non-empty and **disjoint**, since an \(a\in A_1\cap A_2\) would give a cycle of \(G\) of length \(2^a+2^a=2^{a+1}\). | proved | S032 round-2 planar leg (hand proofs) | `L062` (which is why the doubling construction is the right one); `D001`–`D004` |
 | L073 | delimitation (refutation) | **"A planar counterexample is cubic" is FALSE (S032 round 2).** Identify one vertex of a truncated icosahedron \(C_{60}\) with one vertex of a second copy: the result is **planar**, has \(n=119\), \(m=180\), \(\delta=3\), exactly one vertex of degree **6**, and contains **no \(C_4\) and no \(C_8\)** (the glued vertex is a cut vertex, so every cycle lies in one buckyball). Hence Step C of the planar programme — "rule out degree-\(\ge4\) vertices" — **cannot be carried out from \(C_4\)- and \(C_8\)-freeness at any level of discharging refinement**, and the degree excess \(D=2m-3n\) is unbounded (the \(k\)-fold buckyball chain has \(D=3(k-1)\)). The obstruction lives exactly at cut vertices, which is also `L072`'s surviving case. **Second delimitation:** both the buckyball (12 pentagons, 20 hexagons, triangle-free) and the truncated dodecahedron (20 triangles, 12 decagons, pentagon-free) are 3-connected cubic planar with no \(C_4\) and no \(C_8\); since a 2-connected plane graph with \(\delta\ge3\) has \(\sum_f(6-\ell(f))\ge12\) and no 4-faces, it always has a 3-face or a 5-face — so **neither can be excluded, and any complete planar proof must reach \(C_{16}\) and beyond**, consistent with Heckman–Krakovski's \(m\le7\) and with Exoo's \(G_{420}\). Both are exactly tight one step below: a buckyball pentagon with its five hexagons has boundary a 15-cycle, and a truncated-dodecahedron decagon with its five triangles likewise. | proved | S032 round-2 planar leg; the order-119 object verified computationally (planar, \(\delta=3\), one degree-6 vertex, no \(C_4\), no \(C_8\), has \(C_{16}\)) | `L071`; scopes the planar programme |
 | C051 | computational observation | **The smallest 3-connected cubic planar \(\{C_4,C_8\}\)-free graph is unique and has order 24 (S032 round 2).** Enumerating plantri duals of simple planar triangulations: **0** examples at every order \(4\le n\le22\), exactly **1** at \(n=24\) (out of 339,722), **0** at \(n=26\) (out of 2,406,841). graph6 `WsPHHCOCGO?G?G?C?@??O?@??CG?CG?EC?@_??GG??__?B@`; face vector \(3^7 5^3 9^4\); girth 3; spectrum \(\{3,5,6,7\}\cup[9,24]\) — exactly 4 and 8 missing — and it contains a \(C_{16}\). Its three pentagons each have exactly two triangular neighbours, so `L071`'s bound \(t(f)\le2\) is attained. This is the planar member of Markström's four order-24 objects (`C014`/`C015`), now with a proved minimality statement inside the 3-connected cubic planar class. | tested | S032 round-2 planar leg (plantri 5.3); **orchestrator-verified independently** from the graph6 string: order 24, cubic, planar (`planarg`), 3-connected (exhaustive 1- and 2-cut search), spectrum as stated, \(C_{16}\) present | `L071`; consistent with `C014`/`C015` |
+
+### S032 addendum — the chaining barrier is self-limiting under 2-connectivity
+
+Refining `L066`(a): let \(W_1=K_4-e\) and let \(W_{j+1}\) be two copies of \(W_j\)
+in parallel between two new terminals. Machine-verified closed forms: \(W_j\) is
+2-connected with exactly two degree-2 vertices, \(T(W_j)=\{2j,2j+1\}\), and
+\(L(W_j)=\{3,4\}\cup\bigcup_{i=1}^{j-1}\{4i{+}4,4i{+}5,4i{+}6\}\); hence
+\(L(N_t(W_j))=L(W_j)\cup[t(2j{+}1),t(2j{+}2)]\). At \(j=1\) the top even-run
+width tends to \(4/3\); at \(j=2\) (10-vertex gadget, \(T=\{4,5\}\)) to \(6/5\),
+verified at \(t=3,5,7\). **But at \(j=3\) the necklace acquires a window
+(\(a=7\)):** the integer runs \(\{4i{+}4,4i{+}5,4i{+}6\}\) are separated by a
+single odd gap, so their *even* parts fuse into one long even run \([8,4j{+}2]\)
+satisfying \(B\ge2A-4\). So narrowing the top window forces the gadget's own
+spectrum to be richer, and the necklace inherits it — **recreating a window lower
+down**. Only the connectivity-1 parity construction of `L066`(b) collapses the
+even spectrum outright, and by the parity lemma (a 2-connected two-terminal graph
+all of whose through-paths have one parity is bipartite) that construction
+*requires* connectivity 1. This is direct structural evidence that 3-connectivity
+(SF3) or \(C_4\)-freeness (SF4, `L067`) is the right repair rather than an
+arbitrary one. The agent's own stronger draft ("every width \(>1\) in the
+2-connected class") is **false** and was caught by running it; `L066` as recorded
+carries only the conservative \(4/3\) statement and stands.
+
+### S032 addendum 2 — SF4 is a strengthening, not a reduction; and the composite genre is empty
+
+**(i) The proposed dichotomy is equivalent to `L067`'s SF4 in full.** For any
+\(C_4\)-free \(H\) with \(\delta\ge3\) and any \(z\in V(H)\), let \(W=H\) plus two
+new vertices \(u,v\) and edges \(uv,uz,vz\). Then \(\deg u=\deg v=2\),
+\(\deg z=\deg_H(z)+2\), all other degrees unchanged; \(W\) is \(C_4\)-free;
+\(T(W)=\{1,2\}\) **exactly**, so the spread alternative \(\tau_{\max}\ge
+2\tau_{\min}+1\) always fails; and \(L(W)=L(H)\cup\{3\}\), so \(W\) has a window
+iff \(H\) does. Hence the dichotomy forces SF4. Conversely, for a pinched \(W\)
+and \(t\ge\max(5,\lvert W\rvert)\) the necklace's top block satisfies
+\(B<2A-4\), so SF4 on \(N_t\) forces \(L(W)\) to have a window.
+**Consequence: "SF4 for necklaces" \(\iff\) SF4, and SF4 \(\Rightarrow\)
+statement 0.1. SF4 is therefore at least as hard as 0.1 and is a
+reformulation, not a reduction** — it must be recorded as such, and no session
+should treat it as a stepping stone.
+**(ii) Monotonicity kills the whole composite genre.** \(H\subseteq G\Rightarrow
+L(H)\subseteq L(G)\), so a window of a piece is a window of the whole. Hence no
+necklace, bridge amalgam, cut-vertex amalgam or gadget substitution can refute
+SF4 unless **every piece is itself window-free**. Exhaustive over connected
+\(C_4\)-free graphs with \(\delta\ge2\) and at most two degree-2 vertices,
+orders 8–15: 22,459,000 graphs scanned, 2,694,000 pieces, 20,893,000 gadgets,
+**0 window-free**, 0 necklace failures. Benchmark cross-validation from an
+independently written engine: exactly **56** window-free graphs among all
+556,471 connected cubic graphs of order \(\le20\), every one containing a
+\(C_4\) — an exact match to the `L066` figure. Tightest cases (slack 0):
+Petersen, and an order-18 cubic \(C_4\)-free graph with even spectrum exactly
+\(\{6,8\}\).
+**(iii) SF3 corrected.** SF3 is false only degenerately: the counterexamples are
+exactly \(K_4\), \(K_5\), \(K_5-e\) and \(W_4\), all too small to contain an even
+cycle of length \(\ge6\). With \(n\ge6\) it holds exhaustively over all
+578,471,015 three-connected graphs on 6–11 vertices.
+**(iv) Merker's gap families are not a threat.** *Gaps in the cycle spectrum of
+3-connected cubic planar graphs* (arXiv:1905.09101, JCTB): the \(G(n,k)\) family
+was rebuilt from the verbatim construction, confirmed cubic/planar/3-connected,
+and the gap \([2k,4k+1]\) reproduced exactly at \(n=120,280,504,792\) — yet
+**every member has a window**, because a single gap cannot kill one: the
+spectrum is a full interval below the gap and a full interval above it.
+**(v) The live lead, and the only spectrum shape that can break a window:**
+killing every window needs a fresh gap before *every* doubling, i.e.
+\(\sim\log_2(\text{circumference})\) gaps. Goedgebeur–Jooken–Provoost–Zamfirescu
+(arXiv:2506.09667) report an infinite family with **many** gaps in the first half
+of the cycle spectrum. **That is the first object with the right shape to be a
+counterexample and it has never been tested against 0.1.** Fetching that family
+and computing its spectrum is the cheapest high-value move available.
+**(vi) Closed analytically:** a \(C_4\)-free \(\delta\ge3\) graph with all even
+cycle lengths \(\equiv0\bmod4\) would have no window, and cannot exist — in any
+theta with paths \(a,b,c\), all-odd forces a cycle \(\equiv2\bmod4\) and all-even
+forces one \(\equiv0\bmod4\).
+
+### S032 addendum 3 — the vertex-substitution route is closed as a theorem
+
+**`L074` (composition law and the collapse of substitution).** For 3-terminal
+gadgets write \(\tau=1+t\) and \(\rho=\tau_{\max}/\tau_{\min}\). Substituting
+\(W_2\) at every vertex of \(W_1\):
+\(\tau_{\min}(W_1\circledast W_2)=\tau_{\min}(W_1)\tau_{\min}(W_2)\) and likewise
+for \(\tau_{\max}\), so **\(\rho\) is exactly multiplicative**:
+\(\rho(W_1\circledast W_2)=\rho(W_1)\rho(W_2)\), hence
+\(\rho(W^{\circledast r})=\rho(W)^r\). **Iteration only increases \(\rho\)**, so
+the only value stable under unbounded iteration is \(\rho=1\). And: *every
+connected 3-terminal gadget with \(\rho=1\) contains a bridge cutting off a leaf
+gadget* (block decomposition of the skeleton: a non-bridge block must be an
+induced cycle with the attachments antipodal, and its other vertices need a third
+edge, which is a bridge). Consequently
+\(\mathrm{spec}(H[W])=\mathrm{spec}(W)\cup\{(1+\ell)z:z\in\mathrm{spec}(H)\}\)
+with \(\mathrm{spec}(W)\supseteq\mathrm{spec}(L)\) — so \(H[W]\) is power-free
+**iff the leaf gadget \(L\) is**. **The substitution contributes exactly nothing:
+the method reduces to the bridge/leaf-gadget problem, i.e. to itself.**
+The orchestrator's proposed barrier "\(\rho\ge2\) for every clean gadget" is
+**FALSE** — the triangle is a clean 3-terminal gadget with \(\rho=3/2\)
+(substituting it is truncation), \(H_7\) has a per-pair ratio \(7/4\), and there
+is an explicit order-241 gadget with all three terminal path sets \(=\{2\}\),
+hence \(\rho=1\) exactly (an infinite family). The correct closing statement is
+the multiplicativity above. Residual: the only clean gadget of order \(\le17\)
+with \(\rho<2\) is the triangle, and truncation clears \(\{4,8,16\}\) only over a
+cubic base of girth \(\ge5\) with no \(C_6,C_7,C_8\), which has **\(\ge40\)
+vertices** (hand proof: the 5-cycle, its five distinct pairwise non-adjacent
+outside neighbours, their ten distinct further neighbours and those vertices'
+twenty further ones) — so truncation needs \(\ge120\) vertices, worse than the
+known 78. | proved | S032 round-2 counterexample leg; \(\rho=1\) witness and the
+\(T\circledast T\) instance (order 9, \(\tau_{\min}=4\), \(\tau_{\max}=9\),
+\(\rho=9/4\)) verified computationally
+
+**`C052` (the many-gaps lead, tested and dead).** Goedgebeur–Jooken–Provoost–
+Zamfirescu, *On a conjecture of Faudree and Schelp*, arXiv:2506.09667 — the only
+known family with "many gaps" in the cycle spectrum. Verbatim from §1: the family
+has cycle spectrum "of size 2/3 of the graphs' order, noting that **all gaps
+occur in the first half of the cycle spectrum**", and "**Gaps in the second half
+of the spectrum elude us**". So the second half is a full interval, which has
+multiplicative width 2 and therefore contains a power of two: **the family is not
+a counterexample and cannot become one.** The informative residue is the authors'
+own open problem — *gaps in the second half of the cycle spectrum of a
+hamiltonian-connected graph* — which is exactly the shape a counterexample to 0.1
+needs, repeatedly (\(\sim\log_2 n\) gaps, spread across the whole spectrum
+including the top). The best current work produces gaps only in the bottom half.
+| tested | orchestrator, direct read of arXiv:2506.09667 §1–2 |
