@@ -104,6 +104,53 @@ passes; only then stop it.
 Match the interpreter version to the local one where you can. It costs nothing
 and makes the anchor comparison exact rather than approximate.
 
+### …but the gate attaches to the hash, not to the build event
+
+**You only pay for the gate once.** A binary whose sha256 equals a recorded
+gated pin *is* the instrument that passed those checks; re-running them
+establishes nothing new. So a later cloud run must not repeat the gate — it must
+**prove it is holding the same instrument**, which is cheaper and stronger:
+
+1. **Keep the gated binaries in the repository**, with their hashes
+   (`E019/prebuilt/linux-amd64/` is the worked example), and **install them**
+   rather than recompiling. Copying them in is legitimate *because the pins
+   identify a gated build*; it is not a way to skip the gate for a binary that
+   never passed one.
+2. **Assert the hashes inside the build**, and make the build fail if they do
+   not match. Never weaken that assertion to get a build through — a mismatch
+   means you are holding a different instrument.
+3. **Pin the base image by digest, not by tag**, so the runtime does not drift
+   underneath you either.
+
+### Do not assume a rebuild reproduces the binary — it usually will not
+
+This was tested, and the assumption failed. `O014` rebuilt the `E019`
+instrument from identical sources, on a **digest-pinned** base image, and got a
+**different `genc48`**. The cause: nauty's `./configure` appends
+`-march=native` to the flags used for `gtoolsW.o`, `nautyW1.o`,
+`nautilW1.o`, `naugraphW1.o`, `schreierW.o` — precisely the objects the
+generator links. `-march=native` tunes code generation to the CPU of whichever
+machine runs the build, and a cloud builder is not a fixed machine.
+
+The consequence is the whole point of this section: **the gate cannot be
+re-established by rebuilding.** The gate attaches to a hash; the rebuild does
+not reproduce the hash; so the rebuilt binary is a *new instrument* requiring a
+*new* gate. Preserving the gated binary is therefore necessary, not a
+convenience.
+
+Two further warnings from the same finding:
+
+- **Identical hashes across several cloud builds are not evidence of
+  reproducibility.** Layer caching makes repeat builds return the same layer
+  without recompiling. Four builds agreed during `O012`; the first genuinely
+  independent recompile disagreed.
+- `-march=native` also makes the binary **tuned to the builder's CPU**, which
+  is a portability hazard in a container. If a future gate is run deliberately,
+  set `CFLAGS`/`MORECFLAGS` explicitly without it: the build becomes
+  reproducible *and* portable, and thereafter a rebuild self-certifies against
+  the pin. That is a new binary and needs its own gate, so it is a deliberate
+  choice, not a change to slip in beside other work.
+
 ## Retrieval and verification
 
 Getting numbers back is part of the computation, not an afterthought:

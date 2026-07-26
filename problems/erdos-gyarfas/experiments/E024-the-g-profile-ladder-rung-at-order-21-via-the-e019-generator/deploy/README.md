@@ -9,6 +9,27 @@ is a driver: it reaches every mathematical operation through `E022/ladder.py`'s
 `load_scan`, which imports `E019/scan.py` and redirects its `DATA` constant.
 Nothing in this directory computes a graph property.
 
+## The image installs the gated instrument; it does not compile it
+
+**`Dockerfile` copies in the committed, already-gated binaries from
+`E019/prebuilt/linux-amd64/` and verifies their hashes.** It does not build
+nauty. That is deliberate.
+
+nauty's `./configure` appends `-march=native` to the flags used for
+`gtoolsW.o`, `nautyW1.o`, `nautilW1.o`, `naugraphW1.o`, `schreierW.o` — exactly
+the objects `genc48` links — so the binary is tuned to whichever machine ran
+the build. `O014` tested this: a rebuild from identical sources on a
+**digest-pinned** base produced a **different `genc48`**.
+
+The consequence: **the anchor gate cannot be re-established by rebuilding.**
+The gate attaches to a hash, a rebuild does not reproduce the hash, so a
+rebuilt binary is a new instrument needing a new gate. Hence the binaries are
+committed and installed.
+
+`Dockerfile.rebuild-from-source` is the compile-from-source version, kept
+runnable for when a **new** instrument is genuinely wanted. Anything it
+produces must go through the full gate before it is cited.
+
 ## Assembling the build context
 
 The image is built from a staging tree, not from the repository root, so that
@@ -17,18 +38,20 @@ the upload stays small. Create `<ctx>/` containing:
 ```
 <ctx>/Dockerfile                 <- from here
 <ctx>/railway.json               <- from here
-<ctx>/nauty2_9_3.tar.gz          <- see below
 <ctx>/rh/experiments/E005-markstrom-.../data/survivors_n24.g6
-<ctx>/rh/experiments/E019-dedicated-.../{scan.py, prune_c8.c, data/}
+<ctx>/rh/experiments/E019-dedicated-.../{scan.py, prune_c8.c, data/,
+                                         prebuilt/linux-amd64/}
 <ctx>/rh/experiments/E022-the-g-profile-.../ladder.py
 <ctx>/rh/experiments/E024-the-g-profile-.../cloud.py
 ```
 
 The long experiment directory names must be preserved exactly: `ladder.py` and
 `cloud.py` locate their siblings by those names relative to their own path.
-Do **not** copy `E019/build/` — the image compiles nauty itself.
+Do **not** copy `E019/build/` — that holds the arm64 binaries, which will not
+run there.
 
-`nauty2_9_3.tar.gz` is the tarball the repository already pins,
+Only for `Dockerfile.rebuild-from-source` you additionally need
+`<ctx>/nauty2_9_3.tar.gz`, the tarball the repository already pins,
 
     sha256 9fc4edae04f88a0f5883985be3b39cf7f898fd6cc96e96b9ee25452743cc1b5b
     https://pallini.di.uniroma1.it/nauty2_9_3.tar.gz   (5,496,724 bytes)
@@ -36,7 +59,7 @@ Do **not** copy `E019/build/` — the image compiles nauty itself.
 also available from the Homebrew download cache. It is shipped in the context
 rather than fetched during the build so the build does not depend on a
 third-party host; the Dockerfile verifies the hash either way. It is not
-committed here, for the same reason `E019/.gitignore` excludes `build/`.
+committed, for the same reason `E019/.gitignore` excludes `build/`.
 
 ## Running
 
@@ -64,11 +87,12 @@ Concurrency comes from running more services, not from raising `E024_WORKERS`.
 
 ## Order of operations
 
-1. **`gate` — blocking.** A different-architecture rebuild breaks the
-   repository's sha256 pin, so the cloud binary is a *new instrument* until it
-   reproduces the recorded anchors. Download `/e024` from the volume and run
-   `gatecheck.py <dir>`; nothing the image produces is citable until it prints
-   `GATE PASSED`.
+1. **`gate` — blocking, but only for a NEW instrument.** If the build asserted
+   the committed hashes and printed `GATED INSTRUMENT CONFIRMED`, you are
+   holding the binary that already passed, and **no re-gate is needed**. Run
+   the gate when the binary is new: download `/e024` from the volume and run
+   `gatecheck.py <dir>`; nothing a new build produces is citable until it
+   prints `GATE PASSED`.
 2. **`calib` — optional but advisable for a new order.** Sweeps moduli and fits
    `total_cpu(mod) = mod × A + B`. Splitting is *not* free: `geng` assigns
    whole subtrees at split level `n-4`, so every part duplicates the walk above

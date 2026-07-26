@@ -1,0 +1,83 @@
+# E024 on Railway — linux/amd64 rebuild of the E019 generator (O012 step 1).
+#
+# The rule this image obeys: the *instrument* is E019's, unchanged.  scan.py,
+# prune_c8.c, ladder.py and E005's order-24 census file are copied in
+# byte-for-byte; nauty is compiled here from the same tarball the repository
+# already pins by sha256, with the same compile line as E019/build.sh (same
+# objects, same word size, same PREPRUNE/SUMMARY plugin hooks).  Only the
+# target architecture differs, which is exactly why the anchor suite has to
+# re-pass before any output of this image is citable.
+# Pinned by DIGEST, not by tag. `pypy:3.11-bookworm` is a moving tag; if it
+# moves, the compiler moves with it and the build silently produces a DIFFERENT
+# instrument, which would need re-gating. The digest freezes the toolchain, and
+# the hash assertions at the end of the build catch it if anything drifts
+# anyway. This digest is PyPy 7.3.23 / Python 3.11.15 — the same interpreter
+# version as the laptop, which is why the anchor comparison is exact.
+FROM pypy:3.11-bookworm@sha256:0af1bf1000884bb8b652038944fdee15ad949b6cc6940162a8156306f9618112
+
+# nauty 2.9.3 — the tarball Homebrew verifies for the nauty formula, the same
+# sha256 recorded in E022/data/provenance.json's build provenance.  It is
+# shipped in the build context rather than fetched so the build does not
+# depend on a third-party web server being reachable from the build network;
+# the bytes and the hash are identical either way.
+ARG NAUTY_SHA256=9fc4edae04f88a0f5883985be3b39cf7f898fd6cc96e96b9ee25452743cc1b5b
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends build-essential ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
+
+COPY nauty2_9_3.tar.gz /src/nauty2_9_3.tar.gz
+RUN echo "${NAUTY_SHA256}  /src/nauty2_9_3.tar.gz" | sha256sum -c -
+
+COPY rh /rh
+
+ENV E019=/rh/experiments/E019-dedicated-c4-c8-free-generator-geng-prune-plugin-and-the-ord
+
+# E019/build.sh transcribed for this image: same source, same configure, same
+# geng target, same explicit compile line for genc48 (W1 word size, PREPRUNE).
+RUN set -eux; \
+    mkdir -p "$E019/build"; \
+    tar -xzf /src/nauty2_9_3.tar.gz -C "$E019/build"; \
+    cd "$E019/build/nauty2_9_3"; \
+    ./configure; \
+    make geng labelg; \
+    cc -O3 -fomit-frame-pointer -DMAXN=WORDSIZE -DWORDSIZE=32 \
+       -DPREPRUNE=prune_c8 -DSUMMARY=summary_c8 \
+       -I"$E019/build/nauty2_9_3" \
+       -o "$E019/build/genc48" \
+       "$E019/build/nauty2_9_3/geng.c" "$E019/prune_c8.c" \
+       gtoolsW.o nautyW1.o nautilW1.o naugraphW1.o schreierW.o naurng.o; \
+    install -m 0755 "$E019/build/nauty2_9_3/labelg" /usr/local/bin/labelg; \
+    test "$("$E019/build/genc48" -q -c -f -d2 8 | wc -l)" = "17"; \
+    test "$("$E019/build/genc48" -q -c -f -d2 8 10:28 | wc -l)" = "12"; \
+    sha256sum "$E019/build/genc48" "$E019/build/nauty2_9_3/geng" \
+              "$E019/scan.py" "$E019/prune_c8.c"
+
+# THE GATE ATTACHES TO THE HASH, NOT TO THE BUILD EVENT.
+#
+# A binary with these hashes IS the instrument that passed the O012 anchor
+# re-gate (146-check suite, cubic order-24 positive control, stream
+# cross-check at orders 12-17, production-modulus partition check). If this
+# assertion passes, the run needs NO re-gate.
+#
+# If it FAILS, the build fails here, deliberately and loudly: the toolchain or
+# the base image has produced a DIFFERENT instrument, and a different
+# instrument must be re-gated before any of its output is citable. Do not
+# weaken this to get past it — either restore the pinned toolchain, or copy
+# E019/prebuilt/linux-amd64/ in and verify against these same pins, or re-gate
+# and record a new architecture-tagged pin.
+RUN set -eux; \
+    echo "e8e839f6d5ef90dafafe4e87d3d9fee502b0bbce7000902cc65dbcba57cf4bb0  $E019/build/genc48" | sha256sum -c -; \
+    echo "886e88a231350c7a2f55c54be081e38ce5868d8a6ad339ed8b8d4e25024aa299  $E019/build/nauty2_9_3/geng" | sha256sum -c -; \
+    echo "c28c5273c4852dfa13131dbe2080c24e2cc0cb882f9899ed028edcb63af1d7dd  /usr/local/bin/labelg" | sha256sum -c -; \
+    echo "GATED INSTRUMENT CONFIRMED — this image carries the O012-gated build"
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    E024_DATA=/data/e024 \
+    E024_ORDER=21 \
+    E024_MOD=512 \
+    E024_WORKERS=8 \
+    E024_MODE=gate
+
+WORKDIR /rh/experiments/E024-the-g-profile-ladder-rung-at-order-21-via-the-e019-generator
+CMD ["pypy3", "-u", "cloud.py"]
