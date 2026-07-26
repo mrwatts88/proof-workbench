@@ -1,6 +1,58 @@
 # Current state
 
-- Last updated: 2026-07-26 (S030 — **the non-Hamiltonian stratum gets an
+- Last updated: 2026-07-26 (S031 — **the kill test that was never run: the
+  interpolation genre is empty.** The recorded next action was to *prove*
+  (INT). The dossier's binding kill discipline says test a candidate against
+  **every** calibration object first; `C050` tested (INT) against the 24
+  profile objects on disk and never against Calibration object #3, which S030
+  had built eight theorems earlier in the same attempt. **`L056`:** that
+  object — \(F-ab\) for \(F\) cubic, 3-connected, of girth \(\ge17\) — is a
+  vertex-taut \(\{C_4,C_8\}\)-free exactly-two-profile pair with
+  \(\min S\ge16\), because an \(a\)–\(b\) path plus the deleted edge is a
+  cycle of \(F\). So **(INT) and (INT-14) are both false**. The delegated
+  audit `R004` then made this **much stronger**: its finding F4 refuted the
+  attempt's "no such object below order 70" clause with an explicit
+  **order-30** witness — the **truncated Petersen graph** (every vertex
+  replaced by a triangle; cubic, 3-connected, spectrum below 13
+  \(=\{3,10,11,12\}\), so \(\{C_4,C_8\}\)-free) minus a **link** edge,
+  giving a 2-connected exactly-two-profile pair with \(S=[9,26]\), hence
+  \(8\notin S\). Chaining two copies at a cut vertex gives order 59 with
+  \(S=[18,52]\), so \(14\notin S\). **(INT) is therefore false *inside* the
+  case-(5b) window, not merely asymptotically**, with no import at all
+  (verified, `E030`). `C050` could not have caught it: nothing with
+  \(\min S>8\) has ever been *generated*, because the ladders stop at order
+  21 and the smallest witness has order 30. **`L057`:** the natural repair —
+  relativizing the threshold to \(\min S\), which is what the recorded pivot
+  trigger does implicitly — fails too. The **triangle expansion** of a
+  bipartite cubic 3-connected graph of girth \(\ge10\), minus an edge far
+  from the triangle, is a *non-bipartite* class member with a parity hole at
+  \(\min S+1\ge10\), so \(S\supseteq[\min S+c,\max S]\) fails for every \(c\)
+  (import `X004`, existence use inside a negative result). **`L057` FAILED
+  its audit** (`R004` F1–F3, F5: the hole was not proved to open, two false
+  numeric steps, and the named witness — the Tutte 12-cage — provably fails,
+  as does every cage). Every finding is repaired (choices reordered,
+  \(\rho\le\mathrm{diam}-1\) proved, bound sharpened to \(2\rho+2\),
+  requirement restated as \(\mathrm{diam}\ge g/2+1\), `X004` decoupled), but
+  **the repair is not re-audited**, so `L057` sits at `proposed` and the
+  non-bipartite relativized kill may not be cited yet. The genre conclusion
+  does not depend on it.
+  **The genre is empty, and it is the third**: congruence (`C037`),
+  membership (`L045`/`C045`), interpolation. One diagnosis fits all three —
+  every class-level hypothesis is **local and hereditary**, hence inherited by
+  large-girth cubic graphs minus an edge, and the two hypotheses the residual
+  object has that those do not — power-freeness **above the girth**, and
+  minimum-order minimality — have never been consumed by an (F)-side lemma.
+  Conditional residue: any interpolation lemma plus `L042`'s forced
+  memberships would pin \(S\) into one dyadic band,
+  \(\max S<2\min S+O(1)\) — `L031`/`L032`'s block-question constraint; a
+  convergence, not progress. **`L058`:** `A022` W1-T8 re-derived from the
+  current block-order floor of 21 — **either \(H\) is 2-connected or
+  \(n_0\ge42\)** — so the case-(5b) window is \(n_0\in[23,41]\)
+  (\(H\)-orders \([22,40]\)) and the stopped `E028` ladder is **ten** rungs
+  short of it, not four. That sharpens S030's ceiling finding rather than
+  softening it. No floor, status or statement changed; both refuting objects
+  are far from power-free. Audited `R004`)
+- Previous update: 2026-07-26 (S030 — **the non-Hamiltonian stratum gets an
   engine, and the (F) programme gets a ceiling.** Three proved rows and one
   measurement, no generation. **`L053`:** a cubic non-Hamiltonian graph of
   girth \(\ge17\) minus an edge is an exactly-two-profile, 2-connected,
@@ -31,7 +83,7 @@
   in \(\{4,5,6\}\); the constant 8 is the smallest the corpus permits; a hole at
   14 needs five more degree-2 vertices than the profile has. New en route: a
   second non-interval profile object, at order 20)
-- Previous update: 2026-07-25 (S027 — **(F) is no longer a lemma to find; it
+- Earlier update: 2026-07-25 (S027 — **(F) is no longer a lemma to find; it
   is a finite decision procedure, and it comes back empty.** Two proved
   reductions (`L052`, `A027` T1/T2) — the **chord-minimal descent** (on a
   pair with a Hamiltonian \(a\)–\(b\) path the chords cover every path
@@ -61,7 +113,7 @@
   audit `R003` delegated. Named residue: the **non-Hamiltonian stratum**
   (`A027` T5). `E024` untouched, still running, excluded from every ledger
   row)
-- Earlier update: 2026-07-25 (S026 — **the corpus dissection is spent:
+- Earlier still: 2026-07-25 (S026 — **the corpus dissection is spent:
   the dodge mechanism is extracted, two candidate mechanisms are
   killed, and the interpolation lemma splits into (L-A) ∧ (L-B) with
   a validated formal engine for the long-range half.** Over the
@@ -466,6 +518,42 @@ cycle whose length is a power of two. See normalized `STATEMENT.md` version 0.1.
   the minimum degree-2 count admitting a hole is 4 for every value \(\le7\) and
   **5** at 8 (so the constant is pinned), and a hole at **14** needs \(\ge7\)
   degree-2 vertices — five above the profile.
+- **New (S031): `L056`–`L058` — the interpolation genre is empty, and the
+  window is wider at the top and higher at the bottom.** `L056` (`A029` T1, audited
+  `R004`, which **strengthened** it): **(INT) and (INT-14) are false, with
+  explicit in-window witnesses.** Truncated Petersen minus a link edge is a
+  2-connected vertex-taut \(\{C_4,C_8\}\)-free exactly-two-profile pair of
+  order **30** with \(S=[9,26]\), so \(8\notin S\); chaining two copies at a
+  cut vertex gives order **59** with \(S=[18,52]\), so \(14\notin S\).
+  Neither imports anything (verified, `E030/truncation.py`). Asymptotically the
+  same follows from `L053` (\(\min S\ge16\) for \(F-ab\) at girth
+  \(\ge17\)). `L057` (`A029` T2, modulo `X004`; **audit FAIL,
+  repaired, not re-audited — cite at `proposed` only**): the triangle
+  expansion at one vertex of a bipartite cubic 3-connected graph of even girth
+  \(g\ge10\) with \(\mathrm{diam}\ge g/2+1\), minus an edge on a shortest
+  cycle at distance \(\rho\ge g/2\) from the triangle, is a
+  **non-bipartite** class member with \(\min S=g-1\) odd and every even
+  through-length \(\ge2\rho+2\) — a hole at \(\min S+1\ge10\)
+  containing \(\rho+1-g/2\) even values, so
+  \(S\supseteq[\min S+c,\max S]\) fails for every \(c\) and the recorded
+  pivot trigger fires. **Diagnosis (`A029` T3(a)), the reusable part:** three
+  genres are now proved unable to exclude case (5b) from class-level
+  hypotheses — congruence (`C037`), membership (`L045`/`C045`), interpolation
+  (`L056`/`L057`) — and all three fail because every class-level hypothesis
+  (degree profile, forbidden short cycles, tautness, 2-connectivity) is
+  **local and hereditary**, hence satisfied by \(F-ab\) for large-girth cubic
+  \(F\). Power-freeness at powers **above the girth** and minimum-order
+  minimality have never been consumed. Conditional residue (`A029` T3(b),
+  **not** progress): an interpolation lemma plus `L042`'s forced
+  power/Mersenne memberships plus the poison condition would give
+  \(2^j-2-c<\min S\le2^j\le\max S\le2^{j+1}-3\), hence
+  \(\max S<2\min S+O(1)\) — exactly `L031`/`L032`'s block-question
+  constraint. `L058` (`A029` T5): `A022` W1-T8 with its block-order input
+  raised from 16 to **21** (`C039` \(\le17\); `C043`/S022 at 18–20; at 21
+  `C040` for the 0-bucket and `C049` for the 2-bucket) gives **either \(H\)
+  is 2-connected or \(n_0\ge42\)**; with `C049`'s tight-1-atom floor the
+  case-(5b) window is \(n_0\in[23,41]\), i.e. \(H\)-orders \([22,40]\), so
+  the `E028` ladder stopped at 30 is **ten** rungs short, not four.
 - **New (S019): `L037`–`L042`, both `G015` routes advanced in one
   orchestrated parallel run.** R2 side (`L037`/`L038`): the
   **subdivision descent** — the link graph on the degree-\(\ge4\) set of
@@ -579,10 +667,23 @@ procedure (`A028` T8), and no order is cleared.
 `G015`.** The recorded successor is order-unbounded: **(INT) ∧ (L-A)**
 (`A028` T9), where (INT) — \(S\supseteq[8,\max S]\) for a vertex-taut
 \(\{C_4,C_8\}\)-free exactly-two-profile pair — plus \(\max S\ge14\)
-gives \(14\in S\), poison, hence (F-S) at every order. (INT) is a
-**conjecture** with a survived kill test (`C050`) and a constant pinned
-from both sides; the corpus refutes it the moment the profile
-hypothesis is dropped.
+gives \(14\in S\), poison, hence (F-S) at every order.
+**S031 refuted that successor before a session was spent on it.** `L056`:
+`L053`'s own object satisfies every hypothesis of (INT) and has
+\(\min S\ge16\), so **(INT) and (INT-14) are false**; `C050` could not have
+caught it, since no on-disk object has \(\min S>8\) and none can exist
+below order 70. `L057`: the relativized repair fails too, on a
+*non-bipartite* object, so the recorded pivot trigger fires. **The
+interpolation genre is empty** — the third after congruence and membership,
+all three failing for one reason (`A029` T3(a)): class-level hypotheses are
+local and hereditary, so \(F-ab\) for large-girth cubic \(F\) satisfies
+every one of them. `L058` then re-derives the order dichotomy from the
+current floors — 2-connected or \(n_0\ge42\) — putting the window at
+\(n_0\in[23,41]\) and leaving the stopped ladder **ten** rungs short of it.
+Tier 1's primary work is therefore the **non-Hamiltonian stratum** (`A028`
+T8's two gaps), and the only shape of statement that can be order-unbounded
+is one consuming power-freeness **above the girth** or minimum-order
+minimality — no proof step exists for either.
 
 (b′) The **block question** (pinched channel); after `L033` its band-4
 case is exactly the **pencil endgame** — prove no vertex-taut
@@ -787,10 +888,18 @@ configuration:**
   (component-atomic minimality; savings per component rather than per
   position). Above both: `L046` gives 2-connectivity only below 36, so
   the whole (F) programme is a **finite-window instrument** and cannot
-  prove `G015`. **The tier's primary work is now (INT) ∧ (L-A)**
-  (`A028` T9) — order-unbounded, calibrated by `C050`, with the
-  chord-exchange calculus of `A026` T6 as (INT)'s engine on the
-  Hamiltonian stratum and `L055` as its raw material on the other.
+  prove `G015`. S030 recorded the tier's primary work as (INT) ∧ (L-A)
+  (`A028` T9), order-unbounded and calibrated by `C050`.
+  **S031 REFUTED IT** (`L056`/`L057`, audited `R004`) and closed the whole
+  **interpolation genre**; `L058` re-derived the window as
+  \(n_0\in[23,41]\) (\(H\)-orders \([22,40]\)), which leaves the stopped
+  ladder ten rungs short rather than four. **The tier's primary work is
+  therefore the non-Hamiltonian stratum** (`A028` T8's two gaps), with
+  `L055` as its engine — the only route that makes the window's interior
+  fully decided rather than half-decided — and behind it the first
+  (F)-side lemma consuming power-freeness **above the girth** or
+  minimum-order minimality, the one shape of statement the three dead
+  genres leave open.
   **(3) the `E028`
   ladder is STOPPED** — order 30 ran, came back empty, and the process
   was halted there (`S028`) rather than rolled into 31. It *is*
@@ -931,17 +1040,30 @@ order 16–30 on the Hamiltonian stratum — the live remainder is the
 non-Hamiltonian stratum, `A027` T5, plus continuing the ladder, which is
 open-ended and above order 26 proves class-emptiness rather than poison
 forcing);
-**NEW, S030 — the live primary trigger: a profile object, at any
-order, with a hole in \(S\) at a value \(\ge8\).** That refutes (INT)
-outright and sends the architecture back to the window. It is the
-successor to the retired saturation form and it is sharper: `C050`
-verified 24 recorded profile objects with every hole in \(\{4,5,6\}\),
-and the near-miss corpus opens its first hole at 8 only at degree-2
-count 5 and its first hole at **14** only at count 7 — so the margin is
-measured, and any object narrowing it is worth recording even if it does
-not violate (INT). ~~Prove the Hamiltonian forcing (27/27 as a
+~~a profile object, at any order, with a hole in \(S\) at a value
+\(\ge8\)~~ (**fired and spent, S031**: `L056`/`L057` exhibit them — the
+distance stratum kills (INT) and (INT-14) outright, the parity stratum kills
+every relativized form. The trigger has no live successor of that shape,
+because the *genre* is closed, not just the conjecture);
+~~Prove the Hamiltonian forcing (27/27 as a
 lemma)~~ (**dead, S030**: `L053` — the class-level hypotheses do not
 force it; calibration object #3);
+**NEW, S031 — the live primary triggers.** (i) A **power-free vertex-taut
+profile pair anywhere in \(H\)-orders \([22,40]\)** — disproof-adjacent,
+report immediately; the window is `L058`'s, wider at the top than the
+records previously said. ~~(ii) a \(\{C_4,C_8\}\)-free profile pair of order \(\le35\) with
+\(\min S\ge9\)~~ (**answered immediately, `R004` F4**: truncated Petersen
+minus a link edge, order **30**, \(S=[9,26]\) — so `L056` is in-window and
+this is no longer a question. The open remnant, worth recording if seen but
+not a trigger, is the *smallest* such order: it is \(>20\) by `C046` and
+\(\le30\)). (iii)
+Any lemma drafted for the non-Hamiltonian stratum that **holds** on
+Calibration object #3 — that is a soundness alarm on the draft, since the
+object satisfies every class-level hypothesis at arbitrarily large order.
+**Calibration object #3 is now the primary calibration object for the (F)
+side, ahead of Petersen\(-e\)**, and the check is mechanical: if a lemma's
+hypotheses are girth-monotone and its conclusion names a value below the
+girth, it is false;
 a **failure of the `E028` growth trend** (a rung whose node count
 breaks \(\approx\times1.9\) badly enough to stall the ladder before
 order 35 — then the decision route needs a stronger prune or the T5
@@ -1318,78 +1440,153 @@ nearly two thousand graphs on disk break it the moment the shape
 constraint is relaxed — which is precisely what any proof will have to
 use.
 
+S031 tested that conjecture against one more object, and it is false.
+
+The object is not new. The previous session had *built* it, for a different
+purpose: a large cubic graph with no short cycles at all, minus one edge. It
+has exactly the right shape, obeys every structural rule, and is
+two-connected — so it satisfies every hypothesis of the conjecture. But
+because it has no short cycles, the two special points are far apart, and
+**every** route between them is long. There is no route of length eight, and
+none of length fourteen either. The conjecture, and the weaker version that
+only asks about fourteen, are both simply false. The stored evidence could
+not have caught this: every graph on disk has its two special points close
+together. The survival of the earlier test measured the size of the
+collection, not the truth of the conjecture.
+
+An independent referee, given only the claim and the proof, then made the
+result considerably worse for the conjecture. The session had guessed that any
+such graph must have about seventy vertices — comfortably outside the range
+that matters. That guess was wrong, and the referee produced the graph: take
+the Petersen graph, blow every vertex up into a small triangle, and delete one
+of the connecting edges. Thirty vertices, obeying every structural rule, and
+the shortest route between its two special points has length nine — so length
+eight is unreachable. **The conjecture fails inside the very size range the
+search ladder is climbing**, not off at infinity. Joining two copies end to
+end gives fifty-nine vertices with no route shorter than eighteen, which kills
+the version that only asks about fourteen. Both were rebuilt and checked
+here.
+
+The obvious repair — ask only that there be no gaps *above the shortest
+route* rather than above eight — was tested too, and also fails. Take a
+two-colourable graph with no short cycles and replace one vertex by a
+triangle: the result still has the right shape and is no longer
+two-colourable, but routes of one parity stay cheap while routes of the other
+parity become enormously expensive, so the achievable lengths have a long gap
+immediately above the shortest one.
+
+That makes three whole styles of argument now proved unable to settle this
+case: remainder arithmetic, membership arithmetic, and now length
+interpolation. They fail for the same reason, and the reason is diagnostic.
+Each uses only *local* properties — how many edges at each vertex, which
+short cycles are banned, that every vertex carries traffic — and every one of
+those is shared by large graphs with no short cycles, where the arithmetic
+the argument wants simply does not happen. The two properties the dangerous
+object has that those decoys do not are that it avoids powers of two *above*
+its own shortest cycle, and that it is the smallest of its kind. Neither has
+ever been used.
+
+A fourth finding is bookkeeping, and it also runs against us. The search
+ladder's reach is bounded by a structural fact whose numerical threshold was
+last computed three rounds of search results ago. Recomputing it moves the
+range that needs covering from "sizes eighteen to thirty-five" to "sizes
+twenty-three to forty-one". The ladder has reached thirty. So it is ten sizes
+short of its own target, not four — and each further size costs roughly twice
+the last.
+
 ## Resolution outlook
 
-- Estimated chance of eventually settling the exact current statement: **9%**
-- Previous estimate: 9% (S029); 10% (S027)
-- Reason for change: unchanged, but for two offsetting reasons rather than
-  because nothing happened. **Down:** S030 established that the route the last
-  eight sessions have been extending has a **ceiling at order 36** — `L046`
-  supplies the 2-connectivity the (F) frame assumes only below 36, so even a
-  complete ladder plus a complete non-Hamiltonian treatment closes case (5b)
-  for \(n_0\le35\) and cannot prove `G015` — and it killed the shortcut
-  (`L053`) that would have made the completed ladder mean more than it does.
-  That is real negative information about the architecture. **Up:** the same
-  session removed the named obstruction on the untouched half with two clean
-  order-unbounded lemmas (`L054`/`L055`) and identified a successor
-  architecture, **(INT) ∧ (L-A)**, that is order-unbounded, already sharply
-  calibrated against every object on record (`C050`: 24 profile objects, zero
-  violations, constant pinned from both sides, five-vertex margin at the
-  operative value 14), and would close case (5b) at every order rather than in
-  a window. A route with no ceiling, even a conjectural one, is worth about
-  what the ceiling cost.
-- Basis: most promising route is **(INT)** via `A026` T6's chord-exchange
-  calculus, with (L-A) as its live alternative; strongest obstacle is
-  unchanged — nothing yet forces through-path lengths from **below**, which is
-  both what (L-A) asks for and why (INT) is hard; the evidence that informed
-  the judgment is `L053` (a proved delimitation), `L055` (a proved reduction),
-  and `C050` (a survived kill test with measured margins), against the facts
-  that no order of the non-Hamiltonian stratum is cleared and that even full
-  success on case (5b) proves the **cubic reduction** (`G015`), not statement
-  0.1 — Tier 0 still has no cheap move.
+- Estimated chance of eventually settling the exact current statement: **7%**
+- Previous estimate: 9% (S030); 9% (S029); 10% (S027)
+- Reason for change: down two points, and every reason is negative information
+  about **routes**, not about the problem. S030 held the estimate at 9% on the
+  strength of an order-unbounded successor that offset its own ceiling
+  finding; that successor is now **refuted**, not merely unproved (`L056`), so
+  the stated reason for the previous estimate is withdrawn. Worse, the
+  refutation is generic rather than incidental, and it is **not confined to
+  large order**: the audit produced an order-30 witness, so (INT) is false in
+  the very window the ladder is climbing. `L057` closes the relativized repair
+  too (subject to its own re-audit), making **interpolation the third dead
+  genre** after congruence and membership, and the shared diagnosis is now
+  legible — every proof-side
+  idea this programme has produced is expressible in *local, hereditary*
+  hypotheses, and every such idea is defeated by a large-girth cubic graph
+  minus an edge. The one arithmetic improvement, `L058`, also runs the wrong
+  way: the window the ladder must cover is \(n_0\in[23,41]\), so ten rungs
+  remain rather than four. Against that, nothing proved was lost — the floors,
+  `L049`, `L052`, `L055` are untouched — and the session cost two theorems'
+  worth of effort instead of a spent route.
+- Basis: most promising route is the **non-Hamiltonian stratum** (`A028` T8's
+  two gaps), which has a proved engine (`L055`) and a bounded objective; the
+  live alternative is the first (F)-side lemma to consume power-freeness
+  **above the girth** or minimum-order minimality, which is the only shape the
+  three dead genres leave open and for which no proof step exists; strongest
+  obstacle, now stated sharply — **no (F)-side lemma has ever consumed either
+  of those two hypotheses**, and `L056`/`L057` show nothing weaker can work;
+  the evidence that informed the judgment is `L056` (a proved refutation of
+  the recorded architecture, with an explicit **order-30** witness inside the
+  window — audited `R004`, which strengthened it), `L057` (the same for the
+  relativized repair, audit **FAIL** and repaired but not re-audited) and
+  `L058` (the window is wider at the top and higher at the bottom), against
+  the standing facts that no order of the non-Hamiltonian
+  stratum is cleared and that even full success on case (5b) proves the
+  **cubic reduction** (`G015`), not statement 0.1 — Tier 0 still has no cheap
+  move.
 
 ## Resume reading
 
 1. `STATEMENT.md`
-2. **`A028`** (this arc's attempt: T1 no class-level Hamiltonian forcing +
-   calibration object #3, T2 the bipartite exclusion dichotomy, T3–T7 the
-   positive-savings theorem and the bridge span/coverage laws, T8 the two
-   remaining gaps, **T9 the ceiling and the (INT) ∧ (L-A) successor**), then
-   **`E029/README.md`** (the (INT) kill test, its anchors and its margins)
-3. **`A027`** (the chord-minimal descent T1, the monotone-reroute prune T2,
-   what the search decides T3, the calculus's reach T4, the non-Hamiltonian
-   residue T5 that `A028` T3–T5 discharges, the corrected chord-pair table T6)
-   and **`E028/README.md`** (the instrument, the anchors, both ladder runs);
-   then **`A026`** (the dissection, the span law, and the chord-exchange
-   calculus that is now **(INT)'s engine**) and **`A025`** (the (F-S)/(F-T)
-   frame); then `A024`/`A023` (the T5 theorem and interference frame) and
-   `A019` (the case analysis, the engine/peel, the residual object)
-4. **The live work is proof-side, not the ladder.** The `E028` ladder is
-   **stopped** at order 30 (`S028`) and demoted to a source of floors
-   (`S030`): it cannot prove `G015` at any length, because `L046` supplies
-   2-connectivity only below order 36. Do **not** restart it, and do not re-run
-   `E024` (harvested, `C049`). The next move is `A028`'s exit action — attack
-   **(INT)** on the Hamiltonian stratum with the chord-exchange calculus.
-   If a search is ever wanted again, `E028` resumes with
+2. **`A029`** (this arc's attempt: **T1** the distance stratum refuting (INT)
+   and (INT-14), **T2** the triangle expansion refuting every relativized
+   form, **T3** the three-dead-genres diagnosis and the conditional dyadic
+   pinning, **T5** the re-derived order dichotomy and the real window, **T4**
+   the re-aim) and **`R004`** (its delegated audit). Read `A029` T3(a) before
+   drafting any new (F)-side lemma: it tells you which shapes are already
+   proved impossible.
+3. **`A028`** (the previous arc: T1 no class-level Hamiltonian forcing +
+   calibration object #3, T2 the bipartite exclusion dichotomy, **T3–T7 the
+   positive-savings theorem** and the bridge span/coverage laws, **T8 the two
+   remaining gaps — the live work**, T9 the ceiling and the now-refuted
+   (INT) ∧ (L-A) successor); `E029/README.md` only for what `C050` measured,
+   not for what it concluded
+4. **`A022` W1-T8** (the order dichotomy whose constant `L058` supersedes),
+   then **`A027`** (the chord-minimal descent T1, the monotone-reroute prune
+   T2, what the search decides T3, the calculus's reach T4, the
+   non-Hamiltonian residue T5 that `A028` T3–T5 discharges, the corrected
+   chord-pair table T6) and **`E028/README.md`** (the instrument, the anchors,
+   both ladder runs); then **`A026`** (the dissection, the span law, and the
+   chord-exchange calculus — a true statement about the measured objects, and
+   **not** promotable to a class-level theorem, `L056`) and **`A025`** (the
+   (F-S)/(F-T) frame); then `A024`/`A023` (the T5 theorem and interference
+   frame) and `A019` (the case analysis, the engine/peel, the residual object)
+5. **The live work is proof-side, not the ladder.** The `E028` ladder is
+   **stopped** at \(H\)-order 30 (`S028`) and demoted to a source of floors
+   (`S030`): it cannot prove `G015` at any length, because `L058` supplies
+   2-connectivity only below \(n_0=42\), and it is now **ten** rungs short of
+   even that window. Do **not** restart it, and do not re-run `E024`
+   (harvested, `C049`). The next move is `A029`'s exit action — close `A028`
+   T8's two gaps on the **non-Hamiltonian stratum**; do **not** pursue (INT),
+   which `L056`/`L057` refuted. If a search is ever wanted again, `E028`
+   resumes with
    `nice -n 15 pypy3 search.py search <M0> <M1> c16` (anchors first, both
    interpreters), and a survivor passing the exact stage is a case-(5b)
    residual object — **report immediately, disproof-adjacent**.
-5. `R003` (the delegated audit of the descent and the instrument), then
+6. `R003` (the delegated audit of the descent and the instrument), then
    `E027/README.md` (the dissection: taxonomy, frontier, subdivision frame,
    control rates, the exchange validation) with `corpus_rows_compact.json` as
-   the per-row refutation set — it is also **(INT)'s standing refutation set**;
+   the per-row refutation set for any *profile-consuming* draft;
    then `E026/README.md` (the census) and the `E021`/`E022` READMEs for the
    imported instruments
-6. `A021` (the congruence kill and the calibration discipline —
+7. `A021` (the congruence kill and the calibration discipline —
    Petersen\(-e\) shows \(C_8\)-freeness is necessary for (L-A); calibration
-   object #3 of `L053` now shows the same for any Hamiltonicity argument) and
-   `A022`/`E020` (the chain package and its 15/16 kill rung)
-7. `CLAIMS.md` rows `L053`–`L055`/`C050` (new, S030), `C049` (S029),
-   `L052`/`C048` (S027), `C047` (S026), `C046` (S025), `L051`/`C045` (S024),
-   `L049`/`L050`/`C044` (S023) (and `L039`–`L048`, `C036`–`C043` for the
-   frame), plus the **dependency notes at the foot of `CLAIMS.md`**, which
-   record exactly how far `L053`–`L055` and `C050` may be cited;
-   `OBLIGATIONS.md` `G015`/`G013`
-8. `sessions/S030-…md` (this session: the killed alternative, the savings
-   theorem, the ceiling, the successor architecture) and `S019`–`S029` for the
-   preceding arc
+   object #3 of `L053` is now the **primary** calibration object for the whole
+   (F) side, and `L056`/`L057` are what it killed) and `A022`/`E020` (the
+   chain package and its 15/16 kill rung)
+8. `CLAIMS.md` rows `L056`–`L058` (new, S031), `L053`–`L055`/`C050` (S030),
+   `C049` (S029), `L052`/`C048` (S027), `C047` (S026), `C046` (S025),
+   `L051`/`C045` (S024), `L049`/`L050`/`C044` (S023) (and `L039`–`L048`,
+   `C036`–`C043` for the frame), plus the **dependency notes at the foot of
+   `CLAIMS.md`**, which record exactly how far `L053`–`L058` and `C050` may be
+   cited; `OBLIGATIONS.md` `G015`/`G013`
+9. `sessions/S031-…md` (this session: the omitted kill test, the dead genre,
+   the re-derived window) and `S019`–`S030` for the preceding arc

@@ -1346,3 +1346,76 @@ attempt, experiment, or review record.
   architecture, and the retirement of the Hamiltonian-forcing route.
 - Outlook unchanged at **9%** — the ceiling cost about what the order-unbounded
   successor bought. No statement, status, or floor changed.
+
+## 2026-07-26 — `S031`: the kill test that was never run — the interpolation genre is empty
+
+- Session `S031`, attempt `A029`, review `R004` (delegated fresh context),
+  reference `X004`. Proof-side only; no generation, no experiment.
+- **The recorded next action was not executed.** Its target is false. The
+  dossier's binding kill discipline (`A021`, restated in `A026`) requires a
+  candidate lemma to be tested against **every** calibration object before it
+  is worked on; `C050` tested (INT) against the 24 profile objects on disk
+  and never against Calibration object #3, which S030 had built eight
+  theorems earlier in the same attempt.
+- **`L056`.** **(INT) and (INT-14) are both false**, with explicit witnesses
+  that import nothing: the **truncated Petersen graph** (each vertex blown up
+  to a triangle; cubic, 3-connected, spectrum below 13 \(=\{3,10,11,12\}\),
+  hence \(\{C_4,C_8\}\)-free) minus a **link** edge is a 2-connected
+  vertex-taut exactly-two-profile pair of order **30** with \(S=[9,26]\), so
+  \(8\notin S\); chaining two copies at a cut vertex gives order **59** with
+  \(S=[18,52]\), so \(14\notin S\). Asymptotically the same follows from
+  `L053` (\(\min S\ge16\) at girth \(\ge17\)) — which is the route the
+  session found first.
+- **The audit made the row stronger.** `A029`'s draft asserted that no such
+  object exists below order 70; `R004` F4 refuted that clause and supplied the
+  order-30 object, which was rebuilt and verified here (`E030/truncation.py`).
+  So the refutation is **not asymptotic**: (INT) is false *inside* the
+  case-(5b) window the ladder is climbing.
+- **Why `C050` survived.** Every recorded profile object has \(\min S\le5\).
+  Nothing with \(\min S>8\) has ever been *generated*, because the ladders
+  stop at order 21 and the smallest witness has order 30. The test measured
+  the corpus's order range, not the class.
+- **`L057`.** The natural repair fails too: the **triangle expansion** of a
+  bipartite cubic 3-connected graph of girth \(\ge10\), minus an edge far
+  from the triangle, is a *non-bipartite* class member whose through-set has a
+  parity hole at \(\min S+1\ge10\). So \(S\supseteq[\min S+c,\max S]\) fails
+  for every \(c\), and the recorded pivot trigger fires. Modulo `X004`
+  (bipartite cubic 3-connected graphs of fixed girth \(\ge10\) and unbounded
+  diameter), an existence use inside a negative result. **This half FAILED its
+  audit** (`R004` F1–F3, F5) and every finding is repaired — choices reordered,
+  \(\rho\le\mathrm{diam}-1\) proved, the even bound sharpened to
+  \(2\rho+2\), the requirement restated as \(\mathrm{diam}\ge g/2+1\),
+  `X004` decoupled and the Tutte 12-cage withdrawn as a witness — but the
+  repair is **not re-audited**, so `L057` is recorded at `proposed`.
+- **The genre is empty**, and it is the third: congruence (`C037`), membership
+  (`L045`/`C045`), interpolation (`L056`/`L057`). One diagnosis fits all
+  three — every class-level hypothesis is local and hereditary, hence
+  inherited by large-girth cubic graphs minus an edge. Power-freeness *above
+  the girth* and minimum-order minimality have never been consumed by an
+  (F)-side lemma.
+- **Conditional residue** (`A029` T3(b)): any interpolation lemma plus
+  `L042`'s forced power/Mersenne memberships plus the poison condition pins
+  \(S\) into one dyadic band, \(\max S<2\min S+O(1)\) — `L031`/`L032`'s
+  block-question constraint. Recorded as a convergence, explicitly not
+  progress.
+- **`L058`.** `A022` W1-T8 re-derived from the current block-order floor
+  (21): **either \(H\) is 2-connected or \(n_0\ge42\)**. With `C049`'s
+  tight-1-atom floor the case-(5b) window is \(n_0\in[23,41]\), i.e.
+  \(H\)-orders \([22,40]\) — so the `E028` ladder, stopped at 30, is **ten**
+  rungs short of it, not four. The correction sharpens S030's ceiling finding
+  rather than softening it. A first guess in the same session that the
+  re-derivation would *widen* the programme's reach was wrong and is
+  corrected in place.
+- **No floor, status, or statement changed.** Every refuting object contains
+  \(C_{16}\) and is far from power-free; nothing here bears on statement 0.1.
+- **Audit `R004` (delegated, fresh context): FAIL at lemma level** — 2
+  critical, 2 major, 4 minor, 2 notes. T1 passed and was strengthened by F4;
+  T2 failed and is repaired but unaudited; T3(b) passed up to side conditions
+  now carried. All ten findings are answered in the review record.
+- Tier 1's primary work returns to the non-Hamiltonian stratum (`A028` T8's
+  two gaps), with the standing instruction that every lemma drafted for it be
+  checked against Calibration object #3 first.
+- Outlook **9% → 7%**: the previous estimate's stability rested on an
+  order-unbounded successor that is now refuted, the refutation is generic
+  rather than incidental, and the one arithmetic improvement runs against the
+  finite-window route.

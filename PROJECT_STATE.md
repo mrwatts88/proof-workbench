@@ -426,7 +426,49 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
   question; the cubic census at orders 26/28/30 (~15 min/3.5 h/2.3
   days on 8 workers); census mining; bipartite EGC (proof side); the
   disjoint longer-link descent (R2's surviving extension);
-  3-connectivity leverage; order-17+ pinched catalogue legs.
+  3-connectivity leverage; order-17+ pinched catalogue legs.  **S031 (2026-07-26) ran the kill test the recorded route had skipped, and
+  the route is dead.** `A028` T9 had adopted **(INT)** — \(S\supseteq[8,\max
+  S]\) for a vertex-taut \(\{C_4,C_8\}\)-free exactly-two-profile pair —
+  as the order-unbounded successor architecture, on the strength of `C050`'s
+  24/24. `C050` tested it against every profile object *on disk*; it was never
+  tested against Calibration object #3, which the **same attempt** had
+  constructed eight theorems earlier. **`L056`:** that object satisfies every
+  hypothesis of (INT) and has \(\min S\ge16\), so **(INT) and (INT-14) are
+  both false**. The delegated audit `R004` then made it far worse for the
+  conjecture: the attempt had claimed no such object exists below order 70,
+  and F4 refuted that with the **truncated Petersen graph** (every vertex
+  blown up to a triangle; cubic, 3-connected, \(\{C_4,C_8\}\)-free) minus a
+  link edge — order **30**, \(S=[9,26]\), so \(8\notin S\) — with a
+  two-copy chain at order **59** giving \(S=[18,52]\) and \(14\notin S\).
+  **(INT) is false inside the case-(5b) window**, not merely asymptotically,
+  with no import at all (verified, `E030`). `C050` could not have caught it:
+  nothing with \(\min S>8\) has ever been *generated*, because the ladders
+  stop at order 21. **`L057`:** the natural repair fails too — the
+  **triangle expansion** of a bipartite cubic 3-connected graph of girth
+  \(\ge10\) and large order, minus an edge far from the triangle, is a
+  *non-bipartite* class member whose through-set has a parity hole at
+  \(\min S+1\ge10\) (verified end to end on an explicit 106-vertex graph,
+  `E030`) — this half **failed** its audit and is repaired but not
+  re-audited, so it is recorded at `proposed`; the genre conclusion does not
+  depend on it. **The interpolation genre is empty — the third dead genre** after
+  congruence (`C037`) and membership (`L045`/`C045`), and all three fail for
+  one reason (`A029` T3(a)): every class-level hypothesis is **local and
+  hereditary**, hence inherited by large-girth cubic graphs minus an edge, and
+  the two hypotheses the residual object has that those do not — power-freeness
+  **above the girth**, and minimum-order minimality — have never been consumed
+  by an (F)-side lemma. **`L058`** re-derives `A022` W1-T8 from the current
+  block-order floor of 21: **either \(H\) is 2-connected or \(n_0\ge42\)**,
+  so the case-(5b) window is \(n_0\in[23,41]\) (\(H\)-orders
+  \([22,40]\)) and the stopped `E028` ladder is **ten** rungs short of it,
+  not four — sharpening S030's ceiling finding rather than softening it.
+  Conditional residue: an interpolation lemma would have pinned \(S\) into
+  one dyadic band, \(\max S<2\min S+O(1)\) — `L031`/`L032`'s
+  block-question constraint. No floor, status or statement changed; every
+  refuting object contains \(C_{16}\). **Audited `R004`: FAIL at lemma
+  level** (2 critical, 2 major, 4 minor, 2 notes) — T1 passed and was
+  *strengthened* by F4, T2 failed and is repaired but unaudited, T3(b) passed
+  up to side conditions now carried; all ten findings answered.
+
 - See the generated [problem index](problems/INDEX.md).
 
 ## Repository-wide decisions
@@ -482,52 +524,57 @@ dossier targets the Erdős–Gyárfás conjecture, which is open in the literatu
 
 ## Next action
 
-For `P-002`, keep working **Tier 1: exclude case (5b)** — but by the
-**order-unbounded** route, not the ladder. S030 established the
-architectural fact the records had stopped saying out loud: `L046`
-supplies the 2-connectivity the (F) frame assumes only below order 36,
-so the (F) programme, even decided completely on both strata, closes
-case (5b) for \(n_0\le35\) and **cannot prove `G015`**. The `E028`
-ladder is therefore demoted to a source of floors — **do not restart
-it** (stopped at order 30, `S028`) and do not re-run `E024`
-(harvested, `C049`).
+For `P-002`, keep working **Tier 1: exclude case (5b)** — but by closing the
+**non-Hamiltonian stratum**, not by any interpolation lemma. S031 refuted the
+recorded successor architecture outright. `L056`: **(INT) and (INT-14) are false**,
+with explicit witnesses of orders **30** and **59** — truncated Petersen minus
+a link edge, and its two-copy chain — so the failure is *inside* the
+case-(5b) window, not asymptotic. `L057`: the relativized repair fails too, on a
+non-bipartite object. **The interpolation genre is empty**, the third after
+congruence (`C037`) and membership (`L045`/`C045`).
 
-**The recorded successor is (INT) ∧ (L-A)** (`A028` T9). (INT) — for a
-vertex-taut \(\{C_4,C_8\}\)-free exactly-two-profile pair,
-\(S\supseteq[8,\max S]\) — together with (L-A) (\(\max S\ge14\))
-forces \(14\in S\), which is poison by `L048`(iii): that is (F-S) at
-**every** order, with no window, no ladder and no \(C_{16}\)
-hypothesis.
+**First action: close `A028` T8's two gaps**, using `L055`'s positive-savings
+engine. They are named exactly: (1) there is no component-atomic minimal-cover
+notion with a bound on the number of components — a component cannot be
+thinned bridge by bridge, and dropping it destroys the degree profile at all
+its attachments at once; (2) the savings are per component, while the
+monotone-reroute DP needs an *interval-disjoint family* of positive-savings
+bridges, and different components' good bridges may nest or cross. Closing
+both makes the window's interior fully decided rather than half-decided, which
+is the most any finite-window route can deliver. Kill condition: a power-free
+2-connected profile pair whose off-path components provably cannot be thinned
+to a bounded family — that is a named obstruction, and the route re-aims.
 
-**First action: attack (INT) on the Hamiltonian stratum** with `A026`
-T6's chord-exchange calculus. Concretely: on a pair with a Hamiltonian
-\(a\)–\(b\) path, take the chord-minimal cover of `L052`(i)/(ii) and
-decide whether the reachable savings set can skip a value once every
-chord spans \(\ge4\) (spans 3 and 7 are already excluded by the span
-law). That is a hand question about span systems, not a search. Kill
-condition: a span system whose savings set has a gap above 8 while
-satisfying the class constraints — it becomes a new test object and
-(INT) weakens to **(INT-14)**, the form that only asks about 14, which
-`C050` measures as having a five-degree-2-vertex margin to the nearest
-recorded refutation. **Alternative considered and deferred:** prove
-(L-A) instead — a *lower* bound on longest through-paths rather than an
-interpolation — deferred because (INT) has a validated engine and a
-sharply calibrated conjecture in front of it.
+**Alternative considered and deferred:** build the first (F)-side lemma that
+*consumes* power-freeness **above the girth** or minimum-order minimality —
+the only shape of statement the three dead genres leave open, and the only
+shape that can be order-unbounded. Deferred because no proof step exists for
+it yet, while the non-Hamiltonian stratum has a proved engine and a bounded
+objective.
 
-**Behind it: the non-Hamiltonian stratum**, which now has an engine
-(`L055`) and two named gaps (`A028` T8) and is cleared at no order.
-Tier 3 stays harvest-only (the `C038` kill rung at block orders 15–16;
-cubic 26/28; min-degree-3 at 22, \(\approx\)38 h; bipartite 26). Do
-**not** reopen congruence obstructions (`C037`), membership-only chain
-exclusion (`L045`), the density constant (`L038`), the
-membership-collision form of (F) (`C045`), or — new in S030 — the
-**Hamiltonian-forcing route** (`L053`: dead at class strength;
-calibration object #3). The live pivot trigger is a **profile object at
-any order with a hole in \(S\) at a value \(\ge8\)** — it refutes
-(INT) outright. A non-decomposable cycle in a vertex-taut pair remains a
-**soundness alarm** against the reviewed `L049`, not a route pivot.
-No required action remains for `P-001`; its reference comparison is
-optional and freely permitted.
+**Binding kill discipline, strengthened by S031: Calibration object #3 is now
+the primary calibration object for the (F) side**, ahead of Petersen\(-e\),
+because it satisfies every class-level hypothesis simultaneously at
+arbitrarily large order. Check every drafted lemma against it *before* working
+on it; the check is mechanical — if the lemma's hypotheses are girth-monotone
+and its conclusion names a specific value below the girth, it is false.
+
+**Window, corrected (`L058`):** the case-(5b) window is \(n_0\in[23,41]\),
+i.e. \(H\)-orders \([22,40]\). The `E028` ladder is **stopped** at
+\(H\)-order 30 and is ten rungs short of that top; do **not** restart it,
+and do not re-run `E024` (harvested, `C049`). Tier 3 stays harvest-only (the
+`C038` kill rung at block orders 15–16; cubic 26/28; min-degree-3 at 22;
+bipartite 26). Do **not** reopen congruence obstructions (`C037`),
+membership-only chain exclusion (`L045`), the density constant (`L038`), the
+membership-collision form of (F) (`C045`), the Hamiltonian-forcing route
+(`L053`), or **interpolation in any form** (`L056`/`L057`). Live pivot
+triggers: a power-free vertex-taut profile pair anywhere in \(H\)-orders
+\([22,40]\) (disproof-adjacent, report immediately); and
+any non-Hamiltonian-stratum lemma that **holds** on Calibration object #3 (a
+soundness alarm on the draft). A non-decomposable cycle in a vertex-taut pair
+remains a **soundness alarm** against the reviewed `L049`, not a route pivot.
+No required action remains for `P-001`; its reference comparison is optional
+and freely permitted.
 
 ## Known process risks
 
